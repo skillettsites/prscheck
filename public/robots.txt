@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://prscheck.co.uk
+
+# Sitemaps
+Sitemap: https://prscheck.co.uk/sitemap.xml
