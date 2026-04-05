@@ -224,13 +224,13 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-navy-950 to-navy-900">
         <div className="absolute inset-0 grid-pattern" />
-        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
+        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-40">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="animate-fade-in text-4xl font-bold tracking-tight text-navy-100 sm:text-5xl lg:text-6xl">
+            <h1 className="animate-fade-in text-3xl font-bold tracking-tight text-navy-100 sm:text-4xl lg:text-6xl">
               The Intelligence Layer for{" "}
               <span className="text-accent-400">PRS Enforcement</span>
             </h1>
-            <p className="animate-slide-up mt-6 text-lg text-navy-400 sm:text-xl">
+            <p className="animate-slide-up mt-6 text-base text-navy-400 sm:text-xl">
               Automated compliance screening, HMO detection, and tenant complaint triage
               for local authority housing teams. Built for the PRS Database.
             </p>
@@ -256,23 +256,23 @@ export default function HomePage() {
       </section>
 
       {/* Problem: The Enforcement Gap */}
-      <section className="border-y border-navy-800 bg-navy-950 py-20">
+      <section className="border-y border-navy-800 bg-navy-950 py-12 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
               The Problem
             </h2>
-            <p className="mt-3 text-3xl font-bold text-navy-100 sm:text-4xl">
+            <p className="mt-3 text-2xl font-bold text-navy-100 sm:text-3xl lg:text-4xl">
               The Enforcement Gap
             </p>
           </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4">
             {stats.map((stat) => (
               <div
                 key={stat.value}
-                className="rounded-xl border border-navy-800 bg-navy-900 p-6 text-center"
+                className="rounded-xl border border-navy-800 bg-navy-900 p-4 text-center sm:p-6"
               >
-                <p className={`text-3xl font-bold ${stat.color}`}>{stat.value}</p>
+                <p className={`text-2xl font-bold sm:text-3xl ${stat.color}`}>{stat.value}</p>
                 <p className="mt-2 text-sm text-navy-400">{stat.label}</p>
               </div>
             ))}
@@ -281,13 +281,13 @@ export default function HomePage() {
       </section>
 
       {/* Platform Features */}
-      <section id="platform" className="py-24">
+      <section id="platform" className="py-14 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
               Platform
             </h2>
-            <p className="mt-3 text-3xl font-bold text-navy-100 sm:text-4xl">
+            <p className="mt-3 text-2xl font-bold text-navy-100 sm:text-3xl lg:text-4xl">
               What PRSCheck Does
             </p>
             <p className="mx-auto mt-4 max-w-2xl text-navy-400">
@@ -295,11 +295,11 @@ export default function HomePage() {
               and enforces against non-compliant PRS properties.
             </p>
           </div>
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="group rounded-xl border border-navy-800 bg-navy-800/30 p-6 transition-all hover:border-navy-700 hover:bg-navy-800/60"
+                className="group rounded-xl border border-navy-800 bg-navy-800/30 p-4 transition-all hover:border-navy-700 hover:bg-navy-800/60 sm:p-6"
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-600/10">
                   <svg
@@ -325,13 +325,13 @@ export default function HomePage() {
       </section>
 
       {/* Data Sources */}
-      <section id="data-sources" className="border-y border-navy-800 bg-navy-950 py-24">
+      <section id="data-sources" className="border-y border-navy-800 bg-navy-950 py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
               Data
             </h2>
-            <p className="mt-3 text-3xl font-bold text-navy-100 sm:text-4xl">
+            <p className="mt-3 text-2xl font-bold text-navy-100 sm:text-3xl lg:text-4xl">
               15 Government Data Sources, One Dashboard
             </p>
             <p className="mx-auto mt-4 max-w-2xl text-navy-400">
@@ -339,11 +339,11 @@ export default function HomePage() {
               giving your team a complete picture of every PRS property in your borough.
             </p>
           </div>
-          <div className="mx-auto mt-12 grid max-w-4xl grid-cols-3 gap-4 sm:grid-cols-5">
+          <div className="mx-auto mt-12 grid max-w-4xl grid-cols-3 gap-2 sm:grid-cols-5 sm:gap-4">
             {dataSources.map((source) => (
               <div
                 key={source.name}
-                className="flex flex-col items-center gap-2 rounded-xl border border-navy-800 bg-navy-900 p-4 text-center transition-colors hover:border-navy-700"
+                className="flex flex-col items-center gap-2 rounded-xl border border-navy-800 bg-navy-900 p-2 text-center transition-colors hover:border-navy-700 sm:p-4"
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-600/10 text-xs font-bold text-accent-400">
                   {source.icon}
@@ -356,13 +356,13 @@ export default function HomePage() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="py-24">
+      <section id="pricing" className="py-14 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
               Pricing
             </h2>
-            <p className="mt-3 text-3xl font-bold text-navy-100 sm:text-4xl">
+            <p className="mt-3 text-2xl font-bold text-navy-100 sm:text-3xl lg:text-4xl">
               Transparent, Scalable Pricing
             </p>
             <p className="mx-auto mt-4 max-w-2xl text-navy-400">
@@ -373,7 +373,7 @@ export default function HomePage() {
             {pricingTiers.map((tier) => (
               <div
                 key={tier.name}
-                className={`rounded-2xl border p-8 ${
+                className={`rounded-2xl border p-5 sm:p-8 ${
                   tier.highlighted
                     ? "border-accent-500 bg-accent-600/5 shadow-lg shadow-accent-600/10"
                     : "border-navy-800 bg-navy-800/30"
@@ -387,7 +387,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-bold text-navy-100">{tier.name}</h3>
                 <p className="mt-1 text-sm text-navy-400">{tier.description}</p>
                 <div className="mt-6">
-                  <span className="text-4xl font-bold text-navy-100">{tier.price}</span>
+                  <span className="text-3xl font-bold text-navy-100 sm:text-4xl">{tier.price}</span>
                   <span className="text-navy-500">{tier.period}</span>
                 </div>
                 <ul className="mt-8 space-y-3">
@@ -426,13 +426,13 @@ export default function HomePage() {
       </section>
 
       {/* ROI Calculator */}
-      <section id="roi-calculator" className="border-y border-navy-800 bg-navy-950 py-24">
+      <section id="roi-calculator" className="border-y border-navy-800 bg-navy-950 py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 text-center">
+          <div className="mb-8 text-center sm:mb-12">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
               ROI
             </h2>
-            <p className="mt-3 text-3xl font-bold text-navy-100 sm:text-4xl">
+            <p className="mt-3 text-2xl font-bold text-navy-100 sm:text-3xl lg:text-4xl">
               Calculate Your Return
             </p>
             <p className="mx-auto mt-4 max-w-2xl text-navy-400">
@@ -447,21 +447,21 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24">
+      <section className="py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
               Trusted by Councils
             </h2>
-            <p className="mt-3 text-3xl font-bold text-navy-100 sm:text-4xl">
+            <p className="mt-3 text-2xl font-bold text-navy-100 sm:text-3xl lg:text-4xl">
               What Housing Teams Say
             </p>
           </div>
-          <div className="mt-12 grid gap-8 lg:grid-cols-3">
+          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-8 lg:grid-cols-3">
             {testimonials.map((t) => (
               <div
                 key={t.name}
-                className="rounded-xl border border-navy-800 bg-navy-800/30 p-8"
+                className="rounded-xl border border-navy-800 bg-navy-800/30 p-4 sm:p-6"
               >
                 <p className="text-sm leading-relaxed text-navy-300">
                   &ldquo;{t.quote}&rdquo;
@@ -478,19 +478,19 @@ export default function HomePage() {
       </section>
 
       {/* Register Interest */}
-      <section className="border-t border-navy-800 bg-navy-950 py-24">
+      <section className="border-t border-navy-800 bg-navy-950 py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <RegisterInterestCTA variant="banner" />
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-24">
+      <section className="py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-navy-100 sm:text-4xl">
+          <h2 className="text-2xl font-bold text-navy-100 sm:text-3xl lg:text-4xl">
             Ready to modernise your enforcement?
           </h2>
-          <p className="mt-4 text-lg text-navy-400">
+          <p className="mt-4 text-base text-navy-400 sm:text-lg">
             Join the councils preparing for the PRS Database. Book a demo to see
             how PRSCheck can transform your team&apos;s capacity.
           </p>
