@@ -76,30 +76,30 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The Problem */}
-      <section className="border-y border-navy-800 bg-navy-950 py-20">
+      {/* What We Enable */}
+      <section className="border-y border-navy-800 bg-navy-950 py-12 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
-            The Problem
+            What We Enable
           </h2>
-          <p className="mt-4 text-2xl font-bold text-navy-100">
-            Enforcement teams are overwhelmed.
+          <p className="mt-4 text-xl sm:text-2xl font-bold text-navy-100">
+            Your team, but with superpowers.
           </p>
           <div className="mt-8 space-y-4 text-navy-400">
             <p>
-              England has 4.6 million privately rented households, overseen by just a few thousand
-              enforcement officers across 309 local authorities. Most councils have 3 to 5 officers
-              responsible for 10,000 or more PRS properties.
+              PRSCheck screens every PRS property in your borough automatically against 15 government
+              data sources. Non-compliant properties are flagged and prioritised before your team
+              even opens a case file.
             </p>
             <p>
-              Only 2% of non-compliant landlords currently face any enforcement action. Not because
-              councils lack the will, but because they lack the tools. Compliance checks are manual,
-              data sits in silos, and case management happens in spreadsheets and email inboxes.
+              HMO detection cross-references council tax, EPC, and licensing data to surface
+              unlicensed properties you would never find manually. Tenant complaints arrive
+              pre-structured with property data and compliance status already attached.
             </p>
             <p>
-              The government has allocated 18.2 million for PRS enforcement in 2025/26. PRSCheck
-              ensures that investment translates into measurable outcomes: more inspections, more
-              penalties, and better housing conditions for tenants.
+              The result: your existing team covers more ground, identifies more non-compliant
+              landlords, and generates civil penalty income that funds further enforcement. Every
+              penalty your team issues is revenue that stays with your authority.
             </p>
           </div>
         </div>

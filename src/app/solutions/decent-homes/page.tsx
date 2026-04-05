@@ -94,27 +94,27 @@ export default function DecentHomesPage() {
           </div>
         </section>
 
-        {/* Scale of the challenge */}
-        <section className="bg-navy-900 py-20">
+        {/* What PRSCheck screens for */}
+        <section className="bg-navy-900 py-12 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl">
-              <h2 className="text-3xl font-bold text-white">The scale of the challenge</h2>
-              <div className="mt-8 grid gap-6 sm:grid-cols-3">
-                <div className="rounded-xl border border-navy-800 bg-navy-950 p-6 text-center">
-                  <p className="text-3xl font-bold text-accent-400">4.6M</p>
-                  <p className="mt-2 text-sm text-navy-400">Private rented homes in England</p>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white">How PRSCheck prepares you</h2>
+              <div className="mt-8 grid gap-4 sm:gap-6 sm:grid-cols-3">
+                <div className="rounded-xl border border-navy-800 bg-navy-950 p-4 sm:p-6 text-center">
+                  <p className="text-2xl sm:text-3xl font-bold text-accent-400">15</p>
+                  <p className="mt-2 text-sm text-navy-400">Data sources screened per property</p>
                 </div>
-                <div className="rounded-xl border border-navy-800 bg-navy-950 p-6 text-center">
-                  <p className="text-3xl font-bold text-danger">21%</p>
-                  <p className="mt-2 text-sm text-navy-400">Currently fail Decent Homes Standard</p>
+                <div className="rounded-xl border border-navy-800 bg-navy-950 p-4 sm:p-6 text-center">
+                  <p className="text-2xl sm:text-3xl font-bold text-success">Instant</p>
+                  <p className="mt-2 text-sm text-navy-400">Bulk screening across your borough</p>
                 </div>
-                <div className="rounded-xl border border-navy-800 bg-navy-950 p-6 text-center">
-                  <p className="text-3xl font-bold text-warning">~966,000</p>
-                  <p className="mt-2 text-sm text-navy-400">Properties needing improvement</p>
+                <div className="rounded-xl border border-navy-800 bg-navy-950 p-4 sm:p-6 text-center">
+                  <p className="text-2xl sm:text-3xl font-bold text-warning">Auto</p>
+                  <p className="mt-2 text-sm text-navy-400">Flag properties failing DHS criteria</p>
                 </div>
               </div>
               <p className="mt-6 text-navy-300">
-                Data from the English Housing Survey shows that the PRS has the highest rate of non-decent homes of any tenure. The most common failures are Category 1 HHSRS hazards (mainly excess cold) and insufficient thermal comfort.
+                PRSCheck cross-references EPC data, HHSRS indicators, property age, and construction type to identify properties likely to fail the Decent Homes Standard before inspection. Your team can prioritise the worst properties first.
               </p>
             </div>
           </div>
