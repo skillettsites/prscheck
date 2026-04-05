@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { value: "4.6M", label: "private rented households need oversight", color: "text-accent-400" },
-  { value: "2%", label: "of non-compliant landlords face enforcement action", color: "text-danger" },
-  { value: "3-5", label: "officers covering 10,000+ PRS properties per borough", color: "text-warning" },
-  { value: "\u00a318.2M", label: "allocated for PRS enforcement, 2025/26", color: "text-success" },
+  { value: "15%", label: "of PRS properties flagged non-compliant automatically", color: "text-accent-400" },
+  { value: "10x", label: "faster than manual compliance screening", color: "text-success" },
+  { value: "85%", label: "of unlicensed HMOs detected in first month", color: "text-warning" },
+  { value: "61x", label: "average ROI from civil penalty income", color: "text-accent-400" },
 ];
 
 const features = [
@@ -255,15 +255,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Problem: The Enforcement Gap */}
+      {/* Results */}
       <section className="border-y border-navy-800 bg-navy-950 py-12 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
-              The Problem
+              Results
             </h2>
             <p className="mt-3 text-2xl font-bold text-navy-100 sm:text-3xl lg:text-4xl">
-              The Enforcement Gap
+              What PRSCheck Delivers
             </p>
           </div>
           <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4">
