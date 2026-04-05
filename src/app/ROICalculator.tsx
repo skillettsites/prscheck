@@ -73,46 +73,46 @@ export default function ROICalculator() {
         </div>
 
         {/* Outputs */}
-        <div className="grid grid-cols-2 gap-4">
-          <div className="rounded-xl border border-navy-700 bg-navy-900 p-5">
-            <p className="text-xs font-medium uppercase tracking-wider text-navy-500">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4">
+          <div className="rounded-xl border border-navy-700 bg-navy-900 p-3 sm:p-5">
+            <p className="text-[10px] sm:text-xs font-medium uppercase tracking-wider text-navy-500">
               Est. Non-Compliant
             </p>
-            <p className="mt-2 text-2xl font-bold text-warning">
+            <p className="mt-2 text-lg sm:text-2xl font-bold text-warning truncate">
               {nonCompliant.toLocaleString()}
             </p>
-            <p className="mt-1 text-xs text-navy-500">15% of PRS stock</p>
+            <p className="mt-1 text-[10px] sm:text-xs text-navy-500">15% of PRS stock</p>
           </div>
 
-          <div className="rounded-xl border border-navy-700 bg-navy-900 p-5">
-            <p className="text-xs font-medium uppercase tracking-wider text-navy-500">
-              Properties per Officer
+          <div className="rounded-xl border border-navy-700 bg-navy-900 p-3 sm:p-5">
+            <p className="text-[10px] sm:text-xs font-medium uppercase tracking-wider text-navy-500">
+              Per Officer
             </p>
-            <p className="mt-2 text-2xl font-bold text-danger">
+            <p className="mt-2 text-lg sm:text-2xl font-bold text-danger truncate">
               {propertiesPerOfficer.toLocaleString()}
             </p>
-            <p className="mt-1 text-xs text-navy-500">Current capacity</p>
+            <p className="mt-1 text-[10px] sm:text-xs text-navy-500">Current capacity</p>
           </div>
 
-          <div className="rounded-xl border border-navy-700 bg-navy-900 p-5">
-            <p className="text-xs font-medium uppercase tracking-wider text-navy-500">
-              Potential Penalty Income
+          <div className="rounded-xl border border-navy-700 bg-navy-900 p-3 sm:p-5">
+            <p className="text-[10px] sm:text-xs font-medium uppercase tracking-wider text-navy-500">
+              Penalty Income
             </p>
-            <p className="mt-2 text-2xl font-bold text-success">
+            <p className="mt-2 text-lg sm:text-2xl font-bold text-success truncate">
               {formatCurrency(penaltyIncome)}
             </p>
-            <p className="mt-1 text-xs text-navy-500">Per year (5% enforcement rate)</p>
+            <p className="mt-1 text-[10px] sm:text-xs text-navy-500">Per year (5% rate)</p>
           </div>
 
-          <div className="rounded-xl border border-navy-700 bg-navy-900 p-5">
-            <p className="text-xs font-medium uppercase tracking-wider text-navy-500">
+          <div className="rounded-xl border border-navy-700 bg-navy-900 p-3 sm:p-5">
+            <p className="text-[10px] sm:text-xs font-medium uppercase tracking-wider text-navy-500">
               ROI Multiplier
             </p>
-            <p className="mt-2 text-2xl font-bold text-accent-400">
+            <p className="mt-2 text-lg sm:text-2xl font-bold text-accent-400 truncate">
               {roi}x
             </p>
-            <p className="mt-1 text-xs text-navy-500">
-              vs {formatCurrency(annualCost)}/yr platform cost
+            <p className="mt-1 text-[10px] sm:text-xs text-navy-500 truncate">
+              vs {formatCurrency(annualCost)}/yr
             </p>
           </div>
         </div>
