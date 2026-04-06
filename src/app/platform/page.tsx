@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import PlatformOverviewAnimation from "@/components/mockups/PlatformOverviewAnimation";
 
 const features = [
   {
@@ -112,6 +113,11 @@ export default function PlatformPage() {
               Eight core modules that transform how your team identifies, investigates,
               and enforces against non-compliant PRS properties.
             </p>
+          </div>
+
+          {/* Animated overview */}
+          <div className="mt-12 sm:mt-16">
+            <PlatformOverviewAnimation />
           </div>
         </div>
       </section>
