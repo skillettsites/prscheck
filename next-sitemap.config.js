@@ -11,6 +11,8 @@ module.exports = {
 
     if (path === '/') { priority = 1.0; changefreq = 'daily'; }
     else if (['/pricing', '/demo', '/solutions', '/contact'].includes(path)) { priority = 0.9; }
+    else if (path === '/platform') { priority = 0.9; }
+    else if (path.startsWith('/platform/')) { priority = 0.8; }
     else if (path.startsWith('/solutions/')) { priority = 0.8; }
     else if (path.startsWith('/resources/') && path !== '/resources') { priority = 0.7; changefreq = 'monthly'; }
     else if (['/about', '/api-docs', '/resources'].includes(path)) { priority = 0.6; }
@@ -22,6 +24,17 @@ module.exports = {
   additionalPaths: async (config) => {
     const now = new Date().toISOString();
     const paths = [];
+
+    // Platform pages
+    const platformPages = [
+      'compliance-screening', 'hmo-detection', 'enforcement-pipeline',
+      'tenant-complaints', 'reporting', 'prs-database',
+      'civil-penalties', 'selective-licensing',
+    ];
+    for (const slug of platformPages) {
+      paths.push({ loc: `/platform/${slug}`, lastmod: now, changefreq: 'weekly', priority: 0.8 });
+    }
+    paths.push({ loc: '/platform', lastmod: now, changefreq: 'weekly', priority: 0.9 });
 
     // Resource articles (batch 1)
     const batch1 = [

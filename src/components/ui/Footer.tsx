@@ -4,28 +4,28 @@ const columns = [
   {
     title: "Platform",
     links: [
-      { label: "Features", href: "/#platform" },
-      { label: "Pricing", href: "/pricing" },
-      { label: "Demo", href: "/demo" },
-      { label: "API", href: "/api-docs" },
+      { label: "Overview", href: "/platform" },
+      { label: "Compliance Screening", href: "/platform/compliance-screening" },
+      { label: "HMO Detection", href: "/platform/hmo-detection" },
+      { label: "Enforcement Pipeline", href: "/platform/enforcement-pipeline" },
     ],
   },
   {
     title: "Solutions",
     links: [
-      { label: "PRS Database", href: "/solutions/prs-database" },
-      { label: "HMO Detection", href: "/solutions/hmo-detection" },
-      { label: "Compliance Screening", href: "/solutions/compliance-screening" },
-      { label: "Enforcement Pipeline", href: "/solutions/enforcement-pipeline" },
+      { label: "Tenant Complaints", href: "/platform/tenant-complaints" },
+      { label: "Civil Penalties", href: "/platform/civil-penalties" },
+      { label: "Reporting", href: "/platform/reporting" },
+      { label: "Selective Licensing", href: "/platform/selective-licensing" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { label: "Blog", href: "/#" },
-      { label: "Guides", href: "/#" },
-      { label: "Legislation", href: "/#" },
-      { label: "ROI Calculator", href: "/#roi-calculator" },
+      { label: "PRS Database", href: "/platform/prs-database" },
+      { label: "Pricing", href: "/pricing" },
+      { label: "Demo", href: "/demo" },
+      { label: "API", href: "/api-docs" },
     ],
   },
   {
