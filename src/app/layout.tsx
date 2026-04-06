@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import { DemoPopup } from "@/components/DemoPopup";
 import "./globals.css";
 
 const inter = Inter({
@@ -69,6 +70,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1 pt-16">{children}</main>
         <Footer />
+        <DemoPopup />
         <Analytics />
       </body>
     </html>

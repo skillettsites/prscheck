@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BookDemoButton } from "@/components/DemoPopup";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -192,16 +193,24 @@ export default function PricingPage() {
                   <span className="text-4xl font-bold text-navy-100">{tier.price}</span>
                   <span className="text-navy-500">{tier.period}</span>
                 </div>
-                <Link
-                  href={tier.name === "Enterprise" ? "/contact" : "/demo"}
-                  className={`mt-8 block rounded-lg px-6 py-3 text-center text-sm font-semibold transition-all ${
-                    tier.highlighted
-                      ? "bg-accent-600 text-white hover:bg-accent-500"
-                      : "border border-navy-700 text-navy-300 hover:border-navy-600 hover:bg-navy-800"
-                  }`}
-                >
-                  {tier.name === "Enterprise" ? "Contact Sales" : "Book a Demo"}
-                </Link>
+                {tier.name === "Enterprise" ? (
+                  <Link
+                    href="/contact"
+                    className="mt-8 block rounded-lg border border-navy-700 px-6 py-3 text-center text-sm font-semibold text-navy-300 transition-all hover:border-navy-600 hover:bg-navy-800"
+                  >
+                    Contact Sales
+                  </Link>
+                ) : (
+                  <BookDemoButton
+                    className={`mt-8 block w-full rounded-lg px-6 py-3 text-center text-sm font-semibold transition-all ${
+                      tier.highlighted
+                        ? "bg-accent-600 text-white hover:bg-accent-500"
+                        : "border border-navy-700 text-navy-300 hover:border-navy-600 hover:bg-navy-800"
+                    }`}
+                  >
+                    Book a Demo
+                  </BookDemoButton>
+                )}
               </div>
             ))}
           </div>
@@ -280,12 +289,9 @@ export default function PricingPage() {
           <p className="mt-4 text-navy-400">
             Book a demo and we will walk you through the platform with your borough&apos;s data.
           </p>
-          <Link
-            href="/demo"
-            className="mt-8 inline-flex rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-accent-500"
-          >
+          <BookDemoButton className="mt-8 inline-flex rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-accent-500">
             Book a Demo
-          </Link>
+          </BookDemoButton>
         </div>
       </section>
     </>

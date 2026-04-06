@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ROICalculator from "./ROICalculator";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
+import { BookDemoButton } from "@/components/DemoPopup";
 
 export const metadata: Metadata = {
   title: "PRSCheck | PRS Enforcement Platform for Local Authorities",
@@ -217,12 +218,9 @@ export default function HomePage() {
               for local authority housing teams. Built for the PRS Database.
             </p>
             <div className="animate-slide-up mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Link
-                href="/demo"
-                className="rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500 hover:shadow-xl hover:shadow-accent-600/30"
-              >
+              <BookDemoButton className="rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500 hover:shadow-xl hover:shadow-accent-600/30">
                 Book a Demo
-              </Link>
+              </BookDemoButton>
               <Link
                 href="/platform"
                 className="rounded-lg border border-navy-700 px-8 py-3.5 text-sm font-semibold text-navy-300 transition-all hover:border-navy-600 hover:bg-navy-800 hover:text-navy-100"
@@ -330,12 +328,9 @@ export default function HomePage() {
             cases flow through the system.
           </p>
           <div className="mt-8">
-            <Link
-              href="/demo"
-              className="inline-flex rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500 hover:shadow-xl hover:shadow-accent-600/30"
-            >
+            <BookDemoButton className="inline-flex rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500 hover:shadow-xl hover:shadow-accent-600/30">
               Book a Demo
-            </Link>
+            </BookDemoButton>
           </div>
         </div>
       </section>
@@ -406,16 +401,24 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href={tier.name === "Enterprise" ? "/contact" : "/demo"}
-                  className={`mt-8 block rounded-lg px-6 py-3 text-center text-sm font-semibold transition-all ${
-                    tier.highlighted
-                      ? "bg-accent-600 text-white hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25"
-                      : "border border-navy-700 text-navy-300 hover:border-navy-600 hover:bg-navy-800 hover:text-navy-100"
-                  }`}
-                >
-                  {tier.cta}
-                </Link>
+                {tier.name === "Enterprise" ? (
+                  <Link
+                    href="/contact"
+                    className="mt-8 block rounded-lg border border-navy-700 px-6 py-3 text-center text-sm font-semibold text-navy-300 transition-all hover:border-navy-600 hover:bg-navy-800 hover:text-navy-100"
+                  >
+                    {tier.cta}
+                  </Link>
+                ) : (
+                  <BookDemoButton
+                    className={`mt-8 block w-full rounded-lg px-6 py-3 text-center text-sm font-semibold transition-all ${
+                      tier.highlighted
+                        ? "bg-accent-600 text-white hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25"
+                        : "border border-navy-700 text-navy-300 hover:border-navy-600 hover:bg-navy-800 hover:text-navy-100"
+                    }`}
+                  >
+                    {tier.cta}
+                  </BookDemoButton>
+                )}
               </div>
             ))}
           </div>
@@ -479,12 +482,9 @@ export default function HomePage() {
             how PRSCheck can transform your team&apos;s capacity.
           </p>
           <div className="mt-8">
-            <Link
-              href="/demo"
-              className="inline-flex rounded-lg bg-accent-600 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500 hover:shadow-xl hover:shadow-accent-600/30"
-            >
+            <BookDemoButton className="inline-flex rounded-lg bg-accent-600 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500 hover:shadow-xl hover:shadow-accent-600/30">
               Book a Demo
-            </Link>
+            </BookDemoButton>
           </div>
         </div>
       </section>

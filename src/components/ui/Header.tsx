@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { openDemoPopup } from "@/components/DemoPopup";
 
 const navItems = [
   { label: "Solutions", href: "/solutions" },
@@ -61,12 +62,12 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/demo"
-              className="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25"
+            <button
+              onClick={() => openDemoPopup()}
+              className="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25 cursor-pointer"
             >
               Book a Demo
-            </Link>
+            </button>
           </nav>
 
           {/* Mobile toggle */}
@@ -102,13 +103,12 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/demo"
-              onClick={() => setMobileOpen(false)}
-              className="mt-2 block rounded-lg bg-accent-600 px-3 py-2.5 text-center text-sm font-semibold text-white transition-all hover:bg-accent-500"
+            <button
+              onClick={() => { setMobileOpen(false); openDemoPopup(); }}
+              className="mt-2 block w-full rounded-lg bg-accent-600 px-3 py-2.5 text-center text-sm font-semibold text-white transition-all hover:bg-accent-500 cursor-pointer"
             >
               Book a Demo
-            </Link>
+            </button>
           </div>
         </div>
       )}

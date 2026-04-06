@@ -6,6 +6,7 @@ import {
   getArticleBySlug,
 } from "@/data/articles";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
+import { BookDemoButton } from "@/components/DemoPopup";
 import FAQAccordion from "./FAQAccordion";
 import TableOfContents from "./TableOfContents";
 
@@ -234,12 +235,9 @@ export default async function ArticlePage({ params }: Props) {
                         Database.
                       </p>
                       <div className="flex flex-wrap gap-3">
-                        <Link
-                          href="/demo"
-                          className="inline-flex items-center rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25"
-                        >
+                        <BookDemoButton className="inline-flex items-center rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25">
                           Book a Demo
-                        </Link>
+                        </BookDemoButton>
                         <Link
                           href="/pricing"
                           className="inline-flex items-center rounded-lg border border-navy-600 px-5 py-2.5 text-sm font-semibold text-navy-300 transition-colors hover:border-navy-500 hover:text-navy-100"
@@ -315,12 +313,9 @@ export default async function ArticlePage({ params }: Props) {
                   See how PRSCheck automates compliance screening for your
                   council.
                 </p>
-                <Link
-                  href="/demo"
-                  className="mt-4 block rounded-lg bg-accent-600 px-4 py-2.5 text-center text-sm font-semibold text-white transition-all hover:bg-accent-500"
-                >
+                <BookDemoButton className="mt-4 block w-full rounded-lg bg-accent-600 px-4 py-2.5 text-center text-sm font-semibold text-white transition-all hover:bg-accent-500">
                   Book a Demo
-                </Link>
+                </BookDemoButton>
               </div>
             </div>
           </aside>

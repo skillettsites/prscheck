@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BookDemoButton } from "@/components/DemoPopup";
 
 export const metadata: Metadata = {
   title: "About",
@@ -158,12 +159,9 @@ export default function AboutPage() {
             Book a demo to see how PRSCheck can support your enforcement team.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link
-              href="/demo"
-              className="rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-accent-500"
-            >
+            <BookDemoButton className="rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-accent-500">
               Book a Demo
-            </Link>
+            </BookDemoButton>
             <Link
               href="/contact"
               className="rounded-lg border border-navy-700 px-8 py-3.5 text-sm font-semibold text-navy-300 transition-all hover:border-navy-600 hover:bg-navy-800"

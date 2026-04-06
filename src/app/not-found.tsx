@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import { BookDemoButton } from "@/components/DemoPopup";
 
 export default function NotFound() {
   return (
@@ -71,12 +72,9 @@ export default function NotFound() {
               >
                 API Docs
               </Link>
-              <Link
-                href="/demo"
-                className="text-navy-400 transition-colors hover:text-accent-400"
-              >
+              <BookDemoButton className="text-navy-400 transition-colors hover:text-accent-400">
                 Book a Demo
-              </Link>
+              </BookDemoButton>
               <Link
                 href="/about"
                 className="text-navy-400 transition-colors hover:text-accent-400"
