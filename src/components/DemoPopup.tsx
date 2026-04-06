@@ -136,13 +136,49 @@ export function DemoPopup() {
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-medium text-navy-400 mb-1">Council</label>
-                        <input
-                          type="text"
+                        <select
                           value={form.councilName}
                           onChange={(e) => setForm({ ...form, councilName: e.target.value })}
-                          className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder:text-navy-600 focus:border-accent-500 focus:outline-none focus:ring-1 focus:ring-accent-500"
-                          placeholder="Tower Hamlets"
-                        />
+                          className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 focus:border-accent-500 focus:outline-none focus:ring-1 focus:ring-accent-500"
+                        >
+                          <option value="">Select council...</option>
+                          {[
+                            "Barking and Dagenham", "Barnet", "Barnsley", "Bath and North East Somerset",
+                            "Bedford", "Bexley", "Birmingham", "Blackburn with Darwen", "Blackpool",
+                            "Bolton", "Bournemouth, Christchurch and Poole", "Bracknell Forest", "Bradford",
+                            "Brent", "Brighton and Hove", "Bristol", "Bromley", "Buckinghamshire",
+                            "Bury", "Calderdale", "Cambridge", "Camden", "Central Bedfordshire",
+                            "Cheshire East", "Cheshire West and Chester", "City of London", "Cornwall",
+                            "Coventry", "Croydon", "Cumberland", "Darlington", "Derby", "Derbyshire",
+                            "Devon", "Doncaster", "Dorset", "Dudley", "Durham", "Ealing",
+                            "East Riding of Yorkshire", "East Suffolk", "Enfield", "Essex", "Gateshead",
+                            "Gloucester", "Greenwich", "Hackney", "Halton", "Hammersmith and Fulham",
+                            "Hampshire", "Haringey", "Harrow", "Hartlepool", "Havering", "Herefordshire",
+                            "Hertfordshire", "Hillingdon", "Hounslow", "Hull", "Islington",
+                            "Kensington and Chelsea", "Kent", "Kingston upon Thames", "Kirklees",
+                            "Knowsley", "Lambeth", "Lancashire", "Leeds", "Leicester", "Lewisham",
+                            "Lincolnshire", "Liverpool", "Luton", "Manchester", "Medway", "Merton",
+                            "Middlesbrough", "Milton Keynes", "Newcastle upon Tyne", "Newham",
+                            "Norfolk", "North East Lincolnshire", "North Lincolnshire",
+                            "North Northamptonshire", "North Somerset", "North Tyneside", "North Yorkshire",
+                            "Northumberland", "Nottingham", "Nottinghamshire", "Oldham", "Oxfordshire",
+                            "Peterborough", "Plymouth", "Portsmouth", "Reading", "Redbridge",
+                            "Redcar and Cleveland", "Richmond upon Thames", "Rochdale", "Rotherham",
+                            "Rutland", "Salford", "Sandwell", "Sefton", "Sheffield", "Shropshire",
+                            "Slough", "Solihull", "Somerset", "South Gloucestershire", "South Tyneside",
+                            "Southampton", "Southend-on-Sea", "Southwark", "St Helens", "Staffordshire",
+                            "Stockport", "Stockton-on-Tees", "Stoke-on-Trent", "Suffolk", "Sunderland",
+                            "Surrey", "Sutton", "Swindon", "Tameside", "Telford and Wrekin",
+                            "Thurrock", "Torbay", "Tower Hamlets", "Trafford", "Wakefield", "Walsall",
+                            "Waltham Forest", "Wandsworth", "Warrington", "Warwickshire",
+                            "West Berkshire", "West Northamptonshire", "West Suffolk", "Westminster",
+                            "Westmorland and Furness", "Wigan", "Wiltshire", "Windsor and Maidenhead",
+                            "Wirral", "Wokingham", "Wolverhampton", "Worcestershire", "York",
+                            "Other",
+                          ].map((c) => (
+                            <option key={c} value={c}>{c}</option>
+                          ))}
+                        </select>
                       </div>
                       <div>
                         <label className="block text-xs font-medium text-navy-400 mb-1">Your role</label>
