@@ -46,6 +46,11 @@ export const metadata: Metadata = {
     description:
       "Automated compliance screening, HMO detection, and enforcement tools for council housing teams.",
   },
+  verification: {
+    other: {
+      'msvalidate.01': '8467B89365C947F24710AB7D84B06F92',
+    },
+  },
   robots: {
     index: true,
     follow: true,
