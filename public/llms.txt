@@ -1,0 +1,32 @@
+# PRSCheck
+
+> SaaS platform for UK local authority housing enforcement teams. Helps councils manage Private Rented Sector (PRS) inspections, complaints, and statutory notices end to end.
+
+PRSCheck digitises the workflow that council housing officers run when enforcing the PRS — from initial complaint intake through HHSRS inspection, statutory notice issuance (Improvement, Prohibition, Hazard Awareness), and prosecution-ready evidence packs. Built for UK councils, aligned to the Housing Act 2004 and the upcoming Renters' Rights Act.
+
+## Core pages
+- [Homepage](https://prscheck.co.uk/): https://prscheck.co.uk/
+- [Platform overview](https://prscheck.co.uk/platform): how the workflow works
+- [Solutions](https://prscheck.co.uk/solutions): per use-case landing pages
+- [Pricing](https://prscheck.co.uk/pricing): council pricing tiers
+- [Demo](https://prscheck.co.uk/demo): book a walkthrough
+- [ROI calculator](https://prscheck.co.uk/): inline tool to estimate council saving
+- [API docs](https://prscheck.co.uk/api-docs)
+- [Resources](https://prscheck.co.uk/resources): legislation guides, case studies
+- [Council blog](https://prscheck.co.uk/blog): policy news + enforcement insights
+
+## What we publish
+- Council enforcement workflow playbooks
+- HHSRS inspection digital checklists
+- Statutory notice templates aligned to Housing Act 2004
+- Renters' Rights Act impact analysis
+- Case studies and ROI benchmarks
+
+## Canonical
+https://prscheck.co.uk
+
+## Audience
+UK local authority housing, environmental health, and enforcement officers. Not a tenant-facing service — for that see RenterCheck.
+
+## Not in scope
+We do not represent tenants in disputes. We are the council-side enforcement platform.
