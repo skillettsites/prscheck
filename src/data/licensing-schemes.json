@@ -1,0 +1,789 @@
+[
+  {
+    "council": "London Borough of Barking and Dagenham",
+    "gss": "E09000002",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2025-04-06", "end": "2030-04-05", "coverage": "areas", "areaDescription": "Three designated areas covering most privately rented properties in the borough (near borough-wide)", "feeApprox": "£950 (£650 Part A + £300 Part B)", "sourceUrl": "https://www.lbbd.gov.uk/private-sector-housing/property-licensing/do-i-need-licence", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2025-01-09", "end": "2030-01-08", "coverage": "borough-wide", "areaDescription": "Borough-wide, HMOs with 3-4 occupants forming 2+ households", "feeApprox": "£1,400 (£1,000 Part A + £400 Part B)", "sourceUrl": "https://www.lbbd.gov.uk/private-sector-housing/property-licensing/do-i-need-licence", "verified": "2026-07-10" }
+    ],
+    "notes": "Selective coverage = three targeted designation areas covering most of the borough."
+  },
+  {
+    "council": "London Borough of Barnet",
+    "gss": "E09000003",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2022-10-27", "end": "2027-10-26", "coverage": "borough-wide", "areaDescription": "Borough-wide, includes section 257 HMOs", "feeApprox": "£1,560.38 plus £31 per unit above five occupants", "sourceUrl": "https://www.londonpropertylicensing.co.uk/barnet/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "unverified", "start": null, "end": null, "coverage": "wards", "wards": ["Burnt Oak", "Colindale North", "Colindale South"], "areaDescription": "Phase 1 approved but never brought into force; Phase 2 pending Secretary of State. Not live.", "feeApprox": null, "sourceUrl": "https://www.londonpropertylicensing.co.uk/barnet/", "verified": "2026-07-10" }
+    ],
+    "notes": "Selective approved in principle but not implemented; do not treat as live. barnet.gov.uk blocks fetchers; LPL cited."
+  },
+  {
+    "council": "London Borough of Bexley",
+    "gss": "E09000004",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2025-01-13", "end": "2030-01-12", "coverage": "wards", "wards": ["Belvedere"], "areaDescription": "Belvedere ward only", "feeApprox": "£830 (£350 application + £480 on grant)", "sourceUrl": "https://www.bexley.gov.uk/services/housing/property-licensing/property-licensing-schemes", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional scheme."
+  },
+  {
+    "council": "London Borough of Brent",
+    "gss": "E09000005",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2023-08-01", "end": "2028-07-31", "coverage": "wards", "wards": ["Harlesden & Kensal Green", "Dollis Hill", "Willesden Green"], "areaDescription": "First designation: 3 wards", "feeApprox": "£640 (£340 Part 1 + £300 Part 2)", "sourceUrl": "https://www.brent.gov.uk/housing/landlords/property-licensing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2024-04-01", "end": "2029-03-31", "coverage": "wards", "wards": ["Alperton", "Barnhill", "Brondesbury Park", "Cricklewood & Mapesbury", "Kenton", "Kilburn", "Kingsbury", "Northwick Park", "Preston", "Queens Park", "Queensbury", "Roundwood", "Stonebridge", "Sudbury", "Tokyngton", "Welsh Harp", "Wembley Central", "Wembley Hill"], "areaDescription": "Second designation: all remaining wards except Wembley Park", "feeApprox": "£640 (£340 Part 1 + £300 Part 2)", "sourceUrl": "https://www.brent.gov.uk/housing/landlords/property-licensing", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2026-02-02", "end": "2031-02-01", "coverage": "borough-wide", "areaDescription": "Borough-wide, HMOs with 3-4 occupants from 2+ households", "feeApprox": "£1,040 (£540 Part 1 + £500 Part 2)", "sourceUrl": "https://www.brent.gov.uk/housing/landlords/property-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "Wembley Park ward excluded from selective entirely."
+  },
+  {
+    "council": "London Borough of Camden",
+    "gss": "E09000007",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2025-12-08", "end": "2030-12-08", "coverage": "borough-wide", "areaDescription": "Borough-wide; HMOs of 3-4 people from 2+ households, plus certain poorly converted flat blocks", "feeApprox": "£1,531 (£100 accredited discount)", "sourceUrl": "https://www.londonpropertylicensing.co.uk/camden", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective scheme. camden.gov.uk blocks fetchers; LPL + council newsroom cited."
+  },
+  {
+    "council": "London Borough of Croydon",
+    "gss": "E09000008",
+    "schemes": [
+      { "type": "selective", "status": "upcoming", "start": "2026-09-01", "end": "2031-08-31", "coverage": "wards", "wards": ["Addiscombe East", "Addiscombe West", "Bensham Manor", "Broad Green", "Fairfield", "Norbury and Pollards Hill", "Norbury Park", "Selhurst", "South Croydon", "South Norwood", "Thornton Heath", "Waddon", "West Thornton", "Woodside"], "areaDescription": "14 of 28 wards, ~72.5% of the borough's PRS", "feeApprox": "£800 (£480 Part A + £320 Part B)", "sourceUrl": "https://www.croydon.gov.uk/housing/landlords/selective-and-additional-hmo-licensing-schemes-2026/selective-licensing-scheme-2026", "verified": "2026-07-10" },
+      { "type": "additional", "status": "upcoming", "start": "2026-09-01", "end": "2031-08-31", "coverage": "borough-wide", "areaDescription": "Borough-wide; HMOs of 3+ persons in 2+ households not covered by mandatory licensing", "feeApprox": "£1,250 (£750 Part A + £500 Part B)", "sourceUrl": "https://www.croydon.gov.uk/housing/landlords/selective-and-additional-hmo-licensing-schemes-2026/additional-hmo-licensing-scheme-2026", "verified": "2026-07-10" }
+    ],
+    "notes": "Both approved, live from 1 September 2026. Applications open summer 2026."
+  },
+  {
+    "council": "London Borough of Ealing",
+    "gss": "E09000009",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2022-04-01", "end": "2027-03-31", "coverage": "borough-wide", "areaDescription": "Borough-wide additional HMO licensing", "feeApprox": "£1,300 per property", "sourceUrl": "https://www.londonpropertylicensing.co.uk/ealing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2022-04-01", "end": "2027-03-31", "coverage": "wards", "wards": ["East Acton", "Southall Broadway", "Southall Green"], "areaDescription": "Designation 1 (pre-May 2022 ward boundaries)", "feeApprox": "£750 per property (£675 self-contained flats)", "sourceUrl": "https://www.londonpropertylicensing.co.uk/ealing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2023-01-03", "end": "2028-01-02", "coverage": "wards", "wards": ["Acton Central", "Dormers Wells", "Greenford Broadway", "Greenford Green", "Hanger Hill", "Hobbayne", "Lady Margaret", "North Greenford", "Northolt Mandeville", "Northolt West End", "Perivale", "South Acton"], "areaDescription": "Designation 2: 12 wards (pre-May 2022 ward boundaries)", "feeApprox": "£750 per property (£675 self-contained flats)", "sourceUrl": "https://www.londonpropertylicensing.co.uk/ealing", "verified": "2026-07-10" }
+    ],
+    "notes": "Ward lists are pre-2022-boundary legal designations; council delegates detail to a postcode checker. LPL cited."
+  },
+  {
+    "council": "London Borough of Enfield",
+    "gss": "E09000010",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2021-09-01", "end": "2026-08-31", "coverage": "wards", "wards": ["Bowes", "Chase", "Edmonton Green", "Enfield Highway", "Enfield Lock", "Haselbury", "Jubilee", "Lower Edmonton", "Palmers Green", "Ponders End", "Southbury", "Southgate Green", "Turkey Street", "Upper Edmonton"], "areaDescription": "14 wards (pre-2022 boundaries); expires 31 Aug 2026, replaced by new scheme next day", "feeApprox": "£735 (£294 Part 1 + £441 Part 2)", "sourceUrl": "https://www.londonpropertylicensing.co.uk/enfield", "verified": "2026-07-10" },
+      { "type": "selective", "status": "upcoming", "start": "2026-09-01", "end": "2031-08-31", "coverage": "wards", "wards": ["Bowes", "Brimsdown", "Bullsmoor", "Carterhatch", "Edmonton Green", "Enfield Lock", "Haselbury", "Jubilee", "Lower Edmonton", "Ponders End", "Southbury", "Upper Edmonton", "Whitewebbs", "New Southgate", "Palmers Green", "Southgate", "Town"], "areaDescription": "Replacement scheme, 17 wards. Approved Cabinet 22 April 2026.", "feeApprox": "£750 per property", "sourceUrl": "https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-enfield/", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2025-09-01", "end": "2030-08-31", "coverage": "borough-wide", "areaDescription": "Borough-wide (excludes certain s257 blocks); HMOs of 3-4 people from 2+ households", "feeApprox": "£1,450 per property", "sourceUrl": "https://www.londonpropertylicensing.co.uk/enfield", "verified": "2026-07-10" }
+    ],
+    "notes": "enfield.gov.uk blocks fetchers; LPL + Kamma cited. New selective ward list from Kamma; re-verify against designation notice."
+  },
+  {
+    "council": "Royal Borough of Greenwich",
+    "gss": "E09000011",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-10-01", "end": "2027-09-30", "coverage": "areas", "wards": ["Woolwich Riverside", "Woolwich Common", "Shooters Hill", "Plumstead Common", "Plumstead Glyndon"], "areaDescription": "Parts of five wards (designated areas within wards, not whole wards; council postcode lookup)", "feeApprox": "£872.59", "sourceUrl": "https://www.royalgreenwich.gov.uk/info/200172/housing/2397/selective_licensing_faqs", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2024-01-01", "end": "2028-12-31", "coverage": "borough-wide", "areaDescription": "Borough-wide; HMOs of 3-4 people from 2+ households and certain converted flat blocks", "feeApprox": "£508.50 per letting", "sourceUrl": "https://www.londonpropertylicensing.co.uk/greenwich", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "London Borough of Hackney",
+    "gss": "E09000012",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2026-05-01", "end": "2031-04-30", "coverage": "wards", "wards": ["Brownswood", "Cazenove", "Clissold", "Dalston", "De Beauvoir", "Hackney Central", "Hackney Downs", "Hackney Wick", "Homerton", "King's Park", "Lea Bridge", "London Fields", "Shacklewell", "Springfield", "Stamford Hill West", "Stoke Newington", "Victoria"], "areaDescription": "17 of 21 wards, ~76% of privately rented homes", "feeApprox": "£925 (£555 Part A + £370 Part B)", "sourceUrl": "https://hackney.gov.uk/property-licensing/", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2026-05-01", "end": "2031-04-30", "coverage": "borough-wide", "areaDescription": "Borough-wide; HMOs shared by 3 or 4 people from 2+ households", "feeApprox": "£1,400 (£840 Part A + £560 Part B)", "sourceUrl": "https://www.hackney.gov.uk/housing/private-tenants-and-landlords/private-landlords/apply-property-licence", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "London Borough of Hammersmith and Fulham",
+    "gss": "E09000013",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-06-05", "end": "2027-06-04", "coverage": "streets", "areaDescription": "24 designated streets only (incl. Askew Road, Bloemfontein Road, Dalling Road, Dawes Road, Fulham Road, Goldhawk Road, King Street, North End Road, Uxbridge Road, Wandsworth Bridge Road, Wood Lane and 13 others)", "feeApprox": "£742", "sourceUrl": "https://www.londonpropertylicensing.co.uk/hammersmith-fulham/", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2022-06-05", "end": "2027-06-04", "coverage": "borough-wide", "areaDescription": "All 21 wards; HMOs of 3+ people not all related, below mandatory threshold", "feeApprox": "£742", "sourceUrl": "https://www.londonpropertylicensing.co.uk/hammersmith-fulham/", "verified": "2026-07-10" }
+    ],
+    "notes": "lbhf.gov.uk 404s to fetcher; LPL + Kamma cited. Selective is the most street-targeted scheme in London."
+  },
+  {
+    "council": "London Borough of Haringey",
+    "gss": "E09000014",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-11-17", "end": "2027-11-16", "coverage": "wards", "wards": ["Bounds Green", "Bruce Castle", "Harringay", "Hermitage & Gardens", "Noel Park", "Northumberland Park", "Seven Sisters", "South Tottenham", "St Ann's", "Tottenham Central", "Tottenham Hale", "West Green", "White Hart Lane", "Woodside"], "areaDescription": "14 of 21 wards, mainly east of the borough", "feeApprox": "£680 in two instalments", "sourceUrl": "https://haringey.gov.uk/housing/private-sector-renting/property-licensing/selective-property-licensing", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2024-06-17", "end": "2029-06-16", "coverage": "borough-wide", "areaDescription": "All 21 wards; smaller HMOs (3-4 occupants) and section 257 converted blocks", "feeApprox": "£1,360 in two instalments (+£50 per unit above 5)", "sourceUrl": "https://haringey.gov.uk/housing/housing-news-policies/housing-strategies-policies-and-plans/additional-licensing-houses-multiple-occupation-hmos", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "London Borough of Harrow",
+    "gss": "E09000015",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2021-08-06", "end": "2026-08-05", "coverage": "borough-wide", "areaDescription": "All HMOs below mandatory threshold incl. s257; renewal consulted Dec 2025-Feb 2026, outcome not confirmed", "feeApprox": "£1,900 new (£1,343.80 renewal)", "sourceUrl": "https://talk.harrow.gov.uk/additionalhmo-licensing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2021-09-02", "end": "2026-09-01", "coverage": "wards", "wards": ["Wealdstone"], "areaDescription": "Original Wealdstone designation; succeeded by Wealdstone North/South schemes from 1 Sep 2026", "feeApprox": "£786", "sourceUrl": "https://www.londonpropertylicensing.co.uk/harrow/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2026-05-02", "end": "2031-05-01", "coverage": "wards", "wards": ["Edgware", "Roxeth"], "areaDescription": "New 2026 designations", "feeApprox": "£786 (£686 admin + £100 management/enforcement)", "sourceUrl": "https://www.harrow.gov.uk/licences/selective-licensing/6", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2026-07-06", "end": "2031-07-05", "coverage": "wards", "wards": ["Greenhill", "Marlborough"], "areaDescription": "New 2026 designations, in force since 6 July 2026", "feeApprox": "£786", "sourceUrl": "https://www.harrow.gov.uk/licences/selective-licensing/6", "verified": "2026-07-10" },
+      { "type": "selective", "status": "upcoming", "start": "2026-09-01", "end": "2031-08-31", "coverage": "wards", "wards": ["Wealdstone North", "Wealdstone South"], "areaDescription": "Approved, commences 1 September 2026", "feeApprox": "£786", "sourceUrl": "https://www.harrow.gov.uk/licences/selective-licensing/6", "verified": "2026-07-10" }
+    ],
+    "notes": "Additional scheme expiry 5 Aug 2026; renewal outcome unconfirmed. Watch for gap or renewal from 6 Aug 2026."
+  },
+  {
+    "council": "London Borough of Havering",
+    "gss": "E09000016",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2026-03-18", "end": "2031-03-17", "coverage": "wards", "wards": ["Beam Park", "Harold Wood", "Rainham and Wennington", "Rush Green and Crowlands", "Squirrels Heath", "St Albans", "St Edwards"], "areaDescription": "7 of 20 wards; single-household or two-unrelated-sharer lets", "feeApprox": "£950 (Part A £570, Part B £380)", "sourceUrl": "https://www.havering.gov.uk/information-landlords/private-rented-property-licensing", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2026-03-18", "end": "2031-03-17", "coverage": "borough-wide", "areaDescription": "All wards; HMOs outside mandatory licensing (3-4 occupants)", "feeApprox": "£1,400 (Part A £840, Part B £560)", "sourceUrl": "https://www.havering.gov.uk/information-landlords/private-rented-property-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "London Borough of Hillingdon",
+    "gss": "E09000017",
+    "schemes": [
+      { "type": "additional", "status": "upcoming", "start": "2026-08-24", "end": "2031-08-23", "coverage": "borough-wide", "areaDescription": "First Hillingdon additional scheme; HMOs 3-4 occupants from 2+ households (excludes s257). Enforcement from 24 Aug 2026", "feeApprox": "£1,401 in two instalments", "sourceUrl": "https://www.londonpropertylicensing.co.uk/hillingdon/", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective scheme. Council pages 404'd; LPL + NRLA cited."
+  },
+  {
+    "council": "London Borough of Hounslow",
+    "gss": "E09000018",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2025-12-11", "end": "2030-12-10", "coverage": "borough-wide", "areaDescription": "Scheme (4) 2025: all s254 HMOs with 3+ persons in 2+ households below mandatory, plus s257 buildings", "feeApprox": "£1,550 plus £25 per household", "sourceUrl": "https://www.hounslow.gov.uk/houses-multiple-occupation/hmo-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective scheme."
+  },
+  {
+    "council": "London Borough of Islington",
+    "gss": "E09000019",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2024-05-20", "end": "2029-05-19", "coverage": "wards", "wards": ["Finsbury Park", "Tollington", "Hillrise"], "areaDescription": "Three north Islington wards", "feeApprox": "£850 per property", "sourceUrl": "https://www.londonpropertylicensing.co.uk/islington/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "upcoming", "start": null, "end": null, "coverage": "wards", "wards": ["Barnsbury", "Caledonian", "Tufnell Park", "Mildmay", "Highbury", "Junction", "Laycock"], "areaDescription": "Approved expansion (Executive 23 Oct 2025); no start date or fee published as of 2026-07-10", "feeApprox": null, "sourceUrl": "https://www.islington.media/news/thousands-more-renters-to-benefit-as-landlord-licensing-scheme-expands", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2026-02-01", "end": "2031-01-31", "coverage": "borough-wide", "areaDescription": "Borough-wide; HMOs shared by 3-4 unrelated people (renewal, no gap)", "feeApprox": "£900 application plus £100 per letting", "sourceUrl": "https://www.islington.media/news/thousands-more-renters-to-benefit-as-landlord-licensing-scheme-expands", "verified": "2026-07-10" }
+    ],
+    "notes": "islington.gov.uk 404; council newsroom + LPL cited."
+  },
+  {
+    "council": "Royal Borough of Kensington and Chelsea",
+    "gss": "E09000020",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2023-06-01", "end": "2028-05-31", "coverage": "borough-wide", "areaDescription": "Borough-wide, all s254 HMOs outside mandatory licensing (s257 excluded)", "feeApprox": "£1,450 for up to 5 lettable rooms", "sourceUrl": "https://www.rbkc.gov.uk/housing/information-homeowners-private-rented-tenants-and-landlords/houses-multiple-occupation-hmo/additional-hmo-licensing-scheme", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective licensing scheme."
+  },
+  {
+    "council": "London Borough of Lambeth",
+    "gss": "E09000022",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2024-09-02", "end": "2029-09-01", "coverage": "wards", "wards": ["Knight's Hill", "Streatham Common & Vale", "Streatham Hill East", "Streatham St Leonard's"], "areaDescription": "Phase 1 (four Streatham-area wards)", "feeApprox": "£1,025 (Part A £717.50 + Part B £307.50)", "sourceUrl": "https://www.lambeth.gov.uk/housing/landlords-licensing/selective-licensing-scheme", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2025-09-01", "end": "2030-08-31", "coverage": "wards", "wards": ["Brixton Acre Lane", "Brixton North", "Brixton Rush Common", "Brixton Windrush", "Clapham Common & Abbeville", "Clapham East", "Clapham Park", "Clapham Town", "Gipsy Hill", "Herne Hill & Loughborough Junction", "Kennington", "Myatt's Field", "Oval", "St Martin's", "Stockwell East", "Stockwell West & Larkhall", "Streatham Hill West & Thornton", "Streatham Wells", "West Dulwich"], "areaDescription": "Phase 2: 19 further wards; phases 1+2 cover 23 of 25 wards", "feeApprox": "£1,025 (Part A £717.50 + Part B £307.50)", "sourceUrl": "https://www.lambeth.gov.uk/housing/landlords-licensing/selective-licensing-scheme", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2021-12-09", "end": "2026-12-08", "coverage": "borough-wide", "areaDescription": "Borough-wide, all HMOs (incl. s257) with 3+ occupants outside mandatory. Expires 8 Dec 2026, no renewal announced yet.", "feeApprox": "approx £520 per habitable room", "sourceUrl": "https://www.lambeth.gov.uk/housing/landlords-licensing/houses-multiple-occupation-hmos/additional-hmo-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "London Borough of Lewisham",
+    "gss": "E09000023",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2024-07-01", "end": "2029-06-30", "coverage": "wards", "wards": ["Brockley", "Catford South", "Lewisham Central", "New Cross", "Perry Vale", "Rushey Green", "Crofton Park", "Evelyn", "Ladywell", "Lee Green", "Sydenham", "Bellingham", "Downham", "Forest Hill", "Grove Park", "Whitefoot"], "areaDescription": "Most of the borough (~20,000 properties); council describes 18 wards excl. Telegraph Hill and part of Blackheath. Verify addresses via council map.", "feeApprox": "£640 (£160 application + £480 on granting)", "sourceUrl": "https://lewisham.gov.uk/selectivelicensing", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2022-04-22", "end": "2027-04-21", "coverage": "borough-wide", "areaDescription": "Borough-wide, smaller HMOs (3-4 sharers) outside mandatory", "feeApprox": "approx £500 per household/bedroom", "sourceUrl": "https://lewisham.gov.uk/myservices/housing/private-tenants-and-landlords/landlords/hmo/apply-for-a-private-property-licence", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "London Borough of Merton",
+    "gss": "E09000024",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2023-09-24", "end": "2028-09-23", "coverage": "wards", "wards": ["Figge's Marsh", "Graveney", "Longthornton", "Pollards Hill"], "areaDescription": "Four wards in the east (Mitcham area)", "feeApprox": "£747.60 (Part A £267 + Part B £480.60)", "sourceUrl": "https://www.merton.gov.uk/council-tax-benefits-and-housing/private-housing/licensing/selective-licence", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2023-09-24", "end": "2028-09-23", "coverage": "wards", "wards": ["Colliers Wood", "Cricket Green", "Figge's Marsh", "Graveney", "Lavender Fields", "Longthornton", "Pollards Hill"], "areaDescription": "Seven wards; HMOs 3-4 occupants from 2+ households outside mandatory", "feeApprox": "£1,566-£1,674 by bedroom count", "sourceUrl": "https://www.merton.gov.uk/council-tax-benefits-and-housing/private-housing/licensing/additional-hmo-licence", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "London Borough of Newham",
+    "gss": "E09000025",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2023-06-01", "end": "2028-05-31", "coverage": "wards", "wards": ["Beckton", "Boleyn", "Canning Town North", "Canning Town South", "Custom House", "East Ham", "East Ham South", "Forest Gate North", "Forest Gate South", "Green Street East", "Green Street West", "Little Ilford", "Manor Park", "Maryland", "Plaistow North", "Plaistow South", "Plaistow West & Canning Town East", "Plashet", "Royal Albert", "Stratford", "Wall End", "West Ham"], "areaDescription": "22 of 24 wards; Royal Victoria and Stratford Olympic Park excluded", "feeApprox": "£750 (£400 Part A + £350 Part B)", "sourceUrl": "https://www.newham.gov.uk/landlords-newham/rented-property-licensing/11", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2023-01-01", "end": "2027-12-31", "coverage": "wards", "wards": ["Beckton", "Boleyn", "Canning Town North", "Canning Town South", "Custom House", "East Ham", "East Ham South", "Forest Gate North", "Forest Gate South", "Green Street East", "Green Street West", "Little Ilford", "Manor Park", "Maryland", "Plaistow North", "Plaistow South", "Plaistow West & Canning Town East", "Plashet", "Royal Albert", "Stratford", "Wall End", "West Ham"], "areaDescription": "Same footprint as selective (all wards except Royal Victoria and Stratford Olympic Park)", "feeApprox": "£1,250 (£400 Part A + £850 Part B)", "sourceUrl": "https://www.newham.gov.uk/landlords-newham/rented-property-licensing/12", "verified": "2026-07-10" }
+    ],
+    "notes": "Third consecutive 5-year selective designation (since 2013)."
+  },
+  {
+    "council": "London Borough of Redbridge",
+    "gss": "E09000026",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2023-11-01", "end": "2028-10-31", "coverage": "wards", "wards": ["Ilford Town", "Valentines"], "areaDescription": "Scheme 3", "feeApprox": "£997.69 total 2026/27", "sourceUrl": "https://www.redbridge.gov.uk/housing/landlords/selective-licensing/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2024-04-08", "end": "2029-04-07", "coverage": "wards", "wards": ["Aldborough", "Barkingside", "Chadwell", "Churchfields", "Clementswood", "Cranbrook", "Fairlop", "Goodmayes", "Hainault", "Loxford", "Mayfield", "Newbury", "Seven Kings", "South Woodford", "Wanstead Village"], "areaDescription": "Scheme 4: 15 further wards", "feeApprox": "£997.69 total 2026/27", "sourceUrl": "https://www.redbridge.gov.uk/housing/landlords/selective-licensing/", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2023-09-18", "end": "2028-09-17", "coverage": "borough-wide", "areaDescription": "Whole borough; HMOs of 3-4 people 2+ households", "feeApprox": "£696.14 first stage + £1,169.20-£2,032.37 second stage", "sourceUrl": "https://www.redbridge.gov.uk/housing/landlords/houses-in-multiple-occupation-licensing/", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "London Borough of Southwark",
+    "gss": "E09000028",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-03-01", "end": "2027-02-28", "coverage": "wards", "wards": ["Champion Hill", "Faraday", "Goose Green", "Newington", "St Giles"], "areaDescription": "First selective designation: 5 wards", "feeApprox": "£945 (£661.50 Part A + £283.50 Part B)", "sourceUrl": "https://www.southwark.gov.uk/housing/private-tenants-and-landlords/private-rented-property-licensing/property-licensing-3", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2023-11-01", "end": "2028-10-31", "coverage": "wards", "wards": ["Camberwell Green", "Chaucer", "Dulwich Hill", "Dulwich Wood", "London Bridge & West Bermondsey", "North Walworth", "Nunhead & Queen's Road", "Old Kent Road", "Peckham", "Peckham Rye", "Rotherhithe", "Rye Lane", "South Bermondsey", "Surrey Docks"], "areaDescription": "Second designation: 14 further wards (19 of 23 covered)", "feeApprox": "£945", "sourceUrl": "https://www.southwark.gov.uk/housing/private-tenants-and-landlords/private-rented-property-licensing/property-licensing-3", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2022-03-01", "end": "2027-02-28", "coverage": "borough-wide", "areaDescription": "Whole borough; HMOs up to 4 people, s257 HMOs, flats in blocks of 3+ units", "feeApprox": "£1,433 from 1 Apr 2026 (s257 licences free)", "sourceUrl": "https://www.southwark.gov.uk/housing/private-tenants-and-landlords/private-rented-property-licensing/property-licensing-2", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "London Borough of Sutton",
+    "gss": "E09000029",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2026-03-22", "end": "2031-03-21", "coverage": "borough-wide", "areaDescription": "Whole borough; HMOs of 3-4 unrelated sharers + certain s257 blocks. Approved 25 Nov 2025.", "feeApprox": "£319.40 per let", "sourceUrl": "https://www.sutton.gov.uk/w/houses-in-multiple-occupation-apply-for-vary-or-renew-your-hmo-licence", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective licensing. End date assumed from 5-year term."
+  },
+  {
+    "council": "London Borough of Tower Hamlets",
+    "gss": "E09000030",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2021-10-01", "end": "2026-09-30", "coverage": "areas", "wards": ["Whitechapel", "Weavers", "Spitalfields & Banglatown"], "areaDescription": "Three wards (pre-May 2014 boundaries); some E1 postcodes excluded. Expires 30 Sep 2026, no renewal announced.", "feeApprox": "£897 new online from Apr 2026; renewal £747", "sourceUrl": "https://www.towerhamlets.gov.uk/lgnl/housing/Private-tenants-landlords-and-homeowners/Property-licensing/Licences/Selective-licensing.aspx", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2024-04-01", "end": "2029-03-31", "coverage": "borough-wide", "areaDescription": "Whole borough, designated 25 Oct 2023; all HMOs of 3+ people in 2+ households", "feeApprox": "£1,323 online from Apr 2026", "sourceUrl": "https://www.towerhamlets.gov.uk/lgnl/housing/Private-tenants-landlords-and-homeowners/Property-licensing/Licences/Additional-licensing.aspx", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "London Borough of Waltham Forest",
+    "gss": "E09000031",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2025-05-01", "end": "2030-04-30", "coverage": "areas", "areaDescription": "Near borough-wide: all wards except Hatch Lane, Highams Park North and Endlebury", "feeApprox": "£895 (Part A £300 + Part B £595)", "sourceUrl": "https://www.walthamforest.gov.uk/housing/private-sector-housing/private-rented-property-licensing-prpl/selective-licensing-scheme", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2025-04-01", "end": "2030-03-31", "coverage": "borough-wide", "areaDescription": "Whole borough; HMOs outside mandatory incl. flats in purpose-built blocks of 3+ flats", "feeApprox": "£1,200 (Part A £600 + Part B £600)", "sourceUrl": "https://www.walthamforest.gov.uk/housing/private-sector-housing/private-rented-property-licensing-prpl/additional-hmo-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "Renewals of schemes running since 2015/2020."
+  },
+  {
+    "council": "London Borough of Wandsworth",
+    "gss": "E09000032",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2025-07-01", "end": "2030-06-30", "coverage": "wards", "wards": ["Furzedown", "South Balham", "Tooting Bec", "Tooting Broadway"], "areaDescription": "Designation 1 (first Wandsworth selective scheme)", "feeApprox": "£885 (Part A £529 + Part B £356)", "sourceUrl": "https://www.wandsworth.gov.uk/housing/private-housing/private-rented-property-licences/property-licence-check/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2026-04-01", "end": "2031-03-31", "coverage": "wards", "wards": ["East Putney", "Northcote", "West Putney"], "areaDescription": "Designation 2; made 1 Dec 2025, in force 1 Apr 2026", "feeApprox": "£885; 30% early-bird discount on Part A until 1 Oct 2026", "sourceUrl": "https://www.wandsworth.gov.uk/housing/private-housing/private-rented-property-licences/property-licence-check/", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2025-07-01", "end": "2030-06-30", "coverage": "borough-wide", "areaDescription": "HMOs of 3-4 sharers incl. flats in purpose-built blocks of 3+ flats; designated 22 Jul 2024", "feeApprox": "£1,507 (Part A £903 + Part B £604)", "sourceUrl": "https://www.wandsworth.gov.uk/housing/private-housing/private-rented-property-licences/property-licence-check/", "verified": "2026-07-10" }
+    ],
+    "notes": "Wandsworth's first-ever discretionary schemes."
+  },
+  {
+    "council": "City of Westminster",
+    "gss": "E09000033",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2025-11-24", "end": "2030-11-23", "coverage": "wards", "wards": ["Abbey Road", "Bayswater", "Church Street", "Harrow Road", "Hyde Park", "Knightsbridge & Belgravia", "Lancaster Gate", "Little Venice", "Maida Vale", "Marylebone", "Pimlico North", "Queen's Park", "Regent's Park", "West End", "Westbourne"], "areaDescription": "15 of 18 wards (two designations)", "feeApprox": "£995 (Part A £543 + Part B £452)", "sourceUrl": "https://www.westminster.gov.uk/housing/private-sector-housing/selective-property-licensing/licence-fees-and-discounts", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2021-08-30", "end": "2026-08-30", "coverage": "borough-wide", "areaDescription": "Borough-wide (excl. certain s257 blocks); expires 30 Aug 2026, replaced next day by renewal", "feeApprox": "£1,540 base (+£68 per letting above five)", "sourceUrl": "https://www.londonpropertylicensing.co.uk/westminster/", "verified": "2026-07-10" },
+      { "type": "additional", "status": "upcoming", "start": "2026-08-31", "end": "2031-08-30", "coverage": "borough-wide", "areaDescription": "Renewal covering all 18 wards, designated 21 Apr 2026, in force 31 Aug 2026", "feeApprox": null, "sourceUrl": "https://www.westminster.gov.uk/housing/private-sector-housing/houses-multiple-occupation-hmo/additional-licensing-scheme-renewal", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "Liverpool City Council",
+    "gss": "E08000012",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-04-01", "end": "2027-03-31", "coverage": "wards", "wards": ["Central", "Riverside", "Greenbank", "Kensington", "Picton", "Tuebrook & Stoneycroft", "County", "Anfield", "St Michael's", "Princes Park", "Kirkdale", "Old Swan", "Warbreck", "Wavertree", "Fazakerley", "Everton"], "areaDescription": "16 designated wards (2022 boundaries, ~80% of Liverpool's PRS). Ward boundaries redrawn May 2023; council directs landlords to a postcode lookup.", "feeApprox": "£704 (discounted £321-£486)", "sourceUrl": "https://liverpool.gov.uk/business/licences-and-permits/landlord-licensing/selective-licensing-scheme/", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme. Consulting on a citywide selective scheme to start April 2027 when current expires."
+  },
+  {
+    "council": "Sefton Metropolitan Borough Council",
+    "gss": "E08000014",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2023-03-01", "end": "2028-02-29", "coverage": "streets", "areaDescription": "A large proportion of Bootle (street-level designation; council publishes street list and map)", "feeApprox": "£695 standard (£545/£495 accredited)", "sourceUrl": "https://www.sefton.gov.uk/housing/private-sector-housing/landlord-licensing-and-accreditation/selective-licensing-2023-2028/", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2023-03-01", "end": "2028-02-29", "coverage": "streets", "areaDescription": "Parts of Seaforth, Waterloo, Brighton-le-Sands and central Southport (street-level designation)", "feeApprox": "£950 standard (£800/£750 accredited)", "sourceUrl": "https://www.sefton.gov.uk/housing/private-sector-housing/landlord-licensing-and-accreditation/additional-hmo-licensing-2023-2028/", "verified": "2026-07-10" }
+    ],
+    "notes": "Both extended for five years to 2028 after a 2022 consultation."
+  },
+  {
+    "council": "Wirral Metropolitan Borough Council",
+    "gss": "E08000015",
+    "schemes": [
+      { "type": "selective", "status": "expired", "start": "2020-10-01", "end": "2025-09-30", "coverage": "areas", "wards": ["Birkenhead South", "Egerton North", "Egremont South", "Egremont Promenade South", "Seacombe Library", "Tranmere Lairds"], "areaDescription": "Six designated neighbourhood areas. Wirral's first selective scheme; expired 30 Sep 2025.", "feeApprox": null, "sourceUrl": "https://www.wirral.gov.uk/housing/housing-information-and-advice/private-landlords-and-managing-agents/selective-licensing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2024-04-01", "end": "2029-03-31", "coverage": "areas", "wards": ["Bidston and St James West", "Birkenhead West", "Egremont North", "Seacombe St Paul's"], "areaDescription": "Four designated neighbourhood areas within Birkenhead/Wallasey", "feeApprox": "£585", "sourceUrl": "https://www.wirral.gov.uk/housing/housing-information-and-advice/private-landlords-and-managing-agents/selective-licensing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2025-10-01", "end": "2030-09-30", "coverage": "areas", "wards": ["Birkenhead Central", "Lower Tranmere", "Tranmere North", "Hamilton Square B", "Tranmere Lairds", "Egremont South"], "areaDescription": "Six designated neighbourhood areas in Birkenhead, Tranmere and Egremont", "feeApprox": "£605", "sourceUrl": "https://www.wirral.gov.uk/housing/housing-information-and-advice/private-landlords-and-managing-agents/selective-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "Named neighbourhood designations rather than full electoral wards. No additional HMO scheme."
+  },
+  {
+    "council": "Oldham Metropolitan Borough Council",
+    "gss": "E08000004",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-07-04", "end": "2027-07-03", "coverage": "areas", "wards": ["Medlock Vale", "St Mary's", "Werneth", "Waterhead", "Alexandra", "Chadderton South", "Hollinwood", "Coldhurst", "Failsworth East", "Saddleworth West & Lees", "St James'"], "areaDescription": "Designated areas (not whole wards) within these wards; ~1,800 private rented properties. Council provides an interactive map and street lists.", "feeApprox": "£582 (£340.34 application + £241.66 grant)", "sourceUrl": "https://www.oldham.gov.uk/info/201198/help_for_landlords/1450/selective_licensing_of_private_landlords", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme. Ward list combines the council report (7 wards) with Kamma's 11-ward listing; check individual addresses on the council map."
+  },
+  {
+    "council": "Rochdale Borough Council",
+    "gss": "E08000005",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2025-04-29", "end": "2030-04-28", "coverage": "borough-wide", "areaDescription": "Borough-wide additional licensing of 3-4 person small HMOs and s257 buildings", "feeApprox": "£1,011 for 5 years plus £53 inspection per habitable room", "sourceUrl": "https://www.rochdale.gov.uk/private-landlords/hmo-housing-standards", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective scheme (council states selective 'has not yet been introduced')."
+  },
+  {
+    "council": "Salford City Council",
+    "gss": "E08000006",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2021-07-19", "end": "2026-07-19", "coverage": "borough-wide", "areaDescription": "Citywide additional licensing of small HMOs (3-4 persons). EXPIRES 19 July 2026; cannot renew after expiry, review pending.", "feeApprox": "£1,085 new (£890 + £195)", "sourceUrl": "https://www.salford.gov.uk/housing/information-for-landlords/additional-hmo-licensing/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2022-09-01", "end": "2027-08-31", "coverage": "streets", "areaDescription": "Eccles, Barton and Winton: 100+ named streets", "feeApprox": "£609 first application", "sourceUrl": "https://www.salford.gov.uk/housing/information-for-landlords/landlord-licensing/areas-covered-by-selective-licensing/selective-licensing-in-eccles-barton-and-winton/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2026-01-21", "end": "2031-01-20", "coverage": "streets", "areaDescription": "Broughton, Kersal and Broughton Park: 150+ named streets, 1,300+ homes", "feeApprox": "£450 first application non-accredited (early period)", "sourceUrl": "https://www.salford.gov.uk/housing/information-for-landlords/landlord-licensing/areas-covered-by-selective-licensing/selective-licensing-in-broughton-kersal-and-broughton-park/", "verified": "2026-07-10" }
+    ],
+    "notes": "Additional scheme expires imminently (19 Jul 2026). Separate s257 additional scheme consulted Feb-Apr 2026, no designation yet."
+  },
+  {
+    "council": "Manchester City Council",
+    "gss": "E08000003",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-05-01", "end": "2027-04-30", "coverage": "streets", "areaDescription": "Four street-level designations (2022 cohort): Ben Street (Clayton & Openshaw), Hyde Road & The Ladders (Gorton & Abbey Hey), Trinity (Harpurhey). Check exact streets on council directory.", "feeApprox": "£591-£798 (2022 designation rates)", "sourceUrl": "https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2023-08-09", "end": "2028-08-08", "coverage": "streets", "areaDescription": "Four street-level designations (2023 cohort): Laindon/Dickenson Road & Birch Lane (Rusholme), Great Western Street/Claremont Road (Moss Side), Matthews Lane (Levenshulme), The Royals (Longsight).", "feeApprox": "£736-£936 (2023 designation rates)", "sourceUrl": "https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2025-05-24", "end": "2030-05-23", "coverage": "streets", "areaDescription": "Six street-level designations (2025 cohort): Enver Road (Crumpsall), Droylsden Road/Scotland Street (Miles Platting & Newton Heath), Esmond/Avondale (Cheetham), Heathcote/Sanby/Northmoor (Longsight), Viscount Street/Heald Grove (Moss Side), Whiteway Street (Harpurhey).", "feeApprox": "£964 full (£764 early bird)", "sourceUrl": "https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes", "verified": "2026-07-10" }
+    ],
+    "notes": "14 street-level selective designations across three cohorts. NO additional HMO scheme. Must check exact street/address on council directory."
+  },
+  {
+    "council": "Blackpool Council",
+    "gss": "E06000009",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2025-04-01", "end": "2030-03-31", "coverage": "wards", "wards": ["Bloomfield", "Brunswick", "Claremont", "Talbot", "Tyldesley", "Victoria", "Warbreck", "Waterloo"], "areaDescription": "Inner Blackpool, 8 wards, ~9,000-11,000 PRS properties", "feeApprox": "£772 standard (from £347 discounted)", "sourceUrl": "https://www.blackpool.gov.uk/Business/Licensing-and-permits/Housing-licences/Selective-licensing/Selective-licensing.aspx", "verified": "2026-07-10" }
+    ],
+    "notes": "Additional licensing 'currently not in operation'."
+  },
+  {
+    "council": "Burnley Borough Council",
+    "gss": "E07000117",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-07-21", "end": "2027-07-20", "coverage": "streets", "areaDescription": "Burnley Wood with Healey Wood, and Leyland Road area (street-defined; council street list + online checker)", "feeApprox": "£715 standard (£640 returning)", "sourceUrl": "https://burnley.gov.uk/housing/private-rented-sector/selective-licensing/selective-licensing-in-burnley/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2025-04-27", "end": "2030-04-26", "coverage": "streets", "areaDescription": "Five areas: Trinity, Queensgate, Gannow, Daneshouse and Stoneyholme, and Padiham (~3,700 PRS properties; street-defined)", "feeApprox": "£750 standard (£670 returning)", "sourceUrl": "https://burnley.gov.uk/housing/private-rented-sector/selective-licensing/selective-licensing-in-burnley/", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme."
+  },
+  {
+    "council": "Leeds City Council",
+    "gss": "E08000035",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2026-02-09", "end": "2031-02-08", "coverage": "wards", "wards": ["Armley", "Beeston and Holbeck", "Burmantofts and Richmond Hill", "Hunslet and Riverside", "Gipton and Harehills", "Farnley and Wortley"], "areaDescription": "Designated parts (not whole) of six wards in east, south and west Leeds", "feeApprox": "£1,100 online (£400 application + £700 grant)", "sourceUrl": "https://www.leeds.gov.uk/housing/information-for-landlords/selective-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme. Previous Beeston/Harehills schemes ended 5 Jan 2025."
+  },
+  {
+    "council": "Rotherham Metropolitan Borough Council",
+    "gss": "E08000018",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2026-02-15", "end": "2031-02-14", "coverage": "areas", "areaDescription": "Six designated areas: Town centre/Eastwood/Clifton/Boston Castle; Masbrough/Kimberworth; Thurcroft; Dinnington; Brinsworth; Parkgate", "feeApprox": "£975 standard (Part 1 £276 + Part 2 £699)", "sourceUrl": "https://www.rotherham.gov.uk/private-housing/selective-licensing-2026-2031", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme. Previous 2020-2025 scheme (six areas) expired 30 Apr 2025."
+  },
+  {
+    "council": "North Lincolnshire Council",
+    "gss": "E06000013",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2025-03-20", "end": "2030-03-19", "coverage": "wards", "wards": ["Crosby and Park", "Town"], "areaDescription": "Parts of Crosby and Park ward and Town ward in Scunthorpe (searchable street list)", "feeApprox": "£955 (£615 Part A + £340 Part B)", "sourceUrl": "https://www.northlincs.gov.uk/site/documents/licensing/selective-licensing-how-to-apply/", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional scheme."
+  },
+  {
+    "council": "North East Lincolnshire Council",
+    "gss": "E06000012",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2026-04-08", "end": "2031-04-07", "coverage": "wards", "wards": ["East Marsh"], "areaDescription": "East Marsh ward, Grimsby (council interactive boundary map). Delivery partner Home Safe.", "feeApprox": "£1,000 (£600 Part A + £400 Part B); £725 accredited", "sourceUrl": "https://www.nelincs.gov.uk/homes-and-property/selective-licensing/", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme."
+  },
+  {
+    "council": "City of York Council",
+    "gss": "E06000014",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2023-04-01", "end": "2028-03-31", "coverage": "wards", "wards": ["Clifton", "Fishergate", "Fulford and Heslington", "Guildhall", "Heworth", "Hull Road", "Micklegate", "Osbaldwick and Derwent"], "areaDescription": "8 electoral wards with highest HMO densities; HMOs of 3-4 people forming more than one household", "feeApprox": "£1,524 total for 3-6 occupants (2026-27)", "sourceUrl": "https://www.york.gov.uk/private-landlords-tenants/house-multiple-occupation-hmo-licences", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective scheme."
+  },
+  {
+    "council": "North Yorkshire Council",
+    "gss": "E06000065",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-05-01", "end": "2027-04-30", "coverage": "streets", "wards": ["Weaponness and Ramshill"], "areaDescription": "Scarborough South: parts of Weaponness and Ramshill ward, 47 designated streets", "feeApprox": "£550 per single-household property", "sourceUrl": "https://www.northyorks.gov.uk/housing-and-homelessness/selective-licensing/selective-licensing-scarborough-south", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2024-06-01", "end": "2029-05-31", "coverage": "streets", "wards": ["Castle", "Falsgrave and Stepney", "Northstead"], "areaDescription": "Scarborough Town: 100+ designated streets", "feeApprox": "£695 total per single unit", "sourceUrl": "https://www.northyorks.gov.uk/housing-and-homelessness/selective-licensing/selective-licensing-scarborough-town-1-june-2024", "verified": "2026-07-10" }
+    ],
+    "notes": "Both schemes in former Scarborough borough. No additional HMO licensing anywhere in North Yorkshire."
+  },
+  {
+    "council": "Birmingham City Council",
+    "gss": "E08000025",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2023-06-05", "end": "2028-06-04", "coverage": "wards", "wards": ["Acocks Green", "Alum Rock", "Aston", "Balsall Heath West", "Birchfield", "Bordesley Green", "Bordesley and Highgate", "Bournbrook and Selly Park", "Edgbaston", "Gravelly Hill", "Handsworth", "Heartlands", "Holyhead", "Ladywood", "Lozells", "North Edgbaston", "Small Heath", "Soho and Jewellery Quarter", "South Yardley", "Sparkbrook and Balsall Heath East", "Sparkhill", "Stockland Green", "Tyseley and Hay Mills", "Ward End", "Yardley West and Stechford"], "areaDescription": "25 of 69 wards, ~40,000-50,000 properties, largest scheme in the UK", "feeApprox": "£700 per licence", "sourceUrl": "https://www.birmingham.gov.uk/info/20175/private_housing/2649/selective_licensing", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2023-06-05", "end": "2028-06-04", "coverage": "borough-wide", "areaDescription": "Citywide (all 69 wards): HMOs with 3-4 occupants forming 2+ households, plus s257 HMOs", "feeApprox": "£755 per licence", "sourceUrl": "https://www.birmingham.gov.uk/info/20175/private_housing/2648/additional_licensing_for_hmos", "verified": "2026-07-10" }
+    ],
+    "notes": ""
+  },
+  {
+    "council": "Coventry City Council",
+    "gss": "E08000026",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2025-05-04", "end": "2030-05-03", "coverage": "borough-wide", "areaDescription": "Citywide; HMOs with 3-4 occupiers regardless of storeys, plus certain s257 HMOs", "feeApprox": "£944 total standard new 5-year (Stage 1 £716 + Stage 2 £228)", "sourceUrl": "https://www.coventry.gov.uk/housing-enforcement/additional-licensing-scheme-2025", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective scheme. Previous citywide additional scheme 2020-2025 replaced seamlessly."
+  },
+  {
+    "council": "Walsall Metropolitan Borough Council",
+    "gss": "E08000030",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2022-09-01", "end": "2027-08-31", "coverage": "wards", "wards": ["Palfrey", "Paddock", "Pleck", "St Matthews"], "areaDescription": "Scheme One: HMOs of 3+ tenants from 2+ households in four central Walsall wards", "feeApprox": "£1,170 new application (£990 accredited)", "sourceUrl": "https://go.walsall.gov.uk/housing/information-landlords/houses-multiple-occupation-hmo/additional-hmo-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "IMPORTANT: 'Scheme Two' (Bentley & Darlaston North, Birchills Leamore, Blakenall, Darlaston South, Willenhall South) was designated but NEVER commenced; aggregators wrongly list it as active. Only Scheme One is in force. No selective scheme."
+  },
+  {
+    "council": "Sandwell Metropolitan Borough Council",
+    "gss": "E08000028",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2024-10-01", "end": "2029-09-30", "coverage": "borough-wide", "areaDescription": "Borough-wide; all HMOs with 3-4 occupants from 2+ households (and s257 HMOs), irrespective of storeys", "feeApprox": "£1,021 new (£655 + £366)", "sourceUrl": "https://www.sandwell.gov.uk/additionallicensing", "verified": "2026-07-10" }
+    ],
+    "notes": "Replaced the earlier West Bromwich-only additional scheme. No selective scheme."
+  },
+  {
+    "council": "Worcester City Council",
+    "gss": "E07000237",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2025-09-01", "end": "2030-08-31", "coverage": "borough-wide", "areaDescription": "Citywide (designated 21 May 2025 under s.56); HMOs of 3+ people from 2+ households not covered by mandatory, incl. s257 blocks", "feeApprox": "£1,181.41 total for 2-4 occupants (2026-27)", "sourceUrl": "https://www.worcester.gov.uk/housing/landlord-advice/house-in-multiple-occupancy-hmo", "verified": "2026-07-10" }
+    ],
+    "notes": "Replaced two earlier ward-based additional designations (2020 + 2023) that expired 31 Aug 2025. No selective scheme."
+  },
+  {
+    "council": "Warwick District Council",
+    "gss": "E07000222",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2024-01-18", "end": "2029-01-17", "coverage": "district", "areaDescription": "District-wide; houses, converted flats and purpose-built flats (incl. student accommodation) with 3+ persons in 2+ households", "feeApprox": "unverified on council page", "sourceUrl": "https://www.warwickdc.gov.uk/news/article/1137/additional_licensing_scheme_comes_into_force", "verified": "2026-07-10" }
+    ],
+    "notes": "End date derived from 5-year term; not stated on the page. No selective scheme."
+  },
+  {
+    "council": "East Staffordshire Borough Council",
+    "gss": "E07000193",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-09-12", "end": "2027-09-11", "coverage": "streets", "wards": ["Anglesey", "Burton", "Shobnall"], "areaDescription": "9 designated streets in Burton upon Trent: Blackpool St, Branston Rd, Broadway St, Goodman St, King St, Queen St, Shobnall St, Uxbridge St, Waterloo St", "feeApprox": "£544 new single property", "sourceUrl": "https://www.eaststaffsbc.gov.uk/housing-and-property/landlords/selective-licensing-scheme", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme."
+  },
+  {
+    "council": "Telford and Wrekin Council",
+    "gss": "E06000020",
+    "schemes": [
+      { "type": "additional", "status": "upcoming", "start": "2026-08-25", "end": "2031-08-24", "coverage": "borough-wide", "areaDescription": "Borough-wide; HMOs occupied by 3-4 people forming 2+ households. Applications already open, enforcement from 25 Aug 2026.", "feeApprox": "£1,522.42 standard (early-bird £1,370.18)", "sourceUrl": "https://www.telford.gov.uk/public-protection/licensing/houses-in-multiple-occupancy-hmos/", "verified": "2026-07-10" }
+    ],
+    "notes": "End date derived from 5-year term. No selective scheme (2017 proposal abandoned)."
+  },
+  {
+    "council": "Tamworth Borough Council",
+    "gss": "E07000199",
+    "schemes": [
+      { "type": "additional", "status": "proposed", "start": null, "end": null, "coverage": "borough-wide", "areaDescription": "Proposed borough-wide additional licensing for HMOs with 3-4 occupants. Public consultation 20 May-20 Aug 2026. No designation made yet.", "feeApprox": null, "sourceUrl": "https://www.tamworth.gov.uk/council-launches-consultation-new-licensing-smaller-hmos", "verified": "2026-07-10" }
+    ],
+    "notes": "Consultation stage only; may not proceed. No selective scheme."
+  },
+  {
+    "council": "Nottingham City Council",
+    "gss": "E06000018",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2023-12-01", "end": "2028-11-30", "coverage": "areas", "areaDescription": "Map-defined designated area (~30,000+ PRS homes), not whole city, not ward-listed. Check via council MyProperty tool.", "feeApprox": "£950 non-accredited (new fees from 1 April 2026)", "sourceUrl": "https://www.nottinghamcity.gov.uk/information-for-residents/housing/selective-licensing/", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2024-01-01", "end": "2028-12-31", "coverage": "borough-wide", "areaDescription": "Citywide; HMOs of 3+ unrelated people forming 2+ households not caught by mandatory (~2,300 HMOs)", "feeApprox": "£1,607 non-accredited total for up to 9 bedrooms", "sourceUrl": "https://www.nottinghamcity.gov.uk/information-for-residents/housing/houses-in-multiple-occupation-hmo/", "verified": "2026-07-10" }
+    ],
+    "notes": "Selective coverage is map-based. Dates from council sealed designation PDFs."
+  },
+  {
+    "council": "Mansfield District Council",
+    "gss": "E07000174",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2025-09-13", "end": "2030-09-10", "coverage": "wards", "wards": ["Central", "Bancroft", "West Bank", "Wainwright", "Market Warsop", "Eakring", "Rock Hill"], "areaDescription": "Parts of seven wards (check council designated-area map)", "feeApprox": "£800 (£500 application + £300 issuing)", "sourceUrl": "https://www.mansfield.gov.uk/selectivelicensing", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme."
+  },
+  {
+    "council": "Ashfield District Council",
+    "gss": "E07000170",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-07-25", "end": "2027-07-24", "coverage": "streets", "areaDescription": "Designated streets only: 9 streets in Stanton Hill and 16 streets in Sutton Central (New Cross), Sutton-in-Ashfield", "feeApprox": "£350 per property (£250 accredited)", "sourceUrl": "https://www.ashfield.gov.uk/selective-licensing-scheme-guide", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme. Street-level; check council street list."
+  },
+  {
+    "council": "Gedling Borough Council",
+    "gss": "E07000173",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-11-01", "end": "2027-10-31", "coverage": "areas", "wards": ["Carlton Hill", "Colwick", "Daybrook", "Newstead"], "areaDescription": "Phase 2: prescribed parts of Carlton Hill, Colwick, Daybrook and Newstead Village (council interactive map)", "feeApprox": "£840 non-accredited (£645 accredited)", "sourceUrl": "https://www.gedling.gov.uk/selective-licensing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2025-01-05", "end": "2030-01-04", "coverage": "wards", "wards": ["Netherfield"], "areaDescription": "Phase 1a: the whole of Netherfield ward (re-designation of 2018-2023 scheme)", "feeApprox": "£840 non-accredited (£645 accredited)", "sourceUrl": "https://www.gedling.gov.uk/selective-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme."
+  },
+  {
+    "council": "Leicester City Council",
+    "gss": "E06000016",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-10-10", "end": "2027-10-09", "coverage": "streets", "wards": ["Stoneygate", "Westcotes", "Fosse", "Braunstone Park & Rowley Fields", "Saffron"], "areaDescription": "Street-level designation within these wards (East/West/South clusters). Full road list in Annex A of designation notice.", "feeApprox": "£1,290 (£1,032 application + £258 on issue)", "sourceUrl": "https://www.leicester.gov.uk/your-community/housing/landlords/selective-licensing/", "verified": "2026-07-10" }
+    ],
+    "notes": "Street-level within named wards; scheme covers small HMOs too. No separate additional scheme. Match against road lists not ward boundaries."
+  },
+  {
+    "council": "Charnwood Borough Council",
+    "gss": "E07000130",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2023-04-01", "end": "2028-03-31", "coverage": "wards", "wards": ["Loughborough Hastings", "Loughborough Lemyngton"], "areaDescription": "Two Loughborough ward designations; single household, single person, or two unrelated people", "feeApprox": "£700 (£395 stage one + £305 stage two)", "sourceUrl": "https://www.charnwood.gov.uk/pages/selective_licensing", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2023-04-01", "end": "2028-03-31", "coverage": "district", "areaDescription": "Entire Borough of Charnwood; all HMOs of 3-4 unrelated persons irrespective of storeys, plus s257 HMOs", "feeApprox": "£700 (£395 + £305)", "sourceUrl": "https://www.charnwood.gov.uk/pages/property_licence_fees", "verified": "2026-07-10" }
+    ],
+    "notes": "Loughborough student authority: additional is borough-wide, selective is the two Loughborough wards."
+  },
+  {
+    "council": "Oadby and Wigston Borough Council",
+    "gss": "E07000135",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2025-11-10", "end": "2030-11-09", "coverage": "part", "wards": ["Wigston", "South Wigston"], "areaDescription": "Part of Wigston and South Wigston; private-rented houses only", "feeApprox": "£850 standard (£450 application + £400 subsistence); £750 accredited", "sourceUrl": "https://www.oadby-wigston.gov.uk/pages/selective_licensing_scheme", "verified": "2026-07-10" }
+    ],
+    "notes": "Replaced expired 2020-2025 South Wigston scheme after a ~6 month gap. No additional HMO scheme. End date derived from 5-year term."
+  },
+  {
+    "council": "West Northamptonshire Council",
+    "gss": "E06000062",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2025-02-24", "end": "2030-02-23", "coverage": "part", "areaDescription": "Parts of Northampton and Daventry (map + street list); the previous 2020-2025 additional scheme area plus extra areas", "feeApprox": "~£1,452 base (Part 1 £628 + Part 2 £824)", "sourceUrl": "https://www.westnorthants.gov.uk/private-housing-tenants-and-landlords/houses-multiple-occupation-hmos/types-hmo-licences", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective scheme. Renewed/expanded the 2020-2025 additional scheme. Check coverage on council map."
+  },
+  {
+    "council": "Peterborough City Council",
+    "gss": "E06000031",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2024-03-11", "end": "2029-03-10", "coverage": "wards", "wards": ["Bretton", "Central", "East", "Fletton and Stanground", "Fletton and Woodston", "North", "Orton Waterville", "Park", "Paston and Walton", "Stanground South"], "areaDescription": "Designated areas within 10 electoral wards (not whole wards; address checker)", "feeApprox": "£908 (£538 Part A + £370 Part B)", "sourceUrl": "https://www.peterborough.gov.uk/residents/housing/selective-licensing/selective-licensing-overview", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2026-01-26", "end": "2031-01-25", "coverage": "borough-wide", "areaDescription": "Citywide; all 3-4 person HMOs (~2,000 properties)", "feeApprox": "£1,100 (£588 Part A + £512 Part B)", "sourceUrl": "https://www.peterborough.gov.uk/residents/housing/houses-in-multiple-occupation/additional-hmo-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "Delivery partner Home Safe."
+  },
+  {
+    "council": "Thurrock Council",
+    "gss": "E06000034",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2026-01-05", "end": "2031-01-04", "coverage": "wards", "wards": ["Aveley and Uplands", "Belhus", "Chadwell St Mary", "Chafford and North Stifford", "Corringham and Fobbing", "East Tilbury", "Grays Riverside", "Grays Thurrock", "Little Thurrock Rectory", "Ockendon", "South Chafford", "Stanford East and Corringham Town", "Stanford-le-Hope West", "Tilbury Riverside and Thurrock Park", "Tilbury St Chads", "West Thurrock and South Stifford"], "areaDescription": "16 of 20 wards. Exempt: Little Thurrock Blackshots, Orsett, Stifford Clays, The Homesteads.", "feeApprox": "£1,034.90 (£236.98 Part A + £797.92 Part B)", "sourceUrl": "https://www.thurrock.gov.uk/houses-in-multiple-occupation/selective-licensing-scheme", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2025-09-07", "end": "2030-09-06", "coverage": "borough-wide", "areaDescription": "All wards; HMOs with 3-4 occupiers in 2+ households", "feeApprox": "£1,670 total (2-5 rooms)", "sourceUrl": "https://www.thurrock.gov.uk/houses-in-multiple-occupation/additional-licensing-for-hmos", "verified": "2026-07-10" }
+    ],
+    "notes": "Selective survived a judicial review (High Court refused permission, resumed March 2026)."
+  },
+  {
+    "council": "Luton Borough Council",
+    "gss": "E06000032",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2026-06-01", "end": "2029-02-04", "coverage": "streets", "areaDescription": "Town Centre and Park Town areas (designated roads in council PDF schedule)", "feeApprox": "early-bird £150 to 31 Aug 2026; standard fees TBC", "sourceUrl": "https://www.luton.gov.uk/housing/private-tenants-homeowners-landlords/landlords/selective-licensing", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2026-06-01", "end": "2029-02-04", "coverage": "borough-wide", "areaDescription": "Whole borough; HMOs occupied by 3-4 people forming 2+ households, plus certain self-contained flats", "feeApprox": "early-bird £150 to 31 Aug 2026; standard fees TBC", "sourceUrl": "https://www.luton.gov.uk/housing/private-tenants-homeowners-landlords/landlords/additional-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "Designated 2024, delayed by legal challenge (council won at Court of Appeal), operational 1 Jun 2026. Both cease 4 Feb 2029 (shortened by litigation)."
+  },
+  {
+    "council": "Bedford Borough Council",
+    "gss": "E06000055",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2023-05-21", "end": "2028-05-20", "coverage": "borough-wide", "areaDescription": "Whole borough; HMOs with 3-4 unrelated occupants, plus s257 converted flats", "feeApprox": "~£1,047 (base £805.90 + £80.25 per unit)", "sourceUrl": "https://www.bedford.gov.uk/housing/houses-multiple-occupation-hmo/hmo-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "Renewal of a previous scheme. No selective scheme."
+  },
+  {
+    "council": "Great Yarmouth Borough Council",
+    "gss": "E07000145",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2026-04-01", "end": "2031-03-31", "coverage": "wards", "wards": ["Nelson", "Central and Northgate", "Southtown and Cobholm", "Yarmouth North"], "areaDescription": "All of Nelson, Central & Northgate, Southtown & Cobholm wards plus 8 streets in Yarmouth North (~5,000 PRS homes)", "feeApprox": "£694 (£200 Part A + £494 Part B)", "sourceUrl": "https://www.great-yarmouth.gov.uk/article/11085/Selective-Licensing-Scheme", "verified": "2026-07-10" }
+    ],
+    "notes": "council pages 403'd; secondary sources (Eastern Landlords, NRLA) cited. Delivery via Home Safe. Replaces expired 2019-2024 Nelson ward scheme. Proposed borough-wide additional scheme consulted but not designated."
+  },
+  {
+    "council": "Southend-on-Sea City Council",
+    "gss": "E06000033",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2021-12-01", "end": "2026-11-30", "coverage": "wards", "wards": ["Milton", "Kursaal", "Victoria", "Chalkwell"], "areaDescription": "Eight designated neighbourhoods across four wards. Expires 30 Nov 2026.", "feeApprox": "£830 (£208 Part A + £622 Part B)", "sourceUrl": "https://www.southend.gov.uk/private-housing/selective-licensing-scheme", "verified": "2026-07-10" }
+    ],
+    "notes": "Review/renewal consultation (incl. possible additional HMO scheme) concluded, no new designation announced yet. Expires soon."
+  },
+  {
+    "council": "Basildon Borough Council",
+    "gss": "E07000066",
+    "schemes": [
+      { "type": "selective", "status": "proposed", "start": null, "end": null, "coverage": "district", "areaDescription": "Feasibility stage: Cabinet approved further work toward a selective scheme (Sept 2025). No areas, dates or fees yet.", "feeApprox": null, "sourceUrl": "https://www.basildon.gov.uk/article/10898/In-the-News-Council-Cabinet-approves-next-steps-toward-a-Selective-Licensing-Scheme-in-Basildon", "verified": "2026-07-10" }
+    ],
+    "notes": "Pre-consultation. Mandatory HMO licensing only in force."
+  },
+  {
+    "council": "Brighton and Hove City Council",
+    "gss": "E06000043",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2024-09-02", "end": "2029-09-01", "coverage": "wards", "wards": ["Kemptown", "Moulsecoomb & Bevendean", "Queens Park", "Whitehawk & Marina"], "areaDescription": "Four east-Brighton wards; also catches single-storey properties with 3-4 unrelated occupiers", "feeApprox": "£740 standard", "sourceUrl": "https://www.brighton-hove.gov.uk/housing/private-housing/private-landlords/selective-licensing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "upcoming", "start": "2026-10-20", "end": "2031-10-19", "coverage": "wards", "wards": ["Central Hove", "Regency"], "areaDescription": "Expansion designation made 6 July 2026, in force 20 October 2026", "feeApprox": "£740", "sourceUrl": "https://www.brighton-hove.gov.uk/housing/private-housing/private-landlords/selective-licensing", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2024-07-01", "end": "2029-06-30", "coverage": "district", "areaDescription": "City-wide; HMOs of 2+ storeys with 3 or 4 occupiers (~2,200 properties)", "feeApprox": "£883-£1,127", "sourceUrl": "https://www.brighton-hove.gov.uk/news/2024/city-wide-hmo-additional-licensing-scheme-live", "verified": "2026-07-10" }
+    ],
+    "notes": "End dates for additional + expansion selective derived from 5-year term."
+  },
+  {
+    "council": "Portsmouth City Council",
+    "gss": "E06000044",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2023-09-01", "end": "2028-08-31", "coverage": "district", "areaDescription": "Citywide; all HMOs with 3-4 occupants forming 2+ households, incl. s257/flat-in-block HMOs", "feeApprox": "£886 (5yr) new application", "sourceUrl": "https://www.portsmouth.gov.uk/services/housing/landlords/houses-in-multiple-occupation/additional-hmo-licence/", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective scheme. End date is the 5-year term."
+  },
+  {
+    "council": "Southampton City Council",
+    "gss": "E06000045",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2025-10-01", "end": "2030-09-30", "coverage": "wards", "wards": ["Banister and Polygon", "Bargate", "Bassett", "Bevois", "Freemantle", "Millbrook", "Portswood", "Shirley", "Swaythling"], "areaDescription": "Smaller HMOs (fewer than 5 occupants) and HMOs in purpose-built blocks in 9 designated wards", "feeApprox": "~£953 standard (reported figure)", "sourceUrl": "https://www.southampton.gov.uk/housing/landlords/houses-in-multiple-occupation-hmo/licences/", "verified": "2026-07-10" }
+    ],
+    "notes": "Ward-based (9 wards), NOT citywide. No selective scheme."
+  },
+  {
+    "council": "Arun District Council",
+    "gss": "E07000224",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2025-02-01", "end": "2030-01-31", "coverage": "wards", "wards": ["River", "Hotham", "Marine"], "areaDescription": "HMOs of 3+ persons in 2+ households: River ward (Littlehampton), Hotham and Marine wards (Bognor Regis)", "feeApprox": "~£2,017 total (3-4 person house HMO, reported figure)", "sourceUrl": "https://www.arun.gov.uk/additional-hmo-licensing-scheme-designation-2024/", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective scheme."
+  },
+  {
+    "council": "Woking Borough Council",
+    "gss": "E07000217",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2026-01-05", "end": "2031-01-04", "coverage": "borough-wide", "areaDescription": "Borough-wide: all small HMOs with 3 or 4 tenants from 2+ households", "feeApprox": null, "sourceUrl": "https://www.woking.gov.uk/housing/private-rented-housing/additional-hmo-licensing-scheme", "verified": "2026-07-10" }
+    ],
+    "notes": "No selective scheme. End date derived from 5-year term."
+  },
+  {
+    "council": "Oxford City Council",
+    "gss": "E07000178",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-09-01", "end": "2027-08-31", "coverage": "district", "areaDescription": "Citywide selective licensing of all privately rented single-household dwellings not covered by HMO licensing (14,500+ licensed)", "feeApprox": "£853 standard new (2026/27)", "sourceUrl": "https://www.oxford.gov.uk/selective-licensing/selective-licensing-fees-charges", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2026-06-25", "end": "2031-06-24", "coverage": "district", "areaDescription": "Citywide additional licensing for HMOs with 3-4 tenants and s257 HMOs. New designation, in force 25 Jun 2026.", "feeApprox": "£858 standard new (from 1 Apr 2026)", "sourceUrl": "https://www.oxford.gov.uk/houses-multiple-occupation-hmos/additional-licensing-scheme", "verified": "2026-07-10" }
+    ],
+    "notes": "Oxford is effectively 100% licensed for private rentals: citywide selective + citywide additional + mandatory."
+  },
+  {
+    "council": "Reading Borough Council",
+    "gss": "E06000038",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2026-03-01", "end": "2031-02-28", "coverage": "district", "areaDescription": "Borough-wide; HMOs with 3-4 occupants forming 2+ households. Delivery via Home Safe.", "feeApprox": "£1,500 (£750 Part A + £750 Part B)", "sourceUrl": "https://www.reading.gov.uk/housing/private-renting/extension-of-property-licensing/", "verified": "2026-07-10" }
+    ],
+    "notes": "End date derived. Selective licensing PROPOSED (Battle ward first, then Park/Redlands) but not yet designated."
+  },
+  {
+    "council": "Medway Council",
+    "gss": "E06000035",
+    "schemes": [
+      { "type": "selective", "status": "proposed", "start": null, "end": null, "coverage": "wards", "wards": ["Chatham Central & Brompton", "Fort Pitt", "Gillingham North", "Gillingham South", "Luton", "Strood North & Frindsbury", "Watling"], "areaDescription": "PROPOSED: consultation 23 Mar-4 Jun 2026, final proposals to Cabinet summer 2026. Not designated.", "feeApprox": null, "sourceUrl": "https://www.medway.gov.uk/info/200134/housing/2091/private_rented_sector_licensing_consultation", "verified": "2026-07-10" },
+      { "type": "additional", "status": "proposed", "start": null, "end": null, "coverage": "wards", "wards": ["Chatham Central & Brompton", "Fort Pitt", "Gillingham North", "Gillingham South", "Luton", "Watling"], "areaDescription": "PROPOSED: small HMOs (3-4 occupiers) in 6 wards. Not designated.", "feeApprox": null, "sourceUrl": "https://www.medway.gov.uk/info/200134/housing/2091/private_rented_sector_licensing_consultation", "verified": "2026-07-10" }
+    ],
+    "notes": "Neither scheme in force yet; currently mandatory HMO licensing only."
+  },
+  {
+    "council": "Thanet District Council",
+    "gss": "E07000114",
+    "schemes": [
+      { "type": "selective", "status": "proposed", "start": null, "end": null, "coverage": "wards", "wards": ["Central Harbour", "Cliftonville West", "Eastcliff", "Margate Central", "Newington", "Salmestone", "Sir Moses Montefiore", "Westbrook"], "areaDescription": "PROPOSED new 5-year scheme: 8 wards in Margate and Ramsgate (~12,625 homes). Consultation early 2026, go-live early 2027. Unverified against council source.", "feeApprox": "~£800", "sourceUrl": "https://www.thanet.gov.uk/info-pages/selective-licensing-information/", "verified": "2026-07-10" }
+    ],
+    "notes": "Previous 2016-2021 Margate scheme expired. New scheme in pipeline (cabinet papers Aug 2025), not yet in force."
+  },
+  {
+    "council": "Hastings Borough Council",
+    "gss": "E07000062",
+    "schemes": [
+      { "type": "selective", "status": "proposed", "start": null, "end": null, "coverage": "wards", "wards": ["Braybrooke", "Castle", "Central St Leonards", "Gensing", "Old Hastings", "Tressell"], "areaDescription": "PROPOSED new selective scheme covering 6 wards. Still described as 'Proposed', no in-force date or fee.", "feeApprox": null, "sourceUrl": "https://www.hastings.gov.uk/housing/landlord/licensing/new-selective-scheme/summary/", "verified": "2026-07-10" }
+    ],
+    "notes": "Previous selective (expired 2020) and additional (expired 2023) schemes. New scheme proposed, not yet in force."
+  },
+  {
+    "council": "Slough Borough Council",
+    "gss": "E06000039",
+    "schemes": [
+      { "type": "selective", "status": "expired", "start": "2019-07-01", "end": "2024-06-30", "coverage": "wards", "wards": ["Chalvey", "Central"], "areaDescription": "Selective licensing in most of Chalvey and Central wards. Ceased 30 Jun 2024.", "feeApprox": null, "sourceUrl": "https://www.slough.gov.uk/licences-permits/property-licensing-1/2", "verified": "2026-07-10" },
+      { "type": "additional", "status": "expired", "start": "2019-07-01", "end": "2024-06-30", "coverage": "district", "areaDescription": "Borough-wide additional licensing of all privately rented HMOs not covered by mandatory. Ceased 30 Jun 2024.", "feeApprox": null, "sourceUrl": "https://www.slough.gov.uk/licences-permits/property-licensing-1/2", "verified": "2026-07-10" }
+    ],
+    "notes": "Both expired 30 Jun 2024. Reintroduction live: council consulting on reviving both scheme types. No new designation yet."
+  },
+  {
+    "council": "Bristol City Council",
+    "gss": "E06000023",
+    "schemes": [
+      { "type": "additional", "status": "active", "start": "2024-08-06", "end": "2029-08-05", "coverage": "district", "areaDescription": "Citywide additional HMO licensing: all HMOs with 3-4 occupants forming 2+ households, all wards", "feeApprox": "£1,861 new (£1,023 + £838)", "sourceUrl": "https://www.bristol.gov.uk/business/licences-and-permits/property-licences/types-of-licence", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2022-04-06", "end": "2027-04-05", "coverage": "wards", "wards": ["Bedminster", "Brislington West", "Horfield"], "areaDescription": "Ward-based additional HMO licensing for 3-4 person HMOs", "feeApprox": "£1,300 (£1,000 + £300)", "sourceUrl": "https://www.bristol.gov.uk/business/licences-and-permits/property-licences/types-of-licence", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2024-08-06", "end": "2029-08-05", "coverage": "wards", "wards": ["Bishopston and Ashley Down", "Cotham", "Easton"], "areaDescription": "Selective licensing of non-HMO privately rented properties in these three wards", "feeApprox": "£912 (£467 + £445)", "sourceUrl": "https://www.bristol.gov.uk/business/licences-and-permits/property-licences/types-of-licence", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2022-04-06", "end": "2027-04-05", "coverage": "wards", "wards": ["Bedminster", "Brislington West"], "areaDescription": "Selective licensing of non-HMO privately rented properties", "feeApprox": "£799 (£499 + £300)", "sourceUrl": "https://www.bristol.gov.uk/business/licences-and-permits/property-licences/types-of-licence", "verified": "2026-07-10" }
+    ],
+    "notes": "Layered ward + citywide schemes. 2022 ward-scheme end dates derived from 5-year term."
+  },
+  {
+    "council": "Gloucester City Council",
+    "gss": "E07000081",
+    "schemes": [
+      { "type": "additional", "status": "proposed", "start": null, "end": null, "coverage": "district", "areaDescription": "PROPOSED citywide additional licensing for all HMOs (incl. s257). Consultation ran to 11 May 2026, possible introduction 2026. Not yet approved.", "feeApprox": null, "sourceUrl": "https://www.gloucester.gov.uk/news/2026-news/council-launches-consultation-to-crack-down-on-rogue-landlords/", "verified": "2026-07-10" }
+    ],
+    "notes": "Consultation stage only. Mandatory HMO licensing only currently."
+  },
+  {
+    "council": "County Durham",
+    "gss": "E06000047",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2022-04-01", "end": "2027-03-31", "coverage": "areas", "wards": ["Ferryhill", "Chilton", "Horden", "Shildon"], "areaDescription": "One of England's largest selective schemes: 103 designated areas across 36 wards (NOT whole-district). Example areas: Ferryhill Station & Chilton Lane, Ferryhill Dean Bank North, Horden Central, Shildon East. Check exact address via council postcode checker.", "feeApprox": "£585 (Part A £200 + Part B £385)", "sourceUrl": "https://www.durham.gov.uk/selectivelicensing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "proposed", "start": "2027-04-01", "end": null, "coverage": "areas", "areaDescription": "Proposed replacement scheme from April 2027 (~20,000 properties, ~27% of the county). Consultation closes 12 Aug 2026. Not yet designated.", "feeApprox": null, "sourceUrl": "https://www.durham.gov.uk/selectivelicensing", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme. Wards array is example wards only, not the full 36; use council postcode checker for exact coverage."
+  },
+  {
+    "council": "Northumberland",
+    "gss": "E06000057",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2024-10-14", "end": "2029-10-13", "coverage": "areas", "wards": ["Croft"], "areaDescription": "Croft Ward area of Blyth (bounded by Hodgsons Road, Waterloo Road/Bridge Street, Regent Street, Renwick Road). The only selective area in Northumberland.", "feeApprox": "£650 (£495 accredited)", "sourceUrl": "https://www.northumberland.gov.uk/housing/private-landlords-and-tenants", "verified": "2026-07-10" }
+    ],
+    "notes": "No additional HMO scheme. Fee is high-confidence-secondary (council fee PDF 404'd)."
+  },
+  {
+    "council": "Newcastle upon Tyne City Council",
+    "gss": "E08000021",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2021-10-01", "end": "2026-09-30", "coverage": "areas", "wards": ["Byker", "Elswick", "Benwell & Scotswood"], "areaDescription": "Byker Old Town (~533 properties) and Greater High Cross / Benwell (~325 properties). Original designation, expires 30 Sep 2026.", "feeApprox": "£1,000", "sourceUrl": "https://new.newcastle.gov.uk/property-licensing-schemes-newcastle/selective-licensing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2025-04-05", "end": "2030-04-05", "coverage": "areas", "wards": ["Arthur's Hill", "Benwell & Scotswood", "Blakelaw", "Elswick", "Kenton", "Lemington", "West Fenham", "Wingrove"], "areaDescription": "Six-area scheme launched 5 April 2025 (partial ward coverage): Cowgate, West End Terraces, parts of Benwell, Lemington, Denton Court, Columbia Grange.", "feeApprox": "£900", "sourceUrl": "https://new.newcastle.gov.uk/property-licensing-schemes-newcastle/selective-licensing", "verified": "2026-07-10" },
+      { "type": "selective", "status": "upcoming", "start": "2026-10-01", "end": "2031-09-29", "coverage": "areas", "wards": ["Byker", "Elswick", "Benwell & Scotswood"], "areaDescription": "Byker Old Town, Allendale Road and Greater High Cross renewal scheme. Designated 24 Feb 2026, in force 1 Oct 2026 (replaces expiring 2021-2026 scheme).", "feeApprox": "£1,000", "sourceUrl": "https://new.newcastle.gov.uk/property-licensing-schemes-newcastle/selective-licensing", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2025-04-05", "end": "2030-04-05", "coverage": "borough-wide", "areaDescription": "City-wide additional HMO licensing (smaller HMOs occupied by 3+ people in 2+ households). Replaced the previous 2020 designation.", "feeApprox": "£1,000-£1,100", "sourceUrl": "https://new.newcastle.gov.uk/property-licensing-schemes-newcastle/additional-licensing", "verified": "2026-07-10" }
+    ],
+    "notes": "Older Byker/High Cross selective schemes are partial-ward; check street boundaries on council maps."
+  },
+  {
+    "council": "Gateshead Metropolitan Borough Council",
+    "gss": "E08000037",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2025-06-01", "end": "2030-05-30", "coverage": "wards", "wards": ["Birtley", "Bridges", "Chopwell and Rowlands Gill", "Crawcrook and Greenside", "High Fell", "Lobley Hill and Bensham", "Saltwell"], "areaDescription": "Selective Phase 1 (parts of listed wards). Part of a 16-neighbourhood programme approved Cabinet 18 Feb 2025.", "feeApprox": "£850", "sourceUrl": "https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-gateshead/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2025-10-01", "end": "2030-09-30", "coverage": "wards", "wards": ["Bridges", "Deckham", "Dunston Hill and Whickham East", "Dunston and Teams", "Felling", "Lobley Hill and Bensham", "Saltwell", "Whickham North"], "areaDescription": "Selective Phase 2 (parts of listed wards).", "feeApprox": "£850", "sourceUrl": "https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-gateshead/", "verified": "2026-07-10" },
+      { "type": "additional", "status": "active", "start": "2025-06-01", "end": "2030-05-31", "coverage": "wards", "wards": ["Birtley", "Bridges", "Chopwell and Rowlands Gill", "Crawcrook and Greenside", "Deckham", "Dunston Hill and Whickham East", "Dunston and Teams", "Felling", "High Fell", "Lobley Hill and Bensham", "Saltwell", "Whickham North"], "areaDescription": "Additional HMO licensing for small HMOs (3-4 unrelated sharers) across parts of listed wards.", "feeApprox": "£976.30", "sourceUrl": "https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-gateshead/", "verified": "2026-07-10" }
+    ],
+    "notes": "gateshead.gov.uk 403'd; Kamma + NRLA cited. Coverage is parts of named wards, not whole wards. Re-verify ward-to-phase + fees on council postcode checker."
+  },
+  {
+    "council": "South Tyneside Metropolitan Borough Council",
+    "gss": "E08000023",
+    "schemes": [
+      { "type": "selective", "status": "expired", "start": "2021-04-01", "end": "2026-03-31", "coverage": "areas", "wards": ["Beacon and Bents"], "areaDescription": "Two zones in South Shields: Beach Road area and the 'Long Streets' area (~3,000 PRS properties). Launched 1 Apr 2021, expired 31 Mar 2026.", "feeApprox": "£550", "sourceUrl": "https://www.licencecheckerengland.co.uk/councils/south-tyneside", "verified": "2026-07-10" }
+    ],
+    "notes": "southtyneside.gov.uk 403'd. Scheme EXPIRED 31 Mar 2026, no announced renewal; a property there likely does not currently require a selective licence. Verify with council. No additional scheme."
+  },
+  {
+    "council": "Middlesbrough",
+    "gss": "E06000002",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2023-07-03", "end": "2028-07-02", "coverage": "wards", "wards": ["Newport"], "areaDescription": "Newport selective scheme ('Newport 2'), part of Newport ward (TS1/TS5). Street boundary via council checker.", "feeApprox": "£500-£750 (unverified)", "sourceUrl": "https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-middlesbrough/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "active", "start": "2024-07-23", "end": "2029-07-22", "coverage": "wards", "wards": ["Newport"], "areaDescription": "Newport selective scheme ('Newport 1 / Phase 2'), a further part of Newport ward.", "feeApprox": "£500-£750 (unverified)", "sourceUrl": "https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-middlesbrough/", "verified": "2026-07-10" },
+      { "type": "selective", "status": "expired", "start": null, "end": "2026-06-13", "coverage": "wards", "wards": ["North Ormesby"], "areaDescription": "North Ormesby selective scheme (TS3). All licences ceased 13 June 2026.", "feeApprox": null, "sourceUrl": "https://www.middlesbrough.gov.uk/housing/landlords/selective-landlord-licensing-scheme/", "verified": "2026-07-10" }
+    ],
+    "notes": "middlesbrough.gov.uk 403'd; Kamma + council search snippet cited. No additional HMO scheme. Two active Newport selective schemes; North Ormesby recently expired."
+  },
+  {
+    "council": "Stockton-on-Tees Borough Council",
+    "gss": "E06000004",
+    "schemes": [
+      { "type": "selective", "status": "active", "start": "2024-11-01", "end": "2029-10-31", "coverage": "wards", "wards": ["Mandale & Victoria", "Newtown", "Ropner", "Stockton Town Centre"], "areaDescription": "Borough selective scheme approved Cabinet 16 May 2024, in force 1 Nov 2024, covering these four wards.", "feeApprox": "£653 (£50 accredited discount)", "sourceUrl": "https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-stockton-on-tees/", "verified": "2026-07-10" }
+    ],
+    "notes": "stockton.gov.uk 403'd; Kamma + council search snippet cited. No additional HMO scheme."
+  },
+  {
+    "council": "Hartlepool",
+    "gss": "E06000001",
+    "schemes": [
+      { "type": "selective", "status": "unverified", "start": "2026-02-15", "end": "2031-02-14", "coverage": "areas", "areaDescription": "New Hartlepool selective scheme reported to run 15 Feb 2026 to 14 Feb 2031 (fee £975), succeeding the 2020-2025 scheme. Dates/fee/wards from search snippets only, NOT confirmed on a fetched council page. Historic areas centred on central Hartlepool (Burbank/Stranton).", "feeApprox": "£975 (unverified)", "sourceUrl": "https://www.legislate.tech/learn/do-i-need-an-hmo-licence-in-hartlepool-borough", "verified": "2026-07-10" }
+    ],
+    "notes": "hartlepool.gov.uk 403/404'd. New 2026-2031 scheme provisional; re-verify on council site before relying. No additional HMO scheme."
+  },
+  {
+    "council": "Redcar and Cleveland",
+    "gss": "E06000003",
+    "schemes": [
+      { "type": "selective", "status": "unverified", "start": "2019-03-25", "end": "2024-03-24", "coverage": "streets", "wards": ["South Bank"], "areaDescription": "Selective Licensing (South Bank) 2019 Scheme, covering older PRS housing in South Bank (TS6). Original designation had effect until 24 Mar 2024; council still runs a live application portal so a renewal may be in force, but this could NOT be confirmed on a fetched official page. A new East Cleveland scheme (Brotton/Eston/Normanby) has been discussed but is proposed only.", "feeApprox": "£500 (£250 application + £250 issue)", "sourceUrl": "https://www.legislate.tech/learn/do-i-need-an-hmo-licence-in-redcar-and-cleveland", "verified": "2026-07-10" }
+    ],
+    "notes": "redcar-cleveland.gov.uk 403'd. South Bank scheme's current status genuinely uncertain (original end Mar 2024 vs live portal); marked unverified, confirm on council site. No additional HMO scheme."
+  }
+]

@@ -1,32 +1,26 @@
 # PRSCheck
 
-> SaaS platform for UK local authority housing enforcement teams. Helps councils manage Private Rented Sector (PRS) inspections, complaints, and statutory notices end to end.
+> Check whether a UK rental property needs a landlord licence. PRSCheck tells landlords, tenants and buyers if a property requires selective, additional or mandatory HMO licensing, based on published council designations and national legislation.
 
-PRSCheck digitises the workflow that council housing officers run when enforcing the PRS — from initial complaint intake through HHSRS inspection, statutory notice issuance (Improvement, Prohibition, Hazard Awareness), and prosecution-ready evidence packs. Built for UK councils, aligned to the Housing Act 2004 and the upcoming Renters' Rights Act.
+PRSCheck maps every selective and additional (HMO) licensing scheme in England to the councils and areas they cover, layered on the England-wide mandatory HMO rules and the national registration regimes in Wales and Scotland. Enter a postcode for a free scheme check; a £9.99 report gives the property-specific verdict, scheme dates and fees, penalty exposure, and an action plan. PRSCheck also offers a separate enforcement platform for local authority housing teams.
+
+## Key facts (current July 2026)
+- Mandatory HMO licence (England): required for any property let to 5+ people forming 2+ households sharing facilities. No storey test since October 2018.
+- Additional HMO licensing: discretionary council scheme covering smaller HMOs (typically 3-4 sharers) where designated.
+- Selective licensing: discretionary council scheme covering ordinary private rented homes (not just HMOs) within a designated area, often street-level.
+- Around 80 of 296 English councils currently run a selective or additional scheme; more are launching under the Renters' Rights Act 2025.
+- Penalties for operating unlicensed: civil penalty up to £40,000 per offence (raised from £30,000 on 1 May 2026), rent repayment order up to 24 months' rent, unlimited fine on prosecution, banning orders.
+- Wales: Rent Smart Wales national registration + licensing. Scotland: council landlord registration (renew every 3 years) + HMO licensing for 3+ unrelated occupants.
 
 ## Core pages
-- [Homepage](https://prscheck.co.uk/): https://prscheck.co.uk/
-- [Platform overview](https://prscheck.co.uk/platform): how the workflow works
-- [Solutions](https://prscheck.co.uk/solutions): per use-case landing pages
-- [Pricing](https://prscheck.co.uk/pricing): council pricing tiers
-- [Demo](https://prscheck.co.uk/demo): book a walkthrough
-- [ROI calculator](https://prscheck.co.uk/): inline tool to estimate council saving
-- [API docs](https://prscheck.co.uk/api-docs)
-- [Resources](https://prscheck.co.uk/resources): legislation guides, case studies
-- [Council blog](https://prscheck.co.uk/blog): policy news + enforcement insights
-
-## What we publish
-- Council enforcement workflow playbooks
-- HHSRS inspection digital checklists
-- Statutory notice templates aligned to Housing Act 2004
-- Renters' Rights Act impact analysis
-- Case studies and ROI benchmarks
+- [Check my property](https://prscheck.co.uk/check): free postcode licence check + £9.99 report
+- [Licensing by council](https://prscheck.co.uk/councils): every English council's schemes, dates and fees
+- [Guides](https://prscheck.co.uk/guides): landlord licensing, selective licensing, HMO licensing, Renters' Rights Act, penalties
+- [Homepage](https://prscheck.co.uk/)
+- [For councils / platform](https://prscheck.co.uk/platform): PRS enforcement tools for local authorities
 
 ## Canonical
 https://prscheck.co.uk
 
 ## Audience
-UK local authority housing, environmental health, and enforcement officers. Not a tenant-facing service — for that see RenterCheck.
-
-## Not in scope
-We do not represent tenants in disputes. We are the council-side enforcement platform.
+UK landlords, letting agents, tenants and property buyers checking licensing requirements; plus local authority housing enforcement teams.

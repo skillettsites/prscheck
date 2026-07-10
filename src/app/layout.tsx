@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 import { DemoPopup } from "@/components/DemoPopup";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,37 +15,37 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://prscheck.co.uk"),
   title: {
-    default: "PRSCheck | PRS Enforcement Platform for Local Authorities",
+    default: "PRSCheck | Do I Need a Landlord Licence? Check Your Postcode",
     template: "%s | PRSCheck",
   },
   description:
-    "Automated compliance screening, HMO detection, and enforcement tools for council housing teams. Built for the PRS Database and Renters' Rights Act 2025.",
+    "Check whether your rental property needs a selective, additional or HMO licence. Free postcode check, £9.99 property report. Avoid penalties up to £40,000.",
   keywords: [
-    "PRS enforcement",
-    "PRS Database",
-    "council housing",
-    "HMO detection",
-    "local authority",
-    "compliance screening",
-    "Renters Rights Act",
+    "landlord licence check",
+    "do I need a landlord licence",
+    "selective licensing",
+    "additional licensing",
+    "HMO licence",
+    "property licensing by postcode",
+    "landlord licensing UK",
+    "Renters Rights Act 2025",
+    "unlicensed property penalty",
     "private rented sector",
-    "civil penalties",
-    "housing enforcement",
   ],
   openGraph: {
     type: "website",
     locale: "en_GB",
     url: "https://prscheck.co.uk",
     siteName: "PRSCheck",
-    title: "PRSCheck | PRS Enforcement Platform for Local Authorities",
+    title: "PRSCheck | Do I Need a Landlord Licence?",
     description:
-      "Automated compliance screening, HMO detection, and enforcement tools for council housing teams. Built for the PRS Database.",
+      "Check whether your rental property needs a licence. Free postcode check, £9.99 property report. Avoid penalties up to £40,000.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PRSCheck | PRS Enforcement Platform for Local Authorities",
+    title: "PRSCheck | Do I Need a Landlord Licence?",
     description:
-      "Automated compliance screening, HMO detection, and enforcement tools for council housing teams.",
+      "Check whether your rental property needs a licence. Free postcode check, £9.99 property report.",
   },
   verification: {
     other: {
@@ -77,6 +78,7 @@ export default function RootLayout({
         <Footer />
         <DemoPopup />
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );

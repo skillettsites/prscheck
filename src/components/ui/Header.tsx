@@ -2,15 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { openDemoPopup } from "@/components/DemoPopup";
 
 const navItems = [
-  { label: "Solutions", href: "/solutions" },
-  { label: "Platform", href: "/platform" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Resources", href: "/#data-sources" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Check my property", href: "/check" },
+  { label: "Councils", href: "/councils" },
+  { label: "Guides", href: "/guides" },
+  { label: "For councils", href: "/platform" },
 ];
 
 export default function Header() {
@@ -62,12 +59,12 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <button
-              onClick={() => openDemoPopup()}
-              className="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25 cursor-pointer"
+            <Link
+              href="/check"
+              className="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25"
             >
-              Book a Demo
-            </button>
+              Check my property
+            </Link>
           </nav>
 
           {/* Mobile toggle */}
@@ -103,12 +100,13 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <button
-              onClick={() => { setMobileOpen(false); openDemoPopup(); }}
-              className="mt-2 block w-full rounded-lg bg-accent-600 px-3 py-2.5 text-center text-sm font-semibold text-white transition-all hover:bg-accent-500 cursor-pointer"
+            <Link
+              href="/check"
+              onClick={() => setMobileOpen(false)}
+              className="mt-2 block w-full rounded-lg bg-accent-600 px-3 py-2.5 text-center text-sm font-semibold text-white transition-all hover:bg-accent-500"
             >
-              Book a Demo
-            </button>
+              Check my property
+            </Link>
           </div>
         </div>
       )}

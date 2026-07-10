@@ -3,13 +3,18 @@ module.exports = {
   siteUrl: 'https://prscheck.co.uk',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
-  exclude: ['/api/*', '/opengraph-image'],
+  exclude: ['/api/*', '/opengraph-image', '/r/*', '/checkout/*'],
 
   transform: async (config, path) => {
     let priority = 0.7;
     let changefreq = 'weekly';
 
+    if (path.startsWith('/r/') || path.startsWith('/checkout')) return null;
     if (path === '/') { priority = 1.0; changefreq = 'daily'; }
+    else if (path === '/check') { priority = 0.95; changefreq = 'weekly'; }
+    else if (path === '/councils' || path === '/guides') { priority = 0.9; changefreq = 'weekly'; }
+    else if (path.startsWith('/councils/')) { priority = 0.75; changefreq = 'weekly'; }
+    else if (path.startsWith('/guides/')) { priority = 0.8; changefreq = 'monthly'; }
     else if (['/pricing', '/demo', '/solutions', '/contact'].includes(path)) { priority = 0.9; }
     else if (path === '/platform') { priority = 0.9; }
     else if (path.startsWith('/platform/')) { priority = 0.8; }
@@ -24,6 +29,10 @@ module.exports = {
   additionalPaths: async (config) => {
     const now = new Date().toISOString();
     const paths = [];
+
+    // /check reads searchParams so it renders dynamically and next-sitemap
+    // does not auto-discover it. It is the primary conversion page, so add it.
+    paths.push({ loc: '/check', lastmod: now, changefreq: 'weekly', priority: 0.95 });
 
     // Platform pages
     const platformPages = [

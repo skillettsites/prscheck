@@ -1,0 +1,2168 @@
+[
+ {
+  "gss": "S12000033",
+  "name": "Aberdeen City",
+  "slug": "aberdeen-city",
+  "nation": "scotland"
+ },
+ {
+  "gss": "S12000034",
+  "name": "Aberdeenshire",
+  "slug": "aberdeenshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000223",
+  "name": "Adur",
+  "slug": "adur",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000032",
+  "name": "Amber Valley",
+  "slug": "amber-valley",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000041",
+  "name": "Angus",
+  "slug": "angus",
+  "nation": "scotland"
+ },
+ {
+  "gss": "N09000001",
+  "name": "Antrim and Newtownabbey",
+  "slug": "antrim-and-newtownabbey",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "N09000011",
+  "name": "Ards and North Down",
+  "slug": "ards-and-north-down",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "S12000035",
+  "name": "Argyll and Bute",
+  "slug": "argyll-and-bute",
+  "nation": "scotland"
+ },
+ {
+  "gss": "N09000002",
+  "name": "Armagh City, Banbridge and Craigavon",
+  "slug": "armagh-city-banbridge-and-craigavon",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "E07000224",
+  "name": "Arun",
+  "slug": "arun",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000170",
+  "name": "Ashfield",
+  "slug": "ashfield",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000105",
+  "name": "Ashford",
+  "slug": "ashford",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000200",
+  "name": "Babergh",
+  "slug": "babergh",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000002",
+  "name": "Barking and Dagenham",
+  "slug": "barking-and-dagenham",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000003",
+  "name": "Barnet",
+  "slug": "barnet",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000016",
+  "name": "Barnsley",
+  "slug": "barnsley",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000066",
+  "name": "Basildon",
+  "slug": "basildon",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000084",
+  "name": "Basingstoke and Deane",
+  "slug": "basingstoke-and-deane",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000171",
+  "name": "Bassetlaw",
+  "slug": "bassetlaw",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000022",
+  "name": "Bath and North East Somerset",
+  "slug": "bath-and-north-east-somerset",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000055",
+  "name": "Bedford",
+  "slug": "bedford",
+  "nation": "england"
+ },
+ {
+  "gss": "N09000003",
+  "name": "Belfast",
+  "slug": "belfast",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "E09000004",
+  "name": "Bexley",
+  "slug": "bexley",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000025",
+  "name": "Birmingham",
+  "slug": "birmingham",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000129",
+  "name": "Blaby",
+  "slug": "blaby",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000008",
+  "name": "Blackburn with Darwen",
+  "slug": "blackburn-with-darwen",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000009",
+  "name": "Blackpool",
+  "slug": "blackpool",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000019",
+  "name": "Blaenau Gwent",
+  "slug": "blaenau-gwent",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000033",
+  "name": "Bolsover",
+  "slug": "bolsover",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000001",
+  "name": "Bolton",
+  "slug": "bolton",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000136",
+  "name": "Boston",
+  "slug": "boston",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000058",
+  "name": "Bournemouth, Christchurch and Poole",
+  "slug": "bournemouth-christchurch-and-poole",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000036",
+  "name": "Bracknell Forest",
+  "slug": "bracknell-forest",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000032",
+  "name": "Bradford",
+  "slug": "bradford",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000067",
+  "name": "Braintree",
+  "slug": "braintree",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000143",
+  "name": "Breckland",
+  "slug": "breckland",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000005",
+  "name": "Brent",
+  "slug": "brent",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000068",
+  "name": "Brentwood",
+  "slug": "brentwood",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000013",
+  "name": "Bridgend",
+  "slug": "bridgend",
+  "nation": "wales"
+ },
+ {
+  "gss": "E06000043",
+  "name": "Brighton and Hove",
+  "slug": "brighton-and-hove",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000023",
+  "name": "Bristol, City of",
+  "slug": "bristol-city-of",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000144",
+  "name": "Broadland",
+  "slug": "broadland",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000006",
+  "name": "Bromley",
+  "slug": "bromley",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000234",
+  "name": "Bromsgrove",
+  "slug": "bromsgrove",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000095",
+  "name": "Broxbourne",
+  "slug": "broxbourne",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000172",
+  "name": "Broxtowe",
+  "slug": "broxtowe",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000060",
+  "name": "Buckinghamshire",
+  "slug": "buckinghamshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000117",
+  "name": "Burnley",
+  "slug": "burnley",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000002",
+  "name": "Bury",
+  "slug": "bury",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000018",
+  "name": "Caerphilly",
+  "slug": "caerphilly",
+  "nation": "wales"
+ },
+ {
+  "gss": "E08000033",
+  "name": "Calderdale",
+  "slug": "calderdale",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000008",
+  "name": "Cambridge",
+  "slug": "cambridge",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000007",
+  "name": "Camden",
+  "slug": "camden",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000192",
+  "name": "Cannock Chase",
+  "slug": "cannock-chase",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000106",
+  "name": "Canterbury",
+  "slug": "canterbury",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000015",
+  "name": "Cardiff",
+  "slug": "cardiff",
+  "nation": "wales"
+ },
+ {
+  "gss": "W06000010",
+  "name": "Carmarthenshire",
+  "slug": "carmarthenshire",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000069",
+  "name": "Castle Point",
+  "slug": "castle-point",
+  "nation": "england"
+ },
+ {
+  "gss": "N09000004",
+  "name": "Causeway Coast and Glens",
+  "slug": "causeway-coast-and-glens",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "E06000056",
+  "name": "Central Bedfordshire",
+  "slug": "central-bedfordshire",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000008",
+  "name": "Ceredigion",
+  "slug": "ceredigion",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000130",
+  "name": "Charnwood",
+  "slug": "charnwood",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000070",
+  "name": "Chelmsford",
+  "slug": "chelmsford",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000078",
+  "name": "Cheltenham",
+  "slug": "cheltenham",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000177",
+  "name": "Cherwell",
+  "slug": "cherwell",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000049",
+  "name": "Cheshire East",
+  "slug": "cheshire-east",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000050",
+  "name": "Cheshire West and Chester",
+  "slug": "cheshire-west-and-chester",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000034",
+  "name": "Chesterfield",
+  "slug": "chesterfield",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000225",
+  "name": "Chichester",
+  "slug": "chichester",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000118",
+  "name": "Chorley",
+  "slug": "chorley",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000036",
+  "name": "City of Edinburgh",
+  "slug": "city-of-edinburgh",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E09000001",
+  "name": "City of London",
+  "slug": "city-of-london",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000005",
+  "name": "Clackmannanshire",
+  "slug": "clackmannanshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000071",
+  "name": "Colchester",
+  "slug": "colchester",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000003",
+  "name": "Conwy",
+  "slug": "conwy",
+  "nation": "wales"
+ },
+ {
+  "gss": "E06000052",
+  "name": "Cornwall",
+  "slug": "cornwall",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000079",
+  "name": "Cotswold",
+  "slug": "cotswold",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000047",
+  "name": "County Durham",
+  "slug": "county-durham",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000026",
+  "name": "Coventry",
+  "slug": "coventry",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000226",
+  "name": "Crawley",
+  "slug": "crawley",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000008",
+  "name": "Croydon",
+  "slug": "croydon",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000063",
+  "name": "Cumberland",
+  "slug": "cumberland",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000096",
+  "name": "Dacorum",
+  "slug": "dacorum",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000005",
+  "name": "Darlington",
+  "slug": "darlington",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000107",
+  "name": "Dartford",
+  "slug": "dartford",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000004",
+  "name": "Denbighshire",
+  "slug": "denbighshire",
+  "nation": "wales"
+ },
+ {
+  "gss": "E06000015",
+  "name": "Derby",
+  "slug": "derby",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000035",
+  "name": "Derbyshire Dales",
+  "slug": "derbyshire-dales",
+  "nation": "england"
+ },
+ {
+  "gss": "N09000005",
+  "name": "Derry City and Strabane",
+  "slug": "derry-city-and-strabane",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "E08000017",
+  "name": "Doncaster",
+  "slug": "doncaster",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000059",
+  "name": "Dorset",
+  "slug": "dorset",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000108",
+  "name": "Dover",
+  "slug": "dover",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000027",
+  "name": "Dudley",
+  "slug": "dudley",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000006",
+  "name": "Dumfries and Galloway",
+  "slug": "dumfries-and-galloway",
+  "nation": "scotland"
+ },
+ {
+  "gss": "S12000042",
+  "name": "Dundee City",
+  "slug": "dundee-city",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E09000009",
+  "name": "Ealing",
+  "slug": "ealing",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000008",
+  "name": "East Ayrshire",
+  "slug": "east-ayrshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000009",
+  "name": "East Cambridgeshire",
+  "slug": "east-cambridgeshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000040",
+  "name": "East Devon",
+  "slug": "east-devon",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000045",
+  "name": "East Dunbartonshire",
+  "slug": "east-dunbartonshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000085",
+  "name": "East Hampshire",
+  "slug": "east-hampshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000242",
+  "name": "East Hertfordshire",
+  "slug": "east-hertfordshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000137",
+  "name": "East Lindsey",
+  "slug": "east-lindsey",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000010",
+  "name": "East Lothian",
+  "slug": "east-lothian",
+  "nation": "scotland"
+ },
+ {
+  "gss": "S12000011",
+  "name": "East Renfrewshire",
+  "slug": "east-renfrewshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E06000011",
+  "name": "East Riding of Yorkshire",
+  "slug": "east-riding-of-yorkshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000193",
+  "name": "East Staffordshire",
+  "slug": "east-staffordshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000244",
+  "name": "East Suffolk",
+  "slug": "east-suffolk",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000061",
+  "name": "Eastbourne",
+  "slug": "eastbourne",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000086",
+  "name": "Eastleigh",
+  "slug": "eastleigh",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000207",
+  "name": "Elmbridge",
+  "slug": "elmbridge",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000010",
+  "name": "Enfield",
+  "slug": "enfield",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000072",
+  "name": "Epping Forest",
+  "slug": "epping-forest",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000208",
+  "name": "Epsom and Ewell",
+  "slug": "epsom-and-ewell",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000036",
+  "name": "Erewash",
+  "slug": "erewash",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000041",
+  "name": "Exeter",
+  "slug": "exeter",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000014",
+  "name": "Falkirk",
+  "slug": "falkirk",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000087",
+  "name": "Fareham",
+  "slug": "fareham",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000010",
+  "name": "Fenland",
+  "slug": "fenland",
+  "nation": "england"
+ },
+ {
+  "gss": "N09000006",
+  "name": "Fermanagh and Omagh",
+  "slug": "fermanagh-and-omagh",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "S12000047",
+  "name": "Fife",
+  "slug": "fife",
+  "nation": "scotland"
+ },
+ {
+  "gss": "W06000005",
+  "name": "Flintshire",
+  "slug": "flintshire",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000112",
+  "name": "Folkestone and Hythe",
+  "slug": "folkestone-and-hythe",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000080",
+  "name": "Forest of Dean",
+  "slug": "forest-of-dean",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000119",
+  "name": "Fylde",
+  "slug": "fylde",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000037",
+  "name": "Gateshead",
+  "slug": "gateshead",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000173",
+  "name": "Gedling",
+  "slug": "gedling",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000049",
+  "name": "Glasgow City",
+  "slug": "glasgow-city",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000081",
+  "name": "Gloucester",
+  "slug": "gloucester",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000088",
+  "name": "Gosport",
+  "slug": "gosport",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000109",
+  "name": "Gravesham",
+  "slug": "gravesham",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000145",
+  "name": "Great Yarmouth",
+  "slug": "great-yarmouth",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000011",
+  "name": "Greenwich",
+  "slug": "greenwich",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000209",
+  "name": "Guildford",
+  "slug": "guildford",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000002",
+  "name": "Gwynedd",
+  "slug": "gwynedd",
+  "nation": "wales"
+ },
+ {
+  "gss": "E09000012",
+  "name": "Hackney",
+  "slug": "hackney",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000006",
+  "name": "Halton",
+  "slug": "halton",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000013",
+  "name": "Hammersmith and Fulham",
+  "slug": "hammersmith-and-fulham",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000131",
+  "name": "Harborough",
+  "slug": "harborough",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000014",
+  "name": "Haringey",
+  "slug": "haringey",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000073",
+  "name": "Harlow",
+  "slug": "harlow",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000015",
+  "name": "Harrow",
+  "slug": "harrow",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000089",
+  "name": "Hart",
+  "slug": "hart",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000001",
+  "name": "Hartlepool",
+  "slug": "hartlepool",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000062",
+  "name": "Hastings",
+  "slug": "hastings",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000090",
+  "name": "Havant",
+  "slug": "havant",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000016",
+  "name": "Havering",
+  "slug": "havering",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000019",
+  "name": "Herefordshire, County of",
+  "slug": "herefordshire-county-of",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000098",
+  "name": "Hertsmere",
+  "slug": "hertsmere",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000037",
+  "name": "High Peak",
+  "slug": "high-peak",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000017",
+  "name": "Highland",
+  "slug": "highland",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E09000017",
+  "name": "Hillingdon",
+  "slug": "hillingdon",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000132",
+  "name": "Hinckley and Bosworth",
+  "slug": "hinckley-and-bosworth",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000227",
+  "name": "Horsham",
+  "slug": "horsham",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000018",
+  "name": "Hounslow",
+  "slug": "hounslow",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000011",
+  "name": "Huntingdonshire",
+  "slug": "huntingdonshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000120",
+  "name": "Hyndburn",
+  "slug": "hyndburn",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000018",
+  "name": "Inverclyde",
+  "slug": "inverclyde",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000202",
+  "name": "Ipswich",
+  "slug": "ipswich",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000001",
+  "name": "Isle of Anglesey",
+  "slug": "isle-of-anglesey",
+  "nation": "wales"
+ },
+ {
+  "gss": "E06000046",
+  "name": "Isle of Wight",
+  "slug": "isle-of-wight",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000053",
+  "name": "Isles of Scilly",
+  "slug": "isles-of-scilly",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000019",
+  "name": "Islington",
+  "slug": "islington",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000020",
+  "name": "Kensington and Chelsea",
+  "slug": "kensington-and-chelsea",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000146",
+  "name": "King's Lynn and West Norfolk",
+  "slug": "king-s-lynn-and-west-norfolk",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000010",
+  "name": "Kingston upon Hull, City of",
+  "slug": "kingston-upon-hull-city-of",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000021",
+  "name": "Kingston upon Thames",
+  "slug": "kingston-upon-thames",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000034",
+  "name": "Kirklees",
+  "slug": "kirklees",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000011",
+  "name": "Knowsley",
+  "slug": "knowsley",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000022",
+  "name": "Lambeth",
+  "slug": "lambeth",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000121",
+  "name": "Lancaster",
+  "slug": "lancaster",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000035",
+  "name": "Leeds",
+  "slug": "leeds",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000016",
+  "name": "Leicester",
+  "slug": "leicester",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000063",
+  "name": "Lewes",
+  "slug": "lewes",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000023",
+  "name": "Lewisham",
+  "slug": "lewisham",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000194",
+  "name": "Lichfield",
+  "slug": "lichfield",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000138",
+  "name": "Lincoln",
+  "slug": "lincoln",
+  "nation": "england"
+ },
+ {
+  "gss": "N09000007",
+  "name": "Lisburn and Castlereagh",
+  "slug": "lisburn-and-castlereagh",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "E08000012",
+  "name": "Liverpool",
+  "slug": "liverpool",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000032",
+  "name": "Luton",
+  "slug": "luton",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000110",
+  "name": "Maidstone",
+  "slug": "maidstone",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000074",
+  "name": "Maldon",
+  "slug": "maldon",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000235",
+  "name": "Malvern Hills",
+  "slug": "malvern-hills",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000003",
+  "name": "Manchester",
+  "slug": "manchester",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000174",
+  "name": "Mansfield",
+  "slug": "mansfield",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000035",
+  "name": "Medway",
+  "slug": "medway",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000133",
+  "name": "Melton",
+  "slug": "melton",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000024",
+  "name": "Merthyr Tydfil",
+  "slug": "merthyr-tydfil",
+  "nation": "wales"
+ },
+ {
+  "gss": "E09000024",
+  "name": "Merton",
+  "slug": "merton",
+  "nation": "england"
+ },
+ {
+  "gss": "N09000008",
+  "name": "Mid and East Antrim",
+  "slug": "mid-and-east-antrim",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "E07000042",
+  "name": "Mid Devon",
+  "slug": "mid-devon",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000203",
+  "name": "Mid Suffolk",
+  "slug": "mid-suffolk",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000228",
+  "name": "Mid Sussex",
+  "slug": "mid-sussex",
+  "nation": "england"
+ },
+ {
+  "gss": "N09000009",
+  "name": "Mid Ulster",
+  "slug": "mid-ulster",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "E06000002",
+  "name": "Middlesbrough",
+  "slug": "middlesbrough",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000019",
+  "name": "Midlothian",
+  "slug": "midlothian",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E06000042",
+  "name": "Milton Keynes",
+  "slug": "milton-keynes",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000210",
+  "name": "Mole Valley",
+  "slug": "mole-valley",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000021",
+  "name": "Monmouthshire",
+  "slug": "monmouthshire",
+  "nation": "wales"
+ },
+ {
+  "gss": "S12000020",
+  "name": "Moray",
+  "slug": "moray",
+  "nation": "scotland"
+ },
+ {
+  "gss": "S12000013",
+  "name": "Na h-Eileanan Siar",
+  "slug": "na-h-eileanan-siar",
+  "nation": "scotland"
+ },
+ {
+  "gss": "W06000012",
+  "name": "Neath Port Talbot",
+  "slug": "neath-port-talbot",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000091",
+  "name": "New Forest",
+  "slug": "new-forest",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000175",
+  "name": "Newark and Sherwood",
+  "slug": "newark-and-sherwood",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000021",
+  "name": "Newcastle upon Tyne",
+  "slug": "newcastle-upon-tyne",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000195",
+  "name": "Newcastle-under-Lyme",
+  "slug": "newcastle-under-lyme",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000025",
+  "name": "Newham",
+  "slug": "newham",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000022",
+  "name": "Newport",
+  "slug": "newport",
+  "nation": "wales"
+ },
+ {
+  "gss": "N09000010",
+  "name": "Newry, Mourne and Down",
+  "slug": "newry-mourne-and-down",
+  "nation": "northern-ireland"
+ },
+ {
+  "gss": "S12000021",
+  "name": "North Ayrshire",
+  "slug": "north-ayrshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000043",
+  "name": "North Devon",
+  "slug": "north-devon",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000038",
+  "name": "North East Derbyshire",
+  "slug": "north-east-derbyshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000012",
+  "name": "North East Lincolnshire",
+  "slug": "north-east-lincolnshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000099",
+  "name": "North Hertfordshire",
+  "slug": "north-hertfordshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000139",
+  "name": "North Kesteven",
+  "slug": "north-kesteven",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000050",
+  "name": "North Lanarkshire",
+  "slug": "north-lanarkshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E06000013",
+  "name": "North Lincolnshire",
+  "slug": "north-lincolnshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000147",
+  "name": "North Norfolk",
+  "slug": "north-norfolk",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000061",
+  "name": "North Northamptonshire",
+  "slug": "north-northamptonshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000024",
+  "name": "North Somerset",
+  "slug": "north-somerset",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000022",
+  "name": "North Tyneside",
+  "slug": "north-tyneside",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000218",
+  "name": "North Warwickshire",
+  "slug": "north-warwickshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000134",
+  "name": "North West Leicestershire",
+  "slug": "north-west-leicestershire",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000065",
+  "name": "North Yorkshire",
+  "slug": "north-yorkshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000057",
+  "name": "Northumberland",
+  "slug": "northumberland",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000148",
+  "name": "Norwich",
+  "slug": "norwich",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000018",
+  "name": "Nottingham",
+  "slug": "nottingham",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000219",
+  "name": "Nuneaton and Bedworth",
+  "slug": "nuneaton-and-bedworth",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000135",
+  "name": "Oadby and Wigston",
+  "slug": "oadby-and-wigston",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000004",
+  "name": "Oldham",
+  "slug": "oldham",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000023",
+  "name": "Orkney Islands",
+  "slug": "orkney-islands",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000178",
+  "name": "Oxford",
+  "slug": "oxford",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000009",
+  "name": "Pembrokeshire",
+  "slug": "pembrokeshire",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000122",
+  "name": "Pendle",
+  "slug": "pendle",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000048",
+  "name": "Perth and Kinross",
+  "slug": "perth-and-kinross",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E06000031",
+  "name": "Peterborough",
+  "slug": "peterborough",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000026",
+  "name": "Plymouth",
+  "slug": "plymouth",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000044",
+  "name": "Portsmouth",
+  "slug": "portsmouth",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000023",
+  "name": "Powys",
+  "slug": "powys",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000123",
+  "name": "Preston",
+  "slug": "preston",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000038",
+  "name": "Reading",
+  "slug": "reading",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000026",
+  "name": "Redbridge",
+  "slug": "redbridge",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000003",
+  "name": "Redcar and Cleveland",
+  "slug": "redcar-and-cleveland",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000236",
+  "name": "Redditch",
+  "slug": "redditch",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000211",
+  "name": "Reigate and Banstead",
+  "slug": "reigate-and-banstead",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000038",
+  "name": "Renfrewshire",
+  "slug": "renfrewshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "W06000016",
+  "name": "Rhondda Cynon Taf",
+  "slug": "rhondda-cynon-taf",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000124",
+  "name": "Ribble Valley",
+  "slug": "ribble-valley",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000027",
+  "name": "Richmond upon Thames",
+  "slug": "richmond-upon-thames",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000005",
+  "name": "Rochdale",
+  "slug": "rochdale",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000075",
+  "name": "Rochford",
+  "slug": "rochford",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000125",
+  "name": "Rossendale",
+  "slug": "rossendale",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000064",
+  "name": "Rother",
+  "slug": "rother",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000018",
+  "name": "Rotherham",
+  "slug": "rotherham",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000220",
+  "name": "Rugby",
+  "slug": "rugby",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000212",
+  "name": "Runnymede",
+  "slug": "runnymede",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000176",
+  "name": "Rushcliffe",
+  "slug": "rushcliffe",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000092",
+  "name": "Rushmoor",
+  "slug": "rushmoor",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000017",
+  "name": "Rutland",
+  "slug": "rutland",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000006",
+  "name": "Salford",
+  "slug": "salford",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000028",
+  "name": "Sandwell",
+  "slug": "sandwell",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000026",
+  "name": "Scottish Borders",
+  "slug": "scottish-borders",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E08000014",
+  "name": "Sefton",
+  "slug": "sefton",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000111",
+  "name": "Sevenoaks",
+  "slug": "sevenoaks",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000019",
+  "name": "Sheffield",
+  "slug": "sheffield",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000027",
+  "name": "Shetland Islands",
+  "slug": "shetland-islands",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E06000051",
+  "name": "Shropshire",
+  "slug": "shropshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000039",
+  "name": "Slough",
+  "slug": "slough",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000029",
+  "name": "Solihull",
+  "slug": "solihull",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000066",
+  "name": "Somerset",
+  "slug": "somerset",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000028",
+  "name": "South Ayrshire",
+  "slug": "south-ayrshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000012",
+  "name": "South Cambridgeshire",
+  "slug": "south-cambridgeshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000039",
+  "name": "South Derbyshire",
+  "slug": "south-derbyshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000025",
+  "name": "South Gloucestershire",
+  "slug": "south-gloucestershire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000044",
+  "name": "South Hams",
+  "slug": "south-hams",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000140",
+  "name": "South Holland",
+  "slug": "south-holland",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000141",
+  "name": "South Kesteven",
+  "slug": "south-kesteven",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000029",
+  "name": "South Lanarkshire",
+  "slug": "south-lanarkshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000149",
+  "name": "South Norfolk",
+  "slug": "south-norfolk",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000179",
+  "name": "South Oxfordshire",
+  "slug": "south-oxfordshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000126",
+  "name": "South Ribble",
+  "slug": "south-ribble",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000196",
+  "name": "South Staffordshire",
+  "slug": "south-staffordshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000023",
+  "name": "South Tyneside",
+  "slug": "south-tyneside",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000045",
+  "name": "Southampton",
+  "slug": "southampton",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000033",
+  "name": "Southend-on-Sea",
+  "slug": "southend-on-sea",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000028",
+  "name": "Southwark",
+  "slug": "southwark",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000213",
+  "name": "Spelthorne",
+  "slug": "spelthorne",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000240",
+  "name": "St Albans",
+  "slug": "st-albans",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000013",
+  "name": "St. Helens",
+  "slug": "st-helens",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000197",
+  "name": "Stafford",
+  "slug": "stafford",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000198",
+  "name": "Staffordshire Moorlands",
+  "slug": "staffordshire-moorlands",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000243",
+  "name": "Stevenage",
+  "slug": "stevenage",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000030",
+  "name": "Stirling",
+  "slug": "stirling",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E08000007",
+  "name": "Stockport",
+  "slug": "stockport",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000004",
+  "name": "Stockton-on-Tees",
+  "slug": "stockton-on-tees",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000021",
+  "name": "Stoke-on-Trent",
+  "slug": "stoke-on-trent",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000221",
+  "name": "Stratford-on-Avon",
+  "slug": "stratford-on-avon",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000082",
+  "name": "Stroud",
+  "slug": "stroud",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000024",
+  "name": "Sunderland",
+  "slug": "sunderland",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000214",
+  "name": "Surrey Heath",
+  "slug": "surrey-heath",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000029",
+  "name": "Sutton",
+  "slug": "sutton",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000113",
+  "name": "Swale",
+  "slug": "swale",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000011",
+  "name": "Swansea",
+  "slug": "swansea",
+  "nation": "wales"
+ },
+ {
+  "gss": "E06000030",
+  "name": "Swindon",
+  "slug": "swindon",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000008",
+  "name": "Tameside",
+  "slug": "tameside",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000199",
+  "name": "Tamworth",
+  "slug": "tamworth",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000215",
+  "name": "Tandridge",
+  "slug": "tandridge",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000045",
+  "name": "Teignbridge",
+  "slug": "teignbridge",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000020",
+  "name": "Telford and Wrekin",
+  "slug": "telford-and-wrekin",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000076",
+  "name": "Tendring",
+  "slug": "tendring",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000093",
+  "name": "Test Valley",
+  "slug": "test-valley",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000083",
+  "name": "Tewkesbury",
+  "slug": "tewkesbury",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000114",
+  "name": "Thanet",
+  "slug": "thanet",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000102",
+  "name": "Three Rivers",
+  "slug": "three-rivers",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000034",
+  "name": "Thurrock",
+  "slug": "thurrock",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000115",
+  "name": "Tonbridge and Malling",
+  "slug": "tonbridge-and-malling",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000027",
+  "name": "Torbay",
+  "slug": "torbay",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000020",
+  "name": "Torfaen",
+  "slug": "torfaen",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000046",
+  "name": "Torridge",
+  "slug": "torridge",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000030",
+  "name": "Tower Hamlets",
+  "slug": "tower-hamlets",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000009",
+  "name": "Trafford",
+  "slug": "trafford",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000116",
+  "name": "Tunbridge Wells",
+  "slug": "tunbridge-wells",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000077",
+  "name": "Uttlesford",
+  "slug": "uttlesford",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000014",
+  "name": "Vale of Glamorgan",
+  "slug": "vale-of-glamorgan",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000180",
+  "name": "Vale of White Horse",
+  "slug": "vale-of-white-horse",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000036",
+  "name": "Wakefield",
+  "slug": "wakefield",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000030",
+  "name": "Walsall",
+  "slug": "walsall",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000031",
+  "name": "Waltham Forest",
+  "slug": "waltham-forest",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000032",
+  "name": "Wandsworth",
+  "slug": "wandsworth",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000007",
+  "name": "Warrington",
+  "slug": "warrington",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000222",
+  "name": "Warwick",
+  "slug": "warwick",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000103",
+  "name": "Watford",
+  "slug": "watford",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000216",
+  "name": "Waverley",
+  "slug": "waverley",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000065",
+  "name": "Wealden",
+  "slug": "wealden",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000241",
+  "name": "Welwyn Hatfield",
+  "slug": "welwyn-hatfield",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000037",
+  "name": "West Berkshire",
+  "slug": "west-berkshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000047",
+  "name": "West Devon",
+  "slug": "west-devon",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000039",
+  "name": "West Dunbartonshire",
+  "slug": "west-dunbartonshire",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E07000127",
+  "name": "West Lancashire",
+  "slug": "west-lancashire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000142",
+  "name": "West Lindsey",
+  "slug": "west-lindsey",
+  "nation": "england"
+ },
+ {
+  "gss": "S12000040",
+  "name": "West Lothian",
+  "slug": "west-lothian",
+  "nation": "scotland"
+ },
+ {
+  "gss": "E06000062",
+  "name": "West Northamptonshire",
+  "slug": "west-northamptonshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000181",
+  "name": "West Oxfordshire",
+  "slug": "west-oxfordshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000245",
+  "name": "West Suffolk",
+  "slug": "west-suffolk",
+  "nation": "england"
+ },
+ {
+  "gss": "E09000033",
+  "name": "Westminster",
+  "slug": "westminster",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000064",
+  "name": "Westmorland and Furness",
+  "slug": "westmorland-and-furness",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000010",
+  "name": "Wigan",
+  "slug": "wigan",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000054",
+  "name": "Wiltshire",
+  "slug": "wiltshire",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000094",
+  "name": "Winchester",
+  "slug": "winchester",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000040",
+  "name": "Windsor and Maidenhead",
+  "slug": "windsor-and-maidenhead",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000015",
+  "name": "Wirral",
+  "slug": "wirral",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000217",
+  "name": "Woking",
+  "slug": "woking",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000041",
+  "name": "Wokingham",
+  "slug": "wokingham",
+  "nation": "england"
+ },
+ {
+  "gss": "E08000031",
+  "name": "Wolverhampton",
+  "slug": "wolverhampton",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000237",
+  "name": "Worcester",
+  "slug": "worcester",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000229",
+  "name": "Worthing",
+  "slug": "worthing",
+  "nation": "england"
+ },
+ {
+  "gss": "W06000006",
+  "name": "Wrexham",
+  "slug": "wrexham",
+  "nation": "wales"
+ },
+ {
+  "gss": "E07000238",
+  "name": "Wychavon",
+  "slug": "wychavon",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000128",
+  "name": "Wyre",
+  "slug": "wyre",
+  "nation": "england"
+ },
+ {
+  "gss": "E07000239",
+  "name": "Wyre Forest",
+  "slug": "wyre-forest",
+  "nation": "england"
+ },
+ {
+  "gss": "E06000014",
+  "name": "York",
+  "slug": "york",
+  "nation": "england"
+ }
+]
