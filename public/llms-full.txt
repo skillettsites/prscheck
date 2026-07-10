@@ -1,0 +1,407 @@
+# PRSCheck — Full UK Landlord Licensing Reference
+
+> The complete, machine-readable reference to UK property licensing: which councils run selective and additional (HMO) licensing schemes, the England-wide mandatory HMO rules, and the national registration regimes in Wales and Scotland. Compiled from council designations and legislation, current July 2026. Check any postcode free at https://prscheck.co.uk/check.
+
+## The three licence types (England)
+- MANDATORY HMO LICENSING: required everywhere in England for any property let to 5+ people forming 2+ households who share a kitchen, bathroom or toilet, with at least one paying rent. No storey test since 1 October 2018. Licence up to 5 years. Statute: Housing Act 2004 Part 2, SI 2018/221.
+- ADDITIONAL HMO LICENSING: a discretionary council scheme extending HMO licensing to smaller HMOs (typically 3-4 sharers) below the mandatory threshold. Only applies where a council has designated it.
+- SELECTIVE LICENSING: a discretionary council scheme covering ordinary private rented homes (not just HMOs) in a designated area, often street or ward level. A single-family let still needs one if the address is inside the zone. Since 23 December 2024 councils can designate schemes of any size without Secretary of State approval.
+
+## Penalties for operating unlicensed (England, from 1 May 2026)
+- Civil penalty up to £40,000 per offence (raised from £30,000 by the Renters Rights Act 2025).
+- Rent Repayment Order up to 24 months rent (doubled from 12), claimable by the tenant or council, and now reaching superior (rent-to-rent) landlords.
+- Unlimited fine on criminal prosecution; banning orders for serious or repeat offenders.
+- Section 21 abolished 1 May 2026. Once the national PRS Database is live (rollout from late 2026), courts can refuse possession to unregistered landlords.
+
+## Wales and Scotland
+- WALES: Rent Smart Wales. All landlords must register; self-managing landlords and all agents need a licence with training. 5-year terms. Fixed penalties, unlimited fines, rent stopping orders, 12-month rent repayment orders. Mandatory HMO licensing in Wales still uses the 3-storey + 5-person + 2-household test.
+- SCOTLAND: all landlords must register with each council where they let, renewing every 3 years; fines up to £50,000 for letting unregistered. HMO licence required for 3+ unrelated occupants.
+
+## Councils in England with a live or upcoming selective/additional licensing scheme (July 2026)
+
+### Arun
+Page: https://prscheck.co.uk/councils/arun
+- Additional (HMO) licensing (active): 2025-02-01 to 2030-01-31. Covers 3 wards/areas: River, Hotham, Marine. Fee approx ~£2,017 total (3-4 person house HMO, reported figure). Source: https://www.arun.gov.uk/additional-hmo-licensing-scheme-designation-2024/
+
+### Ashfield
+Page: https://prscheck.co.uk/councils/ashfield
+- Selective licensing (active): 2022-07-25 to 2027-07-24. Covers streets. Fee approx £350 per property (£250 accredited). Source: https://www.ashfield.gov.uk/selective-licensing-scheme-guide
+
+### Barking and Dagenham
+Page: https://prscheck.co.uk/councils/barking-and-dagenham
+- Selective licensing (active): 2025-04-06 to 2030-04-05. Covers areas. Fee approx £950 (£650 Part A + £300 Part B). Source: https://www.lbbd.gov.uk/private-sector-housing/property-licensing/do-i-need-licence
+- Additional (HMO) licensing (active): 2025-01-09 to 2030-01-08. Covers borough-wide. Fee approx £1,400 (£1,000 Part A + £400 Part B). Source: https://www.lbbd.gov.uk/private-sector-housing/property-licensing/do-i-need-licence
+
+### Barnet
+Page: https://prscheck.co.uk/councils/barnet
+- Additional (HMO) licensing (active): 2022-10-27 to 2027-10-26. Covers borough-wide. Fee approx £1,560.38 plus £31 per unit above five occupants. Source: https://www.londonpropertylicensing.co.uk/barnet/
+
+### Bedford
+Page: https://prscheck.co.uk/councils/bedford
+- Additional (HMO) licensing (active): 2023-05-21 to 2028-05-20. Covers borough-wide. Fee approx ~£1,047 (base £805.90 + £80.25 per unit). Source: https://www.bedford.gov.uk/housing/houses-multiple-occupation-hmo/hmo-licensing
+
+### Bexley
+Page: https://prscheck.co.uk/councils/bexley
+- Selective licensing (active): 2025-01-13 to 2030-01-12. Covers 1 wards/areas: Belvedere. Fee approx £830 (£350 application + £480 on grant). Source: https://www.bexley.gov.uk/services/housing/property-licensing/property-licensing-schemes
+
+### Birmingham
+Page: https://prscheck.co.uk/councils/birmingham
+- Selective licensing (active): 2023-06-05 to 2028-06-04. Covers 25 wards/areas: Acocks Green, Alum Rock, Aston, Balsall Heath West, Birchfield, Bordesley Green, Bordesley and Highgate, Bournbrook and Selly Park, Edgbaston, Gravelly Hill, Handsworth, Heartlands, Holyhead, Ladywood, Lozells, North Edgbaston, Small Heath, Soho and Jewellery Quarter, South Yardley, Sparkbrook and Balsall Heath East, Sparkhill, Stockland Green, Tyseley and Hay Mills, Ward End, Yardley West and Stechford. Fee approx £700 per licence. Source: https://www.birmingham.gov.uk/info/20175/private_housing/2649/selective_licensing
+- Additional (HMO) licensing (active): 2023-06-05 to 2028-06-04. Covers borough-wide. Fee approx £755 per licence. Source: https://www.birmingham.gov.uk/info/20175/private_housing/2648/additional_licensing_for_hmos
+
+### Blackpool
+Page: https://prscheck.co.uk/councils/blackpool
+- Selective licensing (active): 2025-04-01 to 2030-03-31. Covers 8 wards/areas: Bloomfield, Brunswick, Claremont, Talbot, Tyldesley, Victoria, Warbreck, Waterloo. Fee approx £772 standard (from £347 discounted). Source: https://www.blackpool.gov.uk/Business/Licensing-and-permits/Housing-licences/Selective-licensing/Selective-licensing.aspx
+
+### Brent
+Page: https://prscheck.co.uk/councils/brent
+- Selective licensing (active): 2023-08-01 to 2028-07-31. Covers 3 wards/areas: Harlesden & Kensal Green, Dollis Hill, Willesden Green. Fee approx £640 (£340 Part 1 + £300 Part 2). Source: https://www.brent.gov.uk/housing/landlords/property-licensing
+- Selective licensing (active): 2024-04-01 to 2029-03-31. Covers 18 wards/areas: Alperton, Barnhill, Brondesbury Park, Cricklewood & Mapesbury, Kenton, Kilburn, Kingsbury, Northwick Park, Preston, Queens Park, Queensbury, Roundwood, Stonebridge, Sudbury, Tokyngton, Welsh Harp, Wembley Central, Wembley Hill. Fee approx £640 (£340 Part 1 + £300 Part 2). Source: https://www.brent.gov.uk/housing/landlords/property-licensing
+- Additional (HMO) licensing (active): 2026-02-02 to 2031-02-01. Covers borough-wide. Fee approx £1,040 (£540 Part 1 + £500 Part 2). Source: https://www.brent.gov.uk/housing/landlords/property-licensing
+
+### Brighton and Hove
+Page: https://prscheck.co.uk/councils/brighton-and-hove
+- Selective licensing (active): 2024-09-02 to 2029-09-01. Covers 4 wards/areas: Kemptown, Moulsecoomb & Bevendean, Queens Park, Whitehawk & Marina. Fee approx £740 standard. Source: https://www.brighton-hove.gov.uk/housing/private-housing/private-landlords/selective-licensing
+- Selective licensing (upcoming): 2026-10-20 to 2031-10-19. Covers 2 wards/areas: Central Hove, Regency. Fee approx £740. Source: https://www.brighton-hove.gov.uk/housing/private-housing/private-landlords/selective-licensing
+- Additional (HMO) licensing (active): 2024-07-01 to 2029-06-30. Covers district. Fee approx £883-£1,127. Source: https://www.brighton-hove.gov.uk/news/2024/city-wide-hmo-additional-licensing-scheme-live
+
+### Bristol, City of
+Page: https://prscheck.co.uk/councils/bristol-city-of
+- Additional (HMO) licensing (active): 2024-08-06 to 2029-08-05. Covers district. Fee approx £1,861 new (£1,023 + £838). Source: https://www.bristol.gov.uk/business/licences-and-permits/property-licences/types-of-licence
+- Additional (HMO) licensing (active): 2022-04-06 to 2027-04-05. Covers 3 wards/areas: Bedminster, Brislington West, Horfield. Fee approx £1,300 (£1,000 + £300). Source: https://www.bristol.gov.uk/business/licences-and-permits/property-licences/types-of-licence
+- Selective licensing (active): 2024-08-06 to 2029-08-05. Covers 3 wards/areas: Bishopston and Ashley Down, Cotham, Easton. Fee approx £912 (£467 + £445). Source: https://www.bristol.gov.uk/business/licences-and-permits/property-licences/types-of-licence
+- Selective licensing (active): 2022-04-06 to 2027-04-05. Covers 2 wards/areas: Bedminster, Brislington West. Fee approx £799 (£499 + £300). Source: https://www.bristol.gov.uk/business/licences-and-permits/property-licences/types-of-licence
+
+### Burnley
+Page: https://prscheck.co.uk/councils/burnley
+- Selective licensing (active): 2022-07-21 to 2027-07-20. Covers streets. Fee approx £715 standard (£640 returning). Source: https://burnley.gov.uk/housing/private-rented-sector/selective-licensing/selective-licensing-in-burnley/
+- Selective licensing (active): 2025-04-27 to 2030-04-26. Covers streets. Fee approx £750 standard (£670 returning). Source: https://burnley.gov.uk/housing/private-rented-sector/selective-licensing/selective-licensing-in-burnley/
+
+### Camden
+Page: https://prscheck.co.uk/councils/camden
+- Additional (HMO) licensing (active): 2025-12-08 to 2030-12-08. Covers borough-wide. Fee approx £1,531 (£100 accredited discount). Source: https://www.londonpropertylicensing.co.uk/camden
+
+### Charnwood
+Page: https://prscheck.co.uk/councils/charnwood
+- Selective licensing (active): 2023-04-01 to 2028-03-31. Covers 2 wards/areas: Loughborough Hastings, Loughborough Lemyngton. Fee approx £700 (£395 stage one + £305 stage two). Source: https://www.charnwood.gov.uk/pages/selective_licensing
+- Additional (HMO) licensing (active): 2023-04-01 to 2028-03-31. Covers district. Fee approx £700 (£395 + £305). Source: https://www.charnwood.gov.uk/pages/property_licence_fees
+
+### County Durham
+Page: https://prscheck.co.uk/councils/county-durham
+- Selective licensing (active): 2022-04-01 to 2027-03-31. Covers 4 wards/areas: Ferryhill, Chilton, Horden, Shildon. Fee approx £585 (Part A £200 + Part B £385). Source: https://www.durham.gov.uk/selectivelicensing
+
+### Coventry
+Page: https://prscheck.co.uk/councils/coventry
+- Additional (HMO) licensing (active): 2025-05-04 to 2030-05-03. Covers borough-wide. Fee approx £944 total standard new 5-year (Stage 1 £716 + Stage 2 £228). Source: https://www.coventry.gov.uk/housing-enforcement/additional-licensing-scheme-2025
+
+### Croydon
+Page: https://prscheck.co.uk/councils/croydon
+- Selective licensing (upcoming): 2026-09-01 to 2031-08-31. Covers 14 wards/areas: Addiscombe East, Addiscombe West, Bensham Manor, Broad Green, Fairfield, Norbury and Pollards Hill, Norbury Park, Selhurst, South Croydon, South Norwood, Thornton Heath, Waddon, West Thornton, Woodside. Fee approx £800 (£480 Part A + £320 Part B). Source: https://www.croydon.gov.uk/housing/landlords/selective-and-additional-hmo-licensing-schemes-2026/selective-licensing-scheme-2026
+- Additional (HMO) licensing (upcoming): 2026-09-01 to 2031-08-31. Covers borough-wide. Fee approx £1,250 (£750 Part A + £500 Part B). Source: https://www.croydon.gov.uk/housing/landlords/selective-and-additional-hmo-licensing-schemes-2026/additional-hmo-licensing-scheme-2026
+
+### Ealing
+Page: https://prscheck.co.uk/councils/ealing
+- Additional (HMO) licensing (active): 2022-04-01 to 2027-03-31. Covers borough-wide. Fee approx £1,300 per property. Source: https://www.londonpropertylicensing.co.uk/ealing
+- Selective licensing (active): 2022-04-01 to 2027-03-31. Covers 3 wards/areas: East Acton, Southall Broadway, Southall Green. Fee approx £750 per property (£675 self-contained flats). Source: https://www.londonpropertylicensing.co.uk/ealing
+- Selective licensing (active): 2023-01-03 to 2028-01-02. Covers 12 wards/areas: Acton Central, Dormers Wells, Greenford Broadway, Greenford Green, Hanger Hill, Hobbayne, Lady Margaret, North Greenford, Northolt Mandeville, Northolt West End, Perivale, South Acton. Fee approx £750 per property (£675 self-contained flats). Source: https://www.londonpropertylicensing.co.uk/ealing
+
+### East Staffordshire
+Page: https://prscheck.co.uk/councils/east-staffordshire
+- Selective licensing (active): 2022-09-12 to 2027-09-11. Covers 3 wards/areas: Anglesey, Burton, Shobnall. Fee approx £544 new single property. Source: https://www.eaststaffsbc.gov.uk/housing-and-property/landlords/selective-licensing-scheme
+
+### Enfield
+Page: https://prscheck.co.uk/councils/enfield
+- Selective licensing (active): 2021-09-01 to 2026-08-31. Covers 14 wards/areas: Bowes, Chase, Edmonton Green, Enfield Highway, Enfield Lock, Haselbury, Jubilee, Lower Edmonton, Palmers Green, Ponders End, Southbury, Southgate Green, Turkey Street, Upper Edmonton. Fee approx £735 (£294 Part 1 + £441 Part 2). Source: https://www.londonpropertylicensing.co.uk/enfield
+- Selective licensing (upcoming): 2026-09-01 to 2031-08-31. Covers 17 wards/areas: Bowes, Brimsdown, Bullsmoor, Carterhatch, Edmonton Green, Enfield Lock, Haselbury, Jubilee, Lower Edmonton, Ponders End, Southbury, Upper Edmonton, Whitewebbs, New Southgate, Palmers Green, Southgate, Town. Fee approx £750 per property. Source: https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-enfield/
+- Additional (HMO) licensing (active): 2025-09-01 to 2030-08-31. Covers borough-wide. Fee approx £1,450 per property. Source: https://www.londonpropertylicensing.co.uk/enfield
+
+### Gateshead
+Page: https://prscheck.co.uk/councils/gateshead
+- Selective licensing (active): 2025-06-01 to 2030-05-30. Covers 7 wards/areas: Birtley, Bridges, Chopwell and Rowlands Gill, Crawcrook and Greenside, High Fell, Lobley Hill and Bensham, Saltwell. Fee approx £850. Source: https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-gateshead/
+- Selective licensing (active): 2025-10-01 to 2030-09-30. Covers 8 wards/areas: Bridges, Deckham, Dunston Hill and Whickham East, Dunston and Teams, Felling, Lobley Hill and Bensham, Saltwell, Whickham North. Fee approx £850. Source: https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-gateshead/
+- Additional (HMO) licensing (active): 2025-06-01 to 2030-05-31. Covers 12 wards/areas: Birtley, Bridges, Chopwell and Rowlands Gill, Crawcrook and Greenside, Deckham, Dunston Hill and Whickham East, Dunston and Teams, Felling, High Fell, Lobley Hill and Bensham, Saltwell, Whickham North. Fee approx £976.30. Source: https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-gateshead/
+
+### Gedling
+Page: https://prscheck.co.uk/councils/gedling
+- Selective licensing (active): 2022-11-01 to 2027-10-31. Covers 4 wards/areas: Carlton Hill, Colwick, Daybrook, Newstead. Fee approx £840 non-accredited (£645 accredited). Source: https://www.gedling.gov.uk/selective-licensing
+- Selective licensing (active): 2025-01-05 to 2030-01-04. Covers 1 wards/areas: Netherfield. Fee approx £840 non-accredited (£645 accredited). Source: https://www.gedling.gov.uk/selective-licensing
+
+### Great Yarmouth
+Page: https://prscheck.co.uk/councils/great-yarmouth
+- Selective licensing (active): 2026-04-01 to 2031-03-31. Covers 4 wards/areas: Nelson, Central and Northgate, Southtown and Cobholm, Yarmouth North. Fee approx £694 (£200 Part A + £494 Part B). Source: https://www.great-yarmouth.gov.uk/article/11085/Selective-Licensing-Scheme
+
+### Greenwich
+Page: https://prscheck.co.uk/councils/greenwich
+- Selective licensing (active): 2022-10-01 to 2027-09-30. Covers 5 wards/areas: Woolwich Riverside, Woolwich Common, Shooters Hill, Plumstead Common, Plumstead Glyndon. Fee approx £872.59. Source: https://www.royalgreenwich.gov.uk/info/200172/housing/2397/selective_licensing_faqs
+- Additional (HMO) licensing (active): 2024-01-01 to 2028-12-31. Covers borough-wide. Fee approx £508.50 per letting. Source: https://www.londonpropertylicensing.co.uk/greenwich
+
+### Hackney
+Page: https://prscheck.co.uk/councils/hackney
+- Selective licensing (active): 2026-05-01 to 2031-04-30. Covers 17 wards/areas: Brownswood, Cazenove, Clissold, Dalston, De Beauvoir, Hackney Central, Hackney Downs, Hackney Wick, Homerton, King's Park, Lea Bridge, London Fields, Shacklewell, Springfield, Stamford Hill West, Stoke Newington, Victoria. Fee approx £925 (£555 Part A + £370 Part B). Source: https://hackney.gov.uk/property-licensing/
+- Additional (HMO) licensing (active): 2026-05-01 to 2031-04-30. Covers borough-wide. Fee approx £1,400 (£840 Part A + £560 Part B). Source: https://www.hackney.gov.uk/housing/private-tenants-and-landlords/private-landlords/apply-property-licence
+
+### Hammersmith and Fulham
+Page: https://prscheck.co.uk/councils/hammersmith-and-fulham
+- Selective licensing (active): 2022-06-05 to 2027-06-04. Covers streets. Fee approx £742. Source: https://www.londonpropertylicensing.co.uk/hammersmith-fulham/
+- Additional (HMO) licensing (active): 2022-06-05 to 2027-06-04. Covers borough-wide. Fee approx £742. Source: https://www.londonpropertylicensing.co.uk/hammersmith-fulham/
+
+### Haringey
+Page: https://prscheck.co.uk/councils/haringey
+- Selective licensing (active): 2022-11-17 to 2027-11-16. Covers 14 wards/areas: Bounds Green, Bruce Castle, Harringay, Hermitage & Gardens, Noel Park, Northumberland Park, Seven Sisters, South Tottenham, St Ann's, Tottenham Central, Tottenham Hale, West Green, White Hart Lane, Woodside. Fee approx £680 in two instalments. Source: https://haringey.gov.uk/housing/private-sector-renting/property-licensing/selective-property-licensing
+- Additional (HMO) licensing (active): 2024-06-17 to 2029-06-16. Covers borough-wide. Fee approx £1,360 in two instalments (+£50 per unit above 5). Source: https://haringey.gov.uk/housing/housing-news-policies/housing-strategies-policies-and-plans/additional-licensing-houses-multiple-occupation-hmos
+
+### Harrow
+Page: https://prscheck.co.uk/councils/harrow
+- Additional (HMO) licensing (active): 2021-08-06 to 2026-08-05. Covers borough-wide. Fee approx £1,900 new (£1,343.80 renewal). Source: https://talk.harrow.gov.uk/additionalhmo-licensing
+- Selective licensing (active): 2021-09-02 to 2026-09-01. Covers 1 wards/areas: Wealdstone. Fee approx £786. Source: https://www.londonpropertylicensing.co.uk/harrow/
+- Selective licensing (active): 2026-05-02 to 2031-05-01. Covers 2 wards/areas: Edgware, Roxeth. Fee approx £786 (£686 admin + £100 management/enforcement). Source: https://www.harrow.gov.uk/licences/selective-licensing/6
+- Selective licensing (active): 2026-07-06 to 2031-07-05. Covers 2 wards/areas: Greenhill, Marlborough. Fee approx £786. Source: https://www.harrow.gov.uk/licences/selective-licensing/6
+- Selective licensing (upcoming): 2026-09-01 to 2031-08-31. Covers 2 wards/areas: Wealdstone North, Wealdstone South. Fee approx £786. Source: https://www.harrow.gov.uk/licences/selective-licensing/6
+
+### Havering
+Page: https://prscheck.co.uk/councils/havering
+- Selective licensing (active): 2026-03-18 to 2031-03-17. Covers 7 wards/areas: Beam Park, Harold Wood, Rainham and Wennington, Rush Green and Crowlands, Squirrels Heath, St Albans, St Edwards. Fee approx £950 (Part A £570, Part B £380). Source: https://www.havering.gov.uk/information-landlords/private-rented-property-licensing
+- Additional (HMO) licensing (active): 2026-03-18 to 2031-03-17. Covers borough-wide. Fee approx £1,400 (Part A £840, Part B £560). Source: https://www.havering.gov.uk/information-landlords/private-rented-property-licensing
+
+### Hillingdon
+Page: https://prscheck.co.uk/councils/hillingdon
+- Additional (HMO) licensing (upcoming): 2026-08-24 to 2031-08-23. Covers borough-wide. Fee approx £1,401 in two instalments. Source: https://www.londonpropertylicensing.co.uk/hillingdon/
+
+### Hounslow
+Page: https://prscheck.co.uk/councils/hounslow
+- Additional (HMO) licensing (active): 2025-12-11 to 2030-12-10. Covers borough-wide. Fee approx £1,550 plus £25 per household. Source: https://www.hounslow.gov.uk/houses-multiple-occupation/hmo-licensing
+
+### Islington
+Page: https://prscheck.co.uk/councils/islington
+- Selective licensing (active): 2024-05-20 to 2029-05-19. Covers 3 wards/areas: Finsbury Park, Tollington, Hillrise. Fee approx £850 per property. Source: https://www.londonpropertylicensing.co.uk/islington/
+- Selective licensing (upcoming): TBC to TBC. Covers 7 wards/areas: Barnsbury, Caledonian, Tufnell Park, Mildmay, Highbury, Junction, Laycock. Fee approx see council. Source: https://www.islington.media/news/thousands-more-renters-to-benefit-as-landlord-licensing-scheme-expands
+- Additional (HMO) licensing (active): 2026-02-01 to 2031-01-31. Covers borough-wide. Fee approx £900 application plus £100 per letting. Source: https://www.islington.media/news/thousands-more-renters-to-benefit-as-landlord-licensing-scheme-expands
+
+### Kensington and Chelsea
+Page: https://prscheck.co.uk/councils/kensington-and-chelsea
+- Additional (HMO) licensing (active): 2023-06-01 to 2028-05-31. Covers borough-wide. Fee approx £1,450 for up to 5 lettable rooms. Source: https://www.rbkc.gov.uk/housing/information-homeowners-private-rented-tenants-and-landlords/houses-multiple-occupation-hmo/additional-hmo-licensing-scheme
+
+### Lambeth
+Page: https://prscheck.co.uk/councils/lambeth
+- Selective licensing (active): 2024-09-02 to 2029-09-01. Covers 4 wards/areas: Knight's Hill, Streatham Common & Vale, Streatham Hill East, Streatham St Leonard's. Fee approx £1,025 (Part A £717.50 + Part B £307.50). Source: https://www.lambeth.gov.uk/housing/landlords-licensing/selective-licensing-scheme
+- Selective licensing (active): 2025-09-01 to 2030-08-31. Covers 19 wards/areas: Brixton Acre Lane, Brixton North, Brixton Rush Common, Brixton Windrush, Clapham Common & Abbeville, Clapham East, Clapham Park, Clapham Town, Gipsy Hill, Herne Hill & Loughborough Junction, Kennington, Myatt's Field, Oval, St Martin's, Stockwell East, Stockwell West & Larkhall, Streatham Hill West & Thornton, Streatham Wells, West Dulwich. Fee approx £1,025 (Part A £717.50 + Part B £307.50). Source: https://www.lambeth.gov.uk/housing/landlords-licensing/selective-licensing-scheme
+- Additional (HMO) licensing (active): 2021-12-09 to 2026-12-08. Covers borough-wide. Fee approx approx £520 per habitable room. Source: https://www.lambeth.gov.uk/housing/landlords-licensing/houses-multiple-occupation-hmos/additional-hmo-licensing
+
+### Leeds
+Page: https://prscheck.co.uk/councils/leeds
+- Selective licensing (active): 2026-02-09 to 2031-02-08. Covers 6 wards/areas: Armley, Beeston and Holbeck, Burmantofts and Richmond Hill, Hunslet and Riverside, Gipton and Harehills, Farnley and Wortley. Fee approx £1,100 online (£400 application + £700 grant). Source: https://www.leeds.gov.uk/housing/information-for-landlords/selective-licensing
+
+### Leicester
+Page: https://prscheck.co.uk/councils/leicester
+- Selective licensing (active): 2022-10-10 to 2027-10-09. Covers 5 wards/areas: Stoneygate, Westcotes, Fosse, Braunstone Park & Rowley Fields, Saffron. Fee approx £1,290 (£1,032 application + £258 on issue). Source: https://www.leicester.gov.uk/your-community/housing/landlords/selective-licensing/
+
+### Lewisham
+Page: https://prscheck.co.uk/councils/lewisham
+- Selective licensing (active): 2024-07-01 to 2029-06-30. Covers 16 wards/areas: Brockley, Catford South, Lewisham Central, New Cross, Perry Vale, Rushey Green, Crofton Park, Evelyn, Ladywell, Lee Green, Sydenham, Bellingham, Downham, Forest Hill, Grove Park, Whitefoot. Fee approx £640 (£160 application + £480 on granting). Source: https://lewisham.gov.uk/selectivelicensing
+- Additional (HMO) licensing (active): 2022-04-22 to 2027-04-21. Covers borough-wide. Fee approx approx £500 per household/bedroom. Source: https://lewisham.gov.uk/myservices/housing/private-tenants-and-landlords/landlords/hmo/apply-for-a-private-property-licence
+
+### Liverpool
+Page: https://prscheck.co.uk/councils/liverpool
+- Selective licensing (active): 2022-04-01 to 2027-03-31. Covers 16 wards/areas: Central, Riverside, Greenbank, Kensington, Picton, Tuebrook & Stoneycroft, County, Anfield, St Michael's, Princes Park, Kirkdale, Old Swan, Warbreck, Wavertree, Fazakerley, Everton. Fee approx £704 (discounted £321-£486). Source: https://liverpool.gov.uk/business/licences-and-permits/landlord-licensing/selective-licensing-scheme/
+
+### Luton
+Page: https://prscheck.co.uk/councils/luton
+- Selective licensing (active): 2026-06-01 to 2029-02-04. Covers streets. Fee approx early-bird £150 to 31 Aug 2026; standard fees TBC. Source: https://www.luton.gov.uk/housing/private-tenants-homeowners-landlords/landlords/selective-licensing
+- Additional (HMO) licensing (active): 2026-06-01 to 2029-02-04. Covers borough-wide. Fee approx early-bird £150 to 31 Aug 2026; standard fees TBC. Source: https://www.luton.gov.uk/housing/private-tenants-homeowners-landlords/landlords/additional-licensing
+
+### Manchester
+Page: https://prscheck.co.uk/councils/manchester
+- Selective licensing (active): 2022-05-01 to 2027-04-30. Covers streets. Fee approx £591-£798 (2022 designation rates). Source: https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes
+- Selective licensing (active): 2023-08-09 to 2028-08-08. Covers streets. Fee approx £736-£936 (2023 designation rates). Source: https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes
+- Selective licensing (active): 2025-05-24 to 2030-05-23. Covers streets. Fee approx £964 full (£764 early bird). Source: https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes
+
+### Mansfield
+Page: https://prscheck.co.uk/councils/mansfield
+- Selective licensing (active): 2025-09-13 to 2030-09-10. Covers 7 wards/areas: Central, Bancroft, West Bank, Wainwright, Market Warsop, Eakring, Rock Hill. Fee approx £800 (£500 application + £300 issuing). Source: https://www.mansfield.gov.uk/selectivelicensing
+
+### Merton
+Page: https://prscheck.co.uk/councils/merton
+- Selective licensing (active): 2023-09-24 to 2028-09-23. Covers 4 wards/areas: Figge's Marsh, Graveney, Longthornton, Pollards Hill. Fee approx £747.60 (Part A £267 + Part B £480.60). Source: https://www.merton.gov.uk/council-tax-benefits-and-housing/private-housing/licensing/selective-licence
+- Additional (HMO) licensing (active): 2023-09-24 to 2028-09-23. Covers 7 wards/areas: Colliers Wood, Cricket Green, Figge's Marsh, Graveney, Lavender Fields, Longthornton, Pollards Hill. Fee approx £1,566-£1,674 by bedroom count. Source: https://www.merton.gov.uk/council-tax-benefits-and-housing/private-housing/licensing/additional-hmo-licence
+
+### Middlesbrough
+Page: https://prscheck.co.uk/councils/middlesbrough
+- Selective licensing (active): 2023-07-03 to 2028-07-02. Covers 1 wards/areas: Newport. Fee approx £500-£750 (unverified). Source: https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-middlesbrough/
+- Selective licensing (active): 2024-07-23 to 2029-07-22. Covers 1 wards/areas: Newport. Fee approx £500-£750 (unverified). Source: https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-middlesbrough/
+
+### Newcastle upon Tyne
+Page: https://prscheck.co.uk/councils/newcastle-upon-tyne
+- Selective licensing (active): 2021-10-01 to 2026-09-30. Covers 3 wards/areas: Byker, Elswick, Benwell & Scotswood. Fee approx £1,000. Source: https://new.newcastle.gov.uk/property-licensing-schemes-newcastle/selective-licensing
+- Selective licensing (active): 2025-04-05 to 2030-04-05. Covers 8 wards/areas: Arthur's Hill, Benwell & Scotswood, Blakelaw, Elswick, Kenton, Lemington, West Fenham, Wingrove. Fee approx £900. Source: https://new.newcastle.gov.uk/property-licensing-schemes-newcastle/selective-licensing
+- Selective licensing (upcoming): 2026-10-01 to 2031-09-29. Covers 3 wards/areas: Byker, Elswick, Benwell & Scotswood. Fee approx £1,000. Source: https://new.newcastle.gov.uk/property-licensing-schemes-newcastle/selective-licensing
+- Additional (HMO) licensing (active): 2025-04-05 to 2030-04-05. Covers borough-wide. Fee approx £1,000-£1,100. Source: https://new.newcastle.gov.uk/property-licensing-schemes-newcastle/additional-licensing
+
+### Newham
+Page: https://prscheck.co.uk/councils/newham
+- Selective licensing (active): 2023-06-01 to 2028-05-31. Covers 22 wards/areas: Beckton, Boleyn, Canning Town North, Canning Town South, Custom House, East Ham, East Ham South, Forest Gate North, Forest Gate South, Green Street East, Green Street West, Little Ilford, Manor Park, Maryland, Plaistow North, Plaistow South, Plaistow West & Canning Town East, Plashet, Royal Albert, Stratford, Wall End, West Ham. Fee approx £750 (£400 Part A + £350 Part B). Source: https://www.newham.gov.uk/landlords-newham/rented-property-licensing/11
+- Additional (HMO) licensing (active): 2023-01-01 to 2027-12-31. Covers 22 wards/areas: Beckton, Boleyn, Canning Town North, Canning Town South, Custom House, East Ham, East Ham South, Forest Gate North, Forest Gate South, Green Street East, Green Street West, Little Ilford, Manor Park, Maryland, Plaistow North, Plaistow South, Plaistow West & Canning Town East, Plashet, Royal Albert, Stratford, Wall End, West Ham. Fee approx £1,250 (£400 Part A + £850 Part B). Source: https://www.newham.gov.uk/landlords-newham/rented-property-licensing/12
+
+### North East Lincolnshire
+Page: https://prscheck.co.uk/councils/north-east-lincolnshire
+- Selective licensing (active): 2026-04-08 to 2031-04-07. Covers 1 wards/areas: East Marsh. Fee approx £1,000 (£600 Part A + £400 Part B); £725 accredited. Source: https://www.nelincs.gov.uk/homes-and-property/selective-licensing/
+
+### North Lincolnshire
+Page: https://prscheck.co.uk/councils/north-lincolnshire
+- Selective licensing (active): 2025-03-20 to 2030-03-19. Covers 2 wards/areas: Crosby and Park, Town. Fee approx £955 (£615 Part A + £340 Part B). Source: https://www.northlincs.gov.uk/site/documents/licensing/selective-licensing-how-to-apply/
+
+### North Yorkshire
+Page: https://prscheck.co.uk/councils/north-yorkshire
+- Selective licensing (active): 2022-05-01 to 2027-04-30. Covers 1 wards/areas: Weaponness and Ramshill. Fee approx £550 per single-household property. Source: https://www.northyorks.gov.uk/housing-and-homelessness/selective-licensing/selective-licensing-scarborough-south
+- Selective licensing (active): 2024-06-01 to 2029-05-31. Covers 3 wards/areas: Castle, Falsgrave and Stepney, Northstead. Fee approx £695 total per single unit. Source: https://www.northyorks.gov.uk/housing-and-homelessness/selective-licensing/selective-licensing-scarborough-town-1-june-2024
+
+### Northumberland
+Page: https://prscheck.co.uk/councils/northumberland
+- Selective licensing (active): 2024-10-14 to 2029-10-13. Covers 1 wards/areas: Croft. Fee approx £650 (£495 accredited). Source: https://www.northumberland.gov.uk/housing/private-landlords-and-tenants
+
+### Nottingham
+Page: https://prscheck.co.uk/councils/nottingham
+- Selective licensing (active): 2023-12-01 to 2028-11-30. Covers areas. Fee approx £950 non-accredited (new fees from 1 April 2026). Source: https://www.nottinghamcity.gov.uk/information-for-residents/housing/selective-licensing/
+- Additional (HMO) licensing (active): 2024-01-01 to 2028-12-31. Covers borough-wide. Fee approx £1,607 non-accredited total for up to 9 bedrooms. Source: https://www.nottinghamcity.gov.uk/information-for-residents/housing/houses-in-multiple-occupation-hmo/
+
+### Oadby and Wigston
+Page: https://prscheck.co.uk/councils/oadby-and-wigston
+- Selective licensing (active): 2025-11-10 to 2030-11-09. Covers 2 wards/areas: Wigston, South Wigston. Fee approx £850 standard (£450 application + £400 subsistence); £750 accredited. Source: https://www.oadby-wigston.gov.uk/pages/selective_licensing_scheme
+
+### Oldham
+Page: https://prscheck.co.uk/councils/oldham
+- Selective licensing (active): 2022-07-04 to 2027-07-03. Covers 11 wards/areas: Medlock Vale, St Mary's, Werneth, Waterhead, Alexandra, Chadderton South, Hollinwood, Coldhurst, Failsworth East, Saddleworth West & Lees, St James'. Fee approx £582 (£340.34 application + £241.66 grant). Source: https://www.oldham.gov.uk/info/201198/help_for_landlords/1450/selective_licensing_of_private_landlords
+
+### Oxford
+Page: https://prscheck.co.uk/councils/oxford
+- Selective licensing (active): 2022-09-01 to 2027-08-31. Covers district. Fee approx £853 standard new (2026/27). Source: https://www.oxford.gov.uk/selective-licensing/selective-licensing-fees-charges
+- Additional (HMO) licensing (active): 2026-06-25 to 2031-06-24. Covers district. Fee approx £858 standard new (from 1 Apr 2026). Source: https://www.oxford.gov.uk/houses-multiple-occupation-hmos/additional-licensing-scheme
+
+### Peterborough
+Page: https://prscheck.co.uk/councils/peterborough
+- Selective licensing (active): 2024-03-11 to 2029-03-10. Covers 10 wards/areas: Bretton, Central, East, Fletton and Stanground, Fletton and Woodston, North, Orton Waterville, Park, Paston and Walton, Stanground South. Fee approx £908 (£538 Part A + £370 Part B). Source: https://www.peterborough.gov.uk/residents/housing/selective-licensing/selective-licensing-overview
+- Additional (HMO) licensing (active): 2026-01-26 to 2031-01-25. Covers borough-wide. Fee approx £1,100 (£588 Part A + £512 Part B). Source: https://www.peterborough.gov.uk/residents/housing/houses-in-multiple-occupation/additional-hmo-licensing
+
+### Portsmouth
+Page: https://prscheck.co.uk/councils/portsmouth
+- Additional (HMO) licensing (active): 2023-09-01 to 2028-08-31. Covers district. Fee approx £886 (5yr) new application. Source: https://www.portsmouth.gov.uk/services/housing/landlords/houses-in-multiple-occupation/additional-hmo-licence/
+
+### Reading
+Page: https://prscheck.co.uk/councils/reading
+- Additional (HMO) licensing (active): 2026-03-01 to 2031-02-28. Covers district. Fee approx £1,500 (£750 Part A + £750 Part B). Source: https://www.reading.gov.uk/housing/private-renting/extension-of-property-licensing/
+
+### Redbridge
+Page: https://prscheck.co.uk/councils/redbridge
+- Selective licensing (active): 2023-11-01 to 2028-10-31. Covers 2 wards/areas: Ilford Town, Valentines. Fee approx £997.69 total 2026/27. Source: https://www.redbridge.gov.uk/housing/landlords/selective-licensing/
+- Selective licensing (active): 2024-04-08 to 2029-04-07. Covers 15 wards/areas: Aldborough, Barkingside, Chadwell, Churchfields, Clementswood, Cranbrook, Fairlop, Goodmayes, Hainault, Loxford, Mayfield, Newbury, Seven Kings, South Woodford, Wanstead Village. Fee approx £997.69 total 2026/27. Source: https://www.redbridge.gov.uk/housing/landlords/selective-licensing/
+- Additional (HMO) licensing (active): 2023-09-18 to 2028-09-17. Covers borough-wide. Fee approx £696.14 first stage + £1,169.20-£2,032.37 second stage. Source: https://www.redbridge.gov.uk/housing/landlords/houses-in-multiple-occupation-licensing/
+
+### Rochdale
+Page: https://prscheck.co.uk/councils/rochdale
+- Additional (HMO) licensing (active): 2025-04-29 to 2030-04-28. Covers borough-wide. Fee approx £1,011 for 5 years plus £53 inspection per habitable room. Source: https://www.rochdale.gov.uk/private-landlords/hmo-housing-standards
+
+### Rotherham
+Page: https://prscheck.co.uk/councils/rotherham
+- Selective licensing (active): 2026-02-15 to 2031-02-14. Covers areas. Fee approx £975 standard (Part 1 £276 + Part 2 £699). Source: https://www.rotherham.gov.uk/private-housing/selective-licensing-2026-2031
+
+### Salford
+Page: https://prscheck.co.uk/councils/salford
+- Additional (HMO) licensing (active): 2021-07-19 to 2026-07-19. Covers borough-wide. Fee approx £1,085 new (£890 + £195). Source: https://www.salford.gov.uk/housing/information-for-landlords/additional-hmo-licensing/
+- Selective licensing (active): 2022-09-01 to 2027-08-31. Covers streets. Fee approx £609 first application. Source: https://www.salford.gov.uk/housing/information-for-landlords/landlord-licensing/areas-covered-by-selective-licensing/selective-licensing-in-eccles-barton-and-winton/
+- Selective licensing (active): 2026-01-21 to 2031-01-20. Covers streets. Fee approx £450 first application non-accredited (early period). Source: https://www.salford.gov.uk/housing/information-for-landlords/landlord-licensing/areas-covered-by-selective-licensing/selective-licensing-in-broughton-kersal-and-broughton-park/
+
+### Sandwell
+Page: https://prscheck.co.uk/councils/sandwell
+- Additional (HMO) licensing (active): 2024-10-01 to 2029-09-30. Covers borough-wide. Fee approx £1,021 new (£655 + £366). Source: https://www.sandwell.gov.uk/additionallicensing
+
+### Sefton
+Page: https://prscheck.co.uk/councils/sefton
+- Selective licensing (active): 2023-03-01 to 2028-02-29. Covers streets. Fee approx £695 standard (£545/£495 accredited). Source: https://www.sefton.gov.uk/housing/private-sector-housing/landlord-licensing-and-accreditation/selective-licensing-2023-2028/
+- Additional (HMO) licensing (active): 2023-03-01 to 2028-02-29. Covers streets. Fee approx £950 standard (£800/£750 accredited). Source: https://www.sefton.gov.uk/housing/private-sector-housing/landlord-licensing-and-accreditation/additional-hmo-licensing-2023-2028/
+
+### Southampton
+Page: https://prscheck.co.uk/councils/southampton
+- Additional (HMO) licensing (active): 2025-10-01 to 2030-09-30. Covers 9 wards/areas: Banister and Polygon, Bargate, Bassett, Bevois, Freemantle, Millbrook, Portswood, Shirley, Swaythling. Fee approx ~£953 standard (reported figure). Source: https://www.southampton.gov.uk/housing/landlords/houses-in-multiple-occupation-hmo/licences/
+
+### Southend-on-Sea
+Page: https://prscheck.co.uk/councils/southend-on-sea
+- Selective licensing (active): 2021-12-01 to 2026-11-30. Covers 4 wards/areas: Milton, Kursaal, Victoria, Chalkwell. Fee approx £830 (£208 Part A + £622 Part B). Source: https://www.southend.gov.uk/private-housing/selective-licensing-scheme
+
+### Southwark
+Page: https://prscheck.co.uk/councils/southwark
+- Selective licensing (active): 2022-03-01 to 2027-02-28. Covers 5 wards/areas: Champion Hill, Faraday, Goose Green, Newington, St Giles. Fee approx £945 (£661.50 Part A + £283.50 Part B). Source: https://www.southwark.gov.uk/housing/private-tenants-and-landlords/private-rented-property-licensing/property-licensing-3
+- Selective licensing (active): 2023-11-01 to 2028-10-31. Covers 14 wards/areas: Camberwell Green, Chaucer, Dulwich Hill, Dulwich Wood, London Bridge & West Bermondsey, North Walworth, Nunhead & Queen's Road, Old Kent Road, Peckham, Peckham Rye, Rotherhithe, Rye Lane, South Bermondsey, Surrey Docks. Fee approx £945. Source: https://www.southwark.gov.uk/housing/private-tenants-and-landlords/private-rented-property-licensing/property-licensing-3
+- Additional (HMO) licensing (active): 2022-03-01 to 2027-02-28. Covers borough-wide. Fee approx £1,433 from 1 Apr 2026 (s257 licences free). Source: https://www.southwark.gov.uk/housing/private-tenants-and-landlords/private-rented-property-licensing/property-licensing-2
+
+### Stockton-on-Tees
+Page: https://prscheck.co.uk/councils/stockton-on-tees
+- Selective licensing (active): 2024-11-01 to 2029-10-31. Covers 4 wards/areas: Mandale & Victoria, Newtown, Ropner, Stockton Town Centre. Fee approx £653 (£50 accredited discount). Source: https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-stockton-on-tees/
+
+### Sutton
+Page: https://prscheck.co.uk/councils/sutton
+- Additional (HMO) licensing (active): 2026-03-22 to 2031-03-21. Covers borough-wide. Fee approx £319.40 per let. Source: https://www.sutton.gov.uk/w/houses-in-multiple-occupation-apply-for-vary-or-renew-your-hmo-licence
+
+### Telford and Wrekin
+Page: https://prscheck.co.uk/councils/telford-and-wrekin
+- Additional (HMO) licensing (upcoming): 2026-08-25 to 2031-08-24. Covers borough-wide. Fee approx £1,522.42 standard (early-bird £1,370.18). Source: https://www.telford.gov.uk/public-protection/licensing/houses-in-multiple-occupancy-hmos/
+
+### Thurrock
+Page: https://prscheck.co.uk/councils/thurrock
+- Selective licensing (active): 2026-01-05 to 2031-01-04. Covers 16 wards/areas: Aveley and Uplands, Belhus, Chadwell St Mary, Chafford and North Stifford, Corringham and Fobbing, East Tilbury, Grays Riverside, Grays Thurrock, Little Thurrock Rectory, Ockendon, South Chafford, Stanford East and Corringham Town, Stanford-le-Hope West, Tilbury Riverside and Thurrock Park, Tilbury St Chads, West Thurrock and South Stifford. Fee approx £1,034.90 (£236.98 Part A + £797.92 Part B). Source: https://www.thurrock.gov.uk/houses-in-multiple-occupation/selective-licensing-scheme
+- Additional (HMO) licensing (active): 2025-09-07 to 2030-09-06. Covers borough-wide. Fee approx £1,670 total (2-5 rooms). Source: https://www.thurrock.gov.uk/houses-in-multiple-occupation/additional-licensing-for-hmos
+
+### Tower Hamlets
+Page: https://prscheck.co.uk/councils/tower-hamlets
+- Selective licensing (active): 2021-10-01 to 2026-09-30. Covers 3 wards/areas: Whitechapel, Weavers, Spitalfields & Banglatown. Fee approx £897 new online from Apr 2026; renewal £747. Source: https://www.towerhamlets.gov.uk/lgnl/housing/Private-tenants-landlords-and-homeowners/Property-licensing/Licences/Selective-licensing.aspx
+- Additional (HMO) licensing (active): 2024-04-01 to 2029-03-31. Covers borough-wide. Fee approx £1,323 online from Apr 2026. Source: https://www.towerhamlets.gov.uk/lgnl/housing/Private-tenants-landlords-and-homeowners/Property-licensing/Licences/Additional-licensing.aspx
+
+### Walsall
+Page: https://prscheck.co.uk/councils/walsall
+- Additional (HMO) licensing (active): 2022-09-01 to 2027-08-31. Covers 4 wards/areas: Palfrey, Paddock, Pleck, St Matthews. Fee approx £1,170 new application (£990 accredited). Source: https://go.walsall.gov.uk/housing/information-landlords/houses-multiple-occupation-hmo/additional-hmo-licensing
+
+### Waltham Forest
+Page: https://prscheck.co.uk/councils/waltham-forest
+- Selective licensing (active): 2025-05-01 to 2030-04-30. Covers areas. Fee approx £895 (Part A £300 + Part B £595). Source: https://www.walthamforest.gov.uk/housing/private-sector-housing/private-rented-property-licensing-prpl/selective-licensing-scheme
+- Additional (HMO) licensing (active): 2025-04-01 to 2030-03-31. Covers borough-wide. Fee approx £1,200 (Part A £600 + Part B £600). Source: https://www.walthamforest.gov.uk/housing/private-sector-housing/private-rented-property-licensing-prpl/additional-hmo-licensing
+
+### Wandsworth
+Page: https://prscheck.co.uk/councils/wandsworth
+- Selective licensing (active): 2025-07-01 to 2030-06-30. Covers 4 wards/areas: Furzedown, South Balham, Tooting Bec, Tooting Broadway. Fee approx £885 (Part A £529 + Part B £356). Source: https://www.wandsworth.gov.uk/housing/private-housing/private-rented-property-licences/property-licence-check/
+- Selective licensing (active): 2026-04-01 to 2031-03-31. Covers 3 wards/areas: East Putney, Northcote, West Putney. Fee approx £885; 30% early-bird discount on Part A until 1 Oct 2026. Source: https://www.wandsworth.gov.uk/housing/private-housing/private-rented-property-licences/property-licence-check/
+- Additional (HMO) licensing (active): 2025-07-01 to 2030-06-30. Covers borough-wide. Fee approx £1,507 (Part A £903 + Part B £604). Source: https://www.wandsworth.gov.uk/housing/private-housing/private-rented-property-licences/property-licence-check/
+
+### Warwick
+Page: https://prscheck.co.uk/councils/warwick
+- Additional (HMO) licensing (active): 2024-01-18 to 2029-01-17. Covers district. Fee approx unverified on council page. Source: https://www.warwickdc.gov.uk/news/article/1137/additional_licensing_scheme_comes_into_force
+
+### West Northamptonshire
+Page: https://prscheck.co.uk/councils/west-northamptonshire
+- Additional (HMO) licensing (active): 2025-02-24 to 2030-02-23. Covers part. Fee approx ~£1,452 base (Part 1 £628 + Part 2 £824). Source: https://www.westnorthants.gov.uk/private-housing-tenants-and-landlords/houses-multiple-occupation-hmos/types-hmo-licences
+
+### Westminster
+Page: https://prscheck.co.uk/councils/westminster
+- Selective licensing (active): 2025-11-24 to 2030-11-23. Covers 15 wards/areas: Abbey Road, Bayswater, Church Street, Harrow Road, Hyde Park, Knightsbridge & Belgravia, Lancaster Gate, Little Venice, Maida Vale, Marylebone, Pimlico North, Queen's Park, Regent's Park, West End, Westbourne. Fee approx £995 (Part A £543 + Part B £452). Source: https://www.westminster.gov.uk/housing/private-sector-housing/selective-property-licensing/licence-fees-and-discounts
+- Additional (HMO) licensing (active): 2021-08-30 to 2026-08-30. Covers borough-wide. Fee approx £1,540 base (+£68 per letting above five). Source: https://www.londonpropertylicensing.co.uk/westminster/
+- Additional (HMO) licensing (upcoming): 2026-08-31 to 2031-08-30. Covers borough-wide. Fee approx see council. Source: https://www.westminster.gov.uk/housing/private-sector-housing/houses-multiple-occupation-hmo/additional-licensing-scheme-renewal
+
+### Wirral
+Page: https://prscheck.co.uk/councils/wirral
+- Selective licensing (active): 2024-04-01 to 2029-03-31. Covers 4 wards/areas: Bidston and St James West, Birkenhead West, Egremont North, Seacombe St Paul's. Fee approx £585. Source: https://www.wirral.gov.uk/housing/housing-information-and-advice/private-landlords-and-managing-agents/selective-licensing
+- Selective licensing (active): 2025-10-01 to 2030-09-30. Covers 6 wards/areas: Birkenhead Central, Lower Tranmere, Tranmere North, Hamilton Square B, Tranmere Lairds, Egremont South. Fee approx £605. Source: https://www.wirral.gov.uk/housing/housing-information-and-advice/private-landlords-and-managing-agents/selective-licensing
+
+### Woking
+Page: https://prscheck.co.uk/councils/woking
+- Additional (HMO) licensing (active): 2026-01-05 to 2031-01-04. Covers borough-wide. Fee approx see council. Source: https://www.woking.gov.uk/housing/private-rented-housing/additional-hmo-licensing-scheme
+
+### Worcester
+Page: https://prscheck.co.uk/councils/worcester
+- Additional (HMO) licensing (active): 2025-09-01 to 2030-08-31. Covers borough-wide. Fee approx £1,181.41 total for 2-4 occupants (2026-27). Source: https://www.worcester.gov.uk/housing/landlord-advice/house-in-multiple-occupancy-hmo
+
+### York
+Page: https://prscheck.co.uk/councils/york
+- Additional (HMO) licensing (active): 2023-04-01 to 2028-03-31. Covers 8 wards/areas: Clifton, Fishergate, Fulford and Heslington, Guildhall, Heworth, Hull Road, Micklegate, Osbaldwick and Derwent. Fee approx £1,524 total for 3-6 occupants (2026-27). Source: https://www.york.gov.uk/private-landlords-tenants/house-multiple-occupation-hmo-licences
+
+## Councils with no discretionary scheme
+Every other English council operates mandatory HMO licensing only (plus Wales/Scotland national regimes). Browse all 296 at https://prscheck.co.uk/councils.
+
+## Canonical
+https://prscheck.co.uk

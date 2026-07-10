@@ -19,6 +19,9 @@ PRSCheck maps every selective and additional (HMO) licensing scheme in England t
 - [Homepage](https://prscheck.co.uk/)
 - [For councils / platform](https://prscheck.co.uk/platform): PRS enforcement tools for local authorities
 
+## Full reference
+- [Complete licensing dataset](https://prscheck.co.uk/llms-full.txt): every English council with a selective or additional scheme, dates, fees, covered wards, and the national rules.
+
 ## Canonical
 https://prscheck.co.uk
 
