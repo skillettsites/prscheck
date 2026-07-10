@@ -1,10 +1,30 @@
 # PRSCheck
 
-PRS enforcement SaaS platform for UK local authority housing teams. Council-focused B2B product.
+Two products on one site:
+1. **Landlord Licence Check (flagship, consumer, from 2026-07-10):** postcode -> council -> does this rental need a selective / additional / mandatory HMO licence. Free scheme check + £9.99 property-specific report. This is the revenue product.
+2. **PRS enforcement platform (secondary, B2B):** the original council-facing SaaS pitch (/platform, /pricing, /solutions, /demo). Kept, de-emphasised on the homepage.
 
 **URL:** prscheck.co.uk
 **Stack:** Next.js 16, Tailwind CSS v4, TypeScript strict mode
-**Deployment:** Vercel (auto-deploy on push to main)
+**Deployment:** Vercel (auto-deploy on push to **master** — note: master, not main)
+
+## Licence Check architecture
+- Data: `src/data/councils.json` (361 UK councils, ONS GSS), `src/data/licensing-schemes.json` (90 councils with selective/additional schemes, verified against council pages 2026-07-10), `src/data/national-rules.json` (mandatory HMO + penalties + RRA timeline for England/Wales/Scotland/NI).
+- Engine: `src/lib/licensing.ts` — `determine(gss, {occupants, households, wardName})` returns per-scheme verdicts (required / likely-required / check-boundary / upcoming / not-in-area); `councilSummary(gss)` for teaser + council pages. Ward matching normalises `&`/apostrophes; street/part-ward schemes return "check-boundary" (honest, since we can't resolve exact boundaries from a postcode).
+- Flow: `/check` (CheckClient) -> `/api/free-check` (postcodes.io -> council + scheme counts) -> occupancy form -> `/api/checkout` (Stripe, England only) -> `/api/webhook` (fulfil: reports row + Resend email + Telegram + conversion_events) -> `/checkout/success` (polls `/api/report-status`) -> `/r/[token]` (permanent report).
+- SEO/AI: `/councils` + 296 `/councils/[slug]` pages (generateStaticParams), `/guides` + 5 `/guides/[slug]`. FAQ + Article JSON-LD. llms.txt rewritten for consumer.
+- Report data lives in shared Supabase project `noxczmrnyyosgvvjlqca` (reports/stripe_events/conversion_events/searches tables, site_id=prscheck).
+
+## Env / infra notes
+- **Stripe: reuses the PostcodeCheck Stripe account** (STRIPE_SECRET_KEY = STRIPE_KEY_POSTCODECHECK) — there was no dedicated PRSCheck account. Sales are separable via metadata `product=licence_check` + Supabase `site_id=prscheck`. Dedicated webhook endpoint `we_1TrdtSEXmRmmhuTE9fRHBN43` on that account -> STRIPE_WEBHOOK_SECRET. PCC's own webhook now ignores `product==="licence_check"`. **TODO: move to a dedicated PRSCheck Stripe account when convenient** (keeps revenue/accounting clean).
+- Supabase/Resend/Telegram env vars pulled from CommandCenter .env.local, set on Vercel via `printf | vercel env add` (scope skillettsites-projects).
+- Resend domain prscheck.co.uk added + Cloudflare DKIM/SPF/MX records added 2026-07-10; verifying. Email is non-blocking (report shows on-screen + permanent link regardless).
+- GA: `NEXT_PUBLIC_GA_ID` not set yet (no GA4 property created). GoogleAnalytics component renders nothing until set.
+- Regenerate sitemap after build: `npx next-sitemap` (the postbuild hook only runs on `npm run build`, not `npx next build`). `/check` is dynamic so it's added via additionalPaths.
+
+## Data caveats (honest, in the data notes)
+- Walsall "Scheme Two", East Riding Goole, Barnet selective, Hartlepool/Redcar Tees Valley schemes = flagged unverified/not-live where uncertain. Never mark uncertain schemes "active".
+- Report + council pages state clearly: information service, not legal advice; confirm exact boundary with council.
 
 ## Commands
 
