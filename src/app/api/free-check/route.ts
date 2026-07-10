@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { councilSummary } from "@/lib/licensing";
+import { councilSummary, wardMatches } from "@/lib/licensing";
 import { createAdminClient } from "@/lib/supabase-admin";
 
 export const runtime = "nodejs";
@@ -60,13 +60,31 @@ export async function POST(req: NextRequest) {
         activeAdditional: summary.activeAdditional.length,
         upcoming: summary.upcoming.length,
         proposed: summary.proposed.length,
-        // Free tier deliberately gives counts + types, not the property-level determination.
-        summaries: [...summary.activeSelective, ...summary.activeAdditional, ...summary.upcoming].map((s) => ({
+        // Free tier shows the council's actual schemes (public facts also on the
+        // council pages). The PAID report adds the property-specific verdict:
+        // occupancy-based mandatory HMO, definitive per-scheme determination,
+        // penalty exposure and an action plan.
+        details: [...summary.activeSelective, ...summary.activeAdditional, ...summary.upcoming].map((s) => ({
           type: s.type,
           status: s.status,
           coverage: s.coverage,
           start: s.start,
           end: s.end,
+          feeApprox: s.feeApprox ?? null,
+          areaDescription: s.areaDescription ?? null,
+          wards: s.wards ?? null,
+          sourceUrl: s.sourceUrl,
+          // Preliminary signal only: does the resident's ward appear in this
+          // scheme's designated ward list? Many schemes are street/part-ward, so
+          // this is a hint, not the determination (that's the paid report).
+          wardInList:
+            s.coverage === "wards" && pc.admin_ward ? wardMatches(s.wards, pc.admin_ward) : null,
+        })),
+        proposedDetails: summary.proposed.map((s) => ({
+          type: s.type,
+          status: s.status,
+          areaDescription: s.areaDescription ?? null,
+          sourceUrl: s.sourceUrl,
         })),
       },
     });

@@ -3,6 +3,19 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
+interface SchemeDetail {
+  type: "selective" | "additional";
+  status: string;
+  coverage: string;
+  start: string | null;
+  end: string | null;
+  feeApprox: string | null;
+  areaDescription: string | null;
+  wards: string[] | null;
+  sourceUrl: string;
+  wardInList: boolean | null;
+}
+
 interface FreeResult {
   postcode: string;
   nation: string;
@@ -14,8 +27,16 @@ interface FreeResult {
     activeAdditional: number;
     upcoming: number;
     proposed: number;
-    summaries: { type: string; status: string; coverage: string; start: string | null; end: string | null }[];
+    details: SchemeDetail[];
+    proposedDetails: { type: string; status: string; areaDescription: string | null; sourceUrl: string }[];
   };
+}
+
+function fmtDate(d: string | null): string {
+  if (!d) return "TBC";
+  const p = new Date(d + "T00:00:00Z");
+  if (isNaN(p.getTime())) return d;
+  return p.toLocaleDateString("en-GB", { month: "short", year: "numeric", timeZone: "UTC" });
 }
 
 function attribution() {
@@ -167,7 +188,6 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   }
 
   const isEngland = result?.nation === "england";
-  const liveCount = result ? result.schemes.activeSelective + result.schemes.activeAdditional : 0;
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -215,41 +235,116 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
             </div>
           ) : (
             <>
-              <div className="mt-5 grid grid-cols-2 gap-3">
-                <Stat label="Active selective schemes" value={result.schemes.activeSelective} />
-                <Stat label="Active additional (HMO) schemes" value={result.schemes.activeAdditional} />
-                <Stat label="Upcoming schemes" value={result.schemes.upcoming} />
-                <Stat label="Proposed / under review" value={result.schemes.proposed} />
-              </div>
-
-              <div className="mt-5 rounded-lg bg-navy-900/60 p-4 text-sm text-navy-300">
-                {liveCount > 0 ? (
-                  <p>
-                    <span className="font-semibold text-warning">{result.council.name} operates discretionary
-                    licensing.</span>{" "}
-                    Whether YOUR property needs a licence depends on exactly where it is and how it is let. Get the
-                    property-specific determination below.
+              {/* Real scheme detail (the public facts) */}
+              {result.schemes.details.length > 0 ? (
+                <div className="mt-5 space-y-3">
+                  <p className="text-sm text-navy-300">
+                    {result.council.name} runs{" "}
+                    <span className="font-semibold text-navy-100">
+                      {result.schemes.details.filter((d) => d.status !== "upcoming").length > 0
+                        ? `${result.schemes.details.filter((d) => d.status !== "upcoming").length} live scheme${result.schemes.details.filter((d) => d.status !== "upcoming").length === 1 ? "" : "s"}`
+                        : ""}
+                      {result.schemes.upcoming > 0
+                        ? `${result.schemes.details.filter((d) => d.status !== "upcoming").length > 0 ? " and " : ""}${result.schemes.upcoming} upcoming scheme${result.schemes.upcoming === 1 ? "" : "s"}`
+                        : ""}
+                    </span>{" "}
+                    that could affect a rental here:
                   </p>
-                ) : result.schemes.upcoming > 0 ? (
+                  {result.schemes.details.map((s, i) => (
+                    <div key={i} className="rounded-lg border border-navy-700 bg-navy-900/50 p-4">
+                      <div className="flex flex-wrap items-center justify-between gap-2">
+                        <h4 className="text-sm font-semibold text-navy-100">
+                          {s.type === "selective" ? "Selective licensing" : "Additional (HMO) licensing"}
+                        </h4>
+                        <span
+                          className={`rounded-full border px-2.5 py-0.5 text-xs font-medium capitalize ${
+                            s.status === "upcoming"
+                              ? "border-accent-500/40 bg-accent-600/10 text-accent-300"
+                              : "border-success/40 bg-success/10 text-emerald-300"
+                          }`}
+                        >
+                          {s.status === "upcoming" ? `From ${fmtDate(s.start)}` : "Active"}
+                        </span>
+                      </div>
+                      <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-navy-400">
+                        <span>Runs</span>
+                        <span className="text-navy-200">
+                          {fmtDate(s.start)} – {fmtDate(s.end)}
+                        </span>
+                        {s.feeApprox && (
+                          <>
+                            <span>Council fee</span>
+                            <span className="text-navy-200">{s.feeApprox}</span>
+                          </>
+                        )}
+                        <span>Covers</span>
+                        <span className="text-navy-200">
+                          {s.coverage === "borough-wide" || s.coverage === "district" || s.coverage === "whole district"
+                            ? "Whole council area"
+                            : s.wards && s.wards.length > 0
+                              ? `${s.wards.length} ward${s.wards.length === 1 ? "" : "s"}/areas`
+                              : s.areaDescription
+                                ? "Designated streets/areas"
+                                : "Designated areas"}
+                        </span>
+                      </div>
+                      {/* Ward-match hint */}
+                      {s.wardInList === true && result.ward && (
+                        <p className="mt-2 rounded bg-warning/10 px-2.5 py-1.5 text-xs text-amber-200">
+                          Your ward ({result.ward}) is in this scheme&apos;s designated list. Confirm the exact
+                          determination for your property below.
+                        </p>
+                      )}
+                      {s.wardInList === false && result.ward && (
+                        <p className="mt-2 rounded bg-navy-800 px-2.5 py-1.5 text-xs text-navy-400">
+                          Your ward ({result.ward}) is not in this scheme&apos;s designated list, but nearby designations
+                          or occupancy rules may still apply. The report confirms.
+                        </p>
+                      )}
+                      {(s.coverage === "streets" || s.coverage === "areas" || s.coverage === "part") && (
+                        <p className="mt-2 rounded bg-navy-800 px-2.5 py-1.5 text-xs text-navy-400">
+                          This scheme is designated at street/part-ward level, so it can apply to one address and not the
+                          one next door. The report resolves your exact position.
+                        </p>
+                      )}
+                      <a
+                        href={s.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 inline-block text-xs text-accent-400 underline"
+                      >
+                        Official council scheme &amp; boundary map →
+                      </a>
+                    </div>
+                  ))}
+                  {result.schemes.proposedDetails.length > 0 && (
+                    <p className="text-xs text-navy-500">
+                      Plus {result.schemes.proposedDetails.length} scheme
+                      {result.schemes.proposedDetails.length === 1 ? "" : "s"} proposed / under consultation here.
+                    </p>
+                  )}
+                </div>
+              ) : (
+                <div className="mt-5 rounded-lg bg-navy-900/60 p-4 text-sm text-navy-300">
                   <p>
-                    <span className="font-semibold text-accent-400">A licensing scheme is coming to this area.</span>{" "}
-                    Get the property-specific determination below to see whether and when it affects you.
+                    <span className="font-semibold text-navy-100">Good news:</span> {result.council.name} has no active
+                    selective or additional licensing scheme right now.{" "}
+                    {result.schemes.proposedDetails.length > 0 && (
+                      <>A scheme is proposed or under consultation, though. </>
+                    )}
+                    Larger shared houses can still need a <span className="font-semibold">mandatory HMO licence</span>{" "}
+                    anywhere in England. Get the report below to confirm your exact position and mandatory-HMO status.
                   </p>
-                ) : (
-                  <p>
-                    We found no active selective or additional licensing scheme for this council. Larger HMOs may still
-                    need a <span className="font-semibold">mandatory HMO licence</span> anywhere in England. The full
-                    report confirms your exact position.
-                  </p>
-                )}
-              </div>
+                </div>
+              )}
 
               {/* Paid form */}
               <div className="mt-6 border-t border-navy-700 pt-6">
-                <h3 className="text-lg font-bold text-navy-100">Get your property-specific licence report — £9.99</h3>
+                <h3 className="text-lg font-bold text-navy-100">Which of these applies to YOUR property? — £9.99</h3>
                 <p className="mt-1 text-sm text-navy-400">
-                  Tell us about the property and we&apos;ll tell you exactly which licence(s) it needs, the scheme dates
-                  and fees, your penalty exposure, and what to do next.
+                  You can see the schemes above. The report gives the verdict for this specific property: whether it
+                  needs a mandatory HMO licence based on how it&apos;s let, whether your address falls inside each
+                  scheme&apos;s designated area, your exact penalty exposure, and a step-by-step action plan.
                 </p>
 
                 <div className="mt-4 space-y-3">
@@ -361,15 +456,6 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
         PRSCheck is an information service based on published council designations, not legal advice. Always confirm
         exact scheme boundaries with the council before acting.
       </p>
-    </div>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: number }) {
-  return (
-    <div className="rounded-lg bg-navy-900/60 p-3 text-center">
-      <div className={`text-2xl font-bold ${value > 0 ? "text-accent-400" : "text-navy-500"}`}>{value}</div>
-      <div className="mt-0.5 text-xs text-navy-400">{label}</div>
     </div>
   );
 }
