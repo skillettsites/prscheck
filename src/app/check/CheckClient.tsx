@@ -61,6 +61,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   const [addresses, setAddresses] = useState<string[]>([]);
   const [addressLoading, setAddressLoading] = useState(false);
   const [manualAddress, setManualAddress] = useState(false);
+  const [addressError, setAddressError] = useState(false);
   const [occupants, setOccupants] = useState("");
   const [households, setHouseholds] = useState("");
   const [buying, setBuying] = useState(false);
@@ -141,7 +142,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   async function buy() {
     if (!result) return;
     if (!address.trim()) {
-      setError("Please select or enter the property address.");
+      setAddressError(true);
       return;
     }
     const occ = parseInt(occupants, 10);
@@ -349,7 +350,14 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
 
                 <div className="mt-4 space-y-3">
                   <div>
-                    <label className="mb-1 block text-xs font-medium text-navy-400">Property address</label>
+                    <div className="mb-1 flex items-center justify-between gap-2">
+                      <label className="block text-xs font-medium text-navy-400">Property address</label>
+                      {addressError && (
+                        <span className="text-xs font-medium text-red-400">
+                          Please select or enter the property address
+                        </span>
+                      )}
+                    </div>
                     {addressLoading ? (
                       <div className="flex items-center gap-2 rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-400">
                         <span className="h-4 w-4 animate-spin rounded-full border-2 border-navy-600 border-t-accent-500" />
@@ -359,7 +367,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                       <>
                         <select
                           value={address}
-                          onChange={(e) => setAddress(e.target.value)}
+                          onChange={(e) => { setAddress(e.target.value); setAddressError(false); }}
                           className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 focus:border-accent-500 focus:outline-none"
                         >
                           <option value="">Select your property...</option>
@@ -385,7 +393,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                         <input
                           type="text"
                           value={address}
-                          onChange={(e) => setAddress(e.target.value)}
+                          onChange={(e) => { setAddress(e.target.value); setAddressError(false); }}
                           placeholder="e.g. 14 Example Street"
                           className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
                         />
