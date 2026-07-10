@@ -37,10 +37,44 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   const [result, setResult] = useState<FreeResult | null>(null);
 
   const [address, setAddress] = useState("");
+  const [addresses, setAddresses] = useState<string[]>([]);
+  const [addressLoading, setAddressLoading] = useState(false);
+  const [manualAddress, setManualAddress] = useState(false);
   const [occupants, setOccupants] = useState("");
   const [households, setHouseholds] = useState("");
   const [buying, setBuying] = useState(false);
   const autoRan = useRef(false);
+
+  // When we have an England result, load the address list for that postcode so
+  // the buyer can pick the exact property (mirrors HBC/PCC). Falls back to a
+  // free-text field if the lookup returns nothing.
+  useEffect(() => {
+    if (!result || result.nation !== "england") {
+      setAddresses([]);
+      return;
+    }
+    let active = true;
+    setAddressLoading(true);
+    setAddress("");
+    setManualAddress(false);
+    fetch(`/api/addresses?postcode=${encodeURIComponent(result.postcode)}`)
+      .then((r) => r.json())
+      .then((d) => {
+        if (!active) return;
+        const list: string[] = Array.isArray(d.addresses) ? d.addresses : [];
+        setAddresses(list);
+        if (list.length === 0) setManualAddress(true);
+      })
+      .catch(() => {
+        if (active) setManualAddress(true);
+      })
+      .finally(() => {
+        if (active) setAddressLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, [result]);
 
   // If we arrived with a postcode in the URL (e.g. from the homepage hero),
   // run the check automatically once.
@@ -85,6 +119,10 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
 
   async function buy() {
     if (!result) return;
+    if (!address.trim()) {
+      setError("Please select or enter the property address.");
+      return;
+    }
     const occ = parseInt(occupants, 10);
     const hh = parseInt(households, 10);
     if (!occ || occ < 1) {
@@ -216,14 +254,60 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
 
                 <div className="mt-4 space-y-3">
                   <div>
-                    <label className="mb-1 block text-xs font-medium text-navy-400">Property address (optional)</label>
-                    <input
-                      type="text"
-                      value={address}
-                      onChange={(e) => setAddress(e.target.value)}
-                      placeholder="e.g. 14 Example Street"
-                      className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
-                    />
+                    <label className="mb-1 block text-xs font-medium text-navy-400">Property address</label>
+                    {addressLoading ? (
+                      <div className="flex items-center gap-2 rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-400">
+                        <span className="h-4 w-4 animate-spin rounded-full border-2 border-navy-600 border-t-accent-500" />
+                        Finding addresses at {result.postcode}...
+                      </div>
+                    ) : !manualAddress && addresses.length > 0 ? (
+                      <>
+                        <select
+                          value={address}
+                          onChange={(e) => setAddress(e.target.value)}
+                          className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 focus:border-accent-500 focus:outline-none"
+                        >
+                          <option value="">Select your property...</option>
+                          {addresses.map((a) => (
+                            <option key={a} value={a}>
+                              {a}
+                            </option>
+                          ))}
+                        </select>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setManualAddress(true);
+                            setAddress("");
+                          }}
+                          className="mt-1 text-xs text-navy-500 underline hover:text-accent-400"
+                        >
+                          My address isn&apos;t listed
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        <input
+                          type="text"
+                          value={address}
+                          onChange={(e) => setAddress(e.target.value)}
+                          placeholder="e.g. 14 Example Street"
+                          className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
+                        />
+                        {addresses.length > 0 && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setManualAddress(false);
+                              setAddress("");
+                            }}
+                            className="mt-1 text-xs text-navy-500 underline hover:text-accent-400"
+                          >
+                            Choose from the address list instead
+                          </button>
+                        )}
+                      </>
+                    )}
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     <div>

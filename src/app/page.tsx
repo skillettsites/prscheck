@@ -101,6 +101,77 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* What we do */}
+      <section className="py-14 sm:py-24">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-navy-100 sm:text-3xl">What PRSCheck does</h2>
+          <div className="mt-5 space-y-4 text-navy-300">
+            <p>
+              Property licensing in the UK is a patchwork. On top of the England-wide rules for houses in multiple
+              occupation, individual councils run their own selective and additional licensing schemes, often covering
+              just a few streets or wards. There is no single national register a landlord can check, the schemes change
+              constantly, and the boundaries can run down the middle of a road.
+            </p>
+            <p>
+              The result is that thousands of landlords are letting property that needs a licence without realising it,
+              and only find out when a council enforcement officer, or a tenant claiming their rent back, gets in touch.
+              With penalties now reaching £40,000 per property and rent repayment orders of up to 24 months, that is an
+              expensive way to learn the rules.
+            </p>
+            <p>
+              PRSCheck fixes that. We have mapped every selective and additional licensing scheme in England to the
+              exact council and area it covers, and combined it with the national HMO rules and the registration regimes
+              in Wales and Scotland. Enter a postcode and we show you instantly whether that area has a scheme. Answer a
+              couple of questions about the tenancy and our £9.99 report tells you precisely which licence your property
+              needs, what it costs, what you are exposed to if you get it wrong, and exactly what to do next.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* The three licence types */}
+      <section className="border-y border-navy-800 bg-navy-950 py-14 sm:py-24">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-navy-100 sm:text-3xl">The three types of property licence</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-navy-400">
+              Most landlords only think about HMO licences. There are actually three regimes, and any combination can
+              apply to one property.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {[
+              {
+                t: "Mandatory HMO",
+                s: "Applies everywhere in England",
+                b: "Any property let to 5 or more people forming 2 or more households who share a kitchen, bathroom or toilet. No storey rule since 2018.",
+              },
+              {
+                t: "Additional HMO",
+                s: "Where the council designates it",
+                b: "Extends HMO licensing to smaller shared homes, typically 3 to 4 sharers, that fall below the mandatory threshold.",
+              },
+              {
+                t: "Selective",
+                s: "Where the council designates it",
+                b: "Covers ordinary private rented homes, not just HMOs, in a designated area. A single family let still needs one if it is in the zone.",
+              },
+            ].map((c) => (
+              <div key={c.t} className="rounded-2xl border border-navy-800 bg-navy-800/30 p-6">
+                <h3 className="text-lg font-bold text-navy-100">{c.t}</h3>
+                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-accent-500">{c.s}</p>
+                <p className="mt-3 text-sm text-navy-400">{c.b}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/guides/landlord-licensing" className="text-sm font-medium text-accent-400 hover:text-accent-300">
+              Read the full guide to landlord licensing →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="py-14 sm:py-24">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -159,8 +230,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Renters' Rights Act urgency */}
+      {/* Who it's for */}
       <section className="py-14 sm:py-24">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-navy-100 sm:text-3xl">Who uses PRSCheck</h2>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["Landlords", "Confirm your existing lets are licensed, and check before you buy a new rental or change the tenancy."],
+              ["Letting & managing agents", "Check licensing across a portfolio and avoid managing an unlicensed property on a client's behalf."],
+              ["Property buyers", "Find out during due diligence whether a buy-to-let you are purchasing sits in a licensing area."],
+              ["Tenants", "Check whether the home you rent should be licensed, which underpins a rent repayment claim if it isn't."],
+            ].map(([t, b]) => (
+              <div key={t} className="rounded-2xl border border-navy-800 bg-navy-800/30 p-6">
+                <h3 className="font-bold text-navy-100">{t}</h3>
+                <p className="mt-2 text-sm text-navy-400">{b}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Renters' Rights Act urgency */}
+      <section className="border-t border-navy-800 py-14 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-2xl border border-warning/30 bg-warning/5 p-6 sm:p-8">
             <h2 className="text-xl font-bold text-navy-100 sm:text-2xl">The rules are tightening in 2026</h2>
