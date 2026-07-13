@@ -35,13 +35,15 @@ export async function POST(req: NextRequest) {
     if (!summary) return NextResponse.json({ error: "council_unknown", gss }, { status: 404 });
 
     // Log the search; never let logging failures break the check.
+    // NB: the shared `searches` table uses `search_query`/`result_found` and has
+    // no `metadata` column — inserting `query`/`metadata` silently 400s (PGRST204).
     try {
       const admin = createAdminClient();
       await admin.from("searches").insert({
         site_id: "prscheck",
-        query: pc.postcode,
+        search_query: pc.postcode,
+        result_found: summary.hasData,
         search_type: "licence-check-free",
-        metadata: { council: summary.council.name, gss, ward: pc.admin_ward },
       });
     } catch {}
 
