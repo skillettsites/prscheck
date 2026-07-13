@@ -37,12 +37,16 @@ export async function POST(req: NextRequest) {
     // Log the search; never let logging failures break the check.
     // NB: the shared `searches` table uses `search_query`/`result_found` and has
     // no `metadata` column — inserting `query`/`metadata` silently 400s (PGRST204).
+    // result_found = "their area has a licensing scheme" (active or upcoming) so
+    // the dashboard's green/red dot flags hot leads (licensed areas) vs not.
+    const schemeFound =
+      summary.activeSelective.length + summary.activeAdditional.length + summary.upcoming.length > 0;
     try {
       const admin = createAdminClient();
       await admin.from("searches").insert({
         site_id: "prscheck",
         search_query: pc.postcode,
-        result_found: summary.hasData,
+        result_found: schemeFound,
         search_type: "licence-check-free",
       });
     } catch {}
