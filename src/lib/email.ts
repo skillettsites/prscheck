@@ -8,6 +8,7 @@ function getResend(): Resend {
 }
 
 const FROM = process.env.EMAIL_FROM ?? "PRSCheck <reports@prscheck.co.uk>";
+const REPLY_TO = process.env.EMAIL_REPLY_TO ?? "support@prscheck.co.uk";
 
 export async function sendLicenceReportEmail(
   to: string,
@@ -65,6 +66,7 @@ export async function sendLicenceReportEmail(
   const { error } = await resend.emails.send({
     from: FROM,
     to,
+    replyTo: REPLY_TO,
     subject: `Your licence check: ${report.address || report.postcode} (${d.council.name})`,
     html,
   });
