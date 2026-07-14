@@ -65,14 +65,6 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   const [households, setHouseholds] = useState("");
   const [buying, setBuying] = useState(false);
   const autoRan = useRef(false);
-  const formRef = useRef<HTMLDivElement>(null);
-
-  // Mid-page CTA: jump the buyer to the purchase form and focus the first field.
-  const scrollToBuy = () => {
-    formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-    const field = formRef.current?.querySelector("select, input") as HTMLElement | null;
-    setTimeout(() => field?.focus(), 400);
-  };
 
   // Clear the result to bring the search box back for another postcode.
   const reset = () => {
@@ -401,7 +393,47 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                 </div>
               )}
 
-              {/* Mid-page CTA: headline, address selection, then the button */}
+              {/* What your report gives you + stakes */}
+              <div className="mt-6 border-t border-navy-700 pt-6">
+                <h3 className="text-lg font-bold text-navy-100">Get the verdict for YOUR property</h3>
+                <p className="mt-1 text-sm text-navy-400">
+                  The schemes above are the general picture. Your report answers the one question that matters: does{" "}
+                  <span className="font-semibold text-navy-200">this specific property</span> need a licence? You get:
+                </p>
+
+                <ul className="mt-4 space-y-2">
+                  {[
+                    "A definitive licence verdict for your exact address",
+                    "Whether it needs a mandatory HMO licence, based on how it's let",
+                    "Whether your address falls inside each scheme's designated boundary",
+                    "Your exact penalty exposure and the deadlines that apply",
+                    "A step-by-step action plan to get compliant",
+                    "A permanent, shareable report plus an emailed copy",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-2.5 text-sm text-navy-200">
+                      <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                      </svg>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-4 rounded-lg border border-danger/30 bg-danger/5 p-3.5">
+                  <p className="text-sm text-navy-200">
+                    <span className="font-semibold text-red-300">Getting this wrong is expensive.</span> Letting without
+                    a required licence risks a civil penalty of up to <span className="font-semibold text-red-300">£40,000</span>,
+                    a rent-repayment order of up to <span className="font-semibold text-red-300">24 months&apos; rent</span>,
+                    and a possible banning order.
+                  </p>
+                  <p className="mt-2 text-sm text-navy-300">
+                    <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer, set against
+                    a five-figure fine for getting it wrong.
+                  </p>
+                </div>
+              </div>
+
+              {/* Purchase CTA: address + occupancy, button goes straight to Stripe checkout */}
               <div className="mt-6 rounded-xl border border-accent-500/40 bg-accent-600/10 p-5">
                 <p className="text-center text-base font-bold text-navy-100">
                   Confirm if your specific address needs a licence.
@@ -469,94 +501,42 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                     </>
                   )}
                 </div>
-                <div className="mt-4 text-center">
-                  <button
-                    onClick={scrollToBuy}
-                    className="inline-block rounded-lg bg-accent-600 px-7 py-3 font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500"
-                  >
-                    Get my bespoke report for £7.99 →
-                  </button>
-                </div>
-              </div>
-
-              {/* Paid form */}
-              <div ref={formRef} className="mt-6 scroll-mt-6 border-t border-navy-700 pt-6">
-                <h3 className="text-lg font-bold text-navy-100">Get the verdict for YOUR property</h3>
-                <p className="mt-1 text-sm text-navy-400">
-                  The schemes above are the general picture. Your report answers the one question that matters: does{" "}
-                  <span className="font-semibold text-navy-200">this specific property</span> need a licence? You get:
-                </p>
-
-                <ul className="mt-4 space-y-2">
-                  {[
-                    "A definitive licence verdict for your exact address",
-                    "Whether it needs a mandatory HMO licence, based on how it's let",
-                    "Whether your address falls inside each scheme's designated boundary",
-                    "Your exact penalty exposure and the deadlines that apply",
-                    "A step-by-step action plan to get compliant",
-                    "A permanent, shareable report plus an emailed copy",
-                  ].map((item) => (
-                    <li key={item} className="flex gap-2.5 text-sm text-navy-200">
-                      <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-4 rounded-lg border border-danger/30 bg-danger/5 p-3.5">
-                  <p className="text-sm text-navy-200">
-                    <span className="font-semibold text-red-300">Getting this wrong is expensive.</span> Letting without
-                    a required licence risks a civil penalty of up to <span className="font-semibold text-red-300">£40,000</span>,
-                    a rent-repayment order of up to <span className="font-semibold text-red-300">24 months&apos; rent</span>,
-                    and a possible banning order.
-                  </p>
-                  <p className="mt-2 text-sm text-navy-300">
-                    <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer, set against
-                    a five-figure fine for getting it wrong.
-                  </p>
-                </div>
-
-                <div className="mt-4 space-y-3">
-                  <div className="grid grid-cols-2 items-end gap-3">
-                    <div>
-                      <label className="mb-1 block text-xs font-medium text-navy-400">People living there</label>
-                      <input
-                        type="number"
-                        min={1}
-                        max={50}
-                        value={occupants}
-                        onChange={(e) => setOccupants(e.target.value)}
-                        placeholder="e.g. 4"
-                        className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
-                      />
-                    </div>
-                    <div>
-                      <label className="mb-1 block text-xs font-medium text-navy-400">Households</label>
-                      <input
-                        type="number"
-                        min={1}
-                        max={50}
-                        value={households}
-                        onChange={(e) => setHouseholds(e.target.value)}
-                        placeholder="e.g. 3"
-                        className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
-                      />
-                    </div>
+                <div className="mt-3 grid grid-cols-2 items-end gap-3">
+                  <div>
+                    <label className="mb-1 block text-xs font-medium text-navy-400">People living there</label>
+                    <input
+                      type="number"
+                      min={1}
+                      max={50}
+                      value={occupants}
+                      onChange={(e) => setOccupants(e.target.value)}
+                      placeholder="e.g. 4"
+                      className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
+                    />
                   </div>
-                  <p className="text-xs text-navy-500">
-                    A &quot;household&quot; is one person or a family/couple. Five unrelated tenants sharing = 5
-                    households. A couple plus a lodger = 2 households.
-                  </p>
+                  <div>
+                    <label className="mb-1 block text-xs font-medium text-navy-400">Households</label>
+                    <input
+                      type="number"
+                      min={1}
+                      max={50}
+                      value={households}
+                      onChange={(e) => setHouseholds(e.target.value)}
+                      placeholder="e.g. 3"
+                      className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
+                    />
+                  </div>
                 </div>
-
+                <p className="mt-2 text-xs text-navy-500">
+                  A &quot;household&quot; is one person or a family/couple. Five unrelated tenants sharing = 5 households.
+                  A couple plus a lodger = 2 households.
+                </p>
                 <button
                   onClick={buy}
                   disabled={buying}
-                  className="mt-4 w-full rounded-lg bg-accent-600 px-6 py-3.5 font-semibold text-white transition-all hover:bg-accent-500 disabled:opacity-60"
+                  className="mt-4 w-full rounded-lg bg-accent-600 px-6 py-3.5 font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500 disabled:opacity-60"
                 >
-                  {buying ? "Starting checkout..." : "Reveal my property's verdict for £7.99"}
+                  {buying ? "Starting checkout..." : "Get my bespoke report for £7.99 →"}
                 </button>
                 <p className="mt-3 text-center text-xs text-navy-500">
                   Instant online report, permanent link and email. Secure payment via Stripe.
