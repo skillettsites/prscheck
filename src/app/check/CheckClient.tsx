@@ -65,6 +65,14 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   const [households, setHouseholds] = useState("");
   const [buying, setBuying] = useState(false);
   const autoRan = useRef(false);
+  const formRef = useRef<HTMLDivElement>(null);
+
+  // Mid-page CTA: jump the buyer to the purchase form and focus the first field.
+  const scrollToBuy = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const field = formRef.current?.querySelector("select, input") as HTMLElement | null;
+    setTimeout(() => field?.focus(), 400);
+  };
 
   // When we have an England result, load the address list for that postcode so
   // the buyer can pick the exact property (mirrors HBC/PCC). Falls back to a
@@ -357,8 +365,24 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                 </div>
               )}
 
+              {/* Mid-page CTA bridging the free info into the purchase */}
+              <div className="mt-6 rounded-xl border border-accent-500/40 bg-accent-600/10 p-5 text-center">
+                <p className="text-base font-bold text-navy-100">
+                  Don&apos;t risk a £40,000 penalty on a guess.
+                </p>
+                <p className="mt-1 text-sm text-navy-300">
+                  Get a definitive licence verdict for this exact property in under a minute.
+                </p>
+                <button
+                  onClick={scrollToBuy}
+                  className="mt-4 inline-block rounded-lg bg-accent-600 px-7 py-3 font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500"
+                >
+                  Get my property&apos;s verdict — £7.99 →
+                </button>
+              </div>
+
               {/* Paid form */}
-              <div className="mt-6 border-t border-navy-700 pt-6">
+              <div ref={formRef} className="mt-6 scroll-mt-6 border-t border-navy-700 pt-6">
                 <h3 className="text-lg font-bold text-navy-100">Get the verdict for YOUR property</h3>
                 <p className="mt-1 text-sm text-navy-400">
                   The schemes above are the general picture. Your report answers the one question that matters: does{" "}
