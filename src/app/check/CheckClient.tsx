@@ -404,13 +404,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
               {/* Mid-page CTA bridging the free info into the purchase */}
               <div className="mt-6 rounded-xl border border-accent-500/40 bg-accent-600/10 p-5 text-center">
                 <p className="text-base font-bold text-navy-100">
-                  {result.schemes.details.length > 0
-                    ? "There are active licensing schemes covering this area."
-                    : "A mandatory HMO licence could still apply to your property."}
-                </p>
-                <p className="mt-1 text-sm text-navy-300">
-                  We can confirm whether your exact property needs a licence. Get a bespoke report for a definitive
-                  answer, and avoid a penalty of up to £40,000.
+                  Confirm if your specific address needs a licence.
                 </p>
                 <button
                   onClick={scrollToBuy}
@@ -523,9 +517,9 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                       </>
                     )}
                   </div>
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-2 items-end gap-3">
                     <div>
-                      <label className="mb-1 block text-xs font-medium text-navy-400">How many people live there?</label>
+                      <label className="mb-1 block text-xs font-medium text-navy-400">People living there</label>
                       <input
                         type="number"
                         min={1}
@@ -537,7 +531,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                       />
                     </div>
                     <div>
-                      <label className="mb-1 block text-xs font-medium text-navy-400">How many households?</label>
+                      <label className="mb-1 block text-xs font-medium text-navy-400">Households</label>
                       <input
                         type="number"
                         min={1}
