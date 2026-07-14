@@ -5,32 +5,20 @@ import { BookDemoButton } from "@/components/DemoPopup";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "PRSCheck is building the intelligence layer for PRS enforcement. Our mission is making private rented sector oversight effective, affordable, and accessible for every council.",
+    "PRSCheck has two sides: instant £7.99 property licence checks for landlords, tenants and buyers, and a PRS enforcement platform for local authority housing teams. All built on government-backed licensing data.",
   alternates: { canonical: "https://prscheck.co.uk/about" },
 };
 
-const values = [
-  {
-    title: "Accuracy",
-    description: "Every data point is sourced from official government registers. We cross-reference multiple sources to reduce false positives and ensure your team acts on reliable intelligence.",
-    icon: (
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-    ),
-  },
-  {
-    title: "Affordability",
-    description: "Council budgets are under pressure. PRSCheck is priced so that civil penalty income from improved enforcement covers the platform cost, typically within the first quarter.",
-    icon: (
-      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-    ),
-  },
-  {
-    title: "Accessibility",
-    description: "Small district councils deserve the same enforcement tools as large metropolitan authorities. Our Starter tier ensures every council can afford effective PRS oversight.",
-    icon: (
-      <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-    ),
-  },
+const consumerPoints = [
+  "Enter any England postcode for a free check of the licensing schemes that apply.",
+  "Answer a couple of questions about the tenancy and get a £7.99 property-specific report.",
+  "See exactly which licence you need (selective, additional or mandatory HMO), the scheme dates and fees, your penalty exposure, and a step-by-step action plan.",
+];
+
+const councilPoints = [
+  "Screen every private rented property in your area against official public datasets.",
+  "Surface unlicensed HMOs by cross-referencing council tax, EPC and licensing data.",
+  "Prioritise enforcement, manage cases end to end, and turn civil penalty income into self-funding oversight.",
 ];
 
 export default function AboutPage() {
@@ -38,136 +26,164 @@ export default function AboutPage() {
     <>
       {/* Header */}
       <section className="bg-gradient-to-b from-navy-950 to-navy-900 py-20">
-        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-navy-100 sm:text-5xl">
-            About PRSCheck
-          </h1>
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-bold text-navy-100 sm:text-5xl">About PRSCheck</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-navy-400">
-            Building the intelligence layer for PRS enforcement.
+            Getting property licensing right, from both sides. We help landlords, tenants and buyers find out whether a
+            property needs a licence, and we help councils enforce the rules across their whole private rented sector.
           </p>
+          <p className="mx-auto mt-4 inline-flex items-center gap-1.5 rounded-full border border-navy-700 bg-navy-800 px-3 py-1 text-xs text-navy-400">
+            <span aria-hidden>🏛️</span> Built on government-backed data
+          </p>
+        </div>
+      </section>
+
+      {/* The two sides */}
+      <section className="py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">Two sides, one dataset</h2>
+            <p className="mt-3 text-2xl font-bold text-navy-100 sm:text-3xl">Who PRSCheck is for</p>
+          </div>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-2">
+            {/* Side 1 — Consumers */}
+            <div className="flex flex-col rounded-2xl border border-accent-500/30 bg-accent-600/5 p-8">
+              <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-accent-500/40 bg-accent-600/10 px-3 py-1 text-xs font-semibold text-accent-300">
+                For landlords, tenants &amp; buyers
+              </span>
+              <h3 className="mt-5 text-2xl font-bold text-navy-100">One-off property licence check</h3>
+              <p className="mt-3 text-navy-400">
+                A licence you did not know you needed can cost up to £40,000. Before you let, rent or buy, check the
+                property in seconds, no subscription, no jargon.
+              </p>
+              <ul className="mt-6 space-y-3">
+                {consumerPoints.map((p) => (
+                  <li key={p} className="flex gap-3 text-sm text-navy-300">
+                    <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span>{p}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8 pt-2">
+                <Link
+                  href="/check"
+                  className="inline-block rounded-lg bg-accent-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500"
+                >
+                  Check a property — free
+                </Link>
+              </div>
+            </div>
+
+            {/* Side 2 — Councils */}
+            <div className="flex flex-col rounded-2xl border border-navy-700 bg-navy-800/40 p-8">
+              <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-navy-600 bg-navy-800 px-3 py-1 text-xs font-semibold text-navy-300">
+                For councils &amp; housing teams
+              </span>
+              <h3 className="mt-5 text-2xl font-bold text-navy-100">PRS enforcement platform</h3>
+              <p className="mt-3 text-navy-400">
+                The Renters&apos; Rights Act 2025 and the forthcoming PRS Database give councils more data than ever.
+                PRSCheck turns that data into action, so a stretched team can cover far more ground.
+              </p>
+              <ul className="mt-6 space-y-3">
+                {councilPoints.map((p) => (
+                  <li key={p} className="flex gap-3 text-sm text-navy-300">
+                    <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-navy-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span>{p}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8 flex flex-wrap gap-3 pt-2">
+                <BookDemoButton className="rounded-lg bg-navy-100 px-7 py-3.5 text-sm font-semibold text-navy-950 transition-all hover:bg-white">
+                  Book a demo
+                </BookDemoButton>
+                <Link
+                  href="/solutions"
+                  className="rounded-lg border border-navy-700 px-7 py-3.5 text-sm font-semibold text-navy-300 transition-all hover:border-navy-600 hover:bg-navy-800"
+                >
+                  See the platform
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Mission */}
-      <section className="py-20">
+      <section className="border-y border-navy-800 bg-navy-950 py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
-            Our Mission
-          </h2>
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">Our mission</h2>
           <p className="mt-4 text-2xl font-bold leading-relaxed text-navy-100">
-            Making PRS enforcement effective and affordable for every local authority in England.
+            Make property licensing clear for the people who have to comply, and enforceable for the authorities who
+            oversee it.
           </p>
           <div className="mt-8 space-y-4 text-navy-400">
             <p>
-              The Renters&apos; Rights Act 2025 transforms the regulatory landscape for private rented housing.
-              The new PRS Database will give councils, for the first time, a comprehensive register of every
-              landlord and property in the private rented sector.
+              England&apos;s licensing landscape is a patchwork: mandatory HMO rules apply nationwide, while hundreds of
+              councils run their own selective and additional schemes, often street by street. It is genuinely hard for
+              a landlord to know where they stand, and hard for a council to see the full picture of who is compliant.
             </p>
             <p>
-              But data alone does not create compliance. Councils need the tools to analyse that data,
-              identify non-compliant properties, prioritise enforcement action, and manage cases from
-              investigation through to resolution.
-            </p>
-            <p>
-              That is what PRSCheck does. We take 15 government data sources, combine them with the
-              upcoming PRS Database, and give housing teams a single platform to monitor, investigate,
-              and enforce across their entire PRS portfolio.
+              PRSCheck maps every active and upcoming scheme in England to the areas it covers, layered on the national
+              rules. The same dataset powers both a simple consumer check and a professional enforcement platform, two
+              front doors to one source of truth.
             </p>
           </div>
         </div>
       </section>
 
-      {/* What We Enable */}
-      <section className="border-y border-navy-800 bg-navy-950 py-12 sm:py-20">
+      {/* Data provenance */}
+      <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
-            What We Enable
-          </h2>
-          <p className="mt-4 text-xl sm:text-2xl font-bold text-navy-100">
-            Your team, but with superpowers.
-          </p>
-          <div className="mt-8 space-y-4 text-navy-400">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">Where our data comes from</h2>
+          <p className="mt-4 text-xl font-bold text-navy-100 sm:text-2xl">Government-backed, cross-referenced, verified.</p>
+          <div className="mt-6 space-y-4 text-navy-400">
             <p>
-              PRSCheck screens every PRS property in your borough automatically against 15 government
-              data sources. Non-compliant properties are flagged and prioritised before your team
-              even opens a case file.
+              Every result is built from official sources: local authority licensing designations, ONS council and ward
+              boundaries, the government&apos;s EPC register for addresses, and UK housing legislation (the Housing Act
+              2004 and its statutory instruments). We cross-reference schemes against each council&apos;s own published
+              designation and record the date we verified it.
             </p>
             <p>
-              HMO detection cross-references council tax, EPC, and licensing data to surface
-              unlicensed properties you would never find manually. Tenant complaints arrive
-              pre-structured with property data and compliance status already attached.
-            </p>
-            <p>
-              The result: your existing team covers more ground, identifies more non-compliant
-              landlords, and generates civil penalty income that funds further enforcement. Every
-              penalty your team issues is revenue that stays with your authority.
+              Many schemes are designated at street or part-ward level, so a licence can apply to one address and not the
+              one next door. That is exactly why a postcode-level answer is not enough, and why the paid report resolves
+              your specific property and cites its official source.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
-              Values
-            </h2>
-            <p className="mt-3 text-3xl font-bold text-navy-100">
-              What We Stand For
-            </p>
-          </div>
-          <div className="mt-12 grid gap-8 lg:grid-cols-3">
-            {values.map((value) => (
-              <div key={value.title} className="rounded-xl border border-navy-800 bg-navy-800/30 p-8">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent-600/10">
-                  <svg className="h-6 w-6 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    {value.icon}
-                  </svg>
-                </div>
-                <h3 className="mt-4 text-lg font-semibold text-navy-100">{value.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-navy-400">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Placeholder */}
-      <section className="border-y border-navy-800 bg-navy-950 py-20">
-        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">
-            Team
-          </h2>
-          <p className="mt-3 text-3xl font-bold text-navy-100">
-            Built by People Who Understand Housing
-          </p>
-          <p className="mx-auto mt-4 max-w-2xl text-navy-400">
-            Our team combines deep expertise in local government, housing enforcement,
-            and government data platforms. More details coming soon.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20">
+      {/* Team */}
+      <section className="border-y border-navy-800 bg-navy-950 py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-navy-100">
-            Want to learn more?
-          </h2>
-          <p className="mt-4 text-navy-400">
-            Book a demo to see how PRSCheck can support your enforcement team.
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-accent-500">Team</h2>
+          <p className="mt-3 text-2xl font-bold text-navy-100 sm:text-3xl">Built by people who understand housing</p>
+          <p className="mx-auto mt-4 max-w-2xl text-navy-400">
+            We combine expertise in private rented housing, licensing enforcement and public data. More details coming
+            soon.
           </p>
+        </div>
+      </section>
+
+      {/* Dual CTA */}
+      <section className="py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-navy-100">Whichever side you are on</h2>
+          <p className="mt-4 text-navy-400">Check a single property, or talk to us about enforcement across your area.</p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <BookDemoButton className="rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-accent-500">
-              Book a Demo
-            </BookDemoButton>
             <Link
-              href="/contact"
-              className="rounded-lg border border-navy-700 px-8 py-3.5 text-sm font-semibold text-navy-300 transition-all hover:border-navy-600 hover:bg-navy-800"
+              href="/check"
+              className="rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-accent-500"
             >
-              Contact Us
+              Check a property
             </Link>
+            <BookDemoButton className="rounded-lg border border-navy-700 px-8 py-3.5 text-sm font-semibold text-navy-300 transition-all hover:border-navy-600 hover:bg-navy-800">
+              Book a council demo
+            </BookDemoButton>
           </div>
         </div>
       </section>
