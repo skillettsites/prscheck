@@ -401,17 +401,82 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                 </div>
               )}
 
-              {/* Mid-page CTA bridging the free info into the purchase */}
-              <div className="mt-6 rounded-xl border border-accent-500/40 bg-accent-600/10 p-5 text-center">
-                <p className="text-base font-bold text-navy-100">
+              {/* Mid-page CTA: headline, address selection, then the button */}
+              <div className="mt-6 rounded-xl border border-accent-500/40 bg-accent-600/10 p-5">
+                <p className="text-center text-base font-bold text-navy-100">
                   Confirm if your specific address needs a licence.
                 </p>
-                <button
-                  onClick={scrollToBuy}
-                  className="mt-4 inline-block rounded-lg bg-accent-600 px-7 py-3 font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500"
-                >
-                  Get my bespoke report for £7.99 →
-                </button>
+                <div className="mt-4">
+                  <div className="mb-1 flex items-center justify-between gap-2">
+                    <label className="block text-xs font-medium text-navy-400">Property address</label>
+                    {addressError && (
+                      <span className="text-xs font-medium text-red-400">
+                        Please select or enter the property address
+                      </span>
+                    )}
+                  </div>
+                  {addressLoading ? (
+                    <div className="flex items-center gap-2 rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-400">
+                      <span className="h-4 w-4 animate-spin rounded-full border-2 border-navy-600 border-t-accent-500" />
+                      Finding addresses at {result.postcode}...
+                    </div>
+                  ) : !manualAddress && addresses.length > 0 ? (
+                    <>
+                      <select
+                        value={address}
+                        onChange={(e) => { setAddress(e.target.value); setAddressError(false); }}
+                        className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 focus:border-accent-500 focus:outline-none"
+                      >
+                        <option value="">Select your property...</option>
+                        {addresses.map((a) => (
+                          <option key={a} value={a}>
+                            {a}
+                          </option>
+                        ))}
+                      </select>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setManualAddress(true);
+                          setAddress("");
+                        }}
+                        className="mt-1 text-xs text-navy-500 underline hover:text-accent-400"
+                      >
+                        My address isn&apos;t listed
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <input
+                        type="text"
+                        value={address}
+                        onChange={(e) => { setAddress(e.target.value); setAddressError(false); }}
+                        placeholder="e.g. 14 Example Street"
+                        className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
+                      />
+                      {addresses.length > 0 && (
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setManualAddress(false);
+                            setAddress("");
+                          }}
+                          className="mt-1 text-xs text-navy-500 underline hover:text-accent-400"
+                        >
+                          Choose from the address list instead
+                        </button>
+                      )}
+                    </>
+                  )}
+                </div>
+                <div className="mt-4 text-center">
+                  <button
+                    onClick={scrollToBuy}
+                    className="inline-block rounded-lg bg-accent-600 px-7 py-3 font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500"
+                  >
+                    Get my bespoke report for £7.99 →
+                  </button>
+                </div>
               </div>
 
               {/* Paid form */}
@@ -454,69 +519,6 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                 </div>
 
                 <div className="mt-4 space-y-3">
-                  <div>
-                    <div className="mb-1 flex items-center justify-between gap-2">
-                      <label className="block text-xs font-medium text-navy-400">Property address</label>
-                      {addressError && (
-                        <span className="text-xs font-medium text-red-400">
-                          Please select or enter the property address
-                        </span>
-                      )}
-                    </div>
-                    {addressLoading ? (
-                      <div className="flex items-center gap-2 rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-400">
-                        <span className="h-4 w-4 animate-spin rounded-full border-2 border-navy-600 border-t-accent-500" />
-                        Finding addresses at {result.postcode}...
-                      </div>
-                    ) : !manualAddress && addresses.length > 0 ? (
-                      <>
-                        <select
-                          value={address}
-                          onChange={(e) => { setAddress(e.target.value); setAddressError(false); }}
-                          className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 focus:border-accent-500 focus:outline-none"
-                        >
-                          <option value="">Select your property...</option>
-                          {addresses.map((a) => (
-                            <option key={a} value={a}>
-                              {a}
-                            </option>
-                          ))}
-                        </select>
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setManualAddress(true);
-                            setAddress("");
-                          }}
-                          className="mt-1 text-xs text-navy-500 underline hover:text-accent-400"
-                        >
-                          My address isn&apos;t listed
-                        </button>
-                      </>
-                    ) : (
-                      <>
-                        <input
-                          type="text"
-                          value={address}
-                          onChange={(e) => { setAddress(e.target.value); setAddressError(false); }}
-                          placeholder="e.g. 14 Example Street"
-                          className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
-                        />
-                        {addresses.length > 0 && (
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setManualAddress(false);
-                              setAddress("");
-                            }}
-                            className="mt-1 text-xs text-navy-500 underline hover:text-accent-400"
-                          >
-                            Choose from the address list instead
-                          </button>
-                        )}
-                      </>
-                    )}
-                  </div>
                   <div className="grid grid-cols-2 items-end gap-3">
                     <div>
                       <label className="mb-1 block text-xs font-medium text-navy-400">People living there</label>
