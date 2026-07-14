@@ -188,6 +188,8 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   }
 
   const isEngland = result?.nation === "england";
+  // Hot lead: the searcher's ward appears in an active/upcoming scheme's designated list.
+  const hotMatch = isEngland && !!result?.schemes.details.some((d) => d.wardInList === true);
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -223,6 +225,16 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
           <p className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-navy-700 bg-navy-800 px-2.5 py-1 text-xs text-navy-400">
             <span aria-hidden>🏛️</span> Based on official government &amp; local authority licensing data
           </p>
+
+          {hotMatch && (
+            <div className="mt-4 rounded-lg border border-warning/50 bg-warning/10 p-4">
+              <p className="text-sm font-semibold text-amber-200">⚠️ Your ward is inside an active licensing scheme</p>
+              <p className="mt-1 text-sm text-navy-200">
+                That means a rental at this postcode very likely needs a licence. Operating without one risks a penalty
+                of up to £40,000. Confirm your property&apos;s exact position below before you let, rent or buy.
+              </p>
+            </div>
+          )}
 
           {!isEngland ? (
             <div className="mt-4 rounded-lg border border-accent-500/30 bg-accent-600/10 p-4 text-sm text-navy-200">
@@ -293,9 +305,9 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                       </div>
                       {/* Ward-match hint */}
                       {s.wardInList === true && result.ward && (
-                        <p className="mt-2 rounded bg-warning/10 px-2.5 py-1.5 text-xs text-amber-200">
-                          Your ward ({result.ward}) is in this scheme&apos;s designated list. Confirm the exact
-                          determination for your property below.
+                        <p className="mt-2 rounded bg-warning/10 px-2.5 py-1.5 text-xs font-medium text-amber-200">
+                          ⚠️ Your ward ({result.ward}) is inside this scheme — a rental here very likely needs a licence.
+                          The report confirms your exact position.
                         </p>
                       )}
                       {s.wardInList === false && result.ward && (
@@ -320,27 +332,69 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                   )}
                 </div>
               ) : (
-                <div className="mt-5 rounded-lg bg-navy-900/60 p-4 text-sm text-navy-300">
+                <div className="mt-5 rounded-lg border border-navy-700 bg-navy-900/60 p-4 text-sm text-navy-300">
                   <p>
-                    <span className="font-semibold text-navy-100">Good news:</span> {result.council.name} has no active
-                    selective or additional licensing scheme right now.{" "}
-                    {result.schemes.proposedDetails.length > 0 && (
-                      <>A scheme is proposed or under consultation, though. </>
-                    )}
-                    Larger shared houses can still need a <span className="font-semibold">mandatory HMO licence</span>{" "}
-                    anywhere in England. Get the report below to confirm your exact position and mandatory-HMO status.
+                    <span className="font-semibold text-navy-100">No blanket selective or additional scheme</span> in{" "}
+                    {result.council.name} right now
+                    {result.schemes.proposedDetails.length > 0 ? ", though one is proposed or under consultation" : ""}.
+                    But that isn&apos;t the whole picture:
+                  </p>
+                  <ul className="mt-3 space-y-1.5">
+                    <li>
+                      • A <span className="font-semibold text-navy-100">mandatory HMO licence</span> is required{" "}
+                      <span className="font-semibold">anywhere in England</span> once a property is let to 5+ people in
+                      2+ households — no council scheme needed. This is where landlords most often get caught, with
+                      penalties up to £40,000.
+                    </li>
+                    <li>
+                      • Schemes change, and street or part-ward designations nearby can still apply to your exact address.
+                    </li>
+                  </ul>
+                  <p className="mt-3">
+                    The £7.99 report confirms your position, rules a mandatory HMO licence in or out, and gives you
+                    documented proof.
                   </p>
                 </div>
               )}
 
               {/* Paid form */}
               <div className="mt-6 border-t border-navy-700 pt-6">
-                <h3 className="text-lg font-bold text-navy-100">Which of these applies to YOUR property? — £7.99</h3>
+                <h3 className="text-lg font-bold text-navy-100">Get the verdict for YOUR property</h3>
                 <p className="mt-1 text-sm text-navy-400">
-                  You can see the schemes above. The report gives the verdict for this specific property: whether it
-                  needs a mandatory HMO licence based on how it&apos;s let, whether your address falls inside each
-                  scheme&apos;s designated area, your exact penalty exposure, and a step-by-step action plan.
+                  The schemes above are the general picture. Your report answers the one question that matters: does{" "}
+                  <span className="font-semibold text-navy-200">this specific property</span> need a licence? You get:
                 </p>
+
+                <ul className="mt-4 space-y-2">
+                  {[
+                    "A definitive licence verdict for your exact address",
+                    "Whether it needs a mandatory HMO licence, based on how it's let",
+                    "Whether your address falls inside each scheme's designated boundary",
+                    "Your exact penalty exposure and the deadlines that apply",
+                    "A step-by-step action plan to get compliant",
+                    "A permanent, shareable report plus an emailed copy",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-2.5 text-sm text-navy-200">
+                      <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                      </svg>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-4 rounded-lg border border-danger/30 bg-danger/5 p-3.5">
+                  <p className="text-sm text-navy-200">
+                    <span className="font-semibold text-red-300">Getting this wrong is expensive.</span> Letting without
+                    a required licence risks a civil penalty of up to <span className="font-semibold text-red-300">£40,000</span>,
+                    a rent-repayment order of up to <span className="font-semibold text-red-300">24 months&apos; rent</span>,
+                    and a possible banning order.
+                  </p>
+                  <p className="mt-2 text-sm text-navy-300">
+                    <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer — set against
+                    a five-figure fine for guessing.
+                  </p>
+                </div>
 
                 <div className="mt-4 space-y-3">
                   <div>
@@ -443,7 +497,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                   disabled={buying}
                   className="mt-4 w-full rounded-lg bg-accent-600 px-6 py-3.5 font-semibold text-white transition-all hover:bg-accent-500 disabled:opacity-60"
                 >
-                  {buying ? "Starting checkout..." : "Get my licence report — £7.99"}
+                  {buying ? "Starting checkout..." : "Reveal my property's verdict — £7.99"}
                 </button>
                 <p className="mt-3 text-center text-xs text-navy-500">
                   Instant online report + permanent link + email. Secure payment via Stripe.
