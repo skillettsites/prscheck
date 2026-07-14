@@ -180,9 +180,10 @@ export default async function CouncilPage({ params }: { params: Promise<{ slug: 
       </div>
 
       <p className="mt-8 text-xs text-navy-600">
-        Data verified against council sources as of July 2026. PRSCheck is an information service, not legal advice.
-        Many schemes are designated at street or part-ward level; confirm the exact boundary for your address with the
-        council before relying on this page. <Link href="/councils" className="text-accent-400 underline">Browse all councils</Link>.
+        🏛️ Government-backed data: built from official local authority licensing designations, ONS council boundaries
+        and UK housing legislation (Housing Act 2004), verified as of July 2026. PRSCheck is an information service, not
+        legal advice. Many schemes are designated at street or part-ward level; the paid report confirms the exact
+        boundary and official source for your address. <Link href="/councils" className="text-accent-400 underline">Browse all councils</Link>.
       </p>
     </div>
   );

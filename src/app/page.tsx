@@ -313,6 +313,10 @@ export default function HomePage() {
               Start my licence check
             </Link>
           </div>
+          <p className="mx-auto mt-6 max-w-xl text-xs text-navy-500">
+            🏛️ Government-backed data: every result is built from official local authority licensing designations,
+            ONS council boundaries and UK housing legislation (Housing Act 2004).
+          </p>
         </div>
       </section>
     </>

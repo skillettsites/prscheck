@@ -1,6 +1,6 @@
 # PRSCheck
 
-> Check whether a UK rental property needs a landlord licence. PRSCheck tells landlords, tenants and buyers if a property requires selective, additional or mandatory HMO licensing, based on published council designations and national legislation.
+> Check whether a UK rental property needs a landlord licence. PRSCheck tells landlords, tenants and buyers if a property requires selective, additional or mandatory HMO licensing, based on government-backed data: official local authority licensing designations, ONS council boundaries and UK housing legislation (Housing Act 2004).
 
 PRSCheck maps every selective and additional (HMO) licensing scheme in England to the councils and areas they cover, layered on the England-wide mandatory HMO rules and the national registration regimes in Wales and Scotland. Enter a postcode for a free scheme check; a £7.99 report gives the property-specific verdict, scheme dates and fees, penalty exposure, and an action plan. PRSCheck also offers a separate enforcement platform for local authority housing teams.
 

@@ -12,7 +12,6 @@ interface SchemeDetail {
   feeApprox: string | null;
   areaDescription: string | null;
   wards: string[] | null;
-  sourceUrl: string;
   wardInList: boolean | null;
 }
 
@@ -28,7 +27,7 @@ interface FreeResult {
     upcoming: number;
     proposed: number;
     details: SchemeDetail[];
-    proposedDetails: { type: string; status: string; areaDescription: string | null; sourceUrl: string }[];
+    proposedDetails: { type: string; status: string; areaDescription: string | null }[];
   };
 }
 
@@ -221,6 +220,9 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
           <p className="text-sm text-navy-400">Licensing authority for {result.postcode}</p>
           <h2 className="mt-1 text-2xl font-bold text-navy-100">{result.council.name}</h2>
           {result.ward && <p className="mt-1 text-sm text-navy-400">Ward: {result.ward}</p>}
+          <p className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-navy-700 bg-navy-800 px-2.5 py-1 text-xs text-navy-400">
+            <span aria-hidden>🏛️</span> Based on official government &amp; local authority licensing data
+          </p>
 
           {!isEngland ? (
             <div className="mt-4 rounded-lg border border-accent-500/30 bg-accent-600/10 p-4 text-sm text-navy-200">
@@ -308,14 +310,6 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                           one next door. The report resolves your exact position.
                         </p>
                       )}
-                      <a
-                        href={s.sourceUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-2 inline-block text-xs text-accent-400 underline"
-                      >
-                        Official council scheme &amp; boundary map →
-                      </a>
                     </div>
                   ))}
                   {result.schemes.proposedDetails.length > 0 && (

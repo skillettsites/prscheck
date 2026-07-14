@@ -48,9 +48,7 @@ export default function SchemeList({ schemes }: { schemes: Scheme[] }) {
               </>
             )}
           </dl>
-          <a href={s.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-xs text-accent-400 underline">
-            Council source →
-          </a>
+          <p className="mt-3 text-xs text-navy-500">Official local authority licensing designation</p>
         </div>
       ))}
     </div>

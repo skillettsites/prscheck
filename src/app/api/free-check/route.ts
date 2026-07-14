@@ -66,10 +66,11 @@ export async function POST(req: NextRequest) {
         activeAdditional: summary.activeAdditional.length,
         upcoming: summary.upcoming.length,
         proposed: summary.proposed.length,
-        // Free tier shows the council's actual schemes (public facts also on the
-        // council pages). The PAID report adds the property-specific verdict:
-        // occupancy-based mandatory HMO, definitive per-scheme determination,
-        // penalty exposure and an action plan.
+        // Free tier shows that schemes exist + their type/dates/fees/area, but NOT
+        // the council source URL — that's the freely-available source we don't hand
+        // out. The PAID report adds the property-specific verdict (occupancy-based
+        // mandatory HMO, definitive per-scheme determination, penalty exposure,
+        // action plan) AND the official council source + boundary map.
         details: [...summary.activeSelective, ...summary.activeAdditional, ...summary.upcoming].map((s) => ({
           type: s.type,
           status: s.status,
@@ -79,7 +80,6 @@ export async function POST(req: NextRequest) {
           feeApprox: s.feeApprox ?? null,
           areaDescription: s.areaDescription ?? null,
           wards: s.wards ?? null,
-          sourceUrl: s.sourceUrl,
           // Preliminary signal only: does the resident's ward appear in this
           // scheme's designated ward list? Many schemes are street/part-ward, so
           // this is a hint, not the determination (that's the paid report).
@@ -90,7 +90,6 @@ export async function POST(req: NextRequest) {
           type: s.type,
           status: s.status,
           areaDescription: s.areaDescription ?? null,
-          sourceUrl: s.sourceUrl,
         })),
       },
     });
