@@ -74,6 +74,13 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
     setTimeout(() => field?.focus(), 400);
   };
 
+  // Clear the result to bring the search box back for another postcode.
+  const reset = () => {
+    setResult(null);
+    setError(null);
+    setPostcode("");
+  };
+
   // When we have an England result, load the address list for that postcode so
   // the buyer can pick the exact property (mirrors HBC/PCC). Falls back to a
   // free-text field if the lookup returns nothing.
@@ -201,32 +208,56 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
 
   return (
     <div className="mx-auto max-w-2xl">
-      {/* Search */}
-      <form onSubmit={runCheck} className="flex flex-col gap-3 sm:flex-row">
-        <input
-          type="text"
-          value={postcode}
-          onChange={(e) => setPostcode(e.target.value)}
-          placeholder="Enter a postcode, e.g. B12 9QR"
-          aria-label="Postcode"
-          className="flex-1 rounded-lg border border-navy-700 bg-navy-800 px-4 py-3.5 text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
-        />
-        <button
-          type="submit"
-          disabled={loading}
-          className="rounded-lg bg-accent-600 px-6 py-3.5 font-semibold text-white transition-all hover:bg-accent-500 disabled:opacity-60"
-        >
-          {loading ? "Checking..." : "Check licensing"}
-        </button>
-      </form>
+      {/* Hero + search: hidden once a result is showing, so the result sits at the top */}
+      {!result && (
+        <>
+          <div className="mb-8 text-center">
+            <span className="mb-4 inline-block rounded-full border border-accent-500/30 bg-accent-600/10 px-3 py-1 text-xs font-medium text-accent-400">
+              Free instant check
+            </span>
+            <h1 className="text-3xl font-bold text-navy-100 sm:text-4xl">
+              Does your rental property need a licence?
+            </h1>
+            <p className="mx-auto mt-3 max-w-2xl text-navy-400">
+              Operating an unlicensed property risks a civil penalty of up to £40,000, a Rent Repayment Order of up to
+              24 months&apos; rent, and being unable to serve notice. Check your postcode in seconds.
+            </p>
+          </div>
+          <form onSubmit={runCheck} className="flex flex-col gap-3 sm:flex-row">
+            <input
+              type="text"
+              value={postcode}
+              onChange={(e) => setPostcode(e.target.value)}
+              placeholder="Enter a postcode, e.g. B12 9QR"
+              aria-label="Postcode"
+              className="flex-1 rounded-lg border border-navy-700 bg-navy-800 px-4 py-3.5 text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
+            />
+            <button
+              type="submit"
+              disabled={loading}
+              className="rounded-lg bg-accent-600 px-6 py-3.5 font-semibold text-white transition-all hover:bg-accent-500 disabled:opacity-60"
+            >
+              {loading ? "Checking..." : "Check licensing"}
+            </button>
+          </form>
 
-      {error && (
-        <p className="mt-4 rounded-lg border border-danger/40 bg-danger/10 px-4 py-3 text-sm text-red-300">{error}</p>
+          {error && (
+            <p className="mt-4 rounded-lg border border-danger/40 bg-danger/10 px-4 py-3 text-sm text-red-300">{error}</p>
+          )}
+        </>
       )}
 
       {/* Free teaser result */}
       {result && (
-        <div className="mt-6 animate-slide-up rounded-2xl border border-navy-700 bg-navy-800/60 p-6">
+        <>
+          <button
+            type="button"
+            onClick={reset}
+            className="mb-4 inline-flex items-center gap-1 text-sm text-navy-400 transition-colors hover:text-accent-400"
+          >
+            ← Check another postcode
+          </button>
+        <div className="animate-slide-up rounded-2xl border border-navy-700 bg-navy-800/60 p-6">
           <p className="text-sm text-navy-400">Licensing authority for {result.postcode}</p>
           <h2 className="mt-1 text-2xl font-bold text-navy-100">{result.council.name}</h2>
           {result.ward && <p className="mt-1 text-sm text-navy-400">Ward: {result.ward}</p>}
@@ -261,18 +292,23 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
               {/* Real scheme detail (the public facts) */}
               {result.schemes.details.length > 0 ? (
                 <div className="mt-5 space-y-3">
-                  <p className="text-sm text-navy-300">
-                    {result.council.name} runs{" "}
-                    <span className="font-semibold text-navy-100">
-                      {result.schemes.details.filter((d) => d.status !== "upcoming").length > 0
-                        ? `${result.schemes.details.filter((d) => d.status !== "upcoming").length} live scheme${result.schemes.details.filter((d) => d.status !== "upcoming").length === 1 ? "" : "s"}`
-                        : ""}
-                      {result.schemes.upcoming > 0
-                        ? `${result.schemes.details.filter((d) => d.status !== "upcoming").length > 0 ? " and " : ""}${result.schemes.upcoming} upcoming scheme${result.schemes.upcoming === 1 ? "" : "s"}`
-                        : ""}
-                    </span>{" "}
-                    that could affect a rental here:
-                  </p>
+                  <div className="rounded-lg border border-warning/40 bg-warning/10 p-4">
+                    <p className="text-base font-bold text-amber-100">You could need a licence for this property.</p>
+                    <p className="mt-1.5 text-sm text-navy-200">
+                      {result.council.name} has{" "}
+                      <span className="font-semibold text-navy-100">
+                        {result.schemes.details.filter((d) => d.status !== "upcoming").length > 0
+                          ? `${result.schemes.details.filter((d) => d.status !== "upcoming").length} active licensing scheme${result.schemes.details.filter((d) => d.status !== "upcoming").length === 1 ? "" : "s"}`
+                          : ""}
+                        {result.schemes.upcoming > 0
+                          ? `${result.schemes.details.filter((d) => d.status !== "upcoming").length > 0 ? " and " : ""}${result.schemes.upcoming} upcoming scheme${result.schemes.upcoming === 1 ? "" : "s"}`
+                          : ""}
+                      </span>{" "}
+                      covering rentals in this area. Whether your specific property needs a licence depends on its exact
+                      address and how it is let. Get a bespoke report for a definitive answer.
+                    </p>
+                  </div>
+                  <p className="text-xs font-medium uppercase tracking-wide text-navy-500">The schemes here</p>
                   {result.schemes.details.map((s, i) => (
                     <div key={i} className="rounded-lg border border-navy-700 bg-navy-900/50 p-4">
                       <div className="flex flex-wrap items-center justify-between gap-2">
@@ -314,8 +350,8 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                       {/* Ward-match hint */}
                       {s.wardInList === true && result.ward && (
                         <p className="mt-2 rounded bg-warning/10 px-2.5 py-1.5 text-xs font-medium text-amber-200">
-                          ⚠️ Your ward ({result.ward}) is inside this scheme — a rental here very likely needs a licence.
-                          The report confirms your exact position.
+                          ⚠️ Your ward ({result.ward}) is inside this scheme, so a rental here very likely needs a
+                          licence. The report confirms your exact position.
                         </p>
                       )}
                       {s.wardInList === false && result.ward && (
@@ -351,7 +387,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                     <li>
                       • A <span className="font-semibold text-navy-100">mandatory HMO licence</span> is required{" "}
                       <span className="font-semibold">anywhere in England</span> once a property is let to 5+ people in
-                      2+ households — no council scheme needed. This is where landlords most often get caught, with
+                      2+ households, with no council scheme needed. This is where landlords most often get caught, with
                       penalties up to £40,000.
                     </li>
                     <li>
@@ -368,16 +404,19 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
               {/* Mid-page CTA bridging the free info into the purchase */}
               <div className="mt-6 rounded-xl border border-accent-500/40 bg-accent-600/10 p-5 text-center">
                 <p className="text-base font-bold text-navy-100">
-                  Don&apos;t risk a £40,000 penalty on a guess.
+                  {result.schemes.details.length > 0
+                    ? "There are active licensing schemes covering this area."
+                    : "A mandatory HMO licence could still apply to your property."}
                 </p>
                 <p className="mt-1 text-sm text-navy-300">
-                  Get a definitive licence verdict for this exact property in under a minute.
+                  We can confirm whether your exact property needs a licence. Get a bespoke report for a definitive
+                  answer, and avoid a penalty of up to £40,000.
                 </p>
                 <button
                   onClick={scrollToBuy}
                   className="mt-4 inline-block rounded-lg bg-accent-600 px-7 py-3 font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500"
                 >
-                  Get my property&apos;s verdict — £7.99 →
+                  Get my bespoke report for £7.99 →
                 </button>
               </div>
 
@@ -415,8 +454,8 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                     and a possible banning order.
                   </p>
                   <p className="mt-2 text-sm text-navy-300">
-                    <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer — set against
-                    a five-figure fine for guessing.
+                    <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer, set against
+                    a five-figure fine for getting it wrong.
                   </p>
                 </div>
 
@@ -521,15 +560,16 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                   disabled={buying}
                   className="mt-4 w-full rounded-lg bg-accent-600 px-6 py-3.5 font-semibold text-white transition-all hover:bg-accent-500 disabled:opacity-60"
                 >
-                  {buying ? "Starting checkout..." : "Reveal my property's verdict — £7.99"}
+                  {buying ? "Starting checkout..." : "Reveal my property's verdict for £7.99"}
                 </button>
                 <p className="mt-3 text-center text-xs text-navy-500">
-                  Instant online report + permanent link + email. Secure payment via Stripe.
+                  Instant online report, permanent link and email. Secure payment via Stripe.
                 </p>
               </div>
             </>
           )}
         </div>
+        </>
       )}
 
       <p className="mt-6 text-center text-xs text-navy-600">

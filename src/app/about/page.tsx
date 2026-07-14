@@ -47,7 +47,7 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            {/* Side 1 — Consumers */}
+            {/* Side 1: Consumers */}
             <div className="flex flex-col rounded-2xl border border-accent-500/30 bg-accent-600/5 p-8">
               <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-accent-500/40 bg-accent-600/10 px-3 py-1 text-xs font-semibold text-accent-300">
                 For landlords, tenants &amp; buyers
@@ -72,12 +72,12 @@ export default function AboutPage() {
                   href="/check"
                   className="inline-block rounded-lg bg-accent-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500"
                 >
-                  Check a property — free
+                  Check a property, free
                 </Link>
               </div>
             </div>
 
-            {/* Side 2 — Councils */}
+            {/* Side 2: Councils */}
             <div className="flex flex-col rounded-2xl border border-navy-700 bg-navy-800/40 p-8">
               <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-navy-600 bg-navy-800 px-3 py-1 text-xs font-semibold text-navy-300">
                 For councils &amp; housing teams

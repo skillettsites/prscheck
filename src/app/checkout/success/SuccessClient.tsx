@@ -74,7 +74,7 @@ export default function SuccessClient({ token }: { token: string | null }) {
   return (
     <div className="text-center">
       <div className="mx-auto mb-6 h-10 w-10 animate-spin rounded-full border-4 border-navy-700 border-t-accent-500" />
-      <h1 className="text-2xl font-bold text-navy-100">Payment received — building your report</h1>
+      <h1 className="text-2xl font-bold text-navy-100">Payment received, building your report</h1>
       <p className="mt-3 text-navy-400">
         We&apos;re running your property against every current and upcoming licensing scheme. This takes a few seconds.
       </p>

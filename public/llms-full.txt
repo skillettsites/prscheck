@@ -1,4 +1,4 @@
-# PRSCheck — Full UK Landlord Licensing Reference
+# PRSCheck: Full UK Landlord Licensing Reference
 
 > The complete, machine-readable reference to UK property licensing: which councils run selective and additional (HMO) licensing schemes, the England-wide mandatory HMO rules, and the national registration regimes in Wales and Scotland. Compiled from council designations and legislation, current July 2026. Check any postcode free at https://prscheck.co.uk/check.
 

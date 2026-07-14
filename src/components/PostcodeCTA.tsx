@@ -15,7 +15,7 @@ export default function PostcodeCTA({
         href="/check"
         className="mt-5 inline-block rounded-lg bg-accent-600 px-7 py-3.5 font-semibold text-white transition-all hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25"
       >
-        Check your postcode — free
+        Check your postcode, free
       </Link>
       <p className="mt-3 text-xs text-navy-500">Free scheme check · £7.99 for the full property report</p>
     </div>

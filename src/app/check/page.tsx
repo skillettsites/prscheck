@@ -18,18 +18,6 @@ export default async function CheckPage({
   return (
     <div className="grid-pattern">
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mb-10 text-center">
-          <span className="mb-4 inline-block rounded-full border border-accent-500/30 bg-accent-600/10 px-3 py-1 text-xs font-medium text-accent-400">
-            Free instant check
-          </span>
-          <h1 className="text-3xl font-bold text-navy-100 sm:text-4xl">
-            Does your rental property need a licence?
-          </h1>
-          <p className="mx-auto mt-3 max-w-2xl text-navy-400">
-            Operating an unlicensed property risks a civil penalty of up to £40,000, a Rent Repayment Order of up to 24
-            months&apos; rent, and being unable to serve notice. Check your postcode in seconds.
-          </p>
-        </div>
         <Suspense fallback={<div className="h-24" />}>
           <CheckClient initialPostcode={postcode} />
         </Suspense>

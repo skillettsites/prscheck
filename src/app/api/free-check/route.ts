@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
 
     // Log the search; never let logging failures break the check.
     // NB: the shared `searches` table uses `search_query`/`result_found` and has
-    // no `metadata` column — inserting `query`/`metadata` silently 400s (PGRST204).
+    // no `metadata` column, so inserting `query`/`metadata` silently 400s (PGRST204).
     // result_found = "their area has a licensing scheme" (active or upcoming) so
     // the dashboard's green/red dot flags hot leads (licensed areas) vs not.
     const schemeFound =
@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
         upcoming: summary.upcoming.length,
         proposed: summary.proposed.length,
         // Free tier shows that schemes exist + their type/dates/fees/area, but NOT
-        // the council source URL — that's the freely-available source we don't hand
+        // the council source URL, which is the freely-available source we don't hand
         // out. The PAID report adds the property-specific verdict (occupancy-based
         // mandatory HMO, definitive per-scheme determination, penalty exposure,
         // action plan) AND the official council source + boundary map.
