@@ -11,7 +11,7 @@ export function getStripe(): Stripe {
   return stripe;
 }
 
-export const LICENCE_CHECK_PRICE_PENCE = 999;
+export const LICENCE_CHECK_PRICE_PENCE = 799;
 export const LICENCE_CHECK_NAME = "Landlord Licence Check";
 export const LICENCE_CHECK_DESCRIPTION =
   "Property-specific licensing determination: selective, additional and mandatory HMO licensing, scheme dates and fees, penalty exposure, and an action plan. Delivered instantly with a permanent link.";

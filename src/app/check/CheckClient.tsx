@@ -341,7 +341,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
 
               {/* Paid form */}
               <div className="mt-6 border-t border-navy-700 pt-6">
-                <h3 className="text-lg font-bold text-navy-100">Which of these applies to YOUR property? — £9.99</h3>
+                <h3 className="text-lg font-bold text-navy-100">Which of these applies to YOUR property? — £7.99</h3>
                 <p className="mt-1 text-sm text-navy-400">
                   You can see the schemes above. The report gives the verdict for this specific property: whether it
                   needs a mandatory HMO licence based on how it&apos;s let, whether your address falls inside each
@@ -449,7 +449,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                   disabled={buying}
                   className="mt-4 w-full rounded-lg bg-accent-600 px-6 py-3.5 font-semibold text-white transition-all hover:bg-accent-500 disabled:opacity-60"
                 >
-                  {buying ? "Starting checkout..." : "Get my licence report — £9.99"}
+                  {buying ? "Starting checkout..." : "Get my licence report — £7.99"}
                 </button>
                 <p className="mt-3 text-center text-xs text-navy-500">
                   Instant online report + permanent link + email. Secure payment via Stripe.

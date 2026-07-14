@@ -17,7 +17,7 @@ export default function PostcodeCTA({
       >
         Check your postcode — free
       </Link>
-      <p className="mt-3 text-xs text-navy-500">Free scheme check · £9.99 for the full property report</p>
+      <p className="mt-3 text-xs text-navy-500">Free scheme check · £7.99 for the full property report</p>
     </div>
   );
 }

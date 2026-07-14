@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | PRSCheck",
   },
   description:
-    "Check whether your rental property needs a selective, additional or HMO licence. Free postcode check, £9.99 property report. Avoid penalties up to £40,000.",
+    "Check whether your rental property needs a selective, additional or HMO licence. Free postcode check, £7.99 property report. Avoid penalties up to £40,000.",
   keywords: [
     "landlord licence check",
     "do I need a landlord licence",
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     siteName: "PRSCheck",
     title: "PRSCheck | Do I Need a Landlord Licence?",
     description:
-      "Check whether your rental property needs a licence. Free postcode check, £9.99 property report. Avoid penalties up to £40,000.",
+      "Check whether your rental property needs a licence. Free postcode check, £7.99 property report. Avoid penalties up to £40,000.",
   },
   twitter: {
     card: "summary_large_image",
     title: "PRSCheck | Do I Need a Landlord Licence?",
     description:
-      "Check whether your rental property needs a licence. Free postcode check, £9.99 property report.",
+      "Check whether your rental property needs a licence. Free postcode check, £7.99 property report.",
   },
   verification: {
     other: {

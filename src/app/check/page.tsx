@@ -5,7 +5,7 @@ import CheckClient from "./CheckClient";
 export const metadata: Metadata = {
   title: "Landlord Licence Check by Postcode | Do I Need a Licence?",
   description:
-    "Check whether your rental property needs a selective, additional or mandatory HMO licence. Enter a postcode for an instant free scheme check, then get a property-specific report for £9.99.",
+    "Check whether your rental property needs a selective, additional or mandatory HMO licence. Enter a postcode for an instant free scheme check, then get a property-specific report for £7.99.",
   alternates: { canonical: "https://prscheck.co.uk/check" },
 };
 

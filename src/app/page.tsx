@@ -6,12 +6,12 @@ import { councilsWithLiveSchemes, englishCouncils } from "@/lib/licensing";
 export const metadata: Metadata = {
   title: "PRSCheck | Do I Need a Landlord Licence? Check Your Postcode",
   description:
-    "Find out instantly whether your rental property needs a selective, additional or HMO licence. Check any postcode free, then get a property-specific report for £9.99. Avoid penalties up to £40,000.",
+    "Find out instantly whether your rental property needs a selective, additional or HMO licence. Check any postcode free, then get a property-specific report for £7.99. Avoid penalties up to £40,000.",
   alternates: { canonical: "https://prscheck.co.uk" },
   openGraph: {
     title: "PRSCheck | Do I Need a Landlord Licence?",
     description:
-      "Check whether your rental property needs a licence. Free postcode check, £9.99 property report. Avoid penalties up to £40,000.",
+      "Check whether your rental property needs a licence. Free postcode check, £7.99 property report. Avoid penalties up to £40,000.",
     url: "https://prscheck.co.uk",
   },
 };
@@ -53,7 +53,7 @@ export default function HomePage() {
         "Property-specific check of selective, additional and mandatory HMO licensing requirements for UK rental properties.",
       provider: { "@type": "Organization", name: "PRSCheck", url: "https://prscheck.co.uk" },
       areaServed: "GB",
-      offers: { "@type": "Offer", price: "9.99", priceCurrency: "GBP" },
+      offers: { "@type": "Offer", price: "7.99", priceCurrency: "GBP" },
     },
   ];
 
@@ -66,7 +66,7 @@ export default function HomePage() {
         <div className="absolute inset-0 grid-pattern" />
         <div className="relative mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-24 lg:py-32">
           <span className="mb-5 inline-block rounded-full border border-accent-500/30 bg-accent-600/10 px-3 py-1 text-xs font-medium text-accent-400">
-            Free postcode check · £9.99 full report
+            Free postcode check · £7.99 full report
           </span>
           <h1 className="animate-fade-in text-3xl font-bold tracking-tight text-navy-100 sm:text-4xl lg:text-6xl">
             Does your rental property need a{" "}
@@ -122,7 +122,7 @@ export default function HomePage() {
               PRSCheck fixes that. We have mapped every selective and additional licensing scheme in England to the
               exact council and area it covers, and combined it with the national HMO rules and the registration regimes
               in Wales and Scotland. Enter a postcode and we show you instantly whether that area has a scheme. Answer a
-              couple of questions about the tenancy and our £9.99 report tells you precisely which licence your property
+              couple of questions about the tenancy and our £7.99 report tells you precisely which licence your property
               needs, what it costs, what you are exposed to if you get it wrong, and exactly what to do next.
             </p>
           </div>
@@ -207,7 +207,7 @@ export default function HomePage() {
       <section className="border-y border-navy-800 bg-navy-950 py-14 sm:py-24">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-2xl font-bold text-navy-100 sm:text-3xl">What&apos;s in your £9.99 report</h2>
+            <h2 className="text-2xl font-bold text-navy-100 sm:text-3xl">What&apos;s in your £7.99 report</h2>
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {[
@@ -304,7 +304,7 @@ export default function HomePage() {
       <section className="py-14 sm:py-20">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">
           <h2 className="text-2xl font-bold text-navy-100 sm:text-3xl">Check your property in seconds</h2>
-          <p className="mt-3 text-navy-400">Free scheme check. £9.99 for the full property-specific report.</p>
+          <p className="mt-3 text-navy-400">Free scheme check. £7.99 for the full property-specific report.</p>
           <div className="mt-6">
             <Link
               href="/check"

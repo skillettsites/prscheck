@@ -1,7 +1,7 @@
 # PRSCheck
 
 Two products on one site:
-1. **Landlord Licence Check (flagship, consumer, from 2026-07-10):** postcode -> council -> does this rental need a selective / additional / mandatory HMO licence. Free scheme check + £9.99 property-specific report. This is the revenue product.
+1. **Landlord Licence Check (flagship, consumer, from 2026-07-10):** postcode -> council -> does this rental need a selective / additional / mandatory HMO licence. Free scheme check + £7.99 property-specific report. This is the revenue product.
 2. **PRS enforcement platform (secondary, B2B):** the original council-facing SaaS pitch (/platform, /pricing, /solutions, /demo). Kept, de-emphasised on the homepage.
 
 **URL:** prscheck.co.uk

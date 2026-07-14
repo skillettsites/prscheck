@@ -2,7 +2,7 @@
 
 > Check whether a UK rental property needs a landlord licence. PRSCheck tells landlords, tenants and buyers if a property requires selective, additional or mandatory HMO licensing, based on published council designations and national legislation.
 
-PRSCheck maps every selective and additional (HMO) licensing scheme in England to the councils and areas they cover, layered on the England-wide mandatory HMO rules and the national registration regimes in Wales and Scotland. Enter a postcode for a free scheme check; a £9.99 report gives the property-specific verdict, scheme dates and fees, penalty exposure, and an action plan. PRSCheck also offers a separate enforcement platform for local authority housing teams.
+PRSCheck maps every selective and additional (HMO) licensing scheme in England to the councils and areas they cover, layered on the England-wide mandatory HMO rules and the national registration regimes in Wales and Scotland. Enter a postcode for a free scheme check; a £7.99 report gives the property-specific verdict, scheme dates and fees, penalty exposure, and an action plan. PRSCheck also offers a separate enforcement platform for local authority housing teams.
 
 ## Key facts (current July 2026)
 - Mandatory HMO licence (England): required for any property let to 5+ people forming 2+ households sharing facilities. No storey test since October 2018.
@@ -13,7 +13,7 @@ PRSCheck maps every selective and additional (HMO) licensing scheme in England t
 - Wales: Rent Smart Wales national registration + licensing. Scotland: council landlord registration (renew every 3 years) + HMO licensing for 3+ unrelated occupants.
 
 ## Core pages
-- [Check my property](https://prscheck.co.uk/check): free postcode licence check + £9.99 report
+- [Check my property](https://prscheck.co.uk/check): free postcode licence check + £7.99 report
 - [Licensing by council](https://prscheck.co.uk/councils): every English council's schemes, dates and fees
 - [Guides](https://prscheck.co.uk/guides): landlord licensing, selective licensing, HMO licensing, Renters' Rights Act, penalties
 - [Homepage](https://prscheck.co.uk/)
