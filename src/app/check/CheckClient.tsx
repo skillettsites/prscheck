@@ -393,46 +393,6 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                 </div>
               )}
 
-              {/* What your report gives you + stakes */}
-              <div className="mt-6 border-t border-navy-700 pt-6">
-                <h3 className="text-lg font-bold text-navy-100">Get the verdict for YOUR property</h3>
-                <p className="mt-1 text-sm text-navy-400">
-                  The schemes above are the general picture. Your report answers the one question that matters: does{" "}
-                  <span className="font-semibold text-navy-200">this specific property</span> need a licence? You get:
-                </p>
-
-                <ul className="mt-4 space-y-2">
-                  {[
-                    "A definitive licence verdict for your exact address",
-                    "Whether it needs a mandatory HMO licence, based on how it's let",
-                    "Whether your address falls inside each scheme's designated boundary",
-                    "Your exact penalty exposure and the deadlines that apply",
-                    "A step-by-step action plan to get compliant",
-                    "A permanent, shareable report plus an emailed copy",
-                  ].map((item) => (
-                    <li key={item} className="flex gap-2.5 text-sm text-navy-200">
-                      <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-4 rounded-lg border border-danger/30 bg-danger/5 p-3.5">
-                  <p className="text-sm text-navy-200">
-                    <span className="font-semibold text-red-300">Getting this wrong is expensive.</span> Letting without
-                    a required licence risks a civil penalty of up to <span className="font-semibold text-red-300">£40,000</span>,
-                    a rent-repayment order of up to <span className="font-semibold text-red-300">24 months&apos; rent</span>,
-                    and a possible banning order.
-                  </p>
-                  <p className="mt-2 text-sm text-navy-300">
-                    <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer, set against
-                    a five-figure fine for getting it wrong.
-                  </p>
-                </div>
-              </div>
-
               {/* Purchase CTA: address + occupancy, button goes straight to Stripe checkout */}
               <div className="mt-6 rounded-xl border border-accent-500/40 bg-accent-600/10 p-5">
                 <p className="text-center text-base font-bold text-navy-100">
@@ -541,6 +501,47 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                 <p className="mt-3 text-center text-xs text-navy-500">
                   Instant online report, permanent link and email. Secure payment via Stripe.
                 </p>
+              </div>
+
+              {/* Stakes */}
+              <div className="mt-6 rounded-lg border border-danger/30 bg-danger/5 p-3.5">
+                <p className="text-sm text-navy-200">
+                  <span className="font-semibold text-red-300">Getting this wrong is expensive.</span> Letting without a
+                  required licence risks a civil penalty of up to <span className="font-semibold text-red-300">£40,000</span>,
+                  a rent-repayment order of up to <span className="font-semibold text-red-300">24 months&apos; rent</span>,
+                  and a possible banning order.
+                </p>
+                <p className="mt-2 text-sm text-navy-300">
+                  <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer, set against a
+                  five-figure fine for getting it wrong.
+                </p>
+              </div>
+
+              {/* What your report gives you */}
+              <div className="mt-6 border-t border-navy-700 pt-6">
+                <h3 className="text-lg font-bold text-navy-100">Get the verdict for YOUR property</h3>
+                <p className="mt-1 text-sm text-navy-400">
+                  The schemes above are the general picture. Your report answers the one question that matters: does{" "}
+                  <span className="font-semibold text-navy-200">this specific property</span> need a licence? You get:
+                </p>
+
+                <ul className="mt-4 space-y-2">
+                  {[
+                    "A definitive licence verdict for your exact address",
+                    "Whether it needs a mandatory HMO licence, based on how it's let",
+                    "Whether your address falls inside each scheme's designated boundary",
+                    "Your exact penalty exposure and the deadlines that apply",
+                    "A step-by-step action plan to get compliant",
+                    "A permanent, shareable report plus an emailed copy",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-2.5 text-sm text-navy-200">
+                      <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                      </svg>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </>
           )}
