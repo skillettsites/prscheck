@@ -41,15 +41,19 @@ export async function POST(req: NextRequest) {
     // the dashboard's green/red dot flags hot leads (licensed areas) vs not.
     const schemeFound =
       summary.activeSelective.length + summary.activeAdditional.length + summary.upcoming.length > 0;
-    try {
-      const admin = createAdminClient();
-      await admin.from("searches").insert({
-        site_id: "prscheck",
-        search_query: pc.postcode,
-        result_found: schemeFound,
-        search_type: "licence-check-free",
-      });
-    } catch {}
+    // `log: false` marks an auto-run (a ?postcode= URL loaded from a bookmark,
+    // refresh or prefetch) — not a genuine user search, so don't log it.
+    if (body.log !== false) {
+      try {
+        const admin = createAdminClient();
+        await admin.from("searches").insert({
+          site_id: "prscheck",
+          search_query: pc.postcode,
+          result_found: schemeFound,
+          search_type: "licence-check-free",
+        });
+      } catch {}
+    }
 
     return NextResponse.json({
       postcode: pc.postcode,

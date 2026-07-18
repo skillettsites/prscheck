@@ -109,12 +109,12 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   useEffect(() => {
     if (initialPostcode && !autoRan.current) {
       autoRan.current = true;
-      runCheck();
+      runCheck(undefined, { auto: true });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [initialPostcode]);
 
-  async function runCheck(e?: React.FormEvent) {
+  async function runCheck(e?: React.FormEvent, opts?: { auto?: boolean }) {
     e?.preventDefault();
     if (!postcode.trim()) return;
     setLoading(true);
@@ -124,7 +124,9 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
       const res = await fetch("/api/free-check", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ postcode: postcode.trim() }),
+        // auto-runs (from a ?postcode= URL, e.g. a bookmark/refresh/prefetch)
+        // shouldn't be logged as searches — only genuine form submissions are.
+        body: JSON.stringify({ postcode: postcode.trim(), log: !opts?.auto }),
       });
       const data = await res.json();
       if (!res.ok) {
