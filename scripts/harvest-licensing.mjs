@@ -315,6 +315,49 @@ async function siteSearch(domain, phrase) {
   return queueSearch(() => braveSearch(`site:${domain} ${phrase}`));
 }
 
+/**
+ * The council's OWN search box. Free, unmetered, and nobody's rate limit but
+ * theirs, so it runs for every council whether or not a search API key exists.
+ *
+ * Not a replacement for a real engine: measured on the six councils sitemaps
+ * cannot reach, it recovered three (Camden 11 hits, Warwick 2, Hounslow 1) and
+ * returned nothing for Hackney, Bexley and Wandsworth, whose search pages are
+ * client-rendered. Worth having as a free channel, not sufficient alone.
+ */
+const OWN_SEARCH_PATHS = [
+  "search?q=",
+  "search?query=",
+  "site-search?q=",
+  "search/?q=",
+  "search-results?q=",
+];
+
+async function ownSiteSearch(origin, phrase) {
+  const q = encodeURIComponent(phrase);
+  const found = [];
+  for (const path of OWN_SEARCH_PATHS) {
+    let url;
+    try {
+      url = new URL(`${path}${q}`, origin).toString();
+    } catch {
+      continue;
+    }
+    const r = await get(url);
+    if (!r.ok) continue;
+    const hrefs = [...r.body.matchAll(/href\s*=\s*["']([^"'#]+)["']/gi)].map((m) => m[1]);
+    for (const h of hrefs) {
+      try {
+        found.push(new URL(h, url).toString());
+      } catch {
+        /* skip */
+      }
+    }
+    // First pattern that yields real candidates wins; do not try the rest.
+    if (rankCandidates(found).length > 0) break;
+  }
+  return found;
+}
+
 /* ---------------------------------------------------------------- discovery */
 
 /**
@@ -493,16 +536,21 @@ async function harvest(council) {
   const fromSearch = rankCandidates(searched).filter(onOwnSite);
   rec.searchHits = fromSearch.length;
 
+  // The council's own search box, whenever the other channels came up short.
+  // Free and unmetered, so there is no reason not to try before giving up.
+  let fromOwn = [];
+  if (fromSearch.length === 0 && fromSitemap.length === 0) {
+    fromOwn = rankCandidates(await ownSiteSearch(origin, "selective licensing")).filter(onOwnSite);
+    rec.ownSearchHits = fromOwn.length;
+  }
+
   // Search results first: a `site:` hit for "selective licensing" is a stronger
   // signal than a URL that merely looked right in a sitemap.
-  let candidates = [...new Set([...fromSearch, ...fromSitemap])];
-  rec.discovery = fromSearch.length
-    ? fromSitemap.length
-      ? "search+sitemap"
-      : "search"
-    : fromSitemap.length
-      ? "sitemap"
-      : null;
+  let candidates = [...new Set([...fromSearch, ...fromSitemap, ...fromOwn])];
+  rec.discovery =
+    (fromSearch.length ? "search" : "") +
+      (fromSitemap.length ? (fromSearch.length ? "+sitemap" : "sitemap") : "") +
+      (fromOwn.length ? (fromSearch.length || fromSitemap.length ? "+own" : "own") : "") || null;
 
   if (candidates.length === 0) {
     candidates = (await fallbackCandidates(origin)).filter(onOwnSite);
