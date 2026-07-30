@@ -55,6 +55,10 @@ const NO_SCHEME = [
     "There are currently no declared Additional or Selective Licencing schemes in Wiltshire."],
   ["West Suffolk", "https://www.westsuffolk.gov.uk/Business/Licensing-and-regulation/Licensing/hmo.cfm",
     "The council has not sought to adopt additional or selective licensing."],
+  // Only reachable after correcting its host: Wikidata pointed at
+  // www.southribble.gov.uk, which 301s to the apex.
+  ["South Ribble", "https://southribble.gov.uk/",
+    "South Ribble Borough Council has not designated any part of its district as subject to selective licensing of residential accommodation."],
 ];
 
 // Councils with a confirmed live designation, or a live consultation.

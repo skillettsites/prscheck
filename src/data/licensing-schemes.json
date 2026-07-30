@@ -2879,6 +2879,14 @@
     "notes": "Both expired 30 Jun 2024. Reintroduction live: council consulting on reviving both scheme types. No new designation yet."
   },
   {
+    "council": "South Ribble",
+    "gss": "E07000126",
+    "schemes": [],
+    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"South Ribble Borough Council has not designated any part of its district as subject to selective licensing of residential accommodation.\"",
+    "sourceUrl": "https://southribble.gov.uk/",
+    "verified": "2026-07-30"
+  },
+  {
     "council": "South Tyneside Metropolitan Borough Council",
     "gss": "E08000023",
     "schemes": [
