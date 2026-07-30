@@ -250,10 +250,11 @@ async function get(url, { asXml = false } = {}) {
  * here go through ONE global promise chain, so they are strictly sequential
  * with a real gap between them no matter what the worker concurrency is.
  */
-// Measured, not guessed: bursts 403 immediately even at 1s spacing, while four
-// consecutive queries 12s apart all returned 200 with full result sets. This is
-// the whole reason the sweep takes hours rather than minutes.
-const SEARCH_GAP_MS = 12000;
+// The Brave API reports x-ratelimit-policy "50;w=1", i.e. 50 requests/second,
+// so the crawl-speed problem disappears entirely with a key. The 12s spacing
+// this used to need was a symptom of scraping a free HTML endpoint, not a real
+// constraint. Kept well inside the limit rather than at it.
+const SEARCH_GAP_MS = 250;
 let searchChain = Promise.resolve();
 
 function queueSearch(fn) {
