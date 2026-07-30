@@ -11,13 +11,18 @@
  * candidate URLs plus the exact matched sentences and a confidence band, so a
  * curation pass can write records carrying a real sourceUrl, like the first 90.
  *
- * Discovery is SITEMAP-FIRST, which matters. Two earlier approaches failed:
- *   1. Crawling homepages: councils bury licensing behind JS mega-menus, so it
- *      averaged 1.2 pages and found evidence for 3 of 22 known-scheme councils.
- *   2. DuckDuckGo `site:` queries: worked beautifully, then the delay failed to
- *      serialise under concurrency, burst the endpoint and got the IP blocked.
- * Sitemaps are declared in robots.txt specifically to be read, give a complete
- * URL list in one request, and work on councils whose pages sit behind a WAF.
+ * Discovery, in order of how well each actually worked (all measured against
+ * the 90 already-curated councils, recall 14% -> 59% -> 73% -> 86%):
+ *   1. Homepage crawling: near useless. Councils bury licensing behind JS
+ *      mega-menus; 1.2 pages/council, 3 of 22 known-scheme councils found.
+ *   2. Sitemaps (declared in robots.txt): the workhorse, one request for a
+ *      complete URL list, and works where a WAF blocks ordinary page requests.
+ *      But incomplete on exactly the big urban councils that matter most:
+ *      hackney/camden/hounslow publish 976-2,236 URLs with ZERO matching
+ *      "selective", though those pages exist.
+ *   3. `site:` search: lands on the right page every time, and is the only
+ *      thing that reaches the councils sitemaps miss. Requires an API key, see
+ *      siteSearch() for why scraping free endpoints is a dead end.
  *
  * Usage:
  *   node scripts/harvest-licensing.mjs --in todo.json --out evidence.json
@@ -230,6 +235,86 @@ async function get(url, { asXml = false } = {}) {
   });
 }
 
+/* ------------------------------------------------------------ search channel */
+
+/**
+ * Site-restricted search, used alongside sitemaps.
+ *
+ * Sitemaps alone miss a lot: hackney/camden/hounslow publish thousands of URLs
+ * containing zero matches for "selective", though the pages exist. A `site:`
+ * query lands on them directly.
+ *
+ * Engine is Mojeek. DuckDuckGo was better but is currently blocking this IP,
+ * earned by an earlier version whose rate limiter checked a shared timestamp,
+ * so concurrent workers all read the same value and fired at once. Searches
+ * here go through ONE global promise chain, so they are strictly sequential
+ * with a real gap between them no matter what the worker concurrency is.
+ */
+// Measured, not guessed: bursts 403 immediately even at 1s spacing, while four
+// consecutive queries 12s apart all returned 200 with full result sets. This is
+// the whole reason the sweep takes hours rather than minutes.
+const SEARCH_GAP_MS = 12000;
+let searchChain = Promise.resolve();
+
+function queueSearch(fn) {
+  const next = searchChain.then(async () => {
+    await new Promise((r) => setTimeout(r, SEARCH_GAP_MS));
+    return fn();
+  });
+  searchChain = next.then(
+    () => {},
+    () => {}
+  );
+  return next;
+}
+
+
+/**
+ * Search runs only when a real API key is configured.
+ *
+ * Scraping the free HTML endpoints does not work at this scale, and should not
+ * be forced to: DuckDuckGo hard-blocked this IP, and Mojeek now answers HTTP
+ * 200 with a captcha page ("Verification required") that parses as zero
+ * results, which is worse than an error because it looks like "no scheme".
+ * Both are behaving as intended. Set BRAVE_API_KEY (or SEARCH_API_KEY) and this
+ * channel switches itself on; ~412 queries covers all 206 councils.
+ */
+const SEARCH_KEY = process.env.BRAVE_API_KEY || process.env.SEARCH_API_KEY || "";
+const searchEnabled = Boolean(SEARCH_KEY);
+
+async function braveSearch(query) {
+  const url = `https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(query)}&count=10`;
+  try {
+    const { stdout } = await execFileP(
+      "curl",
+      [
+        "-sS",
+        "--compressed",
+        "--max-time",
+        "25",
+        "-H",
+        "Accept: application/json",
+        "-H",
+        `X-Subscription-Token: ${SEARCH_KEY}`,
+        url,
+      ],
+      { maxBuffer: 8 * 1024 * 1024, windowsHide: true }
+    );
+    const results = JSON.parse(stdout)?.web?.results ?? [];
+    return {
+      urls: results.map((r) => String(r.url || "").split("#")[0]).filter(Boolean),
+      status: 200,
+    };
+  } catch (e) {
+    return { urls: [], status: String(e?.message || e).slice(0, 40) };
+  }
+}
+
+async function siteSearch(domain, phrase) {
+  if (!searchEnabled) return { urls: [], status: "no-search-key" };
+  return queueSearch(() => braveSearch(`site:${domain} ${phrase}`));
+}
+
 /* ---------------------------------------------------------------- discovery */
 
 /**
@@ -388,8 +473,37 @@ async function harvest(council) {
     }
   };
 
-  let candidates = rankCandidates(locs).filter(onOwnSite);
-  rec.discovery = candidates.length ? "sitemap" : null;
+  const fromSitemap = rankCandidates(locs).filter(onOwnSite);
+
+  // Search runs for EVERY council, not just as a fallback. Sitemaps are often
+  // incomplete precisely for the large urban councils most likely to run a
+  // scheme, so treating search as a last resort would keep missing them.
+  const searched = [];
+  for (const phrase of ["selective licensing", "additional licensing HMO"]) {
+    const { urls, status } = await siteSearch(ownHost, phrase);
+    if (status !== 200) {
+      if (status !== "no-search-key") rec.errors.push(`search ${status}`);
+      break; // stop querying if the engine is unhappy; do not hammer it
+    }
+    searched.push(...urls);
+    // At 12s per query the second phrase doubles the run time, so only spend it
+    // when the first turned up nothing usable.
+    if (rankCandidates(urls).length > 0) break;
+  }
+  const fromSearch = rankCandidates(searched).filter(onOwnSite);
+  rec.searchHits = fromSearch.length;
+
+  // Search results first: a `site:` hit for "selective licensing" is a stronger
+  // signal than a URL that merely looked right in a sitemap.
+  let candidates = [...new Set([...fromSearch, ...fromSitemap])];
+  rec.discovery = fromSearch.length
+    ? fromSitemap.length
+      ? "search+sitemap"
+      : "search"
+    : fromSitemap.length
+      ? "sitemap"
+      : null;
+
   if (candidates.length === 0) {
     candidates = (await fallbackCandidates(origin)).filter(onOwnSite);
     rec.discovery = candidates.length ? "fallback" : "none";
