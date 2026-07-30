@@ -85,6 +85,12 @@ const POSITIVE = [
 
 const NEGATIVE = [
   /\b(?:do(?:es)?\s+not|don'?t)\s+(?:currently\s+)?(?:have|operate|run)\b[^.]{0,80}\bselective\s+licen[cs]/i,
+  // "does not run selective or additional licensing schemes" is a very common
+  // phrasing and the pattern above misses it, because "selective" is not
+  // directly followed by "licen". Chichester states exactly this and was
+  // filed as needs_review rather than the documented negative it is.
+  /\b(?:do(?:es)?\s+not|don'?t)\s+(?:currently\s+)?(?:have|operate|run|designat\w*)\b[^.]{0,60}\bselective\b[^.]{0,40}\blicen[cs]/i,
+  /\bno\s+(?:selective|additional)\b[^.]{0,40}\blicen[cs]\w*\s+scheme/i,
   /\bno\s+selective\s+licen[cs][^.]{0,60}\b(?:in|within|scheme|area|designation)/i,
   /\bselective\s+licen[cs]\w*\s+(?:is|are)\s+not\s+(?:in\s+(?:force|operation)|operating|currently)/i,
   /\bthere\s+(?:is|are)\s+(?:currently\s+)?no\s+(?:selective|additional)\s+licen[cs]/i,
@@ -175,7 +181,41 @@ function onHost(host, fn) {
  * curl gets 200 and 2,640 / 3,305 sitemap URLs from the same machine and URL.
  * A 403 read as "no scheme found", which is precisely the wrong answer.
  */
-async function get(url, { asXml = false } = {}) {
+/**
+ * Swap www. for the apex host, or vice versa.
+ *
+ * Wikidata's website value is not always the host that actually serves: Adur's
+ * TLS certificate does not cover www.adur.gov.uk (SEC_E_WRONG_PRINCIPAL),
+ * www.miltonkeynes.gov.uk does not resolve at all, and South Ribble redirects
+ * www to the apex. Each of those produced zero pages fetched, i.e. a council we
+ * knew nothing about, for want of four characters.
+ */
+function altHost(url) {
+  try {
+    const u = new URL(url);
+    u.host = u.host.startsWith("www.") ? u.host.slice(4) : `www.${u.host}`;
+    return u.toString();
+  } catch {
+    return null;
+  }
+}
+
+async function get(url, opts = {}) {
+  const r = await getOnce(url, opts);
+  // DNS and TLS failures are host problems, not page problems, so the same
+  // path on the other host form is worth one try. HTTP statuses are not
+  // retried: a 404 on www is a 404 on apex.
+  if (!r.ok && (r.status === "curl-fail" || r.status === "timeout")) {
+    const alt = altHost(url);
+    if (alt) {
+      const r2 = await getOnce(alt, opts);
+      if (r2.ok) return r2;
+    }
+  }
+  return r;
+}
+
+async function getOnce(url, { asXml = false } = {}) {
   let host;
   try {
     host = new URL(url).host;

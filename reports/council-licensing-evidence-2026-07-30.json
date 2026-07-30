@@ -1,0 +1,4532 @@
+[
+ {
+  "gss": "E07000223",
+  "name": "Adur",
+  "website": "http://www.adur.gov.uk/",
+  "discovery": "fallback",
+  "sitemapUrls": 0,
+  "candidates": 7,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "301 /housing/selective-licensing",
+   "301 /selective-licensing",
+   "301 /private-sector-housing",
+   "301 /landlord-licensing"
+  ],
+  "searchHits": 0,
+  "ownSearchHits": 0
+ },
+ {
+  "gss": "E07000032",
+  "name": "Amber Valley",
+  "website": "https://www.ambervalley.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 430,
+  "candidates": 25,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.ambervalley.gov.uk/housing/private-rented-housing/houses-in-multiple-occupancy.aspx",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2018"
+    ],
+    "fees": [
+     "£468",
+     "£326"
+    ],
+    "quotes": [
+     "Amber Valley Borough Council currently does not operate any selective licensing schemes."
+    ]
+   },
+   {
+    "url": "https://www.ambervalley.gov.uk/housing/private-rented-housing/houses-in-multiple-occupancy/",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2018"
+    ],
+    "fees": [
+     "£468",
+     "£326"
+    ],
+    "quotes": [
+     "Amber Valley Borough Council currently does not operate any selective licensing schemes."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000105",
+  "name": "Ashford",
+  "website": "https://www.ashford.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2445,
+  "candidates": 263,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000200",
+  "name": "Babergh",
+  "website": "https://www.babergh.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 202,
+  "candidates": 4,
+  "pagesFetched": 4,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000016",
+  "name": "Barnsley",
+  "website": "https://www.barnsley.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1989,
+  "candidates": 56,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000084",
+  "name": "Basingstoke and Deane",
+  "website": "http://www.basingstoke.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 4,
+  "pagesFetched": 4,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 4
+ },
+ {
+  "gss": "E07000171",
+  "name": "Bassetlaw",
+  "website": "http://www.bassetlaw.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 6,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E06000022",
+  "name": "Bath and North East Somerset",
+  "website": "https://bathnes.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 6165,
+  "candidates": 77,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.bathnes.gov.uk/fit-and-proper-person-hmo-licence-guidance",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2016"
+    ],
+    "fees": [
+     "£5,000"
+    ],
+    "quotes": [
+     "Other things we consider When assessing any breach of housing legislation, we will also take into account whether the proposed licence holder or manager has: been in control of any property subject to a Control Order under S379 of the Housing Act 1985 or Demolition Order in the last 5 years; been in control of a proper"
+    ]
+   },
+   {
+    "url": "https://www.bathnes.gov.uk/hmo-licence-types",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2023"
+    ],
+    "fees": [],
+    "quotes": [
+     "You are here Home Housing Houses in multiple occupation (HMOs) HMO licence types HMO licence types Use this page to find out about the different types of houses in multiple occupation (HMO) licences, and the Mandatory and Additional licensing rules and requirements for HMOs.",
+     "Mandatory Licensed properties do not need an Additional Licence.",
+     "Before we can approve a new scheme, we will need to carry out a consultation on any proposed new Additional HMO Licensing Scheme."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 4
+ },
+ {
+  "gss": "E07000129",
+  "name": "Blaby",
+  "website": "http://www.blaby.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 540,
+  "candidates": 49,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.blaby.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2018",
+     "2026"
+    ],
+    "fees": [
+     "£645",
+     "£350",
+     "£995",
+     "£530",
+     "£880"
+    ],
+    "quotes": [
+     "Additional and Selective Licensing Blaby District Council does not currently operate any Additional or Selective Licensing schemes for rental properties."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E06000008",
+  "name": "Blackburn with Darwen",
+  "website": "http://www.blackburn.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1752,
+  "candidates": 86,
+  "pagesFetched": 4,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "403 k/landlords/selective-licensing-s",
+   "404 using/selective-licensing/selecti",
+   "403 lective-licensing",
+   "404 k/Pages/Selective-licensing.aspx"
+  ],
+  "searchHits": 7
+ },
+ {
+  "gss": "E07000033",
+  "name": "Bolsover",
+  "website": "http://www.bolsover.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000001",
+  "name": "Bolton",
+  "website": "https://www.bolton.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 13257,
+  "candidates": 165,
+  "pagesFetched": 5,
+  "evidence": [
+   {
+    "url": "https://www.bolton.gov.uk/news/article/1992/bolton-council-launches-consultation-on-proposals-to-improve-standards-in-shared-rented-housing",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2026"
+    ],
+    "fees": [],
+    "quotes": [
+     "Bolton Council launches consultation on proposals to improve standards in shared rented housing – Bolton Council Published: Monday, 2nd Feb 2026 Bolton Council has launched a public consultation on proposals to introduce a boroughwide Additional Licensing Scheme for Houses in Multiple Occupation (HMOs).",
+     "If approved, the Additional Licensing Scheme would apply across the whole of Bolton and would require landlords of affected properties to meet clear conditions relating to safety, property condition and management."
+    ]
+   },
+   {
+    "url": "https://www.bolton.gov.uk/directory-record/6850/additional-licensing-scheme-for-houses-in-multiple-occupation",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2026"
+    ],
+    "fees": [],
+    "quotes": [
+     "Additional Licensing Scheme for Houses in Multiple Occupation - Consultations – Bolton Council Description Have your say on proposals to improve standards in privately rented shared housing in Bolton Bolton Council is inviting residents, tenants, landlords, businesses and partner organisations to share their views on p",
+     "The proposed Additional Licensing Scheme would give the council stronger powers to improve property standards, safety, and management in smaller HMOs and certain converted buildings that are not currently covered by mandatory licensing.",
+     "Bolton Council is proposing to introduce a boroughwide Additional Licensing Scheme under the Housing Act 2004.",
+     "Why the council is consulting Before introducing an Additional Licensing Scheme, the law requires the council to carry out a public consultation."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [
+   "500 /downloads/file/432/hmo-guidance-an",
+   "500 /downloads/file/1654/bolton-hmo-ame",
+   "curl-fail /downloads/file/7525/additional-lic"
+  ],
+  "searchHits": 6
+ },
+ {
+  "gss": "E07000136",
+  "name": "Boston",
+  "website": "http://www.boston.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1365,
+  "candidates": 44,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E06000058",
+  "name": "Bournemouth, Christchurch and Poole",
+  "website": "https://bcpcouncil.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 8351,
+  "candidates": 338,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.bcpcouncil.gov.uk/news-hub/news-articles/local-residents-encouraged-to-have-their-say-on-private-sector-housing-licensing-proposals",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2020"
+    ],
+    "fees": [],
+    "quotes": [
+     "The Discretionary Licensing schemes include an Additional Licensing Scheme that would look at regulating specific non- mandatory Houses of Multiple Occupancy (HMOs) across the BCP Council area, and a Selective Licencing Scheme regulating all private sector properties within a specifically defined geographical area.",
+     "Selective Licensing area analysis includes areas with a high proportions of private rented sector homes, significant problems caused by anti-social behaviour, high levels of deprivation existing or high levels of crime experienced.",
+     "Secretary of state approval may be required prior to implementation of a selective licensing scheme, if the combined proposed areas cover more than 20% of the total private rented accommodation across the BCP Council area.",
+     "The Discretionary Licensing schemes include an Additional Licensing Scheme that would look at regulating specific non- mandatory Houses of Multiple Occupancy (HMOs) across the BCP Council area, and a Selective Licencing Scheme regulating all private sector properties within a specifically defined geographical area."
+    ]
+   },
+   {
+    "url": "https://www.bcpcouncil.gov.uk/news-hub/news-articles/cabinet-decision-on-consultation-for-new-private-sector-housing-licensing-proposals",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2019",
+     "2020"
+    ],
+    "fees": [],
+    "quotes": [
+     "The Discretionary Licensing schemes include an Additional Licensing Scheme that would look at regulating Houses of Multiple Occupancy (HMOs) across the BCP Council area, and a Selective Licencing Scheme regulating all private sector properties within a specifically defined geographical area.",
+     "Selective Licensing area analysis includes areas with a high proportions of private rented sector homes, significant problems caused by anti-social behaviour, high levels of deprivation existing and high levels of crime experienced.",
+     "The Discretionary Licensing schemes include an Additional Licensing Scheme that would look at regulating Houses of Multiple Occupancy (HMOs) across the BCP Council area, and a Selective Licencing Scheme regulating all private sector properties within a specifically defined geographical area.",
+     "Discretionary Licensing schemes have been shown to be effective in addressing tenancy management issues and housing conditions, but before agreeing to go ahead, a public consultation must be carried out to ensure all those who might be affected have the chance to have their say.\" Following an evidence-based assessment "
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E06000036",
+  "name": "Bracknell Forest",
+  "website": "https://www.bracknell-forest.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1966,
+  "candidates": 71,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail sing/letting-your-home/ho"
+  ],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000032",
+  "name": "Bradford",
+  "website": "http://www.bradford.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2733,
+  "candidates": 136,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000067",
+  "name": "Braintree",
+  "website": "http://www.braintree.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 5740,
+  "candidates": 154,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000143",
+  "name": "Breckland",
+  "website": "http://www.breckland.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1789,
+  "candidates": 103,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.breckland.gov.uk/article/3788/Houses-in-Multiple-Occupation-HMOs",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2026"
+    ],
+    "fees": [
+     "£395",
+     "£270",
+     "£665",
+     "£414",
+     "£298"
+    ],
+    "quotes": [
+     "There are some exceptions: Properties that are HMOs only under Section 257 Housing Act 2004 HMOs that are exempt under Schedule 14 Housing Act 2004 (opens new window) Breckland council does not operate selective or additional licensing schemes."
+    ]
+   },
+   {
+    "url": "https://www.breckland.gov.uk/housing-ps-HMO",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2026"
+    ],
+    "fees": [
+     "£395",
+     "£270",
+     "£665",
+     "£414",
+     "£298"
+    ],
+    "quotes": [
+     "There are some exceptions: Properties that are HMOs only under Section 257 Housing Act 2004 HMOs that are exempt under Schedule 14 Housing Act 2004 (opens new window) Breckland council does not operate selective or additional licensing schemes."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000068",
+  "name": "Brentwood",
+  "website": "http://www.brentwood.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 789,
+  "candidates": 25,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000144",
+  "name": "Broadland",
+  "website": "http://www.broadland.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "301 fo/200128/housing/154/houses_in_m"
+  ],
+  "searchHits": 1
+ },
+ {
+  "gss": "E09000006",
+  "name": "Bromley",
+  "website": "https://www.bromley.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 5347,
+  "candidates": 61,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000234",
+  "name": "Bromsgrove",
+  "website": "http://www.bromsgrove.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1328,
+  "candidates": 69,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E07000095",
+  "name": "Broxbourne",
+  "website": "https://www.broxbourne.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1771,
+  "candidates": 96,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 /housing/private-sector-housing"
+  ],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000172",
+  "name": "Broxtowe",
+  "website": "https://www.broxtowe.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 2,
+  "pagesFetched": 2,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E06000060",
+  "name": "Buckinghamshire",
+  "website": "https://www.buckinghamshire.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 4009,
+  "candidates": 337,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000002",
+  "name": "Bury",
+  "website": "http://www.bury.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000033",
+  "name": "Calderdale",
+  "website": "http://www.calderdale.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2658,
+  "candidates": 104,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 4
+ },
+ {
+  "gss": "E07000008",
+  "name": "Cambridge",
+  "website": "https://www.cambridge.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 2,
+  "pagesFetched": 2,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000192",
+  "name": "Cannock Chase",
+  "website": "http://www.cannockchasedc.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 5,
+  "pagesFetched": 4,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/sites/default/files/cannoc"
+  ],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000106",
+  "name": "Canterbury",
+  "website": "http://www.canterbury.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 637,
+  "candidates": 72,
+  "pagesFetched": 4,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail .uk/directory_record/1528907/hmo",
+   "curl-fail .uk/directory_record/527798/chan",
+   "curl-fail .uk/hmo-license",
+   "curl-fail .uk/directory_record/1528656/hmo"
+  ],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000069",
+  "name": "Castle Point",
+  "website": "http://www.castlepoint.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 990,
+  "candidates": 56,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E06000056",
+  "name": "Central Bedfordshire",
+  "website": "http://www.centralbedfordshire.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 22165,
+  "candidates": 387,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 7
+ },
+ {
+  "gss": "E07000070",
+  "name": "Chelmsford",
+  "website": "http://www.chelmsford.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2073,
+  "candidates": 137,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000078",
+  "name": "Cheltenham",
+  "website": "https://www.cheltenham.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 500,
+  "candidates": 51,
+  "pagesFetched": 3,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 /hmo-licensing",
+   "404 /downloads/download/73/licensin",
+   "404 /info/83/houses_in_multiple_occ",
+   "404 /info/83/houses_in_multiple_occ"
+  ],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000177",
+  "name": "Cherwell",
+  "website": "http://www.cherwell.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 7324,
+  "candidates": 232,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 9
+ },
+ {
+  "gss": "E06000049",
+  "name": "Cheshire East",
+  "website": "http://www.cheshireeast.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 5,
+  "pagesFetched": 5,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 5
+ },
+ {
+  "gss": "E06000050",
+  "name": "Cheshire West and Chester",
+  "website": "https://www.cheshirewestandchester.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 4846,
+  "candidates": 186,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "301 .uk/portal/cwc_ldf/"
+  ],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000034",
+  "name": "Chesterfield",
+  "website": "https://www.chesterfield.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000225",
+  "name": "Chichester",
+  "website": "http://www.chichester.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1958,
+  "candidates": 48,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.chichester.gov.uk/housing-in-multiple-occupation",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2018",
+     "2026",
+     "2027"
+    ],
+    "fees": [],
+    "quotes": [
+     "Chichester District Council does not run selective or additional licensing schemes.",
+     "Chichester District Council does not run selective or additional licensing schemes."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000118",
+  "name": "Chorley",
+  "website": "http://main.chorley.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail k/article/1642/Houses-of-Multiple-"
+  ],
+  "searchHits": 1
+ },
+ {
+  "gss": "E09000001",
+  "name": "City of London",
+  "website": "https://www.cityoflondon.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 2,
+  "candidates": 4,
+  "pagesFetched": 4,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 4
+ },
+ {
+  "gss": "E07000071",
+  "name": "Colchester",
+  "website": "http://www.colchester.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E06000052",
+  "name": "Cornwall",
+  "website": "https://www.cornwall.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000079",
+  "name": "Cotswold",
+  "website": "http://www.cotswold.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 825,
+  "candidates": 51,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/media/gglbkf2i/cdc-standards-for"
+  ],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000226",
+  "name": "Crawley",
+  "website": "https://www.crawley.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 5,
+  "pagesFetched": 4,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 es/default/files/2024-03/HMO%20lic"
+  ],
+  "searchHits": 5
+ },
+ {
+  "gss": "E06000063",
+  "name": "Cumberland",
+  "website": "https://www.cumberland.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1351,
+  "candidates": 84,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.cumberland.gov.uk/housing/housing-advice/houses-multiple-occupation-hmos",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [],
+    "fees": [],
+    "quotes": [
+     "Cumberland Council does not currently operate: additional HMO licensing schemes selective licensing for other private rented properties Apply for an HMO licence Apply for a licence if your property meets the licensing criteria.",
+     "Cumberland Council does not currently operate: additional HMO licensing schemes selective licensing for other private rented properties Apply for an HMO licence Apply for a licence if your property meets the licensing criteria."
+    ]
+   },
+   {
+    "url": "https://www.cumberland.gov.uk/housing/housing-advice/houses-multiple-occupation-hmos",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [],
+    "fees": [],
+    "quotes": [
+     "Cumberland Council does not currently operate: additional HMO licensing schemes selective licensing for other private rented properties Apply for an HMO licence Apply for a licence if your property meets the licensing criteria.",
+     "Cumberland Council does not currently operate: additional HMO licensing schemes selective licensing for other private rented properties Apply for an HMO licence Apply for a licence if your property meets the licensing criteria."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000096",
+  "name": "Dacorum",
+  "website": "https://www.dacorum.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 3,
+  "pagesFetched": 3,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E06000005",
+  "name": "Darlington",
+  "website": "http://www.darlington.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1839,
+  "candidates": 234,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000107",
+  "name": "Dartford",
+  "website": "https://www.dartford.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2820,
+  "candidates": 212,
+  "pagesFetched": 7,
+  "evidence": [
+   {
+    "url": "https://www.dartford.gov.uk/private-sector-1/landlords-guide-housing-act",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [],
+    "fees": [],
+    "quotes": [
+     "Only those parts considered relevant to landlords have been summarised here: Housing Conditions and Enforcement Definition of a House in Multiple Occupation Licensing of Houses in Multiple Occupation Selective Licensing Interim and Final Management Orders Empty Dwelling Management Orders Housing Conditions and Enforcem",
+     "This is called additional licensing Selective Licensing: This part provides the Council with the option to declare an additional licensing area.",
+     "This is called additional licensing Selective Licensing: This part provides the Council with the option to declare an additional licensing area."
+    ]
+   },
+   {
+    "url": "https://www.dartford.gov.uk/private-sector-1/private-landlords",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [],
+    "fees": [],
+    "quotes": [
+     "Only those parts considered relevant to landlords have been summarised here: Housing Conditions and Enforcement Definition of a House in Multiple Occupation Licensing of Houses in Multiple Occupation Selective Licensing Interim and Final Management Orders Empty Dwelling Management Orders Housing Conditions and Enforcem",
+     "This is called additional licensing Selective licensing This part provides the Council with the option to declare an additional licensing area.",
+     "This is called additional licensing Selective licensing This part provides the Council with the option to declare an additional licensing area."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [
+   "404 /downloads/file/2747/draft-hmo-po"
+  ],
+  "searchHits": 2
+ },
+ {
+  "gss": "E06000015",
+  "name": "Derby",
+  "website": "https://www.derby.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 2,
+  "pagesFetched": 2,
+  "evidence": [
+   {
+    "url": "https://www.derby.gov.uk/trading-standards-environmental-health/environmental-health/housing-standards/houses-in-multiple-occupation/about/",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2018",
+     "2021",
+     "2026"
+    ],
+    "fees": [],
+    "quotes": [
+     "Derby City Council does not currently operate any Additional HMO Licensing or Selective Licensing schemes.",
+     "Derby City Council does not currently operate any Additional HMO Licensing or Selective Licensing schemes."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000035",
+  "name": "Derbyshire Dales",
+  "website": "http://www.derbyshiredales.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1133,
+  "candidates": 44,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.derbyshiredales.gov.uk/environment/housing-health-safety-survey-private-rented-property",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2019"
+    ],
+    "fees": [],
+    "quotes": [
+     "In terms of landlords, we do not operate Landlord Accreditation or Landlord Forums currently for this sector, nor Selective Licensing, therefore we cannot identify all Landlords."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000017",
+  "name": "Doncaster",
+  "website": "http://www.doncaster.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2157,
+  "candidates": 83,
+  "pagesFetched": 4,
+  "evidence": [
+   {
+    "url": "https://www.doncaster.gov.uk/services/business-investment/selective-licensing",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": true,
+    "looksNegative": false,
+    "years": [
+     "2023",
+     "2021",
+     "2022",
+     "2020",
+     "2024",
+     "2015",
+     "2026"
+    ],
+    "fees": [],
+    "quotes": [
+     "Selective licensing - City of Doncaster Council This site requires a JavaScript enabled browser.",
+     "Skip to content Selective licensing share twitter facebook whatsapp e-mail We currently operate one selective licensing scheme in Doncaster, covering the designated area of Hexthorpe.",
+     "The Edlington selective licensing scheme came to an end on 6th February 2023.",
+     "If you own or manage a Private Rented Property that meets the criteria of a licensable HMO , you will need to apply for a houses in multiple occupation licence rather than a Selective Licence."
+    ]
+   },
+   {
+    "url": "https://www.doncaster.gov.uk/doitonline/selective-licensing-application",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": true,
+    "looksNegative": false,
+    "years": [
+     "2027",
+     "2026"
+    ],
+    "fees": [],
+    "quotes": [
+     "Hexthorpe Selective Licensing of other residential accommodation - Licence application - City of Doncaster Council This site requires a JavaScript enabled browser.",
+     "Skip to content Hexthorpe Selective Licensing of other residential accommodation - Licence application share twitter facebook whatsapp e-mail What is this for?",
+     "Please use the DO IT NOW button below to apply for a licence for a house located in the area of Hexthorpe designated for Selective Licensing under Part 3 of the Housing Act 2004.",
+     "For full details of the selective licensing scheme and the designated area please visit our selective licensing web pages ."
+    ]
+   },
+   {
+    "url": "https://www.doncaster.gov.uk/services/housing/landlord-licences",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": true,
+    "looksNegative": false,
+    "years": [
+     "2018",
+     "2023",
+     "2022",
+     "2027",
+     "2026"
+    ],
+    "fees": [],
+    "quotes": [
+     "Apply for House in Multiple Occupation Licence and find out more Selective licensing Selective licensing applies to privately rented properties in the designated area of Hexthorpe.",
+     "Apply for a Selective Licence and find out more Self-declaration of Compliance Completing an annual self-declaration The aims of the selective licensing scheme are to improve tenancy management and help tackle anti-social behaviour.",
+     "3) Email the completed form as an attachment to our selective licensing team - [email protected] Licence Holder Self declaration v3.23 Download (969KB - PDF) Submit your annual gas safety certificate If you are the person having control of a licensed private rented property within Doncaster and gas is supplied to the h",
+     "Additional licensing The Council introduced a scheme in parts of central Doncaster to reduce the threshold for HMO licensing to four people forming more than one household."
+    ]
+   },
+   {
+    "url": "https://www.doncaster.gov.uk/services/housing/housing-standards-for-private-rented-accommodation",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2025",
+     "2026",
+     "2027",
+     "2020"
+    ],
+    "fees": [],
+    "quotes": [
+     "The Council is responsible for the operation of two licensing schemes; mandatory HMO licensing and selective licensing in Hexthorpe - click here for our main property licensing page ."
+    ]
+   }
+  ],
+  "verdict": "likely_has_scheme",
+  "confidence": "high",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E06000059",
+  "name": "Dorset",
+  "website": "https://www.dorsetcouncil.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2774,
+  "candidates": 32,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.dorsetcouncil.gov.uk/w/housing-standards-and-tenancy-rights-enforcement-policy-may-2026",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2026",
+     "2029",
+     "2025",
+     "2020",
+     "2016",
+     "2024",
+     "2018",
+     "2015"
+    ],
+    "fees": [
+     "£5,000",
+     "£3,000",
+     "£2,500",
+     "£2,000",
+     "£4,000"
+    ],
+    "quotes": [
+     "The Regulators Code applies to the following legislation and its associated enforcement under this policy Regulator Code applies Description Parts 8, 9 and 10 of the Housing Act 1985 Area Improvement, Slum Clearance, Overcrowding Part 8 of the Housing Act 1996 Miscellaneous and General Provisions Parts 2 to 5 of the Ho",
+     "Dealing with non-compliance 7.1 Civil Financial Penalties The Council has the power to issue a Civil Financial Penalty in the following circumstances: failure to comply with an Improvement Notice (section 30 Housing Act 2004) offences in relation to licensing of Houses in Multiple Occupation (HMOs) (section 72 Housing "
+    ]
+   },
+   {
+    "url": "https://www.dorsetcouncil.gov.uk/w/housing-standards-and-tenancy-rights-enforcement-policy-may-2026",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2026",
+     "2029",
+     "2025",
+     "2020",
+     "2016",
+     "2024",
+     "2018",
+     "2015"
+    ],
+    "fees": [
+     "£5,000",
+     "£3,000",
+     "£2,500",
+     "£2,000",
+     "£4,000"
+    ],
+    "quotes": [
+     "The Regulators Code applies to the following legislation and its associated enforcement under this policy Regulator Code applies Description Parts 8, 9 and 10 of the Housing Act 1985 Area Improvement, Slum Clearance, Overcrowding Part 8 of the Housing Act 1996 Miscellaneous and General Provisions Parts 2 to 5 of the Ho",
+     "Dealing with non-compliance 7.1 Civil Financial Penalties The Council has the power to issue a Civil Financial Penalty in the following circumstances: failure to comply with an Improvement Notice (section 30 Housing Act 2004) offences in relation to licensing of Houses in Multiple Occupation (HMOs) (section 72 Housing "
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000108",
+  "name": "Dover",
+  "website": "http://www.dover.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 479,
+  "candidates": 147,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E08000027",
+  "name": "Dudley",
+  "website": "https://www.dudley.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2009,
+  "candidates": 131,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E07000009",
+  "name": "East Cambridgeshire",
+  "website": "https://www.eastcambs.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 694,
+  "candidates": 70,
+  "pagesFetched": 2,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail ices/housing-and-community-advic",
+   "curl-fail ices/housing-and-community-advic",
+   "curl-fail ices/housing-and-community-advic",
+   "curl-fail ices/housing-and-community-advic"
+  ],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000040",
+  "name": "East Devon",
+  "website": "http://eastdevon.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 3580,
+  "candidates": 284,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://eastdevon.gov.uk/housing-and-homelessness/private-sector-housing/houses-in-multiple-occupation/hmo-licensing-application-form-guidance/section-1-proposed-licence-holder-plh-details/",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [],
+    "fees": [],
+    "quotes": [
+     "You may need to contact the local authority (in which your properties are located) to answer this question as they may be considering additional licensing schemes and/or selective licensing schemes.",
+     "You may need to contact the local authority (in which your properties are located) to answer this question as they may be considering additional licensing schemes and/or selective licensing schemes."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000085",
+  "name": "East Hampshire",
+  "website": "http://www.easthants.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 564,
+  "candidates": 35,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/sites/default/files/2024-10/Reg",
+   "404 k/sites/default/files/2025-07/Reg"
+  ],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000242",
+  "name": "East Hertfordshire",
+  "website": "http://www.eastherts.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1289,
+  "candidates": 54,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.eastherts.gov.uk/hmo",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2018",
+     "2015"
+    ],
+    "fees": [],
+    "quotes": [
+     "In some other districts other properties also require a licence under additional or selective licensing."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000137",
+  "name": "East Lindsey",
+  "website": "http://www.e-lindsey.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1567,
+  "candidates": 50,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/media/8864/Schedule-of-HMO-Lice",
+   "404 k/media/6891/HMO-Licence-First-Ap"
+  ],
+  "searchHits": 6
+ },
+ {
+  "gss": "E06000011",
+  "name": "East Riding of Yorkshire",
+  "website": "https://www.eastriding.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 4,
+  "pagesFetched": 4,
+  "evidence": [
+   {
+    "url": "https://www.eastriding.gov.uk/business/licences-and-registrations/available-licences/other-licences/houses-in-multiple-occupation/",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2018",
+     "2026"
+    ],
+    "fees": [
+     "£40,000",
+     "£510",
+     "£1,205",
+     "£1,015",
+     "£240"
+    ],
+    "quotes": [
+     "If you currently have an HMO licensed under the council’s additional licensing scheme which operates in Goole and it falls under the new definition of a mandatory licensable HMO, your current licence will remain valid, and no action is needed until it comes up for renewal."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 4
+ },
+ {
+  "gss": "E07000244",
+  "name": "East Suffolk",
+  "website": "https://www.eastsuffolk.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 772,
+  "candidates": 3,
+  "pagesFetched": 2,
+  "evidence": [
+   {
+    "url": "https://www.eastsuffolk.gov.uk/housing/housing-policies-and-strategies/rogue-landlord-policy",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2024",
+     "2027",
+     "2016",
+     "2018",
+     "2017"
+    ],
+    "fees": [],
+    "quotes": [
+     "A landlord or managing agent subject to a banning order is also prevented from holding a licence for a house in multiple occupation (HMO) or a licence under a selective licensing scheme."
+    ]
+   },
+   {
+    "url": "https://www.eastsuffolk.gov.uk/housing/housing-policies-and-strategies/civil-penalty-policy",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2016",
+     "2020",
+     "2021"
+    ],
+    "fees": [
+     "£30,000",
+     "£5000",
+     "£22500",
+     "£5000,",
+     "£17500"
+    ],
+    "quotes": [
+     "Section 126 and Schedule 9 of the Housing and Planning Act 2016 provide local authorities with the power, through the insertion of section 249A Housing Act 2004, to impose a civil penalty as an alternative to prosecution in respect of the following offences under the Housing Act 2004: Failure to comply with an Improvem"
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [
+   "404 housing/private-sector-housing"
+  ],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000061",
+  "name": "Eastbourne",
+  "website": "https://www.lewes-eastbourne.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 3347,
+  "candidates": 176,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000086",
+  "name": "Eastleigh",
+  "website": "http://www.eastleigh.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2141,
+  "candidates": 103,
+  "pagesFetched": 6,
+  "evidence": [
+   {
+    "url": "https://www.eastleigh.gov.uk/business/council-services-for-businesses/licensing-permits-and-registration/house-in-multiple-occupation-licence",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2018"
+    ],
+    "fees": [],
+    "quotes": [
+     "There are three different licensing regimes for housing: Mandatory licensing of large HMOs Additional licensing (optional) for smaller HMOs in select areas Selective licensing (optional) for other rented accommodation in select areas.",
+     "There are three different licensing regimes for housing: Mandatory licensing of large HMOs Additional licensing (optional) for smaller HMOs in select areas Selective licensing (optional) for other rented accommodation in select areas."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [
+   "404 k/media/13926/psh-hmo-licensing-f",
+   "404 k/media/3634/hmo-licensing-policy"
+  ],
+  "searchHits": 10
+ },
+ {
+  "gss": "E07000207",
+  "name": "Elmbridge",
+  "website": "http://www.elmbridge.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1819,
+  "candidates": 124,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000072",
+  "name": "Epping Forest",
+  "website": "https://www.eppingforestdc.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 947,
+  "candidates": 104,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000208",
+  "name": "Epsom and Ewell",
+  "website": "https://www.epsom-ewell.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 560,
+  "candidates": 2,
+  "pagesFetched": 2,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000036",
+  "name": "Erewash",
+  "website": "https://www.erewash.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 750,
+  "candidates": 68,
+  "pagesFetched": 7,
+  "evidence": [
+   {
+    "url": "https://www.erewash.gov.uk/housing/privately-rented-homes/houses-multiple-occupation-hmos/information-about-hmo-licences",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2018"
+    ],
+    "fees": [
+     "£983",
+     "£843"
+    ],
+    "quotes": [
+     "Additional and Selective Licensing The Council do not currently operate any Additional License or Selective Licencing schemes.",
+     "Additional and Selective Licensing The Council do not currently operate any Additional License or Selective Licencing schemes."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [
+   "404 /housing-popular/house-in-multiple"
+  ],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000041",
+  "name": "Exeter",
+  "website": "https://www.exeter.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000087",
+  "name": "Fareham",
+  "website": "http://www.fareham.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000010",
+  "name": "Fenland",
+  "website": "https://www.fenland.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 978,
+  "candidates": 23,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 icle/11376/What-is-Selective-Licen",
+   "404 ia/12610/Selective-Licensing-FAQs/"
+  ],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000112",
+  "name": "Folkestone and Hythe",
+  "website": "https://www.shepway.gov.uk",
+  "discovery": "fallback",
+  "sitemapUrls": 0,
+  "candidates": 7,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail /housing/selective-licensing",
+   "curl-fail /selective-licensing",
+   "curl-fail /private-sector-housing",
+   "curl-fail /landlord-licensing"
+  ],
+  "searchHits": 0,
+  "ownSearchHits": 0
+ },
+ {
+  "gss": "E07000080",
+  "name": "Forest of Dean",
+  "website": "http://www.fdean.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 700,
+  "candidates": 52,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/housing/private-housing/information",
+   "404 k/housing/private-housing/information"
+  ],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000119",
+  "name": "Fylde",
+  "website": "http://www.fylde.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2186,
+  "candidates": 48,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000088",
+  "name": "Gosport",
+  "website": "https://www.gosport.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1152,
+  "candidates": 43,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "302 /article/2482/Landlord-Portal"
+  ],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000109",
+  "name": "Gravesham",
+  "website": "https://www.gravesham.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1335,
+  "candidates": 85,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000209",
+  "name": "Guildford",
+  "website": "https://www.guildford.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1783,
+  "candidates": 79,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E06000006",
+  "name": "Halton",
+  "website": "http://www.halton.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 3,
+  "pagesFetched": 3,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000131",
+  "name": "Harborough",
+  "website": "http://www.harborough.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 3,
+  "pagesFetched": 3,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000073",
+  "name": "Harlow",
+  "website": "https://www.harlow.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 947,
+  "candidates": 141,
+  "pagesFetched": 5,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail gov.uk/documents/s9142/HMO Annual L",
+   "curl-fail sing-and-garages/private-housing/ho",
+   "curl-fail /sites/default/files/documents/HMO "
+  ],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000089",
+  "name": "Hart",
+  "website": "http://www.hart.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 832,
+  "candidates": 68,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000090",
+  "name": "Havant",
+  "website": "https://www.havant.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 561,
+  "candidates": 27,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail k/housing-benefits/Multiple-Occupat"
+  ],
+  "searchHits": 2
+ },
+ {
+  "gss": "E06000019",
+  "name": "Herefordshire, County of",
+  "website": "https://www.herefordshire.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 4640,
+  "candidates": 90,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.herefordshire.gov.uk/directories/licences-and-permissions/house-in-multiple-occupation-hmo-and-licensing/",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2018",
+     "2026"
+    ],
+    "fees": [
+     "£30,000",
+     "£1404",
+     "£1334",
+     "£1264",
+     "£1194"
+    ],
+    "quotes": [
+     "If you have more than one property you will need to apply for an additional licence for each property."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000098",
+  "name": "Hertsmere",
+  "website": "http://www.hertsmere.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 930,
+  "candidates": 59,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E07000037",
+  "name": "High Peak",
+  "website": "http://www.highpeak.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1798,
+  "candidates": 57,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000132",
+  "name": "Hinckley and Bosworth",
+  "website": "http://www.hinckleyandbosworthonline.org.uk/",
+  "discovery": "fallback",
+  "sitemapUrls": 0,
+  "candidates": 7,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 0,
+  "ownSearchHits": 0
+ },
+ {
+  "gss": "E07000227",
+  "name": "Horsham",
+  "website": "http://www.horsham.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1866,
+  "candidates": 62,
+  "pagesFetched": 7,
+  "evidence": [
+   {
+    "url": "https://www.horsham.gov.uk/licensing/public-licensing-registers/hmo-register",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [],
+    "fees": [],
+    "quotes": [
+     "Please note that Horsham District Council does not operate an additional or selective licensing scheme at present."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [
+   "403 k/environmental-health/housing-stan"
+  ],
+  "searchHits": 6
+ },
+ {
+  "gss": "E07000011",
+  "name": "Huntingdonshire",
+  "website": "http://www.huntsdc.gov.uk/",
+  "discovery": "fallback",
+  "sitemapUrls": 0,
+  "candidates": 7,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "301 /housing/selective-licensing",
+   "301 /selective-licensing",
+   "301 /private-sector-housing",
+   "301 /landlord-licensing"
+  ],
+  "searchHits": 0,
+  "ownSearchHits": 0
+ },
+ {
+  "gss": "E07000120",
+  "name": "Hyndburn",
+  "website": "https://www.hyndburnbc.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2376,
+  "candidates": 68,
+  "pagesFetched": 6,
+  "evidence": [
+   {
+    "url": "https://www.hyndburnbc.gov.uk/housing-and-regeneration-in-hyndburn/selective-licensing/",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2018",
+     "2023"
+    ],
+    "fees": [],
+    "quotes": []
+   },
+   {
+    "url": "https://www.hyndburnbc.gov.uk/proposed-selective-licensing-designation-2017/",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2017",
+     "2016"
+    ],
+    "fees": [],
+    "quotes": []
+   },
+   {
+    "url": "https://www.hyndburnbc.gov.uk/download/selective-licensing-legal-notice/",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [],
+    "fees": [],
+    "quotes": [
+     "Selective Licensing Legal Notice more information Hyndburn Borough Council Skip to main content Click4Assistance UK Live Chat Software To see more about how we record and store your information please see the Council’s privacy notice ."
+    ]
+   },
+   {
+    "url": "https://www.hyndburnbc.gov.uk/download/proposed-selective-licensing-designation-consultation-23-january-17-17-april-17/",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2017"
+    ],
+    "fees": [],
+    "quotes": []
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000202",
+  "name": "Ipswich",
+  "website": "https://www.ipswich.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1398,
+  "candidates": 141,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E06000046",
+  "name": "Isle of Wight",
+  "website": "https://www.iwight.com",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E06000053",
+  "name": "Isles of Scilly",
+  "website": "https://www.scilly.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 521,
+  "candidates": 46,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000146",
+  "name": "King's Lynn and West Norfolk",
+  "website": "http://www.west-norfolk.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 11333,
+  "candidates": 166,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 9
+ },
+ {
+  "gss": "E06000010",
+  "name": "Kingston upon Hull, City of",
+  "website": "https://www.hullcc.gov.uk",
+  "discovery": "own",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 0,
+  "ownSearchHits": 1
+ },
+ {
+  "gss": "E09000021",
+  "name": "Kingston upon Thames",
+  "website": "https://www.kingston.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2296,
+  "candidates": 267,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.kingston.gov.uk/housing/landlords-and-private-sector/houses-multiple-occupation-hmo/hmo-enforcement-options",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2016"
+    ],
+    "fees": [
+     "£30,000"
+    ],
+    "quotes": [
+     "We can issue penalties for: failure to comply with an improvement notice offences in relation to licensing of HMOs offences in relation to licensing of houses under Part 3 of the Act (selective licensing) offences of contravention of an overcrowding notice failure to comply with management regulations in respect of HMO"
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E08000034",
+  "name": "Kirklees",
+  "website": "https://www.kirklees.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 2,
+  "pagesFetched": 2,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E08000011",
+  "name": "Knowsley",
+  "website": "http://www.knowsley.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1579,
+  "candidates": 116,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.knowsley.gov.uk/housing/houses-multiple-occupation-hmo/landlord-guidance",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2022"
+    ],
+    "fees": [
+     "£30,000",
+     "£5,000"
+    ],
+    "quotes": [
+     "Under the Housing Act 2004 there are three types of licencing: Compulsory (required by law) licencing of HMOs for properties that are: occupied by five or more people in more than one household; and share amenities such as bathrooms, toilets and cooking facilities Additional licencing of HMOs is a discretionary power t",
+     "This is where the Council may declare that certain areas, for example, where there is low demand for housing and/or antisocial behaviour, are appropriate for selective licencing.",
+     "Under the Housing Act 2004 there are three types of licencing: Compulsory (required by law) licencing of HMOs for properties that are: occupied by five or more people in more than one household; and share amenities such as bathrooms, toilets and cooking facilities Additional licencing of HMOs is a discretionary power t"
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000121",
+  "name": "Lancaster",
+  "website": "http://www.lancaster.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 5,
+  "pagesFetched": 5,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000063",
+  "name": "Lewes",
+  "website": "http://www.lewes.gov.uk/",
+  "discovery": "fallback",
+  "sitemapUrls": 3347,
+  "candidates": 7,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 /housing/selective-licensing",
+   "404 /selective-licensing",
+   "404 /private-sector-housing",
+   "404 /landlord-licensing"
+  ],
+  "searchHits": 0,
+  "ownSearchHits": 0
+ },
+ {
+  "gss": "E07000194",
+  "name": "Lichfield",
+  "website": "http://www.lichfielddc.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 4105,
+  "candidates": 258,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000138",
+  "name": "Lincoln",
+  "website": "https://www.lincoln.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2293,
+  "candidates": 233,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000110",
+  "name": "Maidstone",
+  "website": "http://www.maidstone.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 883,
+  "candidates": 48,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000074",
+  "name": "Maldon",
+  "website": "http://www.maldon.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 3,
+  "pagesFetched": 3,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000235",
+  "name": "Malvern Hills",
+  "website": "http://www.malvernhills.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 6,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E07000133",
+  "name": "Melton",
+  "website": "http://www.melton.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 804,
+  "candidates": 104,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/housing/private-housing/houses-in-",
+   "404 k/vacancies/environmental-health-pra"
+  ],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000042",
+  "name": "Mid Devon",
+  "website": "http://www.middevon.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 6457,
+  "candidates": 246,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/media/347287/hmo-licence-applica"
+  ],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000203",
+  "name": "Mid Suffolk",
+  "website": "http://www.MidSuffolk.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 205,
+  "candidates": 7,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000228",
+  "name": "Mid Sussex",
+  "website": "https://www.midsussex.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 428,
+  "candidates": 96,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 8
+ },
+ {
+  "gss": "E06000042",
+  "name": "Milton Keynes",
+  "website": "http://www.miltonkeynes.gov.uk/",
+  "discovery": "fallback",
+  "sitemapUrls": 0,
+  "candidates": 7,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail /housing/selective-licensing",
+   "curl-fail /selective-licensing",
+   "curl-fail /private-sector-housing",
+   "curl-fail /landlord-licensing"
+  ],
+  "searchHits": 0,
+  "ownSearchHits": 0
+ },
+ {
+  "gss": "E07000210",
+  "name": "Mole Valley",
+  "website": "http://www.molevalley.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 899,
+  "candidates": 47,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000091",
+  "name": "New Forest",
+  "website": "http://www.newforest.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1402,
+  "candidates": 48,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 4
+ },
+ {
+  "gss": "E07000175",
+  "name": "Newark and Sherwood",
+  "website": "http://www.newark-sherwooddc.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 1598,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000195",
+  "name": "Newcastle-under-Lyme",
+  "website": "http://www.newcastle-staffs.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 8638,
+  "candidates": 133,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 4
+ },
+ {
+  "gss": "E07000043",
+  "name": "North Devon",
+  "website": "http://www.northdevon.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 760,
+  "candidates": 66,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000038",
+  "name": "North East Derbyshire",
+  "website": "https://www.ne-derbyshire.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 961,
+  "candidates": 40,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000099",
+  "name": "North Hertfordshire",
+  "website": "http://www.north-herts.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1780,
+  "candidates": 30,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000139",
+  "name": "North Kesteven",
+  "website": "https://www.n-kesteven.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1692,
+  "candidates": 121,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.n-kesteven.gov.uk/private-sector-housing-enforcement-policy/private-sector-housing-enforcement-policy/section-13",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2018"
+    ],
+    "fees": [],
+    "quotes": [
+     "Selective licensing of other residential accommodation Part 2 of the Act also gives a power for local authorities to introduce additional licensing of other HMOs as the local authority deems appropriate.",
+     "In addition, under Part 3 of the Act, local authorities can introduce selective licensing to deal with particular issues in its area as the local authority deems necessary or desirable.",
+     "At the time of writing there are no additional or selective licensing requirements in place in the district.",
+     "Selective licensing of other residential accommodation Part 2 of the Act also gives a power for local authorities to introduce additional licensing of other HMOs as the local authority deems appropriate."
+    ]
+   },
+   {
+    "url": "https://www.n-kesteven.gov.uk/private-sector-housing-enforcement-policy/private-sector-housing-enforcement-policy/contents",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2020"
+    ],
+    "fees": [],
+    "quotes": [
+     "Private Sector Housing Enforcement Policy Contents | North Kesteven District Council Skip to main content Private Sector Housing Enforcement Policy - Contents Sections 1 to 12 Introduction Scope of the policy and service standards Providing assistance, information and education Accreditation Housing Health and Safety R"
+    ]
+   },
+   {
+    "url": "https://www.n-kesteven.gov.uk/private-sector-housing-enforcement-policy/private-sector-housing-enforcement-policy/sections-1-12",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2016",
+     "2015"
+    ],
+    "fees": [],
+    "quotes": [
+     "Offences relating to licensing of a house under Part 3 (selective licensing) under section 95."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000147",
+  "name": "North Norfolk",
+  "website": "http://www.north-norfolk.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 7,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 7
+ },
+ {
+  "gss": "E06000061",
+  "name": "North Northamptonshire",
+  "website": "https://www.northnorthants.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2170,
+  "candidates": 107,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.northnorthants.gov.uk/hmo/law-hmos",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2022",
+     "2024",
+     "2025"
+    ],
+    "fees": [],
+    "quotes": [
+     "Similarly, planning conditions should not be used to restrict national permitted development rights unless there is clear justification to do so Paragraph 54 of the National Planning Guidance National Planning Policy Framework Selective and additional licensing The government provides guidelines that could justify a de",
+     "We currently do not meet the threshold for selective licensing as we do not have &#x27;a significant and persistent problem caused by anti-social behaviour&#x27;.",
+     "There is no proven link at present between ASB and HMOs, so we cannot justify selective licensing.",
+     "Similarly, planning conditions should not be used to restrict national permitted development rights unless there is clear justification to do so Paragraph 54 of the National Planning Guidance National Planning Policy Framework Selective and additional licensing The government provides guidelines that could justify a de"
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 7
+ },
+ {
+  "gss": "E06000024",
+  "name": "North Somerset",
+  "website": "https://www.n-somerset.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2673,
+  "candidates": 93,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000022",
+  "name": "North Tyneside",
+  "website": "http://www.northtyneside.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 3,
+  "pagesFetched": 3,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000218",
+  "name": "North Warwickshire",
+  "website": "http://www.northwarks.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 5906,
+  "candidates": 163,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000134",
+  "name": "North West Leicestershire",
+  "website": "http://www.nwleics.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 923,
+  "candidates": 40,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000148",
+  "name": "Norwich",
+  "website": "https://www.norwich.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 338,
+  "candidates": 19,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail s/2026/landlords-must-act-31-july-",
+   "curl-fail ncc-case-study-tony-landlord",
+   "curl-fail r-council-explained/consultations-",
+   "curl-fail r-council-explained/consultations-"
+  ],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000219",
+  "name": "Nuneaton and Bedworth",
+  "website": "http://www.nuneatonandbedworth.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 6452,
+  "candidates": 292,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/downloads/file/1591/h",
+   "404 k/download/downloads/id"
+  ],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000122",
+  "name": "Pendle",
+  "website": "http://www.pendle.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 3,
+  "pagesFetched": 3,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E06000026",
+  "name": "Plymouth",
+  "website": "https://www.plymouth.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 5912,
+  "candidates": 68,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.plymouth.gov.uk/housing-enforcement-policy",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2026",
+     "2018",
+     "2025",
+     "2015",
+     "2016",
+     "2020"
+    ],
+    "fees": [],
+    "quotes": [
+     "The Council has powers to impose a civil financial penalty for the following: Failure to comply with an Improvement Notice [s30 Housing Act 2004] Offences in relation to licensing of Houses in Multiple Occupation (HMOs) [s72 Housing Act 2004] Offences in relation to the Selective Licensing of ‘houses’ [s95 Housing Act ",
+     "The qualifying offences are: Failure to comply with an Improvement Notice (Housing Act 2004, s30) Failure to comply with a Prohibition Order (Housing Act 2004, s32) Breach of a Banning Order (Housing and Planning Act 2016, s21) Control or management of an unlicensed HMO (Housing Act 2004, s72) Control or management of "
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000123",
+  "name": "Preston",
+  "website": "http://www.preston.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1953,
+  "candidates": 67,
+  "pagesFetched": 4,
+  "evidence": [
+   {
+    "url": "https://www.preston.gov.uk/article/13270/Selective-Licensing-Landlord-FAQs",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": true,
+    "looksNegative": false,
+    "years": [
+     "2026",
+     "2025",
+     "2016"
+    ],
+    "fees": [
+     "£1,050",
+     "£470",
+     "£580",
+     "£210",
+     "£40,000"
+    ],
+    "quotes": [
+     "Selective Licensing is a power available to local authorities under Part 3 of the Housing Act 2004 .",
+     "Selective Licensing will allow the Council to move to a more proactive approach, requiring landlords to demonstrate compliance before problems arise, and improving its intelligence about the private rented sector in the designated wards.",
+     "Selective Licensing designations can be made for up to five years.",
+     "Does the Renters' Rights Act 2025 mean Selective Licensing is no longer needed?"
+    ]
+   },
+   {
+    "url": "https://www.preston.gov.uk/selective-licensing-consultation",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": true,
+    "looksNegative": false,
+    "years": [
+     "2026"
+    ],
+    "fees": [],
+    "quotes": [
+     "Consultation on a Selective Licensing Scheme for Privately Rented Homes - Preston City Council Skip to main content This website uses cookies Your cookie preferences were saved Change cookie preferences Consultation on a Selective Licensing Scheme for Privately Rented Homes Have your say on proposals to improve standar",
+     "The proposed Selective Licensing scheme would give the Council stronger powers to improve property standards, safety and management in privately rented homes in the designated areas, requiring landlords to obtain a licence and meet enforceable conditions before problems arise, rather than only acting when complaints ar",
+     "Preston City Council is proposing to introduce a Selective Licensing scheme under Part 3 of the Housing Act 2004.",
+     "Why the Council is consulting Before introducing a Selective Licensing scheme, the law requires the Council to carry out a public consultation."
+    ]
+   },
+   {
+    "url": "https://www.preston.gov.uk/selective-licensing-tenant-faqs",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2026",
+     "2025"
+    ],
+    "fees": [
+     "£1,050",
+     "£470",
+     "£580",
+     "£7,000",
+     "£40,000"
+    ],
+    "quotes": [
+     "Selective Licensing is a scheme run by Preston City Council that requires private landlords in certain areas to obtain a licence to rent out their properties.",
+     "Selective Licensing means the Council can be more proactive, requiring landlords to show they are meeting standards before problems arise, rather than waiting until things go wrong.",
+     "Selective Licensing is designed to improve standards in privately rented homes and provide better outcomes for tenants.",
+     "Selective Licensing is about improving standards; it is not a reason for a landlord to end a tenancy."
+    ]
+   },
+   {
+    "url": "https://preston.gov.uk/article/13302/The-Council-Consults-on-New-Licensing-Scheme-to-Improve-Standards-For-Private-Renters",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": true,
+    "looksNegative": false,
+    "years": [
+     "2026",
+     "2025"
+    ],
+    "fees": [
+     "£1,050",
+     "£470",
+     "£580"
+    ],
+    "quotes": [
+     "The Council Consults on New Licensing Scheme to Improve Standards For Private Renters - Preston City Council Skip to main content This website uses cookies Your cookie preferences were saved Change cookie preferences The Council Consults on New Licensing Scheme to Improve Standards For Private Renters 29 July 2026 Resi",
+     "Preston City Council has launched a public consultation on proposals to introduce a Selective Licensing scheme in the City Centre, St Matthew's and Plungington wards.",
+     "Selective Licensing is a power available to local authorities under Part 3 of the Housing Act 2004 .",
+     "Selective Licensing would allow the Council to take a more proactive approach, requiring landlords to demonstrate compliance before problems arise and improving the Council's understanding of privately rented homes across the designated areas."
+    ]
+   }
+  ],
+  "verdict": "likely_has_scheme",
+  "confidence": "high",
+  "errors": [],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000236",
+  "name": "Redditch",
+  "website": "https://www.redditchbc.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 1328,
+  "candidates": 8,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000211",
+  "name": "Reigate and Banstead",
+  "website": "http://www.reigate-banstead.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1489,
+  "candidates": 37,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 7
+ },
+ {
+  "gss": "E07000124",
+  "name": "Ribble Valley",
+  "website": "http://www.ribblevalley.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 37563,
+  "candidates": 291,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E09000027",
+  "name": "Richmond upon Thames",
+  "website": "https://www.richmond.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 9,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail /media/licensing/full_licensing_r"
+  ],
+  "searchHits": 9
+ },
+ {
+  "gss": "E07000075",
+  "name": "Rochford",
+  "website": "http://www.rochford.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 958,
+  "candidates": 30,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail k/houses-in-multiple-occupation-hm",
+   "curl-fail k/standards-required-in-hmos"
+  ],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000125",
+  "name": "Rossendale",
+  "website": "http://www.rossendale.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 72209,
+  "candidates": 169,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000064",
+  "name": "Rother",
+  "website": "http://www.rother.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1956,
+  "candidates": 109,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.rother.gov.uk/environmental-health/private-rented-housing/houses-in-multiple-occupation-hmos-and-mandatory-licensing/",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2018"
+    ],
+    "fees": [
+     "£1122",
+     "£1163",
+     "£792",
+     "£830",
+     "£415"
+    ],
+    "quotes": [
+     "the flat does not contain within it a kitchen, bathroom and toilet) and which is occupied by three or more tenants who form two or more households A building which is converted entirely into self-contained flats if the conversion did not meet the standards of the 1991 Building Regulations and more than one-third of the",
+     "Local Authorities have the power to introduce an additional and/or selective licensing scheme within their area.",
+     "Rother District Council does not currently operate either an additional or selective licensing scheme.",
+     "the flat does not contain within it a kitchen, bathroom and toilet) and which is occupied by three or more tenants who form two or more households A building which is converted entirely into self-contained flats if the conversion did not meet the standards of the 1991 Building Regulations and more than one-third of the"
+    ]
+   },
+   {
+    "url": "https://www.rother.gov.uk/environmental-health/private-rented-housing/private-sector-housing-enforcement-policy/",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2026",
+     "2025",
+     "2016",
+     "2020",
+     "2015",
+     "2022"
+    ],
+    "fees": [
+     "£5,000",
+     "£2500",
+     "£3000",
+     "£5000",
+     "£2,000"
+    ],
+    "quotes": [
+     "The Council has the power to impose a Civil Financial Penalty for the following: Unlawful eviction and harassment of occupier as defined under the Protection from Eviction Act 1997 Failure to comply with an Improvement Notice [s30 Housing Act 2004] Offences in relation to licensing of Houses in Multiple Occupation (HMO"
+    ]
+   },
+   {
+    "url": "https://www.rother.gov.uk/environmental-health/private-rented-housing/civil-penalties-policy/",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2025",
+     "2020",
+     "2016"
+    ],
+    "fees": [
+     "£7,000",
+     "£40,000",
+     "£5,000",
+     "£35,000",
+     "£28,000"
+    ],
+    "quotes": [
+     "Failure to obtain a selective licence under Section 95 of the Housing Act 2004.",
+     "Failure to comply with selective licence conditions under Section 95 of the Housing Act 2004.",
+     "Giving written notice prior to entry Allowing access for inspections Minimising risk of water contamination The compliance of furnishings or furniture with fire safety regulations Carrying out items on a schedule of works in relation to provision of mechanical extraction or electrical sockets Starting point Statutory m",
+     "Failure to comply with licence conditions related to: Signage or the provision of information for tenants Provision of written terms of occupancy for tenants Procedures regarding complaints Procedures regarding vetting of incoming tenants Compliance with deposit protection legislation The recording and provision of inf"
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000220",
+  "name": "Rugby",
+  "website": "https://www.rugby.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 883,
+  "candidates": 46,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.rugby.gov.uk/w/rugby-borough-council-housing-charter-and-guidance-for-private-sector-housing",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2019",
+     "2016",
+     "2020",
+     "2021",
+     "2018",
+     "2025",
+     "2028"
+    ],
+    "fees": [
+     "£30,000",
+     "£50,000,",
+     "£50,000",
+     "£100,000",
+     "£4,000"
+    ],
+    "quotes": [
+     "Council’s have the powers to introduce additional/selective licensing schemes which apply to certain areas that fall outside the scope of Mandatory Licensing."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 4
+ },
+ {
+  "gss": "E07000212",
+  "name": "Runnymede",
+  "website": "https://www.runnymede.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 978,
+  "candidates": 36,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.runnymede.gov.uk/general-licenses/houses-multiple-occupation-hmo/4",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2020",
+     "2021"
+    ],
+    "fees": [],
+    "quotes": [
+     "HMO and Selective Licensing These regulations add the following mandatory conditions to selective and HMO licences: To ensure that every electrical installation in the house is in proper working order and safe for continued use and to supply the authority, on demand, with a declaration by him as to the safety of such i"
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000176",
+  "name": "Rushcliffe",
+  "website": "http://www.rushcliffe.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [
+   {
+    "url": "https://www.rushcliffe.gov.uk/environmental-health/licensing/other-licences/houses-in-multiple-occupation/",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2017",
+     "2023",
+     "2018"
+    ],
+    "fees": [],
+    "quotes": [
+     "The Act also allows for additional and selective licensing of properties which means that particular types of properties, or properties in certain defined areas, will also have to be licensed.",
+     "In Rushcliffe, there is currently no additional or selective licensing.",
+     "When an HMO Licence Is Still Required A supported housing property will still require an HMO licence if: It is occupied by at least 5 people forming more than one household The occupiers share facilities such as kitchens or bathrooms It falls within the scope of mandatory or additional HMO Licensing in the local author"
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000092",
+  "name": "Rushmoor",
+  "website": "http://www.rushmoor.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 6,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E06000017",
+  "name": "Rutland",
+  "website": "https://www.rutland.gov.uk/",
+  "discovery": "sitemap",
+  "sitemapUrls": 2602,
+  "candidates": 80,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 0
+ },
+ {
+  "gss": "E07000111",
+  "name": "Sevenoaks",
+  "website": "https://www.sevenoaks.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2926,
+  "candidates": 118,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000019",
+  "name": "Sheffield",
+  "website": "https://www.sheffield.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2667,
+  "candidates": 236,
+  "pagesFetched": 4,
+  "evidence": [
+   {
+    "url": "https://www.sheffield.gov.uk/housing/selective-licence-london-abbeydale-chesterfield-road",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2018",
+     "2023",
+     "2024"
+    ],
+    "fees": [],
+    "quotes": [
+     "Apply for a Selective Licence in London, Abbeydale or Chesterfield Road | Sheffield City Council Skip to main content Apply for a Selective Licence in London, Abbeydale or Chesterfield Road A selective licensing scheme operated in areas of London Road, Abbeydale Road and Chesterfield Road, as well as some adjoining str",
+     "If you previously had a Selective Licence for your property in this scheme, there is no need for you to renew as the scheme has ended."
+    ]
+   },
+   {
+    "url": "https://www.sheffield.gov.uk/housing/selective-licensing-page-hall",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2019"
+    ],
+    "fees": [],
+    "quotes": [
+     "It included the following addresses: Page Hall Road (53 to 135 and 52 to 118) Hinde House Lane (31 to 125 and 34 to 102) Hinde Street (all properties) Popple Street (all properties) Robey Street (all properties) Lloyd Street (all properties) Wade Street (all properties) Lauder Street (all properties) Willoughby Street ",
+     "Scheme Achievements You can read our report that charted progress of the Selective Licensing scheme.",
+     "Page Hall selective licensing area - 4 years on ( , ) Read about and apply for the Selective Licensing scheme on London, Abbeydale an…"
+    ]
+   },
+   {
+    "url": "https://www.sheffield.gov.uk/housing/selective-licensing",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [],
+    "fees": [],
+    "quotes": []
+   },
+   {
+    "url": "https://www.sheffield.gov.uk/housing",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [],
+    "fees": [],
+    "quotes": [
+     "Selective Licensing Details about the now closed Selective Licensing scheme."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [
+   "403 /selectivelicensing"
+  ],
+  "searchHits": 5
+ },
+ {
+  "gss": "E06000051",
+  "name": "Shropshire",
+  "website": "https://shropshire.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 6,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E08000029",
+  "name": "Solihull",
+  "website": "https://www.solihull.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1450,
+  "candidates": 50,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 ident/housing/renting/hmos"
+  ],
+  "searchHits": 6
+ },
+ {
+  "gss": "E06000066",
+  "name": "Somerset",
+  "website": "https://www.somerset.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 5597,
+  "candidates": 176,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000012",
+  "name": "South Cambridgeshire",
+  "website": "http://www.scambs.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [
+   {
+    "url": "https://www.scambs.gov.uk/media/15075/8604-selective-licensing-scheme-enforcement-prosecution.pdf",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2021"
+    ],
+    "fees": [],
+    "quotes": []
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000039",
+  "name": "South Derbyshire",
+  "website": "http://www.south-derbys.gov.uk/",
+  "discovery": "fallback",
+  "sitemapUrls": 0,
+  "candidates": 7,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail /housing/selective-licensing",
+   "curl-fail /selective-licensing",
+   "curl-fail /private-sector-housing",
+   "curl-fail /landlord-licensing"
+  ],
+  "searchHits": 0,
+  "ownSearchHits": 0
+ },
+ {
+  "gss": "E06000025",
+  "name": "South Gloucestershire",
+  "website": "http://www.southglos.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1912,
+  "candidates": 42,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 uk/static/1341dd64c9a593d9886218a"
+  ],
+  "searchHits": 6
+ },
+ {
+  "gss": "E07000044",
+  "name": "South Hams",
+  "website": "http://www.south-hams-dc.gov.uk/",
+  "discovery": "own",
+  "sitemapUrls": 0,
+  "candidates": 6,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 0,
+  "ownSearchHits": 6
+ },
+ {
+  "gss": "E07000140",
+  "name": "South Holland",
+  "website": "http://www.sholland.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1660,
+  "candidates": 81,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/article/7486/HMO-information-for"
+  ],
+  "searchHits": 7
+ },
+ {
+  "gss": "E07000141",
+  "name": "South Kesteven",
+  "website": "http://www.southkesteven.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1335,
+  "candidates": 85,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000149",
+  "name": "South Norfolk",
+  "website": "http://www.south-norfolk.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 2,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail sidents/housing/houses-multip",
+   "curl-fail sidents/council-tax/landlords"
+  ],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000179",
+  "name": "South Oxfordshire",
+  "website": "https://www.southoxon.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2797,
+  "candidates": 133,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000126",
+  "name": "South Ribble",
+  "website": "http://www.south-ribblebc.gov.uk/",
+  "discovery": "fallback",
+  "sitemapUrls": 0,
+  "candidates": 7,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail /housing/selective-licensing",
+   "curl-fail /selective-licensing",
+   "curl-fail /private-sector-housing",
+   "curl-fail /landlord-licensing"
+  ],
+  "searchHits": 0,
+  "ownSearchHits": 0
+ },
+ {
+  "gss": "E07000196",
+  "name": "South Staffordshire",
+  "website": "http://www.sstaffs.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 903,
+  "candidates": 32,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000213",
+  "name": "Spelthorne",
+  "website": "https://www.spelthorne.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 1331,
+  "candidates": 7,
+  "pagesFetched": 4,
+  "evidence": [
+   {
+    "url": "https://www.spelthorne.gov.uk/page/1881/houses-multiple-occupation-hmo-landlords",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2025",
+     "2026",
+     "2018",
+     "2024"
+    ],
+    "fees": [
+     "£2,225",
+     "£913",
+     "£1,312",
+     "£175",
+     "£30,000"
+    ],
+    "quotes": [
+     "Spelthorne operates the mandatory licensing scheme under Part 2 of the Housing Act 2004, but does not currently operate any additional or selective licensing schemes."
+    ]
+   },
+   {
+    "url": "https://democracy.spelthorne.gov.uk/documents/s77464/E%20and%20S%20Report%20HMO%20SPD%201%202.html?CT=2",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2026",
+     "2025",
+     "2024",
+     "2021"
+    ],
+    "fees": [],
+    "quotes": [
+     "2.6.2 Spelthorne operates the mandatory licensing scheme under Part 2 of the Housing Act 2004 but does not currently operate any additional or selective licensing schemes."
+    ]
+   },
+   {
+    "url": "https://democracy.spelthorne.gov.uk/documents/s77435/E%20and%20S%20Report%20HMO%20SPD%201.html?CT=2",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2026",
+     "2025",
+     "2024",
+     "2021"
+    ],
+    "fees": [],
+    "quotes": [
+     "2.6.2 Spelthorne operates the mandatory licensing scheme under Part 2 of the Housing Act 2004 but does not currently operate any additional or selective licensing schemes."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [
+   "404 /page/1375/houses-multiple-occu",
+   "curl-fail /sites/default/files/2026-03/HM",
+   "curl-fail ov.uk/documents/s75982/Draft%20"
+  ],
+  "searchHits": 7
+ },
+ {
+  "gss": "E07000240",
+  "name": "St Albans",
+  "website": "http://www.stalbans.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 6,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E08000013",
+  "name": "St. Helens",
+  "website": "https://www.sthelens.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 3768,
+  "candidates": 51,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000197",
+  "name": "Stafford",
+  "website": "https://www.staffordbc.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1410,
+  "candidates": 46,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000198",
+  "name": "Staffordshire Moorlands",
+  "website": "http://www.staffsmoorlands.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1819,
+  "candidates": 46,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000243",
+  "name": "Stevenage",
+  "website": "https://www.stevenage.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1251,
+  "candidates": 239,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 housing/private-sector-housing/2"
+  ],
+  "searchHits": 7
+ },
+ {
+  "gss": "E08000007",
+  "name": "Stockport",
+  "website": "http://www.stockport.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 7,
+  "pagesFetched": 4,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/information-for-landlords/chang",
+   "curl-fail rvice-pay-payment/pay-your-house-",
+   "curl-fail yment/house-in-multiple-occupatio"
+  ],
+  "searchHits": 7
+ },
+ {
+  "gss": "E06000021",
+  "name": "Stoke-on-Trent",
+  "website": "https://www.stoke.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 5079,
+  "candidates": 197,
+  "pagesFetched": 5,
+  "evidence": [
+   {
+    "url": "https://www.stoke.gov.uk/info/20041/private_renting_and_landlords/362/selective_licensing_evaluation_report",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2019"
+    ],
+    "fees": [],
+    "quotes": [
+     "Selective Licensing Evaluation Report | Selective Licensing Evaluation Report | Stoke-on-Trent Selective Licensing Evaluation Report Under the Housing Act 2004, local authorities have powers to introduce selective licensing of privately rented homes to address problems in their areas.",
+     "Selective licensing requires private landlords to apply for a licence to let their properties.",
+     "The evaluation of the selective licensing schemes is available here: Download file Any enquiries regarding the evaluation report should be sent to privatesectorhousing@stoke.gov.uk"
+    ]
+   },
+   {
+    "url": "https://www.stoke.gov.uk/downloads/download/816/selective_licensing",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2020"
+    ],
+    "fees": [],
+    "quotes": []
+   },
+   {
+    "url": "https://www.stoke.gov.uk/downloads/file/1618/selective_licensing_evaluation_report_2020",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2020"
+    ],
+    "fees": [],
+    "quotes": []
+   },
+   {
+    "url": "https://www.stoke.gov.uk/selectivelicensing",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2019"
+    ],
+    "fees": [],
+    "quotes": [
+     "Selective Licensing Evaluation Report | Selective Licensing Evaluation Report | Stoke-on-Trent Selective Licensing Evaluation Report Under the Housing Act 2004, local authorities have powers to introduce selective licensing of privately rented homes to address problems in their areas.",
+     "Selective licensing requires private landlords to apply for a licence to let their properties.",
+     "The evaluation of the selective licensing schemes is available here: Download file Any enquiries regarding the evaluation report should be sent to privatesectorhousing@stoke.gov.uk"
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000221",
+  "name": "Stratford-on-Avon",
+  "website": "http://www.stratford.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 918,
+  "candidates": 43,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000082",
+  "name": "Stroud",
+  "website": "http://www.stroud.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 4,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/report-it/house-in-multiple-occupa",
+   "404 k/housing/council-tenants-and-leaseh",
+   "404 k/housing/council-tenants-and-leaseh"
+  ],
+  "searchHits": 4
+ },
+ {
+  "gss": "E08000024",
+  "name": "Sunderland",
+  "website": "https://www.sunderland.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 5825,
+  "candidates": 114,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 /article/12554/Housing-Licensin"
+  ],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000214",
+  "name": "Surrey Heath",
+  "website": "https://www.surreyheath.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1201,
+  "candidates": 58,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 4
+ },
+ {
+  "gss": "E07000113",
+  "name": "Swale",
+  "website": "https://www.swale.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1032,
+  "candidates": 148,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 7
+ },
+ {
+  "gss": "E06000030",
+  "name": "Swindon",
+  "website": "https://swindon.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 10749,
+  "candidates": 266,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000008",
+  "name": "Tameside",
+  "website": "http://www.tameside.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/housing/landlords/accreditation/"
+  ],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000215",
+  "name": "Tandridge",
+  "website": "https://www.tandridge.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000045",
+  "name": "Teignbridge",
+  "website": "https://www.teignbridge.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 5,
+  "pagesFetched": 3,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 /housing/landlords/teignbridge",
+   "404 ncil-and-democracy/council-new"
+  ],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000076",
+  "name": "Tendring",
+  "website": "http://www.tendringdc.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1879,
+  "candidates": 75,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000093",
+  "name": "Test Valley",
+  "website": "http://www.testvalley.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 2,
+  "pagesFetched": 2,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000083",
+  "name": "Tewkesbury",
+  "website": "http://www.tewkesburybc.gov.uk/",
+  "discovery": "fallback",
+  "sitemapUrls": 964,
+  "candidates": 7,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 /housing/selective-licensing",
+   "404 /selective-licensing",
+   "404 /private-sector-housing",
+   "404 /landlord-licensing"
+  ],
+  "searchHits": 0,
+  "ownSearchHits": 0
+ },
+ {
+  "gss": "E07000102",
+  "name": "Three Rivers",
+  "website": "http://www.threerivers.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2768,
+  "candidates": 63,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.threerivers.gov.uk/news/new-hmo-licencing-policy-approved",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2026"
+    ],
+    "fees": [],
+    "quotes": [
+     "“The HMO licensing policy will enhance transparency for all parties on how HMO licences are determined and will ensure they are safe and suitable for tenants, whilst empowering residents and partners to have a say on any additional licence conditions that officers may consider."
+    ]
+   },
+   {
+    "url": "https://www.threerivers.gov.uk/news/council-explores-tightened-hmo-rules",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2025",
+     "2026"
+    ],
+    "fees": [],
+    "quotes": [
+     "Following a meeting of Full Council on Tuesday, 21 October, the council will be reviewing if an additional licencing scheme, which would require landlords of small HMOs occupied by less than five occupants to apply to the council for a licence, could be introduced.",
+     "“We will continue to strengthen our partnership working with the police, residents and landlords to reduce concerns, such as anti-social behaviour, for effective enforcement and intelligence gathering to protect tenants and residents.” Once ready, recommendations on the implementation of an additional licencing scheme ",
+     "The HMO Licencing Policy will go to a future Policy and Resources Committee after the additional licencing scheme and Article Four Direction is considered at the committee meeting in January."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000115",
+  "name": "Tonbridge and Malling",
+  "website": "http://www.tmbc.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 3,
+  "pagesFetched": 3,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E06000027",
+  "name": "Torbay",
+  "website": "http://www.torbay.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 8,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000046",
+  "name": "Torridge",
+  "website": "http://www.torridge.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2031,
+  "candidates": 49,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E08000009",
+  "name": "Trafford",
+  "website": "http://www.trafford.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2699,
+  "candidates": 128,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/residents/housing/housing-standa"
+  ],
+  "searchHits": 5
+ },
+ {
+  "gss": "E07000116",
+  "name": "Tunbridge Wells",
+  "website": "https://www.tunbridgewells.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 3,
+  "pagesFetched": 3,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 3
+ },
+ {
+  "gss": "E07000077",
+  "name": "Uttlesford",
+  "website": "http://www.uttlesford.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1365,
+  "candidates": 90,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000180",
+  "name": "Vale of White Horse",
+  "website": "http://www.whitehorsedc.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2590,
+  "candidates": 131,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000036",
+  "name": "Wakefield",
+  "website": "http://www.wakefield.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1852,
+  "candidates": 74,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 k/your-district/stricter-hmo-rule"
+  ],
+  "searchHits": 8
+ },
+ {
+  "gss": "E06000007",
+  "name": "Warrington",
+  "website": "https://www.warrington.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1442,
+  "candidates": 38,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000103",
+  "name": "Watford",
+  "website": "https://www.watford.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 3883,
+  "candidates": 111,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ },
+ {
+  "gss": "E07000216",
+  "name": "Waverley",
+  "website": "http://www.waverley.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 736,
+  "candidates": 113,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000065",
+  "name": "Wealden",
+  "website": "http://www.wealden.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [
+   {
+    "url": "https://www.wealden.gov.uk/housing/housing-strategies-policies/private-sector-housing-enforcement-policy-2019/",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2019",
+     "2015",
+     "2017",
+     "2016",
+     "2018"
+    ],
+    "fees": [
+     "£5,000",
+     "£30,000",
+     "£5000",
+     "£500,",
+     "£250"
+    ],
+    "quotes": [
+     "The Housing and Planning Act 2016 section 126 and Schedule 9 enables the Council to impose a civil penalty as an alternative to prosecution for certain housing offences: Section 30 – Failure to comply with an Improvement Notice Section 72 – Offences in relation to licensing of HMOs Section 95 – Offences in relation to "
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000241",
+  "name": "Welwyn Hatfield",
+  "website": "https://www.welhat.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2642,
+  "candidates": 257,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 /private-renting/hmo/what-they-are"
+  ],
+  "searchHits": 3
+ },
+ {
+  "gss": "E06000037",
+  "name": "West Berkshire",
+  "website": "http://www.westberks.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2652,
+  "candidates": 45,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000047",
+  "name": "West Devon",
+  "website": "http://www.westdevon.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1696,
+  "candidates": 175,
+  "pagesFetched": 7,
+  "evidence": [
+   {
+    "url": "https://www.westdevon.gov.uk/housing/houses-multiple-occupation-hmo/hmo-fact-sheet/mandatory-licensing",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [],
+    "fees": [],
+    "quotes": [
+     "The government intends that additional licensing should be available to tackle such blocks that are problematic (see 4.6 below)."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [
+   "404 ticle/3557/Houses-in-Multiple-Occ"
+  ],
+  "searchHits": 9
+ },
+ {
+  "gss": "E07000127",
+  "name": "West Lancashire",
+  "website": "http://www.westlancsdc.gov.uk/",
+  "discovery": "fallback",
+  "sitemapUrls": 0,
+  "candidates": 7,
+  "pagesFetched": 0,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "302 /housing/selective-licensing",
+   "302 /selective-licensing",
+   "302 /private-sector-housing",
+   "302 /landlord-licensing"
+  ],
+  "searchHits": 0,
+  "ownSearchHits": 0
+ },
+ {
+  "gss": "E07000142",
+  "name": "West Lindsey",
+  "website": "http://www.west-lindsey.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2488,
+  "candidates": 130,
+  "pagesFetched": 4,
+  "evidence": [
+   {
+    "url": "https://www.west-lindsey.gov.uk/housing-homelessness/private-sector-housing/selective-licensing",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2016",
+     "2021",
+     "2022"
+    ],
+    "fees": [],
+    "quotes": [
+     "Leader of West Lindsey District Council, Cllr Owen Bierley said: “Following a Full Council meeting on Monday 7 March 2022, Councillors voted in favour of halting the Selective Licensing consultation at this time, to allow for further considerations to be made into both the scheme and the consultation.",
+     "More news Private sector housing Empty homes Housing repairs, standards and enforcement Selective Licensing Renters Rights Act Houses in multiple occupation Tenant s guide to damp and mould (Healthy Homes) Landlord s guide to damp and mould (Healthy Homes)"
+    ]
+   },
+   {
+    "url": "https://www.west-lindsey.gov.uk/council-democracy/have-your-say/consultations/previous-consultations/selective-licensing-consultation-2022",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2022"
+    ],
+    "fees": [],
+    "quotes": [
+     "Read the statement from Leader of the Council, Cllr Owen Bierley Downloads Document Selective Licensing FAQs ( PDF , 155.5KB ) Savoy Cinema celebrates successful first anniversary Communities set to benefit from renewable energy developments under new council policy ‘You just can’t beat seeing the children playing’ – v"
+    ]
+   },
+   {
+    "url": "https://www.west-lindsey.gov.uk/sites/default/files/2022-09/selective_licensing_consultation_report_april_2022.pdf",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2022"
+    ],
+    "fees": [],
+    "quotes": []
+   },
+   {
+    "url": "https://www.west-lindsey.gov.uk/council-news/2022/03/statement-re-selective-licensing",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2022"
+    ],
+    "fees": [],
+    "quotes": [
+     "Archived News: Statement re: Selective Licensing | West Lindsey District Council Skip to main content Please Note: This is a page from our Council News Archive and any information contained on this page will have been correct at the time of publication.",
+     "Statement re: Selective Licensing Date published: 10 March 2022 Image Leader of West Lindsey District Council, Cllr Owen Bierley said: “Following a Full Council meeting on Monday 7 March 2022, Councillors voted in favour of halting the Selective Licensing consultation at this time, to allow for further considerations t"
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [
+   "curl-fail -council/council-news-archive/",
+   "curl-fail -services/housing-and-home-cho",
+   "curl-fail -council/council-news/landlord"
+  ],
+  "searchHits": 6
+ },
+ {
+  "gss": "E07000181",
+  "name": "West Oxfordshire",
+  "website": "https://westoxon.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 4,
+  "pagesFetched": 4,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 4
+ },
+ {
+  "gss": "E07000245",
+  "name": "West Suffolk",
+  "website": "https://www.westsuffolk.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 782,
+  "candidates": 47,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.westsuffolk.gov.uk/Business/Licensing-and-regulation/Licensing/hmo.cfm",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2024",
+     "2025"
+    ],
+    "fees": [
+     "£460",
+     "£210",
+     "£670",
+     "£335",
+     "£215"
+    ],
+    "quotes": [
+     "West Suffolk also has discretionary powers to implement Additional Licensing Scheme for other HMO’s and Selective Licencing Scheme for properties within the Private Rented Sector.",
+     "The council has not sought to adopt additional or selective licensing and as such only those properties that are occupied by five or more persons that do not form a single household would require a licence.",
+     "West Suffolk also has discretionary powers to implement Additional Licensing Scheme for other HMO’s and Selective Licencing Scheme for properties within the Private Rented Sector."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E06000064",
+  "name": "Westmorland and Furness",
+  "website": "http://westmorlandandfurness.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 3232,
+  "candidates": 84,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E08000010",
+  "name": "Wigan",
+  "website": "https://www.wigan.gov.uk",
+  "discovery": "search",
+  "sitemapUrls": 5,
+  "candidates": 8,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "500 /Business/Licensing-Permits-Registra",
+   "404 /Docs/PDF/Business/Licensing-Permits"
+  ],
+  "searchHits": 8
+ },
+ {
+  "gss": "E06000054",
+  "name": "Wiltshire",
+  "website": "https://www.wiltshire.gov.uk",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 4370,
+  "candidates": 169,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.wiltshire.gov.uk/article/10426/16-0-Houses-in-Multiple-Occupation-HMO",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2024",
+     "2020",
+     "2015"
+    ],
+    "fees": [],
+    "quotes": [
+     "16.6.4 There are currently no declared Additional or Selective Licencing schemes in Wiltshire."
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000094",
+  "name": "Winchester",
+  "website": "https://www.winchester.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 1754,
+  "candidates": 141,
+  "pagesFetched": 7,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "404 council-tax/guidance-for-landlo"
+  ],
+  "searchHits": 7
+ },
+ {
+  "gss": "E06000040",
+  "name": "Windsor and Maidenhead",
+  "website": "http://www.rbwm.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 5516,
+  "candidates": 278,
+  "pagesFetched": 6,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "curl-fail uk/info/201037/houses_in_multiple_occu",
+   "curl-fail uk/info/201037/houses_in_multiple_occu"
+  ],
+  "searchHits": 10
+ },
+ {
+  "gss": "E06000041",
+  "name": "Wokingham",
+  "website": "http://www.wokingham.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 2510,
+  "candidates": 132,
+  "pagesFetched": 4,
+  "evidence": [
+   {
+    "url": "https://www.wokingham.gov.uk/foi/selective-licensing-scheme-property-licenses",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2021"
+    ],
+    "fees": [],
+    "quotes": [
+     "What was the estimated number of properties that were thought to require a Selective License from the outset?",
+     "The Public Protection Partnership (PPP) do not have a selective licensing scheme in place."
+    ]
+   },
+   {
+    "url": "https://www.wokingham.gov.uk/foi/selective-and-additional-licensing",
+    "mentionsSelective": true,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2025"
+    ],
+    "fees": [],
+    "quotes": [
+     "What is your current fee for such licensing (separating fees for ‘Selective Licensing’ and ‘Additional Licensing’ schemes), and how long are such licenses valid for?",
+     "How many enforcement officers, who are responsible for ensuring private landlords comply with housing regulations, do you employ (separating any ‘Selective Licensing’ and ‘Additional Licensing’ - if different teams are used to operate each scheme individually)?",
+     "What is the surplus/deficit during the last financial year regarding the operating ‘Selective Licensing’ and ‘Additional Licensing’ scheme, respectively?",
+     "Do you operate any other ‘Additional Licensing’ scheme?"
+    ]
+   },
+   {
+    "url": "https://www.wokingham.gov.uk/foi/selective-licensing-scheme",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2021"
+    ],
+    "fees": [],
+    "quotes": [
+     "Please could you provide me with details of any selective licensing schemes for private landlords that have been implemented in your local authority since 2005?",
+     "Including if available: a) The date the selective licensing scheme commenced and the scheme’s end date.",
+     "Public Protection Partnership do not have a selective licensing scheme in place."
+    ]
+   },
+   {
+    "url": "https://www.wokingham.gov.uk/foi/selective-licensing-scheme-enforcementprosecution",
+    "mentionsSelective": true,
+    "mentionsAdditional": false,
+    "looksPositive": false,
+    "looksNegative": true,
+    "years": [
+     "2021",
+     "2018",
+     "2019"
+    ],
+    "fees": [],
+    "quotes": [
+     "The Public Protection Partnership (PPP) do not have a selective licensing scheme in place."
+    ]
+   }
+  ],
+  "verdict": "likely_no_scheme",
+  "confidence": "medium",
+  "errors": [],
+  "searchHits": 6
+ },
+ {
+  "gss": "E08000031",
+  "name": "Wolverhampton",
+  "website": "https://www.wolverhampton.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 10315,
+  "candidates": 257,
+  "pagesFetched": 8,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000229",
+  "name": "Worthing",
+  "website": "https://www.adur-worthing.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 1,
+  "pagesFetched": 1,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000238",
+  "name": "Wychavon",
+  "website": "http://www.wychavon.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 8,
+  "pagesFetched": 4,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [
+   "307 k/housing/houses-in-multiple-occup",
+   "307 k/housing/houses-in-multiple-occup",
+   "307 k/housing",
+   "307 ontainer=fileman-files&folder=Docu"
+  ],
+  "searchHits": 8
+ },
+ {
+  "gss": "E07000128",
+  "name": "Wyre",
+  "website": "https://www.wyre.gov.uk/",
+  "discovery": "search+sitemap",
+  "sitemapUrls": 5093,
+  "candidates": 98,
+  "pagesFetched": 8,
+  "evidence": [
+   {
+    "url": "https://www.wyre.gov.uk/directory-record/2213/foi001460-house-in-multiple-occupation-software-licensing-and-contract",
+    "mentionsSelective": false,
+    "mentionsAdditional": true,
+    "looksPositive": false,
+    "looksNegative": false,
+    "years": [
+     "2024"
+    ],
+    "fees": [],
+    "quotes": [
+     "What software are you using for HMO/ Selective/ Additional Licensing?",
+     "What software are you using for HMO/ Selective/ Additional Licensing?"
+    ]
+   }
+  ],
+  "verdict": "needs_review",
+  "confidence": "low",
+  "errors": [],
+  "searchHits": 1
+ },
+ {
+  "gss": "E07000239",
+  "name": "Wyre Forest",
+  "website": "http://www.wyreforestdc.gov.uk/",
+  "discovery": "search",
+  "sitemapUrls": 0,
+  "candidates": 2,
+  "pagesFetched": 2,
+  "evidence": [],
+  "verdict": "no_evidence",
+  "confidence": "none",
+  "errors": [],
+  "searchHits": 2
+ }
+]
