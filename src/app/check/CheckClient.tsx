@@ -255,8 +255,19 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
           <p className="text-sm text-navy-400">Licensing authority for {result.postcode}</p>
           <h2 className="mt-1 text-2xl font-bold text-navy-100">{result.council.name}</h2>
           {result.ward && <p className="mt-1 text-sm text-navy-400">Ward: {result.ward}</p>}
+          {/* Only claim to be showing official licensing data when we actually
+              hold research for this council. Sitting this badge above "we have
+              not yet verified this council" would undo the point of saying so. */}
           <p className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-navy-700 bg-navy-800 px-2.5 py-1 text-xs text-navy-400">
-            <span aria-hidden>🏛️</span> Based on official government &amp; local authority licensing data
+            {isEngland && !result.schemes.hasData ? (
+              <>
+                <span aria-hidden>📍</span> Council identified from official postcode data · scheme research pending
+              </>
+            ) : (
+              <>
+                <span aria-hidden>🏛️</span> Based on official government &amp; local authority licensing data
+              </>
+            )}
           </p>
 
           {hotMatch && (
@@ -368,6 +379,34 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                       {result.schemes.proposedDetails.length === 1 ? "" : "s"} proposed / under consultation here.
                     </p>
                   )}
+                </div>
+              ) : !result.schemes.hasData ? (
+                /* We hold no verified scheme research for this council. Saying
+                   "no scheme here" would be asserting an absence we cannot
+                   support, so say what is actually true instead. */
+                <div className="mt-5 rounded-lg border border-navy-700 bg-navy-900/60 p-4 text-sm text-navy-300">
+                  <p>
+                    <span className="font-semibold text-navy-100">
+                      We have not yet verified {result.council.name}&apos;s licensing schemes.
+                    </span>{" "}
+                    Most councils run no blanket scheme, but we will not tell you that as fact until we have checked
+                    this one against the council&apos;s own designations. Here is what applies either way:
+                  </p>
+                  <ul className="mt-3 space-y-1.5">
+                    <li>
+                      • A <span className="font-semibold text-navy-100">mandatory HMO licence</span> is required{" "}
+                      <span className="font-semibold">anywhere in England</span> once a property is let to 5+ people in
+                      2+ households, whatever your council does. Penalties reach £40,000.
+                    </li>
+                    <li>
+                      • Selective and additional schemes are often street or part-ward designations, so they can apply
+                      to your exact address even where most of the district is unaffected.
+                    </li>
+                  </ul>
+                  <p className="mt-3">
+                    The £7.99 report includes a manual check of {result.council.name}&apos;s current designations, rules
+                    a mandatory HMO licence in or out, and gives you the council source in writing.
+                  </p>
                 </div>
               ) : (
                 <div className="mt-5 rounded-lg border border-navy-700 bg-navy-900/60 p-4 text-sm text-navy-300">

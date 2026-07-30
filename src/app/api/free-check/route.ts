@@ -50,7 +50,11 @@ export async function POST(req: NextRequest) {
           site_id: "prscheck",
           search_query: pc.postcode,
           result_found: schemeFound,
-          search_type: "licence-check-free",
+          // Distinguish a researched "no scheme" from "we hold no data for this
+          // council". Both used to log as result_found=false, which hid the fact
+          // that 38.7% of searches were answered from an empty dataset rather
+          // than from research. Splitting them lets coverage be measured.
+          search_type: summary.hasData ? "licence-check-free" : "licence-check-free-nodata",
         });
       } catch {}
     }
