@@ -30,6 +30,12 @@ export interface CouncilSchemes {
   gss: string;
   schemes: Scheme[];
   notes?: string;
+  // Present on records where the finding is "we checked and there is no
+  // scheme". Those carry no Scheme entries, so the evidence for the negative
+  // has nowhere else to live, and a negative needs a source just as much as a
+  // positive does.
+  sourceUrl?: string;
+  verified?: string;
 }
 
 export const COUNCILS = councilsData as Council[];
