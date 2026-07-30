@@ -822,6 +822,24 @@
     "verified": "2026-07-30"
   },
   {
+    "council": "Hyndburn",
+    "gss": "E07000120",
+    "schemes": [
+      {
+        "type": "selective",
+        "status": "expired",
+        "start": null,
+        "end": "2023-03-04",
+        "coverage": "areas",
+        "areaDescription": "The Selective Licensing Designation 2018 ended on 4 March 2023 and no longer applies.",
+        "feeApprox": null,
+        "sourceUrl": "https://www.hyndburnbc.gov.uk/housing-and-regeneration-in-hyndburn/selective-licensing/",
+        "verified": "2026-07-30"
+      }
+    ],
+    "notes": "The 2018 selective licensing designation has ended, so none is currently in force."
+  },
+  {
     "council": "Leeds City Council",
     "gss": "E08000035",
     "schemes": [
@@ -2614,6 +2632,29 @@
     "notes": "No selective scheme. End date is the 5-year term."
   },
   {
+    "council": "Preston",
+    "gss": "E07000123",
+    "schemes": [
+      {
+        "type": "selective",
+        "status": "proposed",
+        "start": null,
+        "end": null,
+        "coverage": "wards",
+        "areaDescription": "Proposed selective licensing covering the City Centre, St Matthew's and Plungington wards. Public consultation runs 27 July to 11 October 2026. Not yet designated.",
+        "feeApprox": "£1,050 proposed (£470 Part A + £580 Part B)",
+        "sourceUrl": "https://www.preston.gov.uk/selective-licensing-consultation",
+        "verified": "2026-07-30",
+        "wards": [
+          "City Centre",
+          "St Matthew's",
+          "Plungington"
+        ]
+      }
+    ],
+    "notes": "Consultation stage only, not yet approved. If approved the council will confirm a commencement date and give landlords notice before it goes live."
+  },
+  {
     "council": "Reading Borough Council",
     "gss": "E06000038",
     "schemes": [
@@ -3144,6 +3185,24 @@
       }
     ],
     "notes": "End date derived from 5-year term; not stated on the page. No selective scheme."
+  },
+  {
+    "council": "West Lindsey",
+    "gss": "E07000142",
+    "schemes": [
+      {
+        "type": "selective",
+        "status": "expired",
+        "start": "2016-07-18",
+        "end": "2021-07-18",
+        "coverage": "wards",
+        "areaDescription": "Former designation covering the South West Ward of Gainsborough. In force 18 July 2016 to 18 July 2021 and not renewed.",
+        "feeApprox": null,
+        "sourceUrl": "https://www.west-lindsey.gov.uk/housing-homelessness/private-sector-housing/selective-licensing",
+        "verified": "2026-07-30"
+      }
+    ],
+    "notes": "The council's only selective licensing scheme has ended, so no designation is currently in force."
   },
   {
     "council": "West Northamptonshire Council",

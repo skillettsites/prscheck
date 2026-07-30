@@ -104,6 +104,65 @@ const WITH_SCHEMES = [
     ],
   },
   {
+    name: "Preston",
+    notes:
+      "Consultation stage only, not yet approved. If approved the council will confirm a commencement date and give landlords notice before it goes live.",
+    schemes: [
+      {
+        type: "selective",
+        status: "proposed",
+        start: null,
+        end: null,
+        coverage: "wards",
+        areaDescription:
+          "Proposed selective licensing covering the City Centre, St Matthew's and Plungington wards. Public consultation runs 27 July to 11 October 2026. Not yet designated.",
+        feeApprox: "£1,050 proposed (£470 Part A + £580 Part B)",
+        sourceUrl: "https://www.preston.gov.uk/selective-licensing-consultation",
+        verified: VERIFIED,
+        wards: ["City Centre", "St Matthew's", "Plungington"],
+      },
+    ],
+  },
+  {
+    name: "West Lindsey",
+    notes:
+      "The council's only selective licensing scheme has ended, so no designation is currently in force.",
+    schemes: [
+      {
+        type: "selective",
+        status: "expired",
+        start: "2016-07-18",
+        end: "2021-07-18",
+        coverage: "wards",
+        areaDescription:
+          "Former designation covering the South West Ward of Gainsborough. In force 18 July 2016 to 18 July 2021 and not renewed.",
+        feeApprox: null,
+        sourceUrl:
+          "https://www.west-lindsey.gov.uk/housing-homelessness/private-sector-housing/selective-licensing",
+        verified: VERIFIED,
+      },
+    ],
+  },
+  {
+    name: "Hyndburn",
+    notes: "The 2018 selective licensing designation has ended, so none is currently in force.",
+    schemes: [
+      {
+        type: "selective",
+        status: "expired",
+        start: null,
+        end: "2023-03-04",
+        coverage: "areas",
+        areaDescription:
+          "The Selective Licensing Designation 2018 ended on 4 March 2023 and no longer applies.",
+        feeApprox: null,
+        sourceUrl:
+          "https://www.hyndburnbc.gov.uk/housing-and-regeneration-in-hyndburn/selective-licensing/",
+        verified: VERIFIED,
+      },
+    ],
+  },
+  {
     name: "Bournemouth, Christchurch and Poole",
     notes: "Consultation stage only. No designation made at the time of checking.",
     schemes: [
