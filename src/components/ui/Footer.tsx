@@ -1,6 +1,19 @@
 import Link from "next/link";
 
 const columns = [
+  // The flagship consumer product was missing from the footer entirely, which
+  // left the licence checker, all 361 council pages and the guides with no
+  // site-wide internal link, and the 51 /resources articles orphaned: in the
+  // sitemap, returning 200, and linked from nowhere outside their own section.
+  {
+    title: "For landlords",
+    links: [
+      { label: "Check a property", href: "/check" },
+      { label: "Councils A to Z", href: "/councils" },
+      { label: "Licensing guides", href: "/guides" },
+      { label: "Articles", href: "/resources" },
+    ],
+  },
   {
     title: "Platform",
     links: [
