@@ -19,6 +19,7 @@ interface PostcodesIoResult {
 }
 
 export async function POST(req: NextRequest) {
+  const startedAt = Date.now();
   try {
     const body = await req.json();
     const raw = String(body.postcode ?? "").trim();
@@ -51,10 +52,22 @@ export async function POST(req: NextRequest) {
     if (body.log !== false) {
       try {
         const admin = createAdminClient();
+        // Where the searcher actually is, from Vercel's edge headers. Every
+        // sibling site records this and PRSCheck was the only one that did not,
+        // so its entire search history could not be told apart from our own
+        // testing, let alone attributed to a place or a channel. The columns
+        // already existed and were simply never written.
+        const geoCity = req.headers.get("x-vercel-ip-city");
         await admin.from("searches").insert({
           site_id: "prscheck",
           search_query: pc.postcode,
           result_found: schemeFound,
+          // Vercel percent-encodes the city header, so "Newcastle%20upon%20Tyne"
+          // would otherwise be stored verbatim.
+          geo_city: geoCity ? decodeURIComponent(geoCity) : null,
+          geo_region: req.headers.get("x-vercel-ip-country-region") || null,
+          geo_country: req.headers.get("x-vercel-ip-country") || null,
+          duration_ms: Date.now() - startedAt,
           // Distinguish a researched "no scheme" from "we hold no data for this
           // council". Both used to log as result_found=false, which hid the fact
           // that 38.7% of searches were answered from an empty dataset rather
