@@ -244,11 +244,36 @@ export default function PricingPage() {
                       return (
                         <td key={tier.name} className="py-3 text-center text-sm">
                           {val === true ? (
-                            <svg className="mx-auto h-5 w-5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                            </svg>
+                            <>
+                              <svg
+                                className="mx-auto h-5 w-5 text-success"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                                aria-hidden="true"
+                              >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                              <span className="sr-only">Included</span>
+                            </>
                           ) : val === false ? (
-                            <span className="text-navy-700">&mdash;</span>
+                            // A cross, not a dash. It reads unambiguously as
+                            // "not included" where a dash reads as "no data",
+                            // and it keeps the table free of em dashes.
+                            <>
+                              <svg
+                                className="mx-auto h-4 w-4 text-navy-600"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                                aria-hidden="true"
+                              >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                              <span className="sr-only">Not included</span>
+                            </>
                           ) : (
                             <span className="text-navy-300">{val}</span>
                           )}

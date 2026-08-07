@@ -605,11 +605,19 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
 
               {/* Stakes */}
               <div className="mt-6 rounded-lg border border-danger/30 bg-danger/5 p-3.5">
+                {/* The £40,000 civil penalty and the 24-month Rent Repayment
+                    Order are Housing Act 2004 s.249A powers, and the 24-month
+                    uplift is England-only. Quoting them to a Welsh landlord
+                    states a penalty regime that does not apply to them. */}
                 <p className="text-sm text-navy-200">
                   <span className="font-semibold text-red-300">Getting this wrong is expensive.</span> Letting without a
-                  required licence risks a civil penalty of up to <span className="font-semibold text-red-300">£40,000</span>,
-                  a rent-repayment order of up to <span className="font-semibold text-red-300">24 months&apos; rent</span>,
-                  and a possible banning order.
+                  required licence risks a civil penalty of up to{" "}
+                  <span className="font-semibold text-red-300">{result.nation === "wales" ? "£30,000" : "£40,000"}</span>, a
+                  rent-repayment order of up to{" "}
+                  <span className="font-semibold text-red-300">
+                    {result.nation === "wales" ? "12 months' rent" : "24 months' rent"}
+                  </span>
+                  , and a possible banning order.
                 </p>
                 <p className="mt-2 text-sm text-navy-300">
                   <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer, set against a
@@ -649,7 +657,10 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
         </>
       )}
 
-      <p className="mt-6 text-center text-xs text-navy-600">
+      {/* navy-600 on the page background is 2.7:1, below the 4.5:1 WCAG AA
+          minimum, and this is the text that limits our liability. navy-400
+          clears it comfortably. */}
+      <p className="mt-6 text-center text-xs text-navy-400">
         PRSCheck is an information service based on published council designations, not legal advice. Always confirm
         exact scheme boundaries with the council before acting.
       </p>

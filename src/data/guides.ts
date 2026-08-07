@@ -47,16 +47,23 @@ export const GUIDES: Guide[] = [
       {
         heading: "Wales, Scotland and Northern Ireland",
         body: [
-          "Wales runs a national scheme, Rent Smart Wales: every landlord must register, and self-managing landlords need a licence with training. Fixed penalties, unlimited fines and rent stopping orders apply.",
-          "Scotland requires all landlords to register with each council where they let, renewing every three years, with fines up to £50,000 for letting unregistered. HMOs (3+ unrelated occupants) need a separate licence.",
-          "Northern Ireland has a landlord registration scheme plus council-run HMO licensing administered through Belfast City Council for the whole of NI.",
+          // Wales was described here as a national regime ONLY, which is false
+          // and points in the dangerous direction: nine of its twenty-two
+          // councils run live additional licensing schemes, several county-wide,
+          // with fees over £2,000. The Housing Act 2004 extends to England AND
+          // Wales (s.270(11)), so Welsh councils hold the same designation
+          // powers as English ones.
+          "Wales has both. Every landlord must register with Rent Smart Wales, and self-managing landlords need a licence with training, backed by fixed penalties, unlimited fines and rent stopping orders. On top of that, Welsh councils hold exactly the same powers as English ones to designate selective and additional licensing schemes, because the Housing Act 2004 extends to England and Wales. Nine of the twenty-two Welsh councils currently run one, several of them county-wide, with fees running past £2,000. Registering with Rent Smart Wales does not cover you for those.",
+          "Wales also kept the three-storey test for mandatory HMO licensing that England dropped in 2018, so a Welsh property needs a mandatory licence only where it has three or more storeys as well as 5 or more occupants in 2 or more households.",
+          "Scotland requires all landlords to register with each council where they let, renewing every three years, with fines up to £50,000 for letting unregistered. HMO licensing is stricter than England's: a licence is needed where 3 or more people from 3 or more households share, not England's 5 in 2. Scottish councils cannot run selective or additional licensing at all, because the Housing Act 2004 does not extend to Scotland.",
+          "Northern Ireland has a landlord registration scheme plus HMO licensing, administered by the NIHMO Unit at Belfast City Council for all eleven councils. An HMO licence is needed where 3 or more people forming more than two households occupy the property, again a lower threshold than England's. Northern Irish councils cannot run selective or additional licensing either.",
         ],
       },
     ],
     faq: [
       {
         q: "Do I need a licence to rent out a single flat?",
-        a: "Only if your council runs a selective licensing scheme covering that address, or if the property is in Wales or Scotland where national registration applies. Outside a selective area in England, a single-household let usually needs no licence, but you should still confirm your exact address against the council's map.",
+        a: "Only if your council runs a selective licensing scheme covering that address. Councils in England and Wales can both designate one, so a Welsh single-household let can need a council licence as well as Rent Smart Wales registration. In Scotland and Northern Ireland no council can designate a selective scheme, but landlord registration is compulsory in both. Outside a designated area in England, a single-household let usually needs no licence, though you should still confirm your exact address against the council's map, because these schemes are often designated street by street.",
       },
       {
         q: "What counts as a household?",

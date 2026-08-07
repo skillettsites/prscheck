@@ -27,7 +27,7 @@
     "council": "Amber Valley",
     "gss": "E07000032",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Amber Valley Borough Council currently does not operate any selective licensing schemes.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"Amber Valley Borough Council currently does not operate any selective licensing schemes.\"",
     "sourceUrl": "https://www.ambervalley.gov.uk/housing/private-rented-housing/houses-in-multiple-occupancy.aspx",
     "verified": "2026-07-30"
   },
@@ -368,7 +368,7 @@
     "council": "Blaby",
     "gss": "E07000129",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Blaby District Council does not currently operate any Additional or Selective Licensing schemes for rental properties.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"Blaby District Council does not currently operate any Additional or Selective Licensing schemes for rental properties.\"",
     "sourceUrl": "https://www.blaby.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
     "verified": "2026-07-30"
   },
@@ -452,7 +452,7 @@
         "verified": "2026-07-30"
       }
     ],
-    "notes": "Consultation stage only. No designation made at the time of checking."
+    "notes": "Consultation stage only. No designation made when we last checked."
   },
   {
     "council": "Borough Council of King's Lynn and West Norfolk",
@@ -494,7 +494,7 @@
         "verified": "2026-07-30"
       }
     ],
-    "notes": "Consultation stage only. No designation made at the time of checking."
+    "notes": "Consultation stage only. No designation made when we last checked."
   },
   {
     "council": "Bracknell Forest Council",
@@ -516,7 +516,7 @@
     "council": "Breckland",
     "gss": "E07000143",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Breckland council does not operate an additional or selective licensing scheme.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"Breckland council does not operate an additional or selective licensing scheme.\"",
     "sourceUrl": "https://www.breckland.gov.uk/article/3788/Houses-in-Multiple-Occupation-HMOs",
     "verified": "2026-07-30"
   },
@@ -584,7 +584,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "End dates for additional + expansion selective derived from 5-year term."
+    "notes": "The end date for additional + expansion selective is not published by the council, so it is calculated from the standard five-year designation term."
   },
   {
     "council": "Bristol City Council",
@@ -649,7 +649,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "Layered ward + citywide schemes. 2022 ward-scheme end dates derived from 5-year term."
+    "notes": "Layered ward + citywide schemes. 2022 ward-scheme end dates calculated from the standard five-year designation term."
   },
   {
     "council": "Broadland District Council",
@@ -1829,7 +1829,7 @@
     "council": "Bury Metropolitan Borough Council",
     "gss": "E08000002",
     "schemes": [],
-    "notes": "UNVERIFIED: Bury's landlord pages show only the national mandatory HMO licence, and we found no sign of a selective or additional scheme. We could not fully search the council's website, so please check with Bury before relying on this.",
+    "notes": "Bury's landlord pages show only the national mandatory HMO licence, and we found no sign of a selective or additional scheme. We could not fully search the council's website, so please check with Bury before relying on this.",
     "sourceUrl": "https://www.bury.gov.uk/housing/private-rent/landlords/hmo-licence"
   },
   {
@@ -2533,7 +2533,7 @@
     "council": "Chichester",
     "gss": "E07000225",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Chichester District Council does not run selective or additional licensing schemes.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"Chichester District Council does not run selective or additional licensing schemes.\"",
     "sourceUrl": "https://www.chichester.gov.uk/housing-in-multiple-occupation",
     "verified": "2026-07-30"
   },
@@ -2605,7 +2605,7 @@
         "type": "additional",
         "status": "active",
         "start": "2021-08-30",
-        "end": "2026-08-31",
+        "end": "2026-08-30",
         "coverage": "borough-wide",
         "areaDescription": "Borough-wide (excl. certain s257 blocks); expires 30 Aug 2026, replaced next day by renewal",
         "feeApprox": "£1,540 base (+£68 per letting above five)",
@@ -7139,7 +7139,7 @@
     "council": "Cumberland",
     "gss": "E06000063",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Cumberland Council does not currently operate: additional HMO licensing schemes; selective licensing for other private rented properties.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"Cumberland Council does not currently operate: additional HMO licensing schemes; selective licensing for other private rented properties.\"",
     "sourceUrl": "https://www.cumberland.gov.uk/housing/housing-advice/houses-multiple-occupation-hmos",
     "verified": "2026-07-30"
   },
@@ -7204,7 +7204,7 @@
     "council": "Derby",
     "gss": "E06000015",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Derby City Council does not currently operate any Additional HMO Licensing or Selective Licensing schemes.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"Derby City Council does not currently operate any Additional HMO Licensing or Selective Licensing schemes.\"",
     "sourceUrl": "https://www.derby.gov.uk/trading-standards-environmental-health/environmental-health/housing-standards/houses-in-multiple-occupation/about/",
     "verified": "2026-07-30"
   },
@@ -7212,7 +7212,7 @@
     "council": "Derbyshire Dales",
     "gss": "E07000035",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"We do not operate Landlord Accreditation or Landlord Forums currently for this sector, nor Selective Licensing.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"We do not operate Landlord Accreditation or Landlord Forums currently for this sector, nor Selective Licensing.\"",
     "sourceUrl": "https://www.derbyshiredales.gov.uk/environment/housing-health-safety-survey-private-rented-property",
     "verified": "2026-07-30"
   },
@@ -7483,8 +7483,19 @@
   {
     "council": "East Riding of Yorkshire Council",
     "gss": "E06000011",
-    "schemes": [],
-    "notes": "UNVERIFIED: East Riding's HMO page refers to an additional licensing scheme in Goole but gives no dates, and its April 2026 fee schedule lists mandatory HMO fees only. We could not confirm whether the Goole scheme is still in force. Check with the council."
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "unverified",
+        "start": null,
+        "end": null,
+        "coverage": "areas",
+        "areaDescription": "The council's HMO page refers to an additional licensing scheme in Goole but publishes no dates, and its April 2026 fee schedule lists mandatory HMO fees only, so we could not confirm this scheme is in force.",
+        "feeApprox": null,
+        "sourceUrl": "https://www.eastriding.gov.uk/"
+      }
+    ],
+    "notes": "The council's HMO pages refer to an additional licensing scheme in Goole but give no dates, and its April 2026 fee schedule lists mandatory HMO fees only. We could not confirm whether that scheme is in force. If you let an HMO in Goole, confirm directly with the council before letting."
   },
   {
     "council": "East Staffordshire Borough Council",
@@ -7590,7 +7601,7 @@
     "council": "Erewash",
     "gss": "E07000036",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"The Council do not currently operate any Additional License or Selective Licencing schemes.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"The Council do not currently operate any Additional License or Selective Licencing schemes.\"",
     "sourceUrl": "https://www.erewash.gov.uk/housing/privately-rented-homes/houses-multiple-occupation-hmos/information-about-hmo-licences",
     "verified": "2026-07-30"
   },
@@ -7929,7 +7940,7 @@
         "verified": "2026-08-04"
       }
     ],
-    "notes": "Halton has no licensing scheme in force today, so only mandatory HMO licensing applies. A selective licensing scheme is out to public consultation until 18 October 2026 covering four wards and part of Highfield. If you let in those areas, watch for a decision after that date.",
+    "notes": "Halton has no licensing scheme in force today, so only mandatory HMO licensing applies. A selective licensing scheme is out to public consultation until 18 October 2026 covering four wards and part of Highfield. If you let in those areas, check with the council after that date.",
     "sourceUrl": "https://www3.halton.gov.uk/Pages/business/EnvironmentalHealth/PrivateHousing.aspx",
     "verified": "2026-08-04"
   },
@@ -8043,7 +8054,7 @@
     "council": "Horsham",
     "gss": "E07000227",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Horsham District Council does not operate an additional or selective licensing scheme at present.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"Horsham District Council does not operate an additional or selective licensing scheme at present.\"",
     "sourceUrl": "https://www.horsham.gov.uk/licensing/public-licensing-registers/hmo-register",
     "verified": "2026-07-30"
   },
@@ -14042,7 +14053,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "Additional scheme expiry 5 Aug 2026; renewal outcome unconfirmed. Watch for gap or renewal from 6 Aug 2026."
+    "notes": "Additional scheme expiry 5 Aug 2026; renewal outcome unconfirmed. Confirm the current position with the council before letting."
   },
   {
     "council": "London Borough of Havering",
@@ -14191,8 +14202,7 @@
         "areaDescription": "Phase 1 (four Streatham-area wards)",
         "feeApprox": "£1,025 (Part A £717.50 + Part B £307.50)",
         "sourceUrl": "https://www.lambeth.gov.uk/sites/default/files/2024-09/Designation%20of%204%20Wards%20Public%20Notice%20Final.pdf",
-        "verified": "2026-07-10",
-        "checkerUrl": "https://experience.arcgis.com/experience/9dbda0725bce4175be464cd9d546a49d/"
+        "verified": "2026-07-10"
       },
       {
         "type": "selective",
@@ -14224,8 +14234,7 @@
         "areaDescription": "Phase 2: 19 further wards; phases 1+2 cover 23 of 25 wards",
         "feeApprox": "£1,025 (Part A £717.50 + Part B £307.50)",
         "sourceUrl": "https://moderngov.lambeth.gov.uk/documents/s166540/Appendix%203%20-%20Designation%20of%2019%20Wards.pdf",
-        "verified": "2026-07-10",
-        "checkerUrl": "https://experience.arcgis.com/experience/9dbda0725bce4175be464cd9d546a49d/"
+        "verified": "2026-07-10"
       },
       {
         "type": "additional",
@@ -14272,8 +14281,7 @@
         "areaDescription": "Most of the borough (~20,000 properties); council describes 18 wards excl. Telegraph Hill and part of Blackheath. Verify addresses via council map.",
         "feeApprox": "£640 (£160 application + £480 on granting)",
         "sourceUrl": "https://lewisham.gov.uk/-/media/services/housing/lbl-selective-licensing-designation.pdf",
-        "verified": "2026-07-10",
-        "checkerUrl": "https://lewisham.gov.uk/inmyarea/interactive-map"
+        "verified": "2026-07-10"
       },
       {
         "type": "additional",
@@ -14550,7 +14558,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "No selective licensing. End date assumed from 5-year term."
+    "notes": "Sutton runs no selective licensing scheme. The council does not publish an end date for its additional scheme, so the date shown is calculated from the standard five-year designation term."
   },
   {
     "council": "London Borough of Tower Hamlets",
@@ -16142,7 +16150,7 @@
           "Newport"
         ],
         "areaDescription": "Newport selective scheme ('Newport 2'), part of Newport ward (TS1/TS5). Street boundary via council checker.",
-        "feeApprox": "£500-£750 (unverified)",
+        "feeApprox": "£500-£750 (not confirmed on the council's fee page)",
         "sourceUrl": "https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-middlesbrough/",
         "verified": "2026-07-10"
       },
@@ -16156,7 +16164,7 @@
           "Newport"
         ],
         "areaDescription": "Newport selective scheme ('Newport 1 / Phase 2'), a further part of Newport ward.",
-        "feeApprox": "£500-£750 (unverified)",
+        "feeApprox": "£500-£750 (not confirmed on the council's fee page)",
         "sourceUrl": "https://www.kammadata.com/uk-property-guide/property-licensing-guide-for-middlesbrough/",
         "verified": "2026-07-10"
       },
@@ -17126,7 +17134,7 @@
     "council": "North Kesteven",
     "gss": "E07000139",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"At the time of writing there are no additional or selective licensing requirements in place in the district.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"At the time of writing there are no additional or selective licensing requirements in place in the district.\"",
     "sourceUrl": "https://www.n-kesteven.gov.uk/private-sector-housing-enforcement-policy/private-sector-housing-enforcement-policy/section-13",
     "verified": "2026-07-30"
   },
@@ -18503,7 +18511,7 @@
         ]
       }
     ],
-    "notes": "Replaced expired 2020-2025 South Wigston scheme after a ~6 month gap. No additional HMO scheme. End date derived from 5-year term."
+    "notes": "Replaced expired 2020-2025 South Wigston scheme after a ~6 month gap. No additional HMO scheme. End date calculated from the standard five-year designation term."
   },
   {
     "council": "Oldham Metropolitan Borough Council",
@@ -20652,7 +20660,7 @@
     "council": "Rother",
     "gss": "E07000064",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Rother District Council does not currently operate either an additional or selective licensing scheme.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"Rother District Council does not currently operate either an additional or selective licensing scheme.\"",
     "sourceUrl": "https://www.rother.gov.uk/environmental-health/private-rented-housing/houses-in-multiple-occupation-hmos-and-mandatory-licensing/",
     "verified": "2026-07-30"
   },
@@ -22432,7 +22440,7 @@
     "council": "Rushcliffe",
     "gss": "E07000176",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"In Rushcliffe, there is currently no additional or selective licensing.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"In Rushcliffe, there is currently no additional or selective licensing.\"",
     "sourceUrl": "https://www.rushcliffe.gov.uk/environmental-health/licensing/other-licences/houses-in-multiple-occupation/",
     "verified": "2026-07-30"
   },
@@ -25480,7 +25488,7 @@
     "council": "South Ribble",
     "gss": "E07000126",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"South Ribble Borough Council has not designated any part of its district as subject to selective licensing of residential accommodation.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"South Ribble Borough Council has not designated any part of its district as subject to selective licensing of residential accommodation.\"",
     "sourceUrl": "https://southribble.gov.uk/environmental-health/hmo",
     "verified": "2026-07-30"
   },
@@ -25540,7 +25548,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "Ward-based (9 wards), NOT citywide. No selective scheme."
+    "notes": "Ward-based (9 wards), not citywide. No selective scheme."
   },
   {
     "council": "Southend-on-Sea City Council",
@@ -25570,7 +25578,7 @@
     "council": "Spelthorne",
     "gss": "E07000213",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Spelthorne operates the mandatory licensing scheme under Part 2 of the Housing Act 2004, but does not currently operate any additional or selective licensing schemes.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"Spelthorne operates the mandatory licensing scheme under Part 2 of the Housing Act 2004, but does not currently operate any additional or selective licensing schemes.\"",
     "sourceUrl": "https://www.spelthorne.gov.uk/page/1881/houses-multiple-occupation-hmo-landlords",
     "verified": "2026-07-30"
   },
@@ -25819,7 +25827,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "End date derived from 5-year term. No selective scheme (2017 proposal abandoned)."
+    "notes": "End date calculated from the standard five-year designation term. No selective scheme (2017 proposal abandoned)."
   },
   {
     "council": "Tendring",
@@ -25987,8 +25995,19 @@
   {
     "council": "Vale of Glamorgan",
     "gss": "W06000014",
-    "schemes": [],
-    "notes": "UNVERIFIED: Shared Regulatory Services still states an additional licence is needed for HMOs in the Castleland Renewal Area of Barry, but the Vale's own register and fee list show mandatory licences only. Anyone with an HMO in central Barry should confirm with the council.",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "unverified",
+        "start": null,
+        "end": null,
+        "coverage": "areas",
+        "areaDescription": "Shared Regulatory Services states that an additional HMO licence is needed in the Castleland Renewal Area of Barry, but the council's own register and fee list show mandatory licences only, so we could not confirm this scheme is in force.",
+        "feeApprox": null,
+        "sourceUrl": "https://www.valeofglamorgan.gov.uk/"
+      }
+    ],
+    "notes": "A council source still refers to an additional HMO licensing scheme in the Castleland Renewal Area of Barry, but the Vale's own licence register and fee schedule show mandatory licensing only. We could not confirm whether that scheme is in force. If you let an HMO in central Barry, confirm directly with the council before letting.",
     "sourceUrl": "https://www.srs.wales/en/Environmental-Health/Housing/HMO-Licensing/HMO-Licensing.aspx"
   },
   {
@@ -26050,12 +26069,12 @@
         "end": "2029-01-17",
         "coverage": "district",
         "areaDescription": "District-wide; houses, converted flats and purpose-built flats (incl. student accommodation) with 3+ persons in 2+ households",
-        "feeApprox": "unverified on council page",
+        "feeApprox": null,
         "sourceUrl": "https://www.warwickdc.gov.uk/news/article/1137/additional_licensing_scheme_comes_into_force",
         "verified": "2026-07-10"
       }
     ],
-    "notes": "End date derived from 5-year term; not stated on the page. No selective scheme."
+    "notes": "The council does not publish an end date, so it is calculated from the standard five-year designation term. No selective scheme."
   },
   {
     "council": "Watford",
@@ -26177,7 +26196,7 @@
     "council": "West Suffolk",
     "gss": "E07000245",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"The council has not sought to adopt additional or selective licensing.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"The council has not sought to adopt additional or selective licensing.\"",
     "sourceUrl": "https://www.westsuffolk.gov.uk/Business/Licensing-and-regulation/Licensing/hmo.cfm",
     "verified": "2026-07-30"
   },
@@ -26201,7 +26220,7 @@
     "council": "Wiltshire",
     "gss": "E06000054",
     "schemes": [],
-    "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"There are currently no declared Additional or Selective Licencing schemes in Wiltshire.\"",
+    "notes": "The council states it operates neither a selective nor an additional licensing scheme. The council's own wording: \"There are currently no declared Additional or Selective Licencing schemes in Wiltshire.\"",
     "sourceUrl": "https://www.wiltshire.gov.uk/article/10426/16-0-Houses-in-Multiple-Occupation-HMO",
     "verified": "2026-07-30"
   },
@@ -28175,7 +28194,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "No selective scheme. End date derived from 5-year term."
+    "notes": "No selective scheme. End date calculated from the standard five-year designation term."
   },
   {
     "council": "Wokingham",

@@ -800,7 +800,9 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
 
   const cs = schemesByGss.get(gss);
   const assess = (scheme: Scheme): SchemeAssessment => {
-    if (scheme.status === "upcoming") {
+    // "Upcoming" only until its start date arrives; after that it is running and
+    // must be assessed like any other live scheme.
+    if (scheme.status === "upcoming" && !hasCommenced(scheme)) {
       return {
         scheme,
         verdict: "upcoming",
@@ -1095,7 +1097,12 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
     };
   };
 
-  const liveSchemes = (cs?.schemes ?? []).filter((s) => s.status === "active" || s.status === "upcoming");
+  // A recorded status is a snapshot from when the record was researched; the
+  // end date is the fact. Without checking it, a designation that lapsed last
+  // month is still sold as requiring a licence. See `hasLapsed`.
+  const liveSchemes = (cs?.schemes ?? []).filter(
+    (s) => (s.status === "active" || s.status === "upcoming") && !hasLapsed(s),
+  );
   // Selective licensing only bites on non-HMO lets; additional licensing on small HMOs.
   const selective = liveSchemes
     .filter((s) => s.type === "selective")
@@ -1158,6 +1165,30 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
   };
 }
 
+/** Today, as YYYY-MM-DD, so scheme dates compare as plain strings. */
+function today(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
+/**
+ * Has this designation's term ended, whatever its recorded status says?
+ *
+ * Statuses are set by hand when a record is researched and then never move.
+ * Salford's additional scheme ended on 19 July 2026 and Harrow's on 5 August,
+ * and both were still being reported active, so a landlord was told to buy a
+ * licence that no longer exists and then charged £7.99 to be told it again.
+ * With 189 schemes carrying end dates, that recurs silently every time one
+ * lapses. Comparing against the calendar makes the data self-correcting.
+ */
+export function hasLapsed(scheme: Scheme): boolean {
+  return !!scheme.end && scheme.end < today();
+}
+
+/** Has an upcoming designation's start date arrived? */
+export function hasCommenced(scheme: Scheme): boolean {
+  return !!scheme.start && scheme.start <= today();
+}
+
 /** Council-level summary used by the FREE check and council pages. */
 export interface CouncilSummary {
   council: Council;
@@ -1175,13 +1206,16 @@ export function councilSummary(gss: string): CouncilSummary | null {
   if (!council) return null;
   const cs = schemesByGss.get(gss);
   const schemes = cs?.schemes ?? [];
+  const isExpired = (s: Scheme) => s.status === "expired" || hasLapsed(s);
+  const isLive = (s: Scheme) => s.status === "active" && !hasLapsed(s);
   return {
     council,
     hasData: !!cs,
-    activeSelective: schemes.filter((s) => s.type === "selective" && s.status === "active"),
-    activeAdditional: schemes.filter((s) => s.type === "additional" && s.status === "active"),
-    upcoming: schemes.filter((s) => s.status === "upcoming"),
-    expired: schemes.filter((s) => s.status === "expired"),
+    activeSelective: schemes.filter((s) => s.type === "selective" && isLive(s)),
+    activeAdditional: schemes.filter((s) => s.type === "additional" && isLive(s)),
+    // An "upcoming" scheme whose start has passed is running now.
+    upcoming: schemes.filter((s) => s.status === "upcoming" && !hasCommenced(s) && !hasLapsed(s)),
+    expired: schemes.filter(isExpired),
     proposed: schemes.filter((s) => s.status === "proposed" || s.status === "unverified"),
     notes: cs?.notes,
   };
