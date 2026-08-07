@@ -12,7 +12,7 @@
  * Usage: node scripts/fetch-boundaries.mjs [--dry]
  * Output: src/data/scheme-boundaries.json
  */
-import { writeFileSync } from "node:fs";
+import { writeFileSync, readFileSync } from "node:fs";
 
 const DRY = process.argv.includes("--dry");
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) PRSCheck/1.0";
@@ -36,6 +36,42 @@ const SOURCES = [
     format: "kml",
     note: "The KML the council's own 'Do I need a selective licence?' checker loads.",
   },
+  {
+    // The last live scheme we could not resolve at all. The council publishes no
+    // street list and no postcode list; its designated area exists only as a
+    // vector polygon inside Appendix D of a Cabinet report. That polygon was
+    // georeferenced off the OS 1km graticule printed on the same sheet, and
+    // checked by transforming the council's administrative boundary drawn on
+    // that sheet and comparing it with the official ONS boundary for E06000062:
+    // mean error 0.09m, max 0.31m across 797 vertices. Held as a file rather
+    // than a URL because there is nothing live to re-fetch.
+    gss: "E06000062",
+    council: "West Northamptonshire Council",
+    match: { type: "additional", start: "2025-02-24" },
+    url: "scripts/incoming/west-northants-boundary.geojson",
+    format: "local-geojson",
+    note: "Extracted from Appendix D of the Cabinet report of 19 November 2024 and georeferenced against the OS grid printed on the sheet. The sheet is captioned 'Consultation area', so a near-edge answer stays hedged.",
+  },
+  {
+    // Nottingham publishes no street or postcode list for a designation covering
+    // roughly 30,000 rented homes. This layer is named for the designation
+    // outright and is what the council's own property checker draws.
+    gss: "E06000018",
+    council: "Nottingham City Council",
+    match: { type: "selective", start: "2023-12-01" },
+    url: "https://maps164.nottinghamcity.gov.uk/server/rest/services/Core_services/Housing_and_Property/MapServer/29/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+    format: "geojson",
+    note: "Layer 29 'Selective Licensing Designation Boundary (2023-2028)' from the council's own map server, the layer its property checker draws.",
+  },
+  // Oldham and Rotherham are deliberately NOT here, though both publish
+  // geometry. Oldham's only reachable endpoint returns 2 polygons for a scheme
+  // the council describes as five designated areas, and GetCapabilities is
+  // blocked through its proxy so the other three cannot be confirmed; a boundary
+  // missing three of its five areas would tell landlords in them that they are
+  // outside the scheme. Rotherham's requires a three-step session handshake that
+  // would break silently. Both already answer from published street lists plus
+  // their councils' own checkers, which is honest, so neither is worth trading
+  // for a confident wrong answer.
   {
     gss: "E09000030",
     council: "London Borough of Tower Hamlets",
@@ -188,7 +224,12 @@ let totalAfter = 0;
 for (const src of SOURCES) {
   try {
     let polygons;
-    if (src.format === "kml") {
+    if (src.format === "local-geojson") {
+      // Geometry we derived ourselves rather than fetched. There is nothing live
+      // to re-request, so it lives in the repo alongside the record of how it
+      // was derived and validated.
+      polygons = parseGeoJson(JSON.parse(readFileSync(src.url, "utf8")));
+    } else if (src.format === "kml") {
       polygons = parseKml(await get(src.url, false));
     } else if (src.format === "geojson") {
       polygons = parseGeoJson(await get(src.url));
