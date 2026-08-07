@@ -1,7 +1,10 @@
 import type { Scheme } from "@/lib/licensing";
 
 function fmtDate(d: string | null): string {
-  if (!d) return "TBC";
+  // "Not published" rather than "TBC": we are not going to confirm it later,
+  // the council simply has not published a date. Saying so is more useful to a
+  // landlord than an abbreviation that implies we are waiting on something.
+  if (!d) return "not published";
   const parsed = new Date(d + "T00:00:00Z");
   if (isNaN(parsed.getTime())) return d;
   return parsed.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });

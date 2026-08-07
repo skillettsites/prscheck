@@ -39,7 +39,7 @@ const schemes = JSON.parse(readFileSync(SCHEMES_PATH, "utf8"));
 const byGss = new Map(schemes.map((c) => [c.gss, c]));
 const wards = JSON.parse(readFileSync(join(ROOT, "src", "data", "wards.json"), "utf8"));
 
-const files = readdirSync(INCOMING).filter((f) => /^(areas|wards|verify)-.*\.json$/.test(f)).sort();
+const files = readdirSync(INCOMING).filter((f) => /^(areas|wards|verify|register)-.*\.json$/.test(f)).sort();
 if (files.length === 0) {
   console.error("No scripts/incoming/areas-*.json or wards-*.json files found.");
   process.exit(1);

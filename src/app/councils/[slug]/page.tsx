@@ -206,7 +206,7 @@ export default async function CouncilPage({ params }: { params: Promise<{ slug: 
 
       <div className="mt-8">
         <PostcodeCTA
-          heading={`Check a ${council.name} property`}
+          heading={`Check a property in ${council.name}`}
           sub="Enter your postcode for an instant scheme check, then get the property-specific report."
         />
       </div>

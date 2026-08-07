@@ -65,6 +65,62 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Site-wide identity and search action.
+ *
+ * Emitted from the layout so every page carries it, including the ten that had
+ * no structured data at all. It also gives search engines and AI answers a
+ * single description of what this service does and which country it covers,
+ * which matters here because the answer to "do I need a landlord licence" is
+ * entirely jurisdiction-dependent.
+ */
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://prscheck.co.uk/#organization",
+      name: "PRSCheck",
+      url: "https://prscheck.co.uk",
+      description:
+        "Checks whether a UK rental property needs a selective, additional or mandatory HMO licence, using councils' own published designations.",
+      areaServed: { "@type": "Country", name: "United Kingdom" },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://prscheck.co.uk/#website",
+      url: "https://prscheck.co.uk",
+      name: "PRSCheck",
+      publisher: { "@id": "https://prscheck.co.uk/#organization" },
+      inLanguage: "en-GB",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: "https://prscheck.co.uk/check?postcode={search_term_string}",
+        },
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@type": "Service",
+      "@id": "https://prscheck.co.uk/#service",
+      name: "Landlord Licence Check",
+      provider: { "@id": "https://prscheck.co.uk/#organization" },
+      areaServed: { "@type": "Country", name: "United Kingdom" },
+      serviceType: "Property licensing check",
+      description:
+        "Free postcode check against every UK council's licensing designations, plus a property-specific report giving the licensing position for a named address and occupancy.",
+      offers: {
+        "@type": "Offer",
+        price: "7.99",
+        priceCurrency: "GBP",
+        category: "Property licensing report",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -73,6 +129,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-navy-900 font-sans text-navy-100">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+        />
         <Header />
         <main className="flex-1 pt-16">{children}</main>
         <Footer />

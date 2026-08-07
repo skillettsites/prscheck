@@ -36,7 +36,8 @@ interface FreeResult {
 }
 
 function fmtDate(d: string | null): string {
-  if (!d) return "TBC";
+  // See SchemeList: the council has not published a date, we are not awaiting one.
+  if (!d) return "not published";
   const p = new Date(d + "T00:00:00Z");
   if (isNaN(p.getTime())) return d;
   return p.toLocaleDateString("en-GB", { month: "short", year: "numeric", timeZone: "UTC" });
