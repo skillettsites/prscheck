@@ -1,0 +1,2056 @@
+{
+  "gss": "E08000018",
+  "council": "Rotherham Metropolitan Borough Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas"
+      },
+      "sourceUrl": "https://www.rotherham.gov.uk/private-housing/eastwood",
+      "confidence": "official-council-page",
+      "inForce": {
+        "stillLive": true,
+        "start": "2026-02-15",
+        "end": "2031-02-14",
+        "howVerified": "Rotherham's own public notice under section 83 Housing Act 2004 states the six designations were made on 14 November 2025, 'came into effect on 15 February 2026' and 'shall cease to have effect on 14 February 2031, unless revoked earlier under section 84', and the live 'Areas Subject to Selective Licensing' page repeats that they 'commenced on 15 February 2026'; checked 7 August 2026."
+      },
+      "areaNames": [
+        "Town centre / Eastwood / Clifton / Boston Castle",
+        "Masbrough / Kimberworth",
+        "Thurcroft",
+        "Dinnington",
+        "Brinsworth",
+        "Parkgate"
+      ],
+      "includedWards": [],
+      "streets": [
+        {
+          "name": "Albany Street",
+          "numbers": null
+        },
+        {
+          "name": "Albion Road",
+          "numbers": null
+        },
+        {
+          "name": "Aldred Court",
+          "numbers": null
+        },
+        {
+          "name": "Aldred Street",
+          "numbers": null
+        },
+        {
+          "name": "Allan Street",
+          "numbers": null
+        },
+        {
+          "name": "Alma Road",
+          "numbers": null
+        },
+        {
+          "name": "Badsley Court",
+          "numbers": null
+        },
+        {
+          "name": "Badsley Moor Lane",
+          "numbers": null
+        },
+        {
+          "name": "Badsley Street",
+          "numbers": null
+        },
+        {
+          "name": "Badsley Street South",
+          "numbers": null
+        },
+        {
+          "name": "Bernard Street",
+          "numbers": null
+        },
+        {
+          "name": "Bethel Road",
+          "numbers": null
+        },
+        {
+          "name": "Bowen Road",
+          "numbers": null
+        },
+        {
+          "name": "Bramwell Street",
+          "numbers": null
+        },
+        {
+          "name": "Broom Grove",
+          "numbers": null
+        },
+        {
+          "name": "Broom Road",
+          "numbers": null
+        },
+        {
+          "name": "Broom Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Broom Valley Road",
+          "numbers": null
+        },
+        {
+          "name": "Canklow Road",
+          "numbers": null
+        },
+        {
+          "name": "Carlton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Chapel Lane",
+          "numbers": null
+        },
+        {
+          "name": "Chatham Street",
+          "numbers": null
+        },
+        {
+          "name": "Chesterton Road",
+          "numbers": null
+        },
+        {
+          "name": "Clarendon Road",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Bank",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Crescent North",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Crescent South",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Grove",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Lane",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Mount",
+          "numbers": null
+        },
+        {
+          "name": "Clifton ParK View",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Park Rise",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Coke Lane",
+          "numbers": null
+        },
+        {
+          "name": "Coleridge Road",
+          "numbers": null
+        },
+        {
+          "name": "Cottenham Road",
+          "numbers": null
+        },
+        {
+          "name": "Cranworth Close",
+          "numbers": null
+        },
+        {
+          "name": "Cranworth Place",
+          "numbers": null
+        },
+        {
+          "name": "Cranworth Road",
+          "numbers": null
+        },
+        {
+          "name": "Denman Street",
+          "numbers": null
+        },
+        {
+          "name": "Doncaster Road",
+          "numbers": null
+        },
+        {
+          "name": "Eldon Road",
+          "numbers": null
+        },
+        {
+          "name": "Ellesmere Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Erskine Road",
+          "numbers": null
+        },
+        {
+          "name": "Fitzwilliam Road",
+          "numbers": null
+        },
+        {
+          "name": "Frances Street",
+          "numbers": null
+        },
+        {
+          "name": "Garfield Mount",
+          "numbers": null
+        },
+        {
+          "name": "Gerard Road",
+          "numbers": null
+        },
+        {
+          "name": "Gilberthorpe Drive",
+          "numbers": null
+        },
+        {
+          "name": "Gilberthorpe Street",
+          "numbers": null
+        },
+        {
+          "name": "Godstone Road",
+          "numbers": null
+        },
+        {
+          "name": "Gordon Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Granville Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Gray Close",
+          "numbers": null
+        },
+        {
+          "name": "Grosvenor Road",
+          "numbers": null
+        },
+        {
+          "name": "Hall Road",
+          "numbers": null
+        },
+        {
+          "name": "Harcourt Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Hardwicke Road",
+          "numbers": null
+        },
+        {
+          "name": "Harehills Road",
+          "numbers": null
+        },
+        {
+          "name": "Hatherley Road",
+          "numbers": null
+        },
+        {
+          "name": "Hollowgate",
+          "numbers": null
+        },
+        {
+          "name": "Horace Street",
+          "numbers": null
+        },
+        {
+          "name": "Hutchinsons Court",
+          "numbers": null
+        },
+        {
+          "name": "Jennings Close",
+          "numbers": null
+        },
+        {
+          "name": "Johnson Street",
+          "numbers": null
+        },
+        {
+          "name": "Lilian Street",
+          "numbers": null
+        },
+        {
+          "name": "Lilian Street South",
+          "numbers": null
+        },
+        {
+          "name": "Lindley Street",
+          "numbers": null
+        },
+        {
+          "name": "Lister Street",
+          "numbers": null
+        },
+        {
+          "name": "Mabel Street",
+          "numbers": null
+        },
+        {
+          "name": "Maltkin Street",
+          "numbers": null
+        },
+        {
+          "name": "Middle Lane",
+          "numbers": null
+        },
+        {
+          "name": "Middleton Road",
+          "numbers": null
+        },
+        {
+          "name": "Milton Road",
+          "numbers": null
+        },
+        {
+          "name": "Moorgate Road",
+          "numbers": null
+        },
+        {
+          "name": "Nabeel Court",
+          "numbers": null
+        },
+        {
+          "name": "Old Clifton Lane",
+          "numbers": null
+        },
+        {
+          "name": "Owen Close",
+          "numbers": null
+        },
+        {
+          "name": "Park Mount",
+          "numbers": null
+        },
+        {
+          "name": "Parkfield Road",
+          "numbers": null
+        },
+        {
+          "name": "Pinfold Lane",
+          "numbers": null
+        },
+        {
+          "name": "Ramsden Road",
+          "numbers": null
+        },
+        {
+          "name": "Rawson Road",
+          "numbers": null
+        },
+        {
+          "name": "Richard Road",
+          "numbers": null
+        },
+        {
+          "name": "Ridge Road",
+          "numbers": null
+        },
+        {
+          "name": "Russell Street",
+          "numbers": null
+        },
+        {
+          "name": "Selborne Street",
+          "numbers": null
+        },
+        {
+          "name": "Selwyn Street",
+          "numbers": null
+        },
+        {
+          "name": "Shakespeare Road",
+          "numbers": null
+        },
+        {
+          "name": "Sherwood Crescent",
+          "numbers": null
+        },
+        {
+          "name": "South Grove",
+          "numbers": null
+        },
+        {
+          "name": "St Anns Road",
+          "numbers": null
+        },
+        {
+          "name": "St Leonards Lane",
+          "numbers": null
+        },
+        {
+          "name": "St Leonards Place",
+          "numbers": null
+        },
+        {
+          "name": "St Leonards Road",
+          "numbers": null
+        },
+        {
+          "name": "St Stephens Road",
+          "numbers": null
+        },
+        {
+          "name": "Summerfield",
+          "numbers": null
+        },
+        {
+          "name": "Sumner Road",
+          "numbers": null
+        },
+        {
+          "name": "The Maltings",
+          "numbers": null
+        },
+        {
+          "name": "Tooker Road",
+          "numbers": null
+        },
+        {
+          "name": "Treherne Road",
+          "numbers": null
+        },
+        {
+          "name": "Victoria Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Warwick Street",
+          "numbers": null
+        },
+        {
+          "name": "Wellgate",
+          "numbers": null
+        },
+        {
+          "name": "Wellgate Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Westgate",
+          "numbers": null
+        },
+        {
+          "name": "Whybourne Grove",
+          "numbers": null
+        },
+        {
+          "name": "Whybourne Terrace",
+          "numbers": null
+        },
+        {
+          "name": "William Street",
+          "numbers": null
+        },
+        {
+          "name": "York Road",
+          "numbers": null
+        },
+        {
+          "name": "Albert Street",
+          "numbers": null
+        },
+        {
+          "name": "Andrews Place",
+          "numbers": null
+        },
+        {
+          "name": "Aubrey Senior Way",
+          "numbers": null
+        },
+        {
+          "name": "Avon Mount",
+          "numbers": null
+        },
+        {
+          "name": "Avondale Road",
+          "numbers": null
+        },
+        {
+          "name": "Belmont Street",
+          "numbers": null
+        },
+        {
+          "name": "Bennett Street",
+          "numbers": null
+        },
+        {
+          "name": "Brown Street",
+          "numbers": null
+        },
+        {
+          "name": "Caine Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Cavendish Road",
+          "numbers": null
+        },
+        {
+          "name": "Chapel Walk",
+          "numbers": null
+        },
+        {
+          "name": "Charnwood Grove",
+          "numbers": null
+        },
+        {
+          "name": "Chiberworde Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Church Street",
+          "numbers": null
+        },
+        {
+          "name": "Clara Place",
+          "numbers": null
+        },
+        {
+          "name": "Claremont Street",
+          "numbers": null
+        },
+        {
+          "name": "Clement Mews",
+          "numbers": null
+        },
+        {
+          "name": "Clement Street",
+          "numbers": null
+        },
+        {
+          "name": "Clough Bank",
+          "numbers": null
+        },
+        {
+          "name": "Clough Road",
+          "numbers": null
+        },
+        {
+          "name": "Clough Street",
+          "numbers": null
+        },
+        {
+          "name": "College Road",
+          "numbers": null
+        },
+        {
+          "name": "Copley Place",
+          "numbers": null
+        },
+        {
+          "name": "Cross Street",
+          "numbers": null
+        },
+        {
+          "name": "Deepdale Road",
+          "numbers": null
+        },
+        {
+          "name": "Devonshire Street",
+          "numbers": null
+        },
+        {
+          "name": "Dovercourt Road",
+          "numbers": null
+        },
+        {
+          "name": "Dycott Road",
+          "numbers": null
+        },
+        {
+          "name": "Edale Road",
+          "numbers": null
+        },
+        {
+          "name": "Elizabeth Way",
+          "numbers": null
+        },
+        {
+          "name": "Ewers Road",
+          "numbers": null
+        },
+        {
+          "name": "Falding Street",
+          "numbers": null
+        },
+        {
+          "name": "Ferham Close",
+          "numbers": null
+        },
+        {
+          "name": "Ferham Park Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Ferham Road",
+          "numbers": null
+        },
+        {
+          "name": "Fox Street",
+          "numbers": null
+        },
+        {
+          "name": "Grattan Street",
+          "numbers": null
+        },
+        {
+          "name": "Greaves Road",
+          "numbers": null
+        },
+        {
+          "name": "Hartington Close",
+          "numbers": null
+        },
+        {
+          "name": "Hartington Road",
+          "numbers": null
+        },
+        {
+          "name": "Henley Grove Road",
+          "numbers": null
+        },
+        {
+          "name": "Henley Rise",
+          "numbers": null
+        },
+        {
+          "name": "Henley Way",
+          "numbers": null
+        },
+        {
+          "name": "Herbert Street",
+          "numbers": null
+        },
+        {
+          "name": "Holmes Lane",
+          "numbers": null
+        },
+        {
+          "name": "James Street",
+          "numbers": null
+        },
+        {
+          "name": "Jordan Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Josephine Road",
+          "numbers": null
+        },
+        {
+          "name": "Kimberworth Road",
+          "numbers": null
+        },
+        {
+          "name": "Manor Road",
+          "numbers": null
+        },
+        {
+          "name": "Masbrough Street",
+          "numbers": null
+        },
+        {
+          "name": "Meadow Bank Road",
+          "numbers": null
+        },
+        {
+          "name": "Meadow Street",
+          "numbers": null
+        },
+        {
+          "name": "Meadowbank Close",
+          "numbers": null
+        },
+        {
+          "name": "Meadowhall Road",
+          "numbers": null
+        },
+        {
+          "name": "Midland Court",
+          "numbers": null
+        },
+        {
+          "name": "Midland Road",
+          "numbers": null
+        },
+        {
+          "name": "Mount Pleasant Road",
+          "numbers": null
+        },
+        {
+          "name": "Mount Street",
+          "numbers": null
+        },
+        {
+          "name": "North Pitt Street",
+          "numbers": null
+        },
+        {
+          "name": "Oakdale Place",
+          "numbers": null
+        },
+        {
+          "name": "Oakdale Road",
+          "numbers": null
+        },
+        {
+          "name": "Oates Close",
+          "numbers": null
+        },
+        {
+          "name": "Oates Street",
+          "numbers": null
+        },
+        {
+          "name": "Orchard Place",
+          "numbers": null
+        },
+        {
+          "name": "Ordnance Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Park Street",
+          "numbers": null
+        },
+        {
+          "name": "Pembrooke Street",
+          "numbers": null
+        },
+        {
+          "name": "Pitt Street",
+          "numbers": null
+        },
+        {
+          "name": "Pollard Street",
+          "numbers": null
+        },
+        {
+          "name": "Princes Street",
+          "numbers": null
+        },
+        {
+          "name": "Psalters Lane",
+          "numbers": null
+        },
+        {
+          "name": "Regent Street",
+          "numbers": null
+        },
+        {
+          "name": "Richmond Road",
+          "numbers": null
+        },
+        {
+          "name": "Robert Street",
+          "numbers": null
+        },
+        {
+          "name": "Rodger Street",
+          "numbers": null
+        },
+        {
+          "name": "Rosebery Street",
+          "numbers": null
+        },
+        {
+          "name": "Sandal Court",
+          "numbers": null
+        },
+        {
+          "name": "Sarah Street",
+          "numbers": null
+        },
+        {
+          "name": "Shrewsbury Terrace",
+          "numbers": null
+        },
+        {
+          "name": "South Road",
+          "numbers": null
+        },
+        {
+          "name": "South Street",
+          "numbers": null
+        },
+        {
+          "name": "St Bedes Road",
+          "numbers": null
+        },
+        {
+          "name": "St Johns Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Station Road",
+          "numbers": null
+        },
+        {
+          "name": "Thornton Street",
+          "numbers": null
+        },
+        {
+          "name": "Thornton Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Tummon Street",
+          "numbers": null
+        },
+        {
+          "name": "Union Street",
+          "numbers": null
+        },
+        {
+          "name": "Upper Clara Street",
+          "numbers": null
+        },
+        {
+          "name": "Victoria Street",
+          "numbers": null
+        },
+        {
+          "name": "Vine Close",
+          "numbers": null
+        },
+        {
+          "name": "Walter Street",
+          "numbers": null
+        },
+        {
+          "name": "Wortley Road",
+          "numbers": null
+        },
+        {
+          "name": "Abbotsford Drive",
+          "numbers": null
+        },
+        {
+          "name": "Arbour Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Arbour Drive",
+          "numbers": null
+        },
+        {
+          "name": "Aymer Drive",
+          "numbers": null
+        },
+        {
+          "name": "Brampton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Brampton Road",
+          "numbers": null
+        },
+        {
+          "name": "Cedric Court",
+          "numbers": null
+        },
+        {
+          "name": "Cedric Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Central Drive",
+          "numbers": null
+        },
+        {
+          "name": "Chapel Close",
+          "numbers": null
+        },
+        {
+          "name": "Charles Street",
+          "numbers": null
+        },
+        {
+          "name": "Elgitha Drive",
+          "numbers": null
+        },
+        {
+          "name": "Green Arbour Road",
+          "numbers": null
+        },
+        {
+          "name": "Ivanhoe Road",
+          "numbers": null
+        },
+        {
+          "name": "John Street",
+          "numbers": null
+        },
+        {
+          "name": "Katherine Court",
+          "numbers": null
+        },
+        {
+          "name": "Katherine Road",
+          "numbers": null
+        },
+        {
+          "name": "Katherine Street",
+          "numbers": null
+        },
+        {
+          "name": "Kingsforth Road",
+          "numbers": null
+        },
+        {
+          "name": "Laughton Road",
+          "numbers": null
+        },
+        {
+          "name": "Limetree Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Locksley Drive",
+          "numbers": null
+        },
+        {
+          "name": "Peter Street",
+          "numbers": null
+        },
+        {
+          "name": "Recreation Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Rotherwood Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Rowena Drive",
+          "numbers": null
+        },
+        {
+          "name": "Sandy lane",
+          "numbers": null
+        },
+        {
+          "name": "Sawn Moor Avenue",
+          "numbers": null
+        },
+        {
+          "name": "School Road",
+          "numbers": null
+        },
+        {
+          "name": "Scott Close",
+          "numbers": null
+        },
+        {
+          "name": "St Edmunds Avenue",
+          "numbers": null
+        },
+        {
+          "name": "St Withold Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Steadfolds Lane",
+          "numbers": null
+        },
+        {
+          "name": "Templar Close",
+          "numbers": null
+        },
+        {
+          "name": "Ulrica Drive",
+          "numbers": null
+        },
+        {
+          "name": "Waverley Avenue",
+          "numbers": null
+        },
+        {
+          "name": "West Street",
+          "numbers": null
+        },
+        {
+          "name": "Woodhouse Green",
+          "numbers": null
+        },
+        {
+          "name": "Addison Square",
+          "numbers": null
+        },
+        {
+          "name": "Anne Street",
+          "numbers": null
+        },
+        {
+          "name": "Barleycroft Lane",
+          "numbers": null
+        },
+        {
+          "name": "Breck Lane",
+          "numbers": null
+        },
+        {
+          "name": "Burns Road",
+          "numbers": null
+        },
+        {
+          "name": "Byron Close",
+          "numbers": null
+        },
+        {
+          "name": "Byron Road",
+          "numbers": null
+        },
+        {
+          "name": "Carlisle Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Central Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Central Mews",
+          "numbers": null
+        },
+        {
+          "name": "Chestnut Grove",
+          "numbers": null
+        },
+        {
+          "name": "Clarence Square",
+          "numbers": null
+        },
+        {
+          "name": "Clarence Street",
+          "numbers": null
+        },
+        {
+          "name": "Constable Lane",
+          "numbers": null
+        },
+        {
+          "name": "Coronation Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Doe Quarry Lane",
+          "numbers": null
+        },
+        {
+          "name": "Doe Quarry Place",
+          "numbers": null
+        },
+        {
+          "name": "Doe Quarry Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Duke Street",
+          "numbers": null
+        },
+        {
+          "name": "East Street",
+          "numbers": null
+        },
+        {
+          "name": "Eastern Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Eastern Close",
+          "numbers": null
+        },
+        {
+          "name": "Edward Street",
+          "numbers": null
+        },
+        {
+          "name": "Falcon Court",
+          "numbers": null
+        },
+        {
+          "name": "Hall Farm Croft",
+          "numbers": null
+        },
+        {
+          "name": "High Nook Gardens",
+          "numbers": null
+        },
+        {
+          "name": "High Nook Road",
+          "numbers": null
+        },
+        {
+          "name": "Hope Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Howard Street",
+          "numbers": null
+        },
+        {
+          "name": "Hunters Close",
+          "numbers": null
+        },
+        {
+          "name": "Hunters Way",
+          "numbers": null
+        },
+        {
+          "name": "Keats Drive",
+          "numbers": null
+        },
+        {
+          "name": "Leicester Road",
+          "numbers": null
+        },
+        {
+          "name": "Leopold Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Leopold Street",
+          "numbers": null
+        },
+        {
+          "name": "Leys Lane",
+          "numbers": null
+        },
+        {
+          "name": "Lidgett Lane",
+          "numbers": null
+        },
+        {
+          "name": "Littlefield Road",
+          "numbers": null
+        },
+        {
+          "name": "Lodge Lane",
+          "numbers": null
+        },
+        {
+          "name": "Lordens Hill",
+          "numbers": null
+        },
+        {
+          "name": "Lordens Way",
+          "numbers": null
+        },
+        {
+          "name": "Manor Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Masefield Close",
+          "numbers": null
+        },
+        {
+          "name": "New Street",
+          "numbers": null
+        },
+        {
+          "name": "Oldcotes Road",
+          "numbers": null
+        },
+        {
+          "name": "Outgang Lane",
+          "numbers": null
+        },
+        {
+          "name": "Paterson Road",
+          "numbers": null
+        },
+        {
+          "name": "Pencil Lane",
+          "numbers": null
+        },
+        {
+          "name": "Plantation Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Plantation Court",
+          "numbers": null
+        },
+        {
+          "name": "Plantation Walk",
+          "numbers": null
+        },
+        {
+          "name": "Queen Street",
+          "numbers": null
+        },
+        {
+          "name": "Scarsdale Street",
+          "numbers": null
+        },
+        {
+          "name": "School Street",
+          "numbers": null
+        },
+        {
+          "name": "Shakespeare Drive",
+          "numbers": null
+        },
+        {
+          "name": "Shelley Drive",
+          "numbers": null
+        },
+        {
+          "name": "Silverdales",
+          "numbers": null
+        },
+        {
+          "name": "St Josephs Court",
+          "numbers": null
+        },
+        {
+          "name": "Swinston Hill Road",
+          "numbers": null
+        },
+        {
+          "name": "Tennyson Close",
+          "numbers": null
+        },
+        {
+          "name": "The Close",
+          "numbers": null
+        },
+        {
+          "name": "The Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Undergate Road",
+          "numbers": null
+        },
+        {
+          "name": "Western Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Western Close",
+          "numbers": null
+        },
+        {
+          "name": "Westgarth Close",
+          "numbers": null
+        },
+        {
+          "name": "Wordsworth Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Alric Drive",
+          "numbers": null
+        },
+        {
+          "name": "Anson Grove",
+          "numbers": null
+        },
+        {
+          "name": "Atlas Street",
+          "numbers": null
+        },
+        {
+          "name": "Bawtry Road",
+          "numbers": null
+        },
+        {
+          "name": "Brinsford Road",
+          "numbers": null
+        },
+        {
+          "name": "Brinsworth Lane",
+          "numbers": null
+        },
+        {
+          "name": "Duncan Street",
+          "numbers": null
+        },
+        {
+          "name": "Ellis Street",
+          "numbers": null
+        },
+        {
+          "name": "Fairburn Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Fortway Road",
+          "numbers": null
+        },
+        {
+          "name": "Godric Drive",
+          "numbers": null
+        },
+        {
+          "name": "Gotham Road",
+          "numbers": null
+        },
+        {
+          "name": "Gresham Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Highlow View",
+          "numbers": null
+        },
+        {
+          "name": "Letard Drive",
+          "numbers": null
+        },
+        {
+          "name": "Litchfield Way",
+          "numbers": null
+        },
+        {
+          "name": "Lodge Way",
+          "numbers": null
+        },
+        {
+          "name": "Lyncroft Close",
+          "numbers": null
+        },
+        {
+          "name": "Normanville Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Pike Road",
+          "numbers": null
+        },
+        {
+          "name": "Roman Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Rothbury Way",
+          "numbers": null
+        },
+        {
+          "name": "Thorndale Rise",
+          "numbers": null
+        },
+        {
+          "name": "Albert Road",
+          "numbers": null
+        },
+        {
+          "name": "Allt Street",
+          "numbers": null
+        },
+        {
+          "name": "Bear Tree Street",
+          "numbers": null
+        },
+        {
+          "name": "Broad Street",
+          "numbers": null
+        },
+        {
+          "name": "Coleman Street",
+          "numbers": null
+        },
+        {
+          "name": "Dudley Street",
+          "numbers": null
+        },
+        {
+          "name": "France Street",
+          "numbers": null
+        },
+        {
+          "name": "Goosebutt Court",
+          "numbers": null
+        },
+        {
+          "name": "Goosebutt Street",
+          "numbers": null
+        },
+        {
+          "name": "Greasbrough Road",
+          "numbers": null
+        },
+        {
+          "name": "High Street",
+          "numbers": null
+        },
+        {
+          "name": "Lloyd Street",
+          "numbers": null
+        },
+        {
+          "name": "Netherfield Lane",
+          "numbers": null
+        },
+        {
+          "name": "Prospect Court",
+          "numbers": null
+        },
+        {
+          "name": "Rawmarsh Hill",
+          "numbers": null
+        },
+        {
+          "name": "Spalton Road",
+          "numbers": null
+        },
+        {
+          "name": "Vesey Street",
+          "numbers": null
+        }
+      ],
+      "postcodes": [
+        "S60 1BD",
+        "S60 2AD",
+        "S60 2AE",
+        "S60 2AF",
+        "S60 2BF",
+        "S60 2BW",
+        "S60 2DH",
+        "S60 2EN",
+        "S60 2ET",
+        "S60 2HY",
+        "S60 2HZ",
+        "S60 2JA",
+        "S60 2JB",
+        "S60 2JD",
+        "S60 2JF",
+        "S60 2JS",
+        "S60 2JT",
+        "S60 2LA",
+        "S60 2LD",
+        "S60 2LH",
+        "S60 2LQ",
+        "S60 2NA",
+        "S60 2NB",
+        "S60 2ND",
+        "S60 2NE",
+        "S60 2NF",
+        "S60 2NG",
+        "S60 2NH",
+        "S60 2NJ",
+        "S60 2NN",
+        "S60 2NP",
+        "S60 2NR",
+        "S60 2NS",
+        "S60 2NU",
+        "S60 2NW",
+        "S60 2NX",
+        "S60 2PA",
+        "S60 2PB",
+        "S60 2PD",
+        "S60 2PE",
+        "S60 2PL",
+        "S60 2PP",
+        "S60 2PR",
+        "S60 2PS",
+        "S60 2PT",
+        "S60 2PU",
+        "S60 2PW",
+        "S60 2PX",
+        "S60 2PY",
+        "S60 2PZ",
+        "S60 2QA",
+        "S60 2QB",
+        "S60 2QD",
+        "S60 2QE",
+        "S60 2QF",
+        "S60 2QG",
+        "S60 2QH",
+        "S60 2QJ",
+        "S60 2QL",
+        "S60 2QN",
+        "S60 2QP",
+        "S60 2QQ",
+        "S60 2QR",
+        "S60 2QS",
+        "S60 2QW",
+        "S60 2SN",
+        "S60 2TA",
+        "S60 2TD",
+        "S60 2TE",
+        "S60 2TF",
+        "S60 2TG",
+        "S65 1BL",
+        "S65 1DP",
+        "S65 1DR",
+        "S65 1LB",
+        "S65 1LD",
+        "S65 1LE",
+        "S65 1LF",
+        "S65 1LG",
+        "S65 1LH",
+        "S65 1LJ",
+        "S65 1LL",
+        "S65 1LN",
+        "S65 1LQ",
+        "S65 1LY",
+        "S65 1NB",
+        "S65 1NJ",
+        "S65 1NL",
+        "S65 1NN",
+        "S65 1NP",
+        "S65 1NS",
+        "S65 1NT",
+        "S65 1NU",
+        "S65 1NW",
+        "S65 1NX",
+        "S65 1PA",
+        "S65 1PB",
+        "S65 1PD",
+        "S65 1PE",
+        "S65 1PF",
+        "S65 1PG",
+        "S65 1PH",
+        "S65 1PJ",
+        "S65 1PL",
+        "S65 1PN",
+        "S65 1PQ",
+        "S65 1PR",
+        "S65 1PS",
+        "S65 1PT",
+        "S65 1PW",
+        "S65 1PX",
+        "S65 1QA",
+        "S65 1QB",
+        "S65 1QD",
+        "S65 1QE",
+        "S65 1QJ",
+        "S65 1QL",
+        "S65 1QN",
+        "S65 1QP",
+        "S65 1QR",
+        "S65 1QS",
+        "S65 1QT",
+        "S65 1QU",
+        "S65 1QW",
+        "S65 1QX",
+        "S65 1QY",
+        "S65 1RB",
+        "S65 1RD",
+        "S65 1RE",
+        "S65 1RF",
+        "S65 1RG",
+        "S65 1RJ",
+        "S65 1RL",
+        "S65 1RN",
+        "S65 1RP",
+        "S65 1RQ",
+        "S65 1RR",
+        "S65 1RS",
+        "S65 1RT",
+        "S65 1RU",
+        "S65 1RW",
+        "S65 1RX",
+        "S65 1RY",
+        "S65 1RZ",
+        "S65 1SA",
+        "S65 1SB",
+        "S65 1SD",
+        "S65 1SP",
+        "S65 1SU",
+        "S65 2AA",
+        "S65 2AD",
+        "S65 2AE",
+        "S65 2AF",
+        "S65 2AG",
+        "S65 2AH",
+        "S65 2AJ",
+        "S65 2AL",
+        "S65 2AN",
+        "S65 2AP",
+        "S65 2AQ",
+        "S65 2AR",
+        "S65 2AS",
+        "S65 2AT",
+        "S65 2AU",
+        "S65 2AW",
+        "S65 2AX",
+        "S65 2AY",
+        "S65 2AZ",
+        "S65 2BA",
+        "S65 2BD",
+        "S65 2BE",
+        "S65 2BH",
+        "S65 2BJ",
+        "S65 2BL",
+        "S65 2BP",
+        "S65 2BQ",
+        "S65 2BW",
+        "S65 2BY",
+        "S65 2DT",
+        "S65 2EA",
+        "S65 2PG",
+        "S65 2PJ",
+        "S65 2PN",
+        "S65 2PQ",
+        "S65 2PR",
+        "S65 2PS",
+        "S65 2PT",
+        "S65 2PU",
+        "S65 2PW",
+        "S65 2PX",
+        "S65 2PY",
+        "S65 2PZ",
+        "S65 2QA",
+        "S65 2QB",
+        "S65 2QX",
+        "S65 2TE",
+        "S65 2TH",
+        "S65 2TL",
+        "S65 2TN",
+        "S65 2TQ",
+        "S65 2TR",
+        "S65 2TW",
+        "S60 1AL",
+        "S60 1ED",
+        "S60 1EG",
+        "S60 1EP",
+        "S60 1ER",
+        "S60 1EZ",
+        "S60 1HA",
+        "S60 1HF",
+        "S60 1HG",
+        "S60 1HH",
+        "S60 1HN",
+        "S60 1HQ",
+        "S60 1HT",
+        "S60 1HW",
+        "S60 1HX",
+        "S60 1HZ",
+        "S60 1JA",
+        "S60 1JB",
+        "S60 1JD",
+        "S60 1JE",
+        "S60 1JF",
+        "S60 1JG",
+        "S60 1JN",
+        "S60 1JP",
+        "S60 1JU",
+        "S60 1JX",
+        "S60 1JY",
+        "S60 1LA",
+        "S60 1LL",
+        "S60 1TD",
+        "S60 1TH",
+        "S60 1TZ",
+        "S61 1AA",
+        "S61 1AB",
+        "S61 1AE",
+        "S61 1AG",
+        "S61 1AH",
+        "S61 1AJ",
+        "S61 1AN",
+        "S61 1AP",
+        "S61 1AW",
+        "S61 1AY",
+        "S61 1AZ",
+        "S61 1BD",
+        "S61 1BE",
+        "S61 1BG",
+        "S61 1BH",
+        "S61 1BJ",
+        "S61 1BL",
+        "S61 1BN",
+        "S61 1BP",
+        "S61 1BQ",
+        "S61 1BS",
+        "S61 1BW",
+        "S61 1DA",
+        "S61 1DB",
+        "S61 1DE",
+        "S61 1DL",
+        "S61 1DP",
+        "S61 1DR",
+        "S61 1DS",
+        "S61 1DT",
+        "S61 1DU",
+        "S61 1DX",
+        "S61 1DY",
+        "S61 1DZ",
+        "S61 1EA",
+        "S61 1EB",
+        "S61 1EG",
+        "S61 1EJ",
+        "S61 1EL",
+        "S61 1EN",
+        "S61 1ER",
+        "S61 1ES",
+        "S61 1ET",
+        "S61 1EU",
+        "S61 1EW",
+        "S61 1EX",
+        "S61 1EY",
+        "S61 1EZ",
+        "S61 1HA",
+        "S61 1HB",
+        "S61 1HE",
+        "S61 1HF",
+        "S61 1HG",
+        "S61 1HH",
+        "S61 1HJ",
+        "S61 1HL",
+        "S61 1HP",
+        "S61 1HQ",
+        "S61 1HR",
+        "S61 1HS",
+        "S61 1HT",
+        "S61 1HU",
+        "S61 1HW",
+        "S61 1HX",
+        "S61 1HY",
+        "S61 1JD",
+        "S61 1LT",
+        "S61 1LZ",
+        "S61 1RD",
+        "S61 1RE",
+        "S61 1RF",
+        "S61 1RG",
+        "S61 1RH",
+        "S61 1RJ",
+        "S61 1RL",
+        "S61 1RS",
+        "S61 1RU",
+        "S61 1RY",
+        "S61 1RZ",
+        "S61 1SA",
+        "S61 1SB",
+        "S61 1SD",
+        "S61 1SF",
+        "S61 1SG",
+        "S61 1SJ",
+        "S61 1SQ",
+        "S61 1SZ",
+        "S61 1TD",
+        "S61 1TE",
+        "S61 1TF",
+        "S61 1TG",
+        "S61 1TJ",
+        "S61 1TL",
+        "S61 1TN",
+        "S61 1TP",
+        "S61 1TR",
+        "S61 2AF",
+        "S61 2JB",
+        "S61 2JD",
+        "S61 2JP",
+        "S61 2JR",
+        "S61 2JS",
+        "S61 2JT",
+        "S61 2JU",
+        "S61 2JW",
+        "S61 2JX",
+        "S61 2JY",
+        "S61 2JZ",
+        "S61 2LA",
+        "S61 2LE",
+        "S61 2LF",
+        "S61 2LG",
+        "S61 2LQ",
+        "S61 2LS",
+        "S61 2LT",
+        "S61 2LU",
+        "S61 2LX",
+        "S61 2LY",
+        "S61 2LZ",
+        "S61 2NA",
+        "S61 2ND",
+        "S61 2NF",
+        "S61 2NG",
+        "S61 2NH",
+        "S61 2NJ",
+        "S61 2NL",
+        "S61 2NN",
+        "S61 2NP",
+        "S61 2NQ",
+        "S61 2NR",
+        "S61 2NS",
+        "S61 2NT",
+        "S61 2NU",
+        "S61 2NW",
+        "S61 2NX",
+        "S61 2PA",
+        "S61 2PB",
+        "S61 2PD",
+        "S66 9AH",
+        "S66 9AJ",
+        "S66 9AL",
+        "S66 9AN",
+        "S66 9AP",
+        "S66 9AS",
+        "S66 9BZ",
+        "S66 9DA",
+        "S66 9DB",
+        "S66 9DD",
+        "S66 9DE",
+        "S66 9DF",
+        "S66 9DG",
+        "S66 9DH",
+        "S66 9DL",
+        "S66 9DN",
+        "S66 9DQ",
+        "S66 9DT",
+        "S66 9DU",
+        "S66 9DW",
+        "S66 9DY",
+        "S66 9EA",
+        "S66 9EL",
+        "S66 9EN",
+        "S66 9HA",
+        "S66 9HB",
+        "S66 9HD",
+        "S66 9HE",
+        "S66 9HF",
+        "S66 9HG",
+        "S66 9HH",
+        "S66 9HJ",
+        "S66 9HL",
+        "S66 9HN",
+        "S66 9HP",
+        "S66 9HQ",
+        "S66 9HR",
+        "S66 9HS",
+        "S66 9HT",
+        "S66 9HU",
+        "S66 9HW",
+        "S66 9LA",
+        "S66 9LB",
+        "S66 9LD",
+        "S66 9LE",
+        "S66 9LF",
+        "S66 9LG",
+        "S66 9LH",
+        "S66 9LJ",
+        "S66 9LL",
+        "S66 9LN",
+        "S66 9LP",
+        "S66 9LQ",
+        "S66 9LW",
+        "S66 9LX",
+        "S66 9NF",
+        "S66 9NG",
+        "S66 9NH",
+        "S66 9NJ",
+        "S66 9NL",
+        "S66 9NN",
+        "S66 9NP",
+        "S66 9NQ",
+        "S66 9NR",
+        "S66 9NS",
+        "S66 9NT",
+        "S66 9NU",
+        "S66 9NW",
+        "S66 9NX",
+        "S66 9NY",
+        "S66 9PA",
+        "S66 9PB",
+        "S66 9PD",
+        "S66 9PE",
+        "S66 9PF",
+        "S66 9PG",
+        "S66 9PH",
+        "S66 9PJ",
+        "S66 9PP",
+        "S66 9PQ",
+        "S66 9PR",
+        "S66 9PS",
+        "S66 9PT",
+        "S66 9PW",
+        "S66 9PX",
+        "S66 9QL",
+        "S66 9QP",
+        "S66 9QW",
+        "S25 2AB",
+        "S25 2AF",
+        "S25 2AG",
+        "S25 2AJ",
+        "S25 2AL",
+        "S25 2AS",
+        "S25 2AT",
+        "S25 2AU",
+        "S25 2AX",
+        "S25 2EX",
+        "S25 2EZ",
+        "S25 2HA",
+        "S25 2JT",
+        "S25 2JU",
+        "S25 2LA",
+        "S25 2LB",
+        "S25 2LE",
+        "S25 2LH",
+        "S25 2LJ",
+        "S25 2LL",
+        "S25 2LN",
+        "S25 2LP",
+        "S25 2LR",
+        "S25 2LS",
+        "S25 2LU",
+        "S25 2LW",
+        "S25 2NA",
+        "S25 2NG",
+        "S25 2NH",
+        "S25 2NJ",
+        "S25 2NL",
+        "S25 2NN",
+        "S25 2NP",
+        "S25 2NQ",
+        "S25 2NR",
+        "S25 2NS",
+        "S25 2NT",
+        "S25 2NU",
+        "S25 2NW",
+        "S25 2PA",
+        "S25 2PB",
+        "S25 2PD",
+        "S25 2PE",
+        "S25 2PF",
+        "S25 2PG",
+        "S25 2PH",
+        "S25 2PJ",
+        "S25 2PL",
+        "S25 2PN",
+        "S25 2PP",
+        "S25 2PQ",
+        "S25 2PR",
+        "S25 2PS",
+        "S25 2PT",
+        "S25 2PU",
+        "S25 2PW",
+        "S25 2PX",
+        "S25 2PY",
+        "S25 2PZ",
+        "S25 2QA",
+        "S25 2QB",
+        "S25 2QD",
+        "S25 2QE",
+        "S25 2QF",
+        "S25 2QG",
+        "S25 2QJ",
+        "S25 2QL",
+        "S25 2QN",
+        "S25 2QR",
+        "S25 2QX",
+        "S25 2RA",
+        "S25 2RB",
+        "S25 2RD",
+        "S25 2RE",
+        "S25 2RF",
+        "S25 2RN",
+        "S25 2RP",
+        "S25 2RQ",
+        "S25 2RS",
+        "S25 2RT",
+        "S25 2RU",
+        "S25 2RX",
+        "S25 2SF",
+        "S25 2SL",
+        "S25 2SN",
+        "S25 2SP",
+        "S25 2SQ",
+        "S25 2SR",
+        "S25 2ST",
+        "S25 2SU",
+        "S25 2TH",
+        "S25 2TJ",
+        "S25 2TL",
+        "S25 2TN",
+        "S25 2TZ",
+        "S25 2UA",
+        "S25 2UB",
+        "S25 3QY",
+        "S60 5AH",
+        "S60 5AJ",
+        "S60 5AL",
+        "S60 5AN",
+        "S60 5AQ",
+        "S60 5DD",
+        "S60 5DE",
+        "S60 5DH",
+        "S60 5DJ",
+        "S60 5DL",
+        "S60 5DN",
+        "S60 5DR",
+        "S60 5DS",
+        "S60 5DT",
+        "S60 5DU",
+        "S60 5DW",
+        "S60 5DX",
+        "S60 5EZ",
+        "S60 5HA",
+        "S60 5HB",
+        "S60 5HD",
+        "S60 5JA",
+        "S60 5JB",
+        "S60 5JD",
+        "S60 5NA",
+        "S60 5PD",
+        "S60 5PF",
+        "S60 5PG",
+        "S60 5PH",
+        "S62 6AF",
+        "S62 6AG",
+        "S62 6AL",
+        "S62 6AN",
+        "S62 6AQ",
+        "S62 6AS",
+        "S62 6AT",
+        "S62 6AU",
+        "S62 6AW",
+        "S62 6AX",
+        "S62 6BL",
+        "S62 6DL",
+        "S62 6DN",
+        "S62 6DP",
+        "S62 6DQ",
+        "S62 6DU",
+        "S62 6DW",
+        "S62 6DX",
+        "S62 6DZ",
+        "S62 6ED",
+        "S62 6EL",
+        "S62 6EN",
+        "S62 6EQ",
+        "S62 6ES",
+        "S62 6ET",
+        "S62 6EU",
+        "S62 6EX",
+        "S62 6FN",
+        "S62 6HN",
+        "S62 6JG",
+        "S62 6LG",
+        "S62 6LP"
+      ],
+      "checkerUrl": "https://maps.rotherham.gov.uk/webmapping/en-gb/PublicMap/Selective%20License",
+      "boundaryDescription": "No worded boundary is published. The council's public notice states only that 'The areas are detailed on plans accompanying the Designations'; the signed designation PDF for this area is a scanned plan. Use the street/postcode list plus the council's searchable map at the checkerUrl.",
+      "evidence": "Union of the council's six separate s.80 designations, all made 14 Nov 2025 and in force 15 Feb 2026 to 14 Feb 2031. The council states verbatim that not all properties within a listed street or postcode are subject to licensing, because of where the boundary falls, so these lists are indicative. Street and postcode list transcribed verbatim from the council's own per-area page (heading 'Eastwood / Clifton / Boston Castle / Town Centre', sub-heading 'Proposed Roads:'), linked from the council's 'Areas Subject to Selective Licensing' page for the in-force 2026 to 2031 scheme at https://www.rotherham.gov.uk/housing/selective-licensing-2026-2031/3. 208 street/postcode rows were published, giving 111 distinct street names and 202 distinct postcodes. Two independent HTML extractions (paragraph-element parse and full-text parse) produced byte-identical row sets, so no column misalignment. The council warns verbatim: 'Please be advised that not all properties within a street or postcode may be subject to Selective Licensing due to where the boundary falls, so please check individual addresses using the maps available above.' The signed designation PDF for this area (https://www.rotherham.gov.uk/downloads/file/4762/town-centre-eastwood-clifton-boston-castle-designation) is a scanned image with no extractable text and carries only a plan, so no house-number schedule exists to transcribe; numbers are therefore null for every street and a street match must be treated as 'likely, confirm on the council map' rather than certain.",
+      "listIsIndicative": true
+    }
+  ]
+}

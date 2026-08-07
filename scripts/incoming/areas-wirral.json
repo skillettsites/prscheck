@@ -1,0 +1,1953 @@
+{
+  "gss": "E08000015",
+  "council": "Wirral Metropolitan Borough Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas",
+        "describedAs": "Four designated neighbourhood areas within Birkenhead and Wallasey (Wirral 'Scheme 4' plus 'Scheme 4a', 2024 to 2029)"
+      },
+      "sourceUrl": "https://www.wirral.gov.uk/files/maps-and-address-lists-2024-29.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2024-04-01",
+        "end": "2029-03-31",
+        "howVerified": "The council's selective licensing page states 'Wirral currently has two selective licensing schemes: the 2024 to 2029 scheme and the 2025 to 2030 scheme', and the council's Appendix 2 Selective Licensing Area Definitions records 'Scheme 4 - From 1st April 2024 to end of March 2029', with Scheme 4a running from 1st July 2024 to the same end date."
+      },
+      "supersededBy": null,
+      "streets": [
+        {
+          "name": "Arkle Road",
+          "numbers": "45-71 ODDS"
+        },
+        {
+          "name": "Arkle Road",
+          "numbers": "42-60 EVENS"
+        },
+        {
+          "name": "Boundary Road",
+          "numbers": "42-76 EVENS SEXTONS"
+        },
+        {
+          "name": "Boundary Road",
+          "numbers": "COTTAGE"
+        },
+        {
+          "name": "Challis Street",
+          "numbers": "15-41 ODDS"
+        },
+        {
+          "name": "Challis Street",
+          "numbers": "2-50 EVENS"
+        },
+        {
+          "name": "Collin Road",
+          "numbers": "1-36 ALL"
+        },
+        {
+          "name": "Collin Road",
+          "numbers": "33-48 ALL"
+        },
+        {
+          "name": "Curlender Close",
+          "numbers": "1-43 ODDS"
+        },
+        {
+          "name": "Curlender Close",
+          "numbers": "2-50 EVENS"
+        },
+        {
+          "name": "Egan Road",
+          "numbers": "1-35 ODDS"
+        },
+        {
+          "name": "Egan Road",
+          "numbers": "2-32 EVENS"
+        },
+        {
+          "name": "Elmtree Grove",
+          "numbers": "1-11 ODDS"
+        },
+        {
+          "name": "Elmtree Grove",
+          "numbers": "2-28 EVENS"
+        },
+        {
+          "name": "Flaybrick Close",
+          "numbers": "1-30 ALL"
+        },
+        {
+          "name": "Gautby Road",
+          "numbers": "133-141 ODDS"
+        },
+        {
+          "name": "Hoblyn Road",
+          "numbers": "1-55 ODDS"
+        },
+        {
+          "name": "Hoblyn Road",
+          "numbers": "2-62 EVENS"
+        },
+        {
+          "name": "Hoylake Road",
+          "numbers": "1-21 ODDS"
+        },
+        {
+          "name": "Hoylake Road",
+          "numbers": "23-41 ODDS"
+        },
+        {
+          "name": "Hoylake Road",
+          "numbers": "53-87 ODDS"
+        },
+        {
+          "name": "Hoylake Road",
+          "numbers": "2-48A EVENS"
+        },
+        {
+          "name": "Hoylake Road",
+          "numbers": "56-80 EVENS"
+        },
+        {
+          "name": "Hoylake Road",
+          "numbers": "108-114 EVENS"
+        },
+        {
+          "name": "Larch Grove",
+          "numbers": "1-25 ODDS"
+        },
+        {
+          "name": "Larch Grove",
+          "numbers": "2-34 EVENS"
+        },
+        {
+          "name": "Maplewood Grove",
+          "numbers": "1-33 ODDS"
+        },
+        {
+          "name": "Maplewood Grove",
+          "numbers": "2-28 EVENS"
+        },
+        {
+          "name": "Mercer Road",
+          "numbers": "21-47 ODDS"
+        },
+        {
+          "name": "Mercer Road",
+          "numbers": "10-48 EVENS"
+        },
+        {
+          "name": "Naylor Road",
+          "numbers": "1-31 ODDS"
+        },
+        {
+          "name": "Naylor Road",
+          "numbers": "2-40 EVENS"
+        },
+        {
+          "name": "Oakwood Drive",
+          "numbers": "1-49 ODDS"
+        },
+        {
+          "name": "Oakwood Drive",
+          "numbers": "2-46 EVENS"
+        },
+        {
+          "name": "Oakwood Park",
+          "numbers": "1-9 ODDS"
+        },
+        {
+          "name": "Oakwood Park",
+          "numbers": "2-26 EVENS"
+        },
+        {
+          "name": "Observatory Road",
+          "numbers": "1-43 ODDS"
+        },
+        {
+          "name": "Observatory Road",
+          "numbers": "2-36 EVENS"
+        },
+        {
+          "name": "Rosemary Close",
+          "numbers": "1-8 ALL"
+        },
+        {
+          "name": "St James Road",
+          "numbers": "11-13 ODDS"
+        },
+        {
+          "name": "Tapestry Gardens",
+          "numbers": "1-59 ODDS"
+        },
+        {
+          "name": "Tapestry Gardens",
+          "numbers": "2-24 EVENS"
+        },
+        {
+          "name": "Alvanley Place",
+          "numbers": "1-27 ODDS"
+        },
+        {
+          "name": "Alvanley Place",
+          "numbers": "4-14 EVENS"
+        },
+        {
+          "name": "Bentinck Close",
+          "numbers": "1-11 ODDS"
+        },
+        {
+          "name": "Bentinck Close",
+          "numbers": "2-8 EVENS"
+        },
+        {
+          "name": "Bentinck Place",
+          "numbers": "1-25 ODDS"
+        },
+        {
+          "name": "Bentinck Place",
+          "numbers": "2-24 EVENS"
+        },
+        {
+          "name": "Bentinck Street",
+          "numbers": "1-55 ODDS"
+        },
+        {
+          "name": "Bentinck Street",
+          "numbers": "2-134 EVENS 15-19 MCGILL"
+        },
+        {
+          "name": "Cathcart Street",
+          "numbers": "ODDS COURT 14-18 MCGILL"
+        },
+        {
+          "name": "Cathcart Street",
+          "numbers": "EVENS COURT"
+        },
+        {
+          "name": "Claughton Road",
+          "numbers": "295-323 ODDS"
+        },
+        {
+          "name": "Claughton Road",
+          "numbers": "228-282 EVENS"
+        },
+        {
+          "name": "Claughton Place",
+          "numbers": "1-5 ODDS"
+        },
+        {
+          "name": "Claughton Place",
+          "numbers": "2-12 EVENS"
+        },
+        {
+          "name": "Conway Drive",
+          "numbers": "1-31 ODDS"
+        },
+        {
+          "name": "Conway Drive",
+          "numbers": "2-18 EVENS"
+        },
+        {
+          "name": "Conway Street",
+          "numbers": "183-199 ODDS 1-45 CONWAY"
+        },
+        {
+          "name": "Conway Street",
+          "numbers": "POINT ALL"
+        },
+        {
+          "name": "Conway Street",
+          "numbers": "260-300 EVENS 1-11 MCGILL"
+        },
+        {
+          "name": "Conway Street",
+          "numbers": "ODDS COURT 2-12 MCGILL"
+        },
+        {
+          "name": "Conway Street",
+          "numbers": "EVENS COURT"
+        },
+        {
+          "name": "Cole Street",
+          "numbers": "1-17 ODDS"
+        },
+        {
+          "name": "Cole Street",
+          "numbers": "2-10 EVENS"
+        },
+        {
+          "name": "Craven Street",
+          "numbers": "75-125 ODDS"
+        },
+        {
+          "name": "Craven Street",
+          "numbers": "12-154 EVENS"
+        },
+        {
+          "name": "Craven Close",
+          "numbers": "1-11 ODDS"
+        },
+        {
+          "name": "Craven Close",
+          "numbers": "2-18 EVENS"
+        },
+        {
+          "name": "Edgar Court",
+          "numbers": "1-16 ALL"
+        },
+        {
+          "name": "Exmouth Way",
+          "numbers": "2-46 EVENS"
+        },
+        {
+          "name": "Exmouth Gardens",
+          "numbers": "1-19 ODDS"
+        },
+        {
+          "name": "Fox Street",
+          "numbers": "1-29 ODDS"
+        },
+        {
+          "name": "Gladstone Close",
+          "numbers": "1-19 ODDS"
+        },
+        {
+          "name": "Grange Road West",
+          "numbers": "41-69 ODDS"
+        },
+        {
+          "name": "Grange Road West",
+          "numbers": "70-88 EVENS"
+        },
+        {
+          "name": "Grange Place",
+          "numbers": "1-10 ALL"
+        },
+        {
+          "name": "Hilton Close",
+          "numbers": "1-11A ODDS"
+        },
+        {
+          "name": "Keightley Street",
+          "numbers": "2-6 EVENS"
+        },
+        {
+          "name": "Knowles Street",
+          "numbers": "1-6 ALL"
+        },
+        {
+          "name": "Park Road East",
+          "numbers": "1-103 ODDS"
+        },
+        {
+          "name": "Park Close",
+          "numbers": "1-11A ODDS"
+        },
+        {
+          "name": "Park Close",
+          "numbers": null
+        },
+        {
+          "name": "Paterson Street",
+          "numbers": null
+        },
+        {
+          "name": "Paterson Street",
+          "numbers": null
+        },
+        {
+          "name": "Brook Close",
+          "numbers": "1-29 ODDS"
+        },
+        {
+          "name": "Brook Close",
+          "numbers": "2-24 EVENS"
+        },
+        {
+          "name": "Churchill Grove",
+          "numbers": "1-10 ALL"
+        },
+        {
+          "name": "Devon Avenue",
+          "numbers": "1-18 ALL"
+        },
+        {
+          "name": "Edenhurst Avenue",
+          "numbers": "1-16 ALL"
+        },
+        {
+          "name": "Empress Road",
+          "numbers": "1-24 ALL"
+        },
+        {
+          "name": "Exeter Road",
+          "numbers": "1-45 ODDS"
+        },
+        {
+          "name": "Exeter Road",
+          "numbers": "2-48 EVENS"
+        },
+        {
+          "name": "Greenwood Lane",
+          "numbers": "1-67B ODDS"
+        },
+        {
+          "name": "Greenwood Lane",
+          "numbers": "69-91 ODDS"
+        },
+        {
+          "name": "Greenwood Lane",
+          "numbers": "2-56 EVENS"
+        },
+        {
+          "name": "Greenwood Lane",
+          "numbers": "58-94A EVENS"
+        },
+        {
+          "name": "Ivor Road",
+          "numbers": "3-41 ODDS"
+        },
+        {
+          "name": "Ivor Road",
+          "numbers": "2-36 EVENS"
+        },
+        {
+          "name": "Manor Lane",
+          "numbers": "2-18 EVENS"
+        },
+        {
+          "name": "Manor Road",
+          "numbers": "151-161A ODDS 1-12 MANOR"
+        },
+        {
+          "name": "Manor Road",
+          "numbers": "MANSIONS ALL"
+        },
+        {
+          "name": "Manor Road",
+          "numbers": "73-99 ODDS"
+        },
+        {
+          "name": "Manor Road",
+          "numbers": "105-137 ODDS"
+        },
+        {
+          "name": "Manor Road",
+          "numbers": "102-130 EVENS"
+        },
+        {
+          "name": "Martins Lane",
+          "numbers": "70-90 EVENS"
+        },
+        {
+          "name": "Oxford Road",
+          "numbers": "1-57 ODDS"
+        },
+        {
+          "name": "Oxford Road",
+          "numbers": "2-72 EVENS"
+        },
+        {
+          "name": "Penkett Road",
+          "numbers": "1-7 ODDS"
+        },
+        {
+          "name": "Penkett Road",
+          "numbers": "8 EVENS 7 (APARTMENTS 1-"
+        },
+        {
+          "name": "Pooley Close",
+          "numbers": "9) ALL"
+        },
+        {
+          "name": "Seabank Road",
+          "numbers": "55-59 ODDS"
+        },
+        {
+          "name": "Serpentine Road",
+          "numbers": "45-93 ODDS"
+        },
+        {
+          "name": "Serpentine Road",
+          "numbers": "70-96A EVENS"
+        },
+        {
+          "name": "Stringhey Road",
+          "numbers": "1-27 ODDS"
+        },
+        {
+          "name": "Stringhey Road",
+          "numbers": "29-61 ODDS"
+        },
+        {
+          "name": "Stringhey Road",
+          "numbers": "12-50 EVENS"
+        },
+        {
+          "name": "Trafalgar Road",
+          "numbers": "78-90 EVENS"
+        },
+        {
+          "name": "Upper Rice Lane",
+          "numbers": "1-35 ODDS"
+        },
+        {
+          "name": "Upper Rice Lane",
+          "numbers": "14-30 EVENS"
+        },
+        {
+          "name": "Vicarage Grove",
+          "numbers": "1-33 ODDS"
+        },
+        {
+          "name": "Vicarage Grove",
+          "numbers": "2-36 EVENS"
+        },
+        {
+          "name": "Walmsley Street",
+          "numbers": "1-21 ODDS"
+        },
+        {
+          "name": "Walmsley Street",
+          "numbers": "10-22 EVENS"
+        },
+        {
+          "name": "Wesley Avenue",
+          "numbers": "1-23 ODDS"
+        },
+        {
+          "name": "Wesley Avenue",
+          "numbers": "2-24 EVENS"
+        },
+        {
+          "name": "Withens Lane",
+          "numbers": "34 (A-J) ALL"
+        },
+        {
+          "name": "Acacia Grove",
+          "numbers": "1-14 ALL"
+        },
+        {
+          "name": "Belle Vue Road",
+          "numbers": "1-13 ODDS"
+        },
+        {
+          "name": "Berwick Way",
+          "numbers": "1-23 ALL"
+        },
+        {
+          "name": "Birkenhead Rd",
+          "numbers": "58A-64 EVENS"
+        },
+        {
+          "name": "Briardale Rd",
+          "numbers": "1-23 ALL"
+        },
+        {
+          "name": "Bridle Avenue",
+          "numbers": "1-21 ALL"
+        },
+        {
+          "name": "Bridle Rd",
+          "numbers": "1-5, 31-45 ODDS"
+        },
+        {
+          "name": "Bridle Rd",
+          "numbers": "1-21 2 CHURCHLANDS"
+        },
+        {
+          "name": "Bridle Rd",
+          "numbers": "12-24 EVENS"
+        },
+        {
+          "name": "Church Crescent",
+          "numbers": "1-7 ALL"
+        },
+        {
+          "name": "Church Rd",
+          "numbers": "20-40 EVENS"
+        },
+        {
+          "name": "Church Rd",
+          "numbers": "65-107 ODDS"
+        },
+        {
+          "name": "Geneva Rd",
+          "numbers": "2-64 EVENS"
+        },
+        {
+          "name": "Hawthorne Grove",
+          "numbers": "2-22 EVENS"
+        },
+        {
+          "name": "Hawthorne Grove",
+          "numbers": "1-77 ODDS"
+        },
+        {
+          "name": "James Street",
+          "numbers": "1-20 ALL"
+        },
+        {
+          "name": "Lever Avenue",
+          "numbers": "1-14 ALL"
+        },
+        {
+          "name": "Lucerne Rd",
+          "numbers": "1-51 ODDS"
+        },
+        {
+          "name": "Lucerne Rd",
+          "numbers": "4-64 EVENS"
+        },
+        {
+          "name": "Luke Street",
+          "numbers": "1-15 ODDS"
+        },
+        {
+          "name": "Matthew Close",
+          "numbers": "1-7 ALL"
+        },
+        {
+          "name": "Matthew Street",
+          "numbers": "13-35 ODDS"
+        },
+        {
+          "name": "New Street",
+          "numbers": "1-51 ODDS"
+        },
+        {
+          "name": "New Street",
+          "numbers": "2-36 EVENS"
+        },
+        {
+          "name": "Norman Road",
+          "numbers": "1-13 ODDS"
+        },
+        {
+          "name": "Norman Road",
+          "numbers": "2-10 EVENS"
+        },
+        {
+          "name": "North William Street",
+          "numbers": "1"
+        },
+        {
+          "name": "Oakdale Avenue",
+          "numbers": "2-22 EVENS"
+        },
+        {
+          "name": "Oakdale Avenue",
+          "numbers": "1-33 ODDS"
+        },
+        {
+          "name": "Palatine Road",
+          "numbers": "1-65 ODDS"
+        },
+        {
+          "name": "Palatine Road",
+          "numbers": "2-62 EVENS"
+        },
+        {
+          "name": "Palermo Close",
+          "numbers": "2-8 EVENS"
+        },
+        {
+          "name": "Palermo Close",
+          "numbers": "1-41 ODDS"
+        },
+        {
+          "name": "Percy Road",
+          "numbers": "3-13 ODDS"
+        },
+        {
+          "name": "Peter Street",
+          "numbers": "2-20 EVENS"
+        },
+        {
+          "name": "Primrose Grove",
+          "numbers": "1-12 ALL"
+        },
+        {
+          "name": "St Pauls Avenue",
+          "numbers": "1-11 ODDS"
+        },
+        {
+          "name": "St Pauls Avenue",
+          "numbers": "2-6 EVENS"
+        },
+        {
+          "name": "St Pauls Road",
+          "numbers": "1-33 ODDS"
+        },
+        {
+          "name": "St Pauls Road",
+          "numbers": "35-73A ODDS"
+        },
+        {
+          "name": "St Pauls Road",
+          "numbers": "75A-85C ODDS"
+        },
+        {
+          "name": "St Pauls Road",
+          "numbers": "2-46 EVENS"
+        },
+        {
+          "name": "St Pauls Road",
+          "numbers": "50-110B EVENS"
+        },
+        {
+          "name": "Vernon Avenue",
+          "numbers": "1-29 ODDS"
+        },
+        {
+          "name": "Vivian Avenue",
+          "numbers": "1-15 ODDS"
+        },
+        {
+          "name": "Vivian Avenue",
+          "numbers": "2-8 EVENS"
+        },
+        {
+          "name": "Wheatland Lane",
+          "numbers": "55-81 ODDS"
+        },
+        {
+          "name": "Wheatland Lane",
+          "numbers": "101-107 ODDS"
+        },
+        {
+          "name": "Wheatland Lane",
+          "numbers": "311-335 ODDS"
+        },
+        {
+          "name": "Wheatland Lane",
+          "numbers": "74-82 EVENS"
+        },
+        {
+          "name": "Wheatland Lane",
+          "numbers": "90 EVENS"
+        },
+        {
+          "name": "William Street",
+          "numbers": "1-14 ALL"
+        }
+      ],
+      "postcodes": [
+        "CH41 3HY",
+        "CH41 3LL",
+        "CH41 3RG",
+        "CH41 4AG",
+        "CH41 4AH",
+        "CH41 4AQ",
+        "CH41 4BD",
+        "CH41 4BG",
+        "CH41 4BH",
+        "CH41 4BL",
+        "CH41 4BR",
+        "CH41 4BW",
+        "CH41 4BZ",
+        "CH41 4DD",
+        "CH41 4DP",
+        "CH41 4DR",
+        "CH41 4DS",
+        "CH41 4DU",
+        "CH41 4DX",
+        "CH41 4DY",
+        "CH41 4FU",
+        "CH41 4LR",
+        "CH41 4LW",
+        "CH41 4LX",
+        "CH41 4LY",
+        "CH41 4LZ",
+        "CH41 4NA",
+        "CH41 4NB",
+        "CH41 4PG",
+        "CH41 4PJ",
+        "CH41 4XF",
+        "CH41 7BN",
+        "CH41 7BP",
+        "CH41 7BQ",
+        "CH41 7BS",
+        "CH41 7BT",
+        "CH41 7BU",
+        "CH41 7BW",
+        "CH41 7BX",
+        "CH41 7BY",
+        "CH41 7BZ",
+        "CH41 7DH",
+        "CH41 7DU",
+        "CH43 4US",
+        "CH43 4XA",
+        "CH43 7FE",
+        "CH43 7FF",
+        "CH43 7NU",
+        "CH43 7NX",
+        "CH43 7NY",
+        "CH43 7NZ",
+        "CH43 7PD",
+        "CH43 7QJ",
+        "CH43 7RT",
+        "CH43 7RU",
+        "CH43 7SJ",
+        "CH43 7SL",
+        "CH43 7SN",
+        "CH43 7SP",
+        "CH43 7SR",
+        "CH43 7SS",
+        "CH43 7ST",
+        "CH43 7SU",
+        "CH44 0AR",
+        "CH44 0AU",
+        "CH44 0AZ",
+        "CH44 0EH",
+        "CH44 0EN",
+        "CH44 0EW",
+        "CH44 0FB",
+        "CH44 1BW",
+        "CH44 1BX",
+        "CH44 1DD",
+        "CH44 1DG",
+        "CH44 1DJ",
+        "CH44 1DL",
+        "CH44 1DN",
+        "CH44 1DP",
+        "CH44 1DR",
+        "CH44 1DS",
+        "CH44 1DT",
+        "CH44 1DU",
+        "CH44 1DW",
+        "CH44 1DY",
+        "CH44 1EE",
+        "CH44 1EF",
+        "CH44 1EJ",
+        "CH44 1EL",
+        "CH44 1EQ",
+        "CH44 6JF",
+        "CH44 6JP",
+        "CH44 6JX",
+        "CH44 7AG",
+        "CH44 7AH",
+        "CH44 7AJ",
+        "CH44 7AL",
+        "CH44 7AN",
+        "CH44 7AP",
+        "CH44 7AQ",
+        "CH44 7AR",
+        "CH44 7AS",
+        "CH44 7AT",
+        "CH44 7AU",
+        "CH44 7AW",
+        "CH44 7AX",
+        "CH44 7AY",
+        "CH44 7BA",
+        "CH44 7BB",
+        "CH44 7BD",
+        "CH44 7BE",
+        "CH44 7BG",
+        "CH44 7BH",
+        "CH44 7BJ",
+        "CH44 7BN",
+        "CH44 7BQ",
+        "CH44 7BW",
+        "CH44 7BY",
+        "CH44 7DF",
+        "CH44 7DP",
+        "CH44 7DR",
+        "CH44 7DX",
+        "CH44 7EA",
+        "CH44 7EE",
+        "CH44 7EH",
+        "CH44 7EJ",
+        "CH44 7EN",
+        "CH44 7ES",
+        "CH44 7ET",
+        "CH44 7EW",
+        "CH44 7EY",
+        "CH44 7EZ",
+        "CH44 7HA",
+        "CH44 7JL",
+        "CH44 7JS",
+        "CH44 7LB",
+        "CH44 7LD",
+        "CH44 7LE",
+        "CH44 OAL",
+        "CH45 7LU",
+        "CH45 7LX",
+        "CH45 7LY",
+        "CH45 7LZ",
+        "CH45 7NQ",
+        "CH45 7PA",
+        "CH45 7QE"
+      ],
+      "checkerUrl": null,
+      "boundaryDescription": "Four Lower Super Output Areas: Bidston & St James West (LSOA E01007123 / Wirral 011D), Birkenhead West (LSOA E01007127 / Wirral 016B), Egremont North (LSOA E01007218 / Wirral 002A) and Seacombe St Paul's (LSOA E01007273 / Wirral 008B). Scheme 4a additionally covers all properties in Paterson Street and the even numbers of Park Close, both in Birkenhead, from 1 July 2024. The council states that any private rented property located within the LSOA boundary at the time of designation or over the lifetime of the scheme is liable for a licence, so the address list is guidance rather than an exhaustive definition.",
+      "evidence": "Street and house-number ranges transcribed from the council's published PDF 'Appendix 2 Maps and Address List of Selective Licensing Areas Schemes 4 and 4a 2024 to 2029', linked from the council's selective licensing page. The address tables were extracted twice (pdfplumber ruled-cell mode and text-flow mode) and the street-to-number pairing was identical in both; a third extraction (pdftotext -layout) drifted on wrapped cells and was discarded. Dates confirmed against the council's own 'Appendix 2 Selective Licensing Area Definitions'. Four LSOAs, 179 address-range rows across 101 distinct streets."
+    },
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas",
+        "describedAs": "Six designated neighbourhood areas in Birkenhead, Tranmere and Egremont (Wirral 'Scheme 5', 2025 to 2030)"
+      },
+      "sourceUrl": "https://www.wirral.gov.uk/housing/housing-information-and-advice/private-landlords-and-managing-agents/selective-licensing-2",
+      "confidence": "official-council-page",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-10-01",
+        "end": "2030-09-30",
+        "howVerified": "The council's published statutory public notice states the designation was made on 24 June 2025 and 'will come into force on 1 October 2025 and unless previously revoked, this designation shall cease to have effect on 30 September 2030'."
+      },
+      "supersededBy": null,
+      "streets": [
+        {
+          "name": "Beckwith Street East",
+          "numbers": "2-14 EVENS ONLY"
+        },
+        {
+          "name": "Borough Road",
+          "numbers": "254A, 262A"
+        },
+        {
+          "name": "Brookland Road",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Cardigan Avenue",
+          "numbers": "1-22 PINE COURT"
+        },
+        {
+          "name": "Cardigan Avenue",
+          "numbers": "4-16"
+        },
+        {
+          "name": "Carlisle Mews",
+          "numbers": "7-30"
+        },
+        {
+          "name": "Circular Road",
+          "numbers": "2-26"
+        },
+        {
+          "name": "Clarendon Close",
+          "numbers": "1-27"
+        },
+        {
+          "name": "Claughton Road",
+          "numbers": "90A-226 EVENS ONLY"
+        },
+        {
+          "name": "Claughton Road",
+          "numbers": "273-295A ODDS ONLY"
+        },
+        {
+          "name": "Clifton Road",
+          "numbers": "2-42 EVENS ONLY"
+        },
+        {
+          "name": "Clifton Road",
+          "numbers": "44 1-10 DELLA ROBBIA HOUSE"
+        },
+        {
+          "name": "Clifton Road",
+          "numbers": "1-12 CLIFTON GATE"
+        },
+        {
+          "name": "Conway Street",
+          "numbers": "198 1-10 THE MEADOWS"
+        },
+        {
+          "name": "Corfu Street",
+          "numbers": "1-5"
+        },
+        {
+          "name": "Dover Close",
+          "numbers": "1-24"
+        },
+        {
+          "name": "Eastbourne Road",
+          "numbers": "1-27"
+        },
+        {
+          "name": "Elm Street",
+          "numbers": "2-20 EVENS"
+        },
+        {
+          "name": "Elm Street",
+          "numbers": "22 1-20 ELM COURT"
+        },
+        {
+          "name": "Exmouth Close",
+          "numbers": "1-11"
+        },
+        {
+          "name": "Exmouth Street",
+          "numbers": "40"
+        },
+        {
+          "name": "Fearnley Road",
+          "numbers": "5-36"
+        },
+        {
+          "name": "Grange Road",
+          "numbers": "257"
+        },
+        {
+          "name": "Grange Road",
+          "numbers": "ST WERBURGHS PRESBYTERY"
+        },
+        {
+          "name": "Grange Road West",
+          "numbers": "1 1-8 GRANGE HOUSE"
+        },
+        {
+          "name": "Grange Road West",
+          "numbers": "1-37 ODDS ONLY"
+        },
+        {
+          "name": "Grange Road West",
+          "numbers": "2-68 EVENS ONLY"
+        },
+        {
+          "name": "Hazel Road",
+          "numbers": "1-23"
+        },
+        {
+          "name": "Hollybank Road",
+          "numbers": "4 1-12 HOLLYBANK COURT"
+        },
+        {
+          "name": "Lowwood Grove",
+          "numbers": "5-15"
+        },
+        {
+          "name": "Lowwood Road",
+          "numbers": "1-42 INCLUDES 1-12 FIELD HOUSE"
+        },
+        {
+          "name": "Lowwood Road",
+          "numbers": "1-7 THE MOORINGS"
+        },
+        {
+          "name": "Maritime Park",
+          "numbers": "1-51"
+        },
+        {
+          "name": "Menai Street",
+          "numbers": "1-49"
+        },
+        {
+          "name": "Oliver Street",
+          "numbers": "1- 60 MARKET COURT"
+        },
+        {
+          "name": "Oxton Road",
+          "numbers": "2-42 EVENS ONLY"
+        },
+        {
+          "name": "Oxton Road",
+          "numbers": "1-11 ODDS ONLY"
+        },
+        {
+          "name": "Parkfield Avenue",
+          "numbers": "1-25"
+        },
+        {
+          "name": "Parkfield Avenue",
+          "numbers": "26 1- 68 ROSE COURT"
+        },
+        {
+          "name": "Parkfield Place",
+          "numbers": "10-24 EVENS ONLY"
+        },
+        {
+          "name": "Simpson Street",
+          "numbers": "1-34"
+        },
+        {
+          "name": "Sisters Way",
+          "numbers": "1-27"
+        },
+        {
+          "name": "St Laurence Close",
+          "numbers": "1-4"
+        },
+        {
+          "name": "St Laurence Drive",
+          "numbers": "2-10 EVENS ONLY"
+        },
+        {
+          "name": "The Woodlands",
+          "numbers": "1-87 INCLUDES 1-16 12 MITCHELL COURT"
+        },
+        {
+          "name": "Vincent Street",
+          "numbers": "2"
+        },
+        {
+          "name": "Warwick Close",
+          "numbers": "1-32"
+        },
+        {
+          "name": "Whetstone Lane",
+          "numbers": "95, 99 INCLUDES 1-44 BROOKS COURT, 1-12 ST GEORGE HOUSE"
+        },
+        {
+          "name": "Alison Avenue",
+          "numbers": "1-27"
+        },
+        {
+          "name": "Brougham Avenue",
+          "numbers": "1-61"
+        },
+        {
+          "name": "Cobden Avenue",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Cobden Court",
+          "numbers": "1-6"
+        },
+        {
+          "name": "Downham Road",
+          "numbers": "1-41 ODDS ONLY"
+        },
+        {
+          "name": "Fairhaven Close",
+          "numbers": "1-24"
+        },
+        {
+          "name": "Grenville Road",
+          "numbers": "1-45"
+        },
+        {
+          "name": "Grenville Way",
+          "numbers": "1-34"
+        },
+        {
+          "name": "Grenville Way",
+          "numbers": "1-41 CLIFFORD GRANGE"
+        },
+        {
+          "name": "Lever Terrace",
+          "numbers": "3-13 ODDS ONLY"
+        },
+        {
+          "name": "Lydbrook Close",
+          "numbers": "1-23"
+        },
+        {
+          "name": "Meadow Lane",
+          "numbers": "26-61"
+        },
+        {
+          "name": "Meadow Park",
+          "numbers": "1-6"
+        },
+        {
+          "name": "Meadowfield Close",
+          "numbers": "1-51"
+        },
+        {
+          "name": "Mersey Walk",
+          "numbers": "1-35"
+        },
+        {
+          "name": "Moorland Road",
+          "numbers": "1-79"
+        },
+        {
+          "name": "New Chester Road",
+          "numbers": "228"
+        },
+        {
+          "name": "Old Chester Road",
+          "numbers": "1-22 MERSEY GARDENS"
+        },
+        {
+          "name": "Old Chester Road",
+          "numbers": "133-189 ODDS ONLY"
+        },
+        {
+          "name": "Old Chester Road",
+          "numbers": "210 1-22 SOUTHWICK COURT"
+        },
+        {
+          "name": "Orchard Court",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Parkside Road",
+          "numbers": "1-84"
+        },
+        {
+          "name": "Peel Avenue",
+          "numbers": "1-37"
+        },
+        {
+          "name": "Quigley Street",
+          "numbers": "1-33"
+        },
+        {
+          "name": "Southwick Road",
+          "numbers": "1-20"
+        },
+        {
+          "name": "St Pauls Road",
+          "numbers": "1-53"
+        },
+        {
+          "name": "St Pauls Road",
+          "numbers": "54-70 EVENS ONLY"
+        },
+        {
+          "name": "Stanley Court",
+          "numbers": "1-10"
+        },
+        {
+          "name": "Strathlorne Close",
+          "numbers": "1-37"
+        },
+        {
+          "name": "Summerford Close",
+          "numbers": "1-17"
+        },
+        {
+          "name": "Union Street",
+          "numbers": "19-58"
+        },
+        {
+          "name": "Wye Close",
+          "numbers": "1-26"
+        },
+        {
+          "name": "Beech Road",
+          "numbers": "2-46 EVENS ONLY"
+        },
+        {
+          "name": "Borough Road",
+          "numbers": "367-391 ODDS ONLY"
+        },
+        {
+          "name": "Cedar Street",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Charlecombe Street",
+          "numbers": "1-26"
+        },
+        {
+          "name": "Chesnut Grove",
+          "numbers": "41-68"
+        },
+        {
+          "name": "Derby Road",
+          "numbers": "12-18 EVENS ONLY"
+        },
+        {
+          "name": "Elm Grove",
+          "numbers": "1-38"
+        },
+        {
+          "name": "Hollybank Road",
+          "numbers": "6-46 INCLUDES 1-12 HAWTHORNE HOUSE"
+        },
+        {
+          "name": "Larch Road",
+          "numbers": "1-87"
+        },
+        {
+          "name": "Laurel Road",
+          "numbers": "2-30"
+        },
+        {
+          "name": "Maple Street",
+          "numbers": "1-22"
+        },
+        {
+          "name": "Milton Road East",
+          "numbers": "1-16"
+        },
+        {
+          "name": "Mounsey Road",
+          "numbers": "1-18"
+        },
+        {
+          "name": "Park Grove",
+          "numbers": "1-4"
+        },
+        {
+          "name": "Poplar Grove",
+          "numbers": "1-2"
+        },
+        {
+          "name": "Raffles Road",
+          "numbers": "8-124"
+        },
+        {
+          "name": "Rawcliffe Road",
+          "numbers": "1-21"
+        },
+        {
+          "name": "Shewell Close",
+          "numbers": "1-21"
+        },
+        {
+          "name": "Sycamore Road",
+          "numbers": "1-27"
+        },
+        {
+          "name": "Tatton Road",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Wellington Terrace",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Whalley Road",
+          "numbers": "1-13"
+        },
+        {
+          "name": "Whetstone Lane",
+          "numbers": "35-63 ODDS ONLY"
+        },
+        {
+          "name": "Whetstone Lane",
+          "numbers": "70-162 EVENS ONLY, INCLUDES COURT, 1-9 WELLINGTON HOUSE"
+        },
+        {
+          "name": "Willmer Road",
+          "numbers": "1-104"
+        },
+        {
+          "name": "Albion Street",
+          "numbers": "1-3 THE COACH HOUSE"
+        },
+        {
+          "name": "Argyle Street",
+          "numbers": "19-97 ODDS ONLY. INCLUDES"
+        },
+        {
+          "name": "Argyle Street",
+          "numbers": "28-112B EVENS ONLY. INCLUDES"
+        },
+        {
+          "name": "Castle Street",
+          "numbers": "1-40"
+        },
+        {
+          "name": "Chester Street",
+          "numbers": "61-85 ODDS ONLY"
+        },
+        {
+          "name": "Chester Street",
+          "numbers": "38-128 EVENS ONLY"
+        },
+        {
+          "name": "Church Street",
+          "numbers": "38-131 INCLUDES 1-131 PRIORY"
+        },
+        {
+          "name": "Cross Street",
+          "numbers": "1-83 ODDS ONLY"
+        },
+        {
+          "name": "Dacre Street",
+          "numbers": "1A-1B"
+        },
+        {
+          "name": "Douglas Street",
+          "numbers": "1-15 INCLUDES 1A-3C AT 1"
+        },
+        {
+          "name": "Douglas Street",
+          "numbers": null
+        },
+        {
+          "name": "Douglas Street",
+          "numbers": "15"
+        },
+        {
+          "name": "Duncan Street",
+          "numbers": "3-17 ODDS ONLY"
+        },
+        {
+          "name": "Duncan Street",
+          "numbers": "2A-2C, 4A- 4C, 8"
+        },
+        {
+          "name": "Duncan Street",
+          "numbers": "1-22 HAMILTON PLAZA"
+        },
+        {
+          "name": "Grange Road East",
+          "numbers": "61-77 ODDS ONLY"
+        },
+        {
+          "name": "Hamilton Square",
+          "numbers": "1-62"
+        },
+        {
+          "name": "Hamilton Street",
+          "numbers": "30A-56A"
+        },
+        {
+          "name": "Hornby Street",
+          "numbers": "1-30"
+        },
+        {
+          "name": "Lorn Street",
+          "numbers": "2-22"
+        },
+        {
+          "name": "Lorn Street",
+          "numbers": "1-19 LORN COURT"
+        },
+        {
+          "name": "Market Street",
+          "numbers": "2-82A"
+        },
+        {
+          "name": "Mortimer Street",
+          "numbers": "1-6"
+        },
+        {
+          "name": "Oliver Street East",
+          "numbers": "28-36"
+        },
+        {
+          "name": "Price Street",
+          "numbers": "13/15 1-40 MARKET WELLS"
+        },
+        {
+          "name": "Price Street",
+          "numbers": "41/43 STORK HOTEL"
+        },
+        {
+          "name": "Water Street",
+          "numbers": "1-43"
+        },
+        {
+          "name": "Argyle Street South",
+          "numbers": "8-178"
+        },
+        {
+          "name": "Clifton Road",
+          "numbers": "1A-53 ODDS ONLY, INCLUDES VENTURE COURT"
+        },
+        {
+          "name": "Fairview",
+          "numbers": "1-7"
+        },
+        {
+          "name": "Frodsham Street",
+          "numbers": "16-28 EVENS ONLY"
+        },
+        {
+          "name": "Green Lane",
+          "numbers": "2-18"
+        },
+        {
+          "name": "Helmingham Grove",
+          "numbers": "1-23 ODDS ONLY"
+        },
+        {
+          "name": "Hillside Close",
+          "numbers": "1-5"
+        },
+        {
+          "name": "Hillside Road",
+          "numbers": "34-60"
+        },
+        {
+          "name": "Hinderton Close",
+          "numbers": "1-11"
+        },
+        {
+          "name": "Hinderton Road",
+          "numbers": "2-165"
+        },
+        {
+          "name": "Holborn Hill",
+          "numbers": "1-38"
+        },
+        {
+          "name": "Holt Hill",
+          "numbers": "1-87"
+        },
+        {
+          "name": "Holt Hill Terrace",
+          "numbers": "3-23 ODDS ONLY"
+        },
+        {
+          "name": "Holt Road",
+          "numbers": "12-82 EVENS ONLY"
+        },
+        {
+          "name": "Leighton Road",
+          "numbers": "1-55"
+        },
+        {
+          "name": "Marquis Street",
+          "numbers": "1-31"
+        },
+        {
+          "name": "New Chester Road",
+          "numbers": "2"
+        },
+        {
+          "name": "Old Chester Road",
+          "numbers": "1 GREEN LANE STATION HOUSE"
+        },
+        {
+          "name": "Old Chester Road",
+          "numbers": "2-48 EVENS ONLY"
+        },
+        {
+          "name": "Old Chester Road",
+          "numbers": "45-57 ODDS ONLY"
+        },
+        {
+          "name": "Olive Crescent",
+          "numbers": "1-12"
+        },
+        {
+          "name": "Olive Mount",
+          "numbers": "2-48 INCLUDES THE WILLOWS"
+        },
+        {
+          "name": "Pearson Road",
+          "numbers": "1-2"
+        },
+        {
+          "name": "Pembroke Court",
+          "numbers": "1-65"
+        },
+        {
+          "name": "Queen Street",
+          "numbers": "1-49"
+        },
+        {
+          "name": "Rodney Street",
+          "numbers": "19-182"
+        },
+        {
+          "name": "Rodney Street",
+          "numbers": "1-73 VINCENT NAUGHTON COURT"
+        },
+        {
+          "name": "Warrington Street",
+          "numbers": "1-2 MARQUIS MEWS"
+        },
+        {
+          "name": "Warrington Street",
+          "numbers": "1-19 RIVER VIEW"
+        },
+        {
+          "name": "Warrington Street",
+          "numbers": "1-19 MERSEY VIEW"
+        },
+        {
+          "name": "Warrington Street",
+          "numbers": "1-8 PRIORY VIEW"
+        },
+        {
+          "name": "Westbury Street",
+          "numbers": "1-10"
+        },
+        {
+          "name": "Whetstone Lane",
+          "numbers": "101-135 ODDS ONLY"
+        },
+        {
+          "name": "Alverstone Road",
+          "numbers": "1-42"
+        },
+        {
+          "name": "Birnam Road",
+          "numbers": "2-56"
+        },
+        {
+          "name": "Church Close",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Church Street",
+          "numbers": "21-219 ODDS ONLY"
+        },
+        {
+          "name": "Churchmeadow Close",
+          "numbers": "2-11 CLOSE"
+        },
+        {
+          "name": "Clarendon Road",
+          "numbers": "37-90"
+        },
+        {
+          "name": "Clarendon Road",
+          "numbers": "50 1-16 ASH TREE APARTMENTS"
+        },
+        {
+          "name": "Dalehurst Close",
+          "numbers": "1-16"
+        },
+        {
+          "name": "Elmbank Street",
+          "numbers": "1-11"
+        },
+        {
+          "name": "Falkland Road",
+          "numbers": "49-158"
+        },
+        {
+          "name": "Gorsebank Street",
+          "numbers": "1-12"
+        },
+        {
+          "name": "Hallville Road",
+          "numbers": "2-50 EVENS ONLY"
+        },
+        {
+          "name": "Liscard Road",
+          "numbers": "62A-107 INCLUDES 1-10 ROKLIS"
+        },
+        {
+          "name": "Liscard Road",
+          "numbers": "SOUTH LODGE"
+        },
+        {
+          "name": "Lumley Road",
+          "numbers": "1-38"
+        },
+        {
+          "name": "Northbrook Road",
+          "numbers": "1-79"
+        },
+        {
+          "name": "Oakbank Street",
+          "numbers": "1-9"
+        },
+        {
+          "name": "Park Avenue",
+          "numbers": "1-8"
+        },
+        {
+          "name": "Park Road",
+          "numbers": "1-77"
+        },
+        {
+          "name": "Parkside",
+          "numbers": "2-46"
+        },
+        {
+          "name": "Poulton Road",
+          "numbers": "102-122 EVENS ONLY"
+        },
+        {
+          "name": "Poulton Road",
+          "numbers": "117-153 ODDS ONLY"
+        },
+        {
+          "name": "Redfield Close",
+          "numbers": "1-17"
+        },
+        {
+          "name": "Rivington Road",
+          "numbers": "1-44"
+        },
+        {
+          "name": "Trentham Road",
+          "numbers": "1-22"
+        },
+        {
+          "name": "Withington Road",
+          "numbers": "1-22"
+        }
+      ],
+      "postcodes": [
+        "CH41 1AD",
+        "CH41 2PH",
+        "CH41 2QJ",
+        "CH41 2QQ",
+        "CH41 2RB",
+        "CH41 2RG",
+        "CH41 2RH",
+        "CH41 2RN",
+        "CH41 2RQ",
+        "CH41 2SB",
+        "CH41 2SD",
+        "CH41 2SE",
+        "CH41 2SF",
+        "CH41 2SG",
+        "CH41 2SH",
+        "CH41 2SJ",
+        "CH41 2SL",
+        "CH41 2SN",
+        "CH41 2SP",
+        "CH41 2SQ",
+        "CH41 2SR",
+        "CH41 2SS",
+        "CH41 2ST",
+        "CH41 2SU",
+        "CH41 2SW",
+        "CH41 2SX",
+        "CH41 2SY",
+        "CH41 2SZ",
+        "CH41 2TA",
+        "CH41 2TB",
+        "CH41 2TD",
+        "CH41 2TE",
+        "CH41 2TG",
+        "CH41 2TH",
+        "CH41 2TQ",
+        "CH41 2XZ",
+        "CH41 2YQ",
+        "CH41 2ZA",
+        "CH41 2ZB",
+        "CH41 2ZE",
+        "CH41 3HT",
+        "CH41 3HU",
+        "CH41 3JA",
+        "CH41 3JE",
+        "CH41 3RQ",
+        "CH41 4AN",
+        "CH41 4AR",
+        "CH41 4AU",
+        "CH41 4AW",
+        "CH41 4BX",
+        "CH41 4BY",
+        "CH41 4DA",
+        "CH41 4DB",
+        "CH41 4DT",
+        "CH41 4FF",
+        "CH41 4FG",
+        "CH41 4FH",
+        "CH41 4NG",
+        "CH41 4NH",
+        "CH41 4PQ",
+        "CH41 5AA",
+        "CH41 5AD",
+        "CH41 5AE",
+        "CH41 5AS",
+        "CH41 5AT",
+        "CH41 5BP",
+        "CH41 5BQ",
+        "CH41 5BS",
+        "CH41 5BT",
+        "CH41 5BU",
+        "CH41 5BW",
+        "CH41 5DE",
+        "CH41 5DL",
+        "CH41 5EA",
+        "CH41 5ED",
+        "CH41 5EG",
+        "CH41 5EP",
+        "CH41 5EQ",
+        "CH41 5ER",
+        "CH41 5ES",
+        "CH41 5ET",
+        "CH41 5EU",
+        "CH41 5EX",
+        "CH41 5EY",
+        "CH41 5FD",
+        "CH41 5HB",
+        "CH41 5LB",
+        "CH41 5LD",
+        "CH41 6AA",
+        "CH41 6AB",
+        "CH41 6AD",
+        "CH41 6AE",
+        "CH41 6AF",
+        "CH41 6AG",
+        "CH41 6AQ",
+        "CH41 6AR",
+        "CH41 6AU",
+        "CH41 6AW",
+        "CH41 6AX",
+        "CH41 6AY",
+        "CH41 6AZ",
+        "CH41 6BB",
+        "CH41 6EL",
+        "CH41 6EP",
+        "CH41 6ES",
+        "CH41 6EX",
+        "CH41 6HA",
+        "CH41 6HH",
+        "CH41 6JN",
+        "CH41 6LZ",
+        "CH41 6RX",
+        "CH41 6SA",
+        "CH41 9AA",
+        "CH41 9AB",
+        "CH41 9AD",
+        "CH41 9AE",
+        "CH41 9AF",
+        "CH41 9AG",
+        "CH41 9AN",
+        "CH41 9AP",
+        "CH41 9AQ",
+        "CH41 9AR",
+        "CH41 9AS",
+        "CH41 9AU",
+        "CH41 9AW",
+        "CH41 9AX",
+        "CH41 9AY",
+        "CH41 9BJ",
+        "CH41 9BQ",
+        "CH41 9BX",
+        "CH41 9BY",
+        "CH41 9BZ",
+        "CH41 9DA",
+        "CH41 9DE",
+        "CH41 9DG",
+        "CH41 9DH",
+        "CH41 9DJ",
+        "CH41 9DL",
+        "CH41 9DN",
+        "CH41 9DP",
+        "CH41 9DQ",
+        "CH41 9DR",
+        "CH41 9DT",
+        "CH41 9DU",
+        "CH41 9DY",
+        "CH41 9DZ",
+        "CH41 9EH",
+        "CH41 9EQ",
+        "CH41 9ER",
+        "CH41 9ES",
+        "CH41 9EY",
+        "CH41 9HA",
+        "CH41 9HB",
+        "CH41 9HD",
+        "CH41 9HE",
+        "CH41 9HU",
+        "CH42 0HA",
+        "CH42 0HH",
+        "CH42 0HJ",
+        "CH42 0HL",
+        "CH42 0HN",
+        "CH42 0HP",
+        "CH42 0HR",
+        "CH42 0HS",
+        "CH42 0HT",
+        "CH42 0HW",
+        "CH42 0HY",
+        "CH42 0HZ",
+        "CH42 0JA",
+        "CH42 0JB",
+        "CH42 0JD",
+        "CH42 0JE",
+        "CH42 0JF",
+        "CH42 0JG",
+        "CH42 0JH",
+        "CH42 0JL",
+        "CH42 0JP",
+        "CH42 0JQ",
+        "CH42 0LA",
+        "CH42 0NJ",
+        "CH42 0NS",
+        "CH42 1LH",
+        "CH42 1LJ",
+        "CH42 3AB",
+        "CH42 3SZ",
+        "CH42 3TA",
+        "CH42 3TB",
+        "CH42 3TE",
+        "CH42 3TL",
+        "CH42 3UN",
+        "CH42 3UP",
+        "CH42 3UX",
+        "CH42 3UY",
+        "CH42 3UZ",
+        "CH42 3YE",
+        "CH42 3YF",
+        "CH42 3YG",
+        "CH42 3YH",
+        "CH42 3YJ",
+        "CH42 3YL",
+        "CH42 3YP",
+        "CH42 3YQ",
+        "CH42 3YR",
+        "CH42 3YS",
+        "CH42 3YW",
+        "CH42 3YX",
+        "CH42 5LA",
+        "CH42 5LB",
+        "CH42 5ND",
+        "CH42 5NJ",
+        "CH42 5NU",
+        "CH42 5NX",
+        "CH42 5NY",
+        "CH42 5NZ",
+        "CH42 5PA",
+        "CH43 4TP",
+        "CH43 4TW",
+        "CH43 4YF",
+        "CH43 4YG",
+        "CH44 0BS",
+        "CH44 8AA",
+        "CH44 8AE",
+        "CH44 8AF",
+        "CH44 8AG",
+        "CH44 8EJ",
+        "CH44 8EP",
+        "CH44 8ER",
+        "CH44 8EW",
+        "CH44 8HB",
+        "CH44 8HG",
+        "CH44 8HQ",
+        "CH44 8HY",
+        "CH44 9AA",
+        "CH44 9AB",
+        "CH44 9AE",
+        "CH44 9AF",
+        "CH44 9AH",
+        "CH44 9AJ",
+        "CH44 9AN",
+        "CH44 9AP",
+        "CH44 9AR",
+        "CH44 9AW",
+        "CH44 9AX",
+        "CH44 9AY",
+        "CH44 9AZ",
+        "CH44 9BE",
+        "CH44 9BG",
+        "CH44 9BH",
+        "CH44 9BQ",
+        "CH44 9DF",
+        "CH44 9DJ",
+        "CH44 9DZ",
+        "CH44 9EA",
+        "CH44 9EB",
+        "CH44 9EG"
+      ],
+      "checkerUrl": null,
+      "boundaryDescription": "Six Lower Super Output Areas, being parts of Birkenhead and Wallasey: Area 1 Birkenhead Central (LSOA E01007128), Area 2 Lower Tranmere (LSOA E01007293), Area 3 Tranmere North (LSOA E01007130), Area 4 Hamilton Square B (LSOA E01034839), Area 5 Tranmere Lairds (LSOA E01007291), Area 6 Egremont South (LSOA E01007275). The notice states the designation 'shall have effect to any property situated, at any time during the designation, within the Lower Super Output Areas listed below', so the street list is indicative of each LSOA rather than a closed list.",
+      "evidence": "Street names transcribed from the statutory public notice published on the council's website (dated 24 June 2025, signed Jill Travers, Director of Law & Governance), which lists the streets in each of the six areas. House-number ranges and postcodes were transcribed from the council's address-list PDF for the same scheme, published as 'Appendix 1.2 Maps and address lists' to the Economy, Regeneration and Housing Committee decision of 17 June 2025 and re-published at wirral.gov.uk/files/sl-2025-2030-address-and-map.pdf. The two independent official sources were compared street by street and agree exactly across all six areas. Note the wirral.gov.uk copy of the PDF contains no extractable text (glyphs are drawn as vector outlines), so the identical committee-published copy supplied the number ranges."
+    },
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas",
+        "describedAs": "Six designated neighbourhood areas, 2020 to 2025 scheme (Wirral 'Scheme 3') - held in our data as expired; confirmed expired, do not re-activate"
+      },
+      "sourceUrl": "https://www.wirral.gov.uk/housing/housing-information-and-advice/private-landlords-and-managing-agents/selective-licensing-1",
+      "confidence": "official-council-page",
+      "inForce": {
+        "stillLive": false,
+        "start": "2020-10-01",
+        "end": "2025-09-30",
+        "howVerified": "The council's Appendix 2 Area Definitions records 'Scheme 3 - From 1st October 2020 to end of September 2025', and the main selective licensing page now lists this scheme only under the heading 'Previous selective licence public notices' while stating that the council currently has two schemes."
+      },
+      "supersededBy": "Partially renewed by the 2025 to 2030 scheme (Wirral 'Scheme 5'): only two of the six areas, Egremont South (LSOA E01007275) and Tranmere Lairds (LSOA E01007291), were carried forward. The other four areas, Birkenhead South (E01007129), Egerton North (E01007179), Egremont Promenade South (E01007215) and Seacombe Library (E01007278), lapsed on 30 September 2025 and are no longer subject to any selective licensing designation.",
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "Six Lower Super Output Areas: Birkenhead South (E01007129 / Wirral 016D), Egerton North (E01007179 / Wirral 021C), Egremont Promenade South (E01007215 / Wirral 005A), Egremont South (E01007275 / Wirral 005E), Seacombe Library (E01007278 / Wirral 008E), Tranmere Lairds (E01007291 / Wirral 021D).",
+      "evidence": "Included only to record that this designation has expired and to flag the partial-renewal overlap; no street list is supplied, deliberately, so that no expired area can be matched. Wirral's full designation history, taken from its own 'Appendix 2 Selective Licensing Area Definitions', is Scheme 1 (Jul 2015 to Jun 2020), Scheme 2 (Apr 2019 to Mar 2024), Scheme 3 (Oct 2020 to Sep 2025), Scheme 4 (Apr 2024 to Mar 2029), Scheme 4a (Jul 2024 to Mar 2029) and Scheme 5 (Oct 2025 to Sep 2030). Only Schemes 4/4a and 5 are in force on 7 August 2026."
+    }
+  ]
+}

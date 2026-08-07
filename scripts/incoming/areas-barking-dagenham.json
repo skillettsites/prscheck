@@ -1,0 +1,72 @@
+{
+  "gss": "E09000002",
+  "council": "London Borough of Barking and Dagenham",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "wards",
+        "describedAs": "Three designated areas (Designation Areas 1, 2 and 3) which together cover all 19 wards of the borough"
+      },
+      "sourceUrl": "https://www.lbbd.gov.uk/sites/default/files/2025-01/Public%20Notice%20-%20Selective%20Licensing%20Designation.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-04-06",
+        "end": "2030-04-05",
+        "howVerified": "Paragraphs 5 and 6 of the council's own sealed public notice: 'The Designation will come into force on 6 April 2025' and 'The Designation shall cease to have effect on 5 April 2030 or earlier if the Council revokes the scheme under section 84 of the Act'. Paragraph 4 records it was approved by the Assembly on 18 September 2024 and made on 6 January 2025. The live council page lbbd.gov.uk/private-sector-housing/property-licensing/do-i-need-licence states in its body text that the scheme 'will come into effect on 6 April 2025 ... This scheme will run for five years, replacing the previous initiative, which ended in summer 2024'."
+      },
+      "includedWards": [
+        "Alibon",
+        "Barking Riverside",
+        "Beam",
+        "Becontree",
+        "Chadwell Heath",
+        "Eastbury",
+        "Goresbrook",
+        "Heath",
+        "Longbridge",
+        "Mayesbrook",
+        "Parsloes",
+        "Thames View",
+        "Valence",
+        "Village",
+        "Whalebone",
+        "Abbey",
+        "Gascoigne",
+        "Northbury",
+        "Eastbrook & Rush Green"
+      ],
+      "excludedWards": [],
+      "wardBoundaryEra": "current (May 2022 ward boundaries)",
+      "currentSuccessorWards": [],
+      "streets": [],
+      "postcodes": [],
+      "excludedPostcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "Verbatim from paragraph 7 of the designation notice: 'This designation shall apply to the following three designated areas of the London Borough of Barking and Dagenham. Maps of the three designation areas are included in annex A below. The following wards are included in each designated area.' The notice's table then lists, verbatim: Designation Area 1 - 'Alibon, Barking Riverside, Beam, Becontree, Chadwell Heath, Eastbury, Goresbrook, Heath, Longbridge, Mayesbrook, Parsloes, Thames View, Valence, Village, Whalebone'; Designation Area 2 - 'Abbey, Gascoigne, Northbury'; Designation Area 3 - 'Eastbrook & Rush Green'. Those 15 + 3 + 1 = 19 wards are ALL 19 wards of the borough, so the scheme is effectively borough-wide. Annex A key: 'Designation 1 (dark blue, centre), Designation 2 (light blue, left side) and Designation 3 (turquoise, right side)'. The area numbering matters for the scheme objectives (objective 1 applies to Areas 1 and 3, objective 2 to Areas 1 and 2) but not to whether a licence is needed.",
+      "evidence": "Transcribed from the council's own sealed public notice PDF (Notice of Designation of Areas for Selective Licensing under section 80 of the Housing Act 2004, Seal Register No 53332). The PDF is a scan with imperfect embedded OCR: the ward names appear as 'Eastburj' and 'Lastbrook & Rush Green', which are OCR errors for Eastbury (E05014060) and Eastbrook & Rush Green (E05014059) - both corrected against the ONS ward register for LAD24CD E09000002, which lists exactly 19 wards, all 19 of which appear in the notice. The council's own news release of 10 January 2025 confirms the borough-wide reading, quoting the Cabinet Member: 'I'm really pleased that the scheme has been approved for the whole borough', and stating 'from Spring, all landlords in Barking and Dagenham must obtain a licence to rent out their properties'. No street schedule, no postcode schedule and no address checker is published; the designation is defined by whole wards plus the Annex A maps."
+    },
+    {
+      "match": { "type": "additional", "coverage": "borough-wide" },
+      "sourceUrl": "https://www.lbbd.gov.uk/sites/default/files/2025-01/Additional%20Licensing%20of%20Houses%20-%20FINAL.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-01-09",
+        "end": "2030-01-09",
+        "howVerified": "The designation notice states the council 'hereby designates the entire area of its district, as subject to Additional Licensing', was 'made on 9th October 2024' and comes into force in January 2025, ceasing to have effect in January 2030. The live council page confirms the precise commencement date: 'Our new Additional Licensing Scheme was launched on 9 January 2025 and will run for five years following its approval by the Council's Cabinet on 23 July 2024', and the 10 January 2025 news release says 'The council's new Additional Licensing Scheme came into force yesterday (9 January 2025)'. Day-of-month for the 2030 end date is not legible in the scanned notice; treated as 9 January 2030 by five-year run from commencement."
+      },
+      "includedWards": [],
+      "excludedWards": [],
+      "wardBoundaryEra": null,
+      "currentSuccessorWards": [],
+      "streets": [],
+      "postcodes": [],
+      "excludedPostcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "Verbatim from paragraph 6: 'This designation shall apply to the entire area of the London Borough of Barking and Dagenham as delineated and edged red on the map in [Annex A].' Whole borough.",
+      "evidence": "Recorded separately from the selective scheme. Covers HMOs occupied by 3 or 4 persons forming 2 or more households that are outside mandatory HMO licensing. Same geographic effect as the selective scheme in practice (both reach every ward), but a different licence type and a different commencement date."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "gss": "E09000030",
+  "council": "London Borough of Tower Hamlets",
+  "schemes": [
+    {
+      "match": { "type": "selective", "coverage": "areas" },
+      "sourceUrl": "https://www.towerhamlets.gov.uk/Documents/Housing/Housing-provision/Additional_licensing_scheme/Notice-of-Designation-for-Selective-Licensing-Amended-notice.docx",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2021-10-01",
+        "end": "2026-10-01",
+        "howVerified": "Paragraphs 2 and 3 of the council's own AMENDED public notice: 'The Designation was made on the 28th April 2021 (and amended in respect of paragraph 5(f) (below) on 30th June 2021) and shall come into force on the 1st October 2021' and 'The Designation shall cease to have effect on the 1st October 2026 or earlier if the Council revokes the scheme under section 84 of the Act'. The live council selective licensing page confirms in its body text that the council 'decided to renew the Selective Licensing Scheme for another five years from the 1 October 2021'. In force on 7 August 2026, but EXPIRES IN UNDER TWO MONTHS - re-check before 1 October 2026."
+      },
+      "includedWards": [
+        "Weavers",
+        "Whitechapel",
+        "Spitalfields and Banglatown"
+      ],
+      "excludedWards": [],
+      "wardBoundaryEra": "pre-22 May 2014 ward boundaries",
+      "currentSuccessorWards": [],
+      "streets": [],
+      "postcodes": [],
+      "excludedPostcodes": [
+        "E1 1ES",
+        "E1 1FA",
+        "E1 7HS",
+        "E1 8EU",
+        "E1 1LP",
+        "E1 1DQ"
+      ],
+      "checkerUrl": "http://towerhamlets.maps.arcgis.com/apps/webappviewer/index.html?id=4a4c0a9efd2340449613cfaad16f54ef",
+      "boundaryDescription": "Verbatim from paragraph 4 of the amended designation notice: 'The Designation shall apply to the Council ward areas of Weavers, Whitechapel, Spitalfields and Banglatown (pre 22nd May 2014 ward boundaries) of the London Borough of Tower Hamlets as delineated on the map below.' The exclusion at paragraph 5(f), added by the 30 June 2021 amendment, is verbatim: 'The house is within one of the following postcodes: E1 1ES, E1 1FA, E1 7HS, E1 8EU, E1 1LP and E1 1DQ'. CRITICAL: these are pre-2014 ward boundaries and they do NOT equal the current ONS wards of the same names. Current Tower Hamlets wards Weavers (E05009335), Whitechapel (E05009336) and Spitalfields & Banglatown (E05009333) exist but were redrawn in 2014, so ward membership alone must NOT be treated as a match. The council publishes the authoritative designated polygons as its own public GIS layer: https://services1.arcgis.com/KZuCGRSe2K5BiG1Z/arcgis/rest/services/Internet_Private_Landlord_Licensing_areas/FeatureServer/0 - it returns exactly three polygons with NAME = 'Spitalfields and Banglatown', 'Weavers', 'Whitechapel' and STATUS = 'Areas part of the scheme'. Point-in-polygon against that layer is the correct address-level test.",
+      "evidence": "Transcribed from the council's own amended public notice (a .docx published on towerhamlets.gov.uk), which is the operative version: the original 28 April 2021 notice was amended on 30 June 2021 to add paragraph 5(f), the six excluded E1 postcodes. Those six postcodes are the only published postcode-level detail; no street schedule and no list of INCLUDED postcodes is published. The council's own address checker is the ArcGIS web app linked from the selective licensing page ('You can view our map and enter your postcode. Properties shown in the green area require a selective licence'), and its backing feature service is queryable anonymously, so PRSCheck can do a real point-in-polygon rather than a ward guess. Note the superseded 2016 notice (Notice-of-designation-of-areas-for-selective-licensing.pdf, in force 1 Oct 2016 to 1 Oct 2021) is still on the council site and must not be used."
+    },
+    {
+      "match": { "type": "additional", "coverage": "borough-wide" },
+      "sourceUrl": "https://www.towerhamlets.gov.uk/Documents/Housing/Health-and-housing/Tower-Hamlets-Public-Notice-of-designation-for-Additional-Licensing-2023.docx",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2024-04-01",
+        "end": "2029-03-31",
+        "howVerified": "Council's own public notice: 'The Designation was made on the 25th October 2023 and shall come into force on the 1st April 2024' and 'The Designation shall cease to have effect on the 31st March 2029 or earlier if the Council revokes the scheme under section 60 of the Act'."
+      },
+      "includedWards": [],
+      "excludedWards": [],
+      "wardBoundaryEra": null,
+      "currentSuccessorWards": [],
+      "streets": [],
+      "postcodes": [],
+      "excludedPostcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "Verbatim: 'The Designation shall apply to the entire district of the London Borough of Tower Hamlets as delineated on the map below.' Whole borough.",
+      "evidence": "Recorded separately because the additional (HMO) scheme covers the entire borough while the selective scheme covers only three pre-2014 ward areas. The council's additional licensing page states 'As of 1 April 2024 the Additional Licensing Scheme will cover the whole borough including the current Selective licensing designation (Spitalfields and Banglatown, Weavers, Whitechapel pre-2014 wards)' and lists all borough wards."
+    }
+  ]
+}

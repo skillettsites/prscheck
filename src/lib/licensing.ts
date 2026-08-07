@@ -36,6 +36,87 @@ export interface Scheme {
   wards?: string[] | null;
   /** Populated for `coverage: "streets"` designations where the council publishes a schedule. */
   streets?: DesignatedStreet[] | null;
+  /**
+   * Postcodes the council itself lists as designated.
+   *
+   * This is the strongest signal we have, because the postcode is the one thing
+   * we know exactly: postcodes.io returns it, nothing is derived or guessed. It
+   * is used ONLY to confirm a designation, never to rule one out, because these
+   * lists are usually illustrative rather than exhaustive and a postcode's
+   * absence proves nothing.
+   */
+  postcodes?: string[] | null;
+  /**
+   * Postcodes the council states straddle the designation boundary, so some
+   * properties in them are inside the scheme and some are not.
+   *
+   * County Durham publishes 21 of these and explicitly refuses to give a yes or
+   * no on them. Treating them as designated, or as not designated, would both
+   * be wrong for roughly half the properties concerned, so they get their own
+   * answer telling the landlord to confirm with the council.
+   */
+  boundaryPostcodes?: string[] | null;
+  /**
+   * Wards the council states are covered IN FULL by a map-defined designation,
+   * and wards it states are wholly outside it.
+   *
+   * A polygon designation is not all-or-nothing at ward level. Nottingham's
+   * scheme is drawn on a map, but the council publishes a table saying which
+   * wards are Full, which are None, and which are partly covered. That turns
+   * twelve of its twenty wards into definite answers, leaving only the genuinely
+   * partial ones to hedge. Without this the whole scheme can only ever say
+   * "check the boundary", including to landlords the council has explicitly
+   * placed inside or outside it.
+   */
+  fullWards?: string[] | null;
+  excludedWards?: string[] | null;
+  /**
+   * Postcodes appearing in the council's public register of licences ISSUED
+   * under this scheme.
+   *
+   * This is not the designated area, and must never be read as one: it is
+   * evidence that licensable properties exist in that postcode. It supports
+   * "likely required" and nothing stronger, because a postcode can straddle the
+   * designation boundary, so a neighbour holding a licence does not prove this
+   * property needs one. Absence proves nothing at all.
+   */
+  licensedPostcodes?: string[] | null;
+  /**
+   * True when the council's own street or postcode list is indicative rather
+   * than the legal boundary.
+   *
+   * Not every published list carries the same weight. Manchester's and Sefton's
+   * ARE the designation, schedule and all. Rotherham publishes street and
+   * postcode lists while stating verbatim that "not all properties within a
+   * street or postcode may be subject to Selective Licensing due to where the
+   * boundary falls", and Doncaster's street list comes from its consultation
+   * evidence base rather than the designation instrument. Treating those as
+   * definitive would assert a licence requirement the council itself has not.
+   * Where this is set, a match yields "likely required" instead of "required".
+   */
+  listIsIndicative?: boolean;
+  /**
+   * True when the ward list was computed from the designation's geometry rather
+   * than transcribed from a published list.
+   *
+   * Liverpool publishes its designated area only as a boundary polygon, so its
+   * ward list is derived by intersecting that polygon with ONS ward boundaries.
+   * The designation does not follow ward lines: six of the listed wards are only
+   * partly inside, and three wards NOT listed still contain designated land. A
+   * derived list therefore cannot rule anyone out, because a ward's absence may
+   * just mean most of it falls outside. Misses degrade to a boundary check.
+   */
+  wardListIsDerived?: boolean;
+  /**
+   * The council's own address checker, where it runs one.
+   *
+   * Some designations are drawn as a polygon on a map and the council publishes
+   * no street or postcode schedule at all, so no amount of research turns them
+   * into something an address can be matched against. Sending the landlord
+   * straight to the council's own lookup is then the most useful thing we can
+   * do, and it is a far better answer than "contact the council".
+   */
+  checkerUrl?: string | null;
   areaDescription?: string;
   feeApprox?: string | null;
   sourceUrl: string;
@@ -185,6 +266,11 @@ const STREET_WORDS: Record<string, string> = {
   mt: "mount",
   bldgs: "buildings",
 };
+
+/** "m14 5tq" and "M14 5TQ" and "M145TQ" all compare equal. */
+export function normalizePostcode(p: string): string {
+  return p.toUpperCase().replace(/[^A-Z0-9]/g, "");
+}
 
 export function normalizeStreet(s: string): string {
   return s
@@ -466,6 +552,12 @@ export interface PropertyAnswers {
    * name alone cannot answer the question there.
    */
   houseNumber?: string | null;
+  /**
+   * The property's postcode. The only part of the address that is known rather
+   * than derived, so where a council publishes designated postcodes it gives
+   * the most reliable match available.
+   */
+  postcode?: string | null;
 }
 
 /**
@@ -477,7 +569,7 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
   const council = councilsByGss.get(gss);
   if (!council || !hasCouncilLicensingPowers(council.nation)) return null;
 
-  const { occupants, households, wardName, street, streetSource, houseNumber } = answers;
+  const { occupants, households, wardName, street, streetSource, houseNumber, postcode } = answers;
   // A street is trustworthy enough to rule a designation OUT when it came from
   // Ordnance Survey, or when it was recovered from an address that led with a
   // house number ("12 Askew Road"), where stripping the number leaves exactly
@@ -497,6 +589,60 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
         explanation: `An approved ${scheme.type} licensing scheme starts ${scheme.start ?? "soon"}. ${scheme.areaDescription ?? ""}`.trim(),
       };
     }
+    // Postcode first, because it is the only part of the address we know for
+    // certain rather than derive. A hit is decisive; a miss tells us nothing,
+    // since these lists are rarely exhaustive, so it falls through rather than
+    // returning a negative.
+    if (postcode) {
+      const target = normalizePostcode(postcode);
+      // A postcode the council itself flags as straddling the boundary must be
+      // answered as such. Half its properties are in the scheme and half are
+      // not, so both a yes and a no would be wrong for half of them.
+      if ((scheme.boundaryPostcodes ?? []).some((p) => normalizePostcode(p) === target)) {
+        return {
+          scheme,
+          verdict: "check-boundary",
+          explanation: `${council.name} states that postcode ${postcode} straddles the boundary of this ${scheme.type} licensing designation, so some properties in it need a licence and some do not. The council will not answer this from the postcode alone. Confirm this specific address with them.`,
+        };
+      }
+      if (Array.isArray(scheme.postcodes) && scheme.postcodes.length > 0) {
+        if (scheme.postcodes.some((p) => normalizePostcode(p) === target)) {
+          return scheme.listIsIndicative
+            ? {
+                scheme,
+                verdict: "likely-required",
+                explanation:
+                  `${council.name} lists postcode ${postcode} within the designated area for this ${scheme.type} licensing scheme. The council states that not every property in a listed postcode is covered, because of where the boundary falls, so confirm this exact address. ` +
+                  (scheme.checkerUrl ? `Its own checker will tell you: ${scheme.checkerUrl}` : ""),
+              }
+            : {
+                scheme,
+                verdict: "required",
+                explanation: `${council.name} lists this property's postcode (${postcode}) in the designated area for this ${scheme.type} licensing scheme, so a licence is required.`,
+              };
+        }
+      }
+    }
+    // Ward-level certainty inside a map-defined designation. Councils that draw
+    // their scheme as a polygon often still publish which wards are wholly in
+    // and wholly out, and those are definite answers regardless of coverage type.
+    if (wardName) {
+      const w = normalizeWard(wardName);
+      if ((scheme.fullWards ?? []).some((x) => normalizeWard(x) === w)) {
+        return {
+          scheme,
+          verdict: "required",
+          explanation: `${council.name} states that the whole of ${wardName} falls inside this ${scheme.type} licensing designation, so a licence is required.`,
+        };
+      }
+      if ((scheme.excludedWards ?? []).some((x) => normalizeWard(x) === w)) {
+        return {
+          scheme,
+          verdict: "not-in-area",
+          explanation: `${council.name} states that ${wardName} falls wholly outside this ${scheme.type} licensing designation.`,
+        };
+      }
+    }
     if (isWholeDistrict(scheme.coverage)) {
       return {
         scheme,
@@ -504,12 +650,35 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
         explanation: `${council.name} runs a ${scheme.coverage} ${scheme.type} licensing scheme, so the designation covers this property's area.`,
       };
     }
-    if (scheme.coverage === "wards" && wardName) {
+    // Ward matching runs on any scheme that carries a ward list, not only those
+    // we happened to label "wards". A designation's shape in our data is a
+    // description, not a contract, and research routinely disagrees with it:
+    // Charnwood's scheme reads as ward-based to us and street-based to the
+    // council. Gating on the label meant a schedule we hold could be ignored.
+    //
+    // It runs AFTER street matching, which is deliberate. A scheme can carry
+    // both, and a street schedule settles the property while a ward list only
+    // ever narrows it to "likely". Answering from the coarser of the two when
+    // the finer one is available would throw away precision we have. Street
+    // matching returns null when it cannot decide, so this still runs then.
+    const fromStreets = assessStreetSchedule();
+    if (fromStreets) return fromStreets;
+
+    if ((scheme.wards?.length ?? 0) > 0 && wardName) {
       if (wardMatches(scheme.wards, wardName)) {
         return {
           scheme,
           verdict: "likely-required",
           explanation: `This property's ward (${wardName}) is in the scheme's designated ward list. Some designations cover only parts of a ward, so confirm the exact boundary on the council's map.`,
+        };
+      }
+      if (scheme.wardListIsDerived) {
+        return {
+          scheme,
+          verdict: "check-boundary",
+          explanation:
+            `This property's ward (${wardName}) is not in the wards we have derived for this designation, but ${council.name} publishes the area only as a boundary, not as a ward list, so the designation does not follow ward lines and a ward that is mostly outside it can still contain designated streets. This is not a definite no. ` +
+            (scheme.checkerUrl ? `Check the exact address on the council's own checker: ${scheme.checkerUrl}` : `Confirm the address with the council.`),
         };
       }
       if (schemeWardsAreStale(scheme.wards, gss)) {
@@ -525,15 +694,36 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
         explanation: `This property's ward (${wardName}) is not in the scheme's designated ward list (${(scheme.wards ?? []).length} wards designated).`,
       };
     }
-    // Street-level designations: if the council publishes a schedule and we
-    // know the street, this becomes a definite answer instead of a hedge.
-    if (scheme.coverage === "streets") {
+    /**
+     * Street-level designations: if the council publishes a schedule and we know
+     * the street, this becomes a definite answer instead of a hedge.
+     *
+     * Keyed on holding a schedule rather than on the coverage label, for the
+     * same reason as ward matching. Returns null when it cannot decide, so the
+     * caller falls through to the coarser checks.
+     */
+    function assessStreetSchedule(): SchemeAssessment | null {
+      // Re-narrowed inside: this is a hoisted declaration, so it is analysed
+      // without the caller's earlier `if (!council) return null` guard.
+      if (!council) return null;
+      if (!Array.isArray(scheme.streets) || scheme.streets.length === 0) return null;
       const m = streetMatch(scheme, street, houseNumber);
       if (m && m.inList) {
         // In the list and inside a designated stretch (or the whole street is
         // designated). Asserting "required" here is the safe direction, so it
         // does not depend on how the street name was obtained.
         if (m.numberVerdict === true) {
+          // An indicative list places the street inside the area but does not
+          // settle the property, so it cannot assert a requirement outright.
+          if (scheme.listIsIndicative) {
+            return {
+              scheme,
+              verdict: "likely-required",
+              explanation:
+                `${street} is on ${council.name}'s published street list for this ${scheme.type} licensing scheme. The council states that not every property on a listed street is covered, because of where the boundary falls, so confirm this exact address. ` +
+                (scheme.checkerUrl ? `Its own checker will tell you: ${scheme.checkerUrl}` : ""),
+            };
+          }
           return {
             scheme,
             verdict: "required",
@@ -568,6 +758,17 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
         };
       }
       if (m && !m.inList) {
+        // An indicative list is not the boundary, so absence from it is not
+        // evidence of absence from the scheme.
+        if (scheme.listIsIndicative) {
+          return {
+            scheme,
+            verdict: "check-boundary",
+            explanation:
+              `${street} does not appear on ${council.name}'s published street list for this ${scheme.type} licensing scheme, but that list is indicative rather than the legal boundary, so this is not a definite no. ` +
+              (scheme.checkerUrl ? `Confirm on the council's own checker: ${scheme.checkerUrl}` : `Confirm the address with the council.`),
+          };
+        }
         // Close but not exact almost always means the council misspelled its
         // own street in the schedule. Never assert a negative over that.
         if (streetNearMiss(scheme, street)) {
@@ -590,11 +791,35 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
           explanation: `${street} is not on ${council.name}'s designated street list for this scheme (${(scheme.streets ?? []).length} streets designated).`,
         };
       }
+      // We hold a schedule but do not know this property's street, so it cannot
+      // decide. Fall through to the coarser checks rather than guess.
+      return null;
+    }
+    // Last resort before hedging: has the council actually licensed properties
+    // in this postcode under this scheme? That is not the designated area, so it
+    // can only ever support "likely", but it beats telling the landlord nothing.
+    if (postcode && Array.isArray(scheme.licensedPostcodes) && scheme.licensedPostcodes.length > 0) {
+      const target = normalizePostcode(postcode);
+      if (scheme.licensedPostcodes.some((p) => normalizePostcode(p) === target)) {
+        return {
+          scheme,
+          verdict: "likely-required",
+          explanation:
+            `${council.name}'s public register shows licences already issued under this ${scheme.type} licensing scheme at properties in ${postcode}, so this postcode sits in or on the edge of the designated area. ` +
+            (scheme.checkerUrl
+              ? `Confirm this exact address on the council's own checker: ${scheme.checkerUrl}`
+              : `The designation is drawn on a map, so confirm the exact address with the council.`),
+        };
+      }
     }
     return {
       scheme,
       verdict: "check-boundary",
-      explanation: `This scheme uses a ${scheme.coverage}-level designation${scheme.areaDescription ? ` (${scheme.areaDescription})` : ""}. Check the property's address against the council's designation map or street list.`,
+      explanation:
+        `This scheme uses a ${scheme.coverage}-level designation${scheme.areaDescription ? ` (${scheme.areaDescription})` : ""}. ` +
+        (scheme.checkerUrl
+          ? `${council.name} runs its own address checker for this scheme, which will confirm this exact property: ${scheme.checkerUrl}`
+          : `Check the property's address against the council's designation map or street list.`),
     };
   };
 

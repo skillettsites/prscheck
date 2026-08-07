@@ -1,0 +1,58 @@
+{
+  "gss": "E09000010",
+  "council": "London Borough of Enfield",
+  "schemes": [
+    {
+      "match": { "type": "selective", "coverage": "wards" },
+      "sourceUrl": "https://www.enfield.gov.uk/__data/assets/pdf_file/0012/11055/Selective-licensing-public-notice-Housing.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2021-09-01",
+        "end": "2026-08-31",
+        "howVerified": "Read from paragraphs 2 and 3 of Enfield's own section 80 public notice PDF, which states the designations were made 18 May 2021, were confirmed by the Secretary of State on 18 May 2021, come into force 1 September 2021 and cease to have effect on 31 August 2026."
+      },
+      "currentWards": [],
+      "wardMapping": [],
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://www.enfield.gov.uk/services/housing/selective-licensing-scheme",
+      "evidence": "The designation cannot be safely restated in post-2022 ward names and Enfield has not republished it. The council's own page says in terms: 'The selective licensing scheme is defined by the boundaries that were in place at the time the licensing designation was made on 18 May 2021. Properties that fall within the boundaries of the selective designation will be licensable irrespective of the new ward boundary changes that come into force on 5 May 2022.' currentWards is therefore left empty on purpose; the existing 14 pre-2022 ward names (Bowes, Chase, Edmonton Green, Enfield Highway, Enfield Lock, Haselbury, Jubilee, Lower Edmonton, Palmers Green, Ponders End, Southbury, Southgate Green, Turkey Street, Upper Edmonton, split as Designation One of 13 wards plus Designation Two of Chase) remain the correct legal description and should be kept, not deleted. No official old-to-new ward mapping was found: the LGBCE final recommendations report for Enfield is only available via the National Archives web archive, which returned HTTP 504 on every attempt, and The London Borough of Enfield (Electoral Changes) Order 2020 (SI 2020/1109) lists the 25 new wards with no successor mapping. Because Enfield publishes a free OS Places address and postcode checker on the page above, plus the actual designation polygons as an official KML at https://www.enfield.gov.uk/services/housing/selective-licensing-scheme/?a=22485 (82 coordinate rings titled 'Selective Licensing Areas'), a derived name-level mapping was deliberately not attempted; ward-level mapping would over-claim, since old Chase ward was split across more than one new ward. This replaces a previously cited commercial source."
+    },
+    {
+      "match": { "type": "selective", "coverage": "wards" },
+      "sourceUrl": "https://www.enfield.gov.uk/__data/assets/pdf_file/0030/129972/Selective-licensing-scheme-designation-Housing.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": false,
+        "start": "2026-09-01",
+        "end": "2031-08-31",
+        "howVerified": "Read from paragraphs 2 and 4 of the London Borough of Enfield Designation of Areas for Selective Licensing 2026 (section 80 Housing Act 2004 public notice), which states the designation was approved by Cabinet decision on 22 April 2026, comes into force on 1 September 2026 and ceases to have effect on 31 August 2031. Not yet in force on 7 August 2026, so stillLive is false today; it takes effect the day after the 2021 designation expires, leaving no gap."
+      },
+      "currentWards": [
+        "Bowes",
+        "Brimsdown",
+        "Bullsmoor",
+        "Carterhatch",
+        "Edmonton Green",
+        "Enfield Lock",
+        "Haselbury",
+        "Jubilee",
+        "Lower Edmonton",
+        "Ponders End",
+        "Southbury",
+        "Upper Edmonton",
+        "Whitewebbs",
+        "New Southgate",
+        "Palmers Green",
+        "Southgate",
+        "Town"
+      ],
+      "wardMapping": [],
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://www.enfield.gov.uk/services/housing/private-rented-property-licensing",
+      "evidence": "Ward list transcribed verbatim from paragraph 5 of Enfield's own signed section 80 public notice: Designation One is Bowes, Brimsdown, Bullsmoor, Carterhatch, Edmonton Green, Enfield Lock, Haselbury, Jubilee, Lower Edmonton, Ponders End, Southbury, Upper Edmonton and Whitewebbs (13 wards); Designation Two is New Southgate, Palmers Green, Southgate and Town (4 wards). Independently confirmed by two further official documents: the Cabinet decision record at https://governance.enfield.gov.uk/ieDecisionDetails.aspx?AIId=60195 (decided 22 April 2026, 'Approve the designation of a selective licensing area of 17 wards ... from 01 September 2026') and the Cabinet report at https://governance.enfield.gov.uk/documents/s113155/Selective%20Licensing%20Scheme%20-%20Private%20Rented%20Housing%20Report.pdf, which lists the same 17 wards split across the same two designations. All 17 names match the current ONS ward set for E09000010 exactly, so no boundary mapping is needed. No street list and no postcode list are published; the designated area is defined by wards and by the map at Annex A of the notice (Cabinet Appendix 5, https://governance.enfield.gov.uk/documents/s113160/Appendix%205.pdf, which is a map image only). This replaces a previously cited commercial source."
+    }
+  ]
+}

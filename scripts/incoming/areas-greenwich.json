@@ -1,0 +1,48 @@
+{
+  "gss": "E09000011",
+  "council": "Royal Borough of Greenwich",
+  "schemes": [
+    {
+      "match": { "type": "selective", "coverage": "areas" },
+      "sourceUrl": "https://www.royalgreenwich.gov.uk/sites/default/files/2025-09/selective-licensing-designation-of-area-public%20notice.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2022-10-01",
+        "end": "2027-10-01",
+        "howVerified": "Paragraphs 2 and 3 of the council's own signed designation notice PDF state the designation was made on 31 March 2022, comes into force on 1 October 2022 and 'shall cease to have effect on 1 October 2027', and the council's live consultation page (opened 21 July 2026) confirms the council 'currently runs ... selective licensing for certain privately rented homes (currently across five wards)'."
+      },
+      "areaNames": [
+        "Parts of Plumstead ward",
+        "Parts of Glyndon ward",
+        "Parts of Shooters Hill ward",
+        "Parts of Woolwich Common ward",
+        "Parts of Woolwich Riverside ward"
+      ],
+      "includedWards": [],
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://www.royalgreenwich.gov.uk/homepage/484/selective_licencing_scheme_lookup",
+      "boundaryDescription": "Verbatim from paragraph 4 of the designation notice: 'This designation shall apply to the five Council ward areas of Parts of Plumstead, Glyndon, Shooters Hill, Woolwich Common and Woolwich Riverside as delineated and edged red on the map at Annex A.' Those are pre-May-2022 ward names. The council's own 2026 consultation page restates the same area against post-2022 boundaries: 'The Royal Borough of Greenwich introduced selective licensing in parts of six wards (based on pre-2023 ward boundaries) on 1 October 2022: Plumstead and Glyndon, Plumstead Common, Shooters Hill, Woolwich Common, Woolwich Arsenal*, Woolwich Dockyard* (*previously part of the former Woolwich Riverside ward)'. Only PARTS of each ward are designated; the legal boundary exists solely as the red-edged polygon on the Annex A map, so ward membership alone must not be treated as a match.",
+      "evidence": "The designation area is defined only by a map (Annex A of the designation notice) - no street schedule or postcode schedule is published by the council, so no street list can be transcribed without inferring from the map. The council does however operate its own address-level checker at the checkerUrl, which accepts an address string and returns either 'is covered by the Selective Licensing Scheme' or 'does not currently require a Selective Licence' (verified live on 7 August 2026: '1 - Sandbach Place - London - SE18 7EX' returns covered, '1 - Eltham Green - London - SE9 5JZ' returns not covered). It is a POST form on that page with field 'address', and its autocomplete source is /site/custom_scripts/apps/lookup-selective-licensing/source.php?term=, which returns the full borough gazetteer (not just designated addresses). Our previous source, londonpropertylicensing.co.uk, is replaced by the council's own signed designation notice; note the commercial description of 'five whole wards' is wrong - the designation covers parts of wards only."
+    },
+    {
+      "match": { "type": "additional", "coverage": "borough" },
+      "sourceUrl": "https://www.royalgreenwich.gov.uk/sites/default/files/2025-09/additional-licensing-designation-of-area-public-notice.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2024-01-01",
+        "end": "2028-12-31",
+        "howVerified": "Paragraphs 2 and 3 of the council's signed additional licensing designation notice state it was made on 20 September 2023, comes into force on 1 January 2024 and 'shall cease to have effect on 31 December 2028'."
+      },
+      "areaNames": ["Whole borough"],
+      "includedWards": [],
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "Verbatim from paragraph 4: 'This designation shall apply to the district of the Council as delineated on the map at annex a.' i.e. borough-wide.",
+      "evidence": "Recorded separately from the selective scheme because it is a different designation under section 56 of the Housing Act 2004 (additional HMO licensing), not section 80. Cited as 'the Royal Borough of Greenwich Designation for an Area for Additional Licensing of Houses in Multiple Occupation 2023'. It covers all HMOs borough-wide that are not already subject to mandatory licensing, so it needs no street or area matching. The council's live guidance page confirms three schemes run in parallel: borough-wide mandatory HMO, borough-wide additional HMO, and selective in five ward areas."
+    }
+  ]
+}

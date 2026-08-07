@@ -82,9 +82,94 @@ const CASES: Case[] = [
   },
 ];
 
+/**
+ * Cases for the area-level answers: postcode lists, ward-level certainty inside
+ * a map-drawn designation, derived ward lists, and indicative street lists.
+ * Each one exists because getting it wrong produces a confident wrong answer.
+ */
+interface AreaCase {
+  what: string;
+  gss: string;
+  postcode?: string | null;
+  wardName?: string | null;
+  street?: string | null;
+  houseNumber?: string | null;
+  streetSource?: "os" | "epc-numbered" | "epc-derived" | "manual";
+  expect: Verdict;
+}
+
+const AREA_CASES: AreaCase[] = [
+  {
+    what: "County Durham, designated postcode",
+    gss: "E06000047",
+    postcode: "DH2 1BP",
+    expect: "required",
+  },
+  {
+    what: "County Durham, postcode the council says straddles the boundary, must not answer yes or no",
+    gss: "E06000047",
+    postcode: "DH2 2DP",
+    expect: "check-boundary",
+  },
+  {
+    what: "Nottingham, ward the council places wholly inside a map-drawn designation",
+    gss: "E06000018",
+    wardName: "Radford",
+    expect: "required",
+  },
+  {
+    what: "Nottingham, ward absent from the statutory notice, so wholly outside",
+    gss: "E06000018",
+    wardName: "Bilborough",
+    expect: "not-in-area",
+  },
+  {
+    what: "Nottingham, genuinely partial ward must still hedge",
+    gss: "E06000018",
+    wardName: "Meadows",
+    expect: "check-boundary",
+  },
+  {
+    what: "Liverpool, ward inside the derived list",
+    gss: "E08000012",
+    wardName: "Anfield",
+    expect: "likely-required",
+  },
+  {
+    what: "Liverpool, ward outside a GEOMETRY-DERIVED list must never be a definite no",
+    gss: "E08000012",
+    wardName: "Penny Lane",
+    expect: "check-boundary",
+  },
+  {
+    what: "Rotherham, street on an INDICATIVE list is likely, not certain",
+    gss: "E08000018",
+    street: "Fitzwilliam Road",
+    houseNumber: "10",
+    streetSource: "epc-numbered",
+    expect: "likely-required",
+  },
+];
+
 let pass = 0;
 let extra = 0;
 const failures: string[] = [];
+
+for (const c of AREA_CASES) {
+  extra++;
+  const d = determine(c.gss, {
+    occupants: 2,
+    households: 1,
+    wardName: c.wardName ?? null,
+    postcode: c.postcode ?? null,
+    street: c.street ?? null,
+    houseNumber: c.houseNumber ?? null,
+    streetSource: c.streetSource ?? null,
+  });
+  const verdicts = [...(d?.selective ?? []), ...(d?.additional ?? [])].map((a) => a.verdict);
+  if (verdicts.includes(c.expect as never)) pass++;
+  else failures.push(`  ${c.what}\n    expected ${c.expect}, got [${verdicts.join(", ") || "none"}]`);
+}
 
 for (const c of CASES) {
   const d = determine(c.gss, {

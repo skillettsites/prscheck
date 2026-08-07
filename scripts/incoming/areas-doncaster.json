@@ -1,0 +1,191 @@
+{
+  "gss": "E08000017",
+  "council": "City of Doncaster Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas"
+      },
+      "sourceUrl": "https://www.doncaster.gov.uk/services/housing/hexthorpeslc",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2022-03-01",
+        "end": "2027-02-28",
+        "howVerified": "The Hexthorpe Designation Notice 2021 PDF states the Council designated the area on 15 November 2021 and \"The designation will come into force on 1st March 2022\"; the live council page (titled \"Selective Licensing Scheme- Hexthorpe 2022 - 2027\") states in its Designation section that the area \"is an area for selective licensing for a period of 5 years which commenced on the 1st March 2022\", giving a statutory end of 28 February 2027. The council's separate selective licensing overview page confirms Hexthorpe is the only scheme currently operating and that the Edlington scheme ended on 6 February 2023."
+      },
+      "streets": [
+        {
+          "name": "Abbott Street",
+          "numbers": null
+        },
+        {
+          "name": "Barnstone Street",
+          "numbers": null
+        },
+        {
+          "name": "Beaconsfield Road",
+          "numbers": null
+        },
+        {
+          "name": "Bentley Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Bramworth Road",
+          "numbers": null
+        },
+        {
+          "name": "Bridge Street",
+          "numbers": null
+        },
+        {
+          "name": "Cherry Tree Road",
+          "numbers": null
+        },
+        {
+          "name": "Crawshaw Road",
+          "numbers": null
+        },
+        {
+          "name": "Crimpsall Road",
+          "numbers": null
+        },
+        {
+          "name": "Dell Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Denison Road",
+          "numbers": null
+        },
+        {
+          "name": "Eden Grove",
+          "numbers": null
+        },
+        {
+          "name": "Ellerker Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Garden Lane",
+          "numbers": null
+        },
+        {
+          "name": "Gladstone Road",
+          "numbers": null
+        },
+        {
+          "name": "Glenfield Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Hawfield Close",
+          "numbers": null
+        },
+        {
+          "name": "Hexthorpe Road",
+          "numbers": null
+        },
+        {
+          "name": "Kirk Street",
+          "numbers": null
+        },
+        {
+          "name": "Laneside Close",
+          "numbers": null
+        },
+        {
+          "name": "Langer Street",
+          "numbers": null
+        },
+        {
+          "name": "Laughton Road",
+          "numbers": null
+        },
+        {
+          "name": "Lindum Street",
+          "numbers": null
+        },
+        {
+          "name": "Mutual Street",
+          "numbers": null
+        },
+        {
+          "name": "Nicholson Road",
+          "numbers": null
+        },
+        {
+          "name": "Old Hexthorpe Road",
+          "numbers": null
+        },
+        {
+          "name": "Ramsden Road",
+          "numbers": null
+        },
+        {
+          "name": "Riverside Close",
+          "numbers": null
+        },
+        {
+          "name": "Salisbury Road",
+          "numbers": null
+        },
+        {
+          "name": "Scarll Road",
+          "numbers": null
+        },
+        {
+          "name": "Senior Road",
+          "numbers": null
+        },
+        {
+          "name": "Shady Side",
+          "numbers": null
+        },
+        {
+          "name": "Sheardown Street",
+          "numbers": null
+        },
+        {
+          "name": "Shirley Road",
+          "numbers": null
+        },
+        {
+          "name": "Spansyke Street",
+          "numbers": null
+        },
+        {
+          "name": "Stanley Road Flats (Salisbury Road)",
+          "numbers": null
+        },
+        {
+          "name": "Stoneclose Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Travis Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Urban Road",
+          "numbers": null
+        },
+        {
+          "name": "Windle Road",
+          "numbers": null
+        },
+        {
+          "name": "Wharncliffe Street",
+          "numbers": null
+        }
+      ],
+      "postcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "From the Hexthorpe Designation Notice 2021, paragraph 2, verbatim: \"The designation Area applies to the residential area of Hexthorpe as shown and delineated in red on the plan shown at Appendix A (which can be viewed at www.doncaster.gov.uk/services/housing/hexthorpeslc).\" No road-by-road boundary description is published; Appendix A is a raster OS plan (\"Hexthorpe Selective Licensing - Designation 15th November 2021\") with no street labels in its text layer.",
+      "evidence": "The legal area is map-defined only: Hexthorpe Designation Notice 2021 (https://www.doncaster.gov.uk/Documents/DocumentView/Stream/Media/Default/Housing/Hexthorpe%20Designation%20Notice%202021.pdf) and Appendix A - Map of Designated Area (https://www.doncaster.gov.uk/Documents/DocumentView/Stream/Media/Default/Housing/Appendix%20A%20-%20Map%20of%20Designated%20Area.pdf), both linked from the live scheme page. IMPORTANT CAVEAT ON THE STREET LIST: the council publishes no schedule of streets attached to the designation. The 41 streets above are transcribed verbatim from Table 4 of the council's own statutory consultation document, \"Consultative Document and Justification Report October 2020\" (https://www.doncaster.gov.uk/Documents/DocumentView/Stream/Media/Default/Environmental/Consultative%20Document%20and%20Justification%20Report%20October%202020.pdf, page 13), which enumerates Hexthorpe \"street by street\" and totals 1,733 domestic units against the report's own statement that Hexthorpe \"consists of approximately 1800 domestic properties\", so it is close to a complete enumeration of the area the designation covers. It is evidence-base data, not a designation schedule, so treat it as strong indicative coverage rather than the legal boundary and keep pointing landlords at the Appendix A plan. Column alignment was cross-checked: pdftotext -layout misaligned the final percentage column, while pdfplumber ruled-cell extraction did not; the street-name column is identical under both modes. The same street list, with the variant spelling \"Stone Close Avenue\", also appears in the council's 2015-2020 scheme review (https://dmbcwebstolive01.blob.core.windows.net/media/Default/Housing/2020%20Hexthorpe%20Selective%20Licensing%20Review%202015%20-%202020.pdf). No online address checker exists: the designation notice tells landlords to \"seek advice from the Council\", and the only lookup offered on the scheme page is a licence register, not an area checker. The ArcGIS interactive map referenced in the consultation appendix (dmbc.maps.arcgis.com item ab09127cb2654f9bbcd2bd6e405502bb) is no longer shared publicly and returns a permissions error, so it is not given as a checker URL.",
+      "listIsIndicative": true
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "gss": "E06000057",
+  "council": "Northumberland County Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas"
+      },
+      "sourceUrl": "https://www.northumberland.gov.uk/NorthumberlandCountyCouncil/media/Housing/Private%20sector%20team/Sealed-Designation-of-selective-licensing-area-Croft-Ward-Blyth-1_1.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2024-10-14",
+        "end": "2029-10-13",
+        "howVerified": "Paragraphs 2 and 3 of the sealed designation read 'The Designation is made on the 9th day of July 2024 and shall come into force on Monday 14th October 2024' and 'The Designation shall cease to have effect at the end of the period of 5 years from the date that it comes into force', which the live council page restates as ending 13 October 2029."
+      },
+      "streets": [
+        {
+          "name": "Arcot Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Argyle Street",
+          "numbers": null
+        },
+        {
+          "name": "Arthur Street",
+          "numbers": null
+        },
+        {
+          "name": "Athlone Court",
+          "numbers": null
+        },
+        {
+          "name": "Balfour Street",
+          "numbers": null
+        },
+        {
+          "name": "Beaumont Street",
+          "numbers": null
+        },
+        {
+          "name": "Bowes Court",
+          "numbers": null
+        },
+        {
+          "name": "Bowes Street",
+          "numbers": null
+        },
+        {
+          "name": "Boyne Court",
+          "numbers": null
+        },
+        {
+          "name": "Bridge Street",
+          "numbers": null
+        },
+        {
+          "name": "Church Street",
+          "numbers": null
+        },
+        {
+          "name": "Commercial Road",
+          "numbers": null
+        },
+        {
+          "name": "Delaval Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Disraeli Street",
+          "numbers": null
+        },
+        {
+          "name": "Durban Street",
+          "numbers": null
+        },
+        {
+          "name": "Edward Street",
+          "numbers": null
+        },
+        {
+          "name": "Gladstone Street",
+          "numbers": null
+        },
+        {
+          "name": "Goschen Street",
+          "numbers": null
+        },
+        {
+          "name": "Grieve Street",
+          "numbers": null
+        },
+        {
+          "name": "Hambledon Street",
+          "numbers": null
+        },
+        {
+          "name": "Havelock Street",
+          "numbers": null
+        },
+        {
+          "name": "High Street",
+          "numbers": null
+        },
+        {
+          "name": "Hodgsons Road",
+          "numbers": null
+        },
+        {
+          "name": "Keel Row",
+          "numbers": null
+        },
+        {
+          "name": "Keelmans Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Kerry Close",
+          "numbers": null
+        },
+        {
+          "name": "King Street",
+          "numbers": null
+        },
+        {
+          "name": "Laburnum Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Lilac Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Maddison Street",
+          "numbers": null
+        },
+        {
+          "name": "Market Street",
+          "numbers": null
+        },
+        {
+          "name": "Merton Square",
+          "numbers": null
+        },
+        {
+          "name": "Northumberland Court",
+          "numbers": null
+        },
+        {
+          "name": "Parsons Street",
+          "numbers": null
+        },
+        {
+          "name": "Portland Street",
+          "numbers": null
+        },
+        {
+          "name": "Regent Street",
+          "numbers": null
+        },
+        {
+          "name": "Salisbury Street",
+          "numbers": null
+        },
+        {
+          "name": "Seaforth Street",
+          "numbers": null
+        },
+        {
+          "name": "Silver Birch Close",
+          "numbers": null
+        },
+        {
+          "name": "Simpson Street",
+          "numbers": null
+        },
+        {
+          "name": "Summers Street",
+          "numbers": null
+        },
+        {
+          "name": "Thompson Street",
+          "numbers": null
+        },
+        {
+          "name": "Thoroton Street",
+          "numbers": null
+        },
+        {
+          "name": "Wanley Street",
+          "numbers": null
+        },
+        {
+          "name": "Waterloo Road",
+          "numbers": null
+        },
+        {
+          "name": "West Salisbury Street",
+          "numbers": null
+        },
+        {
+          "name": "Wright Street",
+          "numbers": null
+        }
+      ],
+      "postcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "The designation applies to the Croft Ward area of Blyth, bounded by and including Hodgsons Road (B1329) to the north; Waterloo Road/Bridge Street (B1328) to the south; Regent Street (B1329) to the east; and Renwick Road (A193) to the west. The sealed designation itself instead reads at paragraph 4: 'This Designation shall apply to the Croft Ward area of Blyth, Northumberland as delineated and edged red on the plan annexed and in the streets listed in the Schedule to this Designation.'",
+      "evidence": "The 47 streets above are transcribed from page 4 of the sealed designation instrument (Common Seal affixed, Seal no. 26996, signed Paul Stevens, Senior Lawyer), under the heading 'SCHEDULE / Streets in the Designated Area subject to Part 3 of the Act'. This is a statutory schedule, not a map reading. The PDF is a scan with no text layer, so it was rendered at 170 dpi and the 3-column table read directly; the Schedule has no house-number column at all, so the absence of number restrictions is a positive finding rather than an omission. IMPORTANT DISCREPANCY: a second council PDF (boundary-map-and-street-list.pdf, an orphan consultation-era asset not linked from the current page) lists only 46 streets, omitting Simpson Street and spelling Thompson Street as 'Thompsons Street'; three independent extractions of that file agreed with each other but disagreed with the sealed instrument. The sealed designation is the legal instrument and is the one linked from the live council page, so it governs and Simpson Street is treated as in scope. No address checker or postcode list exists: the sitemap was enumerated and the only interactive link, the application portal at northumberland.metastreet.co.uk, has no address-lookup function."
+    }
+  ]
+}

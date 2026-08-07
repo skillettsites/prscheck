@@ -1,0 +1,92 @@
+{
+  "gss": "E09000022",
+  "council": "London Borough of Lambeth",
+  "schemes": [
+    {
+      "match": { "type": "selective", "coverage": "wards" },
+      "sourceUrl": "https://www.lambeth.gov.uk/sites/default/files/2024-09/Designation%20of%204%20Wards%20Public%20Notice%20Final.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2024-09-02",
+        "end": "2029-09-01",
+        "howVerified": "Read from the body of Lambeth's signed section 80 public notice, paragraphs 3 and 4: designation made 22nd May 2024, comes into force 2nd September 2024, ceases to have effect on 1st September 2029."
+      },
+      "currentWards": [
+        "Knight's Hill",
+        "Streatham Common & Vale",
+        "Streatham Hill East",
+        "Streatham St Leonard's"
+      ],
+      "wardMapping": [
+        {
+          "old": "Knights Hill",
+          "new": ["Knight's Hill"],
+          "source": "https://www.legislation.gov.uk/uksi/2022/37/made/data.html"
+        },
+        {
+          "old": "Streatham St Leonards",
+          "new": ["Streatham St Leonard's"],
+          "source": "https://www.legislation.gov.uk/uksi/2022/37/made/data.html"
+        }
+      ],
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://experience.arcgis.com/experience/9dbda0725bce4175be464cd9d546a49d/",
+      "evidence": "PHASE 1 (Designation 1 of 2024). Source is the sealed public notice 'London Borough of Lambeth Designations 1 of an Area for Selective Licensing 2024', made under section 80 Housing Act 2004 and signed by Venetia Reid-Baptiste, Corporate Director, on 22 May 2024. Paragraph 5 names four wards; the area is defined by ward plus a map at Annex A, with no street list or postcode list published. The notice spells two wards without apostrophes ('Knights Hill', 'Streatham St Leonards'); these are transcription variants of the current statutory ward names in the London Borough of Lambeth (Electoral Changes) Order 2022 (SI 2022/37), corrected in currentWards and recorded in wardMapping. Still in force on 7 August 2026."
+    },
+    {
+      "match": { "type": "selective", "coverage": "wards" },
+      "sourceUrl": "https://moderngov.lambeth.gov.uk/documents/s166540/Appendix%203%20-%20Designation%20of%2019%20Wards.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-09-01",
+        "end": "2030-08-31",
+        "howVerified": "Read from the body of Lambeth's section 80 public notice, paragraphs 3 and 4: designation confirmed 23rd May 2025, comes into force 1st September 2025, ceases to have effect on 31st August 2030."
+      },
+      "currentWards": [
+        "Brixton Acre Lane",
+        "Brixton North",
+        "Brixton Rush Common",
+        "Brixton Windrush",
+        "Clapham Common & Abbeville",
+        "Clapham East",
+        "Clapham Park",
+        "Clapham Town",
+        "Gipsy Hill",
+        "Herne Hill & Loughborough Junction",
+        "Kennington",
+        "Myatt's Fields",
+        "Oval",
+        "St Martin's",
+        "Stockwell East",
+        "Stockwell West & Larkhall",
+        "Streatham Hill West & Thornton",
+        "Streatham Wells",
+        "West Dulwich"
+      ],
+      "wardMapping": [
+        {
+          "old": "Myatt's Field",
+          "new": ["Myatt's Fields"],
+          "source": "https://www.legislation.gov.uk/uksi/2022/37/made/data.html"
+        },
+        {
+          "old": "Myatts Field",
+          "new": ["Myatt's Fields"],
+          "source": "https://moderngov.lambeth.gov.uk/mgElectionElectionAreaResults.aspx?Page=1&EID=46&RPID=57462399"
+        },
+        {
+          "old": "St Martins",
+          "new": ["St Martin's"],
+          "source": "https://www.legislation.gov.uk/uksi/2022/37/made/data.html"
+        }
+      ],
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://experience.arcgis.com/experience/9dbda0725bce4175be464cd9d546a49d/",
+      "evidence": "PHASE 2 (Designation 2 of 2025). Source is the public notice 'London Borough of Lambeth Phase 2 Designations for Areas for Selective Licensing 2025', made under section 80 Housing Act 2004 and signed by the Cabinet Member for Safer Communities, Councillor Dr Mahamed Hashi, published as Appendix 3 to the Cabinet Member decision 'Implementation of the 2nd Phase Selective Licensing Scheme' (moderngov decision ID 9958). Paragraph 5 names 19 wards; the area is defined by ward plus a map at Annex A, with no street list or postcode list published. 'Myatt's Field' is a transcription variant, not a boundary change: the designation notice itself writes 'Myatts Field' and Lambeth's web page writes 'Myatt's Field', but the current ward is 'Myatt's Fields', confirmed independently by the statutory schedule to the London Borough of Lambeth (Electoral Changes) Order 2022 (SI 2022/37) and by Lambeth's own 5 May 2022 election results by ward on moderngov. Still in force on 7 August 2026."
+    }
+  ]
+}

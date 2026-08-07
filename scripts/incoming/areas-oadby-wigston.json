@@ -1,0 +1,754 @@
+{
+  "gss": "E07000135",
+  "council": "Oadby and Wigston Borough Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "part"
+      },
+      "sourceUrl": "https://www.oadby-wigston.gov.uk/files/documents/selective_licensing_designation_2025_2030/Selective%20Licensing%20Designation%202025-2030.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-11-10",
+        "end": "2030-11-09",
+        "howVerified": "Page 1 of the sealed public notice reads 'has on the 6 February 2025 designated the Selective Licensing area of Wigston and South Wigston' and 'The Designation shall come into force on the on 10 November 2025. The designation shall cease to be of effect from five-years from 10 November 2025'; page 3 carries the seal (Samuel J Ball, Monitoring Officer, 8 July 2025, Seal No 2025/26)."
+      },
+      "streets": [
+        {
+          "name": "Aisne Road",
+          "numbers": null
+        },
+        {
+          "name": "Albion Street",
+          "numbers": null
+        },
+        {
+          "name": "Arnold Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Baldwin Road",
+          "numbers": null
+        },
+        {
+          "name": "Barge Close",
+          "numbers": null
+        },
+        {
+          "name": "Basset Street",
+          "numbers": null
+        },
+        {
+          "name": "Belper Close",
+          "numbers": null
+        },
+        {
+          "name": "Bennett Way",
+          "numbers": null
+        },
+        {
+          "name": "Best Close",
+          "numbers": null
+        },
+        {
+          "name": "Blaby Road",
+          "numbers": null
+        },
+        {
+          "name": "Blenheim Close",
+          "numbers": null
+        },
+        {
+          "name": "Bush Lock Close",
+          "numbers": null
+        },
+        {
+          "name": "Canal Street",
+          "numbers": null
+        },
+        {
+          "name": "Chatsworth Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Clifford Street",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Drive",
+          "numbers": null
+        },
+        {
+          "name": "Countesthorpe Road",
+          "numbers": null
+        },
+        {
+          "name": "Crete Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Cromford Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Curzon Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Cutting Close",
+          "numbers": null
+        },
+        {
+          "name": "Darley Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Denacre Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Devonshire Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Double Rail Close",
+          "numbers": null
+        },
+        {
+          "name": "Dunton Street",
+          "numbers": null
+        },
+        {
+          "name": "Ellison Close",
+          "numbers": null
+        },
+        {
+          "name": "Ervins Lock Road",
+          "numbers": null
+        },
+        {
+          "name": "Fairfield Street",
+          "numbers": null
+        },
+        {
+          "name": "Florence Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Foxton Lock Close",
+          "numbers": null
+        },
+        {
+          "name": "Garden Street",
+          "numbers": null
+        },
+        {
+          "name": "Glengate",
+          "numbers": null
+        },
+        {
+          "name": "Hazelwood Road",
+          "numbers": null
+        },
+        {
+          "name": "Healey Street",
+          "numbers": null
+        },
+        {
+          "name": "Hindoostan Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Irlam Street",
+          "numbers": null
+        },
+        {
+          "name": "Jordan Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Keel Close",
+          "numbers": null
+        },
+        {
+          "name": "Kirkdale Road",
+          "numbers": null
+        },
+        {
+          "name": "Lansdowne Grove",
+          "numbers": null
+        },
+        {
+          "name": "Leopold Street",
+          "numbers": null
+        },
+        {
+          "name": "Lock Gate Close",
+          "numbers": null
+        },
+        {
+          "name": "Lock Keeper Close",
+          "numbers": null
+        },
+        {
+          "name": "Matlock Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Mill Close",
+          "numbers": null
+        },
+        {
+          "name": "Moores Close",
+          "numbers": null
+        },
+        {
+          "name": "Namur Road",
+          "numbers": null
+        },
+        {
+          "name": "Narrow Boat Close",
+          "numbers": null
+        },
+        {
+          "name": "Orange Street",
+          "numbers": null
+        },
+        {
+          "name": "Park Road",
+          "numbers": null
+        },
+        {
+          "name": "Pochins Bridge Road",
+          "numbers": null
+        },
+        {
+          "name": "Railway Street",
+          "numbers": null
+        },
+        {
+          "name": "Saffron Road",
+          "numbers": null
+        },
+        {
+          "name": "St Thomas' Road",
+          "numbers": null
+        },
+        {
+          "name": "Station Street",
+          "numbers": null
+        },
+        {
+          "name": "Tansley Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Taylors Bridge Road",
+          "numbers": null
+        },
+        {
+          "name": "Tigers Road",
+          "numbers": null
+        },
+        {
+          "name": "Timber Street",
+          "numbers": null
+        },
+        {
+          "name": "Towpath Link",
+          "numbers": null
+        },
+        {
+          "name": "Weir Close",
+          "numbers": null
+        },
+        {
+          "name": "Windlass Drive",
+          "numbers": null
+        },
+        {
+          "name": "Wright Place",
+          "numbers": null
+        },
+        {
+          "name": "Abington Close",
+          "numbers": null
+        },
+        {
+          "name": "Alfreton Road",
+          "numbers": null
+        },
+        {
+          "name": "Ashbourne Road",
+          "numbers": null
+        },
+        {
+          "name": "Avondale Road",
+          "numbers": null
+        },
+        {
+          "name": "Aylestone Lane",
+          "numbers": null
+        },
+        {
+          "name": "Baddeley Drive",
+          "numbers": null
+        },
+        {
+          "name": "Bakewell Road",
+          "numbers": null
+        },
+        {
+          "name": "Barnby Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Bell Street",
+          "numbers": null
+        },
+        {
+          "name": "Birchtree Road",
+          "numbers": null
+        },
+        {
+          "name": "Blunts Lane",
+          "numbers": null
+        },
+        {
+          "name": "Bradgate Drive",
+          "numbers": null
+        },
+        {
+          "name": "Brailsford Road",
+          "numbers": null
+        },
+        {
+          "name": "Bramcote Road",
+          "numbers": null
+        },
+        {
+          "name": "Breedon Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Brighton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Brixham Drive",
+          "numbers": null
+        },
+        {
+          "name": "Bull Head Street",
+          "numbers": null
+        },
+        {
+          "name": "Burgess Street",
+          "numbers": null
+        },
+        {
+          "name": "Burleigh Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Bushloe End",
+          "numbers": null
+        },
+        {
+          "name": "Calverton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Carlton Drive",
+          "numbers": null
+        },
+        {
+          "name": "Castleton Road",
+          "numbers": null
+        },
+        {
+          "name": "Central Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Chapel Lane",
+          "numbers": null
+        },
+        {
+          "name": "Chartwell Drive",
+          "numbers": null
+        },
+        {
+          "name": "Chellaston Road",
+          "numbers": null
+        },
+        {
+          "name": "Cherry Street",
+          "numbers": null
+        },
+        {
+          "name": "Clarkes Road",
+          "numbers": null
+        },
+        {
+          "name": "Cleveland Road",
+          "numbers": "up to 44"
+        },
+        {
+          "name": "Coronation Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Croft Drive",
+          "numbers": null
+        },
+        {
+          "name": "Dale Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Denmead Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Duffield Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Dukes Close",
+          "numbers": null
+        },
+        {
+          "name": "Eastway Road",
+          "numbers": null
+        },
+        {
+          "name": "Elizabeth Court",
+          "numbers": null
+        },
+        {
+          "name": "Elizabeth Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Elwin Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Exeter Road",
+          "numbers": null
+        },
+        {
+          "name": "Farleigh Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Finson Close",
+          "numbers": null
+        },
+        {
+          "name": "Fir Tree Close",
+          "numbers": null
+        },
+        {
+          "name": "Frederick Street",
+          "numbers": null
+        },
+        {
+          "name": "Gibson Close",
+          "numbers": null
+        },
+        {
+          "name": "Gladstone Street",
+          "numbers": null
+        },
+        {
+          "name": "Grange Road",
+          "numbers": null
+        },
+        {
+          "name": "Grangeway Road",
+          "numbers": null
+        },
+        {
+          "name": "Granville Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Granville Road",
+          "numbers": null
+        },
+        {
+          "name": "Guildford Drive",
+          "numbers": null
+        },
+        {
+          "name": "Hansen Court",
+          "numbers": null
+        },
+        {
+          "name": "Healthfield Road",
+          "numbers": null
+        },
+        {
+          "name": "Heatherley Grove",
+          "numbers": null
+        },
+        {
+          "name": "Highfield Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Highfield Drive",
+          "numbers": null
+        },
+        {
+          "name": "Holmden Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Horndean Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Ingleby Road",
+          "numbers": null
+        },
+        {
+          "name": "Junction Road",
+          "numbers": null
+        },
+        {
+          "name": "Kenneth Gamble Court",
+          "numbers": null
+        },
+        {
+          "name": "Kensington Drive",
+          "numbers": null
+        },
+        {
+          "name": "Kings Drive",
+          "numbers": null
+        },
+        {
+          "name": "Kingston Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Kingswood Court",
+          "numbers": null
+        },
+        {
+          "name": "Leicester Road",
+          "numbers": null
+        },
+        {
+          "name": "Long Street",
+          "numbers": null
+        },
+        {
+          "name": "Lynmouth Drive",
+          "numbers": null
+        },
+        {
+          "name": "Lyon Close",
+          "numbers": null
+        },
+        {
+          "name": "Manor Street",
+          "numbers": null
+        },
+        {
+          "name": "Mapleton Road",
+          "numbers": null
+        },
+        {
+          "name": "Margaret Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Maromme Square",
+          "numbers": null
+        },
+        {
+          "name": "Mayfield Drive",
+          "numbers": null
+        },
+        {
+          "name": "Milverton Close",
+          "numbers": null
+        },
+        {
+          "name": "Milverton Drive",
+          "numbers": null
+        },
+        {
+          "name": "Moat Street",
+          "numbers": null
+        },
+        {
+          "name": "Newstead Avenue",
+          "numbers": null
+        },
+        {
+          "name": "North Street",
+          "numbers": null
+        },
+        {
+          "name": "Northfield Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Orchards Drive",
+          "numbers": null
+        },
+        {
+          "name": "Orson Drive",
+          "numbers": null
+        },
+        {
+          "name": "Owston Drive",
+          "numbers": null
+        },
+        {
+          "name": "Paddock Street",
+          "numbers": null
+        },
+        {
+          "name": "Penney Close",
+          "numbers": null
+        },
+        {
+          "name": "Pullman Road",
+          "numbers": null
+        },
+        {
+          "name": "Queens Drive",
+          "numbers": null
+        },
+        {
+          "name": "Ramsdean Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Regent Close",
+          "numbers": null
+        },
+        {
+          "name": "Repton Road",
+          "numbers": null
+        },
+        {
+          "name": "Rolleston Road",
+          "numbers": null
+        },
+        {
+          "name": "Ruskington Drive",
+          "numbers": null
+        },
+        {
+          "name": "Rutland Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Sandown Road",
+          "numbers": null
+        },
+        {
+          "name": "Shackerdale Road",
+          "numbers": null
+        },
+        {
+          "name": "Shardlow Road",
+          "numbers": null
+        },
+        {
+          "name": "Shenton Close",
+          "numbers": null
+        },
+        {
+          "name": "South Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Spring Lane",
+          "numbers": null
+        },
+        {
+          "name": "Station Road",
+          "numbers": null
+        },
+        {
+          "name": "The Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Thorpe Drive",
+          "numbers": null
+        },
+        {
+          "name": "Two Steeples Square",
+          "numbers": null
+        },
+        {
+          "name": "Tythorn Drive",
+          "numbers": null
+        },
+        {
+          "name": "Victoria Street",
+          "numbers": null
+        },
+        {
+          "name": "Viking Road",
+          "numbers": null
+        },
+        {
+          "name": "Warmsley Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Warwick Road",
+          "numbers": null
+        },
+        {
+          "name": "Weldon Road",
+          "numbers": null
+        },
+        {
+          "name": "West Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Westerby Close",
+          "numbers": null
+        },
+        {
+          "name": "Westfield Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Whitehead Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Willow Park Drive",
+          "numbers": null
+        },
+        {
+          "name": "Willow Place",
+          "numbers": null
+        },
+        {
+          "name": "Wiltshire Road",
+          "numbers": null
+        }
+      ],
+      "postcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "...designated the Selective Licensing area of Wigston and South Wigston (\"The Designation\") as delineated in blue on the map at Annex A which includes, but is not limited to, an area bounded by Granville Road and Brighton Avenue to the north, Avondale Road to the east, Countesthorpe Road to the South and Saffron Road and Hindoostan Avenue to the west.",
+      "evidence": "The 182 streets above are transcribed from Annex B (pages 5-6) of the sealed public notice 'Designation of an area for Selective Licensing, Section 80, Housing Act 2004', titled 'Wigston and South Wigston Designation of an Area for Selective Licensing 2025'. The PDF is a scanned image with no text layer (pdftotext returns only form feeds), so it was rendered with PyMuPDF and transcribed visually, then each table column was re-rendered separately at 330 dpi as an independent cross-check; both extractions agreed exactly. Annex B has three 'Street Name' columns: column 1 carries the sub-heading 'South Wigston' (first 64 entries here) and columns 2-3 form one continuous unlabelled alphabetical run for Wigston Magna (remaining 118). 'Cleveland Road (up to 44)' is the ONLY house-number restriction in the whole annex and is preserved verbatim. Two names are transcribed as printed rather than corrected: 'Healthfield Road' (the real street is Heathfield Road) and 'St Thomas' Road' with a right single quote. SCOPE CAVEAT: the council web page says the scheme 'only covers private-rented houses', but the notice itself says it 'applies to any privately-rented property, subject to any statutory exceptions' (mandatory-licensable HMOs, social housing, and the Selective Licensing of Houses (Specified Exemptions) (England) Order 2006). The predecessor South Wigston Ward scheme ran 5 May 2020 to 4 May 2025 and has lapsed; there was a roughly six-month gap. No postcode list and no licensing-area address checker are published; Annex A (page 4) is a blue-outlined OS map from which no street was inferred."
+    }
+  ]
+}

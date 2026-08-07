@@ -1,0 +1,905 @@
+{
+  "gss": "E08000021",
+  "council": "Newcastle upon Tyne City Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas",
+        "describedAs": "Record 1 - Byker Old Town (~533 properties) and Greater High Cross / Benwell (~32x properties)"
+      },
+      "sourceUrl": "https://www.newcastle.gov.uk/sites/default/files/Selective%20Licensing%20Designation%20Letter%20June%202021%20(1).pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2021-10-01",
+        "end": "2026-09-30",
+        "howVerified": "The designation notice (dated 29 June 2021, made 21 June 2021) states it shall come into force on 1 October 2021 and shall cease to have effect on 30 September 2026, and the live council Selective Licensing page still lists Byker Old Town and Greater High Cross as commenced October 2021 with 'This scheme is due to end October 2026'."
+      },
+      "supersededBy": "Not yet superseded on 7 August 2026. It expires 30 September 2026 and is replaced from 30 September 2026 by The Newcastle City Council Designation of an Area for Selective Licensing 2026 (made 24 February 2026, Greater High Cross Area + Byker Area, running to 29 September 2031).",
+      "streets": [
+        {
+          "name": "Allendale Road",
+          "numbers": "63-189"
+        },
+        {
+          "name": "Bird Nest Road",
+          "numbers": "1-7"
+        },
+        {
+          "name": "Chatsworth Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Irthing Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Relton Avenue",
+          "numbers": null
+        }
+      ],
+      "postcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "PART 1 Greater High Cross Area: \"The area bounded by Adelaide Terrace to the north; St Johns Road to the east; Atkinson Road to the west; and Armstrong Road to the south and the area bounded by Armstrong Road to the north, east by Atkinson Road; South Benwell Road to the west; and Whitehouse Road to the south.\" PART 2 Byker Old Town Area: \"The area within Byker Old Town bounded by Welbeck Road to the south, Roman Avenue to the east Grace Street to the north and Bothal Street to the west.\" PART 3 Byker Allendale South: \"The area of Allendale South consisting of 63-189 Allendale Road, 1-7 Bird Nest Road, Chatsworth Gardens, Irthing Avenue and Relton Avenue.\"",
+      "evidence": "This is The Newcastle City Council Designation of an Area for Selective Licensing Greater High Cross and Byker 2021, enclosed with the council's landlord letter of 30 June 2021, and it is still the only Byker/High Cross designation in force today. The designation defines Part 1 (Greater High Cross) and Part 2 (Byker Old Town) ONLY by a worded boundary, not by a street list, so no street list can honestly be given for those two parts; the five streets listed here are Part 3 (Byker Allendale South), which the designation does enumerate verbatim. Numbers are transcribed exactly as written (63-189 Allendale Road, 1-7 Bird Nest Road) and the designation says 'Bird Nest Road' singular, whereas the 2026 renewal spells it 'Birds Nest Road'. Do NOT borrow the 2026 renewal street list for this scheme: the areas differ, e.g. 2021 Allendale Road is 63-189 whereas the 2026 renewal is 31-189 odds."
+    },
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas",
+        "describedAs": "Record 2 - six-area scheme launched 5 April 2025 with partial ward coverage, including Cowgate"
+      },
+      "sourceUrl": "https://new.newcastle.gov.uk/sites/default/files/2025-02/Selective%20Licensing%20Designation%20dated%2022%20Oct%2024.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-04-05",
+        "end": "2030-04-05",
+        "howVerified": "The designation states it is made on 22 October 2024 and shall come into force on 5 April 2025 and shall cease to have effect on 5 April 2030; the live council Selective Licensing page confirms 'From April 2025 there is a new selective licensing scheme' listing the same six areas and links to this same PDF."
+      },
+      "supersededBy": null,
+      "streets": [
+        {
+          "name": "Aspen Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Chestnut Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Deepdale Crescent",
+          "numbers": "2-40 even only"
+        },
+        {
+          "name": "Eastern Way",
+          "numbers": "2-6 even only and 7-54 all numbers"
+        },
+        {
+          "name": "Fouracres Road",
+          "numbers": null
+        },
+        {
+          "name": "Greenhill View",
+          "numbers": null
+        },
+        {
+          "name": "Harehills Avenue",
+          "numbers": "8-46 even only"
+        },
+        {
+          "name": "Heathfield Crescent",
+          "numbers": null
+        },
+        {
+          "name": "High Moor Court",
+          "numbers": null
+        },
+        {
+          "name": "Hillsleigh Road",
+          "numbers": "2-58 even only"
+        },
+        {
+          "name": "Link Road",
+          "numbers": null
+        },
+        {
+          "name": "Mayfield Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Meadowdale Crescent",
+          "numbers": "1-23 odd only"
+        },
+        {
+          "name": "Ponteland Road",
+          "numbers": "58-252 even only and Moorside Court"
+        },
+        {
+          "name": "Rose Terrace",
+          "numbers": null
+        },
+        {
+          "name": "The Dales",
+          "numbers": null
+        },
+        {
+          "name": "Whinmoor Place",
+          "numbers": null
+        },
+        {
+          "name": "Whitethorn Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Howdene Road",
+          "numbers": null
+        },
+        {
+          "name": "Howlett Hall Road",
+          "numbers": "2-46 even only"
+        },
+        {
+          "name": "Ravenburn Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Swinley Gardens",
+          "numbers": "7-42 all numbers, 43-69 odd only"
+        },
+        {
+          "name": "Agricola Road",
+          "numbers": null
+        },
+        {
+          "name": "Axbridge Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Barnesbury Road",
+          "numbers": null
+        },
+        {
+          "name": "Beaconsfield Street",
+          "numbers": "2-100 even only, 103-319 odd only and number 314"
+        },
+        {
+          "name": "Beech Street",
+          "numbers": null
+        },
+        {
+          "name": "Belsay Place",
+          "numbers": null
+        },
+        {
+          "name": "Bentinck Road",
+          "numbers": null
+        },
+        {
+          "name": "Benwell Grove",
+          "numbers": null
+        },
+        {
+          "name": "Bishops Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Brancepeth Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Brighton Grove",
+          "numbers": null
+        },
+        {
+          "name": "Callerton Place",
+          "numbers": null
+        },
+        {
+          "name": "Canning Street",
+          "numbers": null
+        },
+        {
+          "name": "Chelsea Grove",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Road",
+          "numbers": "51-53 odd only and 54-116 even only"
+        },
+        {
+          "name": "Cliftonville Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Clovelly Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Colston Street",
+          "numbers": null
+        },
+        {
+          "name": "Condercum Road",
+          "numbers": "42-324 even only"
+        },
+        {
+          "name": "Cookson Street",
+          "numbers": null
+        },
+        {
+          "name": "Coventry Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Crossley Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Croydon Road",
+          "numbers": null
+        },
+        {
+          "name": "Curtis Road",
+          "numbers": "1 and 2"
+        },
+        {
+          "name": "Dilston Road",
+          "numbers": null
+        },
+        {
+          "name": "Dipton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Durham Street",
+          "numbers": null
+        },
+        {
+          "name": "Eastgate Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Ellesmere Road",
+          "numbers": null
+        },
+        {
+          "name": "Elliott Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Elswick Road",
+          "numbers": "297-315 odd only, 322-326 even only and 462-508 even only"
+        },
+        {
+          "name": "Fairholm Road",
+          "numbers": null
+        },
+        {
+          "name": "Farndale Road",
+          "numbers": null
+        },
+        {
+          "name": "Fenham Road",
+          "numbers": null
+        },
+        {
+          "name": "Gainsborough Grove",
+          "numbers": null
+        },
+        {
+          "name": "Glebe Street",
+          "numbers": null
+        },
+        {
+          "name": "Grainger Park Road",
+          "numbers": "3-19 all numbers and 37-71 all numbers"
+        },
+        {
+          "name": "Graingerville North",
+          "numbers": null
+        },
+        {
+          "name": "Hadrian Road",
+          "numbers": "1-9 odd only"
+        },
+        {
+          "name": "Hampstead Road",
+          "numbers": null
+        },
+        {
+          "name": "Hartington Street",
+          "numbers": null
+        },
+        {
+          "name": "Hull Street",
+          "numbers": null
+        },
+        {
+          "name": "Keldane Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Kingsley Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Ladykirk Road",
+          "numbers": null
+        },
+        {
+          "name": "Longley Street",
+          "numbers": null
+        },
+        {
+          "name": "Mill Lane",
+          "numbers": "numbers 262 and 264 only"
+        },
+        {
+          "name": "Normanton Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Normount Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Normount Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Normount Road",
+          "numbers": null
+        },
+        {
+          "name": "Northcote Street",
+          "numbers": null
+        },
+        {
+          "name": "Nuns Moor Road",
+          "numbers": "2-46 all numbers and 47-55 odd only"
+        },
+        {
+          "name": "Portland Street",
+          "numbers": null
+        },
+        {
+          "name": "Philip Street",
+          "numbers": null
+        },
+        {
+          "name": "Prospect Place",
+          "numbers": "7-43 odd only"
+        },
+        {
+          "name": "Sceptre Street",
+          "numbers": null
+        },
+        {
+          "name": "Severus Road",
+          "numbers": "1-22 all numbers"
+        },
+        {
+          "name": "Sidney Grove",
+          "numbers": null
+        },
+        {
+          "name": "Stanhope Street",
+          "numbers": "257-294 all numbers"
+        },
+        {
+          "name": "Stanton Street",
+          "numbers": null
+        },
+        {
+          "name": "Strathmore Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Studley Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Tamworth Road",
+          "numbers": null
+        },
+        {
+          "name": "Tiverton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Tweed Street",
+          "numbers": null
+        },
+        {
+          "name": "Ventnor Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Walter Terrace",
+          "numbers": "7-20 all numbers"
+        },
+        {
+          "name": "Wellesley Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Wellfield Road",
+          "numbers": null
+        },
+        {
+          "name": "West Road",
+          "numbers": "1-75 odd only"
+        },
+        {
+          "name": "Western Avenue",
+          "numbers": "2-40 all numbers"
+        },
+        {
+          "name": "Western Drive",
+          "numbers": null
+        },
+        {
+          "name": "Westgate Road",
+          "numbers": "South View and 368-585 all numbers"
+        },
+        {
+          "name": "Wingrove Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Wingrove Gardens",
+          "numbers": "7-139 odd only and 38-138 even only"
+        },
+        {
+          "name": "Wingrove Road",
+          "numbers": "1-179 all numbers"
+        },
+        {
+          "name": "Columbia Grange",
+          "numbers": "1-20 all numbers"
+        },
+        {
+          "name": "Denton Court",
+          "numbers": "1-24 all numbers"
+        },
+        {
+          "name": "Algernon Road",
+          "numbers": null
+        },
+        {
+          "name": "Aln Grove",
+          "numbers": "2-8 even only"
+        },
+        {
+          "name": "Beanley Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Bennett Court",
+          "numbers": "1-17 all numbers"
+        },
+        {
+          "name": "Blyth Court",
+          "numbers": "2-12 even only"
+        },
+        {
+          "name": "Charlton Street",
+          "numbers": null
+        },
+        {
+          "name": "Charlton Mews",
+          "numbers": "1-5 all numbers"
+        },
+        {
+          "name": "Dene Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Denton Avenue",
+          "numbers": "2-22 even only"
+        },
+        {
+          "name": "Denwick Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Dunnock Court",
+          "numbers": null
+        },
+        {
+          "name": "Eva Street",
+          "numbers": null
+        },
+        {
+          "name": "Farnham Close",
+          "numbers": null
+        },
+        {
+          "name": "Farnham Mews",
+          "numbers": null
+        },
+        {
+          "name": "Farnham Street",
+          "numbers": "1-11 all numbers"
+        },
+        {
+          "name": "Fernwood Road",
+          "numbers": "1-11 all numbers and 17,17A and 19"
+        },
+        {
+          "name": "Gladstone Street",
+          "numbers": null
+        },
+        {
+          "name": "Hulne Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Ingoe Street",
+          "numbers": null
+        },
+        {
+          "name": "Johnson Street",
+          "numbers": null
+        },
+        {
+          "name": "Lesbury Street",
+          "numbers": null
+        },
+        {
+          "name": "Loraine Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Maud Street",
+          "numbers": null
+        },
+        {
+          "name": "Montague Street",
+          "numbers": null
+        },
+        {
+          "name": "The Hastings, Northumberland Road",
+          "numbers": null
+        },
+        {
+          "name": "Northumberland Road",
+          "numbers": null
+        },
+        {
+          "name": "Orchard Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Percy Street",
+          "numbers": "1A only"
+        },
+        {
+          "name": "Rokeby Avenue",
+          "numbers": "1-9 odd only"
+        },
+        {
+          "name": "Rokeby Street",
+          "numbers": null
+        },
+        {
+          "name": "Rokeby Villas",
+          "numbers": "1-11 odd only"
+        },
+        {
+          "name": "Shipley Street",
+          "numbers": null
+        },
+        {
+          "name": "Store Street",
+          "numbers": null
+        },
+        {
+          "name": "Sugley Street",
+          "numbers": null
+        },
+        {
+          "name": "Sugley Villas",
+          "numbers": "1-10 all numbers"
+        },
+        {
+          "name": "The Orchard",
+          "numbers": null
+        },
+        {
+          "name": "Tyne View",
+          "numbers": null
+        },
+        {
+          "name": "Tynevale Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Union Hall Road",
+          "numbers": "1-46 all numbers and 47-55 odd only"
+        },
+        {
+          "name": "Warkworth Street",
+          "numbers": null
+        },
+        {
+          "name": "Wellington Street",
+          "numbers": null
+        },
+        {
+          "name": "West View",
+          "numbers": null
+        },
+        {
+          "name": "Woodburn Street",
+          "numbers": null
+        }
+      ],
+      "postcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": null,
+      "evidence": "Transcribed verbatim from The Newcastle City Council Designation of an Area for Selective Licensing 2025 (made 22 October 2024), Parts 1-6: Cowgate, HHRS, West End, Columbia Grange, Denton Court and Lemington. The designation defines the area purely by named streets with number restrictions, so there is no worded boundary. Cross-checked with two extraction modes (pdftotext -layout and PyMuPDF) plus pdfplumber word coordinates; the only disagreement was around Parts 4 and 5, where pdftotext -layout floated the number ranges out of reading order, and coordinate analysis confirms Columbia Grange = '1-20 all numbers' and Denton Court = '1-24 all numbers'. This scheme replaced the earlier 6 April 2020 five-area scheme (Cowgate, East End, HHRS, Scotswood Village, West End), whose East End and Scotswood Village areas were NOT renewed and are no longer licensable."
+    },
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas",
+        "describedAs": "NOT one of our three records - a fourth designation our data is missing: The Newcastle City Council Designation of an Area for Selective Licensing 2026 (Greater High Cross Area + Byker Area), made 24 February 2026, in force from 30 September 2026",
+        "start": "2026-10-01"
+      },
+      "sourceUrl": "https://new.newcastle.gov.uk/sites/default/files/2026-02/Designation%20Documents.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": false,
+        "start": "2026-09-30",
+        "end": "2031-09-29",
+        "howVerified": "The designation and its public notice both state it is made on 24 February 2026 and shall come into force on 30 September 2026 and shall remain in effect up to and including 29 September 2031. On 7 August 2026 it is validly made and published but NOT yet operative; the 2021 designation (Records 1/3) governs until 30 September 2026."
+      },
+      "supersededBy": null,
+      "streets": [
+        {
+          "name": "Adelaide Terrace",
+          "numbers": "41-133 odds"
+        },
+        {
+          "name": "Alford Lane",
+          "numbers": null
+        },
+        {
+          "name": "Angel View",
+          "numbers": null
+        },
+        {
+          "name": "Armstrong Road",
+          "numbers": "2-66 evens and 304-342 evens"
+        },
+        {
+          "name": "Atherton Drive",
+          "numbers": null
+        },
+        {
+          "name": "Atkinson Road",
+          "numbers": null
+        },
+        {
+          "name": "Benwell Close",
+          "numbers": null
+        },
+        {
+          "name": "Benwell Grange Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Benwell Grange Road",
+          "numbers": null
+        },
+        {
+          "name": "Benwell Grange Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Benwell Lane",
+          "numbers": "3 (The Vicarage)"
+        },
+        {
+          "name": "Bilbrough Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Bishops Road",
+          "numbers": null
+        },
+        {
+          "name": "Caroline Court",
+          "numbers": null
+        },
+        {
+          "name": "Clara Street",
+          "numbers": null
+        },
+        {
+          "name": "Egerton Street",
+          "numbers": null
+        },
+        {
+          "name": "Elswick Road",
+          "numbers": "337-387 odds"
+        },
+        {
+          "name": "Ethel Street",
+          "numbers": null
+        },
+        {
+          "name": "Gerald Street",
+          "numbers": null
+        },
+        {
+          "name": "Hodgkin Park Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Hodgkin Park Road",
+          "numbers": null
+        },
+        {
+          "name": "Hugh Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Joan Street",
+          "numbers": null
+        },
+        {
+          "name": "Lawson Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Macdonald Road",
+          "numbers": null
+        },
+        {
+          "name": "Maria Street",
+          "numbers": null
+        },
+        {
+          "name": "Provost Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Saint James Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Saint Johns Road",
+          "numbers": "75-117 odds"
+        },
+        {
+          "name": "South Benwell Road",
+          "numbers": "45,46,48,50,52,54, and 100"
+        },
+        {
+          "name": "Wishart House",
+          "numbers": null
+        },
+        {
+          "name": "Ada Street",
+          "numbers": null
+        },
+        {
+          "name": "Alfred Street",
+          "numbers": null
+        },
+        {
+          "name": "Allendale Road",
+          "numbers": "31-189 odds"
+        },
+        {
+          "name": "Benson Road",
+          "numbers": null
+        },
+        {
+          "name": "Birds Nest Road",
+          "numbers": "1-7 odds"
+        },
+        {
+          "name": "Blount Street",
+          "numbers": "15 and 17"
+        },
+        {
+          "name": "Bothal Street",
+          "numbers": "13-83 odds"
+        },
+        {
+          "name": "Brook Street",
+          "numbers": "70-74 evens, 71-76 odds"
+        },
+        {
+          "name": "Canterbury Street",
+          "numbers": null
+        },
+        {
+          "name": "Chatsworth Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Cleadon Street",
+          "numbers": null
+        },
+        {
+          "name": "Cresswell Street",
+          "numbers": null
+        },
+        {
+          "name": "Cullercoats Street",
+          "numbers": null
+        },
+        {
+          "name": "Dunmorlie Street",
+          "numbers": null
+        },
+        {
+          "name": "Emily Street",
+          "numbers": null
+        },
+        {
+          "name": "Gillies Street",
+          "numbers": null
+        },
+        {
+          "name": "Grace Street",
+          "numbers": null
+        },
+        {
+          "name": "Harriet Street",
+          "numbers": null
+        },
+        {
+          "name": "Irthing Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Manor House Close",
+          "numbers": "2-8 evens, 1-9 odds"
+        },
+        {
+          "name": "Morton Street",
+          "numbers": null
+        },
+        {
+          "name": "Relton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Renwick Street",
+          "numbers": null
+        },
+        {
+          "name": "Roman Avenue",
+          "numbers": "98-152 evens"
+        },
+        {
+          "name": "Scarborough Court",
+          "numbers": null
+        },
+        {
+          "name": "Scarborough Road",
+          "numbers": null
+        },
+        {
+          "name": "Tunstall Avenue",
+          "numbers": "1-59 odds, 2-60 evens"
+        },
+        {
+          "name": "Welbeck Road",
+          "numbers": "9-337 odds, 408-474 evens"
+        }
+      ],
+      "postcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": null,
+      "evidence": "Transcribed from the designation document (Parts 1-2, tabulated as Street Name / numbers / All-or-Part) and cross-checked line by line against the separate Public Notice of Designation dated 24 February 2026, which repeats the same list as running text. The two disagree in three places and the designation instrument has been preferred: it gives 'Brook Street 70-74 evens, 71-76 odds' where the notice reads '70-74 odds and 71-76 odds'; 'Hodgkin Park Crescent' where the notice reads 'Hodgin Park Crescent'; and 'Scarborough Court' where the notice reads 'Scarbrough Court'. The designation abbreviates 'Roman Ave' and 'Tunstall Ave'; the notice spells both out and those full forms are used here. Atherton Drive is whole-street ('All numbers including Manisty House') so numbers is null. This scheme takes over from the 2021 Byker/High Cross designation and its area is NOT identical to it (Allendale Road becomes 31-189 odds, up from 63-189), so do not apply this list before 30 September 2026. The council's Selective Licensing web page says the scheme starts '1 October 2026'; the legal instrument and public notice both say 30 September 2026, and the legal date is used here."
+    }
+  ]
+}

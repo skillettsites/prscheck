@@ -1,0 +1,72 @@
+{
+  "gss": "E09000031",
+  "council": "London Borough of Waltham Forest",
+  "schemes": [
+    {
+      "match": { "type": "selective", "coverage": "wards" },
+      "sourceUrl": "https://www.walthamforest.gov.uk/sites/default/files/2025-07/Selective%20Licensing%20Public%20Notice%202025%20v2_0.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-05-01",
+        "end": "2030-04-30",
+        "howVerified": "Paragraphs 2 and 3 of the council's own signed public notice state 'The Designation is made on 9th July 2024 and shall come into force on 1st May 2025' and 'It shall cease to have effect on 30th April 2030 (not more than 5 years) or earlier if the Council revokes the scheme under section 84 of the Act'; the live council page walthamforest.gov.uk/.../selective-licensing-scheme repeats 'In May 2025, we launched a new selective licensing scheme which runs until 30 April 2030'."
+      },
+      "includedWards": [
+        "Cann Hall",
+        "Cathall",
+        "Chapel End",
+        "Chingford Green",
+        "Forest",
+        "Grove Green",
+        "Hale End & Highams Park South",
+        "High Street",
+        "Higham Hill",
+        "Hoe Street",
+        "Larkswood",
+        "Lea Bridge",
+        "Leyton",
+        "Leytonstone",
+        "Markhouse",
+        "St James",
+        "Upper Walthamstow",
+        "Valley",
+        "William Morris",
+        "Wood Street"
+      ],
+      "excludedWards": [
+        "Hatch Lane & Highams Park North",
+        "Endlebury"
+      ],
+      "wardBoundaryEra": "current (May 2022 ward boundaries)",
+      "currentSuccessorWards": [],
+      "streets": [],
+      "postcodes": [],
+      "excludedPostcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "Verbatim from paragraph 4 of the designation notice: 'This designation shall apply to 20 out of 22 wards in the London Borough of Waltham Forest (excluding Hatch Lane/Highams Park North and Endlebury) as delineated and edged red on Map 1.' IMPORTANT: 'Hatch Lane/Highams Park North' is ONE ward, not two. The current (May 2022) ward 'Hatch Lane & Highams Park North' is ONS code E05013890; 'Endlebury' is E05013886. Two exclusions out of 22 wards leaves exactly the 20 wards the notice cites, which is the arithmetic check that this reading is correct. The council's own web page phrases the same exclusion loosely as 'all wards across the borough apart from Hatch Lane, Highams Park North and Endlebury', which reads as three wards; there is no standalone 'Hatch Lane' or 'Highams Park North' ward in Waltham Forest, so do not treat it as three.",
+      "evidence": "Transcribed from the council's own signed public notice PDF (Designation of an Area for Selective Licensing, s80 Housing Act 2004, signed 15 Nov 2024 by the portfolio holder). The designation is defined purely by ward, with no street schedule and no postcode schedule published, so ward membership IS the legal test here, unlike map-defined schemes. The includedWards list is the 22 current Waltham Forest wards from the ONS ward register (Wards December 2024 Boundaries UK, LAD24CD E09000031) minus the two wards the notice names as excluded; the notice's own count of '20 out of 22' confirms the arithmetic. Confirmed still in force on 7 August 2026 by the live scheme page, which is dated to the May 2025 launch and states the 30 April 2030 end date in the page body."
+    },
+    {
+      "match": { "type": "additional", "coverage": "borough-wide" },
+      "sourceUrl": "https://www.walthamforest.gov.uk/sites/default/files/2024-11/Additional%20Licensing%20Scheme%20Designation.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-04-01",
+        "end": "2030-03-31",
+        "howVerified": "Paragraphs 2 and 3 of the council's Additional Licensing designation notice: 'The Designation is made on 9th July 2024 and shall come into force on 1st April 2025' and 'It shall cease to have effect on 31st March 2030 (not more than five years) or earlier if the Authority revokes the scheme under section 84 of the Act'."
+      },
+      "includedWards": [],
+      "excludedWards": [],
+      "wardBoundaryEra": null,
+      "currentSuccessorWards": [],
+      "streets": [],
+      "postcodes": [],
+      "excludedPostcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "Verbatim from paragraph 4: 'This designation shall apply to the area of the London Borough of Waltham Forest as delineated and edged red on the map annex A below.' Whole borough, no ward exclusions.",
+      "evidence": "Recorded separately from the selective scheme because the areas differ: additional HMO licensing covers the WHOLE borough including Hatch Lane & Highams Park North and Endlebury, whereas selective licensing excludes those two wards. This matches the council's own statement on the selective licensing page that properties in the excluded wards 'rented to three or more unrelated tenants need an HMO licence'."
+    }
+  ]
+}

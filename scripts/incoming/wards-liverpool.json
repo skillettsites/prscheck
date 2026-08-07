@@ -1,0 +1,228 @@
+{
+  "gss": "E08000012",
+  "council": "Liverpool City Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "wards"
+      },
+      "sourceUrl": "https://liverpool.gov.uk/business/licences-and-permits/landlord-licensing/selective-licensing-scheme/do-i-need-a-selective-licence/",
+      "confidence": "derived-boundary-mapping",
+      "inForce": {
+        "stillLive": true,
+        "start": "2022-04-01",
+        "end": "2027-03-31",
+        "howVerified": "Liverpool City Council's 'Selective Licensing Designation Consultation Proposal' PDF (published for the consultation opened 27 July 2026) states at 2.8 that the designation commenced 1 April 2022 and at 2.11 that the scheme 'is currently ongoing April 2022 - March 2027'; the consultation page adds that 'the Council's current selective licensing scheme is due to end in March 2027' and that no decision has been made on any successor."
+      },
+      "currentWards": [
+        "Anfield",
+        "Arundel",
+        "Brownlow Hill",
+        "Canning",
+        "Church",
+        "City Centre North",
+        "City Centre South",
+        "County",
+        "Dingle",
+        "Edge Hill",
+        "Everton East",
+        "Everton North",
+        "Everton West",
+        "Fazakerley East",
+        "Fazakerley North",
+        "Fazakerley West",
+        "Festival Gardens",
+        "Greenbank Park",
+        "Kensington & Fairfield",
+        "Kirkdale East",
+        "Kirkdale West",
+        "Old Swan East",
+        "Old Swan West",
+        "Orrell Park",
+        "Princes Park",
+        "Sefton Park",
+        "Smithdown",
+        "St Michaels",
+        "Stoneycroft",
+        "Toxteth",
+        "Tuebrook Breckside Park",
+        "Tuebrook Larkhill",
+        "Vauxhall",
+        "Walton",
+        "Waterfront North",
+        "Waterfront South",
+        "Wavertree Garden Suburb",
+        "Wavertree Village"
+      ],
+      "wardMapping": [
+        {
+          "old": "Anfield",
+          "new": [
+            "Anfield",
+            "Tuebrook Breckside Park",
+            "Everton East"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Central",
+          "new": [
+            "City Centre North",
+            "Brownlow Hill",
+            "Canning",
+            "Waterfront South",
+            "Kensington & Fairfield",
+            "City Centre South",
+            "Everton West"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "County",
+          "new": [
+            "County",
+            "Walton",
+            "Clubmoor West"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Everton",
+          "new": [
+            "Everton West",
+            "Everton North",
+            "Everton East",
+            "Vauxhall",
+            "City Centre North"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Fazakerley",
+          "new": [
+            "Fazakerley East",
+            "Fazakerley West",
+            "Fazakerley North",
+            "Walton"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Greenbank",
+          "new": [
+            "Greenbank Park",
+            "Arundel",
+            "Smithdown",
+            "Princes Park",
+            "Penny Lane"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Kensington and Fairfield",
+          "new": [
+            "Kensington & Fairfield",
+            "Everton East"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Kirkdale",
+          "new": [
+            "Waterfront North",
+            "Kirkdale West",
+            "Vauxhall",
+            "Kirkdale East"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Old Swan",
+          "new": [
+            "Old Swan West",
+            "Old Swan East",
+            "Broadgreen",
+            "Stoneycroft"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Picton",
+          "new": [
+            "Edge Hill",
+            "Smithdown",
+            "Old Swan West",
+            "Arundel",
+            "Canning"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Princes Park",
+          "new": [
+            "Princes Park",
+            "Toxteth",
+            "Canning",
+            "Dingle",
+            "Edge Hill"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Riverside",
+          "new": [
+            "Dingle",
+            "City Centre South",
+            "Waterfront South",
+            "Festival Gardens",
+            "Toxteth",
+            "Canning"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "St Michael's",
+          "new": [
+            "Sefton Park",
+            "Festival Gardens",
+            "St Michaels"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Tuebrook and Stoneycroft",
+          "new": [
+            "Stoneycroft",
+            "Tuebrook Larkhill",
+            "Tuebrook Breckside Park",
+            "Kensington & Fairfield",
+            "Anfield"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Warbreck",
+          "new": [
+            "Walton",
+            "Orrell Park"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        },
+        {
+          "old": "Wavertree",
+          "new": [
+            "Wavertree Village",
+            "Church",
+            "Wavertree Garden Suburb"
+          ],
+          "source": "https://liverpool.gov.uk/KML/SelectiveLicensingBoundary.kml (Liverpool City Council designated-area boundary) intersected with ONS ward boundaries (Wards Dec 2022 and Dec 2024, https://geoportal.statistics.gov.uk); boundary change made by the Liverpool (Electoral Changes) Order 2022, https://www.legislation.gov.uk/uksi/2022/1365/contents/made"
+        }
+      ],
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://liverpool.gov.uk/business/licences-and-permits/landlord-licensing/selective-licensing-scheme/do-i-need-a-selective-licence/",
+      "evidence": "Liverpool publishes no list of designated wards in post-2023 ward names. The designated area is published as a polygon, /KML/SelectiveLicensingBoundary.kml, which is the file the council's own live address checker on 'Do I need a selective licence?' loads to decide whether an address needs a licence. That polygon reproduces exactly the 16 pre-2023 wards of the 2022 designation (each >=99.85% covered, every other pre-2023 ward <=0.14%), confirming it is the designation boundary. Intersecting it with ONS current ward boundaries gives 38 current wards that are mostly or wholly inside, which matches the council's own statement in Appendix 8 (Equality Impact Assessment, July 2026 consultation) that 'selective licensing applies in 38 of Liverpool's 64 wards'. CAUTION: this designation does not follow current ward lines. Six wards in currentWards are materially only part-inside (Wavertree Garden Suburb 59%, Tuebrook Larkhill 59%, Fazakerley West 80%, Church 81%, Greenbank Park 84%, Festival Gardens 91% of ward area; Sefton Park 98% and Walton 99% are near-complete), and three further wards NOT listed contain designated land (Broadgreen 30%, Penny Lane 18%, Clubmoor West 10%). For any address in those nine wards the council's address checker must be used. Scheme dates confirmed from the body of the July 2026 consultation proposal PDF: designation approved by the Secretary of State December 2021, commenced 1 April 2022, 'currently ongoing April 2022 - March 2027'; a consultation on a possible 2027-2032 successor runs 27 July to 5 October 2026 with no decision yet made."
+    }
+  ]
+}

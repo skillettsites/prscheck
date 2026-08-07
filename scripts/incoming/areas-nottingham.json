@@ -1,0 +1,41 @@
+{
+  "gss": "E06000018",
+  "council": "Nottingham City Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas"
+      },
+      "sourceUrl": "https://www.nottinghamcity.gov.uk/media/cg0eetgl/sealed-designation.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2023-12-01",
+        "end": "2028-11-30",
+        "howVerified": "The sealed designation PDF states at paragraph 2 that it was made on 17 January 2023 and comes into force on 01 December 2023, and at paragraph 3 that it ceases to have effect on 30 November 2028, with a footnote confirming the Secretary of State confirmed those dates on 26 July 2023; the council's own Public Notice repeats the same dates."
+      },
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://geoserver.nottinghamcity.gov.uk/myproperty/?c=housing",
+      "boundaryDescription": "From the sealed designation, paragraph 4: \"This designation shall apply to those areas of the City of Nottingham shown edged and hatched in red on the map at annex a.\" From the council's Public Notice: \"The Designation covers some or all of the Council's following electoral wards: Aspley, Basford, Berridge, Bulwell, Bulwell Forest, Castle, Dales, Hyson Green & Arboretum, Leen Valley, Lenton & Wollaton East, Mapperley, Meadows, Radford, Sherwood and St Anns.\" The Executive Board report Appendix 2 (\"Ward Coverage of Proposed Selective Licensing Scheme 2023\") gives the coverage per ward verbatim as: Aspley - Part <50%; Basford - Part >50%; Berridge - Full; Bestwood - None; Bilborough - None; Bulwell - Part <50%; Bulwell Forest - Part <50%; Castle - Full; Clifton East - None; Clifton West - None; Dales - Part >50%; Hyson Green & Arboretum - Full; Leen Valley - Part <50%; Lenton & Wollaton East - Full (all residential); Mapperley - Full; Meadows - Part >50%; Radford - Full; Sherwood - Part >50%; St Ann's - Full; Wollaton West - None. No road-by-road boundary description is published.",
+      "evidence": "The legal area is defined only by the map at annex a of \"The Nottingham City Council Designation of an Area for Selective Licensing 2023\" (sealed designation PDF, https://www.nottinghamcity.gov.uk/media/cg0eetgl/sealed-designation.pdf). No schedule of streets or postcodes is published: the designation, the Public Notice (https://www.nottinghamcity.gov.uk/media/wojdrsqs/selective-licensing-2-public-notice-2023.docx), the Executive Board report of 17 Jan 2023 and its five appendices (https://committee.nottinghamcity.gov.uk/ieListDocuments.aspx?CId=177&MID=9491) were all read in full and none contains a street list. The Public Notice instead directs enquirers to the council's postcode checker: \"To check whether a property is within the designated area go to: http://geoserver.nottinghamcity.gov.uk/myproperty and enter the postcode.\" Appendix 2 to that report gives ward-level coverage, transcribed verbatim above. Additional official data the council does publish: a redacted statutory register of selective licences at https://www.nottinghamcity.gov.uk/media/hlxna421/5-sl-redacted-register-end-of-april-2026.xlsx (27,711 rows, full property addresses plus 3,027 distinct postcodes across NG1-NG9 and NG11, current to end of April 2026). Every address in that register is inside the designated area, so it can support a positive match, but it is a register of licences issued rather than a designated street or postcode list, so it is deliberately not used to populate the streets/postcodes fields here.",
+      "fullWards": [
+        "Berridge",
+        "Castle",
+        "Hyson Green & Arboretum",
+        "Lenton & Wollaton East",
+        "Mapperley",
+        "Radford",
+        "St. Ann's"
+      ],
+      "excludedWards": [
+        "Bestwood",
+        "Bilborough",
+        "Clifton East",
+        "Clifton West",
+        "Wollaton West"
+      ]
+    }
+  ]
+}

@@ -77,6 +77,18 @@ export default function SchemeList({ schemes }: { schemes: Scheme[] }) {
               </ul>
             </details>
           )}
+          {/* Where a designation is only ever a polygon on a map, the council's
+              own lookup is the most useful thing we can hand over. */}
+          {s.checkerUrl && (
+            <a
+              href={s.checkerUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block text-sm font-medium text-accent-400 underline"
+            >
+              Check a specific address on {`the council's`} own checker
+            </a>
+          )}
           <p className="mt-3 text-xs text-navy-500">Official local authority licensing designation</p>
         </div>
       ))}

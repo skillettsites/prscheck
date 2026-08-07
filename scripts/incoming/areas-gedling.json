@@ -1,0 +1,38 @@
+{
+  "gss": "E07000173",
+  "council": "Gedling Borough Council",
+  "schemes": [
+    {
+      "match": { "type": "selective", "coverage": "areas" },
+      "sourceUrl": "https://www.gedling.gov.uk/sites/default/files/2025-10/Appendix%201%20Selective%20Licensing%20Phase%202%20Designated%20Areas.docx",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2022-11-01",
+        "end": "2027-10-30",
+        "howVerified": "Paragraphs 2 and 3 of the Phase 2 designation instrument itself read 'This designation is made on 6th July 2022 and shall come into force on 1st November 2022' and 'This designation shall cease to have effect on 30th October 2027 or earlier if the Council revokes the scheme under section 84 of the Act.'"
+      },
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://www.gedling.gov.uk/selective-licensing/what-areas-are-covered-selective-licensing",
+      "boundaryDescription": "AREA TO WHICH THE DESIGNATION APPLIES. 4. This designation shall apply to the residential area of Carlton Hill, Colwick, Daybrook and Newstead Village as delineated and edged red on the map at annexes A,B,C and D.",
+      "evidence": "Gedling has never published a street list or postcode list for Phase 2: the designation instrument was extracted two independent ways (docx word/document.xml strip and pdftotext -layout on the committee PDF at https://democracy.gedling.gov.uk/documents/s31549/Appendix%201%20Selective%20Licensing%20Phase%202%20Designated%20Areas.pdf) and the two agree verbatim, with page 1 the designation text and pages 2-5 one map image each and zero text. Every linked council document (Phase 2 Proposal, Cabinet report, FAQ) was checked and none contains a street or postcode schedule, so the boundary above is the complete published wording. The council does however publish a genuine address checker: the page cited hosts an ArcGIS Experience app (https://experience.arcgis.com/experience/45273c241360449089de6a8495426c1e, owner gis_admin2@gbc) with an OS Places address geocoder, backed by council-hosted polygons at https://gedlingmaps.gedling.gov.uk/arcgis/rest/services/AGOL/Selective_Licensing_area/MapServer whose only attributes are name and label, confirming the council holds this as geometry rather than a street schedule. NOTE a date conflict: the council FAQ says the scheme runs 'until 31st October 2027' but the designation instrument says 30th October 2027; the instrument governs and is used here. No street list was inferred from the maps."
+    },
+    {
+      "match": { "type": "selective", "coverage": "wards" },
+      "sourceUrl": "https://www.gedling.gov.uk/sites/default/files/2025-10/Phase%201A%20Public%20Notice%20of%20Selective%20Licensing%20Designation.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-01-05",
+        "end": "2030-01-04",
+        "howVerified": "The sealed Phase 1a public notice body states it was made 5th September 2024, 'The Designation will come into force on 5th January 2025' and 'The Designation shall cease to have effect on 4th January 2030', signed Mike Avery, Director of Place."
+      },
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://www.gedling.gov.uk/selective-licensing/what-areas-are-covered-selective-licensing",
+      "boundaryDescription": "The residential area of the Netherfield Ward; the designation applies to all privately rented houses in the Netherfield Ward.",
+      "evidence": "Phase 1a is a separate, ward-wide designation covering the whole of Netherfield Ward, so no street list is needed or published: any address in Netherfield ward is in scope. It replaced the original 2018 Netherfield scheme. Corroborated by the council's Selective Licensing FAQ (Nov 2024) and by the council's own GIS layer literally named 'Netherfield - Effective 5th January 2025' on the Selective_Licensing_area MapServer. Made under the General Approval 2015, so no Secretary of State confirmation was required."
+    }
+  ]
+}

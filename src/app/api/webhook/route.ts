@@ -111,6 +111,9 @@ export async function POST(req: NextRequest) {
       // Manchester designates by house-number range throughout, so the number
       // is what turns a hedge into a definite answer there.
       houseNumber: meta.house_number || null,
+      // Known exactly rather than derived, so it is the most reliable match we
+      // have wherever a council publishes its designated postcodes.
+      postcode: meta.postcode || null,
     });
     if (!determination) throw new Error("determination_failed");
 

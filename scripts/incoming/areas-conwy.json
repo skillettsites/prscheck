@@ -1,0 +1,57 @@
+{
+  "gss": "W06000003",
+  "council": "Conwy County Borough Council",
+  "schemes": [
+    {
+      "match": { "type": "additional", "coverage": "areas" },
+      "sourceUrl": "https://www.conwy.gov.uk/en/Business/Licenses-and-Permits/Assets/documents/HMO/HMO-designation-Pensarn.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-10-01",
+        "end": "2030-09-30",
+        "howVerified": "The body of the designation notice states it was designated on 27 July 2025, is effective from 1 October 2025 and, unless revoked beforehand or extended, will cease to have effect on 30 September 2030."
+      },
+      "streets": [
+        { "name": "Marine Road", "numbers": null },
+        { "name": "South Parade", "numbers": null }
+      ],
+      "postcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "...designated an additional licensing scheme in respect of Houses in Multiple Occupation for part of the electoral ward of Pensarn Pentre Mawr. This scheme will be known as Conwy County Borough Council Additional Licensing (Houses in Multiple Occupation Marine Road and South Parade, Pensarn) Scheme 2025. The scheme applies to all Houses in Multiple Occupation (HMOs) located on Marine Road and South Parade, Pensarn, Abergele except those exempted by the relevant sections of the Act and those already licensed under the Mandatory Licensing of Houses in Multiple Occupation Scheme.",
+      "evidence": "This is the only one of Conwy's three concurrent additional licensing designations that is defined by street rather than by electoral ward, and both street names are transcribed verbatim from the designation notice's own scope wording, corroborated by the live HMO licensing page which reads 'Pensarn (Marine Road and South Parade only)'. The notice imposes no odd/even or number-range limit, so the whole of both streets is covered and numbers is null. Both the English (/en/) and Welsh (/cy/) notices were downloaded, plus the HMO-Re-designation-Pensarn-2025.doc original whose extracted text is equivalent and adds no street or number detail; the Welsh notice renders South Parade as 'Pared y De' while the Welsh web page renders it 'Rhodfa'r De'. Text was extracted with pdftotext -layout and cross-checked with pdfplumber, which confirmed the notice is a single text-only page with zero tables and zero embedded images, so there is no hidden street schedule and no annexed map. Made under the Housing Act 2004 (Additional HMO Licensing Wales) General Approval 2007, so no Welsh Government confirmation was required."
+    },
+    {
+      "match": { "type": "additional", "coverage": "wards" },
+      "sourceUrl": "https://www.conwy.gov.uk/en/Business/Licenses-and-Permits/Assets/documents/HMO/HMO-designation-Colwyn-Bay.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2026-04-01",
+        "end": "2031-03-31",
+        "howVerified": "The body of the designation notice states it was designated on 24 February 2026, is effective from 1 April 2026 and will cease to have effect on 31 March 2031 unless revoked beforehand or extended."
+      },
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://map.conwy.gov.uk/en/mycouncil.aspx",
+      "boundaryDescription": "...designated an additional licensing scheme in respect of Houses in Multiple Occupation covering the electoral wards of Glyn and Rhiw. This scheme will be known as Conwy County Borough Council Additional Licensing (Houses in Multiple Occupation) Colwyn Bay Scheme 2026. The live council page states: 'Colwyn Bay (within the electoral divisions of Glyn & Rhiw wards only)'.",
+      "evidence": "This designation is defined by electoral ward, not by street, and no street list or postcode list is published anywhere in the notice or on either language version of the HMO licensing page; none was inferred. Coverage is therefore resolvable by ward membership (Glyn and Rhiw) rather than by street match. The checkerUrl given is the council's general postcode-to-ward lookup, which is not an HMO-specific checker but is the official tool that determines ward membership; the council otherwise directs enquiries to HMOLicensing@conwy.gov.uk / trwyddeduTA@conwy.gov.uk. WELSH/ENGLISH DIVERGENCE, material to accuracy: the Welsh notice says 'o fewn rhan o ward etholiadol' (within PART OF the electoral ward) where the English says 'covering the electoral wards of', so the two language texts do not agree on whether coverage is whole-ward or part-ward; the English notice and both language web pages read as whole-ward. Rent Smart Wales is excluded as a separate national landlord regime rather than a council designation."
+    },
+    {
+      "match": { "type": "additional", "coverage": "wards" },
+      "sourceUrl": "https://www.conwy.gov.uk/en/Business/Licenses-and-Permits/Assets/documents/HMO/HMO-designation-Llandudno.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2026-04-01",
+        "end": "2031-03-31",
+        "howVerified": "The body of the designation notice states it was designated on 24 February 2026, is effective from 1 April 2026 and will cease to have effect on 31 March 2031 unless revoked beforehand or extended."
+      },
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": "https://map.conwy.gov.uk/en/mycouncil.aspx",
+      "boundaryDescription": "...designated an additional licensing scheme in respect of Houses in Multiple Occupation covering the electoral wards of Craig y Don, Tudno and Gogarth Mostyn. This scheme will be known as Conwy County Borough Council Additional Licensing (Houses in Multiple Occupation) Llandudno and Craig y Don Scheme 2026. The live council page states: 'Llandudno and Craig y Don (within the electoral divisions of Gogarth Mostyn, Tudno and Craig y Don wards only)'.",
+      "evidence": "Like the Colwyn Bay scheme this is ward-defined, not street-defined, so no street or postcode list exists and none was inferred; coverage resolves by membership of the Craig y Don, Tudno and Gogarth Mostyn wards. Both the English and Welsh notices were downloaded and pdfplumber confirmed a single text-only page with zero tables and zero images, ruling out a hidden street schedule or annexed plan. The same Welsh/English divergence applies: the Welsh text says 'o fewn rhan o ward etholiadol' (within part of the electoral ward) where the English says 'covering the electoral wards of'. The predecessor Abergele Pensarn designation of 29 October 2019 (effective 1 January 2020, ceasing 31 December 2024) has expired and its public-notice page now returns 'This page is no longer available', so the three 2025/2026 designations recorded here are the current ones."
+    }
+  ]
+}
