@@ -1,16 +1,22 @@
 {
   "meta": {
-    "compiledAt": "2026-07-10",
-    "note": "National deterministic layer. Per-council additional/selective schemes live in licensing-schemes.json. All penalty maxima are 'up to' amounts.",
+    "compiledAt": "2026-08-05",
+    "note": "National deterministic layer. Per-council additional/selective schemes live in licensing-schemes.json. All penalty maxima are 'up to' amounts. Wales, Scotland and NI blocks reviewed 5 Aug 2026 against primary legislation.",
     "currency": "GBP"
   },
   "england": {
     "mandatoryHmo": {
       "criteria": "5+ occupants forming 2+ households, sharing toilet/bathroom/kitchen, at least one paying rent; no storey test since 1 Oct 2018; purpose-built flats in blocks of 3+ flats excluded; s.257 converted blocks excluded",
-      "legislation": ["Housing Act 2004 Part 2", "SI 2018/221"],
+      "legislation": [
+        "Housing Act 2004 Part 2",
+        "SI 2018/221"
+      ],
       "licenceDurationYearsMax": 5,
       "whoApplies": "property owner (managing agent may apply on their behalf)",
-      "sources": ["https://www.gov.uk/house-in-multiple-occupation-licence", "https://www.legislation.gov.uk/uksi/2018/221/made"]
+      "sources": [
+        "https://www.gov.uk/house-in-multiple-occupation-licence",
+        "https://www.legislation.gov.uk/uksi/2018/221/made"
+      ]
     },
     "otherSchemes": {
       "additionalLicensing": "council-designated, smaller HMOs (per-council dataset)",
@@ -30,7 +36,10 @@
       },
       "banningOrders": "available (Housing and Planning Act 2016); breach civil penalty up to £40,000",
       "possessionRestriction": "Section 21 abolished 1 May 2026; once the PRS database is live, courts cannot grant possession orders without an active landlord and dwelling database registration (except antisocial behaviour grounds)",
-      "sources": ["https://www.gov.uk/government/publications/civil-penalties-under-the-renters-rights-act-2025-and-other-housing-legislation/civil-penalties-under-the-renters-rights-act-2025-and-other-housing-legislation", "https://www.gov.uk/government/publications/rent-repayment-orders-guidance-for-local-authorities/rent-repayment-orders-guidance-for-local-authorities"]
+      "sources": [
+        "https://www.gov.uk/government/publications/civil-penalties-under-the-renters-rights-act-2025-and-other-housing-legislation/civil-penalties-under-the-renters-rights-act-2025-and-other-housing-legislation",
+        "https://www.gov.uk/government/publications/rent-repayment-orders-guidance-for-local-authorities/rent-repayment-orders-guidance-for-local-authorities"
+      ]
     },
     "prsDatabase": {
       "status": "not yet live as of 2026-07",
@@ -40,12 +49,23 @@
       "annualFee": "TBC",
       "penaltyFailToRegisterMax": 7000,
       "penaltySeriousOrRepeatMax": 40000,
-      "sources": ["https://www.gov.uk/government/publications/renters-rights-act-2025-implementation-roadmap/implementing-the-renters-rights-act-2025-our-roadmap-for-reforming-the-private-rented-sector"]
+      "sources": [
+        "https://www.gov.uk/government/publications/renters-rights-act-2025-implementation-roadmap/implementing-the-renters-rights-act-2025-our-roadmap-for-reforming-the-private-rented-sector"
+      ]
     },
     "typicalFees": {
-      "mandatoryHmo5yr": [500, 1500],
-      "additional5yr": [400, 1000],
-      "selective5yr": [300, 750],
+      "mandatoryHmo5yr": [
+        500,
+        1500
+      ],
+      "additional5yr": [
+        400,
+        1000
+      ],
+      "selective5yr": [
+        300,
+        750
+      ],
       "structure": "two-part fee legally required (Hemming 2017 / Gaskin [2018] EWHC 1996 Admin): Part 1 on application, Part 2 on grant",
       "confidence": "indicative bands; exact fees in per-council dataset"
     }
@@ -53,64 +73,173 @@
   "wales": {
     "registration": {
       "criteria": "ALL landlords of Welsh rental property must register with Rent Smart Wales; self-managing landlords and all agents also need a licence with approved training",
-      "legislation": ["Housing (Wales) Act 2014 Part 1"],
+      "legislation": [
+        "Housing (Wales) Act 2014 Part 1"
+      ],
       "durationYears": 5,
-      "feesGBP": { "registrationOnline": 60, "registrationPaper": 102, "licenceOnline": 254, "licencePaper": 327, "confidence": "RSW Fee Policy April 2025, re-confirm before quoting as exact" },
-      "sources": ["https://www.gov.wales/rent-smart-wales", "https://rentsmart.gov.wales/en/enforcement/"]
+      "feesGBP": {
+        "registrationOnline": 60,
+        "registrationPaper": 102,
+        "licenceOnline": 254,
+        "licencePaper": 327,
+        "confidence": "RSW Fee Policy April 2025, re-confirm before quoting as exact"
+      },
+      "sources": [
+        "https://www.gov.wales/rent-smart-wales",
+        "https://rentsmart.gov.wales/en/enforcement/"
+      ]
     },
     "mandatoryHmo": {
       "criteria": "3+ storeys AND 5+ persons AND 2+ households (Wales kept the storey test, unlike England); many Welsh councils run additional HMO licensing for smaller HMOs",
-      "legislation": ["SI 2006/1712 (W.170)"],
-      "sources": ["https://law.gov.wales/public-services/housing/houses-multiple-occupation-hmos"]
+      "legislation": [
+        "The Licensing of Houses in Multiple Occupation (Prescribed Descriptions) (Wales) Order 2006, WSI 2006/1712 (W.174)"
+      ],
+      "sources": [
+        "https://law.gov.wales/public-services/housing/houses-multiple-occupation-hmos"
+      ]
     },
     "penalties": {
-      "fixedPenaltyGBP": [150, 250],
+      "fixedPenaltyGBP": [
+        150,
+        250
+      ],
       "criminalFine": "unlimited",
       "rentStoppingOrders": true,
-      "rro": { "maxMonthsRent": 12, "note": "the 24-month RRO uplift is England-only" },
+      "rro": {
+        "maxMonthsRent": 12,
+        "note": "the 24-month RRO uplift is England-only"
+      },
       "possessionRestriction": "cannot serve a valid possession notice while unregistered/unlicensed",
-      "sources": ["https://rentsmart.gov.wales/en/enforcement/"]
+      "sources": [
+        "https://rentsmart.gov.wales/en/enforcement/"
+      ]
+    },
+    "discretionaryLicensing": {
+      "applies": true,
+      "note": "Housing Act 2004 Parts 2 and 3 DO extend to Wales (s.270(11)), so Welsh councils can and do designate additional and selective licensing schemes, exactly as English councils can. This is separate from, and additional to, Rent Smart Wales.",
+      "additionalLicensing": "Live in roughly a dozen councils, including Swansea, Newport, Cardiff, Rhondda Cynon Taf, Flintshire, Denbighshire, Conwy, Ceredigion and Wrexham. Confirmation by Welsh Ministers is not required, per the Housing Act 2004 (Additional HMO Licensing) (Wales) General Approval 2007.",
+      "selectiveLicensing": "No live selective licensing designation is known anywhere in Wales. Welsh Ministers' confirmation IS required (s.82(1)(a)), and WSI 2006/2825 (W.248) adds a Wales-only condition. The only historic instance was Carmarthenshire, Tyisha ward, Llanelli, 2014 to 2019.",
+      "whyItMatters": "Wales kept the three-storey test for MANDATORY HMO licensing, which England abolished in 2018. Additional licensing is how Welsh councils reach smaller HMOs, which is why so many operate one.",
+      "sources": [
+        "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+        "https://www.legislation.gov.uk/wsi/2006/2825/made"
+      ]
     }
   },
   "scotland": {
     "registration": {
       "criteria": "all landlords must register with each council where they let (exemptions: resident landlords, holiday lets, agricultural tenancies); joint owners must all register; adverts must show the registration number",
-      "legislation": ["Antisocial Behaviour etc. (Scotland) Act 2004 Part 8"],
+      "legislation": [
+        "Antisocial Behaviour etc. (Scotland) Act 2004 Part 8"
+      ],
       "renewalYears": 3,
-      "feesGBP": { "principalPerCouncil": 85, "perProperty": 20, "lateFee": 170, "hmoPropertyFeeExempt": true },
+      "feesGBP": {
+        "principalPerCouncil": 85,
+        "perProperty": 20,
+        "lateFee": 170,
+        "hmoPropertyFeeExempt": true
+      },
       "penaltyMax": 50000,
-      "sources": ["https://www.mygov.scot/landlord-registration", "https://www.landlordregistrationscotland.gov.uk/fees-information"]
+      "sources": [
+        "https://www.mygov.scot/landlord-registration",
+        "https://www.landlordregistrationscotland.gov.uk/fees-information"
+      ]
     },
     "hmo": {
       "criteria": "3+ persons who are not all members of the same family or of one or other of two families (i.e. 3+ households), sharing a basic amenity, as only or main residence",
-      "legislation": ["Housing (Scotland) Act 2006 Part 5 s.125"],
+      "legislation": [
+        "Housing (Scotland) Act 2006 Part 5 s.125"
+      ],
       "licenceDurationYearsTypical": 3,
       "feeSetBy": "council",
       "penaltyMax": 50000,
-      "sources": ["https://www.legislation.gov.uk/asp/2006/1/section/125", "https://www.mygov.scot/landlord-hmo-licence"]
+      "sources": [
+        "https://www.legislation.gov.uk/asp/2006/1/section/125",
+        "https://www.mygov.scot/landlord-hmo-licence"
+      ]
+    },
+    "discretionaryLicensing": {
+      "applies": false,
+      "note": "Scottish councils have NO power to designate selective or additional licensing areas. The Housing Act 2004 extends to England and Wales only (s.270(11)). Landlord registration and HMO licensing apply nationally instead.",
+      "doNotConfuse": "Enhanced Enforcement Areas (Housing (Scotland) Act 2014 ss.27-28) are area-designated but are NOT a licence; they grant extra discretionary enforcement powers only.",
+      "sources": [
+        "https://www.legislation.gov.uk/ukpga/2004/34/section/270"
+      ]
     }
   },
   "ni": {
     "registration": {
       "criteria": "all landlords letting under a private tenancy must register",
-      "feesGBP": { "online": 70, "paper": 80 },
+      "feesGBP": {
+        "online": 70,
+        "paper": 80
+      },
       "durationYears": 3,
-      "penalties": { "fixedPenaltyGBP": 500, "courtFineMaxGBP": 2500 },
-      "sources": ["https://www.nidirect.gov.uk/articles/landlord-registration-scheme"]
+      "penalties": {
+        "fixedPenaltyGBP": 500,
+        "courtFineMaxGBP": 2500
+      },
+      "sources": [
+        "https://www.nidirect.gov.uk/articles/landlord-registration-scheme",
+        "https://www.communities-ni.gov.uk/news/councils-take-over-landlord-registration-scheme"
+      ],
+      "administeredBy": "Councils since 1 March 2025, with Lisburn and Castlereagh City Council as lead/host council for all 11 NI councils (previously the Department for Communities)",
+      "portal": "https://landlordregistrationni.gov.uk/",
+      "legislation": [
+        "Private Tenancies (Northern Ireland) Order 2006 art.65A",
+        "Landlord Registration Scheme Regulations (NI) 2014 (SR 2014/9)"
+      ]
     },
     "hmo": {
       "criteria": "3+ persons as only or main residence forming more than two households, rent payable by at least one",
-      "legislation": ["Houses in Multiple Occupation Act (Northern Ireland) 2016 s.1"],
+      "legislation": [
+        "Houses in Multiple Occupation Act (Northern Ireland) 2016 s.1"
+      ],
       "licenceDurationYears": 5,
-      "administeredBy": "local councils since 1 April 2019, applications via Belfast City Council portal for all NI",
-      "penalties": { "fixedPenaltyGBP": 5000, "summaryConvictionMaxGBP": 20000, "conditionBreachMaxGBP": 10000 },
-      "sources": ["https://www.legislation.gov.uk/nia/2016/22/section/1", "https://www.gov.uk/house-in-multiple-occupation-northern-ireland"]
+      "administeredBy": "A single NIHMO Unit at Belfast City Council administers HMO licensing on behalf of all 11 NI councils, and can take enforcement action for all of them",
+      "penalties": {
+        "fixedPenaltyGBP": 5000,
+        "summaryConvictionMaxGBP": 20000,
+        "conditionBreachMaxGBP": 10000
+      },
+      "sources": [
+        "https://www.legislation.gov.uk/nia/2016/22/section/1",
+        "https://www.gov.uk/house-in-multiple-occupation-northern-ireland"
+      ],
+      "portal": "https://www.belfastcity.gov.uk/NIHMO",
+      "register": "https://www.belfastcity.gov.uk/checkhmolicence",
+      "feesGBP": {
+        "chargedPerOccupantPerYear": 62,
+        "statutoryMaxPerOccupantPerYear": 75,
+        "note": "Statutory maximum rose from £45 to £75 per person per annum on 1 August 2025 (SR 2025/124). Belfast currently charges £62 per person per year, so £310 per person over a 5-year licence."
+      },
+      "thresholdNote": "NARROWER THAN ENGLAND: NI requires MORE THAN TWO households (i.e. 3+). Three sharers from two households are an HMO in England but NOT in NI.",
+      "planningNote": "Planning permission is also required for a new HMO; Belfast will not process a licence application without it."
+    },
+    "discretionaryLicensing": {
+      "applies": false,
+      "note": "Northern Ireland district councils have NO power to designate selective or additional licensing areas. The Housing Act 2004 extends to England and Wales only (s.270(11)). Landlord registration and HMO licensing apply NI-wide instead.",
+      "sources": [
+        "https://www.legislation.gov.uk/ukpga/2004/34/section/270"
+      ]
     }
   },
   "urgencyTriggers": [
-    { "date": "2026-09-01", "event": "Croydon selective licensing scheme commences" },
-    { "date": "late 2026", "event": "England PRS Database registration opens: every English landlord must register; no registration will eventually mean no possession order plus penalties up to £7,000/£40,000" },
-    { "date": "2027", "event": "Full mandatory PRS database registration expected" },
-    { "date": "2028", "event": "Mandatory PRS Ombudsman membership for landlords" }
+    {
+      "date": "2026-09-01",
+      "event": "Croydon selective licensing scheme commences"
+    },
+    {
+      "date": "late 2026",
+      "event": "England PRS Database registration opens: every English landlord must register; no registration will eventually mean no possession order plus penalties up to £7,000/£40,000"
+    },
+    {
+      "date": "2027",
+      "event": "Full mandatory PRS database registration expected"
+    },
+    {
+      "date": "2028",
+      "event": "Mandatory PRS Ombudsman membership for landlords"
+    }
   ]
 }

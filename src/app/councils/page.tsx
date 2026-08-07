@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { englishCouncils, councilsWithLiveSchemes } from "@/lib/licensing";
+import { COUNCILS, councilsWithLiveSchemes } from "@/lib/licensing";
 import PostcodeCTA from "@/components/PostcodeCTA";
 
 export const metadata: Metadata = {
   title: "UK Landlord Licensing by Council 2026: Selective & Additional Schemes",
   description:
-    "Browse selective and additional (HMO) licensing schemes for every council in England. See which areas require a landlord licence, with dates, fees and a free postcode check.",
+    "Browse selective and additional (HMO) licensing schemes for every council in the UK. See which areas require a landlord licence, with dates, fees and a free postcode check.",
   alternates: { canonical: "https://prscheck.co.uk/councils" },
 };
 
 export default function CouncilsHub() {
-  const all = englishCouncils();
+  // Every UK council has a researched record and a page, so the directory
+  // lists them all. Listing England only left the 65 Welsh, Scottish and NI
+  // pages built but unlinked from anywhere on the site.
+  const all = COUNCILS;
   const live = councilsWithLiveSchemes();
   const liveGss = new Set(live.map((l) => l.council.gss));
 
@@ -19,9 +22,10 @@ export default function CouncilsHub() {
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
       <h1 className="text-3xl font-bold text-navy-100 sm:text-4xl">Landlord licensing by council</h1>
       <p className="mt-3 max-w-2xl text-navy-400">
-        {live.length} of {all.length} councils in England currently run a selective or additional (HMO) licensing
-        scheme, and more are coming under the Renters&apos; Rights Act 2025. Find your council below, or check a specific
-        property by postcode.
+        {live.length} of the {all.length} councils in the UK currently run a selective or additional (HMO) licensing
+        scheme, and more are coming under the Renters&apos; Rights Act 2025. Those powers exist in England and Wales
+        only; Scottish and Northern Irish councils use national registration and HMO licensing instead. Find your
+        council below, or check a specific property by postcode.
       </p>
 
       <div className="mt-8">

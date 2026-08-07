@@ -4,6 +4,21 @@ const NEW_API_BASE = "https://api.get-energy-performance-data.communities.gov.uk
 const LEGACY_API_BASE = "https://epc.opendatacommunities.org/api/v1/domestic/search";
 const OS_PLACES_BASE = "https://api.os.uk/search/places/v1";
 
+/**
+ * One selectable address. `street` is the part that matters for licensing:
+ * roughly 35 live selective/additional schemes are designated street by street
+ * and a postcode alone cannot resolve them.
+ */
+export interface AddressItem {
+  address: string;
+  street: string | null;
+  buildingNumber: string | null;
+  uprn: string | null;
+  /** How the street was obtained. "os" is authoritative; "epc" is derived from
+   *  the address line and should be treated as slightly less certain. */
+  streetSource?: "os" | "epc";
+}
+
 function cleanEnv(v: string | undefined): string {
   return (v || "").replace(/\\n/g, "").replace(/\n/g, "").trim();
 }
@@ -50,7 +65,71 @@ function buildAddress(rec: Record<string, string>): string {
   return parts.map((p) => toTitleCase(p.trim())).join(", ");
 }
 
-async function fetchAddresses(postcode: string): Promise<string[]> {
+/**
+ * Thoroughfare suffixes used to sanity-check a street derived from an EPC
+ * address line.
+ *
+ * Without this, "Rose Cottage" is returned as a street, fails to match any
+ * designation schedule, and the engine reports a confident "not in the
+ * designated area" for a property we actually know nothing about. Returning
+ * null instead makes it fall back to "check the boundary", which is the safe
+ * direction to be wrong in. A handful of real streets have no suffix
+ * ("Broadway", "Cheapside") and will also fall back; that costs precision, not
+ * correctness.
+ */
+const THOROUGHFARE_SUFFIXES = new Set([
+  "road","street","lane","avenue","close","drive","way","place","court","crescent","gardens","grove","terrace",
+  "walk","hill","park","rise","view","green","square","row","mount","vale","mews","parade","broadway","approach",
+  "bank","brow","chase","circus","cliff","corner","croft","dale","end","fields","gate","glade","hall","heath",
+  "meadow","moor","paddock","path","quay","ridge","side","spinney","strand","villas","wharf","wood","yard",
+]);
+
+function looksLikeStreet(name: string): boolean {
+  const parts = name.toLowerCase().replace(/[^a-z\s]/g, " ").trim().split(/\s+/);
+  const last = parts[parts.length - 1];
+  return !!last && THOROUGHFARE_SUFFIXES.has(last);
+}
+
+/**
+ * Best-effort street name from an EPC record.
+ *
+ * OS Places gives a structured THOROUGHFARE_NAME, but no OS Data Hub key is
+ * provisioned, so EPC is the live source. The legacy EPC API does carry a
+ * `street` field; the newer MHCLG one does not, so the street is recovered from
+ * the first address line by stripping a leading building number or flat
+ * reference. This is a heuristic, which is why the response marks how the
+ * street was obtained: a street-list match is only ever as good as this.
+ */
+/** Strip a leading flat/unit reference and building number off one address line. */
+function stripToThoroughfare(line: string): string {
+  let t = line.trim();
+  // "Flat 2, 12 Askew Road" / "Apt 4 Askew Road" -> drops the dwelling reference
+  t = t.replace(/^(flat|apartment|apt|unit|room)\s*[0-9]*[a-z]?[,\s]+/i, "");
+  // "12 Askew Road" / "12A Askew Road" / "12-14 Askew Road" -> "Askew Road"
+  t = t.replace(/^[0-9]+[a-z]?(\s*[-/]\s*[0-9]+[a-z]?)?[,\s]+/i, "");
+  return t.replace(/^,+\s*/, "").trim();
+}
+
+function epcStreet(rec: Record<string, string>): string | null {
+  const direct = rec.street || rec["street"];
+  if (direct && String(direct).trim()) return toTitleCase(String(direct).trim());
+
+  // EPC splits an address across lines inconsistently. Usually line 1 holds
+  // "12 Askew Road", but for a subdivided property it holds only "Flat 2" and
+  // the thoroughfare drops to line 2. Try line 1 first and fall through to
+  // line 2 when line 1 reduces to nothing usable, rather than assuming either.
+  for (const raw of [rec.addressLine1, rec.addressLine2]) {
+    if (!raw || !String(raw).trim()) continue;
+    const t = stripToThoroughfare(String(raw));
+    if (t.length <= 2) continue;
+    const name = toTitleCase(t);
+    // Only trust a derived street that actually looks like a thoroughfare.
+    if (looksLikeStreet(name)) return name;
+  }
+  return null;
+}
+
+async function fetchAddresses(postcode: string): Promise<AddressItem[]> {
   const formatted = formatPostcode(postcode);
 
   // Primary: new MHCLG API
@@ -65,17 +144,17 @@ async function fetchAddresses(postcode: string): Promise<string[]> {
         const json = await res.json();
         if (Array.isArray(json.data) && json.data.length > 0) {
           const seen = new Set<string>();
-          const addresses: string[] = [];
+          const addresses: AddressItem[] = [];
           for (const rec of json.data) {
             const addr = buildAddress(rec);
             if (!addr || addr.length < 3) continue;
             const k = addr.toLowerCase().replace(/[,.\-\s]+/g, " ").trim();
             if (!seen.has(k)) {
               seen.add(k);
-              addresses.push(addr);
+              addresses.push({ address: addr, street: epcStreet(rec), buildingNumber: null, uprn: null, streetSource: "epc" });
             }
           }
-          return addresses.sort((a, b) => a.localeCompare(b, "en-GB"));
+          return addresses.sort((a, b) => a.address.localeCompare(b.address, "en-GB"));
         }
       }
     } catch {
@@ -103,16 +182,16 @@ async function fetchAddresses(postcode: string): Promise<string[]> {
         const rows = json.rows;
         if (Array.isArray(rows) && rows.length > 0) {
           const seen = new Set<string>();
-          const addresses: string[] = [];
+          const addresses: AddressItem[] = [];
           for (const row of rows) {
             const addr = buildAddress(row);
             const k = addr.toLowerCase().replace(/[,.\-\s]+/g, " ").trim();
             if (!seen.has(k)) {
               seen.add(k);
-              addresses.push(addr);
+              addresses.push({ address: addr, street: epcStreet(row), buildingNumber: null, uprn: null, streetSource: "epc" });
             }
           }
-          return addresses.sort((a, b) => a.localeCompare(b, "en-GB"));
+          return addresses.sort((a, b) => a.address.localeCompare(b.address, "en-GB"));
         }
       }
     } catch {
@@ -129,7 +208,7 @@ async function fetchAddresses(postcode: string): Promise<string[]> {
  * within named buildings. Requires OS_DATA_HUB_KEY (Premium Plan, free
  * £1k/mo credit). Without the key, returns [] silently.
  */
-async function fetchOsPlacesAddresses(postcode: string): Promise<string[]> {
+async function fetchOsPlacesAddresses(postcode: string): Promise<AddressItem[]> {
   const key = cleanEnv(process.env.OS_DATA_HUB_KEY);
   if (!key) return [];
   try {
@@ -142,7 +221,7 @@ async function fetchOsPlacesAddresses(postcode: string): Promise<string[]> {
     if (!res.ok) return [];
     const data = await res.json();
     const results = data?.results ?? [];
-    const addresses: string[] = [];
+    const out: AddressItem[] = [];
     const seen = new Set<string>();
     for (const r of results) {
       const dpa = r.DPA;
@@ -155,10 +234,21 @@ async function fetchOsPlacesAddresses(postcode: string): Promise<string[]> {
       const k = titleCased.toLowerCase().replace(/[,.\-\s]+/g, " ").trim();
       if (!seen.has(k)) {
         seen.add(k);
-        addresses.push(titleCased);
+        out.push({
+          address: titleCased,
+          // THOROUGHFARE_NAME is the whole reason we prefer OS over EPC here:
+          // ~35 live licensing schemes are designated street by street, and a
+          // postcode cannot resolve them. DEPENDENT_THOROUGHFARE covers the
+          // "Back Lane, off High Street" case; the parent street is the one
+          // council schedules list, so it wins.
+          street: dpa.THOROUGHFARE_NAME ? toTitleCase(String(dpa.THOROUGHFARE_NAME)) : null,
+          streetSource: "os",
+          buildingNumber: dpa.BUILDING_NUMBER ? String(dpa.BUILDING_NUMBER) : null,
+          uprn: dpa.UPRN ? String(dpa.UPRN) : null,
+        });
       }
     }
-    return addresses.sort((a, b) => a.localeCompare(b, "en-GB", { numeric: true }));
+    return out.sort((a, b) => a.address.localeCompare(b.address, "en-GB", { numeric: true }));
   } catch {
     return [];
   }
@@ -183,30 +273,38 @@ export async function GET(req: NextRequest) {
     const osList = os.status === "fulfilled" ? os.value : [];
 
     const seen = new Set<string>();
-    const combined: string[] = [];
-    // OS results first, they tend to be cleaner and more comprehensive
+    const items: AddressItem[] = [];
+    const key = (s: string) => s.toLowerCase().replace(/[,.\-\s]+/g, " ").trim();
+    // OS results first: they are cleaner, more comprehensive, and the only
+    // source that carries a separate street name.
     for (const a of osList) {
-      const k = a.toLowerCase().replace(/[,.\-\s]+/g, " ").trim();
-      if (a && !seen.has(k)) {
-        seen.add(k);
-        combined.push(a);
+      if (a.address && !seen.has(key(a.address))) {
+        seen.add(key(a.address));
+        items.push(a);
       }
     }
+    // EPC is the fallback where OS has no key or no coverage. It gives us a
+    // display address but no structured street, so those entries cannot resolve
+    // a street-level designation and will fall back to "check the boundary".
     for (const a of epcList) {
-      const k = a.toLowerCase().replace(/[,.\-\s]+/g, " ").trim();
-      if (a && !seen.has(k)) {
-        seen.add(k);
-        combined.push(a);
+      if (a.address && !seen.has(key(a.address))) {
+        seen.add(key(a.address));
+        items.push(a);
       }
     }
+    items.sort((a, b) => a.address.localeCompare(b.address, "en-GB", { numeric: true }));
 
     return NextResponse.json(
       {
         postcode: formatPostcode(postcode),
-        addresses: naturalSortAddresses(combined),
+        // `addresses` is kept as a plain string list so existing callers keep
+        // working; `items` carries the street needed for licensing matching.
+        addresses: naturalSortAddresses(items.map((i) => i.address)),
+        items,
         sources: {
           osPlaces: osList.length,
           epc: epcList.length,
+          withStreet: items.filter((i) => i.street).length,
         },
       },
       {

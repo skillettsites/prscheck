@@ -1,11 +1,75 @@
 [
   {
+    "council": "Aberdeen City",
+    "gss": "S12000033",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Aberdeenshire",
+    "gss": "S12000034",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Adur District Council",
+    "gss": "E07000223",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. Only national mandatory HMO licensing (5+ occupants, 2+ households) applies. Confirmed against the council's own HMO pages and enforcement policy on 4 August 2026.",
+    "sourceUrl": "https://www.adur-worthing.gov.uk/housing/conditions-and-empty-properties/hmo/",
+    "verified": "2026-08-04"
+  },
+  {
     "council": "Amber Valley",
     "gss": "E07000032",
     "schemes": [],
     "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Amber Valley Borough Council currently does not operate any selective licensing schemes.\"",
     "sourceUrl": "https://www.ambervalley.gov.uk/housing/private-rented-housing/houses-in-multiple-occupancy.aspx",
     "verified": "2026-07-30"
+  },
+  {
+    "council": "Angus",
+    "gss": "S12000041",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Antrim and Newtownabbey",
+    "gss": "N09000001",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Ards and North Down",
+    "gss": "N09000011",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Argyll and Bute",
+    "gss": "S12000035",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Armagh City, Banbridge and Craigavon",
+    "gss": "N09000002",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
   },
   {
     "council": "Arun District Council",
@@ -49,6 +113,30 @@
     "notes": "No additional HMO scheme. Street-level; check council street list."
   },
   {
+    "council": "Ashford Borough Council",
+    "gss": "E07000105",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. Only national mandatory HMO licensing applies. The council describes both discretionary schemes as powers it may use, with no area designated. Confirmed 4 August 2026.",
+    "sourceUrl": "https://www.ashford.gov.uk/housing/landlord-advice/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Babergh District Council",
+    "gss": "E07000200",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. Only national mandatory HMO licensing applies, at a fee of £578.55. Confirmed against the council's HMO pages and public register on 4 August 2026.",
+    "sourceUrl": "https://www.babergh.gov.uk/w/houses-in-multiple-occupation",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Barnsley Metropolitan Borough Council",
+    "gss": "E08000016",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. A scheme was approved by Cabinet in 2018 but was never designated and was abandoned, so nothing ever came into force. Confirmed by the council's own FOI response, 4 August 2026.",
+    "sourceUrl": "https://www.barnsley.gov.uk/media/00sccdgu/foi5290-additional-and-selective-licencing.pdf",
+    "verified": "2026-08-04"
+  },
+  {
     "council": "Basildon Borough Council",
     "gss": "E07000066",
     "schemes": [
@@ -67,6 +155,58 @@
     "notes": "Pre-consultation. Mandatory HMO licensing only in force."
   },
   {
+    "council": "Basingstoke and Deane Borough Council",
+    "gss": "E07000084",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. Only national mandatory HMO licensing applies. Confirmed against the council's HMO pages and a full site crawl on 4 August 2026.",
+    "sourceUrl": "https://www.basingstoke.gov.uk/hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Bassetlaw District Council",
+    "gss": "E07000171",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. Selective licensing was consulted on in 2018/19 and declined in favour of a Thriving Neighbourhoods strategy, so no designation was ever made. Confirmed 4 August 2026.",
+    "sourceUrl": "https://www.bassetlaw.gov.uk/housing-services/housing-strategy-and-delivery-plan/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Bath and North East Somerset Council",
+    "gss": "E06000022",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "expired",
+        "start": "2019-01-01",
+        "end": "2023-12-31",
+        "coverage": "areas",
+        "areaDescription": "Bath City only (not the wider district). Covered HMOs occupied by 3 or 4 people in 2 or more households, below the mandatory 5-person threshold. Expired 31 December 2023 and not renewed, so no additional licensing obligation exists today.",
+        "feeApprox": "£795 for a 5-year licence at designation (£50 reduction for online applications, £100 off on renewal)",
+        "sourceUrl": "https://democracy.bathnes.gov.uk/documents/s52280/E3079%20HMO%20Additional%20Licensing.pdf",
+        "verified": "2026-08-04"
+      },
+      {
+        "type": "additional",
+        "status": "expired",
+        "start": null,
+        "end": "2018-12-31",
+        "coverage": "wards",
+        "wards": [
+          "Westmoreland",
+          "Oldfield",
+          "Widcombe"
+        ],
+        "areaDescription": "Predecessor scheme designated by Cabinet on 12 June 2013 covering an area of Bath based around the Westmoreland, Oldfield and Widcombe wards. Expired 31 December 2018 and superseded by the 2019-2023 Bath City scheme, which has itself now expired. Commencement date not published, so left null rather than estimated.",
+        "feeApprox": null,
+        "sourceUrl": "https://democracy.bathnes.gov.uk/documents/s52280/E3079%20HMO%20Additional%20Licensing.pdf",
+        "verified": "2026-08-04"
+      }
+    ],
+    "notes": "No licensing scheme is currently in force. The additional HMO licensing scheme covering Bath city ended on 31 December 2023 and has not been renewed. The council says it would need to consult before introducing a new one. Only mandatory HMO licensing applies today.",
+    "sourceUrl": "https://www.bathnes.gov.uk/hmo-licence-types",
+    "verified": "2026-08-04"
+  },
+  {
     "council": "Bedford Borough Council",
     "gss": "E06000055",
     "schemes": [
@@ -83,6 +223,14 @@
       }
     ],
     "notes": "Renewal of a previous scheme. No selective scheme."
+  },
+  {
+    "council": "Belfast",
+    "gss": "N09000003",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
   },
   {
     "council": "Birmingham City Council",
@@ -149,6 +297,26 @@
     "verified": "2026-07-30"
   },
   {
+    "council": "Blackburn with Darwen Borough Council",
+    "gss": "E06000008",
+    "schemes": [
+      {
+        "type": "selective",
+        "status": "expired",
+        "start": null,
+        "end": null,
+        "coverage": "areas",
+        "areaDescription": "Five separate selective licensing designations have operated and all have now expired: Infirmary (in force February 2009), Central Darwen (June 2009), Griffin (January 2013), Infirmary 2 (March 2016) and Darwen 2 (May 2017). The council states all have expired. Day-level start and end dates are not published for all five, so both are left null rather than estimated; only the Griffin expiry (January 2018) is separately confirmed.",
+        "feeApprox": null,
+        "sourceUrl": "https://democracy.blackburn.gov.uk/documents/s17959/Permission%20to%20Consult%20on%20Selective%20Licensing%20Area.pdf",
+        "verified": "2026-08-04"
+      }
+    ],
+    "notes": "No licensing scheme is currently in force. Five selective licensing areas have operated since 2009 and all have expired. A new Hollins Bank scheme was consulted on in 2024 but the council postponed designating it in February 2025. Only mandatory HMO licensing applies today.",
+    "sourceUrl": "https://blackburn.gov.uk/licences-and-permits/licences/houses-multiple-occupation-mandatory-licensing",
+    "verified": "2026-08-04"
+  },
+  {
     "council": "Blackpool Council",
     "gss": "E06000009",
     "schemes": [
@@ -177,6 +345,22 @@
     "notes": "Additional licensing 'currently not in operation'."
   },
   {
+    "council": "Blaenau Gwent",
+    "gss": "W06000019",
+    "schemes": [],
+    "notes": "Blaenau Gwent has no selective or additional licensing scheme. Only mandatory HMO licensing applies, for properties of three or more storeys with five or more occupants in more than one household. All landlords in Wales must also register with Rent Smart Wales.",
+    "sourceUrl": "https://www.blaenau-gwent.gov.uk/en/resident/environmental-health/pollution/hmo/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Bolsover District Council",
+    "gss": "E07000033",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. The council states that where a HMO is occupied by fewer than five people it will not require a licence, which confirms no additional scheme exists. Confirmed 4 August 2026.",
+    "sourceUrl": "https://www.bolsover.gov.uk/repairs-housing-services/hmo",
+    "verified": "2026-08-04"
+  },
+  {
     "council": "Bolton",
     "gss": "E08000001",
     "schemes": [
@@ -193,6 +377,30 @@
       }
     ],
     "notes": "Consultation stage only. No designation made at the time of checking."
+  },
+  {
+    "council": "Borough Council of King's Lynn and West Norfolk",
+    "gss": "E07000146",
+    "schemes": [],
+    "notes": "King's Lynn and West Norfolk operates mandatory HMO licensing only, for 5 or more occupants, with fees of £768 to £1,415 by bedroom count. No selective or additional scheme. The 3 or more people figure on the council site is the HMO definition, not a licensing threshold.",
+    "sourceUrl": "https://www.west-norfolk.gov.uk/info/20114/houses_in_multiple_occupation/675/apply_for_an_hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Borough of Broxbourne Council",
+    "gss": "E07000095",
+    "schemes": [],
+    "notes": "Broxbourne has no selective or additional licensing scheme. Only the national mandatory HMO licence applies. A licence costs £1,820, plus £159 per bedroom above five. If you own a converted block of flats here, ring the council to confirm.",
+    "sourceUrl": "https://www.broxbourne.gov.uk/licensing/i-want-apply-renew-house-multiple-occupation-hmo-licence",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Boston Borough Council",
+    "gss": "E07000136",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. The council's adopted 2026 HMO licensing policy states it does not currently operate an additional licensing scheme, and selective licensing was rejected after consultation. Confirmed 4 August 2026.",
+    "sourceUrl": "https://www.boston.gov.uk/media/28755/SELCP-Housing-Standards-HMO-Licensing-Policy/pdf/SELCP_Housing_Standards_HMO_Licensing_Policy_1vwkcuv21hd33.pdf",
+    "verified": "2026-08-04"
   },
   {
     "council": "Bournemouth, Christchurch and Poole",
@@ -213,12 +421,44 @@
     "notes": "Consultation stage only. No designation made at the time of checking."
   },
   {
+    "council": "Bracknell Forest Council",
+    "gss": "E06000036",
+    "schemes": [],
+    "notes": "Bracknell Forest has no selective or additional licensing scheme. Only the national mandatory HMO licence applies, to homes shared by 5 or more people in 2 or more households. HMO licensing is run by the Public Protection Partnership.",
+    "sourceUrl": "https://www.bracknell-forest.gov.uk/business-information/licensing",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Braintree District Council",
+    "gss": "E07000067",
+    "schemes": [],
+    "notes": "Braintree has no selective or additional licensing scheme. Only the national mandatory HMO licence applies, to homes shared by 5 or more people in 2 or more households. A new licence costs £595 plus £445 on issue in 2026/27.",
+    "sourceUrl": "https://www.braintree.gov.uk/licensing/houses-multiple-occupatlon-hmo-licence/3",
+    "verified": "2026-08-04"
+  },
+  {
     "council": "Breckland",
     "gss": "E07000143",
     "schemes": [],
     "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Breckland council does not operate an additional or selective licensing scheme.\"",
     "sourceUrl": "https://www.breckland.gov.uk/article/3788/Houses-in-Multiple-Occupation-HMOs",
     "verified": "2026-07-30"
+  },
+  {
+    "council": "Brentwood Borough Council",
+    "gss": "E07000068",
+    "schemes": [],
+    "notes": "Brentwood has no selective or additional licensing scheme. Only the national mandatory HMO licence applies, to homes shared by 5 or more people in 2 or more households. A new licence is £890 and a renewal £603.",
+    "sourceUrl": "https://www.brentwood.gov.uk/houses-in-multiple-occupation-hmos",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Bridgend",
+    "gss": "W06000013",
+    "schemes": [],
+    "notes": "Bridgend has no selective or additional licensing scheme and says so in its own guidance. Only mandatory HMO licensing applies: three or more storeys, five or more occupants, more than one household. Fee £792, or £657 to renew. Rent Smart Wales is separate.",
+    "sourceUrl": "https://www.srs.wales/en/Environmental-Health/Housing/HMO-Licensing/HMO-Licensing-in-Bridgend.aspx",
+    "verified": "2026-08-05"
   },
   {
     "council": "Brighton and Hove City Council",
@@ -336,6 +576,38 @@
     "notes": "Layered ward + citywide schemes. 2022 ward-scheme end dates derived from 5-year term."
   },
   {
+    "council": "Broadland District Council",
+    "gss": "E07000144",
+    "schemes": [],
+    "notes": "Broadland has no selective or additional licensing scheme. Only the national mandatory HMO licence applies, to homes shared by 5 or more people in 2 or more households. Licensing is run jointly with South Norfolk; a 5-year licence is £835.88.",
+    "sourceUrl": "https://www.southnorfolkandbroadland.gov.uk/licensing/licences/houses-multiple-occupation/broadland-hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Bromsgrove District Council",
+    "gss": "E07000234",
+    "schemes": [],
+    "notes": "Bromsgrove has no selective or additional licensing scheme. Only the national mandatory HMO licence applies, to homes shared by 5 or more people in 2 or more households who share a kitchen or bathroom.",
+    "sourceUrl": "https://www.bromsgrove.gov.uk/business/landlords/landlord-regulatory-requirements-including-hmos/landlords-houses-in-multiple-occupation-hmos/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Broxtowe Borough Council",
+    "gss": "E07000172",
+    "schemes": [],
+    "notes": "Broxtowe has no selective or additional licensing scheme. Only the national mandatory HMO licence applies, to homes shared by 5 or more people in 2 or more households. Broxtowe's HMO planning document is a planning rule, not a licence.",
+    "sourceUrl": "https://www.broxtowe.gov.uk/for-business/licences-permits/business-licences/house-in-multiple-occupation-hmo/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Buckinghamshire Council",
+    "gss": "E06000060",
+    "schemes": [],
+    "notes": "Buckinghamshire has no selective or additional licensing scheme. Only the national mandatory HMO licence applies, to homes shared by 5 or more people in 2 or more households. Fees start at £1,050 for a five-bedroom property.",
+    "sourceUrl": "https://www.buckinghamshire.gov.uk/council-tax-benefits-housing/housing-support-and-landlords/licensing-a-hmo/",
+    "verified": "2026-08-04"
+  },
+  {
     "council": "Burnley Borough Council",
     "gss": "E07000117",
     "schemes": [
@@ -363,6 +635,158 @@
       }
     ],
     "notes": "No additional HMO scheme."
+  },
+  {
+    "council": "Bury Metropolitan Borough Council",
+    "gss": "E08000002",
+    "schemes": [],
+    "notes": "UNVERIFIED: Bury's landlord pages show only the national mandatory HMO licence, and we found no sign of a selective or additional scheme. We could not fully search the council's website, so please check with Bury before relying on this.",
+    "sourceUrl": "https://www.bury.gov.uk/housing/private-rent/landlords/hmo-licence"
+  },
+  {
+    "council": "Caerphilly",
+    "gss": "W06000018",
+    "schemes": [],
+    "notes": "Caerphilly has no selective or additional licensing scheme. The council states licensing is restricted to HMOs of three or more storeys housing five or more tenants from two or more families. Fee £250 for five years. Rent Smart Wales registration is separate.",
+    "sourceUrl": "https://www.caerphilly.gov.uk/services/housing/private-housing/houses-in-multiple-occupation.aspx",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Calderdale Metropolitan Borough Council",
+    "gss": "E08000033",
+    "schemes": [],
+    "notes": "Calderdale has no selective or additional licensing scheme. Only the national mandatory HMO licence applies, to homes shared by 5 or more people in 2 or more households who share a kitchen, bathroom or toilet.",
+    "sourceUrl": "https://new.calderdale.gov.uk/housing/private-landlords-and-tenants/houses-multiple-occupation-hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cambridge City Council",
+    "gss": "E07000008",
+    "schemes": [],
+    "notes": "Cambridge does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes shared by five or more people in two or more households. The 2026-27 fee is £1,133.",
+    "sourceUrl": "https://www.cambridge.gov.uk/licensing-of-houses-in-multiple-occupation",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cannock Chase District Council",
+    "gss": "E07000192",
+    "schemes": [],
+    "notes": "Cannock Chase does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes shared by five or more people in two or more households. The fee is £1,028.55 per property.",
+    "sourceUrl": "https://www.cannockchasedc.gov.uk/residents/environmental-health/private-sector-housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Canterbury City Council",
+    "gss": "E07000106",
+    "schemes": [],
+    "notes": "Canterbury does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. Planning permission may separately be needed to turn a house into a shared home in some areas, which is a planning rule and not a licence.",
+    "sourceUrl": "https://www.canterbury.gov.uk/housing/houses-multiple-occupation-hmo/find-out-if-you-need-hmo-licence",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cardiff",
+    "gss": "W06000015",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "active",
+        "start": "2023-02-01",
+        "end": "2028-02-01",
+        "coverage": "wards",
+        "wards": [
+          "Cathays"
+        ],
+        "areaDescription": "The Cathays ward, covering every HMO of any size or type that is not already covered by mandatory licensing",
+        "feeApprox": "£390",
+        "sourceUrl": "https://www.srs.wales/en/Environmental-Health/Housing/HMO-Licensing/HMO-Licensing-in-Cardiff.aspx",
+        "verified": "2026-08-05"
+      },
+      {
+        "type": "additional",
+        "status": "expired",
+        "start": "2021-01-01",
+        "end": "2026-01-01",
+        "coverage": "wards",
+        "wards": [
+          "Plasnewydd"
+        ],
+        "areaDescription": "The Plasnewydd ward, covering every HMO of any size not already covered by mandatory licensing",
+        "feeApprox": "£390",
+        "sourceUrl": "https://www.srs.wales/en/Environmental-Health/Housing/HMO-Licensing/HMO-Licensing-in-Cardiff.aspx",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "In Cathays, any size of HMO needs an additional licence until 1 February 2028. The separate Plasnewydd scheme's five year term ended on 1 January 2026, but the council still lists it as running, so check with Cardiff before letting there. No selective licensing.",
+    "sourceUrl": "https://www.srs.wales/en/Environmental-Health/Housing/HMO-Licensing/HMO-Licensing-in-Cardiff.aspx",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Carmarthenshire",
+    "gss": "W06000010",
+    "schemes": [
+      {
+        "type": "selective",
+        "status": "expired",
+        "start": null,
+        "end": "2019-07-02",
+        "coverage": "wards",
+        "wards": [
+          "Tyisha"
+        ],
+        "areaDescription": "The Tyisha ward of Llanelli; all privately rented properties in the area needed a licence, whether or not they were HMOs",
+        "feeApprox": "£240",
+        "sourceUrl": "https://www.carmarthenshire.gov.wales/home/business/landlords/licensing/",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Carmarthenshire has no active selective or additional licensing. A selective scheme covered the Tyisha ward of Llanelli but ended on 2 July 2019. Only mandatory HMO licensing now applies, county-wide. One council page still wrongly describes the Tyisha scheme as live.",
+    "sourceUrl": "https://www.carmarthenshire.gov.wales/home/business/landlords/licensing/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Castle Point Borough Council",
+    "gss": "E07000069",
+    "schemes": [],
+    "notes": "Castle Point does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes rented to five or more people forming more than one household who share facilities.",
+    "sourceUrl": "https://www.castlepoint.gov.uk/houses-in-multiple-occupation",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Causeway Coast and Glens",
+    "gss": "N09000004",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Central Bedfordshire Council",
+    "gss": "E06000056",
+    "schemes": [],
+    "notes": "Central Bedfordshire does not run a selective or additional licensing scheme. Its only property licensing policy covers houses in multiple occupation under the national mandatory rules. Check with the council if you are unsure about your property.",
+    "sourceUrl": "https://www.centralbedfordshire.gov.uk/housing/housing-policies",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Ceredigion",
+    "gss": "W06000008",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "active",
+        "start": "2024-07-10",
+        "end": "2029-07-09",
+        "coverage": "borough-wide",
+        "wards": null,
+        "areaDescription": "The whole county for HMOs with five or more people in two or more households (any number of storeys) and for converted flats; in the Aberystwyth and Llanbadarn Fawr area it also catches HMOs with three or more people in three or more households",
+        "feeApprox": "£334 per habitable room",
+        "sourceUrl": "https://www.ceredigion.gov.uk/resident/housing/houses-in-multiple-occupation/public-notice-of-designation-of-an-area-for-additional-licensing-of-houses-in-multiple-occupation/",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Ceredigion runs additional HMO licensing from 10 July 2024 to 9 July 2029. County-wide it covers HMOs with five or more people in two or more households, whatever the number of storeys, plus converted flats. Around Aberystwyth it also covers three or more people.",
+    "sourceUrl": "https://www.ceredigion.gov.uk/resident/housing/houses-in-multiple-occupation/public-notice-of-designation-of-an-area-for-additional-licensing-of-houses-in-multiple-occupation/",
+    "verified": "2026-08-05"
   },
   {
     "council": "Charnwood Borough Council",
@@ -398,12 +822,92 @@
     "notes": "Loughborough student authority: additional is borough-wide, selective is the two Loughborough wards."
   },
   {
+    "council": "Chelmsford City Council",
+    "gss": "E07000070",
+    "schemes": [],
+    "notes": "Chelmsford states plainly that it has no additional or selective licensing schemes. Only the national mandatory HMO licence applies, for homes where five or more people in two or more households share facilities. The fee starts at £900.",
+    "sourceUrl": "https://www.chelmsford.gov.uk/business/licensing/licensing-a-house-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cheltenham Borough Council",
+    "gss": "E07000078",
+    "schemes": [],
+    "notes": "Cheltenham does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. Planning permission is separately needed to convert a house into a small shared home in the St Paul's area, which is a planning rule and not a licence.",
+    "sourceUrl": "https://www.cheltenham.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cherwell District Council",
+    "gss": "E07000177",
+    "schemes": [],
+    "notes": "Cherwell does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes shared by five or more people in two or more households. Fees run from £570 to £1,340 depending on the application type.",
+    "sourceUrl": "https://www.cherwell.gov.uk/info/245/hmos/594/hmo-licensing",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cheshire East Council",
+    "gss": "E06000049",
+    "schemes": [],
+    "notes": "Cheshire East does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes shared by five or more people in two or more households. Some Crewe streets separately need planning permission for shared homes.",
+    "sourceUrl": "https://www.cheshireeast.gov.uk/housing/houses_in_multiple_occupation/houses_in_multiple_occupation.aspx",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cheshire West and Chester Council",
+    "gss": "E06000050",
+    "schemes": [],
+    "notes": "Cheshire West and Chester does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. Fees range from £786 to £968, with 10 per cent off for accredited landlords.",
+    "sourceUrl": "https://www.cheshirewestandchester.gov.uk/residents/housing/private-rented-sector",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Chesterfield Borough Council",
+    "gss": "E07000034",
+    "schemes": [],
+    "notes": "Chesterfield does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes shared by five or more people in two or more households. A new licence costs £887 and a renewal £795.",
+    "sourceUrl": "https://www.chesterfield.gov.uk/housing/private-homes/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
     "council": "Chichester",
     "gss": "E07000225",
     "schemes": [],
     "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Chichester District Council does not run selective or additional licensing schemes.\"",
     "sourceUrl": "https://www.chichester.gov.uk/housing-in-multiple-occupation",
     "verified": "2026-07-30"
+  },
+  {
+    "council": "Chorley Council",
+    "gss": "E07000118",
+    "schemes": [],
+    "notes": "Chorley does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. The council confirms that smaller shared homes let to three or four people in two or more households do not need a licence.",
+    "sourceUrl": "https://chorley.gov.uk/environmental-health/hmo/2",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "City of Bradford Metropolitan District Council",
+    "gss": "E08000032",
+    "schemes": [],
+    "notes": "Bradford has no selective or additional licensing scheme. Only the national mandatory HMO licence applies, to homes shared by 5 or more people in 2 or more households. The council's 2026-27 fee list covers mandatory HMO licences only.",
+    "sourceUrl": "https://www.bradford.gov.uk/housing/houses-in-multiple-occupation/hmo-licence-fees/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "City of Edinburgh",
+    "gss": "S12000036",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "City of London",
+    "gss": "E09000001",
+    "schemes": [],
+    "notes": "The City of London does not run a selective or additional landlord licensing scheme. Only the national mandatory HMO licence applies, to properties shared by five or more people forming two or more households.",
+    "sourceUrl": "https://www.cityoflondon.gov.uk/services/licensing/other-licence-and-business-permit-types/houses-in-multiple-occupation-hmo",
+    "verified": "2026-08-04"
   },
   {
     "council": "City of Westminster",
@@ -491,6 +995,67 @@
     "notes": "No selective scheme."
   },
   {
+    "council": "Clackmannanshire",
+    "gss": "S12000005",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Colchester",
+    "gss": "E07000071",
+    "schemes": [],
+    "notes": "Colchester does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, to properties with five or more occupants forming two or more households. The council states this in writing.",
+    "sourceUrl": "https://www.new.colchester.gov.uk/licensing/other-licences/house-multiple-occupation-licensing",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Conwy",
+    "gss": "W06000003",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "active",
+        "start": null,
+        "end": null,
+        "coverage": "areas",
+        "wards": null,
+        "areaDescription": "Pensarn (Marine Road and South Parade only), Colwyn Bay (Glyn and Rhiw areas only) and Llandudno and Craig y Don (Gogarth Mostyn, Tudno and Craig-y-don areas only)",
+        "feeApprox": "£1,398",
+        "sourceUrl": "https://www.conwy.gov.uk/en/Business/Licenses-and-Permits/HMO-licensing.aspx",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Conwy runs additional HMO licensing in parts of Pensarn, Colwyn Bay and Llandudno and Craig y Don, where an HMO of any size needs a licence. The 2026-27 fee is £1,398 for up to four lets. Conwy does not publish the scheme dates, so confirm the boundary with the council.",
+    "sourceUrl": "https://www.conwy.gov.uk/en/Business/Licenses-and-Permits/HMO-licensing.aspx",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Cornwall",
+    "gss": "E06000052",
+    "schemes": [],
+    "notes": "Cornwall has no selective or additional licensing scheme anywhere in the county, including its towns. Only the national mandatory HMO licence applies. Cornwall's Responsible Landlord Scheme is free and voluntary, and is not a licence.",
+    "sourceUrl": "https://www.cornwall.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cotswold",
+    "gss": "E07000079",
+    "schemes": [],
+    "notes": "Cotswold District does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, to properties with five or more occupants forming two or more households.",
+    "sourceUrl": "https://cotswold.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Council of the Isles of Scilly",
+    "gss": "E06000053",
+    "schemes": [],
+    "notes": "The Isles of Scilly operates mandatory HMO licensing only. Its public HMO register cites the Housing Act 2004 and lists licensed HMOs only. No selective or additional licensing scheme was found.",
+    "sourceUrl": "https://scilly.gov.uk/community-safety/housing/private-sector-housing/houses-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "County Durham",
     "gss": "E06000047",
     "schemes": [
@@ -544,12 +1109,77 @@
     "notes": "No selective scheme. Previous citywide additional scheme 2020-2025 replaced seamlessly."
   },
   {
+    "council": "Crawley",
+    "gss": "E07000226",
+    "schemes": [],
+    "notes": "Crawley does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. Crawley does have planning rules limiting new HMOs in ten zones, but that is planning permission and is not a licence.",
+    "sourceUrl": "https://crawley.gov.uk/housing/private-housing/houses-multiple-occupation",
+    "verified": "2026-08-04"
+  },
+  {
     "council": "Cumberland",
     "gss": "E06000063",
     "schemes": [],
     "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Cumberland Council does not currently operate: additional HMO licensing schemes; selective licensing for other private rented properties.\"",
     "sourceUrl": "https://www.cumberland.gov.uk/housing/housing-advice/houses-multiple-occupation-hmos",
     "verified": "2026-07-30"
+  },
+  {
+    "council": "Dacorum",
+    "gss": "E07000096",
+    "schemes": [],
+    "notes": "Dacorum does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, to properties with five or more occupants forming two or more households.",
+    "sourceUrl": "https://www.dacorum.gov.uk/home/housing/private-housing/private-landlords/hmo-licences",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Darlington",
+    "gss": "E06000005",
+    "schemes": [],
+    "notes": "Darlington does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. The council's published fee list contains HMO licence fees only, with no selective or additional licence fee.",
+    "sourceUrl": "https://www.darlington.gov.uk/housing/private-sector-housing/private-sector-housing-fees/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Dartford",
+    "gss": "E07000107",
+    "schemes": [],
+    "notes": "Dartford does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. Dartford does have planning rules requiring permission for new HMOs in parts of the borough, but that is planning and is not a licence.",
+    "sourceUrl": "https://www.dartford.gov.uk/private-sector-1/houses-multiple-occupancy",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Denbighshire",
+    "gss": "W06000004",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "active",
+        "start": "2026-02-01",
+        "end": "2031-01-31",
+        "coverage": "borough-wide",
+        "wards": null,
+        "areaDescription": "The whole of Denbighshire: any HMO with three or more tenants forming two or more households, plus converted flats that fail the 1991 Building Regulations",
+        "feeApprox": "£890",
+        "sourceUrl": "https://www.denbighshire.gov.uk/en/licences-permits-and-trading-standards/houses-in-multiple-occupation.aspx",
+        "verified": "2026-08-05"
+      },
+      {
+        "type": "additional",
+        "status": "expired",
+        "start": "2020-12-01",
+        "end": "2025-11-30",
+        "coverage": "areas",
+        "wards": null,
+        "areaDescription": "Rhyl, Prestatyn, Denbigh and Llangollen; replaced and expanded county-wide by the 2025 scheme",
+        "feeApprox": "£890",
+        "sourceUrl": "https://www.denbighshire.gov.uk/en/licences-permits-and-trading-standards/houses-in-multiple-occupation.aspx",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Denbighshire operates county-wide additional HMO licensing from 1 February 2026 to 31 January 2031. Any HMO with three or more tenants forming two or more households needs a licence, anywhere in the county. The basic fee is £890 for five years.",
+    "sourceUrl": "https://www.denbighshire.gov.uk/en/licences-permits-and-trading-standards/houses-in-multiple-occupation.aspx",
+    "verified": "2026-08-05"
   },
   {
     "council": "Derby",
@@ -568,6 +1198,14 @@
     "verified": "2026-07-30"
   },
   {
+    "council": "Derry City and Strabane",
+    "gss": "N09000005",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Doncaster",
     "gss": "E08000017",
     "schemes": [
@@ -584,6 +1222,124 @@
       }
     ],
     "notes": "Council states: \"We currently operate one selective licensing scheme in Doncaster, covering the designated area of Hexthorpe.\" The separate Edlington scheme ended 6 February 2023."
+  },
+  {
+    "council": "Dorset",
+    "gss": "E06000059",
+    "schemes": [],
+    "notes": "Dorset Council has no selective or additional licensing scheme anywhere in its area, including Weymouth. Only the national mandatory HMO licence applies. A Weymouth town centre scheme was consulted on years ago but was never brought in.",
+    "sourceUrl": "https://www.dorsetcouncil.gov.uk/w/mandatory-hmo-licensing",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Dover",
+    "gss": "E07000108",
+    "schemes": [],
+    "notes": "Dover District does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, and it covers the whole district. The council confirmed this in a freedom of information response.",
+    "sourceUrl": "https://www.dover.gov.uk/Corporate-Information/Freedom-of-Information/Freedom-of-information-Disclosure-Log/Responses/FI16759.aspx",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Dudley",
+    "gss": "E08000027",
+    "schemes": [],
+    "notes": "Dudley does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, to properties with five or more occupants forming two or more households.",
+    "sourceUrl": "https://www.dudley.gov.uk/residents/housing/housing-options/private-housing/private-landlords/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Dumfries and Galloway",
+    "gss": "S12000006",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Dundee City",
+    "gss": "S12000042",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "East Ayrshire",
+    "gss": "S12000008",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "East Cambridgeshire",
+    "gss": "E07000009",
+    "schemes": [],
+    "notes": "East Cambridgeshire does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, to properties with five or more occupants forming two or more households who share basic amenities.",
+    "sourceUrl": "https://eastcambs.gov.uk/services/licensing-and-permits/other-licensing/hmo-licensing-information",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "East Devon District Council",
+    "gss": "E07000040",
+    "schemes": [],
+    "notes": "East Devon operates mandatory HMO licensing only. There is no selective licensing and no additional HMO licensing scheme. The council's HMO fee page lists mandatory licence fees only (£600 up to 5 occupants, £800 for 6 or more).",
+    "sourceUrl": "https://eastdevon.gov.uk/housing-and-homelessness/private-sector-housing/houses-in-multiple-occupation/licensing-of-houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "East Dunbartonshire",
+    "gss": "S12000045",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "East Hampshire District Council",
+    "gss": "E07000085",
+    "schemes": [],
+    "notes": "East Hampshire operates mandatory HMO licensing only. There is no selective licensing and no additional HMO licensing scheme. The council's 2026 price list contains HMO licence fees only, with no fee line for any discretionary scheme.",
+    "sourceUrl": "https://www.easthants.gov.uk/housing/private-sector-housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "East Hertfordshire District Council",
+    "gss": "E07000242",
+    "schemes": [],
+    "notes": "East Herts operates mandatory HMO licensing only, for properties with five or more occupants in two or more households. There is no selective or additional licensing. The environmental health fees list shows HMO licence fees only.",
+    "sourceUrl": "https://www.eastherts.gov.uk/hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "East Lindsey District Council",
+    "gss": "E07000137",
+    "schemes": [],
+    "notes": "East Lindsey operates mandatory HMO licensing only. Its 2026-2029 HMO licensing policy states the council does not currently run an additional licensing scheme, and there is no selective licensing. The fee schedule lists mandatory HMO fees only.",
+    "sourceUrl": "https://www.e-lindsey.gov.uk/Houses-in-Multiple-Occupation-HMOs-and-Licensing",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "East Lothian",
+    "gss": "S12000010",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "East Renfrewshire",
+    "gss": "S12000011",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "East Riding of Yorkshire Council",
+    "gss": "E06000011",
+    "schemes": [],
+    "notes": "UNVERIFIED: East Riding's HMO page refers to an additional licensing scheme in Goole but gives no dates, and its April 2026 fee schedule lists mandatory HMO fees only. We could not confirm whether the Goole scheme is still in force. Check with the council."
   },
   {
     "council": "East Staffordshire Borough Council",
@@ -609,12 +1365,165 @@
     "notes": "No additional HMO scheme."
   },
   {
+    "council": "East Suffolk Council",
+    "gss": "E07000244",
+    "schemes": [],
+    "notes": "East Suffolk operates mandatory HMO licensing only, for properties with five or more people in two or more households. There is no selective or additional licensing. The 2026/27 fees schedule lists HMO licence fees only.",
+    "sourceUrl": "https://www.eastsuffolk.gov.uk/housing/privately-rented-housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Eastbourne Borough Council",
+    "gss": "E07000061",
+    "schemes": [],
+    "notes": "Eastbourne operates mandatory HMO licensing only. There is no selective or additional licensing. An Article 4 direction restricts HMO conversions in some wards, but that is planning control, not licensing, and no licence arises from it.",
+    "sourceUrl": "https://www.lewes-eastbourne.gov.uk/hmo-planning",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Eastleigh Borough Council",
+    "gss": "E07000086",
+    "schemes": [],
+    "notes": "Eastleigh states it currently operates a mandatory HMO licensing scheme only. There is no selective licensing and no additional HMO licensing. The council's fees page lists mandatory HMO licence fees only.",
+    "sourceUrl": "https://www.eastleigh.gov.uk/business/council-services-for-businesses/licensing-permits-and-registration/house-in-multiple-occupation-licence",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Elmbridge Borough Council",
+    "gss": "E07000207",
+    "schemes": [],
+    "notes": "Elmbridge operates mandatory HMO licensing only, for properties occupied by five or more people in two or more households. There is no selective or additional licensing, and only one HMO licence fee (£600) is published.",
+    "sourceUrl": "https://www.elmbridge.gov.uk/housing/help-private-landlords/houses-multiple-occupation-hmos",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Epping Forest District Council",
+    "gss": "E07000072",
+    "schemes": [],
+    "notes": "Epping Forest operates mandatory HMO licensing only, for HMOs with five or more occupants in two or more households. There is no selective or additional licensing. Only one HMO licence fee is published, £1,036 per five units.",
+    "sourceUrl": "https://www.eppingforestdc.gov.uk/housing/landlords/house-of-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Epsom and Ewell Borough Council",
+    "gss": "E07000208",
+    "schemes": [],
+    "notes": "Epsom and Ewell operates mandatory HMO licensing only, for properties with five or more people in two or more households. There is no selective or additional licensing, and the online fee database lists HMO licence fees only.",
+    "sourceUrl": "https://www.epsom-ewell.gov.uk/housing/private-rented-housing/houses-multiple-occupation",
+    "verified": "2026-08-04"
+  },
+  {
     "council": "Erewash",
     "gss": "E07000036",
     "schemes": [],
     "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"The Council do not currently operate any Additional License or Selective Licencing schemes.\"",
     "sourceUrl": "https://www.erewash.gov.uk/housing/privately-rented-homes/houses-multiple-occupation-hmos/information-about-hmo-licences",
     "verified": "2026-07-30"
+  },
+  {
+    "council": "Exeter City Council",
+    "gss": "E07000041",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "expired",
+        "start": null,
+        "end": null,
+        "coverage": "district",
+        "areaDescription": "A city-wide additional HMO licensing scheme covering two specific property types: flats or maisonettes above commercial premises or in mixed-use buildings let to 3 or more people in more than one household sharing amenities; and buildings converted into self-contained flats where the conversion did not meet the 1991 Building Regulations and fewer than two thirds of the flats are owner-occupied. The council states the scheme ran until February 2020 and has expired, and that no renewal is needed. It does not publish the designation start date or an exact end date, so both are recorded as null rather than estimated.",
+        "feeApprox": null,
+        "sourceUrl": "https://exeter.gov.uk/housing/private-landlords/houses-in-multiple-occupation-hmo/apply-for-your-new-licence-or-renew-your-existing-licence/",
+        "verified": "2026-08-04"
+      }
+    ],
+    "notes": "Exeter's city-wide additional HMO licensing scheme has expired; the council says it ran until February 2020 and needs no renewal. Only mandatory HMO licensing now applies. An Article 4 direction controls HMO conversions, but that is planning, not licensing.",
+    "sourceUrl": "https://exeter.gov.uk/housing/private-landlords/houses-in-multiple-occupation-hmo/apply-for-your-new-licence-or-renew-your-existing-licence/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Falkirk",
+    "gss": "S12000014",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Fareham Borough Council",
+    "gss": "E07000087",
+    "schemes": [],
+    "notes": "Fareham operates mandatory HMO licensing only. There is no selective licensing and no additional HMO licensing scheme. A licence is only needed for HMOs let to five or more people forming two or more households who share facilities.",
+    "sourceUrl": "https://www.fareham.gov.uk/licensing_and_inspections/environmental_polution/hmos.aspx",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Fenland District Council",
+    "gss": "E07000010",
+    "schemes": [],
+    "notes": "Fenland operates mandatory HMO licensing only, at £750 for a new licence and £660 to renew. There is no selective or additional licensing scheme. A selective scheme for Wisbech was consulted on in 2016 but was deferred and never brought in.",
+    "sourceUrl": "https://www.fenland.gov.uk/HMO",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Fermanagh and Omagh",
+    "gss": "N09000006",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Fife",
+    "gss": "S12000047",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Flintshire",
+    "gss": "W06000005",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "active",
+        "start": "2026-04-01",
+        "end": "2031-03-31",
+        "coverage": "borough-wide",
+        "wards": null,
+        "areaDescription": "The whole county of Flintshire: any HMO with three or more people in two or more households that is not already mandatory-licensed, plus section 257 converted flats",
+        "feeApprox": "£849.40",
+        "sourceUrl": "https://www.flintshire.gov.uk/en/Business/Licences-and-permits/Additional-Licencing-of-Houses-in-Multiple-Occupation.aspx",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Flintshire operates county-wide additional HMO licensing from 1 April 2026 to 31 March 2031, covering smaller HMOs outside mandatory licensing and converted flats. The fee is £849.40 for the first five units plus £38.79 per extra unit. No selective licensing.",
+    "sourceUrl": "https://www.flintshire.gov.uk/en/Business/Licences-and-permits/Additional-Licencing-of-Houses-in-Multiple-Occupation.aspx",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Folkestone and Hythe District Council",
+    "gss": "E07000112",
+    "schemes": [],
+    "notes": "Folkestone and Hythe operates mandatory HMO licensing only, at £1,130 to apply and £960 to renew. There is no selective licensing and no additional HMO licensing scheme. Smaller shared homes do not need a council licence.",
+    "sourceUrl": "https://www.folkestone-hythe.gov.uk/licensing/houses-multiple-occupation-hmo-licence-application",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Forest of Dean District Council",
+    "gss": "E07000080",
+    "schemes": [],
+    "notes": "Forest of Dean operates mandatory HMO licensing only. There is no selective licensing and no additional HMO licensing scheme. A new licence costs £240.88 to apply plus £1,091.63 on issue, and applies only to HMOs let to five or more people.",
+    "sourceUrl": "https://www.fdean.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Fylde Borough Council",
+    "gss": "E07000119",
+    "schemes": [],
+    "notes": "Fylde operates mandatory HMO licensing only, at £1,107 for a new licence and £850 to renew. There is no selective licensing and no additional HMO licensing scheme. Selective licensing on the Fylde coast is Blackpool's scheme, a different council.",
+    "sourceUrl": "https://new.fylde.gov.uk/resident/housing/the-licensing-of-houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
   },
   {
     "council": "Gateshead Metropolitan Borough Council",
@@ -728,6 +1637,14 @@
     "notes": "No additional HMO scheme."
   },
   {
+    "council": "Glasgow City",
+    "gss": "S12000049",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Gloucester City Council",
     "gss": "E07000081",
     "schemes": [
@@ -744,6 +1661,22 @@
       }
     ],
     "notes": "Consultation stage only. Mandatory HMO licensing only currently."
+  },
+  {
+    "council": "Gosport Borough Council",
+    "gss": "E07000088",
+    "schemes": [],
+    "notes": "Gosport operates mandatory HMO licensing only. There is no selective licensing and no additional HMO licensing scheme in the borough. A licence is required only for HMOs let to five or more people forming two or more households.",
+    "sourceUrl": "https://www.gosport.gov.uk/article/1085/Houses-in-multiple-occupation",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Gravesham Borough Council",
+    "gss": "E07000109",
+    "schemes": [],
+    "notes": "Gravesham operates mandatory HMO licensing only. There is no selective licensing and no additional HMO licensing scheme. The council is separately working towards an Article 4 planning direction on HMO conversions, which is not a licence.",
+    "sourceUrl": "https://www.gravesham.gov.uk/licensing/houses-multiple-occupation-1",
+    "verified": "2026-08-04"
   },
   {
     "council": "Great Yarmouth Borough Council",
@@ -768,6 +1701,85 @@
       }
     ],
     "notes": "council pages 403'd; secondary sources (Eastern Landlords, NRLA) cited. Delivery via Home Safe. Replaces expired 2019-2024 Nelson ward scheme. Proposed borough-wide additional scheme consulted but not designated."
+  },
+  {
+    "council": "Guildford Borough Council",
+    "gss": "E07000209",
+    "schemes": [],
+    "notes": "Guildford operates mandatory HMO licensing only, at £1,037.34. There is no selective licensing and no additional HMO licensing scheme. The council states that a shared home with three or four unrelated tenants does not need a licence from it.",
+    "sourceUrl": "https://www.guildford.gov.uk/article/24615/Do-I-need-a-HMO-licence",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Gwynedd",
+    "gss": "W06000002",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "expired",
+        "start": "2021-06-04",
+        "end": "2026-06-03",
+        "coverage": "borough-wide",
+        "wards": null,
+        "areaDescription": "The whole county of Gwynedd, covering every HMO not already caught by mandatory licensing, including Bangor, Caernarfon and Porthmadog",
+        "feeApprox": "£160 per unit plus £50",
+        "sourceUrl": "https://www.gwynedd.llyw.cymru/en-gb/businesses/licenses-and-permits/housing-and-residential-licences/house-in-multiple-occupancy-licence-hmo",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Gwynedd's county-wide additional HMO licence covered all HMOs outside mandatory licensing. The published designation ran to 3 June 2026, but the council still advertises the licence and charges £160 per unit plus £50. Check with Gwynedd before letting an HMO.",
+    "sourceUrl": "https://www.gwynedd.llyw.cymru/en-gb/businesses/licenses-and-permits/housing-and-residential-licences/house-in-multiple-occupancy-licence-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Halton Borough Council",
+    "gss": "E06000006",
+    "schemes": [
+      {
+        "type": "selective",
+        "status": "proposed",
+        "start": null,
+        "end": null,
+        "coverage": "wards",
+        "wards": [
+          "Central and West Bank",
+          "Appleton",
+          "Mersey and Weston",
+          "Bridgewater"
+        ],
+        "areaDescription": "PROPOSED ONLY, not yet designated. Consultation runs from 3 August 2026 to 18 October 2026 on a Part 3 selective licensing scheme covering Central and West Bank, Appleton, Mersey and Weston and Bridgewater wards, plus LSOA E01012379 in Highfield ward. An estimated 3,485 private rented households, around 43.4 per cent of the borough's private rented stock. The licence fee is itself part of the consultation and has not been set.",
+        "feeApprox": null,
+        "sourceUrl": "https://www3.halton.gov.uk/Pages/business/EnvironmentalHealth/privatehousing/propertylicensing.aspx",
+        "verified": "2026-08-04"
+      }
+    ],
+    "notes": "Halton has no licensing scheme in force today, so only mandatory HMO licensing applies. A selective licensing scheme is out to public consultation until 18 October 2026 covering four wards and part of Highfield. If you let in those areas, watch for a decision after that date.",
+    "sourceUrl": "https://www3.halton.gov.uk/Pages/business/EnvironmentalHealth/PrivateHousing.aspx",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Harborough District Council",
+    "gss": "E07000131",
+    "schemes": [],
+    "notes": "Harborough operates mandatory HMO licensing only. There is no selective licensing and no additional HMO licensing scheme. A licence is needed only where a property has five or more people forming more than one household.",
+    "sourceUrl": "https://www.harborough.gov.uk/info/20009/licences/135/house_in_multiple_occupation_hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Harlow Council",
+    "gss": "E07000073",
+    "schemes": [],
+    "notes": "Harlow operates mandatory HMO licensing only, at £850. There is no selective or additional licensing scheme in force. The council's 2026 to 2027 corporate plan says it intends to introduce selective licensing, but nothing has been designated yet.",
+    "sourceUrl": "https://www.harlow.gov.uk/business/licensing/apply-hmo-licence",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Hart District Council",
+    "gss": "E07000089",
+    "schemes": [],
+    "notes": "Hart operates mandatory HMO licensing only, starting at £893 for a licence covering five people. There is no selective licensing and no additional HMO licensing scheme, so smaller shared homes and ordinary private lets do not need a council licence.",
+    "sourceUrl": "https://www.hart.gov.uk/housing/private-sector-housing/how-we-work-landlords/houses-multiple-occupation",
+    "verified": "2026-08-04"
   },
   {
     "council": "Hartlepool",
@@ -814,12 +1826,68 @@
     "notes": "Previous selective (expired 2020) and additional (expired 2023) schemes. New scheme proposed, not yet in force."
   },
   {
+    "council": "Havant Borough Council",
+    "gss": "E07000090",
+    "schemes": [],
+    "notes": "Havant operates mandatory HMO licensing only. No selective or additional licensing scheme was found. The published HMO fee schedule contains only mandatory occupancy bands, and the council's licensing A-Z has no property licensing entry at all.",
+    "sourceUrl": "https://www.havant.gov.uk/housing/private-sector-housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Herefordshire Council",
+    "gss": "E06000019",
+    "schemes": [],
+    "notes": "Herefordshire operates mandatory HMO licensing only. No selective or additional licensing scheme was found. The single published licence fee of about £1,404 for five years covers mandatory HMO licensing alone.",
+    "sourceUrl": "https://www.herefordshire.gov.uk/directories/licences-and-permissions/house-in-multiple-occupation-hmo-and-licensing/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Hertsmere Borough Council",
+    "gss": "E07000098",
+    "schemes": [],
+    "notes": "Hertsmere operates mandatory HMO licensing only, for 5 or more people in 2 or more households, fee £1,306. No selective or additional scheme. A 2026 Article 4 Direction covering Potters Bar wards is planning control over HMO conversion, not licensing.",
+    "sourceUrl": "https://www.hertsmere.gov.uk/housing-private-property/private-sector-housing/multiple-occupancy-homes",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "High Peak Borough Council",
+    "gss": "E07000037",
+    "schemes": [],
+    "notes": "High Peak operates mandatory HMO licensing only, £450 for a first five-year licence. No selective or additional scheme was found. The council's private rented homes page sets out landlord duties with no licensing or registration requirement.",
+    "sourceUrl": "https://www.highpeak.gov.uk/article/234/Multiple-occupancy-homes-HMO",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Highland",
+    "gss": "S12000017",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Hinckley and Bosworth Borough Council",
+    "gss": "E07000132",
+    "schemes": [],
+    "notes": "Hinckley and Bosworth operates mandatory HMO licensing only. The council states you do not need a licence to rent out all HMOs in the borough. No selective or additional scheme. Fees are roughly £800 for a small HMO and £1,000 for a large one.",
+    "sourceUrl": "https://www.hinckley-bosworth.gov.uk/info/898/house_in_multiple_occupation/244/how_to_apply_for_a_house_in_multiple_occupation_hmo_licence",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Horsham",
     "gss": "E07000227",
     "schemes": [],
     "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"Horsham District Council does not operate an additional or selective licensing scheme at present.\"",
     "sourceUrl": "https://www.horsham.gov.uk/licensing/public-licensing-registers/hmo-register",
     "verified": "2026-07-30"
+  },
+  {
+    "council": "Huntingdonshire District Council",
+    "gss": "E07000011",
+    "schemes": [],
+    "notes": "Huntingdonshire operates mandatory HMO licensing only, £705 initial and £375 renewal. No selective or additional scheme appears in the council's full licence A-Z, its fee schedule or its housing policy library.",
+    "sourceUrl": "https://www.huntingdonshire.gov.uk/licensing/all-licences-and-permits/houses-in-multiple-occupation-hmo/",
+    "verified": "2026-08-05"
   },
   {
     "council": "Hyndburn",
@@ -838,6 +1906,70 @@
       }
     ],
     "notes": "The 2018 selective licensing designation has ended, so none is currently in force."
+  },
+  {
+    "council": "Inverclyde",
+    "gss": "S12000018",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Ipswich Borough Council",
+    "gss": "E07000202",
+    "schemes": [],
+    "notes": "Ipswich operates mandatory HMO licensing only, for 5 or more people from different households since October 2018, at £155 per unit. No selective or additional scheme. The Article 4 area requiring planning permission for 3+ person HMOs is planning control, not licensing.",
+    "sourceUrl": "https://www.ipswich.gov.uk/apply-hmo-licence",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Isle of Anglesey",
+    "gss": "W06000001",
+    "schemes": [],
+    "notes": "Anglesey has no selective or additional licensing scheme. Only mandatory HMO licensing applies: three or more storeys with five or more people in two or more households. Fee £749, renewal £557.50. All landlords in Wales must also register with Rent Smart Wales.",
+    "sourceUrl": "https://www.anglesey.gov.uk/en/Residents/Housing/Private-housing/Landlords/Private-sector-landlord-liaison/Houses-in-Multiple-Occupation.aspx",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Isle of Wight Council",
+    "gss": "E06000046",
+    "schemes": [],
+    "notes": "Isle of Wight operates mandatory HMO licensing only. The council's own site search returns no results at all for selective licensing or property licensing. No scheme found. The council does not publish HMO fees online and directs enquiries to 01983 823040.",
+    "sourceUrl": "https://www.iow.gov.uk/article/2620/Houses-in-multiple-occupancy-HMO-information",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Kingston upon Hull City Council",
+    "gss": "E06000010",
+    "schemes": [],
+    "notes": "Hull operates mandatory HMO licensing only, for 5 or more people in 2 or more households, at £225 plus a size-based fee. No selective or additional scheme is live. The Hull Accredited Landlord Scheme is voluntary, and the HMO Article 4 Direction is planning control.",
+    "sourceUrl": "https://www.hull.gov.uk/private-landlords/houses-multiple-occupation/2",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Kirklees Council",
+    "gss": "E08000034",
+    "schemes": [],
+    "notes": "No selective or additional licensing. Only mandatory HMO licensing applies (5 or more people, 2 or more households). Fees run £664 to £882 and the council's public register covers mandatory licences only.",
+    "sourceUrl": "https://www.kirklees.gov.uk/beta/housing/houses-in-multiple-occupation.aspx",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Knowsley Metropolitan Borough Council",
+    "gss": "E08000011",
+    "schemes": [],
+    "notes": "No selective or additional licensing. Only mandatory HMO licensing applies (5 or more people, 2 or more households). The 2026-27 fee list carries mandatory HMO fees only, from £875 for a five-year licence.",
+    "sourceUrl": "https://www.knowsley.gov.uk/housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Lancaster City Council",
+    "gss": "E07000121",
+    "schemes": [],
+    "notes": "Lancaster consulted in 2023 on landlord licensing in Morecambe's West End, but Cabinet resolved on 16 April 2024 not to implement it, choosing targeted enforcement instead. Only mandatory HMO licensing applies.",
+    "sourceUrl": "https://committeeadmin.lancaster.gov.uk/documents/g8243/Printed%20minutes%2016th-Apr-2024%2018.00%20Cabinet.pdf",
+    "verified": "2026-08-05"
   },
   {
     "council": "Leeds City Council",
@@ -889,6 +2021,38 @@
       }
     ],
     "notes": "Street-level within named wards; scheme covers small HMOs too. No separate additional scheme. Match against road lists not ward boundaries."
+  },
+  {
+    "council": "Lewes District Council",
+    "gss": "E07000063",
+    "schemes": [],
+    "notes": "No selective or additional licensing. The council confirmed in an FOI response 'just the mandatory scheme' and that additional or selective licensing 'is not required in LDC'. The 2026-27 fee schedule lists mandatory HMO fees only.",
+    "sourceUrl": "https://www.lewes-eastbourne.gov.uk/media/1956/FOI-14362-Mandatory-HMO/pdf/FOI_14362_-_Mandatory_HMO.pdf",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Lichfield District Council",
+    "gss": "E07000194",
+    "schemes": [],
+    "notes": "No selective or additional licensing. Only mandatory HMO licensing applies (5 or more people, 2 or more families), fee £850 plus £75 per bedroom above five. A 2025-26 delivery plan lists researching a scheme as 'Not started'.",
+    "sourceUrl": "https://www.lichfielddc.gov.uk/licensing-permits/house-multiple-occupancy-hmo-licence",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Lincoln City Council",
+    "gss": "E07000138",
+    "schemes": [],
+    "notes": "No selective or additional licensing. Only mandatory HMO licensing applies (5 or more people). Lincoln does have a city-wide Article 4 Direction from 1 March 2016, but that is planning permission for HMO conversion, not a licence.",
+    "sourceUrl": "https://www.lincoln.gov.uk/houses-multiple-occupation/houses-multiple-occupation-hmos/4",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Lisburn and Castlereagh",
+    "gss": "N09000007",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
   },
   {
     "council": "Liverpool City Council",
@@ -1074,6 +2238,14 @@
       }
     ],
     "notes": "Wembley Park ward excluded from selective entirely."
+  },
+  {
+    "council": "London Borough of Bromley",
+    "gss": "E09000006",
+    "schemes": [],
+    "notes": "Bromley has no selective or additional licensing scheme. Only the national mandatory HMO licence applies, to homes shared by 5 or more people in 2 or more households. Bromley's 2022 HMO planning rule is a planning control, not a licence.",
+    "sourceUrl": "https://www.bromley.gov.uk/housing-advice-options/houses-multiple-occupation-hmo-advice-landlords",
+    "verified": "2026-08-04"
   },
   {
     "council": "London Borough of Camden",
@@ -2120,6 +3292,30 @@
     "notes": "Designated 2024, delayed by legal challenge (council won at Court of Appeal), operational 1 Jun 2026. Both cease 4 Feb 2029 (shortened by litigation)."
   },
   {
+    "council": "Maidstone Borough Council",
+    "gss": "E07000110",
+    "schemes": [],
+    "notes": "No selective or additional licensing. Cabinet considered additional licensing for smaller HMOs and declined it on 19 March 2025, stating officers 'remain of this opinion' that existing enforcement powers are adequate.",
+    "sourceUrl": "https://meetings.maidstone.gov.uk/ieDecisionDetails.aspx?Id=1604",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Maldon District Council",
+    "gss": "E07000074",
+    "schemes": [],
+    "notes": "No selective or additional licensing. Only mandatory HMO licensing applies. The council states plainly that an HMO occupied by 3 or 4 unrelated people is not licensable, and the 2026-27 fee list has one housing line, £1,099 new.",
+    "sourceUrl": "https://www.maldon.gov.uk/a_to_z/service/6131/houses_in_multiple_occupation_hmo_licence",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Malvern Hills District Council",
+    "gss": "E07000235",
+    "schemes": [],
+    "notes": "No selective or additional licensing. Only mandatory HMO licensing applies. The 2026-27 fee table lists mandatory HMO fees only, from £893, and the council's licensing index contains no housing licence.",
+    "sourceUrl": "https://www.malvernhills.gov.uk/housing/houses-in-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Manchester City Council",
     "gss": "E08000003",
     "schemes": [
@@ -2233,6 +3429,62 @@
     "notes": "Neither scheme in force yet; currently mandatory HMO licensing only."
   },
   {
+    "council": "Melton Borough Council",
+    "gss": "E07000133",
+    "schemes": [],
+    "notes": "No selective or additional licensing. Only mandatory HMO licensing applies (5 or more occupants, more than two households). The 2026-27 fees are £669 plus £334 in two parts, with no discretionary scheme fee.",
+    "sourceUrl": "https://www.melton.gov.uk/housing/private-housing-and-housing-associations/advice-for-landlords/houses-in-multiple-occupation/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Merthyr Tydfil",
+    "gss": "W06000024",
+    "schemes": [],
+    "notes": "Merthyr Tydfil has no selective or additional licensing scheme. Only mandatory HMO licensing applies: three or more storeys, five or more occupiers, two or more households. Separately, all landlords in Wales must register with Rent Smart Wales, a different national scheme.",
+    "sourceUrl": "https://www.merthyr.gov.uk/business/licences-and-permits/houses-in-multiple-occupation-licence/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Mid and East Antrim",
+    "gss": "N09000008",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Mid Devon District Council",
+    "gss": "E07000042",
+    "schemes": [],
+    "notes": "No selective or additional licensing. Only mandatory HMO licensing applies, from 1 April 2018 for properties with 5 or more occupants. The 2026-27 fee schedule lists mandatory HMO fees only, from £1,083.",
+    "sourceUrl": "https://www.middevon.gov.uk/residents/private-sector-housing/private-sector-housing-fees-and-charges/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Mid Suffolk District Council",
+    "gss": "E07000203",
+    "schemes": [],
+    "notes": "No selective or additional licensing. Only mandatory HMO licensing applies (5 or more people). The published licence fee is £578.55, with no discretionary scheme fee. The service is shared with Babergh.",
+    "sourceUrl": "https://midsuffolk.gov.uk/w/houses-in-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Mid Sussex District Council",
+    "gss": "E07000228",
+    "schemes": [],
+    "notes": "No selective or additional licensing in Mid Sussex. Only national mandatory HMO licensing (5+ occupiers, 2+ households) applies. The council's 2026/27 HMO fee schedule lists mandatory HMO bands only.",
+    "sourceUrl": "https://www.midsussex.gov.uk/housing-council-tax/houses-in-multiple-occupation-hmo/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Mid Ulster",
+    "gss": "N09000009",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Middlesbrough",
     "gss": "E06000002",
     "schemes": [
@@ -2280,6 +3532,91 @@
       }
     ],
     "notes": "middlesbrough.gov.uk 403'd; Kamma + council search snippet cited. No additional HMO scheme. Two active Newport selective schemes; North Ormesby recently expired."
+  },
+  {
+    "council": "Midlothian",
+    "gss": "S12000019",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Milton Keynes City Council",
+    "gss": "E06000042",
+    "schemes": [],
+    "notes": "Milton Keynes states in its published HMO Licensing Policy that it does not operate any additional or selective licensing scheme; only mandatory HMO licensing applies. The single HMO licence fee is £730.",
+    "sourceUrl": "https://www.milton-keynes.gov.uk/housing/private-sector-housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Mole Valley District Council",
+    "gss": "E07000210",
+    "schemes": [],
+    "notes": "No selective or additional licensing found in Mole Valley. The council's own site search returns no match for either term, and the 2026/27 environmental health fee schedule carries no such licence fee.",
+    "sourceUrl": "https://www.molevalley.gov.uk/environmental-health/environmental-health-fees-and-charges-2/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Monmouthshire",
+    "gss": "W06000021",
+    "schemes": [],
+    "notes": "Monmouthshire has no selective or additional licensing. The council states only mandatory HMO licensing applies: three or more storeys, five or more occupiers, two or more households. Separately, all Welsh landlords must register with Rent Smart Wales, a separate scheme.",
+    "sourceUrl": "https://www.monmouthshire.gov.uk/housing-standards/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Moray",
+    "gss": "S12000020",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Na h-Eileanan Siar",
+    "gss": "S12000013",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Neath Port Talbot",
+    "gss": "W06000012",
+    "schemes": [
+      {
+        "type": "selective",
+        "status": "expired",
+        "start": "2009-05-05",
+        "end": "2014-05-04",
+        "coverage": "areas",
+        "wards": null,
+        "areaDescription": "The White City area of Aberavon, Port Talbot, as shown on the plan attached to the Cabinet Board report",
+        "feeApprox": null,
+        "sourceUrl": "https://democracy.npt.gov.uk/documents/s40175/App%201%20-%20Enforcement%20Policy.pdf",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "No licensing scheme runs here now. A selective licensing scheme covered the White City area of Aberavon from May 2009 to May 2014 and was not renewed. Only mandatory HMO licensing applies today: three or more storeys and five or more occupiers.",
+    "sourceUrl": "https://www.npt.gov.uk/environmental-health/environmental-health-fees-and-charges/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "New Forest District Council",
+    "gss": "E07000091",
+    "schemes": [],
+    "notes": "No selective or additional licensing in the New Forest. Only national mandatory HMO licensing applies, at a single fee of £976 paid in two instalments.",
+    "sourceUrl": "https://www.newforest.gov.uk/article/999/Private-housing",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Newark and Sherwood District Council",
+    "gss": "E07000175",
+    "schemes": [],
+    "notes": "No selective or additional licensing in Newark and Sherwood. The council describes only the national mandatory HMO scheme; its published fees are £790 for a single HMO application, £600 for multiple and £60 to vary.",
+    "sourceUrl": "https://www.newark-sherwooddc.gov.uk/business-licensing/licensing/houses-multiple-occupation-hmo-licences",
+    "verified": "2026-08-05"
   },
   {
     "council": "Newcastle upon Tyne City Council",
@@ -2353,6 +3690,79 @@
     "notes": "Older Byker/High Cross selective schemes are partial-ward; check street boundaries on council maps."
   },
   {
+    "council": "Newcastle-under-Lyme Borough Council",
+    "gss": "E07000195",
+    "schemes": [],
+    "notes": "No selective or additional licensing is in force in Newcastle-under-Lyme. Only mandatory HMO licensing applies, at £750 for up to five bedrooms plus £11 per extra bedroom. Selective licensing was proposed for parts of Kidsgrove in 2014-2016 but no designation followed.",
+    "sourceUrl": "https://www.newcastle-staffs.gov.uk/landlords-private-renting/houses-multiple-occupation-hmo-licences",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Newport",
+    "gss": "W06000022",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "active",
+        "start": "2025-02-13",
+        "end": "2030-02-12",
+        "coverage": "borough-wide",
+        "wards": null,
+        "areaDescription": "All wards of the City of Newport. Covers every HMO outside mandatory licensing that houses three or more people in more than two households.",
+        "feeApprox": "£1,439.78 for a 3-5 person HMO; 6+ adds £78.70 per unit to a maximum of £1,991.84",
+        "sourceUrl": "https://www.newport.gov.uk/housing/houses-multiple-occupation-hmo/hmo-additional-licensing-scheme",
+        "verified": "2026-08-05"
+      },
+      {
+        "type": "additional",
+        "status": "expired",
+        "start": null,
+        "end": "2024-06-30",
+        "coverage": "borough-wide",
+        "wards": null,
+        "areaDescription": "Predecessor scheme, the Newport City Council Houses in Multiple Occupation Licensing Scheme 2019. Its expiry left a gap with no additional licensing in force until 13 February 2025.",
+        "feeApprox": null,
+        "sourceUrl": "https://www.newport.gov.uk/housing/houses-multiple-occupation-hmo/hmo-additional-licensing-scheme",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Newport runs an additional HMO licensing scheme across every ward of the city, so almost all HMOs need a council licence, not just larger ones. It runs from 13 February 2025 to 12 February 2030. Fees start at £1,439.78 for a three to five person HMO.",
+    "sourceUrl": "https://www.newport.gov.uk/housing/houses-multiple-occupation-hmo/hmo-additional-licensing-scheme",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Newry, Mourne and Down",
+    "gss": "N09000010",
+    "schemes": [],
+    "notes": "No council in Northern Ireland can run selective or additional licensing, because the Housing Act 2004 does not extend there. Landlords must join the landlord registration scheme, and an HMO housing more than two households needs a licence from the NIHMO Unit.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Ayrshire",
+    "gss": "S12000021",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Devon Council",
+    "gss": "E07000043",
+    "schemes": [],
+    "notes": "No selective or additional licensing in North Devon. The council's 2026-27 fee schedule lists mandatory HMO bands only, under the Housing Act 2004, with no Part 3 or additional licensing charge.",
+    "sourceUrl": "https://www.northdevon.gov.uk/business/licences-and-permits/houses-in-multiple-occupation-hmos",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North East Derbyshire District Council",
+    "gss": "E07000038",
+    "schemes": [],
+    "notes": "No selective or additional licensing in North East Derbyshire. Only mandatory HMO licensing applies, at a total fee of £607 (£496 on application plus £111 on grant). A council site search for selective licensing returns zero results.",
+    "sourceUrl": "https://www.ne-derbyshire.gov.uk/housing-and-health/houses-of-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "North East Lincolnshire Council",
     "gss": "E06000012",
     "schemes": [
@@ -2374,12 +3784,28 @@
     "notes": "No additional HMO scheme."
   },
   {
+    "council": "North Hertfordshire District Council",
+    "gss": "E07000099",
+    "schemes": [],
+    "notes": "North Hertfordshire's published HMO licensing policy states there are no proposals for either a selective or an additional licensing scheme, and that selective licensing is not an available option to the council. Only mandatory HMO licensing applies.",
+    "sourceUrl": "https://www.north-herts.gov.uk/house-multiple-occupation-licence",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "North Kesteven",
     "gss": "E07000139",
     "schemes": [],
     "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"At the time of writing there are no additional or selective licensing requirements in place in the district.\"",
     "sourceUrl": "https://www.n-kesteven.gov.uk/private-sector-housing-enforcement-policy/private-sector-housing-enforcement-policy/section-13",
     "verified": "2026-07-30"
+  },
+  {
+    "council": "North Lanarkshire",
+    "gss": "S12000050",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
   },
   {
     "council": "North Lincolnshire Council",
@@ -2402,6 +3828,54 @@
       }
     ],
     "notes": "No additional scheme."
+  },
+  {
+    "council": "North Norfolk District Council",
+    "gss": "E07000147",
+    "schemes": [],
+    "notes": "No selective or additional licensing in North Norfolk. A council site search for selective licensing returns no results, and only mandatory HMO licensing applies, at £930 for up to six units for five years.",
+    "sourceUrl": "https://www.north-norfolk.gov.uk/tasks/housing-services/does-my-house-in-multiple-occupation-hmo-need-a-licence/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Northamptonshire Council",
+    "gss": "E06000061",
+    "schemes": [],
+    "notes": "North Northamptonshire states it does not meet the threshold for either selective or additional licensing and that neither would be appropriate at present. Only mandatory HMO licensing applies. An Article 4 planning direction covers Kingswood ward in Corby, but that is not licensing.",
+    "sourceUrl": "https://www.northnorthants.gov.uk/hmo/law-hmos",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Somerset Council",
+    "gss": "E06000024",
+    "schemes": [],
+    "notes": "No selective or additional licensing in North Somerset. The council's 2026 fee schedule labels its HMO licence fees 'Mandatory' explicitly, and a site search returns no results for either term.",
+    "sourceUrl": "https://n-somerset.gov.uk/sites/default/files/2026-07/33196%20Fees%20and%20Charges%202026.pdf",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Tyneside",
+    "gss": "E08000022",
+    "schemes": [],
+    "notes": "North Tyneside does not run selective or additional licensing. Only large HMOs need a licence: five or more people in two or more households. The council's Private Sector Housing Plan says it will keep the need for selective and additional licensing under review.",
+    "sourceUrl": "https://www.northtyneside.gov.uk/housing/housing-strategies-and-policies/private-sector-housing-plan-2023-2028/appendix-1-2024-25",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Warwickshire",
+    "gss": "E07000218",
+    "schemes": [],
+    "notes": "North Warwickshire does not run selective or additional licensing. Only mandatory HMO licences are needed, for five or more unrelated people sharing facilities. A borough-wide Article 4 direction from 2 March 2026 means new HMOs need planning permission, which is separate from licensing.",
+    "sourceUrl": "https://www.northwarks.gov.uk/private-rented-housing/houses-multiple-occupation/2",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North West Leicestershire",
+    "gss": "E07000134",
+    "schemes": [],
+    "notes": "North West Leicestershire does not run selective or additional licensing. Only mandatory HMO licences are needed, for properties with five or more people who are not a single household. Fees are £410 on application and a further £537 before the licence is issued.",
+    "sourceUrl": "https://www.nwleics.gov.uk/pages/licence_homes_in_multiple_occupancy",
+    "verified": "2026-08-05"
   },
   {
     "council": "North Yorkshire Council",
@@ -2462,6 +3936,14 @@
     "notes": "No additional HMO scheme. Fee is high-confidence-secondary (council fee PDF 404'd)."
   },
   {
+    "council": "Norwich",
+    "gss": "E07000148",
+    "schemes": [],
+    "notes": "Norwich does not run selective or additional licensing. Only large HMOs need a licence, where five or more people live in more than one household. Smaller shared houses must still meet safety and management standards but do not need a licence.",
+    "sourceUrl": "https://www.norwich.gov.uk/support-private-tenants-and-landlords/about-houses-multiple-occupation-hmos/houses-multiple-occupation-hmos-frequently-asked-questions",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Nottingham City Council",
     "gss": "E06000018",
     "schemes": [
@@ -2489,6 +3971,14 @@
       }
     ],
     "notes": "Selective coverage is map-based. Dates from council sealed designation PDFs."
+  },
+  {
+    "council": "Nuneaton and Bedworth",
+    "gss": "E07000219",
+    "schemes": [],
+    "notes": "Nuneaton and Bedworth does not run selective or additional licensing. Only mandatory HMO licences are needed, for properties let to five or more people in two or more households. A councillor working group has been looking at selective licensing, but no scheme has been made.",
+    "sourceUrl": "https://www.nuneatonandbedworth.gov.uk/private-housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-05"
   },
   {
     "council": "Oadby and Wigston Borough Council",
@@ -2544,6 +4034,14 @@
     "notes": "No additional HMO scheme. Ward list combines the council report (7 wards) with Kamma's 11-ward listing; check individual addresses on the council map."
   },
   {
+    "council": "Orkney Islands",
+    "gss": "S12000023",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Oxford City Council",
     "gss": "E07000178",
     "schemes": [
@@ -2571,6 +4069,30 @@
       }
     ],
     "notes": "Oxford is effectively 100% licensed for private rentals: citywide selective + citywide additional + mandatory."
+  },
+  {
+    "council": "Pembrokeshire",
+    "gss": "W06000009",
+    "schemes": [],
+    "notes": "Pembrokeshire has no selective or additional licensing. Only mandatory HMO licensing applies: three or more storeys and five or more occupiers. The council confirmed in 2024 it had no plans to introduce either. Rent Smart Wales registration is a separate national requirement.",
+    "sourceUrl": "https://www.pembrokeshire.gov.uk/private-housing-enforcement/houses-in-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Pendle",
+    "gss": "E07000122",
+    "schemes": [],
+    "notes": "Pendle does not currently run selective or additional licensing. Only mandatory HMO licences are needed, for five or more tenants forming more than one household. Pendle designated selective licensing areas in the past, but the most recent proposals date from 2017 and have since lapsed.",
+    "sourceUrl": "https://www.pendle.gov.uk/info/20091/houses_in_multiple_occupation/115/houses_in_multiple_occupation/2",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Perth and Kinross",
+    "gss": "S12000048",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
   },
   {
     "council": "Peterborough City Council",
@@ -2614,6 +4136,14 @@
     "notes": "Delivery partner Home Safe."
   },
   {
+    "council": "Plymouth",
+    "gss": "E06000026",
+    "schemes": [],
+    "notes": "Plymouth does not run selective or additional licensing. Only large HMOs need a licence, where at least five people live in more than one household. Plymouth has an Article 4 direction requiring planning permission to convert a house to a small HMO in some areas, which is separate from licensing.",
+    "sourceUrl": "https://www.plymouth.gov.uk/apply-house-multiple-occupation-hmo-licence",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Portsmouth City Council",
     "gss": "E06000044",
     "schemes": [
@@ -2630,6 +4160,14 @@
       }
     ],
     "notes": "No selective scheme. End date is the 5-year term."
+  },
+  {
+    "council": "Powys",
+    "gss": "W06000023",
+    "schemes": [],
+    "notes": "Powys has no selective or additional licensing scheme. Only mandatory HMO licensing applies, with fees from £750. Separately, every landlord in Wales must register with Rent Smart Wales, which is a national scheme and not council licensing.",
+    "sourceUrl": "https://en.powys.gov.uk/article/4231/Licences-and-Permits---Houses-in-multiple-occupation",
+    "verified": "2026-08-05"
   },
   {
     "council": "Preston",
@@ -2694,6 +4232,79 @@
     "notes": "redcar-cleveland.gov.uk 403'd. South Bank scheme's current status genuinely uncertain (original end Mar 2024 vs live portal); marked unverified, confirm on council site. No additional HMO scheme."
   },
   {
+    "council": "Redditch",
+    "gss": "E07000236",
+    "schemes": [],
+    "notes": "Redditch does not run selective or additional licensing. Only mandatory HMO licences are needed, for properties occupied by at least five people in two or more households who share an amenity. The fee is £163.90 per person and a licence lasts up to five years.",
+    "sourceUrl": "https://www.redditchbc.gov.uk/business/landlords/landlord-regulatory-requirements-including-hmo-s/landlords-and-house-in-multiple-occupation-hmos/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Reigate and Banstead",
+    "gss": "E07000211",
+    "schemes": [],
+    "notes": "Reigate and Banstead does not run selective or additional licensing. Only mandatory HMO licences are needed, for properties housing five or more people in two or more households who share facilities. The current fee is £1,082 per property for a five-year licence.",
+    "sourceUrl": "https://www.reigate-banstead.gov.uk/info/20060/environmental_health/1492/fees_and_charges",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Renfrewshire",
+    "gss": "S12000038",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Rhondda Cynon Taf",
+    "gss": "W06000016",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "active",
+        "start": "2024-04-01",
+        "end": "2029-03-31",
+        "coverage": "borough-wide",
+        "wards": null,
+        "areaDescription": "All electoral wards in Rhondda Cynon Taf. Covers every HMO except those exempt and those already caught by mandatory licensing.",
+        "feeApprox": null,
+        "sourceUrl": "https://www.rctcbc.gov.uk/EN/Business/InformationforLandlords/HousesinMultipleOccupationHMOsAdditionalLicensingPublicNotice%e2%80%93RhonddaCynonTaf.aspx",
+        "verified": "2026-08-05"
+      },
+      {
+        "type": "additional",
+        "status": "expired",
+        "start": null,
+        "end": "2024-03-31",
+        "coverage": "borough-wide",
+        "wards": null,
+        "areaDescription": "Predecessor scheme, the Rhondda Cynon Taf Additional Licensing (Houses in Multiple Occupation) Scheme 2009, revoked on 31 March 2024 and replaced the next day with no gap in cover.",
+        "feeApprox": null,
+        "sourceUrl": "https://www.rctcbc.gov.uk/EN/Business/InformationforLandlords/HousesinMultipleOccupationHMOsAdditionalLicensingPublicNotice%e2%80%93RhonddaCynonTaf.aspx",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Rhondda Cynon Taf runs an additional HMO licensing scheme covering every electoral ward, so almost all HMOs need a council licence, not just larger ones. It runs from 1 April 2024 to 31 March 2029. There is no selective licensing.",
+    "sourceUrl": "https://www.rctcbc.gov.uk/EN/Business/InformationforLandlords/HousesinMultipleOccupationHMOsAdditionalLicensingPublicNotice%e2%80%93RhonddaCynonTaf.aspx",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Ribble Valley",
+    "gss": "E07000124",
+    "schemes": [],
+    "notes": "Ribble Valley does not run selective or additional licensing. Only mandatory HMO licences are needed, for properties occupied by five or more people in two or more households who share amenities. The total fee is about £1,589, with a 20% discount for accredited landlords.",
+    "sourceUrl": "https://www.ribblevalley.gov.uk/downloads/file/4963/fees-and-charges-2026-2027",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Richmond upon Thames",
+    "gss": "E09000027",
+    "schemes": [],
+    "notes": "Richmond upon Thames does not run selective or additional licensing. Only mandatory HMO licences are needed, for five or more occupiers in two or more households. Councillors are due to discuss licensing smaller HMOs in October 2026, but no scheme has been made.",
+    "sourceUrl": "https://www.richmond.gov.uk/services/housing/private_housing/privately_rented_properties/hmo/apply_for_a_hmo_licence",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Rochdale Borough Council",
     "gss": "E08000005",
     "schemes": [
@@ -2710,6 +4321,22 @@
       }
     ],
     "notes": "No selective scheme (council states selective 'has not yet been introduced')."
+  },
+  {
+    "council": "Rochford",
+    "gss": "E07000075",
+    "schemes": [],
+    "notes": "Rochford does not run selective or additional licensing, and the council states these are not currently considered appropriate for the district. Only mandatory HMO licences are needed, for five or more people in two or more households. Fees start at £423.92 for up to five bedrooms.",
+    "sourceUrl": "https://www.rochford.gov.uk/licensing-for-certain-hmos",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Rossendale",
+    "gss": "E07000125",
+    "schemes": [],
+    "notes": "Rossendale has no selective or additional HMO licensing scheme. Only mandatory HMO licensing applies, for homes let to 5 or more people from 2 or more households. A new licence costs £719.70 plus £279.50 on grant. The Article 4 Direction is planning control, not licensing.",
+    "sourceUrl": "https://www.rossendale.gov.uk/housing-homelessness/shared-houses-flats-multiple-occupation",
+    "verified": "2026-08-05"
   },
   {
     "council": "Rother",
@@ -2792,12 +4419,52 @@
     "notes": "No selective licensing scheme."
   },
   {
+    "council": "Royal Borough of Kingston upon Thames",
+    "gss": "E09000021",
+    "schemes": [],
+    "notes": "Kingston upon Thames operates mandatory HMO licensing only. The council says you will only need a licence if the property has 5 or more people forming 2 or more households. Fees are £319.40 new and £250 renewal per letting. No selective or additional scheme.",
+    "sourceUrl": "https://www.kingston.gov.uk/housing/landlords-and-private-sector/houses-multiple-occupation-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Rugby",
+    "gss": "E07000220",
+    "schemes": [],
+    "notes": "Rugby has no selective or additional HMO licensing scheme. Only mandatory HMO licensing applies, for homes let to 5 or more people from 2 or more households, costing £1,362 to £1,694. The 2024 Article 4 Direction for central wards is planning control, not licensing.",
+    "sourceUrl": "https://www.rugby.gov.uk/w/houses-in-multiple-occupation-hmo-licence",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Runnymede",
+    "gss": "E07000212",
+    "schemes": [],
+    "notes": "Runnymede states it operates no additional or selective licensing schemes. Only mandatory HMO licensing applies, for homes let to 5 or more people from 2 or more households. The basic licence fee is £815 per licence, or £723 to renew.",
+    "sourceUrl": "https://www.runnymede.gov.uk/general-licenses/houses-multiple-occupation-hmo/2",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Rushcliffe",
     "gss": "E07000176",
     "schemes": [],
     "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"In Rushcliffe, there is currently no additional or selective licensing.\"",
     "sourceUrl": "https://www.rushcliffe.gov.uk/environmental-health/licensing/other-licences/houses-in-multiple-occupation/",
     "verified": "2026-07-30"
+  },
+  {
+    "council": "Rushmoor",
+    "gss": "E07000092",
+    "schemes": [],
+    "notes": "Rushmoor has no selective or additional HMO licensing scheme. Only mandatory HMO licensing applies, for homes let to 5 or more people from 2 or more households. Fees run from £1,108 for 5 occupants to £2,214 for 21 or more, for a five-year licence.",
+    "sourceUrl": "https://www.rushmoor.gov.uk/housing-benefits-and-support/help-and-advice-for-landlords/houses-in-multiple-occupation-hmos/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Rutland",
+    "gss": "E06000017",
+    "schemes": [],
+    "notes": "Rutland has no selective or additional HMO licensing scheme, and publishes no housing licence fee at all. Only mandatory HMO licensing applies, for homes let to 5 or more people from 2 or more households. The service is run jointly with Peterborough City Council.",
+    "sourceUrl": "https://www.rutland.gov.uk/housing/housing-repairs-standards-enforcement",
+    "verified": "2026-08-05"
   },
   {
     "council": "Salford City Council",
@@ -2858,6 +4525,14 @@
     "notes": "Replaced the earlier West Bromwich-only additional scheme. No selective scheme."
   },
   {
+    "council": "Scottish Borders",
+    "gss": "S12000026",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Sefton Metropolitan Borough Council",
     "gss": "E08000014",
     "schemes": [
@@ -2885,6 +4560,63 @@
       }
     ],
     "notes": "Both extended for five years to 2028 after a 2022 consultation."
+  },
+  {
+    "council": "Sevenoaks",
+    "gss": "E07000111",
+    "schemes": [],
+    "notes": "Sevenoaks has no selective or additional HMO licensing scheme. Only mandatory HMO licensing applies, for homes let to 5 or more people from 2 or more households. A new licence costs £1,031.17 for up to five units, plus £24.40 for each extra unit.",
+    "sourceUrl": "https://www.sevenoaks.gov.uk/info/20048/homeowners_landlords_and_private_tenants/105/houses_in_multiple_occupation_hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Sheffield",
+    "gss": "E08000019",
+    "schemes": [
+      {
+        "type": "selective",
+        "status": "expired",
+        "start": "2014-04-22",
+        "end": "2019-04-21",
+        "coverage": "streets",
+        "wards": null,
+        "areaDescription": "Page Hall: named streets and house-number ranges around Page Hall Road and Hinde House Lane",
+        "feeApprox": null,
+        "sourceUrl": "https://www.sheffield.gov.uk/housing/selective-licensing-page-hall",
+        "verified": "2026-08-05"
+      },
+      {
+        "type": "selective",
+        "status": "expired",
+        "start": "2018-11-01",
+        "end": "2023-10-31",
+        "coverage": "streets",
+        "wards": null,
+        "areaDescription": "Named address ranges on London Road, Abbeydale Road and Chesterfield Road plus around 35 adjoining streets",
+        "feeApprox": null,
+        "sourceUrl": "https://www.sheffield.gov.uk/housing/selective-licence-london-abbeydale-chesterfield-road",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Sheffield has no selective licensing in force. Two schemes have ended: Page Hall (2014 to 2019) and London Road, Abbeydale Road and Chesterfield Road (2018 to 2023). Only mandatory HMO licensing now applies, for homes let to 5 or more people from 2 or more households.",
+    "sourceUrl": "https://www.sheffield.gov.uk/housing/selective-licensing",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Shetland Islands",
+    "gss": "S12000027",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Shropshire",
+    "gss": "E06000051",
+    "schemes": [],
+    "notes": "Shropshire has no selective or additional HMO licensing scheme. Its civil penalty policy, adopted in June 2026, is the version written for councils with no selective licensing areas. Mandatory HMO licensing costs £1,055 for up to five bedrooms, plus £403 on grant.",
+    "sourceUrl": "https://shropshire.gov.uk/committee-services/documents/s44708/Shropshire%20Housing%20Authority%20Civil%20Penalty%20Policy.pdf",
+    "verified": "2026-08-05"
   },
   {
     "council": "Slough Borough Council",
@@ -2920,12 +4652,116 @@
     "notes": "Both expired 30 Jun 2024. Reintroduction live: council consulting on reviving both scheme types. No new designation yet."
   },
   {
+    "council": "Solihull",
+    "gss": "E08000029",
+    "schemes": [],
+    "notes": "Solihull has no selective or additional HMO licensing scheme. A 2022 draft housing strategy suggested exploring selective licensing, but no scheme was ever designated. Only mandatory HMO licensing applies, costing £1,075, with a £108 discount for NRLA members.",
+    "sourceUrl": "https://www.solihull.gov.uk/housing/homes-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Somerset",
+    "gss": "E06000066",
+    "schemes": [],
+    "notes": "Somerset has no selective or additional HMO licensing scheme, and none was inherited from the former district councils. Only mandatory HMO licensing applies, for homes let to 5 or more people from 2 or more households. A new licence costs £949 in total.",
+    "sourceUrl": "https://www.somerset.gov.uk/housing-support/hmo-licensing/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "South Ayrshire",
+    "gss": "S12000028",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "South Cambridgeshire",
+    "gss": "E07000012",
+    "schemes": [],
+    "notes": "South Cambridgeshire has no selective or additional HMO licensing scheme; it confirmed in a freedom of information response that no selective licences have ever been granted. Mandatory HMO licensing costs £895 for up to five bedrooms, plus £36 per extra room.",
+    "sourceUrl": "https://www.scambs.gov.uk/housing/renting-privately/houses-of-multiple-occupation-hmo/houses-in-multiple-occupation-hmo-guidance/licence-fees",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "South Derbyshire",
+    "gss": "E07000039",
+    "schemes": [],
+    "notes": "South Derbyshire has no selective or additional HMO licensing scheme. Only mandatory HMO licensing applies, for homes let to 5 or more people from 2 or more households. Licence work is charged at hourly rates, from £42 to £65 an hour depending on the officer.",
+    "sourceUrl": "https://www.southderbyshire.gov.uk/our-services/housing/private-tenants-and-landlords/house-in-multiple-occupation-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "South Gloucestershire",
+    "gss": "E06000025",
+    "schemes": [],
+    "notes": "South Gloucestershire runs no selective or additional licensing. The council states it only operates the national mandatory HMO scheme, so a licence is needed only where five or more tenants from two or more households share facilities. The fee is £936 from 1 April 2026.",
+    "sourceUrl": "https://beta.southglos.gov.uk/houses-in-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "South Hams",
+    "gss": "E07000044",
+    "schemes": [],
+    "notes": "South Hams runs no selective or additional licensing. Only mandatory HMO licensing applies, so a licence is needed only where a property is let to five or more people forming two or more households. Published HMO licence fees are £446.40 and £144.00.",
+    "sourceUrl": "https://www.southhams.gov.uk/housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "South Holland",
+    "gss": "E07000140",
+    "schemes": [],
+    "notes": "South Holland runs no selective or additional licensing. Only mandatory HMO licensing applies: a licence is needed where a property meets the HMO tests, houses five or more people and has two or more households. Fees are charged in two parts, A then B.",
+    "sourceUrl": "https://www.sholland.gov.uk/HMOs",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "South Kesteven",
+    "gss": "E07000141",
+    "schemes": [],
+    "notes": "South Kesteven runs no selective or additional licensing. Its only scheme is mandatory HMO licensing. The 2026/27 fee schedule lists HMO bands only, from £570.50 (Part A) plus £563.00 (Part B) for a five-bedroom property, and no other property licence.",
+    "sourceUrl": "https://www.southkesteven.gov.uk/housing/private-renting-and-homeowners/houses-multiple-occupation-hmo-mandatory-licensing",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "South Lanarkshire",
+    "gss": "S12000029",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "South Norfolk",
+    "gss": "E07000149",
+    "schemes": [],
+    "notes": "South Norfolk runs no selective or additional licensing. Only mandatory HMO licensing applies. The published fees are £1,098.95 for a five-year HMO licence, £684.29 to renew and £176.18 to change a licence, with no other property licence fee.",
+    "sourceUrl": "https://www.southnorfolkandbroadland.gov.uk/licensing/licences/houses-multiple-occupation/south-norfolk-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "South Oxfordshire",
+    "gss": "E07000179",
+    "schemes": [],
+    "notes": "South Oxfordshire runs no selective or additional licensing. The council states it is not currently operating any additional or selective HMO licensing schemes. Only mandatory HMO licensing applies, costing £1,034 in total for up to five bedrooms.",
+    "sourceUrl": "https://www.southoxon.gov.uk/south-oxfordshire-district-council/licensing/mandatory-licensing-houses-in-multiple-occupation/",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "South Ribble",
     "gss": "E07000126",
     "schemes": [],
     "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"South Ribble Borough Council has not designated any part of its district as subject to selective licensing of residential accommodation.\"",
     "sourceUrl": "https://southribble.gov.uk/environmental-health/hmo",
     "verified": "2026-07-30"
+  },
+  {
+    "council": "South Staffordshire",
+    "gss": "E07000196",
+    "schemes": [],
+    "notes": "South Staffordshire runs no selective or additional licensing. Only mandatory HMO licensing applies, for properties of two or more storeys occupied by five or more people in two or more households. The current licence fee is £704.00.",
+    "sourceUrl": "https://www.sstaffs.gov.uk/licensing-and-permits/houses-multiple-occupation-hmos",
+    "verified": "2026-08-05"
   },
   {
     "council": "South Tyneside Metropolitan Borough Council",
@@ -3010,6 +4846,62 @@
     "verified": "2026-07-30"
   },
   {
+    "council": "St Albans",
+    "gss": "E07000240",
+    "schemes": [],
+    "notes": "St Albans runs no selective or additional licensing. The council states it only has mandatory licensing of HMOs, which applies to buildings occupied by five or more people. The fee is £207 per person with a minimum of £1,035, and £230 to vary a licence.",
+    "sourceUrl": "https://www.stalbans.gov.uk/houses-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "St. Helens",
+    "gss": "E08000013",
+    "schemes": [],
+    "notes": "St Helens runs no selective or additional licensing. Its licensing portal offers mandatory HMO licences only, at £248 for 2026/27 and £248 a year to renew in years two to five. No selective licensing designation is published on the council website.",
+    "sourceUrl": "https://housinglicensing.sthelens.gov.uk/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Stafford",
+    "gss": "E07000197",
+    "schemes": [],
+    "notes": "Stafford runs no selective or additional licensing. Its licensing page is headed Houses in Multiple Occupation (HMO) and Mandatory Licensing, and a licence is needed only where five or more people from two or more households share facilities.",
+    "sourceUrl": "https://www.staffordbc.gov.uk/houses-in-multiple-occupation-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Staffordshire Moorlands",
+    "gss": "E07000198",
+    "schemes": [],
+    "notes": "Staffordshire Moorlands runs no selective or additional licensing. Only mandatory HMO licensing applies. A licence costs £450.00 for five years on first application and £350.00 for a subsequent application, with no other property licence fee published.",
+    "sourceUrl": "https://www.staffsmoorlands.gov.uk/article/432/Multiple-occupancy-homes-HMO",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Stevenage",
+    "gss": "E07000243",
+    "schemes": [],
+    "notes": "Stevenage runs no selective or additional licensing. Only mandatory HMO licensing applies: a licence is needed where a property is occupied by five or more people in two or more separate households sharing facilities. Licences usually last five years.",
+    "sourceUrl": "https://www.stevenage.gov.uk/housing/private-sector-housing/house-in-multiple-occupation/licensing-of-hmos",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Stirling",
+    "gss": "S12000030",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Stockport",
+    "gss": "E08000007",
+    "schemes": [],
+    "notes": "Stockport operates mandatory HMO licensing only, for properties with five or more people from two or more households. There is no selective licensing and no additional HMO licensing. The licence costs £1,190 for up to five bedrooms and lasts five years.",
+    "sourceUrl": "https://www.stockport.gov.uk/information-for-landlords/houses-in-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Stockton-on-Tees Borough Council",
     "gss": "E06000004",
     "schemes": [
@@ -3034,6 +4926,121 @@
     "notes": "stockton.gov.uk 403'd; Kamma + council search snippet cited. No additional HMO scheme."
   },
   {
+    "council": "Stoke-on-Trent",
+    "gss": "E06000021",
+    "schemes": [
+      {
+        "type": "selective",
+        "status": "expired",
+        "start": null,
+        "end": "2019-08-04",
+        "coverage": "streets",
+        "wards": null,
+        "areaDescription": "Named streets in Fenton and Cobridge only, not the whole city. Fenton included Baron Street, Berdmore Street, Bishop Street, Brocksford Street, Burnham Street, Bute Street, Carron Street, Fife Street, Foley Street, Goldenhill Road (evens), 1-96 Hollings Street, 309-423 King Street (odds), 342-388 King Street (evens), Marriott Street, May Place, Oldfield Street, Packett Street and Perth Street. Cobridge included 346-380 Waterloo Road, Century Street, Winifred Street, Cobridge Road, Portland Street, Stansgate Place, Rutland Street, Lowther Street, Denbigh Street, Chelwood Street, Shaw Street, Bromley Court, Powell Street, Mulgrave Street, Edgeware Street, Severn Street, Derwent Street, Eastbank Road, Cecil Avenue, Bromley Street and Windermere Street.",
+        "feeApprox": null,
+        "sourceUrl": "https://www.stoke.gov.uk/selectivelicensing",
+        "verified": "2026-08-05"
+      },
+      {
+        "type": "additional",
+        "status": "proposed",
+        "start": null,
+        "end": null,
+        "coverage": "borough-wide",
+        "wards": null,
+        "areaDescription": "A city-wide additional licensing scheme for smaller HMOs, proposed on 4 August 2026 and subject to statutory consultation. Not yet designated and not yet in force.",
+        "feeApprox": null,
+        "sourceUrl": "https://www.stoke.gov.uk/news/article/2118/measures_to_limit_citywide_numbers_of_houses_of_multiple_occupation_and_ensure_they_meet_high_standards",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Stoke-on-Trent's selective licensing in parts of Fenton and Cobridge ended on 4 August 2019 and no longer applies. In August 2026 the council proposed a city-wide additional HMO licensing scheme, subject to consultation. At present only mandatory HMO licensing applies.",
+    "sourceUrl": "https://www.stoke.gov.uk/selectivelicensing",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Stratford-on-Avon",
+    "gss": "E07000221",
+    "schemes": [],
+    "notes": "Stratford-on-Avon operates mandatory HMO licensing only. There is no selective licensing and no additional HMO licensing. A licence is required only where 5 or more people in 2 or more households share facilities; HMOs of 3 or 4 people are not licensable here.",
+    "sourceUrl": "https://www.stratford.gov.uk/homes-properties/advice-on-houses-in-multiple-occupation.cfm",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Stroud",
+    "gss": "E07000082",
+    "schemes": [],
+    "notes": "Stroud District Council operates mandatory HMO licensing only. There is no selective licensing and no additional HMO licensing. A licence is required only where 5 or more people in 2 or more households share facilities. The fee is £1,398 for a 5 year licence.",
+    "sourceUrl": "https://www.stroud.gov.uk/housing/private-housing/apply-for-houses-in-multiple-occupation-hmo-licensing/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Sunderland",
+    "gss": "E08000024",
+    "schemes": [],
+    "notes": "Sunderland City Council states that it does not currently operate any additional or selective licensing schemes. Only mandatory HMO licensing applies, where five or more people live in two or more households. Smaller HMOs of three or four people do not need a licence.",
+    "sourceUrl": "https://www.sunderland.gov.uk/hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Surrey Heath",
+    "gss": "E07000214",
+    "schemes": [],
+    "notes": "Surrey Heath has no selective licensing and no additional HMO licensing. Only mandatory HMO licensing applies, to properties let to five or more people forming two or more households. The fee is £896.20, or £773.70 for accredited landlords, and the licence lasts five years.",
+    "sourceUrl": "https://www.surreyheath.gov.uk/housing/help-landlords/houses-multiple-occupancy",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Swale",
+    "gss": "E07000113",
+    "schemes": [],
+    "notes": "Swale operates mandatory HMO licensing only, for properties occupied by five or more people from two or more households. There is no selective licensing and no additional HMO licensing. The fee is £896, or £761 for accredited landlords, for a five-year licence.",
+    "sourceUrl": "https://swale.gov.uk/business-licensing-and-procurement/licences-permits-and-consents/houses-in-multiple-occupation/introduction",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Swansea",
+    "gss": "W06000011",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "active",
+        "start": "2026-02-14",
+        "end": "2031-02-14",
+        "coverage": "wards",
+        "wards": [
+          "Castle",
+          "Uplands",
+          "Waterfront",
+          "St Thomas"
+        ],
+        "areaDescription": "All HMOs of any size in the Castle, Uplands, Waterfront and St Thomas wards, including poorly converted blocks of flats. University-owned and managed student accommodation is exempt.",
+        "feeApprox": "£1,096 for 3 occupiers rising to £2,456 for 20",
+        "sourceUrl": "https://www.swansea.gov.uk/article/41186/Public-notice-of-designation-of-an-area-for-additional-licensing-of-houses-in-multiple-occupation",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Swansea runs additional HMO licensing in the Castle, Uplands, Waterfront and St Thomas wards, where every HMO needs a licence whatever its size. It runs 14 February 2026 to 14 February 2031, with fees from £1,096. Elsewhere only mandatory HMO licensing applies.",
+    "sourceUrl": "https://www.swansea.gov.uk/hmolicensing",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Swindon",
+    "gss": "E06000030",
+    "schemes": [],
+    "notes": "Swindon operates no selective licensing and no additional HMO licensing. Only mandatory HMO licensing applies: a licence is needed where five or more people from two or more households share a kitchen, bathroom or toilet. The 2026/27 online fee totals £1,474.11.",
+    "sourceUrl": "https://www.swindon.gov.uk/info/20025/homes_and_property/236/houses_in_multiple_occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Tameside",
+    "gss": "E08000008",
+    "schemes": [],
+    "notes": "Tameside operates mandatory HMO licensing only, for HMOs occupied by five or more people in two or more households. There is no selective licensing and no additional HMO licensing. Smaller HMOs are not licensable but must still meet management regulations.",
+    "sourceUrl": "https://www.tameside.gov.uk/housing/private/hmo",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Tamworth Borough Council",
     "gss": "E07000199",
     "schemes": [
@@ -3052,6 +5059,22 @@
     "notes": "Consultation stage only; may not proceed. No selective scheme."
   },
   {
+    "council": "Tandridge",
+    "gss": "E07000215",
+    "schemes": [],
+    "notes": "Tandridge does not operate an additional or selective licensing scheme. Only mandatory HMO licensing applies, to properties let to five or more people forming two or more households, at £868.50 for five years. Its Article 4 Direction is planning control, not licensing.",
+    "sourceUrl": "https://www.tandridge.gov.uk/Housing/Private-housing/Houses-in-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Teignbridge",
+    "gss": "E07000045",
+    "schemes": [],
+    "notes": "Teignbridge operates no selective licensing and no additional HMO licensing. Only mandatory HMO licensing applies, where five or more people forming two or more households share facilities. The council says both discretionary schemes remain available to it but are only kept under review.",
+    "sourceUrl": "https://www.teignbridge.gov.uk/housing/landlords-and-agents/apply-for-a-house-in-multiple-occupation-licence/",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Telford and Wrekin Council",
     "gss": "E06000020",
     "schemes": [
@@ -3068,6 +5091,30 @@
       }
     ],
     "notes": "End date derived from 5-year term. No selective scheme (2017 proposal abandoned)."
+  },
+  {
+    "council": "Tendring",
+    "gss": "E07000076",
+    "schemes": [],
+    "notes": "Tendring operates mandatory HMO licensing only, where five or more people from two or more households share facilities. There is no selective or additional licensing. HMOs of three or four people are not licensable. A district-wide Article 4 planning direction applies to new HMOs.",
+    "sourceUrl": "https://www.tendringdc.gov.uk/content/houses-in-multiple-occupation-hmos",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Test Valley",
+    "gss": "E07000093",
+    "schemes": [],
+    "notes": "Test Valley operates mandatory HMO licensing only. A licence is needed if your property is let to five or more people forming two or more households. There is no selective licensing and no additional HMO licensing anywhere in the borough.",
+    "sourceUrl": "https://www.testvalley.gov.uk/housing/housing-information-for-landlords/houses-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Tewkesbury",
+    "gss": "E07000083",
+    "schemes": [],
+    "notes": "Tewkesbury operates mandatory HMO licensing only. A licence is needed if your property is let to five or more people forming two or more households. There is no selective licensing and no additional HMO licensing anywhere in the borough.",
+    "sourceUrl": "https://tewkesbury.gov.uk/services/licensing-and-permits/housing/houses-in-multiple-occupation/",
+    "verified": "2026-08-05"
   },
   {
     "council": "Thanet District Council",
@@ -3096,6 +5143,14 @@
       }
     ],
     "notes": "Previous 2016-2021 Margate scheme expired. New scheme in pipeline (cabinet papers Aug 2025), not yet in force."
+  },
+  {
+    "council": "Three Rivers",
+    "gss": "E07000102",
+    "schemes": [],
+    "notes": "Three Rivers operates mandatory HMO licensing only, for properties let to five or more people forming two or more households. The council confirmed in January 2026 that it is not introducing additional licensing, and will review that in 2027. No selective licensing.",
+    "sourceUrl": "https://www.threerivers.gov.uk/services/environmental-health/houses-multiple-occupation",
+    "verified": "2026-08-05"
   },
   {
     "council": "Thurrock Council",
@@ -3145,6 +5200,85 @@
     "notes": "Selective survived a judicial review (High Court refused permission, resumed March 2026)."
   },
   {
+    "council": "Tonbridge and Malling",
+    "gss": "E07000115",
+    "schemes": [],
+    "notes": "Tonbridge and Malling states it only operates mandatory HMO licensing, for properties let to five or more people forming two or more households. There is no selective licensing and no additional HMO licensing in the borough.",
+    "sourceUrl": "https://www.tmbc.gov.uk/housing/landlords-tenants/3",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Torbay",
+    "gss": "E06000027",
+    "schemes": [],
+    "notes": "Torbay operates mandatory HMO licensing only. A licence is needed if your property is let to five or more people forming two or more households; Torbay confirms a four-occupant share is not licensable. There is no selective or additional licensing.",
+    "sourceUrl": "https://www.torbay.gov.uk/housing/hmo-landlords/apply-for-an-hmo-licence/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Torfaen",
+    "gss": "W06000020",
+    "schemes": [],
+    "notes": "Torfaen has no selective or additional licensing scheme. Only mandatory HMO licensing applies: three or more storeys and five or more occupiers. A licence costs £708 for five years. Rent Smart Wales registration is a separate national requirement for all Welsh landlords.",
+    "sourceUrl": "https://www.torfaen.gov.uk/en/business/licensing/other-licences/houses-in-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Torridge",
+    "gss": "E07000046",
+    "schemes": [],
+    "notes": "Torridge operates mandatory HMO licensing only. A licence is needed if your property is let to five or more people forming two or more households. Torridge notes a property can be an HMO without needing a licence. No selective or additional licensing.",
+    "sourceUrl": "https://www.torridge.gov.uk/hmos",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Trafford",
+    "gss": "E08000009",
+    "schemes": [],
+    "notes": "Trafford operates mandatory HMO licensing only, for properties let to five or more people forming two or more households. There is no selective licensing and no additional HMO licensing. Trafford has a borough-wide Article 4 direction, which is planning control, not licensing.",
+    "sourceUrl": "https://www.trafford.gov.uk/housing/housing-advice/houses-multiple-occupation-hmo/hmos-require-licence",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Tunbridge Wells",
+    "gss": "E07000116",
+    "schemes": [],
+    "notes": "Tunbridge Wells operates mandatory HMO licensing only. A licence is needed if your property is let to five or more people forming two or more households. Licence fees start at the five-occupant band. There is no selective or additional HMO licensing.",
+    "sourceUrl": "https://tunbridgewells.gov.uk/housing/private-sector-housing/houses-in-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Uttlesford",
+    "gss": "E07000077",
+    "schemes": [],
+    "notes": "Uttlesford operates mandatory HMO licensing only. A licence is needed if your property is let to five or more people forming two or more households. There is no selective licensing and no additional HMO licensing anywhere in the district.",
+    "sourceUrl": "https://www.uttlesford.gov.uk/hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Vale of Glamorgan",
+    "gss": "W06000014",
+    "schemes": [],
+    "notes": "UNVERIFIED: Shared Regulatory Services still states an additional licence is needed for HMOs in the Castleland Renewal Area of Barry, but the Vale's own register and fee list show mandatory licences only. Anyone with an HMO in central Barry should confirm with the council.",
+    "sourceUrl": "https://www.srs.wales/en/Environmental-Health/Housing/HMO-Licensing/HMO-Licensing.aspx"
+  },
+  {
+    "council": "Vale of White Horse",
+    "gss": "E07000180",
+    "schemes": [],
+    "notes": "The council states it is not currently operating any additional or selective HMO licensing schemes. Only mandatory HMO licensing applies, for properties let to five or more people forming two or more households.",
+    "sourceUrl": "https://www.whitehorsedc.gov.uk/vale-of-white-horse-district-council/licensing/mandatory-licensing-houses-in-multiple-occupation/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Wakefield",
+    "gss": "E08000036",
+    "schemes": [],
+    "notes": "Wakefield operates mandatory HMO licensing only, for properties let to five or more people forming two or more households. There is no selective licensing; the council decided against it in 2021. Article 4 rules in some areas are planning control, not licensing.",
+    "sourceUrl": "https://www.wakefield.gov.uk/housing/information-for-landlords/apply-for-a-landlords-hmo-licence",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Walsall Metropolitan Borough Council",
     "gss": "E08000030",
     "schemes": [
@@ -3169,6 +5303,14 @@
     "notes": "IMPORTANT: 'Scheme Two' (Bentley & Darlaston North, Birchills Leamore, Blakenall, Darlaston South, Willenhall South) was designated but NEVER commenced; aggregators wrongly list it as active. Only Scheme One is in force. No selective scheme."
   },
   {
+    "council": "Warrington",
+    "gss": "E06000007",
+    "schemes": [],
+    "notes": "Warrington states it has no plans to introduce additional or selective licensing anywhere in the borough. Only mandatory HMO licensing applies, for properties let to five or more people forming two or more households.",
+    "sourceUrl": "https://www.warrington.gov.uk/information-about-hmos-and-hmo-licensing",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Warwick District Council",
     "gss": "E07000222",
     "schemes": [
@@ -3185,6 +5327,70 @@
       }
     ],
     "notes": "End date derived from 5-year term; not stated on the page. No selective scheme."
+  },
+  {
+    "council": "Watford",
+    "gss": "E07000103",
+    "schemes": [],
+    "notes": "Watford does not run selective licensing or additional HMO licensing. Only mandatory HMO licensing applies: you need a licence if your property is let to five or more people forming two or more households. New applications cost £1,557.70.",
+    "sourceUrl": "https://www.watford.gov.uk/licensing-3/licensing-houses-multiple-occupation-hmos/3",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Waverley",
+    "gss": "E07000216",
+    "schemes": [],
+    "notes": "Waverley runs mandatory HMO licensing only. The council states no other licensing schemes are in operation or being proposed. You need a licence if you let to five or more people forming two or more households. New applications cost £807.70, renewals £710.50.",
+    "sourceUrl": "https://www.waverley.gov.uk/Services/Business-and-licensing/Licences-and-registrations/House-in-Multiple-Occupation-HMO-Licence",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Wealden",
+    "gss": "E07000065",
+    "schemes": [],
+    "notes": "Wealden states it does not operate a selective licensing scheme and has no plans to do so. There is no additional HMO licensing either. Only mandatory HMO licensing applies, for five or more people in two or more households. Fees start at £808 for a five-person shared house.",
+    "sourceUrl": "https://www.wealden.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Welwyn Hatfield",
+    "gss": "E07000241",
+    "schemes": [],
+    "notes": "Welwyn Hatfield does not run selective licensing or additional HMO licensing. Only mandatory HMO licensing applies, to properties let to five or more people. The council's published fee schedule starts at a basic five-person HMO, costing £1,339 in 2026/27.",
+    "sourceUrl": "https://www.welhat.gov.uk/landlords/apply-house-multiple-occupation-licence",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "West Berkshire",
+    "gss": "E06000037",
+    "schemes": [],
+    "notes": "West Berkshire does not run selective licensing or additional HMO licensing. Its housing licensing is delivered by the Public Protection Partnership, which states mandatory licensing applies to HMOs occupied by five or more people forming two or more households.",
+    "sourceUrl": "https://www.westberks.gov.uk/houses-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "West Devon",
+    "gss": "E07000047",
+    "schemes": [],
+    "notes": "West Devon does not run selective licensing or additional HMO licensing. Only mandatory HMO licensing applies: a licence is needed if the property is let to five or more people forming two or more households. The licence fee is £446.40, plus a £144 fit and proper person fee.",
+    "sourceUrl": "https://www.westdevon.gov.uk/housing/houses-multiple-occupation-hmo/hmo-licensing",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "West Dunbartonshire",
+    "gss": "S12000039",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "West Lancashire",
+    "gss": "E07000127",
+    "schemes": [],
+    "notes": "West Lancashire does not run selective licensing or additional HMO licensing, including in Skelmersdale. Only mandatory HMO licensing applies: a licence is needed if the property is occupied by five or more people forming two or more households.",
+    "sourceUrl": "https://www.westlancs.gov.uk/housing/private-housing/help-advice-for-private-sector-tenants/house-in-multiple-occupation.aspx",
+    "verified": "2026-08-05"
   },
   {
     "council": "West Lindsey",
@@ -3205,6 +5411,14 @@
     "notes": "The council's only selective licensing scheme has ended, so no designation is currently in force."
   },
   {
+    "council": "West Lothian",
+    "gss": "S12000040",
+    "schemes": [],
+    "notes": "No council in Scotland can run selective or additional licensing, because the Housing Act 2004 does not extend to Scotland. Instead every landlord must register with the council, and an HMO housing three or more people from three or more households needs an HMO licence.",
+    "sourceUrl": "https://www.legislation.gov.uk/ukpga/2004/34/section/270",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "West Northamptonshire Council",
     "gss": "E06000062",
     "schemes": [
@@ -3223,6 +5437,14 @@
     "notes": "No selective scheme. Renewed/expanded the 2020-2025 additional scheme. Check coverage on council map."
   },
   {
+    "council": "West Oxfordshire",
+    "gss": "E07000181",
+    "schemes": [],
+    "notes": "West Oxfordshire does not run selective licensing or additional HMO licensing. Only mandatory HMO licensing applies, to properties occupied by five or more people forming two or more households. Fees are £242 to apply plus £1,097 to issue a new licence.",
+    "sourceUrl": "https://www.westoxon.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "West Suffolk",
     "gss": "E07000245",
     "schemes": [],
@@ -3231,12 +5453,44 @@
     "verified": "2026-07-30"
   },
   {
+    "council": "Westmorland and Furness",
+    "gss": "E06000064",
+    "schemes": [],
+    "notes": "Westmorland and Furness does not run selective or additional HMO licensing, and inherited no scheme from Barrow-in-Furness, Eden or South Lakeland. Only mandatory HMO licensing applies, for five or more people. The fee is £700 for a 5-bedroom property, £20 per room thereafter.",
+    "sourceUrl": "https://www.westmorlandandfurness.gov.uk/housing/housing-standards/houses-multiple-occupation-hmos",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Wigan",
+    "gss": "E08000010",
+    "schemes": [],
+    "notes": "Wigan Council does not run selective or additional licensing. Only mandatory HMO licensing applies: you need a licence if five or more people from two or more households share the property. The fee is £823 for a new application and £531 to renew.",
+    "sourceUrl": "https://www.wigan.gov.uk/Business/Licensing-Permits-Registrations/HMO/Index.aspx",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Wiltshire",
     "gss": "E06000054",
     "schemes": [],
     "notes": "Checked 2026-07-30: the council states it operates neither a selective nor an additional licensing scheme. Quoted: \"There are currently no declared Additional or Selective Licencing schemes in Wiltshire.\"",
     "sourceUrl": "https://www.wiltshire.gov.uk/article/10426/16-0-Houses-in-Multiple-Occupation-HMO",
     "verified": "2026-07-30"
+  },
+  {
+    "council": "Winchester",
+    "gss": "E07000094",
+    "schemes": [],
+    "notes": "Winchester City Council does not run selective or additional licensing. Only mandatory HMO licensing applies, for properties let to five or more people from two or more households. The licence fee is £1,247 and renewal £983 from 1 April 2026.",
+    "sourceUrl": "https://www.winchester.gov.uk/housing/private-housing-and-empty-properties/houses-in-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Windsor and Maidenhead",
+    "gss": "E06000040",
+    "schemes": [],
+    "notes": "The Royal Borough of Windsor and Maidenhead does not run selective or additional licensing. Only mandatory HMO licensing applies, for homes let to five or more people from two or more households. The fee is £920.70 for a first property of up to five bedrooms.",
+    "sourceUrl": "https://www.rbwm.gov.uk/housing/homeowners-and-landlords/houses-multiple-occupation/apply-hmo-licence",
+    "verified": "2026-08-05"
   },
   {
     "council": "Wirral Metropolitan Borough Council",
@@ -3319,6 +5573,22 @@
     "notes": "No selective scheme. End date derived from 5-year term."
   },
   {
+    "council": "Wokingham",
+    "gss": "E06000041",
+    "schemes": [],
+    "notes": "Wokingham Borough Council does not run selective or additional licensing. Only mandatory HMO licensing applies, which since 1 October 2018 covers any property let to five or more people from two or more households sharing facilities.",
+    "sourceUrl": "https://www.wokingham.gov.uk/housing-and-tenants/private-housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Wolverhampton",
+    "gss": "E08000031",
+    "schemes": [],
+    "notes": "City of Wolverhampton Council does not run selective or additional licensing. Only mandatory HMO licensing applies, for homes let to five or more people from two or more households. The application fee starts at £977 for an HMO of up to six bedrooms.",
+    "sourceUrl": "https://www.wolverhampton.gov.uk/housing/house-multiple-occupation-licence",
+    "verified": "2026-08-05"
+  },
+  {
     "council": "Worcester City Council",
     "gss": "E07000237",
     "schemes": [
@@ -3335,5 +5605,56 @@
       }
     ],
     "notes": "Replaced two earlier ward-based additional designations (2020 + 2023) that expired 31 Aug 2025. No selective scheme."
+  },
+  {
+    "council": "Worthing",
+    "gss": "E07000229",
+    "schemes": [],
+    "notes": "Worthing Borough Council does not run selective or additional licensing. Only mandatory HMO licensing applies, for homes let to five or more people forming more than one household. The fee is £810 on application plus £55 for each unit above five.",
+    "sourceUrl": "https://www.adur-worthing.gov.uk/housing/conditions-and-empty-properties/hmo/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Wrexham",
+    "gss": "W06000006",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "active",
+        "start": "2022-01-01",
+        "end": "2026-12-31",
+        "coverage": "borough-wide",
+        "wards": null,
+        "areaDescription": "The whole of Wrexham County Borough. Covers all HMOs except those exempt under the Housing Act 2004.",
+        "feeApprox": "£898 for a 5-year licence, £561 for 1 year",
+        "sourceUrl": "https://www.wrexham.gov.uk/service/private-housing/houses-multiple-occupation-hmo-licensing-and-management",
+        "verified": "2026-08-05"
+      }
+    ],
+    "notes": "Wrexham runs an additional HMO licensing scheme across the whole county borough, so all HMOs need a council licence, not just larger ones. The scheme is due to end on 31 December 2026. A five year licence costs £898. There is no selective licensing."
+  },
+  {
+    "council": "Wychavon",
+    "gss": "E07000238",
+    "schemes": [],
+    "notes": "Wychavon District Council states that it operates mandatory HMO licensing only, with no selective or additional scheme. You need a licence if you let to five or more people who are not one household and who share facilities. Fees start at £820.",
+    "sourceUrl": "https://www.wychavon.gov.uk/housing/houses-in-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Wyre",
+    "gss": "E07000128",
+    "schemes": [],
+    "notes": "Wyre Council does not run selective or additional licensing. Only mandatory HMO licensing applies, for properties occupied by five or more people. Wyre does have an Article 4 direction for HMOs, but that is a planning control and not a licensing scheme.",
+    "sourceUrl": "https://www.wyre.gov.uk/private-sector-housing/hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Wyre Forest",
+    "gss": "E07000239",
+    "schemes": [],
+    "notes": "Wyre Forest District Council does not run selective or additional licensing. Its HMO policy states that conditions in the district do not warrant a scheme, and that it keeps this under review. Only mandatory HMO licensing applies, with a fee of £880.",
+    "sourceUrl": "https://www.wyreforestdc.gov.uk/housing-and-homes/owning-or-privately-renting/houses-in-multiple-occupation/hmo-policy/",
+    "verified": "2026-08-05"
   }
 ]

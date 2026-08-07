@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getStripe, LICENCE_CHECK_PRICE_PENCE, LICENCE_CHECK_NAME, LICENCE_CHECK_DESCRIPTION } from "@/lib/stripe";
-import { getCouncilByGss } from "@/lib/licensing";
+import { getCouncilByGss, hasCouncilLicensingPowers } from "@/lib/licensing";
 
 export const runtime = "nodejs";
 
@@ -13,6 +13,14 @@ export async function POST(req: NextRequest) {
     const address = String(body.address ?? "").trim();
     const gss = String(body.gss ?? "").trim();
     const ward = String(body.ward ?? "").trim();
+    // From the address picker. Resolves street-level designations, which are
+    // ~35 of the live schemes and cannot be answered from a postcode alone.
+    const street = String(body.street ?? "").trim();
+    // Provenance of that street. Only "os" is authoritative enough to rule a
+    // designation out; anything else is whitelisted away so a spoofed value
+    // cannot turn a guess into a confident "no licence needed".
+    const rawSource = String(body.streetSource ?? "").trim();
+    const streetSource = rawSource === "os" || rawSource === "epc" ? rawSource : "";
     const occupants = Number(body.occupants ?? 0);
     const households = Number(body.households ?? 0);
     const attribution = (body.attribution ?? {}) as Record<string, string>;
@@ -26,10 +34,14 @@ export async function POST(req: NextRequest) {
     }
     const council = getCouncilByGss(gss);
     if (!council) return NextResponse.json({ error: "council_unknown" }, { status: 400 });
-    // Wales/Scotland/NI use national registration regimes with a deterministic
-    // answer we give away free. Only England has per-council schemes worth paying for.
-    if (council.nation !== "england") {
-      return NextResponse.json({ error: "england_only" }, { status: 400 });
+    // Scotland and NI have no council licensing powers at all (Housing Act 2004
+    // s.270(11)), so their answer is deterministic and we give it away free.
+    // Wales does have them, and nine of its twenty-two councils run live
+    // schemes, several county-wide, so a Welsh property-specific report is worth
+    // exactly what an English one is. Selling England only meant showing a Welsh
+    // landlord a real scheme answer and then refusing to complete the job.
+    if (!hasCouncilLicensingPowers(council.nation)) {
+      return NextResponse.json({ error: "unsupported_nation" }, { status: 400 });
     }
 
     const stripe = getStripe();
@@ -55,6 +67,12 @@ export async function POST(req: NextRequest) {
         address,
         gss,
         ward,
+        // The street resolves street-level designations, which a postcode
+        // cannot. Carried through Stripe metadata so the report can use it,
+        // with its provenance, since an unsourced street may only confirm a
+        // designation and never rule one out.
+        street: street || "",
+        street_source: streetSource,
         occupants: String(occupants),
         households: String(households),
         utm_source: attribution.utm_source ?? "",

@@ -100,6 +100,11 @@ export async function POST(req: NextRequest) {
       occupants: Number(meta.occupants ?? 0),
       households: Number(meta.households ?? 0),
       wardName: meta.ward || null,
+      // Street-level designations cannot be resolved from a postcode; this is
+      // what turns "check the boundary" into a definite yes or no. The source
+      // gates that: only an Ordnance Survey street may produce a definite "no".
+      street: meta.street || null,
+      streetSource: meta.street_source === "os" ? "os" : meta.street_source === "epc" ? "epc" : null,
     });
     if (!determination) throw new Error("determination_failed");
 

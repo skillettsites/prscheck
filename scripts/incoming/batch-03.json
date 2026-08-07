@@ -1,0 +1,110 @@
+[
+  {
+    "council": "Cambridge City Council",
+    "gss": "E07000008",
+    "schemes": [],
+    "notes": "Cambridge does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes shared by five or more people in two or more households. The 2026-27 fee is £1,133.",
+    "research": "The council's full A-Z of licences lists 26 licence types; the only property-related entries are 'Licensing of houses in multiple occupation' and a register of Temporary Exemption Notices. No additional or selective licensing entry exists. The HMO page states a licence is needed where the property 'is occupied by five or more people forming two or more separate households, or it is a purpose-built flat in a block of up to two flats and occupied as an HMO by five or more people' - verbatim the national mandatory test under Part 2 s.55 as extended by the 2018 Order, not a local designation. Fee explicitly labelled mandatory: £1,133 for 2026-27 (£736 on application, £397 on grant; reduced £603 application fee for renewals submitted 8+ weeks early). FALSE POSITIVE RISK: Cambridge is a high-density student city and scraped datasets routinely assume additional licensing exists here. It does not. Anything reported is most likely the mandatory scheme mislabelled, or planning-side HMO control, which is not licensing.",
+    "sourceUrl": "https://www.cambridge.gov.uk/licensing-of-houses-in-multiple-occupation",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cannock Chase District Council",
+    "gss": "E07000192",
+    "schemes": [],
+    "notes": "Cannock Chase does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes shared by five or more people in two or more households. The fee is £1,028.55 per property.",
+    "research": "The HMO page states licensing is compulsory for properties with 'five or more people in more than one household and share amenities such as bathrooms, toilets and cooking facilities' - the national test only. Fee £1,028.55 per property, split £375.45 and £653.10, with £375.45 refunded if refused; licences last 5 years. The complete Private Sector Housing section navigation was enumerated: Damp and Mould; Houses of Multiple Occupation; Housing Standards and Disrepair; Minimum Energy Efficiency; Mobile Home Sites Fit and Proper Person; Redress Scheme (Lettings); Staffordshire Warm Homes Fund; Energy Company Obligation. No selective or additional licensing page exists. FALSE POSITIVE RISK: the 'Redress Scheme (Lettings)' and 'Mobile Home Sites Fit and Proper Person' pages are separate statutory regimes, not Housing Act 2004 Part 2/3 designations, and are sometimes miscounted by scrapers as licensing schemes.",
+    "sourceUrl": "https://www.cannockchasedc.gov.uk/residents/environmental-health/private-sector-housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Canterbury City Council",
+    "gss": "E07000106",
+    "schemes": [],
+    "notes": "Canterbury does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. Planning permission may separately be needed to turn a house into a shared home in some areas, which is a planning rule and not a licence.",
+    "research": "The licensing page sets out only the national mandatory test: a licence is needed where a property 'is rented to five or more people who form more than one household' and 'some or all tenants share toilet, bathroom or kitchen facilities'. It also catches 'purpose-built flats of no more than two units' and exempts blocks of three or more and Specified Educational Establishments. All national regime, no local designation. The full XML sitemap was parsed: the HMO subsection contains only find-out-if-you-need-hmo-licence, change-use-property-hmo, apply-hmo-licence, hmo-standards, hmo-fire-safety and view-register-licensed-hmos. MAJOR FALSE POSITIVE RISK: Canterbury operates an HMO Article 4 Direction; its own page says 'you need planning permission to change the use of a house from a C3 dwelling house to a C4 HMO' and points landlords to a planning mapping tool. That is town-and-country planning control, NOT Housing Act 2004 licensing. As a student city, Canterbury is frequently and wrongly listed by aggregators as having additional licensing.",
+    "sourceUrl": "https://www.canterbury.gov.uk/housing/houses-multiple-occupation-hmo/find-out-if-you-need-hmo-licence",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Castle Point Borough Council",
+    "gss": "E07000069",
+    "schemes": [],
+    "notes": "Castle Point does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes rented to five or more people forming more than one household who share facilities.",
+    "research": "The HMO page states that 'an HMO licence is required when a property is rented out to five or more people who, together, form more than one household where some or all tenants share some facilities such as a toilet, bathroom or kitchen' - the national test verbatim, no local designation. The Private Sector Housing landing page lists disabled facilities grants, empty homes, energy efficiency, houses in multiple occupation, housing disrepair and mobile home site licensing, with no selective or additional licensing. FALSE POSITIVE RISK: 'mobile home site licensing' on the same page is a distinct regime under the Caravan Sites and Control of Development Act 1960 and Mobile Homes Act 2013, sometimes miscounted by scrapers as residential property licensing.",
+    "sourceUrl": "https://www.castlepoint.gov.uk/houses-in-multiple-occupation",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Central Bedfordshire Council",
+    "gss": "E06000056",
+    "schemes": [],
+    "notes": "Central Bedfordshire does not run a selective or additional licensing scheme. Its only property licensing policy covers houses in multiple occupation under the national mandatory rules. Check with the council if you are unsure about your property.",
+    "research": "Three separate council indexes checked, none containing a selective or additional scheme. (1) The housing policy register lists exactly four private-sector policies: a 'Houses in Multiple Occupation Licensing Policy', a Housing Enforcement Policy (under review), a Rogue Landlords Database Policy, and a Civil Penalty Policy under the Renters' Rights Act 2025. No selective licensing policy or designation document. (2) The licensing A-Z lists 16 licence types (alcohol, taxi, food, gambling, animal, fireworks, charity collections, sex establishments, weighbridge, highways, petroleum, street trading, approved premises, scrap metal, tattooist, pavement) and contains no residential property licensing entry at all. (3) The full housing navigation was enumerated and contains no HMO, selective or additional licensing page; 'Services for landlords' covers only the Landlords' Forum, home improvement loans, private lettings and tax advice. LOWEST CONFIDENCE IN BATCH: this is a negative by exhaustive absence, not an explicit denial. Central Bedfordshire publishes no public-facing HMO licensing page at all; its HMO Licensing Policy sits behind a SharePoint link that could not be read. Re-check if a definitive page appears.",
+    "sourceUrl": "https://www.centralbedfordshire.gov.uk/housing/housing-policies",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Chelmsford City Council",
+    "gss": "E07000070",
+    "schemes": [],
+    "notes": "Chelmsford states plainly that it has no additional or selective licensing schemes. Only the national mandatory HMO licence applies, for homes where five or more people in two or more households share facilities. The fee starts at £900.",
+    "research": "The council states this explicitly on its own HMO licensing page: 'We do not have Additional or Selective licensing schemes in place.' That is the strongest class of evidence available, a direct negative in the council's own words rather than an inference from absence. The same page confirms the licensable class is the national mandatory one: 'five or more people live in two or more households' and 'the people living there share or lack a bathroom, toilet and/or cooking facilities'. Fees £900 for up to 5 units then £55 per additional unit (worked example: an 8-unit HMO costs £1,065). Licences run 5 years, determination target 12 weeks. The sitemap was parsed and the only HMO-related pages are the licensing page, temporary exemption notices and the two public registers.",
+    "sourceUrl": "https://www.chelmsford.gov.uk/business/licensing/licensing-a-house-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cheltenham Borough Council",
+    "gss": "E07000078",
+    "schemes": [],
+    "notes": "Cheltenham does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. Planning permission is separately needed to convert a house into a small shared home in the St Paul's area, which is a planning rule and not a licence.",
+    "research": "The HMO page describes only the national mandatory regime: a licence is needed where a property is 'occupied by five or more people, forming two or more households AND tenants share facilities such as kitchen or bathrooms'. Fees effective 1 April 2026: Part 1 £400 on application, Part 2 £570 for a 5-bedroom HMO plus £55 per additional bedroom, £140 extra where works are required, £90 per reminder letter, £100 for a missed inspection. Licences last a maximum of three years. No ward or street limitation and no designation referenced. The private housing index children are HMOs, Housing grants, Private housing standards, MEES, Mobile homes, Landlord rights and responsibilities, and Renting advice; no selective or additional page. Full XML sitemap parsed, no such URL. MAJOR FALSE POSITIVE RISK: an Article 4 Direction covers St Paul's ward, effective 11 June 2020, requiring planning permission for C3 to C4 conversions. That is planning control, not licensing, and because it is ward-specific and dated it is frequently misrepresented as a ward-level additional licensing designation.",
+    "sourceUrl": "https://www.cheltenham.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cherwell District Council",
+    "gss": "E07000177",
+    "schemes": [],
+    "notes": "Cherwell does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes shared by five or more people in two or more households. Fees run from £570 to £1,340 depending on the application type.",
+    "research": "The HMO licensing page sets out a three-part test that is the national mandatory regime word for word: 'It is occupied by five or more people; and Those people form two or more households; and The HMO is not a purpose-built, self-contained flat situated in a block comprising three or more self-contained flats.' The 2026-27 housing fees schedule was checked as a cross-reference, because a live designation would necessarily carry its own published fee. It lists only four HMO categories: higher-rate new £1,340, standard new £830, higher-rate renewal £830, standard renewal £570, plus advisory visit, plan review, empty-home VAT letter, register copy and enforcement-notice charges. No selective or additional fee line. Full XML sitemap parsed; the HMO section contains only what-is-an-hmo, hmo-standards-and-fire-safety, hmo-licensing, report-problems-with-hmos and planning-controls-for-hmos. FALSE POSITIVE RISK: that last page is planning legislation, not licensing. Banbury and Bicester periodically attract press coverage about HMO pressure, which can generate incorrect scraped records.",
+    "sourceUrl": "https://www.cherwell.gov.uk/info/245/hmos/594/hmo-licensing",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cheshire East Council",
+    "gss": "E06000049",
+    "schemes": [],
+    "notes": "Cheshire East does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes shared by five or more people in two or more households. Some Crewe streets separately need planning permission for shared homes.",
+    "research": "The HMO page states: 'If a HMO is occupied by 5 or more people who form two or more households, there should be a HMO licence in place', applying to buildings, converted flats and purpose-built blocks of up to two flats. National test, no local extension. Fees for 1 April 2026 to 31 March 2027: £1,076 to £1,315 first-time, £861 to £1,026 renewal, by property size. A single borough-wide mandatory schedule with no separate designation fee. The private sector housing index lists only a Tenants Guide, two Landlords Guides, the HMO page and a site map. MAJOR FALSE POSITIVE RISK: the HMO page itself references Article 4 Directions covering specific Crewe streets, Nantwich Road, Hungerford Road and West Street, in force 1 November 2021. These are planning permission requirements for HMO conversion, NOT licensing. Because they are street-level with a precise commencement date they are exactly the sort of item scraped into licensing datasets as a bogus 'streets' coverage designation.",
+    "sourceUrl": "https://www.cheshireeast.gov.uk/housing/houses_in_multiple_occupation/houses_in_multiple_occupation.aspx",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cheshire West and Chester Council",
+    "gss": "E06000050",
+    "schemes": [],
+    "notes": "Cheshire West and Chester does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. Fees range from £786 to £968, with 10 per cent off for accredited landlords.",
+    "research": "Three indexes checked. (1) The Private Rented Sector landing page was enumerated: Renters' Rights Act guidance, housing disrepair form, 'Apply for a House of Multiple Occupation licence', Cheshire Landlord Accreditation Scheme forms, Student housing, Empty Homes, Landlord and Tenant information, Private Rented Sector service, Landlord Forum, Property conditions, and HMO. No selective or additional page. (2) The HMO licence fees page lists a single new-licence ladder by habitable rooms: up to 6 rooms £786, 7 £832, 8 £879, 9 £925, 10+ £968, less 10 per cent for accredited landlords. A live designation would require its own published fee; none exists. (3) Full XML sitemap parsed; the only HMO URL is the licensing-and-permits page. FALSE POSITIVE RISK: Chester's Garden Quarter has historically attracted press and consultation coverage about private rented sector licensing and aggregators sometimes carry a Chester entry. Nothing on the current site supports an active designation, and no expired designation notice is published either, so no expired record is asserted. The Cheshire Landlord Accreditation Scheme is voluntary accreditation, not a statutory licence.",
+    "sourceUrl": "https://www.cheshirewestandchester.gov.uk/residents/housing/private-rented-sector",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Chesterfield Borough Council",
+    "gss": "E07000034",
+    "schemes": [],
+    "notes": "Chesterfield does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, for homes shared by five or more people in two or more households. A new licence costs £887 and a renewal £795.",
+    "research": "The HMO page describes 'the mandatory scheme' as covering 'any HMO that is occupied by five or more people that form two or more separate households, and who share basic amenities', extending to flats in converted buildings and purpose-built blocks of one or two units meeting the same test. National regime, no local designation. Fees: new £887 total (£488 initial, £399 within 21 days of the draft licence); renewal £795 total (£401 initial, £394 within 21 days). Only one fee schedule is published, consistent with a mandatory-only authority. The housing index and private homes index were both checked; neither references selective or additional licensing and the only property licensing child page is the HMO page itself.",
+    "sourceUrl": "https://www.chesterfield.gov.uk/housing/private-homes/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Chorley Council",
+    "gss": "E07000118",
+    "schemes": [],
+    "notes": "Chorley does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. The council confirms that smaller shared homes let to three or four people in two or more households do not need a licence.",
+    "research": "The mandatory HMO licence page states: 'a landlord must have a licence for a privately rented HMO if the property being rented out: is occupied by 5 people or more those people form 2 or more households tenants share some amenities like kitchen, bathroom or laundry.' Decisively for a negative finding, it then states: 'Smaller HMO's (those occupied by 3 or 4 persons in 2 or more households) do not require a licence.' An additional licensing designation under s.56 exists precisely to capture those smaller HMOs, so their explicit exclusion confirms no additional scheme is in force. The parent HMO page was enumerated and has exactly three children: Mandatory HMO licence, Apply for a HMO licence, and the HMO register. The Private rented housing page covers only a rental bond scheme and mentions no licensing; the Housing standards page covers gas, electrical and fire safety plus the Housing Enforcement Policy, with no designation.",
+    "sourceUrl": "https://chorley.gov.uk/environmental-health/hmo/2",
+    "verified": "2026-08-04"
+  }
+]

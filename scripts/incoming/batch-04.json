@@ -1,0 +1,110 @@
+[
+  {
+    "council": "City of London",
+    "gss": "E09000001",
+    "schemes": [],
+    "notes": "The City of London does not run a selective or additional landlord licensing scheme. Only the national mandatory HMO licence applies, to properties shared by five or more people forming two or more households.",
+    "research": "The Corporation's own HMO licensing page describes only mandatory licensing, quoting the licensable definition as 'a house or flat shared by five or more people, consisting of two or more households' under Part 2 of the Housing Act 2004. No s.56 additional designation and no Part 3 selective designation anywhere. Mandatory fees for context: £600 initial application plus a grant fee banded by lettings (up to 5 lettings £450, 6-9 £600, 10-14 £750, 15-19 £900, 20+ £1,050). Cross-checked the separate housing standards page, which says only 'Properties with five or more tenants belonging to two or more households are required by law to be licensed'. FALSE POSITIVE RISK 1: the page cites 'Part 2 of the Housing Act 2004', which is the same Part that contains s.56 additional licensing; mandatory licensing also sits in Part 2, so the citation is correct but implies no designation. FALSE POSITIVE RISK 2: 'City of London' is routinely confused in scraped datasets with the 32 London boroughs, several of which run large borough-wide schemes. The Square Mile is a separate authority of about 8,600 residents with a very small private rented sector. Access note: the domain returns HTTP 403 to automated fetches, so the page was read via a text-extraction proxy of the Corporation's own page.",
+    "sourceUrl": "https://www.cityoflondon.gov.uk/services/licensing/other-licence-and-business-permit-types/houses-in-multiple-occupation-hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Colchester",
+    "gss": "E07000071",
+    "schemes": [],
+    "notes": "Colchester does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, to properties with five or more occupants forming two or more households. The council states this in writing.",
+    "research": "The strongest negative in this batch, because the council states it in terms rather than merely omitting it: 'We do not operate additional or selective HMO licensing and there are no Article 4 directions relating to HMOs within the City.' The same page defines licensable stock as properties that 'Are occupied by 5 or more people; Who form 2 or more households; And who generally share 1 or more basic amenity'. Cross-checked against the general HMO guidance page, which repeats the mandatory threshold and mentions no designation. Note the council's sentence also rules out an Article 4 direction, which is planning control over HMO conversion and is not licensing at all. URL TRAP: the canonical path www.colchester.gov.uk/licensing/other-licences/house-multiple-occupation-licensing returns HTTP 404; the live page is served from the new.colchester.gov.uk host. Colchester also publishes an 'HMO Licence Checker' tool, which checks mandatory licences only and is not evidence of a wider scheme.",
+    "sourceUrl": "https://www.new.colchester.gov.uk/licensing/other-licences/house-multiple-occupation-licensing",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cornwall",
+    "gss": "E06000052",
+    "schemes": [],
+    "notes": "Cornwall has no selective or additional licensing scheme anywhere in the county, including its towns. Only the national mandatory HMO licence applies. Cornwall's Responsible Landlord Scheme is free and voluntary, and is not a licence.",
+    "research": "Cornwall is a large unitary authority so it was checked specifically for a scheme covering only a named town rather than the whole county; none was found. The HMO page states 'Any property which has 5 or more people (forming 2 or more households), where there is sharing of kitchens, WC or bathrooms will need an HMO licence' - the national mandatory test only, with no designation mentioned. MAJOR FALSE POSITIVE TRAP: Cornwall operates the 'Cornwall Responsible Landlord Scheme'. Scraped datasets frequently misclassify this as licensing because the page title contains the word 'Scheme' and it sits under private housing. It is not statutory: the council's wording is that it 'supports and encourages landlords and letting agents to provide safe, well managed and good quality accommodation', membership is voluntary, and 'There is no cost in joining the scheme'. A voluntary free accreditation scheme has no basis in Part 2 or Part 3 and confers no licence. SECOND TRAP: an HMO licence fee review consultation concerns the fee level for mandatory licences, not a designation. No evidence of any designation covering Camborne, Redruth, Penzance, Newquay or any other Cornish town.",
+    "sourceUrl": "https://www.cornwall.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Cotswold",
+    "gss": "E07000079",
+    "schemes": [],
+    "notes": "Cotswold District does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, to properties with five or more occupants forming two or more households.",
+    "research": "The HMO page describes only the mandatory regime, setting the test as properties 'occupied by five or more people, forming two or more households; AND tenants share facilities such as kitchen or bathrooms'. It also notes that purpose-built flats in blocks of up to two units fall within mandatory licensing on the same test. There is no reference to any s.56 or Part 3 designation. The council's supporting document is titled 'HMO Mandatory Licensing Flowchart' and its decision logic turns solely on whether there is 'rent or other consideration payable' and whether 'five or more persons, comprising 2 or more households occupy the property'; the word 'mandatory' in that filename usefully confirms the scope of the council's offer. Cotswold is a rural district with a small dispersed private rented sector and no low-demand or high-deprivation profile of the kind that supports a Part 3 designation. NOTE: the page discusses the Management of Houses in Multiple Occupation Regulations 2006, which apply to licensable and non-licensable HMOs alike; management regulations are not a licensing scheme.",
+    "sourceUrl": "https://cotswold.gov.uk/housing/private-housing/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Crawley",
+    "gss": "E07000226",
+    "schemes": [],
+    "notes": "Crawley does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. Crawley does have planning rules limiting new HMOs in ten zones, but that is planning permission and is not a licence.",
+    "research": "The HMO page states that 'all HMOs that have five or more persons forming two or more households must be licensed', the national mandatory threshold, and makes no reference to any designation. Fees are published separately as the 'HMO licence fees and charges guide 2026 to 2027'. SIGNIFICANT FALSE POSITIVE TRAP: the same page states that 'Article 4 Directions affecting the creation of new HMOs in 10 zones across Crawley have been approved and in effect from 15 June 2022'. That is a planning measure removing permitted development rights for converting a dwellinghouse to a small HMO in those zones; it requires planning permission, not a licence. Aggregators very frequently convert a ten-zone Article 4 direction of this kind into a phantom 'additional licensing scheme covering 10 areas' complete with invented ward lists, and the 15 June 2022 date must never be recorded as a scheme start date. A democracy-portal paper titled 'Identifying and Monitoring HMOs in Crawley' discusses licensing frameworks in general terms without adopting a designation.",
+    "sourceUrl": "https://crawley.gov.uk/housing/private-housing/houses-multiple-occupation",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Dacorum",
+    "gss": "E07000096",
+    "schemes": [],
+    "notes": "Dacorum does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, to properties with five or more occupants forming two or more households.",
+    "research": "The HMO licences page sets the licensing trigger where a property 'is occupied by five or more people' and 'has two or more households'. That is the national mandatory test and the page contains no reference to a s.56 or Part 3 designation. Mandatory fees published for 2026-2027, for context only: initial licence application £610; five year licence ongoing management £953; one year licence ongoing management £287; £25 for each additional bedroom over five rooms. TRAP: the same page warns that operating an unlicensed HMO can lead to unlimited fines, civil penalties up to £30,000 and rent repayment orders of up to twelve months' rent. Scrapers sometimes treat rent repayment order warnings as a signal of selective licensing, but these penalties attach to mandatory licensing too and prove nothing about a designation. The council's general licensing landing page covers its enforcement policy across licences and permits and lists no property licensing designation.",
+    "sourceUrl": "https://www.dacorum.gov.uk/home/housing/private-housing/private-landlords/hmo-licences",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Darlington",
+    "gss": "E06000005",
+    "schemes": [],
+    "notes": "Darlington does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. The council's published fee list contains HMO licence fees only, with no selective or additional licence fee.",
+    "research": "Two independent checks on the council's own site, both negative. First, the HMO page describes only mandatory licensing, referring to the pre-2018 test and then to the 1 October 2018 extension under which 'smaller properties used as HMOs in England which house 5 people or more in 2 or more separate households will in many cases require a licence. The requirement for three of more storeys for a property to need a licence will be removed.' No designation mentioned. Second, and more probative, the published fee schedule was examined line by line: Part A licence application £217.00, 'Part B 5 year HMO licence per letting' £155.00, licence variation £124.00, HMO officer time £65.00 per hour, plus general enforcement, empty homes and immigration inspection charges. There is NO selective licence fee and NO additional licence fee anywhere in the schedule. A council operating a Part 3 designation must charge a fee for it and would publish it here, so the absence is strong corroboration. REGIONAL TRAP: neighbouring Durham County Council does operate selective licensing, and Darlington is frequently swept into County Durham in scraped geographies despite being a separate unitary authority.",
+    "sourceUrl": "https://www.darlington.gov.uk/housing/private-sector-housing/private-sector-housing-fees/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Dartford",
+    "gss": "E07000107",
+    "schemes": [],
+    "notes": "Dartford does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies. Dartford does have planning rules requiring permission for new HMOs in parts of the borough, but that is planning and is not a licence.",
+    "research": "The HMO page states that 'Licensable HMOs are currently those of 5 or more persons in two or more households', with the standard exception that a purpose-built flat in a block of three or more self-contained flats does not require a licence, and notes that a live-in landlord needs a licence only with 'four or more lodgers/Tenants'. Mandatory fees 2025/26: £905 new five-year licence, £695 re-licence. TRAP 1: the same page sets out Article 4 style planning control with staged dates, new HMOs north of the A2 requiring planning permission from 9 December 2025 and south of the A2 from 10 December 2026. These are planning permission requirements, not licensing designations, and the geographic split by the A2 is exactly the sort of detail scrapers convert into a fake part-borough licensing scheme with a 2026 start date. TRAP 2: the council's 'Landlords Guide to the Housing Act' explains in general educational terms that 'The Council may also be able to declare that other types of HMOs will need to have a licence. This is called additional licensing', and separately describes selective licensing in the abstract. That is generic explanatory text about powers the council could use, phrased conditionally as 'may also be able to', not a declaration that a scheme exists.",
+    "sourceUrl": "https://www.dartford.gov.uk/private-sector-1/houses-multiple-occupancy",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Dorset",
+    "gss": "E06000059",
+    "schemes": [],
+    "notes": "Dorset Council has no selective or additional licensing scheme anywhere in its area, including Weymouth. Only the national mandatory HMO licence applies. A Weymouth town centre scheme was consulted on years ago but was never brought in.",
+    "research": "Dorset is a large unitary authority so it was checked specifically for a scheme limited to a named town; one was proposed for Weymouth and never designated. The council's page is titled 'Mandatory HMO licensing' and states 'Unless there is a specified exemption, all properties that meet the definition of a licensable HMO as specified in the Housing Act 2004 must possess a valid HMO licence from the local authority.' Fees from 1 April 2026: £900 for a first five year licence, £740 to renew, reduced 10 per cent to £810 and £666 for landlords meeting Council Landlord Forum standards. PRINCIPAL TRAP, and it is serious: there is a large council-hosted paper trail for a proposed selective licensing scheme in part of Melcombe Regis ward, Weymouth, including a consultation report, a consultation document, 'Draft Conditions for Selective Licensing of the Private Rented Sector in Melcombe Regis' dated October 2018, and a ModernGov committee issue titled 'Designating an area of the Melcombe Regis for Selective Licensing'. The consultation was run by the former Weymouth and Portland Borough Council, whose own wording was that it 'is considering the introduction of a Selective Licensing Scheme under the Housing Act 2004 in parts of the Melcombe Regis ward'. It was never designated, and a subsequent Dorset committee item put forward voluntary landlord accreditation and targeted enforcement as an alternative to designation. Because these documents are numerous, hosted on the council's own domain and use confident designation language, scrapers routinely record a live Weymouth scheme. There is none, and no start date should ever be published for it. ACCESS NOTE: the council domain and its ModernGov portal return HTTP 403 to automated fetches, so pages were read via a text-extraction proxy of the council's own pages, and the ModernGov issue page itself could not be opened. GEOGRAPHY TRAP: Bournemouth, Christchurch and Poole is a separate unitary authority and its arrangements must not be attributed to Dorset Council.",
+    "sourceUrl": "https://www.dorsetcouncil.gov.uk/w/mandatory-hmo-licensing",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Dover",
+    "gss": "E07000108",
+    "schemes": [],
+    "notes": "Dover District does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, and it covers the whole district. The council confirmed this in a freedom of information response.",
+    "research": "This negative is confirmed by a formal council disclosure rather than by absence of mention, which makes it unusually reliable. Freedom of information response FI16759, published in the council's disclosure log, answers a structured request about 'Property Licensing Schemes'. The council identifies exactly one scheme in operation, 'Mandatory HMO', with coverage stated as 'Whole area'. The questions relating to selective licensing and additional HMO licensing, including scheme status, confirmation references and designation details, are answered 'not applicable', because no such designations exist. TRAP: the phrase 'Whole area' describes the geographic reach of the national mandatory HMO regime, which applies everywhere by law, and scrapers reading it alongside the words 'licensing scheme' can wrongly generate a district-wide selective licensing designation. Nothing on the council's licensing pages indicates a s.56 or Part 3 designation. Landlords in Dover, Deal, Sandwich and the surrounding villages therefore need a licence only where the property is a mandatory HMO.",
+    "sourceUrl": "https://www.dover.gov.uk/Corporate-Information/Freedom-of-Information/Freedom-of-information-Disclosure-Log/Responses/FI16759.aspx",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Dudley",
+    "gss": "E08000027",
+    "schemes": [],
+    "notes": "Dudley does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, to properties with five or more occupants forming two or more households.",
+    "research": "Two separate council pages covering private rented housing were checked and both refer to mandatory HMO licensing only. The private landlords page states 'All HMOs that have five or more people in them must be licensed by the local authority. There is a fee for the licensing of each HMO', and it maintains an HMO register current as of 20 July 2026, showing the page is actively maintained. The private housing landing page states 'The Council licenses HMOs where at least 5 tenants live there, forming more than one household but share facilities like a kitchen, bathroom, and toilet'. Neither page mentions a s.56 or Part 3 designation, and the section navigation lists Private Landlords, Home Owners, Private Tenant, Private Sector Enforcement, Harassment and Illegal Eviction, Empty Properties, Dudley home improvement service, Housing Associations, and Stock Condition Survey, with no property licensing designation section. TRAP: the private housing page cites a Building Research Establishment stock condition analysis of 31 March 2020 finding that of roughly 25,000 private rented homes in Dudley 'some 16,000 will have at least one Category One Hazard'. Poor stock condition evidence of this type is the standard justification a council publishes when building a case for selective licensing, and its presence causes scrapers to infer a scheme. WEAKEST RECORD IN THIS BATCH: this is an absence-of-mention negative rather than an explicit denial, with no designation notice, cabinet decision or fee found. Re-check this one first if challenged.",
+    "sourceUrl": "https://www.dudley.gov.uk/residents/housing/housing-options/private-housing/private-landlords/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "East Cambridgeshire",
+    "gss": "E07000009",
+    "schemes": [],
+    "notes": "East Cambridgeshire does not run a selective or additional licensing scheme. Only the national mandatory HMO licence applies, to properties with five or more occupants forming two or more households who share basic amenities.",
+    "research": "The council's HMO licensing information page sets out a three part test and requires a licence only where the answer to all three is yes: 'Is the property occupied by 5 or more persons?', 'Do the occupants form 2 or more households?' and 'Are basic amenities shared, for example a bathroom or kitchen?'. That is precisely the national mandatory threshold, and no s.56 or Part 3 designation is mentioned. The page confirms a fee is payable but does not publish the amount; a December 2025 committee report titled 'Review of the Houses in multiple occupation (HMO) Licensing fees' concerns the level of mandatory HMO fees rather than any new designation. The council's application form is likewise a mandatory HMO form. URL TRAP: the site redirects /licensing-and-permits/ to /services/licensing-and-permits/, and development and staging hosts such as eastcambs-dev.invdev.com appear in search indexes; those are not citable council addresses. CONTENT TRAP: some third party guidance describes the licensable threshold in East Cambridgeshire as '3 or more tenants', which is the pre-2018 mandatory test and is wrong; the council's own current wording is five or more persons. East Cambridgeshire is a rural district covering Ely, Soham and Littleport with no published Part 3 designation.",
+    "sourceUrl": "https://eastcambs.gov.uk/services/licensing-and-permits/other-licensing/hmo-licensing-information",
+    "verified": "2026-08-04"
+  }
+]

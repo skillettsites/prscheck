@@ -1,0 +1,110 @@
+[
+  {
+    "council": "Mid Sussex District Council",
+    "gss": "E07000228",
+    "schemes": [],
+    "notes": "No selective or additional licensing in Mid Sussex. Only national mandatory HMO licensing (5+ occupiers, 2+ households) applies. The council's 2026/27 HMO fee schedule lists mandatory HMO bands only.",
+    "research": "The HMO page describes only the national scheme: 'Since 1st October 2018 mandatory licensing will apply to all HMOs or any type of property occupied by five persons or more, in two or more households, regardless of the number of storeys'. FEE-SCHEDULE TEST: the current fee document (hmo-2026-27-fees.pdf) is headed 'LICENSING OF HOUSES IN MULTIPLE OCCUPATION (HMOs)' and contains only mandatory bands: Shared House 5 persons / 6-10 / 11-15 / 16 and over; Bedsit up to 5 units / 6-10 / 11-15 / 16-20 / 21-30 units; Hostel up to 20 residents / 21-40 / 41-60 / 61-80. Full text was extracted and grepped: zero occurrences of 'selective' or 'additional'. There is no Part 3 or s.56 fee line, so no such scheme can be running. TRAP: the council site search (Cludo) for 'selective licensing' returns 247 fuzzy hits, but the only non-document categories are Business & Licensing (2) and Planning & Building (1), which resolve to the online planning/licensing register and the Licensing Act 2003 Statement of Licensing Policy for alcohol. Those are word-stem matches on 'select' plus 'licensing', not a designation.",
+    "sourceUrl": "https://www.midsussex.gov.uk/housing-council-tax/houses-in-multiple-occupation-hmo/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Milton Keynes City Council",
+    "gss": "E06000042",
+    "schemes": [],
+    "notes": "Milton Keynes states in its published HMO Licensing Policy that it does not operate any additional or selective licensing scheme; only mandatory HMO licensing applies. The single HMO licence fee is £730.",
+    "research": "DEFINITIVE COUNCIL STATEMENT. The HMO Licensing Policy (version 1, dated 04.07.2025) says under 'Requirement for a licence to operate a HMO': 'The definition of a HMO can be found under Section 254 of the Housing Act 2004. Milton Keynes City Council does not currently operate any Additional or Selective Licensing schemes, only Mandatory Licensing is a requirement.' The policy separately acknowledges the powers exist: 'The Act also gives provision for Local Authorities to introduce Additional (Part 2) or Selective (Part 3) Licensing schemes which fall outside the scope of the mandatory scheme', an acknowledgement of the statutory power, not a designation. FEE-SCHEDULE TEST: the HMO page publishes a single licence fee of £730, split Part 1 £485 on application and Part 2 £245 on approval. There is no second fee line. TRAP EXCLUDED: the same page states 'Milton Keynes has introduced an Article 4 Directions which means that planning permission is required when converting a dwelling house (C3), or non-residential property, to an HMO use class (C4) or Sui Generis.' Planning control over conversion, not licensing. TRAP EXCLUDED: the s.254 definition quoted on the page (three or more tenants forming two or more households) is the definition of an HMO, not the licensing threshold; the policy confirms the mandatory trigger is five or more.",
+    "sourceUrl": "https://www.milton-keynes.gov.uk/housing/private-sector-housing/houses-multiple-occupation-hmo",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Mole Valley District Council",
+    "gss": "E07000210",
+    "schemes": [],
+    "notes": "No selective or additional licensing found in Mole Valley. The council's own site search returns no match for either term, and the 2026/27 environmental health fee schedule carries no such licence fee.",
+    "research": "Council site search was used as the primary test because Mole Valley's HMO page is technically broken. The exact-phrase search for '\"selective licensing\"' returns 'We could not find any results for your search.' The same exact-phrase search for '\"additional licensing\"' also returns 'We could not find any results for your search.' FEE-SCHEDULE TEST: the current 'Environmental Health Licenses, Fees and Charges: 2026/27' was rendered in a browser and its full text scanned. It covers Scrap Metal Dealers, Skin Piercing, Street Trading, Animal Welfare, Hackney Carriage and Private Hire, Stray Dog and Gambling Act premises. There is no selective and no additional licensing fee line. TRAP EXCLUDED: the only match for 'additional' in the schedule is 'Additional charge for exceptionally large events', a surcharge, not Part 2 s.56. CAVEAT ON EVIDENCE: the council's HMO page renders an empty body, a layout placeholder with 756 characters of text and no content. Confirmed three ways: raw HTML fetch, the WordPress REST API (page modified 2025-06-09 with empty rendered content), and a real Chrome render. So the council's own HMO page could not be read, and the negative rests on the site-wide search and the fee schedule instead, which are independent and consistent. This is not a 403 or bot block; the page genuinely has no published content.",
+    "sourceUrl": "https://www.molevalley.gov.uk/environmental-health/environmental-health-fees-and-charges-2/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "New Forest District Council",
+    "gss": "E07000091",
+    "schemes": [],
+    "notes": "No selective or additional licensing in the New Forest. Only national mandatory HMO licensing applies, at a single fee of £976 paid in two instalments.",
+    "research": "The council site search supports exact phrases and gives a clean negative on both: a search for '\"selective licensing\"' returns 'Searching on \"selective licensing\" found no results', and '\"additional licensing\"' returns 'Searching on \"additional licensing\" found no results'. An unquoted search for selective licensing returns 123 results, but that is an OR match on two common words, which is why the quoted form was used. The Private housing page describes only the national scheme: 'From 1 October 2018, the mandatory licensable HMO definition has been varied to 5 or more unrelated persons who form 2 or more households.' FEE-SCHEDULE TEST: a single licence fee line is published, 'Currently the licence fee is £976 and is paid in 2 instalments', being Instalment 1 £317.00 on application and Instalment 2 £659.00 before issue. One fee line, mandatory HMO only, with no separate selective or additional charge. No designation notice found on the council domain.",
+    "sourceUrl": "https://www.newforest.gov.uk/article/999/Private-housing",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Newark and Sherwood District Council",
+    "gss": "E07000175",
+    "schemes": [],
+    "notes": "No selective or additional licensing in Newark and Sherwood. The council describes only the national mandatory HMO scheme; its published fees are £790 for a single HMO application, £600 for multiple and £60 to vary.",
+    "research": "The HMO licensing page states: 'The Housing Act 2004 introduced a mandatory licensing scheme for larger HMOs to improve controls and conditions within these high risk dwellings.' Only the mandatory scheme is described. FEE-SCHEDULE TEST: the fee table on that page lists exactly three lines, Single HMO application £790, Multiple applications £600, Variation of licence £60. There is no selective and no additional licensing fee, so neither scheme can be operating. Corroborated by the private landlord advice page: 'There are a number of specific requirements for landlords operating houses of multiple occupation and a mandatory licensing scheme for particular high risk properties.' Again mandatory only. METHOD NOTE: the council's own site search could not be used as evidence because it is broken; a search for 'HMO' returns an empty results region even though the term certainly exists on the site, so a nil return there proves nothing and was disregarded. The 'Landlord strategy' document in the sitemap was checked and concerns the council's role as a social landlord ('This document shows what we want from our social housing'), not private rented sector licensing. The sitemap of 1,599 URLs contains no selective or additional licensing page.",
+    "sourceUrl": "https://www.newark-sherwooddc.gov.uk/business-licensing/licensing/houses-multiple-occupation-hmo-licences",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "Newcastle-under-Lyme Borough Council",
+    "gss": "E07000195",
+    "schemes": [],
+    "notes": "No selective or additional licensing is in force in Newcastle-under-Lyme. Only mandatory HMO licensing applies, at £750 for up to five bedrooms plus £11 per extra bedroom. Selective licensing was proposed for parts of Kidsgrove in 2014-2016 but no designation followed.",
+    "research": "CURRENT POSITION: the HMO licences page describes only the national scheme, 'If an HMO has 5 or more occupiers, it is a licensable HMO and the landlord must apply for a licence.' FEE-SCHEDULE TEST: the Costs section publishes a single line, 'Licence fee (for up to five bedrooms): £750' and 'Fee for each extra bedroom: £11'. No selective or additional fee line exists. The council site search for 'selective licensing' returns 'Results 1 - 4 of about 4', and all four are the mandatory HMO licensing pages and the general Licences and registration index, none a designation. HISTORIC PROPOSALS, NOT DESIGNATIONS: the ModernGov document search returns items only from 2014-2016: Cabinet 02/04/2014 and 23/07/2014 'Proposal for Selective Licensing' for the Galleys Bank estate in Kidsgrove; Cabinet 11/11/2015 'Proposal for Selective Licensing' for the Miners Estate in Kidsgrove; and Cabinet 20/01/2016 'Selective Licensing'. The January 2016 report (wards affected: Kidsgrove) recommended only '(b) Subject to a peer review by another local authority, to agree moving forward to a ten week consultation of local residents, landlord's, businesses and other stakeholders.' That is a decision to consult, not a designation. No later document, confirmation report, commencement date or fee ever appears; the trail stops in 2016 and the scheme is absent from the live site and current fee schedule ten years on. Not recorded as 'proposed', because a 2016 consultation decision with no subsequent step would mislead a landlord into thinking a live consultation is running. TRAP EXCLUDED: the Civil Financial Penalty Policy 2026 (Cabinet 17/03/2026) contains 'Offences in relation to the Selective Licensing of `houses' [s95 Housing Act 2004]', the standard statutory civil-penalty schedule every council reproduces. TRAP EXCLUDED: the HMO page carries 'We have a number of Article 4 directions within the borough which remove some permitted development rights', which is planning control, not licensing.",
+    "sourceUrl": "https://www.newcastle-staffs.gov.uk/landlords-private-renting/houses-multiple-occupation-hmo-licences",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Devon Council",
+    "gss": "E07000043",
+    "schemes": [],
+    "notes": "No selective or additional licensing in North Devon. The council's 2026-27 fee schedule lists mandatory HMO bands only, under the Housing Act 2004, with no Part 3 or additional licensing charge.",
+    "research": "FEE-SCHEDULE TEST, the strongest evidence here. The current statutory fee document, 'Environmental Health and Housing Services Fees & Charges 26-27', was downloaded and converted to text in full. Section 3.11 'Houses in Multiple Occupancy (HMO)' is headed 'Housing Act 2004' and contains only mandatory unit-count bands: HMO New applications 1-5 / 6-10 / 11-15 / 16+ (Part A £530.64 to £648.56, Part B £1,023.57) and HMO Renewal applications on the same bands, plus 'Fee for copy of full HMO Licensing Register = £29.48'. A grep of the entire document for 'selective' returns zero matches. There is no selective and no additional licensing fee line anywhere in the schedule, so neither scheme can be operating. TRAP EXCLUDED: the schedule contains the strings 'Large Venues - Additional Fees', 'an additional fee', 'additional fees that may apply' and 'Additional fee for operating without a permit'. These are surcharges on events, permits and criminal record disclosure, not Part 2 s.56 additional licensing. The HMO information page has a single licensing heading, 'Mandatory licensing', explaining the post-October-2018 national scheme. METHOD NOTE: the council's Drupal site search returns fuzzy OR matches, returning unrelated harbour and land-charges pages for the query, so it was not relied on either way.",
+    "sourceUrl": "https://www.northdevon.gov.uk/business/licences-and-permits/houses-in-multiple-occupation-hmos",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North East Derbyshire District Council",
+    "gss": "E07000038",
+    "schemes": [],
+    "notes": "No selective or additional licensing in North East Derbyshire. Only mandatory HMO licensing applies, at a total fee of £607 (£496 on application plus £111 on grant). A council site search for selective licensing returns zero results.",
+    "research": "The council site search gives an unambiguous negative: a search for 'selective licensing' returns 'Found 0 results. Assuming selective is required, and licensing is required, no results were found.' The engine confirms it required BOTH words and still found nothing, so this is a true nil return rather than a fuzzy miss. FEE-SCHEDULE TEST: the HMO page publishes one licence fee only, 'There is an initial application fee of £496 with a further fee when the licence is granted of £111 making a total HMO licence fee of £607 (we are under a legal obligation to split the fee).' No selective or additional fee line exists. The same page refers only to the mandatory regime and to penalties for operating 'after 1st October 2018', the mandatory scheme commencement. CHECKED FOR FALSE NEGATIVE: a search for 'additional licensing' returns 27 results, but every one is unrelated licensing: the Licensing Act 2003 Statement of Licensing Principles 2024-2029, Gambling Act 2005 statements, the Draft Animal Welfare Licensing Policy 2026, and four Taxi Licensing Policy documents. None concerns Part 2 s.56 of the Housing Act 2004. The sitemap of 963 URLs contains no selective or additional licensing page.",
+    "sourceUrl": "https://www.ne-derbyshire.gov.uk/housing-and-health/houses-of-multiple-occupation",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Hertfordshire District Council",
+    "gss": "E07000099",
+    "schemes": [],
+    "notes": "North Hertfordshire's published HMO licensing policy states there are no proposals for either a selective or an additional licensing scheme, and that selective licensing is not an available option to the council. Only mandatory HMO licensing applies.",
+    "research": "DEFINITIVE COUNCIL STATEMENT, in the council's own 'Policy for licensing houses in multiple occupation', which has dedicated sections 3.3 Additional licensing and 3.4 Selective licensing. On additional licensing, paragraph 3.3.7: 'Currently, there is not the considerable amount of evidence required to demonstrate that additional licensing is necessary or appropriate, nor that it would be effective to tackle problematic housing in North Hertfordshire.' Paragraph 3.3.8: 'There are no proposals to introduce an additional licensing scheme in North Hertfordshire.' On selective licensing, paragraph 3.4.4: 'Currently there is no evidence that any of the above criteria apply in North Hertfordshire, therefore selective licensing is not an available option to the Council.' Paragraph 3.4.5: 'There are no proposals to introduce a selective licensing scheme in North Hertfordshire.' Both powers are expressly ruled out and no consultation is under way. The live HMO licence page (published 26 February 2015, last updated 25 June 2026) describes the mandatory scheme only, 'A licensable House in Multiple Occupation (HMO) includes any private property that is rented as a shared house, flat or bedsit occupied by 5 or more unrelated tenants, regardless of how many storeys are in the property', and its Legislation summary cites 'Part 2 of the Housing Act 2004' with no Part 3 designation. The licensing fees index lists a single 'House in Multiple Occupation licence' entry.",
+    "sourceUrl": "https://www.north-herts.gov.uk/house-multiple-occupation-licence",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Norfolk District Council",
+    "gss": "E07000147",
+    "schemes": [],
+    "notes": "No selective or additional licensing in North Norfolk. A council site search for selective licensing returns no results, and only mandatory HMO licensing applies, at £930 for up to six units for five years.",
+    "research": "The council site search gives a clean negative: a search for 'selective licensing' returns 'No results found for search term selective licensing.' FEE-SCHEDULE TEST: the HMO page publishes a single licence fee, 'The Council charges £930 to licence an HMO of up to six units of accommodation for five years. For larger properties, an additional fee of £30 will be charged for every additional unit of accommodation.' One mandatory fee line, with no selective or additional scheme charge. TRAP EXCLUDED: the words 'an additional fee of £30 ... for every additional unit' are a per-unit surcharge on the mandatory HMO fee, not Part 2 s.56 additional licensing. CHECKED FOR FALSE NEGATIVE: a search for 'additional licensing' matches 6 pages, all irrelevant: councillors and decision making, apply for a taxi licence, parish and town council precepts, the mandatory HMO page, premises under review, and skin piercing. None is a designation.",
+    "sourceUrl": "https://www.north-norfolk.gov.uk/tasks/housing-services/does-my-house-in-multiple-occupation-hmo-need-a-licence/",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Northamptonshire Council",
+    "gss": "E06000061",
+    "schemes": [],
+    "notes": "North Northamptonshire states it does not meet the threshold for either selective or additional licensing and that neither would be appropriate at present. Only mandatory HMO licensing applies. An Article 4 planning direction covers Kingswood ward in Corby, but that is not licensing.",
+    "research": "DEFINITIVE COUNCIL STATEMENT on the council's 'The law on HMOs' page, last updated 22 October 2025, under a heading 'Selective and additional licensing'. On selective: 'We currently do not meet the threshold for selective licensing as we do not have \"a significant and persistent problem caused by anti-social behaviour\". There is no proven link at present between ASB and HMOs, so we cannot justify selective licensing.' On additional: 'We also do not meet the threshold for additional licensing where \"the local authority believes that a significant proportion of HMOs are poorly managed\" - so it would not be an appropriate scheme for North Northamptonshire at the present time.' The same page confirms the only licensing in force is the national one: 'HMO licensing is a national scheme - it isn't subject to local consultation under the Housing Act 2004' and 'we are duty bound to licence any HMO on receipt of a valid HMO application under the Housing Act 2004.' No consultation is under way on either power. TRAP EXCLUDED, AND THIS IS THE KEY RISK ON THIS COUNCIL: the same page states 'An Article 4 direction came into force on 24 April 2024 for new HMOs in the Kingswood ward of Corby - this means landlords need to get planning permission for a new HMO in this area but it doesn't limit the number of HMOs', and describes six 'hotspot wards' identified by planning research in 2022/23. Article 4 is planning control over HMO conversion, carries a named ward and a commencement date, and is frequently mistaken for a licensing designation. The council itself separates the two, discussing Article 4 and then stating the licensing thresholds are not met.",
+    "sourceUrl": "https://www.northnorthants.gov.uk/hmo/law-hmos",
+    "verified": "2026-08-05"
+  },
+  {
+    "council": "North Somerset Council",
+    "gss": "E06000024",
+    "schemes": [],
+    "notes": "No selective or additional licensing in North Somerset. The council's 2026 fee schedule labels its HMO licence fees 'Mandatory' explicitly, and a site search returns no results for either term.",
+    "research": "FEE-SCHEDULE TEST, the strongest evidence here. The council's current 'Fees and Charges 2026' document (3.7MB) was downloaded and converted to text in full. The only housing licensing entries are headed 'HMO licensing - Mandatory' (properties containing up to five units of accommodation, plus additional fee for each unit thereafter, £752.10; fit and proper persons assessment £67.75) and 'HMO Licensing - Mandatory (discounted)' (up to 5 units £599.50, each additional unit £54.55). The council has explicitly labelled these Mandatory. A grep of the whole document for 'selective' returns zero matches and for 'additional licen' returns zero matches. Since a live Part 3 or s.56 scheme must carry its own cost-recovery fee, and none exists, neither scheme is running. Corroborated by the council site search: a search for 'selective licensing' returns 'Your search yielded no results.', and the same search for 'additional licensing' also returns 'Your search yielded no results.' The HMO licensing page refers only to 'mandatory HMO licensing' when describing the offence of failing to licence. TRAP EXCLUDED: the phrase 'plus additional fee for each unit thereafter' in the schedule is a per-unit surcharge on the mandatory fee, not Part 2 s.56.",
+    "sourceUrl": "https://n-somerset.gov.uk/sites/default/files/2026-07/33196%20Fees%20and%20Charges%202026.pdf",
+    "verified": "2026-08-05"
+  }
+]

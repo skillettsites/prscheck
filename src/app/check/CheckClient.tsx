@@ -58,6 +58,12 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
 
   const [address, setAddress] = useState("");
   const [addresses, setAddresses] = useState<string[]>([]);
+  // Structured address list from OS Places. We need the street, not just the
+  // display string: ~35 live schemes are designated street by street and a
+  // postcode cannot resolve them.
+  const [addressItems, setAddressItems] = useState<
+    { address: string; street: string | null; streetSource?: "os" | "epc" }[]
+  >([]);
   const [addressLoading, setAddressLoading] = useState(false);
   const [manualAddress, setManualAddress] = useState(false);
   const [addressError, setAddressError] = useState(false);
@@ -77,8 +83,9 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   // the buyer can pick the exact property (mirrors HBC/PCC). Falls back to a
   // free-text field if the lookup returns nothing.
   useEffect(() => {
-    if (!result || result.nation !== "england") {
+    if (!result || !(result.nation === "england" || result.nation === "wales")) {
       setAddresses([]);
+      setAddressItems([]);
       return;
     }
     let active = true;
@@ -91,6 +98,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
         if (!active) return;
         const list: string[] = Array.isArray(d.addresses) ? d.addresses : [];
         setAddresses(list);
+        setAddressItems(Array.isArray(d.items) ? d.items : []);
         if (list.length === 0) setManualAddress(true);
       })
       .catch(() => {
@@ -163,6 +171,10 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
       setError("Households must be at least 1 and no more than the number of occupants.");
       return;
     }
+    // Matches only when the buyer picked from the lookup, not when they typed
+    // their own address, which is what keeps a hand-typed street out of the
+    // street matcher.
+    const selectedItem = addressItems.find((i) => i.address === address.trim());
     setBuying(true);
     setError(null);
     try {
@@ -174,6 +186,12 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
           address: address.trim(),
           gss: result.council.gss,
           ward: result.ward ?? "",
+          // Street of the selected address, plus where it came from. A typed-in
+          // address has no entry here, so both stay empty and the report falls
+          // back to a boundary check. The source matters: only an Ordnance
+          // Survey street is trusted to rule a designation OUT.
+          street: selectedItem?.street ?? "",
+          streetSource: selectedItem?.streetSource ?? "",
           occupants: occ,
           households: hh,
           attribution: attribution(),
@@ -182,8 +200,8 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
       const data = await res.json();
       if (!res.ok || !data.url) {
         setError(
-          data.error === "england_only"
-            ? "The paid report currently covers England only. See the guidance below for your nation."
+          data.error === "unsupported_nation"
+            ? "The paid report covers England and Wales, where councils can run licensing schemes. See the guidance below for your nation."
             : "Could not start checkout. Please try again.",
         );
         setBuying(false);
@@ -196,9 +214,13 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
     }
   }
 
-  const isEngland = result?.nation === "england";
+  // Wales has the same Housing Act 2004 powers as England and nine of its
+  // twenty-two councils run live schemes, so Welsh searches must get the real
+  // scheme answer rather than a national fallback. `isEngland` is kept only for
+  // the paid report, which is still England-only at checkout.
+  const hasCouncilSchemes = result?.nation === "england" || result?.nation === "wales";
   // Hot lead: the searcher's ward appears in an active/upcoming scheme's designated list.
-  const hotMatch = isEngland && !!result?.schemes.details.some((d) => d.wardInList === true);
+  const hotMatch = hasCouncilSchemes && !!result?.schemes.details.some((d) => d.wardInList === true);
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -259,7 +281,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
               hold research for this council. Sitting this badge above "we have
               not yet verified this council" would undo the point of saying so. */}
           <p className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-navy-700 bg-navy-800 px-2.5 py-1 text-xs text-navy-400">
-            {isEngland && !result.schemes.hasData ? (
+            {hasCouncilSchemes && !result.schemes.hasData ? (
               <>
                 <span aria-hidden>📍</span> Council identified from official postcode data · scheme research pending
               </>
@@ -280,17 +302,40 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
             </div>
           )}
 
-          {!isEngland ? (
+          {!hasCouncilSchemes ? (
             <div className="mt-4 rounded-lg border border-accent-500/30 bg-accent-600/10 p-4 text-sm text-navy-200">
               <p className="font-semibold text-navy-100">This property is in {nationLabel(result.nation)}.</p>
-              <p className="mt-1">
-                {nationLabel(result.nation)} uses a national landlord registration and licensing regime rather than
-                council-by-council schemes. See our free {" "}
-                <Link href="/guides/landlord-licensing" className="text-accent-400 underline">
-                  {nationLabel(result.nation)} licensing guide
-                </Link>{" "}
-                for what you need to do.
-              </p>
+              {result.nation === "wales" ? (
+                <>
+                  {/* The Housing Act 2004 extends to England AND Wales (s.270(11)), so Welsh
+                      councils can and do designate additional licensing schemes. Telling a Welsh
+                      landlord that only a national regime applies would be false, and could leave
+                      them operating an unlicensed HMO. */}
+                  <p className="mt-1">
+                    Welsh councils can run their own additional and selective licensing schemes under the same
+                    Housing Act 2004 powers as England, and several do. We are still verifying scheme data for
+                    Welsh councils, so please confirm directly with {result.council.name} before letting.
+                  </p>
+                  <p className="mt-2">
+                    Separately, every landlord in Wales must register with Rent Smart Wales, and must also hold a
+                    licence if they manage the property themselves rather than through a licensed agent. See our free{" "}
+                    <Link href="/guides/landlord-licensing" className="text-accent-400 underline">
+                      Wales licensing guide
+                    </Link>
+                    .
+                  </p>
+                </>
+              ) : (
+                <p className="mt-1">
+                  {nationLabel(result.nation)} does not use council-by-council selective or additional licensing.
+                  The Housing Act 2004 does not extend there. Instead a national registration and licensing regime
+                  applies to every private rental. See our free{" "}
+                  <Link href="/guides/landlord-licensing" className="text-accent-400 underline">
+                    {nationLabel(result.nation)} licensing guide
+                  </Link>{" "}
+                  for what you need to do.
+                </p>
+              )}
             </div>
           ) : (
             <>

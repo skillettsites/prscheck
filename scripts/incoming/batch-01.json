@@ -1,0 +1,128 @@
+[
+  {
+    "council": "Adur District Council",
+    "gss": "E07000223",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. Only national mandatory HMO licensing (5+ occupants, 2+ households) applies. Confirmed against the council's own HMO pages and enforcement policy on 4 August 2026.",
+    "research": "Negative by absence rather than by explicit denial: Adur publishes no sentence denying either scheme. Evidence: the HMO page states licensing applies where \"five or more persons are living there as more than one household\" and \"Not all HMOs require a licence\". The licence application form is headed \"HOUSING ACT 2004, PART 2, SECTION 55\" (s.55 is the mandatory route; there is no s.56 additional licensing form anywhere on the site). The Private Sector Housing Enforcement Policy describes the function as \"implementing the mandatory HMO licensing scheme\". CAUTION: the shared Adur & Worthing Housing Strategy 2025-2030 says \"We will seek to secure funding to introduce selective licensing schemes in Worthing in key Wards - Heene, Selden and Central\" - that is WORTHING, a separate district, at funding-bid stage, not designated and not consulted on. It must not be attributed to Adur. Committee-paper sweep incomplete (ModernGov returned 403). An FOI would convert this to a quoted denial.",
+    "sourceUrl": "https://www.adur-worthing.gov.uk/housing/conditions-and-empty-properties/hmo/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Ashford Borough Council",
+    "gss": "E07000105",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. Only national mandatory HMO licensing applies. The council describes both discretionary schemes as powers it may use, with no area designated. Confirmed 4 August 2026.",
+    "research": "The HMO page is headed \"Mandatory licensing of HMOs\" and states \"All HMOs with five or more people comprising of two or more family units will require a licence to operate.\" The Private Sector Housing Enforcement and Prosecution Policy separates duty from discretion: \"Mandatory Licensing ... The Council is required to have a licensing scheme in place\" versus \"Discretionary licensing - The Council may, at its discretion bring into force licensing of other residential accommodation, as defined by parts 2 and 3 of the Housing Act 2004\". Both discretionary types appear only conditionally, with no designated area, date or fee. The Private Sector Housing Strategy 2022-27 contains no occurrence of \"selective licensing\" or \"additional licensing\". No live designation consultation on haveyoursay.ashford.gov.uk. CAUTION: Ashford has an Article 4 Direction covering Aylesford Green, Beaver, Little Burton Farm and South Willesborough wards. That is planning control over conversion to HMO use, NOT licensing, and is a common cause of false positives in scraped datasets.",
+    "sourceUrl": "https://www.ashford.gov.uk/housing/landlord-advice/houses-in-multiple-occupation/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Babergh District Council",
+    "gss": "E07000200",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. Only national mandatory HMO licensing applies, at a fee of £578.55. Confirmed against the council's HMO pages and public register on 4 August 2026.",
+    "research": "The HMO page states \"All HMOs occupied by five or more people need a licence. It is an offence to operate without a licence. The fee for a licence is £578.55\" - the national mandatory threshold, with no lower threshold and no area carve-out. The council's public register is titled \"Register of Mandatory Licences for Babergh\" (updated 28 April 2026) with no additional or selective register alongside it. Site search for \"selective licensing\" returns only Licensing Act 2003, gambling, taxi, animal and SEV results. Negative by absence: Babergh publishes no explicit denial sentence. Committee-paper sweep incomplete (ModernGov required POST).",
+    "sourceUrl": "https://www.babergh.gov.uk/w/houses-in-multiple-occupation",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Barnsley Metropolitan Borough Council",
+    "gss": "E08000016",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. A scheme was approved by Cabinet in 2018 but was never designated and was abandoned, so nothing ever came into force. Confirmed by the council's own FOI response, 4 August 2026.",
+    "research": "IMPORTANT: Barnsley is widely and wrongly listed by third-party aggregators as a selective licensing council with named streets. It is not. Council FOI response FOI/5290 \"Additional and selective licencing\" answers \"Do you run a 'Selective Licensing' scheme? If so, when did this commence? No\" and \"Do you operate any other 'Additional Licensing' scheme? If so, when did this commence? No\", and states \"BMBC does not operate a Selective licencing or Additional licencing schemes\". The council's now-deleted selective licensing page (live 2019 to at least Dec 2024, now HTTP 404) said \"For this reason, the current scheme is no longer being taken forward.\" Because no designation was ever made there is no start, end or expiry: this is 'approved but never implemented', not 'expired'. For the record only, the abandoned 2018 Cabinet recommendation named Measborough Dyke, Goldthorpe, Wombwell and Elsecar at a proposed £530 for 5 years; none of it was ever in force. Two scraping traps: the meta description of /services/housing/private-landlords/ still mentions \"selective licensing schemes\" though the page body does not, and a 2018 ASB landlord guide PDF still on the council server refers to \"designated Selective Licensing areas in Barnsley\" in anticipation of the abandoned scheme.",
+    "sourceUrl": "https://www.barnsley.gov.uk/media/00sccdgu/foi5290-additional-and-selective-licencing.pdf",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Basingstoke and Deane Borough Council",
+    "gss": "E07000084",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. Only national mandatory HMO licensing applies. Confirmed against the council's HMO pages and a full site crawl on 4 August 2026.",
+    "research": "Under \"When is it licensable?\" the council states a HMO must be licensed if it is \"occupied by five or more people; flats that have five or more occupants from two or more households who share facilities, but it is not a purpose-built block compromising of three or more self-contained flats\" - the national threshold with no borough extension. A 500-page crawl of www.basingstoke.gov.uk found zero occurrences of \"selective\" in any licensing sense; the only \"licensing scheme\" hits were a Temporary Exemption Notice and the great crested newt NatureSpace District Licensing Scheme. /selective-licensing and /additional-licensing return HTTP 404. Negative by absence, no explicit denial published. CAUTION: Basingstoke has an HMO Article 4 Direction requiring planning permission to convert a C3 dwelling to an HMO in Basingstoke Town, Chineham, Old Basing, Oakley and Sherborne St John. That is planning control, not licensing.",
+    "sourceUrl": "https://www.basingstoke.gov.uk/hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Bassetlaw District Council",
+    "gss": "E07000171",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. Selective licensing was consulted on in 2018/19 and declined in favour of a Thriving Neighbourhoods strategy, so no designation was ever made. Confirmed 4 August 2026.",
+    "research": "The Housing Strategy 2021 to 2026 states \"In 2018/19 Bassetlaw considered operating a selective licensing scheme for private rents in certain areas: this was declined in favour of developing a Thriving Neighbourhoods Strategy\" and \"Bassetlaw District Council consulted on the introduction of selective licensing the outcome was to introduce a Thriving Neighbourhoods strategy\". That page shows Last Updated 16 June 2026. The HMO page (updated 22 May 2026) states \"Under the national mandatory licensing scheme a HMO must be licensed if it has:- Five or more tenants in two or more households, and Shared facilities\". A 400-page site crawl found only historic and rejected references; five candidate selective-licensing URLs return HTTP 404. There is no Worksop, Harworth or Langold designation: those place names appear only in the strategy's demographic description. Status is 'declined', which is neither 'proposed' nor 'expired', so no scheme object is recorded.",
+    "sourceUrl": "https://www.bassetlaw.gov.uk/housing-services/housing-strategy-and-delivery-plan/",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Bath and North East Somerset Council",
+    "gss": "E06000022",
+    "schemes": [
+      {
+        "type": "additional",
+        "status": "expired",
+        "start": "2019-01-01",
+        "end": "2023-12-31",
+        "coverage": "areas",
+        "areaDescription": "Bath City only (not the wider district). Covered HMOs occupied by 3 or 4 people in 2 or more households, below the mandatory 5-person threshold. Expired 31 December 2023 and not renewed, so no additional licensing obligation exists today.",
+        "feeApprox": "£795 for a 5-year licence at designation (£50 reduction for online applications, £100 off on renewal)",
+        "sourceUrl": "https://democracy.bathnes.gov.uk/documents/s52280/E3079%20HMO%20Additional%20Licensing.pdf",
+        "verified": "2026-08-04"
+      },
+      {
+        "type": "additional",
+        "status": "expired",
+        "start": null,
+        "end": "2018-12-31",
+        "coverage": "wards",
+        "wards": ["Westmoreland", "Oldfield", "Widcombe"],
+        "areaDescription": "Predecessor scheme designated by Cabinet on 12 June 2013 covering an area of Bath based around the Westmoreland, Oldfield and Widcombe wards. Expired 31 December 2018 and superseded by the 2019-2023 Bath City scheme, which has itself now expired. Commencement date not published, so left null rather than estimated.",
+        "feeApprox": null,
+        "sourceUrl": "https://democracy.bathnes.gov.uk/documents/s52280/E3079%20HMO%20Additional%20Licensing.pdf",
+        "verified": "2026-08-04"
+      }
+    ],
+    "notes": "No licensing scheme is currently in force. The additional HMO licensing scheme covering Bath city ended on 31 December 2023 and has not been renewed. The council says it would need to consult before introducing a new one. Only mandatory HMO licensing applies today.",
+    "research": "The live HMO licence types page states \"The Additional licensing scheme finished on 31 December 2023. Before we can approve a new scheme, we will need to carry out a consultation on any proposed new Additional HMO Licensing Scheme. We will update this page as soon as we know if this will or will not happen.\" and \"Mandatory Licensing covers the whole of Bath and North East Somerset.\" The 2018 Cabinet designation report recommended a scheme \"for a period of 5 years commencing on the 1st January 2019\" covering \"HMOs which house 3 or 4 people in 2 or more separate households in Bath City\". Selective licensing has never been designated; the Housing Enforcement and Licensing Policy 2022 refers only to the abstract power under Part 3. Cross-check: the Housing Services Charging Policy 2026 lists HMO fees only under the mandatory test (new £1,025, renewal £925), with no additional or selective fee line. RE-CHECK CANDIDATE: the council has said it will update the page if a new scheme is consulted on.",
+    "sourceUrl": "https://www.bathnes.gov.uk/hmo-licence-types",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Blackburn with Darwen Borough Council",
+    "gss": "E06000008",
+    "schemes": [
+      {
+        "type": "selective",
+        "status": "expired",
+        "start": null,
+        "end": null,
+        "coverage": "areas",
+        "areaDescription": "Five separate selective licensing designations have operated and all have now expired: Infirmary (in force February 2009), Central Darwen (June 2009), Griffin (January 2013), Infirmary 2 (March 2016) and Darwen 2 (May 2017). The council states all have expired. Day-level start and end dates are not published for all five, so both are left null rather than estimated; only the Griffin expiry (January 2018) is separately confirmed.",
+        "feeApprox": null,
+        "sourceUrl": "https://democracy.blackburn.gov.uk/documents/s17959/Permission%20to%20Consult%20on%20Selective%20Licensing%20Area.pdf",
+        "verified": "2026-08-04"
+      }
+    ],
+    "notes": "No licensing scheme is currently in force. Five selective licensing areas have operated since 2009 and all have expired. A new Hollins Bank scheme was consulted on in 2024 but the council postponed designating it in February 2025. Only mandatory HMO licensing applies today.",
+    "research": "Executive Board report of 11 August 2022: \"To date the Borough has introduced five Selective Licensing schemes... All selective licensing areas have now expired.\" and \"Given that no selective licensing areas are currently in force in Blackburn with Darwen...\". The Hollins Bank area was fully consulted on (7 May to 26 July 2024; 1,153 private rented properties; proposed fee £724; proposed 5-year term; parts of Ewood and Mill Hill & Moorgate wards plus a small part of Blackburn Central) but never designated: the Executive Member Decision of 21 February 2025 \"Approved the recommendation to postpone declaring a Selective Licensing Area due to the changing housing market and in order to align any scheme with the emerging Housing Strategy\". Additional licensing has never been designated; the only HMO page covers the national test (fee £950 for up to 10 lets, plus £50 per let thereafter). The Housing Strategy 2026-2036 (July 2026) lists both as future options: A60 \"Consider the use of Selective Licensing schemes or similar\" and A66 \"Consider introducing an additional licensing scheme\". TRAP: www.blackburn.gov.uk/selective-licensing still 307-redirects to the unpublished consultation page, which now returns Access denied. HIGH re-check priority: the postponement was tied to the Housing Strategy, now published.",
+    "sourceUrl": "https://blackburn.gov.uk/licences-and-permits/licences/houses-multiple-occupation-mandatory-licensing",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Bolsover District Council",
+    "gss": "E07000033",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. The council states that where a HMO is occupied by fewer than five people it will not require a licence, which confirms no additional scheme exists. Confirmed 4 August 2026.",
+    "research": "The HMO page (rendering a live register headed \"Current HMO Register at 04th August 2026\") states \"All Houses in Multiple Occupation (HMOs) with five or more occupiers living as two or more households, must have a HMO Licence from their local authority. Where a HMO is occupied by fewer than five people, it will not require a licence.\" That second sentence is the council's own confirmation that no additional designation exists. Selective licensing was considered and rejected: Growth Scrutiny Committee, 23 October 2020, records \"He did not believe that there were any such areas within Bolsover District at this time\" and that earlier issues in Shirebrook \"had significantly improved and a selective licensing scheme would not be necessary.\" The commonly repeated association with Shirebrook, Creswell and Whitwell is false; it reflects a concentration of MANDATORY HMO licences plus that rejected 2020 discussion. Nothing was designated, so nothing has expired. The council's 413-page HTML sitemap contains zero occurrences of \"selective\". Mandatory fee for context: £496 on application plus £111 on grant.",
+    "sourceUrl": "https://www.bolsover.gov.uk/repairs-housing-services/hmo",
+    "verified": "2026-08-04"
+  },
+  {
+    "council": "Boston Borough Council",
+    "gss": "E07000136",
+    "schemes": [],
+    "notes": "No selective or additional licensing scheme. The council's adopted 2026 HMO licensing policy states it does not currently operate an additional licensing scheme, and selective licensing was rejected after consultation. Confirmed 4 August 2026.",
+    "research": "The adopted SELCP Housing Standards HMO Licensing Policy (approved by Boston Cabinet, 27 January 2026) contains an explicit denial: \"The Council do not currently operate an additional licensing scheme but maintain the right to introduce this if considered appropriate during the course of this policy.\" The policy contains zero occurrences of \"selective\". Selective licensing was considered in 2013 (options included Boston Town only and Boston Borough) and the council records: \"After a major consultation exercise and consideration of all the factors Cabinet decided that licensing was not the appropriate way forward for the Council.\" A 2022 Task and Finish Group recommended only that Cabinet \"Consider the introduction of a Selected Licensing Scheme for specific wards\" - no wards named, no designation followed. Overview and Scrutiny, 17 June 2025: \"It was agreed that further consideration should be given to the potential for additional licensing schemes... and that the matter should be revisited following the publication of statutory guidance under the Renters' Rights Bill.\" That is under consideration, not a formal proposal, so nothing is recorded as 'proposed'. The 2026-27 fees schedule lists only mandatory HMO fees (£300 plus £150 per unit). Note: policy is shared across the South and East Lincolnshire Councils Partnership (Boston, East Lindsey, South Holland).",
+    "sourceUrl": "https://www.boston.gov.uk/media/28755/SELCP-Housing-Standards-HMO-Licensing-Policy/pdf/SELCP_Housing_Standards_HMO_Licensing_Policy_1vwkcuv21hd33.pdf",
+    "verified": "2026-08-04"
+  }
+]
