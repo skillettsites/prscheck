@@ -65,15 +65,38 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "claim_failed" }, { status: 500 });
   }
 
+  /**
+   * Release both idempotency claims so Stripe's retry can genuinely re-run this.
+   *
+   * The claims are inserted before any work, which is what stops one payment
+   * being fulfilled twice. The cost is that they also stop a FAILED fulfilment
+   * being retried, so anything that returns non-2xx must release them first or
+   * the retry short-circuits and the customer never gets their report.
+   */
+  const releaseClaims = async () => {
+    await admin.from("stripe_events").delete().eq("id", `fulfil:${session.id}`);
+    await admin.from("stripe_events").delete().eq("id", event.id);
+  };
+
   const meta = session.metadata ?? {};
   const customerEmail = session.customer_details?.email ?? session.customer_email ?? null;
   const postcode = meta.postcode ?? "";
   const gss = meta.gss ?? "";
-  if (!postcode || !gss || !customerEmail) {
+  // A missing email costs the customer an email, not their report: the report is
+  // still built and still reachable at /r/[token], which the success page shows.
+  // A missing postcode or council makes the report impossible, and retrying will
+  // not conjure metadata that was never set, so alert rather than fail silently.
+  if (!postcode || !gss) {
     console.error("licence_check webhook missing fields", { postcode, gss, customerEmail });
-    return NextResponse.json({ ok: true });
+    await notifyFulfilmentFailure({
+      sessionId: session.id,
+      customerEmail,
+      reason: `metadata missing (postcode="${postcode}", gss="${gss}")`,
+    });
+    return NextResponse.json({ ok: true, unfulfilled: "missing_metadata" });
   }
 
+  let reportRowId: string | number | null = null;
   const { data: insertRow, error: reportInsertErr } = await admin
     .from("reports")
     .insert({
@@ -87,11 +110,27 @@ export async function POST(req: NextRequest) {
     .select("id")
     .single();
 
-  if (reportInsertErr || !insertRow) {
-    if (reportInsertErr?.code === "23505") return NextResponse.json({ ok: true, deduped: "report" });
+  if (insertRow) {
+    reportRowId = insertRow.id;
+  } else if (reportInsertErr?.code === "23505") {
+    // A row already exists for this session, which is what a RETRY of a failed
+    // fulfilment looks like. Reuse it and finish the job, rather than treating
+    // the collision as "already done" and leaving the customer with a row stuck
+    // at "processing" that /r/[token] refuses to render.
+    const { data: existing } = await admin
+      .from("reports")
+      .select("id, status")
+      .eq("stripe_session_id", session.id)
+      .maybeSingle();
+    if (existing?.status === "ready") return NextResponse.json({ ok: true, deduped: "report" });
+    if (!existing) {
+      await releaseClaims();
+      return NextResponse.json({ error: "report_record_failed" }, { status: 500 });
+    }
+    reportRowId = existing.id;
+  } else {
     console.error("reports insert failed", reportInsertErr);
-    await admin.from("stripe_events").delete().eq("id", `fulfil:${session.id}`);
-    await admin.from("stripe_events").delete().eq("id", event.id);
+    await releaseClaims();
     return NextResponse.json({ error: "report_record_failed" }, { status: 500 });
   }
 
@@ -132,46 +171,108 @@ export async function POST(req: NextRequest) {
       generatedAt: new Date().toISOString(),
     };
 
-    await admin
+    // Mark ready BEFORE anything that talks to a third party. From this point
+    // the customer has a report they can reach, whatever else fails.
+    const { error: readyErr } = await admin
       .from("reports")
       .update({
         status: "ready",
         data: report as unknown as Record<string, unknown>,
         ready_at: new Date().toISOString(),
       })
-      .eq("id", insertRow.id);
+      .eq("id", reportRowId);
+    if (readyErr) throw new Error(`report update failed: ${readyErr.message}`);
 
     const token = deriveReportToken(session.id);
+
+    // Everything below is best effort. A failure here must not fail the webhook:
+    // returning non-2xx would make Stripe retry and re-send an email that already
+    // went out, which is exactly how a sibling site delivered one report five
+    // times over.
     let emailDelivered = false;
-    try {
-      await sendLicenceReportEmail(customerEmail, report, token);
-      emailDelivered = true;
-    } catch (emailErr) {
-      console.error("licence report email failed (report still saved)", emailErr);
+    if (customerEmail) {
+      try {
+        await sendLicenceReportEmail(customerEmail, report, token);
+        emailDelivered = true;
+      } catch (emailErr) {
+        console.error("licence report email failed (report still saved)", emailErr);
+      }
+    } else {
+      console.error("licence_check: no customer email on session, report saved but not emailed", session.id);
     }
 
-    await admin.from("reports").update({ email_sent: emailDelivered }).eq("id", insertRow.id);
-
-    await admin.from("conversion_events").insert({
-      site_id: "prscheck",
-      event_type: "licence_check_completed",
-      metadata: { postcode, gss, session_id: session.id, email_delivered: emailDelivered },
-    });
+    try {
+      await admin.from("reports").update({ email_sent: emailDelivered }).eq("id", reportRowId);
+      await admin.from("conversion_events").insert({
+        site_id: "prscheck",
+        event_type: "licence_check_completed",
+        metadata: { postcode, gss, session_id: session.id, email_delivered: emailDelivered },
+      });
+    } catch (logErr) {
+      console.error("post-fulfilment logging failed (report still saved)", logErr);
+    }
 
     await notifySaleTelegram({
       amountPence: session.amount_total ?? 0,
       address: report.address || postcode,
       council: determination.council.name,
-      customerEmail,
+      customerEmail: customerEmail ?? "not captured",
       emailDelivered,
       token,
     });
   } catch (err) {
+    // The customer has paid and has no report. Previously this returned 200,
+    // which told Stripe the job was done: no retry, no email, /r/[token]
+    // unreachable, and the success page still saying the report had been
+    // emailed. Release the claims and fail loudly so Stripe retries, and alert
+    // either way so a persistent failure cannot pass unnoticed.
     console.error("licence check fulfilment failed", err);
-    await admin.from("reports").update({ status: "failed" }).eq("id", insertRow.id);
+    await admin.from("reports").update({ status: "failed" }).eq("id", reportRowId);
+    await releaseClaims();
+    await notifyFulfilmentFailure({
+      sessionId: session.id,
+      customerEmail,
+      reason: err instanceof Error ? err.message : String(err),
+    });
+    return NextResponse.json({ error: "fulfilment_failed" }, { status: 500 });
   }
 
   return NextResponse.json({ ok: true });
+}
+
+/**
+ * Alert on a payment we could not fulfil.
+ *
+ * Without this a failed fulfilment is entirely silent: the customer is charged,
+ * sees a success page telling them their report has been emailed, and nothing
+ * anywhere says otherwise.
+ */
+async function notifyFulfilmentFailure(p: {
+  sessionId: string;
+  customerEmail: string | null;
+  reason: string;
+}): Promise<void> {
+  const botToken = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+  if (!botToken || !chatId) return;
+  const text = [
+    "🚨 *PRSCheck: PAID BUT NOT FULFILLED*",
+    "",
+    `Session: ${p.sessionId}`,
+    `Buyer: ${p.customerEmail ?? "not captured"}`,
+    `Reason: ${p.reason}`,
+    "",
+    "The customer has been charged. Check Stripe and refund or fulfil manually.",
+  ].join("\n");
+  try {
+    await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: chatId, text, parse_mode: "Markdown", disable_web_page_preview: true }),
+    });
+  } catch (err) {
+    console.error("fulfilment failure alert failed", err);
+  }
 }
 
 async function notifySaleTelegram(p: {

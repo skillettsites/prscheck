@@ -4,6 +4,31 @@ import { getCouncilByGss, hasCouncilLicensingPowers } from "@/lib/licensing";
 
 export const runtime = "nodejs";
 
+/**
+ * Re-derive the council and ward from the postcode, server-side.
+ *
+ * Returns null if the lookup is unavailable, in which case the caller falls back
+ * to what the client sent. That is deliberate: postcodes.io being briefly down
+ * should not stop someone buying a report, and every other guard (council must
+ * exist in our data, nation must have licensing powers) still applies.
+ */
+async function resolveFromPostcode(postcode: string): Promise<{ gss: string; ward: string | null } | null> {
+  try {
+    const res = await fetch(`https://api.postcodes.io/postcodes/${encodeURIComponent(postcode)}`, {
+      signal: AbortSignal.timeout(5000),
+    });
+    if (!res.ok) return null;
+    const json = (await res.json()) as {
+      result?: { codes?: { admin_district?: string }; admin_ward?: string | null };
+    };
+    const gss = json.result?.codes?.admin_district;
+    if (!gss) return null;
+    return { gss, ward: json.result?.admin_ward ?? null };
+  } catch {
+    return null;
+  }
+}
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
@@ -11,8 +36,12 @@ export async function POST(req: NextRequest) {
 
     const postcode = String(body.postcode ?? "").trim().toUpperCase();
     const address = String(body.address ?? "").trim();
-    const gss = String(body.gss ?? "").trim();
-    const ward = String(body.ward ?? "").trim();
+    // The council and ward the client claims. Both are re-derived from the
+    // postcode below and only used as a fallback, because a mismatched pair
+    // would produce a paid report whose verdict is for one council while the
+    // postcode printed at the top of it belongs to another.
+    const claimedGss = String(body.gss ?? "").trim();
+    const claimedWard = String(body.ward ?? "").trim();
     // From the address picker. Resolves street-level designations, which are
     // ~35 of the live schemes and cannot be answered from a postcode alone.
     const street = String(body.street ?? "").trim();
@@ -43,6 +72,14 @@ export async function POST(req: NextRequest) {
     if (!households || households < 1 || households > occupants) {
       return NextResponse.json({ error: "households_invalid" }, { status: 400 });
     }
+    // Resolve the council and ward from the postcode ourselves rather than
+    // trusting what the browser sent. Everything else about the property is
+    // already validated or whitelisted server-side, but the council decided the
+    // whole answer while arriving unchecked.
+    const resolved = await resolveFromPostcode(postcode);
+    const gss = resolved?.gss || claimedGss;
+    const ward = resolved?.ward ?? claimedWard;
+
     const council = getCouncilByGss(gss);
     if (!council) return NextResponse.json({ error: "council_unknown" }, { status: 400 });
     // Scotland and NI have no council licensing powers at all (Housing Act 2004

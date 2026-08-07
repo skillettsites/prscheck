@@ -43,13 +43,19 @@ export default function SuccessClient({ token }: { token: string | null }) {
   }, [token]);
 
   if (state === "failed") {
+    // This branch means fulfilment did NOT complete, so the report has not been
+    // emailed. Telling the customer it had was a plain untruth at the one moment
+    // they most need to know something has gone wrong, and it discouraged them
+    // from contacting us by implying the email was already on its way.
     return (
       <div className="text-center">
-        <h1 className="text-2xl font-bold text-navy-100">We couldn&apos;t load your report</h1>
+        <h1 className="text-2xl font-bold text-navy-100">Your payment went through, but the report did not</h1>
         <p className="mt-3 text-navy-400">
-          Your payment succeeded and your report has been emailed to you. If it hasn&apos;t arrived shortly, contact us
-          at reports@prscheck.co.uk and we&apos;ll sort it out right away.
+          Something went wrong generating your report, so it has not been emailed. Your payment succeeded, and we have
+          been alerted automatically. Email us at reports@prscheck.co.uk and we will either send your report or refund
+          you the same day.
         </p>
+        {token && <p className="mt-3 text-sm text-navy-500">Quote this reference: {token}</p>}
       </div>
     );
   }
