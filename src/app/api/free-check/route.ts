@@ -10,6 +10,11 @@ interface PostcodesIoResult {
   region: string | null;
   admin_district: string | null;
   admin_ward: string | null;
+  /** Postcode centroid. Used to test the property against councils' own
+   *  published designation boundaries, which is the only signal available where
+   *  a council publishes no street or postcode list at all. */
+  latitude: number | null;
+  longitude: number | null;
   codes: { admin_district: string; admin_ward: string };
 }
 
@@ -68,6 +73,10 @@ export async function POST(req: NextRequest) {
         gss: summary.council.gss,
       },
       ward: pc.admin_ward,
+      // Carried so checkout can pass them to the paid determination without a
+      // second postcodes.io round trip.
+      latitude: pc.latitude ?? null,
+      longitude: pc.longitude ?? null,
       schemes: {
         hasData: summary.hasData,
         activeSelective: summary.activeSelective.length,

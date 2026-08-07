@@ -1,0 +1,79 @@
+{
+  "gss": "E09000033",
+  "council": "City of Westminster",
+  "schemes": [
+    {
+      "match": { "type": "additional", "coverage": "borough-wide", "start": "2021-08-30" },
+      "sourceUrl": "https://www.westminster.gov.uk/media/document/notice-of-designation-additional-hmo-licensing",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2021-08-30",
+        "end": "2026-08-31",
+        "howVerified": "The council's own signed s.59 public notice states: 'The designation was made on 21st April 2021 and shall come into force on 30th August 2021' and 'The designation shall cease to have effect on 31st August 2026 or earlier if the Council revokes the scheme under section 60 of the Act.' Our recorded end of 2026-08-30 is one day early: the instrument says it ceases to have effect ON 31 August 2026, so 30 August 2026 is the last full operative day."
+      },
+      "reallyBoroughWide": true,
+      "includedWards": [],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": "£1,540",
+      "checkerUrl": null,
+      "thresholdNote": "Verbatim: 'all HMOs as defined by section 254 of the Housing Act 2004 that are occupied by 3 or more persons comprising 2 or more households, and HMOs as defined in section 257 of that Act where less than two-thirds of the self-contained flats are owner-occupied'. Excludes mandatory-licensable HMOs, Schedule 14 buildings, properties under an Interim/Final Management Order and s.62 temporary exemptions.",
+      "evidence": "Source is Westminster's signed statutory public notice for the 'Westminster City Council Designation for an Area for Additional Licensing of Houses in Multiple Occupation 2021', hosted on the council's own media/document path. Paragraph 4 reads 'The designation shall apply to the whole area of the district of the City of Westminster', so borough-wide is confirmed from the instrument, not inferred. The scheme is still in force today (7 Aug 2026) but expires in 24 days and is immediately succeeded by the 2026 designation recorded below, with no gap. Fee of £1,540 (Part A £855 + Part B £685, from 1 Apr 2025, plus £68 per letting above five lettings) is the published schedule for this outgoing scheme; no fee specific to the 2026 successor was found, so do not assume it carries over."
+    },
+    {
+      "match": { "type": "additional", "coverage": "borough-wide", "start": "2026-08-31" },
+      "sourceUrl": "https://www.westminster.gov.uk/media/document/additional-hmo-licensing-designation-2026",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": false,
+        "start": "2026-08-31",
+        "end": "2031-08-30",
+        "howVerified": "The sealed 2026 designation states: 'This designation is made on 21st April 2026 and shall come into force on 31st August 2026' and 'This designation shall cease to have effect on 30st August 2031 or earlier if the Council revokes the scheme under section 60 of the Act.' The '30st' is a council typo; the accompanying s.59 public notice reads 'Made on 21 April 2026 and comes into force on 31 August 2026. The designation ceases on 30 August 2031 unless revoked earlier.' Made but not yet commenced as at 7 August 2026."
+      },
+      "reallyBoroughWide": true,
+      "includedWards": [],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": null,
+      "checkerUrl": null,
+      "thresholdNote": "Verbatim: 'This designation applies to all HMOs as defined by section 254 of the Act that are occupied by 3 or more persons comprising 2 or more households'. Annex B adds that occupiers must share one or more basic amenities (kitchen, bathroom or toilet), and covers shared houses, shared flats including those in purpose-built blocks, bedsits and converted non-self-contained units. CRITICAL CHANGE: exclusion (E) expressly removes 'any HMO falling within section 257 of the Act (certain converted blocks of flats)', which the 2021 scheme did catch. Any answer given to a s.257 landlord must flip on 2026-08-31.",
+      "evidence": "This is the successor designation the commercial aggregator missed entirely. It is a nine-page instrument executed under the council's common seal (sealed 21 April 2026 10:43 BST, ref 92/64392/2627), signed by Mark Wiltshire, Director of Public Protection and Licensing, and countersigned by Principal Solicitor Michaela Smeaton, with paragraph 14 recording 'This designation was approved by the Cabinet of Westminster City Council on 16 March 2026'. Paragraph 7 reads 'This designation shall apply to the whole area of the district of the City of Westminster as outlined on the map in Annex A', and the Annex A map shades all 18 wards as covered, so borough-wide is taken from the instrument. It relies on the General Approval 2024 (in force 23 December 2024), which is the correct current approval instrument, so no Secretary of State confirmation was required; applications opened 1 June 2026 and licences granted under the 2021 designation continue to their own expiry dates."
+    },
+    {
+      "match": { "type": "selective", "coverage": "wards", "start": "2025-11-24" },
+      "sourceUrl": "https://www.westminster.gov.uk/housing/private-sector-housing/selective-property-licensing",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-11-24",
+        "end": "2030-11-23",
+        "howVerified": "Both sealed designations state identically: 'This Designation shall come into force on 24 November 2025 (not less than 3 months after decision date)' and 'This Designation shall cease to have effect on 23 November 2030 (not more than 5 years) or earlier if the Council revokes the scheme under section 84 of the Act.' Both were sealed on 24 June 2025 11:17 BST (refs 239/64540/2526 and 240/64541/2526), signed by Mark Wiltshire."
+      },
+      "reallyBoroughWide": false,
+      "includedWards": [
+        "Abbey Road",
+        "Church Street",
+        "Harrow Road",
+        "Knightsbridge and Belgravia",
+        "Little Venice",
+        "Maida Vale",
+        "Queen's Park",
+        "Westbourne",
+        "Bayswater",
+        "Hyde Park",
+        "Lancaster Gate",
+        "Marylebone",
+        "Pimlico North",
+        "Regent's Park",
+        "West End"
+      ],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": "£995",
+      "checkerUrl": null,
+      "thresholdNote": "Any house let under a single tenancy, or under two or more tenancies or licences of different dwellings, EXCEPT mandatory-licensable HMOs, additional-licensable HMOs, registered social landlord lets, properties under an Interim or Final Management Order, s.86 exemptions and tenancies exempted by SI 370/2006.",
+      "evidence": "Two separate sealed s.80 designations, published on westminster.gov.uk as 'selective-licensing-designation-1' (eight wards, poor housing conditions ground) and 'selective-licensing-designation-2' (seven wards, poor housing conditions and anti-social behaviour ground). This scheme is NOT borough-wide: 15 of Westminster's 18 wards are named in the instruments. Both were made under the General Approval 2024, so no Secretary of State confirmation was required, and applications opened 1 October 2025 ahead of the 24 November 2025 commencement. Fee of £995 (Part A £543 + Part B £452) is the council's published selective schedule. Note a stale cross-reference in both selective instruments: they exempt HMOs licensable under 'the ... Additional Licensing ... 2021 made on 21 April 2021', an instrument that expires 31 August 2026; whether that exemption reads across to the 2026 successor is a legal question the documents do not resolve."
+    }
+  ]
+}

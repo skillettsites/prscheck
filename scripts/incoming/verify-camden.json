@@ -1,0 +1,44 @@
+{
+  "gss": "E09000007",
+  "council": "London Borough of Camden",
+  "schemes": [
+    {
+      "match": { "type": "additional", "coverage": "borough-wide", "start": "2025-12-08" },
+      "sourceUrl": "https://www.camden.gov.uk/hmo-consultation-public-notice",
+      "confidence": "official-council-page",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-12-08",
+        "end": "2030-12-08",
+        "howVerified": "Camden's statutory Notice of Designation states: 'The designation was made on 02 July 2025 and shall come into force on 08 December 2025' and 'The designation shall cease to have effect on 08 December 2030 or earlier if the Council revokes the scheme under section 60 of the Act.' The dates in our record match the notice exactly. Read strictly, 'ceases to have effect on 08 December 2030' means the last operative day is 07 December 2030, but the instrument's own wording is recorded here."
+      },
+      "reallyBoroughWide": true,
+      "includedWards": [],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": "£1,570",
+      "checkerUrl": null,
+      "thresholdNote": "Verbatim: 'The designation applies to all HMOs as defined by section 254 of the Housing Act 2004 that are occupied by 3 or more persons comprising 2 or more households, and HMOs as defined in section 257 of that Act where less than half of the flats are owner-occupied ... unless: the building is of a description specified in annex C of the designation; the HMO is subject to an Interim or Final Management Order under Part 4 of the Act; the HMO is subject to a temporary exemption under section 62 of the Act; or the HMO is required to be licensed under section 55(2)(a) of the Act (mandatory licensing).' Camden's live service page adds: 'The only exemption is for HMOs which are flats located in purpose built blocks containing 3 or more flats. However, all such flats in Camden must still be licensed under our Additional Licensing scheme.'",
+      "evidence": "The primary document is the statutory 'Notice of Designation of an Area for Additional Licensing of Houses in Multiple Occupation (HMOs)' published on camden.gov.uk under ss.56-60 Housing Act 2004 and reg.9 of the Licensing and Management of HMOs (Miscellaneous Provisions) (England) Regulations 2006, read in full body text. Paragraph 4 reads 'The designation shall apply to the whole area of the district of the London Borough of Camden', so borough-wide is confirmed from the instrument itself, and Camden's own October 2024 statutory review report states 'additional HMOs are spread fairly evenly across the borough, rather than being concentrated to just a few streets or Wards. This supports the decision for the scheme to apply Borough wide.' Currency is corroborated by the council's live HMO page ('A third borough-wide additional HMO licensing scheme started on 8 December 2025'), by a fee schedule effective 15 January 2026 and by a landlord forum dated 15 April 2026, all post-dating commencement, and the notice relies on the General Approval 2024 (in force 23 December 2024), the correct current approval instrument. Fee is £1,570 total (Part 1 £1,318 on application + Part 2 £252 on grant) for both s.254 and s.257 properties, £1,383 for purpose-built student accommodation, with a £100 discount off Part 2 for accredited private landlords only. Note camden.gov.uk returns HTTP 403 to plain fetchers; all content above was retrieved with a normal browser User-Agent, so a 403 must not be read as a dead page."
+    },
+    {
+      "match": { "type": "selective", "coverage": "borough-wide", "start": null },
+      "sourceUrl": "https://www.camden.gov.uk/houses-multiple-occupation",
+      "confidence": "not-found",
+      "inForce": {
+        "stillLive": false,
+        "start": null,
+        "end": null,
+        "howVerified": "No selective licensing designation was found. Camden's live service page describes only two tiers: 'Landlords must hold either a mandatory or additional licence if they are operating an HMO in Camden.' The word 'selective' appears zero times in Camden's 35-page statutory review of its private rented sector licensing."
+      },
+      "reallyBoroughWide": false,
+      "includedWards": [],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": null,
+      "checkerUrl": null,
+      "thresholdNote": null,
+      "evidence": "Recorded as a tested negative, not an untested absence. A council site search for 'selective licensing' returned only premises, alcohol, animal and pavement licensing noise plus the additional-HMO notice itself; the control query 'houses in multiple occupation' on the same search endpoint returned 1,094 results including all expected HMO pages, so the search index is working and the negative is meaningful. The one hit that superficially looked like a Camden selective scheme is a page titled 'Neighbouring borough consultations' concerning the London Borough of Brent, which states 'This consultation ended on Sunday 25 August 2019'. Do not record a selective scheme for Camden."
+    }
+  ]
+}

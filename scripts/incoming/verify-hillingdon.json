@@ -1,0 +1,44 @@
+{
+  "gss": "E09000017",
+  "council": "London Borough of Hillingdon",
+  "schemes": [
+    {
+      "match": { "type": "additional", "coverage": "borough-wide", "start": "2026-08-24" },
+      "sourceUrl": "https://pre.hillingdon.gov.uk/downloads/file/2426/designation-document-additional-licensing-scheme",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": false,
+        "start": "2026-08-24",
+        "end": "2031-08-23",
+        "howVerified": "The council's signed public notice states: 'This designation will be known as The London Borough of Hillingdon Designation of an Area for Additional Licensing of Houses in Multiple Occupation 2026. The Designation is made on 19 February 2026 and shall come into force on 24 August 2026' and 'The designation shall cease to have effect on 23 August 2031 (not more than five years) or earlier if the Council revokes the scheme under section 84 of the Act.' As at 7 August 2026 the designation is MADE but NOT YET IN FORCE, which matches our 'upcoming' status; it commences in 17 days."
+      },
+      "reallyBoroughWide": true,
+      "includedWards": [],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": "£1,401",
+      "checkerUrl": null,
+      "thresholdNote": "Verbatim: 'The designation applies to all Houses in Multiple Occupation (HMOs) as defined by section 254 of the Act that are occupied by 3 or more persons comprising 2 or more households'. Excludes mandatory-licensable HMOs under s.55(3), properties under an Interim or Final Management Order, s.62 temporary exemptions, Schedule 14 non-HMOs, and s.257 converted blocks of flats (buildings converted to self-contained flats not meeting the Building Regulations 1991 standard where less than two thirds of the flats are owner-occupied).",
+      "evidence": "FORMAT WARNING: this sourceUrl serves a Word document, not a PDF (Content-Type application/vnd.openxmlformats-officedocument.wordprocessingml.document, Content-Disposition filename=Designation_Document__1_.docx), as does the companion public notice at https://pre.hillingdon.gov.uk/downloads/file/2425/public-notice-additional-licensing-of-hmos; the confidence value 'official-pdf' means official document file here, and any downstream fetcher that assumes PDF will break on both. This was our highest-risk record because an 'upcoming' scheme can turn out to be nothing more than a consultation, but it checks out: this is a MADE designation, not a proposal. The controlling document is the council-hosted 'PUBLIC NOTICE - London Borough of Hillingdon - NOTICE OF DESIGNATION OF AN AREA FOR ADDITIONAL LICENSING, Section 56, Housing Act 2004', signed 27 February 2026 by Richard Webb, Director of Community Safety and Enforcement, and linked from the council's own Additional HMO licence scheme page. It is corroborated by the Cabinet decision of 19 February 2026 (status 'Recommendations Approved', call-in expired 27 February 2026) whose resolution 3 reads 'Agrees that the Council uses powers enacted under Section 56 of the Housing Act 2004 to designate the Additional Licensing Scheme for Houses of Multiple Occupancy to the whole borough', and the statutory s.58 three-month notice period ran from 19 February to 19 May 2026, consistent with a 24 August 2026 commencement. Borough-wide comes from paragraph 6 of the instrument, 'This designation shall apply to the entire area of the London Borough of Hillingdon as delineated in red on the map in annex A below', with the Cabinet report recording 'Ward(s): All'. Two notes: www.hillingdon.gov.uk 302-redirects to pre.hillingdon.gov.uk, which is the live production host, and the council's own paperwork is internally inconsistent about the enabling approval (the full designation cites the General Approval 2015, the public notice the General Approval 2024), which affects neither dates nor area since both remove the need for Secretary of State confirmation. This record must be flipped from upcoming to in force on 2026-08-24. Fee is £1,401 total (Part A administrative £934 + Part B enforcement £467) with a 10% discount for accredited landlords and agents, confirmed both in Appendix 3 of the Cabinet papers and on the council's live 2026/27 fees page. Hillingdon runs no interactive address checker, only a static public register PDF at https://pre.hillingdon.gov.uk/downloads/file/2951/hmo-register."
+    },
+    {
+      "match": { "type": "selective", "coverage": "borough-wide", "start": null },
+      "sourceUrl": "https://modgov.hillingdon.gov.uk/documents/s64295/Cabinet%20Report%20-%20Houses%20of%20Multiple%20Occupancy%20July%2025.pdf",
+      "confidence": "not-found",
+      "inForce": {
+        "stillLive": false,
+        "start": null,
+        "end": null,
+        "howVerified": "No selective licensing designation, consultation or current proposal exists. The July 2025 Cabinet report mentions selective licensing only descriptively as an available power: 'Local Authorities also have the power to require all privately rented properties to be licensed. This is called a selective licensing scheme. Selective licensing can only be introduced where the evidence demonstrating that such as scheme is necessary meets the legal requirements.' The February 2026 Cabinet report does not mention it at all."
+      },
+      "reallyBoroughWide": false,
+      "includedWards": [],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": null,
+      "checkerUrl": null,
+      "thresholdNote": null,
+      "evidence": "Recorded as a tested negative rather than an untested absence. Selective licensing appears in Hillingdon's papers only descriptively and in a comparison table of other London boroughs' schemes. The only Hillingdon selective licensing decision on record is from the Social Services, Housing and Public Health Policy Overview Committee of 29 January 2014, resolved 'That the report be noted', which concluded the council would find it extremely difficult to make the statutory case. Do not record a selective scheme for Hillingdon."
+    }
+  ]
+}

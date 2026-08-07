@@ -1,0 +1,96 @@
+{
+  "gss": "E09000010",
+  "council": "London Borough of Enfield",
+  "schemes": [
+    {
+      "match": { "type": "additional", "coverage": "borough-wide", "start": "2025-09-01" },
+      "sourceUrl": "https://www.enfield.gov.uk/__data/assets/pdf_file/0017/91313/Public-notice-additional-licensing-Housing.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-09-01",
+        "end": "2030-08-31",
+        "howVerified": "Enfield's own public notice states: 'The Designation is made on 12 March 2025 and shall come into force on 1 September 2025' and 'This designation shall cease to have effect on 31 August 2030 (not more than five years) or earlier if the Authority revokes the scheme under section 84 of the Act.' Our recorded dates of 2025-09-01 to 2030-08-31 match the instrument exactly."
+      },
+      "reallyBoroughWide": true,
+      "includedWards": [],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": "£1,450",
+      "checkerUrl": null,
+      "thresholdNote": "Verbatim: 'The designation applies to all Houses in Multiple Occupation (\"HMOs\") as defined by section 254 of the Act that are occupied by 3 or more persons comprising 2 or more households'. Excludes mandatory-licensable HMOs, properties under an Interim or Final Management Order, s.62 temporary exemptions, Schedule 14 non-HMOs, and s.257 converted blocks of flats (buildings converted into self-contained flats not meeting the Building Regulations 1991 standard where less than two thirds of the flats are owner-occupied). Section 257 blocks fall to selective licensing instead, per footnote 3 of the 2026 selective designation.",
+      "evidence": "The instrument is 'The London Borough of Enfield Designation of an Area for Additional Licensing of Houses in Multiple Occupation 2025', published as a public notice PDF on enfield.gov.uk and corroborated by the sealed designation and cabinet report on governance.enfield.gov.uk. Borough-wide is taken from the instrument, not inferred: the operative words are 'hereby designates the entire area of its district, as subject to Additional Licensing' and paragraph 3 reads 'This designation shall apply to the entire area of the London Borough of Enfield as delineated and edged red on the map annex A below.' It relies on the General Approval 2024 (in force 23 December 2024), so no Secretary of State confirmation was required, and it succeeded an earlier additional scheme that ran 2020-09-01 to 2025-08-31; the 2015 judicial review that quashed Enfield's earlier borough-wide designations is historical only and does not affect this one. Fee is £1,450 total (Part 1 £800 non-refundable on application + Part 2 £650 on draft licence), with £50/£100/£150 discounts available from 1 September 2025 for accredited landlords, ARLA/Safeagent membership or EPC C and above."
+    },
+    {
+      "match": { "type": "selective", "coverage": "wards", "start": "2021-09-01" },
+      "sourceUrl": "https://www.enfield.gov.uk/__data/assets/pdf_file/0012/11055/Selective-licensing-public-notice-Housing.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2021-09-01",
+        "end": "2026-08-31",
+        "howVerified": "The public notice states: 'The Designations have been made on 18 May 2021. The Designations fall within a description of designations for which confirmation is required by Secretary of State. On 18 May 2021 the Secretary of State confirmed the Designations, and the Designations shall come into force on 1 September 2021' and 'The Designations shall cease to have effect on 31 August 2026 (not more than 5 years).' Still in force today but expires in 24 days, and is replaced on 1 September 2026 by a differently-worded ward list."
+      },
+      "reallyBoroughWide": false,
+      "includedWards": [
+        "Bowes",
+        "Edmonton Green",
+        "Enfield Highway",
+        "Enfield Lock",
+        "Haselbury",
+        "Jubilee",
+        "Lower Edmonton",
+        "Palmers Green",
+        "Ponders End",
+        "Southbury",
+        "Southgate Green",
+        "Turkey Street",
+        "Upper Edmonton",
+        "Chase"
+      ],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": null,
+      "checkerUrl": null,
+      "thresholdNote": "Selective licensing under s.80 Housing Act 2004, covering privately rented houses and flats that are not HMOs licensable under the mandatory or additional schemes.",
+      "evidence": "Two designations made on the same day, covering 14 wards in total (13 wards in Designation One plus Chase in Designation Two), so this scheme is emphatically NOT borough-wide. Because it covered a large share of the borough it required Secretary of State confirmation, which the notice records as given on 18 May 2021, unlike the 2026 successor which proceeds under the General Approval 2024. CRITICAL BOUNDARY GOTCHA in the council's own words: 'The selective licensing scheme is defined by the boundaries that were in place at the time the licensing designation was made on 18 May 2021', meaning these are 2002 ward boundaries, NOT the current post-May-2022 boundaries, so a modern ward lookup will give wrong answers at the edges."
+    },
+    {
+      "match": { "type": "selective", "coverage": "wards", "start": "2026-09-01" },
+      "sourceUrl": "https://www.enfield.gov.uk/__data/assets/pdf_file/0030/129972/Selective-licensing-scheme-designation-Housing.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": false,
+        "start": "2026-09-01",
+        "end": "2031-08-31",
+        "howVerified": "The designation states: 'This Designation was approved by Cabinet decision taken on the 22 April 2026 and thus made on that date and will come into force on 01 September 2026, (not less than 3 months after the decision date)' and 'This designation shall cease to have effect on 31 August 2031 (not more than 5 years).' Made but not yet commenced as at 7 August 2026."
+      },
+      "reallyBoroughWide": false,
+      "includedWards": [
+        "Bowes",
+        "Brimsdown",
+        "Bullsmoor",
+        "Carterhatch",
+        "Edmonton Green",
+        "Enfield Lock",
+        "Haselbury",
+        "Jubilee",
+        "Lower Edmonton",
+        "Ponders End",
+        "Southbury",
+        "Upper Edmonton",
+        "Whitewebbs",
+        "New Southgate",
+        "Palmers Green",
+        "Southgate",
+        "Town"
+      ],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": null,
+      "checkerUrl": null,
+      "thresholdNote": "Selective licensing under s.80 Housing Act 2004. Section 257 converted blocks of flats, which are excluded from the additional scheme, fall here instead per footnote 3 of the designation.",
+      "evidence": "Two designations covering 17 wards, made under the General Approval 2024 (s.82), so unlike the 2021 scheme no Secretary of State confirmation was required. The ward list changes materially on 1 September 2026: Enfield Highway, Southgate Green, Turkey Street and Chase drop out, while Brimsdown, Bullsmoor, Carterhatch, Whitewebbs, New Southgate, Southgate and Town come in. That is a wrong-answer window worth scheduling around, since a landlord in Turkey Street needs a licence on 31 August 2026 and may not on 1 September 2026. The 2026 notice references a map annex but does not state a boundary vintage in its text, so given the 2021 scheme's explicit 2002-boundary caveat, treat 2026 ward lookups as needing map verification before giving a definitive answer."
+    }
+  ]
+}

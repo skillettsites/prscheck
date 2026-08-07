@@ -2,6 +2,7 @@ import councilsData from "@/data/councils.json";
 import schemesData from "@/data/licensing-schemes.json";
 import nationalRules from "@/data/national-rules.json";
 import wardsData from "@/data/wards.json";
+import boundariesData from "@/data/scheme-boundaries.json";
 
 export interface Council {
   gss: string;
@@ -285,6 +286,119 @@ export function normalizeStreet(s: string): string {
     .join(" ");
 }
 
+/**
+ * Designation boundaries, as published by the councils themselves.
+ *
+ * Some designations are not a list of anything: they are a shape on a map, and
+ * that shape IS the legal boundary. Where a council publishes it in a
+ * machine-readable form (Liverpool's KML, Tower Hamlets' and Gedling's ArcGIS
+ * services, all of them the files the councils' own address checkers load), a
+ * coordinate can be tested against it directly. No street name to derive, no
+ * ward to approximate. Regenerate with `node scripts/fetch-boundaries.mjs`.
+ */
+interface SchemeBoundary {
+  match: { type: SchemeType; start: string | null };
+  source: string;
+  note: string;
+  /** Each polygon is [outerRing, ...holes]; each ring is [lon, lat] pairs. */
+  polygons: number[][][][] extends never ? never : [number, number][][][];
+}
+export const BOUNDARIES = boundariesData as unknown as Record<string, SchemeBoundary[]>;
+
+/**
+ * How close to a designation edge we refuse to give a definite answer, in metres.
+ *
+ * This is not about the boundary's precision. It is about ours: postcodes.io
+ * returns the postcode's CENTROID, not the property, and a postcode covers a
+ * run of addresses that can straddle a boundary drawn down the middle of a
+ * street. Inside this margin the centroid genuinely cannot tell us which side
+ * the property sits on, so the honest answer is to say so and point at the
+ * council's own checker. It also comfortably absorbs the few metres lost when
+ * the published boundary was simplified for bundling.
+ */
+const BOUNDARY_MARGIN_METRES = 100;
+
+/** Metres per degree of latitude, and of longitude at a given latitude. */
+function metresPerDegree(lat: number): { x: number; y: number } {
+  const rad = (lat * Math.PI) / 180;
+  return { x: 111_320 * Math.cos(rad), y: 110_574 };
+}
+
+function pointInRing(lon: number, lat: number, ring: [number, number][]): boolean {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i];
+    const [xj, yj] = ring[j];
+    // Ray cast east; count crossings of edges spanning this latitude.
+    if (yi > lat !== yj > lat && lon < ((xj - xi) * (lat - yi)) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+
+/** Distance in metres from a point to a line segment, in local flat coordinates. */
+function distanceToSegment(px: number, py: number, ax: number, ay: number, bx: number, by: number): number {
+  const dx = bx - ax;
+  const dy = by - ay;
+  if (dx === 0 && dy === 0) return Math.hypot(px - ax, py - ay);
+  let t = ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy);
+  t = Math.max(0, Math.min(1, t));
+  return Math.hypot(px - (ax + t * dx), py - (ay + t * dy));
+}
+
+export interface BoundaryVerdict {
+  inside: boolean;
+  /** Distance to the nearest edge, metres. */
+  distance: number;
+  /** True when the point is too close to the edge for a postcode centroid to decide. */
+  nearEdge: boolean;
+  source: string;
+}
+
+/**
+ * Test a coordinate against a scheme's published boundary.
+ *
+ * Returns null when we hold no boundary for that scheme, which is different
+ * from "outside it" and must stay distinguishable.
+ */
+export function boundaryTest(
+  gss: string,
+  scheme: Scheme,
+  lat: number | null | undefined,
+  lon: number | null | undefined,
+): BoundaryVerdict | null {
+  if (lat == null || lon == null || !Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+  const entry = (BOUNDARIES[gss] ?? []).find(
+    (b) => b.match.type === scheme.type && (b.match.start === null || b.match.start === scheme.start),
+  );
+  if (!entry) return null;
+
+  const scale = metresPerDegree(lat);
+  const px = lon * scale.x;
+  const py = lat * scale.y;
+
+  let inside = false;
+  let nearest = Infinity;
+  for (const rings of entry.polygons) {
+    const [outer, ...holes] = rings;
+    // A point inside the outer ring but inside a hole is outside the area.
+    if (pointInRing(lon, lat, outer) && !holes.some((h) => pointInRing(lon, lat, h))) inside = true;
+    for (const ring of rings) {
+      for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+        const d = distanceToSegment(
+          px,
+          py,
+          ring[j][0] * scale.x,
+          ring[j][1] * scale.y,
+          ring[i][0] * scale.x,
+          ring[i][1] * scale.y,
+        );
+        if (d < nearest) nearest = d;
+      }
+    }
+  }
+  return { inside, distance: nearest, nearEdge: nearest < BOUNDARY_MARGIN_METRES, source: entry.source };
+}
+
 /** Levenshtein distance, capped: returns `max + 1` as soon as it is exceeded. */
 function editDistance(a: string, b: string, max: number): number {
   if (Math.abs(a.length - b.length) > max) return max + 1;
@@ -558,6 +672,16 @@ export interface PropertyAnswers {
    * the most reliable match available.
    */
   postcode?: string | null;
+  /**
+   * The postcode's coordinates, from postcodes.io.
+   *
+   * This is the postcode's centroid, not the property's own position, which is
+   * why the engine refuses a definite answer within 100m of a designation edge.
+   * Away from an edge it is decisive, and it is the only signal that works when
+   * a council publishes no list of any kind.
+   */
+  latitude?: number | null;
+  longitude?: number | null;
 }
 
 /**
@@ -569,7 +693,8 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
   const council = councilsByGss.get(gss);
   if (!council || !hasCouncilLicensingPowers(council.nation)) return null;
 
-  const { occupants, households, wardName, street, streetSource, houseNumber, postcode } = answers;
+  const { occupants, households, wardName, street, streetSource, houseNumber, postcode, latitude, longitude } =
+    answers;
   // A street is trustworthy enough to rule a designation OUT when it came from
   // Ordnance Survey, or when it was recovered from an address that led with a
   // house number ("12 Askew Road"), where stripping the number leaves exactly
@@ -589,7 +714,34 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
         explanation: `An approved ${scheme.type} licensing scheme starts ${scheme.start ?? "soon"}. ${scheme.areaDescription ?? ""}`.trim(),
       };
     }
-    // Postcode first, because it is the only part of the address we know for
+    // The council's own published boundary, where it has one. This outranks
+    // everything else because it IS the designation rather than a description
+    // of it, and it answers by coordinate, with no street name to derive and no
+    // ward to approximate.
+    const geo = boundaryTest(gss, scheme, latitude, longitude);
+    if (geo && !geo.nearEdge) {
+      return geo.inside
+        ? {
+            scheme,
+            verdict: "required",
+            explanation: `This property falls inside the boundary ${council.name} publishes for this ${scheme.type} licensing designation, so a licence is required. Checked against the council's own boundary data, ${Math.round(geo.distance)}m inside the edge.`,
+          }
+        : {
+            scheme,
+            verdict: "not-in-area",
+            explanation: `This property falls outside the boundary ${council.name} publishes for this ${scheme.type} licensing designation, ${Math.round(geo.distance)}m beyond its nearest edge. Checked against the council's own boundary data.`,
+          };
+    }
+    if (geo && geo.nearEdge) {
+      return {
+        scheme,
+        verdict: "check-boundary",
+        explanation:
+          `This property sits within ${Math.round(geo.distance)}m of the edge of ${council.name}'s designated area for this ${scheme.type} licensing scheme, ${geo.inside ? "just inside it" : "just outside it"}. We locate a property from its postcode, and a postcode covers a run of addresses that can straddle a boundary drawn along a street, so this close to the edge the postcode cannot settle it. ` +
+          (scheme.checkerUrl ? `Confirm the exact address on the council's own checker: ${scheme.checkerUrl}` : `Confirm the exact address with the council.`),
+      };
+    }
+    // Postcode next, because it is the only part of the address we know for
     // certain rather than derive. A hit is decisive; a miss tells us nothing,
     // since these lists are rarely exhaustive, so it falls through rather than
     // returning a negative.

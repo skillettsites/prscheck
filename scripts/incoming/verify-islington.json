@@ -1,0 +1,25 @@
+{
+  "gss": "E09000019",
+  "council": "London Borough of Islington",
+  "schemes": [
+    {
+      "match": { "type": "selective", "coverage": "wards", "start": "2024-05-20" },
+      "sourceUrl": "https://www.islington.gov.uk/~/media/sharepoint-lists/public-records/environmentalprotection/information/adviceandinformation/20232024/selective-licensing-designation-2024.pdf",
+      "confidence": "official-pdf",
+      "schemeExists": true,
+      "inForce": {
+        "stillLive": true,
+        "start": "2024-05-20",
+        "end": "2029-05-19",
+        "howVerified": "The signed designation, 'The London Borough of Islington Designation of an Area for Selective Licensing 2024', states at para 2: 'This designation is made on 19 February 2024 and shall come into force on 20 May 2024', and at para 3: 'This designation shall cease to have effect on 19 May 2029 or earlier if the Council revokes the scheme under section 84 of the Act.' It is signed and dated 19 February 2024 by Jed Young, Acting Corporate Director of Homes and Neighbourhoods. Islington's live property licensing page, read on 7 August 2026, confirms in the body text: 'our current selective licensing scheme covering Finsbury Park, Tollington and Hillrise wards has been operating since May 2024.'"
+      },
+      "includedWards": ["Finsbury Park", "Tollington", "Hillrise"],
+      "wardBoundaryEra": "current",
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": 850,
+      "checkerUrl": null,
+      "evidence": "Verified from three of the council's own documents. (1) The signed designation PDF (sourceUrl above) designates 'the area of the London Borough of Islington covering Finsbury Park, Tollington and Hillrise wards shown in Appendix A', made 19 Feb 2024, in force 20 May 2024, ceasing 19 May 2029; made under the Secretary of State's General Approval 2015, so no separate confirmation was needed. (2) The council's Public Notice of the designation (islington.gov.uk/~/media/.../2024-public-notice-selective-licensing.pdf) repeats the same wards and dates and states the scheme applies to privately rented properties occupied by a single person, two people sharing, or a single household, and does not apply to HMOs, owner-occupied or social rented homes. (3) Islington's live 'Property licensing' page (islington.gov.uk/housing/private-sector-housing/landlords/property-licensing), fetched 7 August 2026, confirms in its body text that the current selective scheme covers those three wards and has run since May 2024. THERE IS NO STREET OR POSTCODE SCHEDULE: the designation is whole-ward, defined by a ward map at Appendix A only. WARD ERA: the designation was made in February 2024, after the May 2022 London boundary review, and uses current (post-2022) Islington ward names. The predecessor scheme, 'Designation of an Area for Selective Licensing 2020', covered the pre-2022 'Finsbury Ward' and was formally revoked on 20 May 2024 under s.84(4) (revocation-of-2020-selective-licensing-scheme.pdf) precisely because it 'has been replaced by London Borough of Islington Designation of an Area for Selective Licensing 2024 covering Finsbury Park, Tollington, and Hillrise Wards'. FEE: Islington's official 'What you need to apply for a property licence' page states 'selective licence - £850 for the whole property' (2025/26 fee schedule at islington.gov.uk/~/media/.../20252026/property-licensing-fees.pdf); discounts of £75 (accredited landlord), £50 (EPC A-C) and £25 (gap-free renewal) apply to Part B. NOT A CHECKER: propertylicensing.islington.gov.uk is an application/account portal, not an address lookup, so checkerUrl is null. EXPANSION NOT YET LIVE: Islington consulted on adding nine further wards (Barnsbury, Caledonian, Tufnell Park, Mildmay, Highbury, Junction, Laycock, Canonbury, Clerkenwell), but the council's live page on 7 August 2026 still lists only the three designated wards, so the expansion is not in force."
+    }
+  ]
+}

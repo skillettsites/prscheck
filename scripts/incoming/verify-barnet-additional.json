@@ -1,0 +1,25 @@
+{
+  "gss": "E09000003",
+  "council": "London Borough of Barnet",
+  "schemes": [
+    {
+      "match": { "type": "additional", "coverage": "borough-wide", "start": "2022-10-27" },
+      "sourceUrl": "https://barnet.moderngov.co.uk/documents/s93757/Appendix%201%20-%20Updated%20Selective%20licensing%20proposals.pdf",
+      "confidence": "official-pdf",
+      "schemeExists": true,
+      "inForce": {
+        "stillLive": true,
+        "start": "2022-10-27",
+        "end": "2027-10-26",
+        "howVerified": "Barnet's own 'Selective Licensing Business Case 2026 (DRAFT)' (January 2026, Appendix 1 to a Barnet committee report) states at para 2.2.2: 'Barnet introduced a borough wide additional licensing scheme for HMOs on 27th October 2022 that fall outside the scope of mandatory licensing'. The March 2025 Barnet Cabinet report is titled 'Additional Licensing Scheme 2022-27 - Year Two Review' and describes it as 'a 5-year scheme', with year two running the 'October 23-October 24 period', confirming an October-to-October scheme year and a 2027 expiry."
+      },
+      "includedWards": [],
+      "wardBoundaryEra": "current",
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": null,
+      "checkerUrl": null,
+      "evidence": "Two official Barnet documents confirm this scheme. (1) 'Cabinet - Additional Licensing Scheme 2022-27 - Year Two Review', 3 March 2025 (barnet.moderngov.co.uk/documents/s88441) reports on live performance of the scheme against the objectives approved by the Housing and Growth Committee on 17 February 2022, and confirms it is a 5-year scheme currently running. (2) The council's January 2026 Selective Licensing Business Case gives the commencement date as 27 October 2022. The designating decision is the Housing and Growth Committee minute of 17 February 2022 (barnet.moderngov.co.uk/mgAi.aspx?ID=37305), which approved 'the making of the designations for: a borough-wide additional licensing scheme in Appendix 12'. CAVEAT ON THE END DATE: Barnet's own web page (barnet.gov.uk/HMOlicensing) is indexed as saying the scheme 'started on 27 October 2022 and will end on 27 October 2027'; the signed designation could not be read directly because www.barnet.gov.uk serves an Imperva bot-challenge to every automated request (403/'Pardon Our Interruption'), and the moderngov copy (Appendix 12) is the unsigned draft with placeholder dates ('shall cease to have effect on xx of xxxxxx 2027'). The end date recorded here (2027-10-26) is the five-year statutory maximum from the verified 27 October 2022 start; treat 26/27 October 2027 as a one-day boundary uncertainty. Fee could not be verified: the only official fee schedule reachable is Appendix 8 from February 2022 (barnet.moderngov.co.uk/documents/s70546), whose table columns are misaligned in the PDF and which is four years out of date, so no figure is asserted."
+    }
+  ]
+}

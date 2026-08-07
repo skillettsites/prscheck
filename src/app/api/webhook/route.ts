@@ -114,6 +114,10 @@ export async function POST(req: NextRequest) {
       // Known exactly rather than derived, so it is the most reliable match we
       // have wherever a council publishes its designated postcodes.
       postcode: meta.postcode || null,
+      // Tested against the councils' own published designation boundaries,
+      // which is the only signal that works where no list of any kind exists.
+      latitude: meta.lat ? Number(meta.lat) : null,
+      longitude: meta.lon ? Number(meta.lon) : null,
     });
     if (!determination) throw new Error("determination_failed");
 

@@ -1,0 +1,25 @@
+{
+  "gss": "E09000003",
+  "council": "London Borough of Barnet",
+  "schemes": [
+    {
+      "match": { "type": "selective", "coverage": "wards", "start": null },
+      "sourceUrl": "https://barnet.moderngov.co.uk/documents/s93757/Appendix%201%20-%20Updated%20Selective%20licensing%20proposals.pdf",
+      "confidence": "not-found",
+      "schemeExists": false,
+      "inForce": {
+        "stillLive": false,
+        "start": null,
+        "end": null,
+        "howVerified": "Barnet's own 'Selective Licensing Business Case 2026 (DRAFT)', January 2026, para 4.2.2 ('Need for Review'): 'Due to delays in implementing online licensing and automated payment systems which were outside the control of the Council, the commencement of these schemes was significantly postponed. This delay made it essential for the Council to review the data supporting the previous schemes proposed for implementation and consult the public again to confirm that selective licensing remains an appropriate approach for the Council.' The same document's section 4.0 is headed 'Why the Council is considering introducing selective licensing', and section 5.0 'Proposal for selective licensing' sets out a fresh proposed ward list. Barnet has therefore never brought a selective licensing designation into force, and as at 7 August 2026 none is in effect."
+      },
+      "includedWards": [],
+      "wardBoundaryEra": "unknown",
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": null,
+      "checkerUrl": null,
+      "evidence": "Barnet has APPROVED two selective licensing designations but has never commenced either, so no selective licence has ever been required anywhere in the borough. (1) Housing and Growth Committee, 17 February 2022 (barnet.moderngov.co.uk/mgAi.aspx?ID=37305) resolved to approve 'the making of the designations for ... a selective licensing scheme in the new wards of Burnt Oak, Colindale North and Colindale South as detailed in Appendix 13', and delegated to the Deputy Chief Executive the signing of the designation 'on an appropriate date in the future'. (2) Cabinet, 12 December 2023 (barnet.moderngov.co.uk/mgAi.aspx?ID=42340) approved 'the making of the designation for a selective licensing scheme in the proposed ten wards in Appendix H' (Childs Hill, Cricklewood, Edgware, Edgwarebury, Finchley Church End, Golders Green, Hendon, Mill Hill, West Finchley, West Hendon), subject to Secretary of State confirmation and coming into force no sooner than 3 months after confirmation. (3) The Cabinet report 'Additional Licensing Scheme 2022-27 - Year Two Review', 3 March 2025 (barnet.moderngov.co.uk/documents/s88441), para 1.12, still describes Phase 1 as unstarted: 'The stability of this team and the online licensing solution are critical to the decision on the commencement of the approved phase 1 of Selective Licensing in Burnt Oak, Colindale North and Colindale South. Now that the online licensing is all but signed off the team can look to agreeing a commencement date for Selective Licensing', and para 4.32 refers to 'making decisions on when it will be appropriate to commence the proposed two selective licensing schemes'. (4) The January 2026 Business Case (above) confirms both schemes were postponed and that Barnet is re-consulting from scratch, proposing a revised ward list (Hendon, West Hendon, Childs Hill, Burnt Oak, Cricklewood, Golders Green, Friern Barnet, Colindale South, Colindale North, Finchley Church End, with regeneration streets excluded). A fresh proposal starting from a January 2026 draft requires a 10-week statutory consultation, then a designation, then a minimum 3 months before it can come into force, so nothing could be live by 7 August 2026. NOTE: the record being replaced showed three unnamed wards with no dates; that appears to be an aggregator reporting Barnet's APPROVED-BUT-NEVER-COMMENCED Phase 1 (Burnt Oak, Colindale North, Colindale South) as if it were live. It is not. Barnet's own website could not be read directly (www.barnet.gov.uk returns an Imperva bot challenge to all automated requests), so all findings rest on Barnet's committee document repository at barnet.moderngov.co.uk, which is the council's own official publication system."
+    }
+  ]
+}

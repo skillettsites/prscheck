@@ -37,7 +37,7 @@ const schemes = JSON.parse(readFileSync(SCHEMES_PATH, "utf8"));
 const byGss = new Map(schemes.map((c) => [c.gss, c]));
 const wards = JSON.parse(readFileSync(join(ROOT, "src", "data", "wards.json"), "utf8"));
 
-const files = readdirSync(INCOMING).filter((f) => /^(areas|wards)-.*\.json$/.test(f)).sort();
+const files = readdirSync(INCOMING).filter((f) => /^(areas|wards|verify)-.*\.json$/.test(f)).sort();
 if (files.length === 0) {
   console.error("No scripts/incoming/areas-*.json or wards-*.json files found.");
   process.exit(1);
@@ -254,6 +254,22 @@ for (const file of files) {
           return true;
         });
       applied.push(`${target.licensedPostcodes.length} licensed-register postcodes`);
+    }
+
+    // Fees: fill a gap, never overwrite. Our existing strings usually carry
+    // detail the research summary drops ("£1,540 base, +£68 per letting above
+    // five"), and a fee that disagrees is worth a human look rather than a
+    // silent replacement, since fees change annually and both may be sourced.
+    if (entry.feeApprox && String(entry.feeApprox).trim()) {
+      const fee = String(entry.feeApprox).trim();
+      if (!target.feeApprox) {
+        target.feeApprox = fee;
+        applied.push("fee added");
+      } else {
+        const ours = target.feeApprox.replace(/[^0-9]/g, "").slice(0, 6);
+        const theirs = fee.replace(/[^0-9]/g, "").slice(0, 6);
+        if (ours !== theirs) notes.push(`${doc.council} ${type}: fee differs, we hold "${target.feeApprox}", research found "${fee}"`);
+      }
     }
 
     if (entry.listIsIndicative === true) {

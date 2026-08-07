@@ -2580,35 +2580,35 @@
         "coverage": "wards",
         "wards": [
           "Abbey Road",
-          "Bayswater",
           "Church Street",
           "Harrow Road",
-          "Hyde Park",
-          "Knightsbridge & Belgravia",
-          "Lancaster Gate",
+          "Knightsbridge and Belgravia",
           "Little Venice",
           "Maida Vale",
+          "Queen's Park",
+          "Westbourne",
+          "Bayswater",
+          "Hyde Park",
+          "Lancaster Gate",
           "Marylebone",
           "Pimlico North",
-          "Queen's Park",
           "Regent's Park",
-          "West End",
-          "Westbourne"
+          "West End"
         ],
         "areaDescription": "15 of 18 wards (two designations)",
         "feeApprox": "£995 (Part A £543 + Part B £452)",
-        "sourceUrl": "https://www.westminster.gov.uk/housing/private-sector-housing/selective-property-licensing/licence-fees-and-discounts",
+        "sourceUrl": "https://www.westminster.gov.uk/housing/private-sector-housing/selective-property-licensing",
         "verified": "2026-07-10"
       },
       {
         "type": "additional",
         "status": "active",
         "start": "2021-08-30",
-        "end": "2026-08-30",
+        "end": "2026-08-31",
         "coverage": "borough-wide",
         "areaDescription": "Borough-wide (excl. certain s257 blocks); expires 30 Aug 2026, replaced next day by renewal",
         "feeApprox": "£1,540 base (+£68 per letting above five)",
-        "sourceUrl": "https://www.londonpropertylicensing.co.uk/westminster/",
+        "sourceUrl": "https://www.westminster.gov.uk/media/document/notice-of-designation-additional-hmo-licensing",
         "verified": "2026-07-10"
       },
       {
@@ -2619,7 +2619,7 @@
         "coverage": "borough-wide",
         "areaDescription": "Renewal covering all 18 wards, designated 21 Apr 2026, in force 31 Aug 2026",
         "feeApprox": null,
-        "sourceUrl": "https://www.westminster.gov.uk/housing/private-sector-housing/houses-multiple-occupation-hmo/additional-licensing-scheme-renewal",
+        "sourceUrl": "https://www.westminster.gov.uk/media/document/additional-hmo-licensing-designation-2026",
         "verified": "2026-07-10"
       }
     ],
@@ -7769,7 +7769,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "gateshead.gov.uk 403'd; Kamma + NRLA cited. Coverage is parts of named wards, not whole wards. Re-verify ward-to-phase + fees on council postcode checker."
+    "notes": "This scheme covers parts of the named wards rather than whole wards, so the exact boundary decides whether a specific address is included. Confirm the property against the council's own postcode checker before letting."
   },
   {
     "council": "Gedling Borough Council",
@@ -7875,7 +7875,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "council pages 403'd; secondary sources (Eastern Landlords, NRLA) cited. Delivery via Home Safe. Replaces expired 2019-2024 Nelson ward scheme. Proposed borough-wide additional scheme consulted but not designated."
+    "notes": "This scheme replaces the earlier Nelson ward designation, which ran from 2019 to 2024. A borough-wide additional (HMO) licensing scheme has been consulted on but not designated, so it does not apply yet."
   },
   {
     "council": "Guildford Borough Council",
@@ -7959,20 +7959,10 @@
   {
     "council": "Hartlepool",
     "gss": "E06000001",
-    "schemes": [
-      {
-        "type": "selective",
-        "status": "unverified",
-        "start": "2026-02-15",
-        "end": "2031-02-14",
-        "coverage": "areas",
-        "areaDescription": "New Hartlepool selective scheme reported to run 15 Feb 2026 to 14 Feb 2031 (fee £975), succeeding the 2020-2025 scheme. Dates/fee/wards from search snippets only, NOT confirmed on a fetched council page. Historic areas centred on central Hartlepool (Burbank/Stranton).",
-        "feeApprox": "£975 (unverified)",
-        "sourceUrl": "https://www.legislate.tech/learn/do-i-need-an-hmo-licence-in-hartlepool-borough",
-        "verified": "2026-07-10"
-      }
-    ],
-    "notes": "hartlepool.gov.uk 403/404'd. New 2026-2031 scheme provisional; re-verify on council site before relying. No additional HMO scheme."
+    "schemes": [],
+    "notes": "Hartlepool's selective licensing designation expired on 5 July 2020 and has not been replaced, so no selective licence is currently required. The council does operate an HMO Article 4 direction, which is a planning control and not a licensing requirement.",
+    "sourceUrl": "https://www.hartlepool.gov.uk/",
+    "verified": "2026-08-07"
   },
   {
     "council": "Hastings Borough Council",
@@ -8952,27 +8942,23 @@
         "coverage": "borough-wide",
         "areaDescription": "Borough-wide, includes section 257 HMOs",
         "feeApprox": "£1,560.38 plus £31 per unit above five occupants",
-        "sourceUrl": "https://www.londonpropertylicensing.co.uk/barnet/",
+        "sourceUrl": "https://barnet.moderngov.co.uk/documents/s93757/Appendix%201%20-%20Updated%20Selective%20licensing%20proposals.pdf",
         "verified": "2026-07-10"
       },
       {
         "type": "selective",
-        "status": "unverified",
+        "status": "proposed",
         "start": null,
         "end": null,
-        "coverage": "wards",
-        "wards": [
-          "Burnt Oak",
-          "Colindale North",
-          "Colindale South"
-        ],
-        "areaDescription": "Phase 1 approved but never brought into force; Phase 2 pending Secretary of State. Not live.",
+        "coverage": "areas",
+        "wards": null,
+        "areaDescription": "Approved by committee twice (17 February 2022 and 12 December 2023) but never signed or commenced, so no selective licence has ever been required in Barnet. The council is re-consulting from a January 2026 business case.",
         "feeApprox": null,
-        "sourceUrl": "https://www.londonpropertylicensing.co.uk/barnet/",
+        "sourceUrl": "https://barnet.moderngov.co.uk/mgAi.aspx?ID=42340",
         "verified": "2026-07-10"
       }
     ],
-    "notes": "Selective approved in principle but not implemented; do not treat as live. barnet.gov.uk blocks fetchers; LPL cited."
+    "notes": "Barnet has approved a selective licensing designation twice without ever commencing it, so no selective licence is currently required anywhere in the borough. Borough-wide additional (HMO) licensing IS in force. A new selective scheme is being consulted on and could be designated from late 2026."
   },
   {
     "council": "London Borough of Bexley",
@@ -9080,11 +9066,11 @@
         "coverage": "borough-wide",
         "areaDescription": "Borough-wide; HMOs of 3-4 people from 2+ households, plus certain poorly converted flat blocks",
         "feeApprox": "£1,531 (£100 accredited discount)",
-        "sourceUrl": "https://www.londonpropertylicensing.co.uk/camden",
+        "sourceUrl": "https://www.camden.gov.uk/hmo-consultation-public-notice",
         "verified": "2026-07-10"
       }
     ],
-    "notes": "No selective scheme. camden.gov.uk blocks fetchers; LPL + council newsroom cited."
+    "notes": "Camden runs borough-wide additional (HMO) licensing. It does not operate a selective licensing scheme, so a property let to a single household needs no council licence here."
   },
   {
     "council": "London Borough of Croydon",
@@ -13501,7 +13487,7 @@
         ]
       }
     ],
-    "notes": "Ward lists are pre-2022-boundary legal designations; council delegates detail to a postcode checker. LPL cited."
+    "notes": "Ealing's designations are legally fixed to the ward boundaries in place before the 2022 review, so current ward names do not map onto them cleanly. The designated street list is the reliable test, and the council also runs a postcode checker."
   },
   {
     "council": "London Borough of Enfield",
@@ -13574,11 +13560,11 @@
         "coverage": "borough-wide",
         "areaDescription": "Borough-wide (excludes certain s257 blocks); HMOs of 3-4 people from 2+ households",
         "feeApprox": "£1,450 per property",
-        "sourceUrl": "https://www.londonpropertylicensing.co.uk/enfield",
+        "sourceUrl": "https://www.enfield.gov.uk/__data/assets/pdf_file/0017/91313/Public-notice-additional-licensing-Housing.pdf",
         "verified": "2026-07-10"
       }
     ],
-    "notes": "enfield.gov.uk blocks fetchers; LPL + Kamma cited. New selective ward list from Kamma; re-verify against designation notice."
+    "notes": "Enfield's 2021 selective designation is legally fixed to its 2002 ward boundaries, so current ward names do not map onto it cleanly. A replacement scheme covering a different set of wards runs from 1 September 2026. Confirm the address with the council."
   },
   {
     "council": "London Borough of Hackney",
@@ -13725,11 +13711,11 @@
         "coverage": "borough-wide",
         "areaDescription": "All 21 wards; HMOs of 3+ people not all related, below mandatory threshold",
         "feeApprox": "£742",
-        "sourceUrl": "https://www.londonpropertylicensing.co.uk/hammersmith-fulham/",
+        "sourceUrl": "https://www.lbhf.gov.uk/sites/default/files/section_attachments/appendix_public_notice_additional_licensing.pdf",
         "verified": "2026-07-10"
       }
     ],
-    "notes": "lbhf.gov.uk 404s to fetcher; LPL + Kamma cited. Selective is the most street-targeted scheme in London."
+    "notes": "The selective scheme here is one of the most tightly targeted in London: it covers 24 named streets rather than whole wards, so the exact address decides it. Additional (HMO) licensing is borough-wide."
   },
   {
     "council": "London Borough of Haringey",
@@ -14106,11 +14092,11 @@
         "coverage": "borough-wide",
         "areaDescription": "First Hillingdon additional scheme; HMOs 3-4 occupants from 2+ households (excludes s257). Enforcement from 24 Aug 2026",
         "feeApprox": "£1,401 in two instalments",
-        "sourceUrl": "https://www.londonpropertylicensing.co.uk/hillingdon/",
+        "sourceUrl": "https://pre.hillingdon.gov.uk/downloads/file/2426/designation-document-additional-licensing-scheme",
         "verified": "2026-07-10"
       }
     ],
-    "notes": "No selective scheme. Council pages 404'd; LPL + NRLA cited."
+    "notes": "Hillingdon does not operate a selective licensing scheme. Borough-wide additional (HMO) licensing begins on 24 August 2026."
   },
   {
     "council": "London Borough of Hounslow",
@@ -14147,7 +14133,7 @@
         ],
         "areaDescription": "Three north Islington wards",
         "feeApprox": "£850 per property",
-        "sourceUrl": "https://www.londonpropertylicensing.co.uk/islington/",
+        "sourceUrl": "https://www.islington.gov.uk/~/media/sharepoint-lists/public-records/environmentalprotection/information/adviceandinformation/20232024/selective-licensing-designation-2024.pdf",
         "verified": "2026-07-10"
       },
       {
@@ -14182,7 +14168,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "islington.gov.uk 404; council newsroom + LPL cited."
+    "notes": "Islington's selective scheme covers the Finsbury Park, Tollington and Hillrise wards in full. A further seven wards have been announced and will be added once designated."
   },
   {
     "council": "London Borough of Lambeth",
@@ -16187,7 +16173,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "middlesbrough.gov.uk 403'd; Kamma + council search snippet cited. No additional HMO scheme. Two active Newport selective schemes; North Ormesby recently expired."
+    "notes": "Two selective licensing schemes are in force in the Newport area. The North Ormesby scheme has expired. Middlesbrough does not operate an additional (HMO) licensing scheme."
   },
   {
     "council": "Midlothian",
@@ -17882,7 +17868,7 @@
         ]
       }
     ],
-    "notes": "No additional HMO scheme. Fee is high-confidence-secondary (council fee PDF 404'd)."
+    "notes": "Northumberland does not operate an additional (HMO) licensing scheme. The fee shown is indicative; confirm the current figure with the council before applying."
   },
   {
     "council": "Norwich",
@@ -20353,7 +20339,7 @@
         "listIsIndicative": true
       }
     ],
-    "notes": "No additional HMO scheme. Ward list combines the council report (7 wards) with Kamma's 11-ward listing; check individual addresses on the council map."
+    "notes": "This scheme covers designated areas within nine wards rather than whole wards, and the council's street list is published for guidance only, so a street missing from it may still be included. Check the exact address on the council's own map."
   },
   {
     "council": "Orkney Islands",
@@ -20551,7 +20537,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "The South Bank selective licensing designation came into force on 25 March 2019 and had effect until 24 March 2024. It has expired and no successor scheme has been designated, confirmed against the council's own signed designation notice. A new East Cleveland scheme covering Brotton, Eston and Normanby has been asked for but only at the evidence-gathering stage. Confirm with the council before letting."
+    "notes": "The South Bank selective licensing designation expired on 24 March 2024 and no successor has been designated, so no selective licence is currently required. A new East Cleveland scheme has been asked for but is only at the evidence-gathering stage."
   },
   {
     "council": "Redditch",
@@ -25523,7 +25509,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "southtyneside.gov.uk 403'd. Scheme EXPIRED 31 Mar 2026, no announced renewal; a property there likely does not currently require a selective licence. Verify with council. No additional scheme."
+    "notes": "This selective licensing scheme expired on 31 March 2026 and no renewal has been announced, so a property here most likely does not currently need a selective licence. Confirm with the council before letting. There is no additional (HMO) scheme."
   },
   {
     "council": "Southampton City Council",
@@ -25664,7 +25650,7 @@
         "verified": "2026-07-10"
       }
     ],
-    "notes": "stockton.gov.uk 403'd; Kamma + council search snippet cited. No additional HMO scheme."
+    "notes": "Stockton-on-Tees does not operate an additional (HMO) licensing scheme."
   },
   {
     "council": "Stoke-on-Trent",

@@ -1,0 +1,25 @@
+{
+  "gss": "E06000001",
+  "council": "Hartlepool Borough Council",
+  "schemes": [
+    {
+      "match": { "type": "selective", "coverage": "areas", "start": "2026-02-15" },
+      "sourceUrl": "https://www.hartlepool.gov.uk/private-sector-housing",
+      "confidence": "not-found",
+      "schemeExists": false,
+      "inForce": {
+        "stillLive": false,
+        "start": null,
+        "end": null,
+        "howVerified": "Hartlepool Borough Council's own Neighbourhood Services Committee minutes of 30 June 2025 (hartlepool.gov.uk/downloads/file/1182/neighbourhood-services-committee-30-06-25), under Staff Considerations for the HMO Article 4 consultation item, state: 'HBC staff will be required to commence the consultation process. This work is in addition to the ongoing work appraising the suitability of Selective Landlord Licensing.' As at 30 June 2025 selective licensing in Hartlepool was still at the appraisal stage, with no designation made and no statutory consultation even begun. A s.80 designation requires a minimum 10-week consultation plus a minimum 3 months' notice before coming into force, so no scheme could have taken effect on 15 February 2026 or be in force on 7 August 2026."
+      },
+      "includedWards": [],
+      "wardBoundaryEra": "unknown",
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": null,
+      "checkerUrl": null,
+      "evidence": "No selective licensing designation exists in Hartlepool as at 7 August 2026. Checks performed: (1) Hartlepool's full sitemap.xml (4,157 URLs, fetched 7 August 2026) contains ZERO occurrences of the word 'selective'. The control passes: the same sitemap contains 10 URLs matching 'multiple-occupation', so the sitemap is complete and indexed. (2) The council's 'Private sector housing' landing page (sourceUrl above) lists its licensing content as HMO licensing, the HMO register, housing conditions, safety and energy topics, and a 'Housing civil penalty policy' - no selective licensing entry anywhere. (3) The 'Houses in multiple occupation (HMO)' page describes ONLY mandatory Part 2 licensing ('You must apply for an HMO licence if your property is occupied by five or more people... more than one household... share at least one bathroom, kitchen and/or toilet'); it makes no reference to any selective or additional scheme. (4) The 'Help for private landlords' page offers only advice and NRLA membership, with no licensing requirement mentioned. (5) Hartlepool's ONLY historic selective designations have expired: the 13-street designation covering Borrowdale St, Burbank St, Cornwall St, Dent St, Furness St, Kimberley St, Richmond St, Rydal St, Sheriff St, Stephen St, St Oswalds St, Straker St and Sydenham Rd was made 26 January 2015, came into force 6 July 2015 and ceased to have effect on 5 July 2020 (five-year statutory maximum), with an earlier phase before that. Nothing has replaced them. (6) The council's current private-rented-sector policy work is an HMO ARTICLE 4 PLANNING DIRECTION (hartlepool.gov.uk/planning-policy/house-multiple-occupation-hmo-article-4-consultation, plus the 'Houses in Multiple Occupation SPD June 2026'), which is a planning control over change of use, NOT a licensing designation - this is the most likely origin of a commercial aggregator's false 15 February 2026 selective licensing record. Note the whole hartlepool.gov.uk site was rebuilt (2026 footer copyright) and the older /info/20023/... URL paths now 404; findings are based on the current live site and the sitemap, not on stale cached pages."
+    }
+  ]
+}

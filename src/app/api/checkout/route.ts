@@ -24,6 +24,14 @@ export async function POST(req: NextRequest) {
     // House number. Manchester designates entirely by number range, so without
     // this the answer there can never be better than "check your house number".
     const houseNumber = String(body.houseNumber ?? "").trim().slice(0, 12);
+    // Postcode centroid, for testing against councils' own published
+    // designation boundaries. Range-checked to the UK rather than trusted, so a
+    // malformed or spoofed coordinate cannot land a property inside a polygon.
+    const latRaw = Number(body.latitude);
+    const lonRaw = Number(body.longitude);
+    const inUk = Number.isFinite(latRaw) && Number.isFinite(lonRaw) && latRaw >= 49 && latRaw <= 61 && lonRaw >= -9 && lonRaw <= 2;
+    const latitude = inUk ? latRaw : null;
+    const longitude = inUk ? lonRaw : null;
     const occupants = Number(body.occupants ?? 0);
     const households = Number(body.households ?? 0);
     const attribution = (body.attribution ?? {}) as Record<string, string>;
@@ -77,6 +85,8 @@ export async function POST(req: NextRequest) {
         street: street || "",
         street_source: streetSource,
         house_number: houseNumber,
+        lat: latitude === null ? "" : String(latitude),
+        lon: longitude === null ? "" : String(longitude),
         occupants: String(occupants),
         households: String(households),
         utm_source: attribution.utm_source ?? "",

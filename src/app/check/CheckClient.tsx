@@ -20,6 +20,10 @@ interface FreeResult {
   nation: string;
   council: { name: string; slug: string; gss: string };
   ward: string | null;
+  /** Postcode centroid, carried through to the paid determination so it can be
+   *  tested against councils' own published designation boundaries. */
+  latitude: number | null;
+  longitude: number | null;
   schemes: {
     hasData: boolean;
     activeSelective: number;
@@ -198,6 +202,10 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
           street: selectedItem?.street ?? "",
           streetSource: selectedItem?.streetSource ?? "",
           houseNumber: selectedItem?.buildingNumber ?? "",
+          // Postcode centroid from the free check, used to test the property
+          // against the council's own published designation boundary.
+          latitude: result.latitude ?? null,
+          longitude: result.longitude ?? null,
           occupants: occ,
           households: hh,
           attribution: attribution(),

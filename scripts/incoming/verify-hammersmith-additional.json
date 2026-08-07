@@ -1,0 +1,69 @@
+{
+  "gss": "E09000013",
+  "council": "London Borough of Hammersmith and Fulham",
+  "schemes": [
+    {
+      "match": { "type": "additional", "coverage": "borough-wide", "start": "2022-06-05" },
+      "sourceUrl": "https://www.lbhf.gov.uk/sites/default/files/section_attachments/appendix_public_notice_additional_licensing.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2022-06-05",
+        "end": "2027-06-04",
+        "howVerified": "The council's own s.59 public notice states: 'This designation may be cited as the London Borough of Hammersmith & Fulham Designation for an Area for Additional Licensing of Houses in Multiple Occupation 2022. This designation is made on 6 December 2021 and shall come into force on 5 June 2022. This designation shall cease to have effect on 4 June 2027 or earlier if the Council revokes the scheme under section 60 of the Act.' Our recorded dates match exactly. No revocation or variation of the 2022 designation was found."
+      },
+      "reallyBoroughWide": true,
+      "includedWards": [],
+      "streets": [],
+      "postcodes": [],
+      "feeApprox": "£755",
+      "checkerUrl": null,
+      "thresholdNote": "Catches all HMOs in five categories: s.254(2) standard test, s.254(3) self-contained flat test, s.254(4) converted building test, s.255 HMO declaration, and s.257 converted blocks of flats. The s.257 limb applies only where all three of these hold: no flats are owner-occupied; the building is not owned or managed by two or more leaseholders of flats within it (individually or through a management company they direct); and the address is not in a street designated for selective licensing. Excludes properties under an Interim or Final Management Order, s.62 temporary exemptions and anything mandatorily licensable under s.55(2)(a). The council's plain-English version reads: 'You'll need an Additional HMO Licence if your property is rented to: 3 or 4 people from 2 or more households who share facilities, it's their main home and rent is paid', covering houses, converted flats and purpose-built flats.",
+      "evidence": "The document is the 'PUBLIC NOTICE ... DESIGNATION OF AN AREA FOR ADDITIONAL LICENSING OF HOUSES IN MULTIPLE OCCUPATION (HMOs)' issued under s.59 Housing Act 2004, identical to Appendix 1 of the Cabinet report 'Improving private sector housing through discretionary property licensing' taken on 6 December 2021, which recommended 'Designation of an Additional HMO Licensing scheme from 5 June 2022 in accordance with the designation document in Appendix 1'. Paragraph 4 reads 'The designation shall apply to the whole area of the district of the London Borough of Hammersmith & Fulham', so borough-wide comes from the instrument. Currency is confirmed by the live licensing page and by licence register extracts published 6 August 2026, one day before this check. CITATION TRAP, IMPORTANT: the shorter, more canonical-looking URL https://www.lbhf.gov.uk/sites/default/files/section_attachments/public_notice_additional_licensing.pdf (no 'appendix_' prefix) also returns HTTP 200 but is the EXPIRED 2016 designation, which ran 5 June 2017 to 4 June 2022; only the 'appendix_'-prefixed file is current, and the same trap exists for the selective notice. Both schemes hit their statutory five-year ceiling on 2027-06-04 and no successor consultation or Cabinet report was found, so this record needs rechecking around March 2027."
+    },
+    {
+      "match": { "type": "selective", "coverage": "streets", "start": "2022-06-05" },
+      "sourceUrl": "https://www.lbhf.gov.uk/sites/default/files/section_attachments/appendix_public_notice_selective_licensing.pdf",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2022-06-05",
+        "end": "2027-06-04",
+        "howVerified": "The selective designation states: 'This designation is made on 6 December 2021 and shall come into force on 5 June 2022. This designation shall cease to have effect on 4 June 2027 or earlier if the Council revokes the scheme under section 84 of the Act.' Paragraph 4 reads 'The designation applies to the following streets as listed at Annex A.'"
+      },
+      "reallyBoroughWide": false,
+      "includedWards": [],
+      "streets": [
+        { "name": "Askew Road" },
+        { "name": "Baron's Court Road" },
+        { "name": "Bloemfontein Road" },
+        { "name": "Blythe Road" },
+        { "name": "Coningham Road" },
+        { "name": "Crookham Road" },
+        { "name": "Dalling Road" },
+        { "name": "Dawes Road" },
+        { "name": "Fulham Road" },
+        { "name": "Goldhawk Road" },
+        { "name": "Greyhound Road" },
+        { "name": "King Street" },
+        { "name": "Lime Grove" },
+        { "name": "New King's Road" },
+        { "name": "North End Road" },
+        { "name": "Richmond Way" },
+        { "name": "Shepherd's Bush Road" },
+        { "name": "Sinclair Road" },
+        { "name": "Scrubs Lane" },
+        { "name": "Talgarth Road" },
+        { "name": "Uxbridge Road" },
+        { "name": "Wandsworth Bridge Road" },
+        { "name": "Woodstock Grove" },
+        { "name": "Wood Lane" }
+      ],
+      "postcodes": [],
+      "feeApprox": "£755",
+      "checkerUrl": null,
+      "thresholdNote": "Applies to any flat or house let under a tenancy or licence on the 24 designated streets, excluding HMOs licensable under Part 2 (mandatory) or under the s.56 additional designation, and excluding tenancies granted by registered social landlords.",
+      "evidence": "This is a street-level designation, not ward-level and emphatically not borough-wide: Annex A of the designation names 24 streets and the scheme bites only on those. It matters commercially because the commercial aggregator supplied no street-level selective data for this borough, so a landlord with a non-HMO rental on, say, North End Road would have been told no licence was needed, which is exactly the unlimited-fine failure mode. One council inconsistency to be aware of: the council's FAQ page asterisks Goldhawk Road as new to the scheme while the designation Annex A asterisks Greyhound Road instead; the designation is authoritative and the 24-street set is identical in both, so licensability is unaffected. Note the same expired-PDF trap as the additional scheme: use the 'appendix_'-prefixed URL, not public_notice_selective_licensing.pdf."
+    }
+  ]
+}

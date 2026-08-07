@@ -95,6 +95,8 @@ interface AreaCase {
   street?: string | null;
   houseNumber?: string | null;
   streetSource?: "os" | "epc-numbered" | "epc-derived" | "manual";
+  latitude?: number | null;
+  longitude?: number | null;
   expect: Verdict;
 }
 
@@ -142,6 +144,28 @@ const AREA_CASES: AreaCase[] = [
     expect: "check-boundary",
   },
   {
+    what: "Liverpool, coordinate inside the council's own published boundary",
+    gss: "E08000012",
+    // L18 1HQ, Greenbank Park ward. Verified inside, 208m from the nearest edge.
+    latitude: 53.385287,
+    longitude: -2.924117,
+    expect: "required",
+  },
+  {
+    what: "Liverpool, coordinate far outside the published boundary",
+    gss: "E08000012",
+    // Central Manchester: same country, nowhere near the designation.
+    latitude: 53.4808,
+    longitude: -2.2426,
+    expect: "not-in-area",
+  },
+  {
+    what: "Liverpool, no coordinate supplied, must fall back rather than assume outside",
+    gss: "E08000012",
+    wardName: "Anfield",
+    expect: "likely-required",
+  },
+  {
     what: "Rotherham, street on an INDICATIVE list is likely, not certain",
     gss: "E08000018",
     street: "Fitzwilliam Road",
@@ -165,6 +189,8 @@ for (const c of AREA_CASES) {
     street: c.street ?? null,
     houseNumber: c.houseNumber ?? null,
     streetSource: c.streetSource ?? null,
+    latitude: c.latitude ?? null,
+    longitude: c.longitude ?? null,
   });
   const verdicts = [...(d?.selective ?? []), ...(d?.additional ?? [])].map((a) => a.verdict);
   if (verdicts.includes(c.expect as never)) pass++;
