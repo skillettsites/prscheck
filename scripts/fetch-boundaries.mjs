@@ -200,12 +200,16 @@ for (const src of SOURCES) {
         if (layer.geometryType !== "esriGeometryPolygon") continue;
         if (src.layerFilter && !src.layerFilter(layer.name)) continue;
         const q = `${src.url}/${layer.id}/query?where=1%3D1&outFields=*&outSR=4326&f=geojson`;
-        try {
-          polygons.push(...parseGeoJson(await get(q)));
-          console.log(`  layer ${layer.id} "${layer.name}" ok`);
-        } catch (e) {
-          console.log(`  layer ${layer.id} "${layer.name}" FAILED: ${e.message}`);
+        // A layer that fails is a HOLE in the designation, not a smaller
+        // designation. Silently continuing would publish a boundary missing one
+        // of its areas, and every property in that area would then get a
+        // confident "not in the designated area". Fail the whole source instead.
+        const json = await get(q);
+        if (json.exceededTransferLimit || json.properties?.exceededTransferLimit) {
+          throw new Error(`layer ${layer.id} "${layer.name}" exceeded the transfer limit, geometry would be truncated`);
         }
+        polygons.push(...parseGeoJson(json));
+        console.log(`  layer ${layer.id} "${layer.name}" ok`);
       }
     }
 
@@ -220,6 +224,14 @@ for (const src of SOURCES) {
       // A ring needs at least a triangle to enclose anything.
       .map((rings) => rings.filter((r) => r.length >= 4))
       .filter((rings) => rings.length > 0);
+    // Simplification runs AFTER the emptiness check above, so it can still
+    // reduce a real boundary to nothing by dropping rings under four points.
+    // An empty polygon set is not "no properties are designated", it is data
+    // the engine must refuse to answer from.
+    if (simplified.length === 0) {
+      console.log(`${src.council}: simplification left no usable rings, SKIPPED`);
+      continue;
+    }
     const after = simplified.flat().reduce((n, r) => n + r.length, 0);
     totalBefore += before;
     totalAfter += after;
@@ -244,11 +256,15 @@ console.log(`\ntotal vertices ${totalBefore} -> ${totalAfter}, bundle ${Math.rou
 // Refuse to overwrite good data with a partial fetch. A council dropping out
 // because its map server blipped would silently remove boundary answers we
 // already had, and nothing downstream can tell that apart from "never had one".
-const expected = new Set(SOURCES.map((s) => s.gss));
-const got = new Set(Object.keys(out));
-const missing = [...expected].filter((g) => !got.has(g));
+//
+// Checked per SOURCE, not per council: Gedling contributes two entries under
+// one GSS code, so a council-level check passes while one of its designations
+// is missing entirely.
+const missing = SOURCES.filter(
+  (s) => !(out[s.gss] ?? []).some((e) => e.match.type === s.match.type && e.match.start === s.match.start),
+);
 if (missing.length > 0) {
-  console.error(`\nFAILED: no boundary parsed for ${missing.join(", ")}. Not writing a partial bundle.`);
+  console.error(`\nFAILED: no boundary parsed for ${missing.map((s) => s.council).join(", ")}. Not writing a partial bundle.`);
   process.exit(1);
 }
 

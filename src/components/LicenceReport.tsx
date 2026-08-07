@@ -65,6 +65,13 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
 
   const actions: string[] = [];
   if (d.mandatoryHmo.required) actions.push(`Apply for a mandatory HMO licence with ${d.council.name} before letting or continuing to let.`);
+  // Wales meets the occupancy test but the storey test decides it, and we do
+  // not collect storeys. Without this the action list can collapse to "no
+  // licence appears to be required" for a property that very likely needs one.
+  else if (d.mandatoryHmo.conditional)
+    actions.push(
+      `Count the property's storeys, including any habitable basement or attic. In Wales a mandatory HMO licence is required at three or more storeys, and this property already meets the occupancy test, so apply to ${d.council.name} if it has three.`,
+    );
   d.selective.filter(anyPositive).forEach(() => actions.push(`Confirm the selective licensing boundary for this address on the council's map, and apply if covered.`));
   d.additional.filter(anyPositive).forEach(() => actions.push(`Confirm the additional (HMO) licensing requirement and apply if your property is in scope.`));
   if (actions.length === 0) actions.push(`No licence appears to be required today. Re-check if occupancy changes or a new scheme is designated.`);
@@ -89,9 +96,18 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
       <section className="mt-6">
         <h2 className="mb-3 text-lg font-bold text-navy-100">Your licensing position</h2>
         <div className="space-y-3">
+          {/* Three states, not two. A Welsh property that meets the occupancy
+              test but whose storey count we did not ask for is neither
+              required nor not required, and the pill is the headline: showing
+              "Not required" there asserted the opposite of the truth while the
+              real answer sat in the paragraph underneath. */}
           <div
             className={`rounded-xl border p-5 ${
-              d.mandatoryHmo.required ? "border-danger/40 bg-danger/10" : "border-navy-700 bg-navy-800/60"
+              d.mandatoryHmo.required
+                ? "border-danger/40 bg-danger/10"
+                : d.mandatoryHmo.conditional
+                  ? "border-warning/40 bg-warning/10"
+                  : "border-navy-700 bg-navy-800/60"
             }`}
           >
             <div className="flex flex-wrap items-center justify-between gap-2">
@@ -100,10 +116,12 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
                 className={`rounded-full border px-3 py-1 text-xs font-semibold ${
                   d.mandatoryHmo.required
                     ? "border-danger/40 bg-danger/10 text-red-300"
-                    : "border-navy-700 bg-navy-800/60 text-navy-300"
+                    : d.mandatoryHmo.conditional
+                      ? "border-warning/40 bg-warning/10 text-amber-200"
+                      : "border-navy-700 bg-navy-800/60 text-navy-300"
                 }`}
               >
-                {d.mandatoryHmo.required ? "Required" : "Not required"}
+                {d.mandatoryHmo.required ? "Required" : d.mandatoryHmo.conditional ? "Depends on storeys" : "Not required"}
               </span>
             </div>
             <p className="mt-2 text-sm text-navy-300">{d.mandatoryHmo.explanation}</p>

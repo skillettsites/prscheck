@@ -23,6 +23,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SCHEMES_PATH = join(ROOT, "src", "data", "licensing-schemes.json");
 const INCOMING = join(ROOT, "scripts", "incoming");
 const DRY = process.argv.includes("--dry");
+/** Allow an incoming list to replace a substantially larger stored one. */
+const ALLOW_SHRINK = process.argv.includes("--allow-shrink");
 /**
  * Today, for deciding whether "not live" means expired or not yet started.
  * Overridable so the behaviour can be checked without waiting for a date to pass.
@@ -153,9 +155,18 @@ for (const file of files) {
       // Never write an empty schedule. A scheme with `streets: []` reads as
       // "we have the list and you are not on it", which is a confident no built
       // on nothing.
-      if (cleaned.length > 0) {
+      // A schedule that arrives much smaller than the one we hold is more
+      // likely a partial extraction than a shrunken designation, and replacing
+      // 500 streets with 5 answers "not in a designated area" for the 495 that
+      // vanished. Refuse and report rather than quietly narrowing coverage.
+      const held = (target.streets ?? []).length;
+      if (!ALLOW_SHRINK && held > 0 && cleaned.length < held * 0.8) {
+        problems.push(
+          `${file}: ${doc.council} ${type}/${coverage} incoming schedule has ${cleaned.length} streets against ${held} held, NOT replaced (pass --allow-shrink if the designation really did shrink)`,
+        );
+      } else if (cleaned.length > 0) {
         target.streets = cleaned;
-        applied.push(`${cleaned.length} streets`);
+        applied.push(`${cleaned.length} streets${held ? ` (was ${held})` : ""}`);
       } else {
         problems.push(`${file}: ${doc.council} ${type}/${coverage} street entries were all unusable, none written`);
       }
@@ -207,12 +218,25 @@ for (const file of files) {
         // ward: Harrow came back as six single-ward objects covering four
         // schemes, and overwriting would have left each scheme holding only the
         // last ward seen, silently dropping the others from the designation.
+        //
+        // `replacedWards` is per-run, so the FIRST entry for a scheme still
+        // replaces what is stored. A pass returning 4 of 12 designated wards
+        // would therefore delete the other 8, and every property in them would
+        // then answer "not in a designated area". Guard the same way as street
+        // schedules: a substantially smaller list is a partial result.
         const first = !replacedWards.has(target);
-        replacedWards.add(target);
-        const merged = first ? [] : [...(target.wards ?? [])];
-        for (const w of current) if (!merged.some((x) => norm(x) === norm(w))) merged.push(w);
-        target.wards = merged;
-        applied.push(`${current.length} ward(s) -> ${merged.length} on current ONS names`);
+        const held = (target.wards ?? []).length;
+        if (!ALLOW_SHRINK && first && held > 0 && current.length < held * 0.8) {
+          problems.push(
+            `${file}: ${doc.council} ${type}/${coverage} incoming ward list has ${current.length} against ${held} held, NOT replaced (pass --allow-shrink if the designation really did shrink)`,
+          );
+        } else {
+          replacedWards.add(target);
+          const merged = first ? [] : [...(target.wards ?? [])];
+          for (const w of current) if (!merged.some((x) => norm(x) === norm(w))) merged.push(w);
+          target.wards = merged;
+          applied.push(`${current.length} ward(s) -> ${merged.length} on current ONS names`);
+        }
       }
     }
     if (entry.confidence === "derived-boundary-mapping") {

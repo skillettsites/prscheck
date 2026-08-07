@@ -96,10 +96,42 @@ const THOROUGHFARE_SUFFIXES = new Set([
   "meadow","moor","paddock","path","quay","ridge","side","spinney","strand","villas","wharf","wood","yard",
 ]);
 
-function looksLikeStreet(name: string): boolean {
+/**
+ * Suffixes unambiguous enough to TRUST a derived street, rather than merely to
+ * accept it.
+ *
+ * The broad set above is deliberately generous, because it only decides whether
+ * to return a street at all. This narrow set decides whether that street may
+ * rule a designation OUT, which is the expensive direction to be wrong in.
+ *
+ * The difference matters because most of the broad set doubles as English house
+ * naming: "12 Meadow View, Mill Lane" and "3 Hill Croft, Church Road" both lead
+ * with a house number and end in an accepted suffix, so they would otherwise be
+ * treated as authoritative streets named "Meadow View" and "Hill Croft". That is
+ * the "Rose Cottage" case coming back in through the numbered branch. Words like
+ * view, croft, meadow, bank, dale, end, hall, heath, moor, ridge, side and wood
+ * are therefore accepted but never trusted.
+ */
+const TRUSTED_SUFFIXES = new Set([
+  "road", "street", "lane", "avenue", "close", "drive", "way", "place", "court", "crescent",
+  "gardens", "grove", "terrace", "walk", "square", "row", "mews", "parade", "circus", "broadway",
+  "approach", "quay", "wharf", "villas", "buildings",
+]);
+
+function lastWord(name: string): string | undefined {
   const parts = name.toLowerCase().replace(/[^a-z\s]/g, " ").trim().split(/\s+/);
-  const last = parts[parts.length - 1];
+  return parts[parts.length - 1];
+}
+
+function looksLikeStreet(name: string): boolean {
+  const last = lastWord(name);
   return !!last && THOROUGHFARE_SUFFIXES.has(last);
+}
+
+/** Is this derived street safe to rule a designation out with? */
+function isTrustedStreet(name: string): boolean {
+  const last = lastWord(name);
+  return !!last && TRUSTED_SUFFIXES.has(last);
 }
 
 /**
@@ -156,19 +188,26 @@ function epcStreet(rec: Record<string, string>): {
     };
   }
 
+  /** Best street found so far that is not safe to rule a designation out with. */
+  let fallback: { street: string; buildingNumber: string | null } | null = null;
+
   // EPC splits an address across lines inconsistently. Usually line 1 holds
   // "12 Askew Road", but for a subdivided property it holds only "Flat 2" and
   // the thoroughfare drops to line 2. Try line 1 first and fall through to
   // line 2 when line 1 reduces to nothing usable, rather than assuming either.
-  let fallback: { street: string; buildingNumber: string | null } | null = null;
   for (const raw of [rec.addressLine1, rec.addressLine2]) {
     if (!raw || !String(raw).trim()) continue;
     const { number, rest } = splitAddressLine(String(raw));
     if (rest.length <= 2) continue;
     const name = toTitleCase(rest);
-    // Only trust a derived street that actually looks like a thoroughfare.
+    // Only accept a derived street that actually looks like a thoroughfare.
     if (!looksLikeStreet(name)) continue;
-    if (number) return { street: name, buildingNumber: number, confident: true };
+    // A house number alone is not enough to trust the name: "12 Meadow View,
+    // Mill Lane" leads with a number and ends in an accepted suffix, yet
+    // "Meadow View" is the house, not the road. Only the unambiguous suffixes
+    // may rule a designation out.
+    if (number && isTrustedStreet(name)) return { street: name, buildingNumber: number, confident: true };
+    if (number) fallback = fallback ?? { street: name, buildingNumber: number };
     // Looks like a street but has no house number anchoring it. Keep it as a
     // last resort: it can still confirm a designation, just not rule one out.
     fallback = fallback ?? { street: name, buildingNumber: null };

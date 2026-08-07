@@ -276,6 +276,15 @@ export function normalizePostcode(p: string): string {
 export function normalizeStreet(s: string): string {
   return s
     .toLowerCase()
+    // Drop a trailing parenthetical qualifier. Councils put three different
+    // kinds of thing in there and none of them is part of the street name:
+    // a locality that disambiguates two same-named roads ("Queens Drive
+    // (Acton)"), a parity restriction that belongs in the numbers field
+    // ("Locket Road (odds)"), or a sub-area ("New Lane (Longden Terrace)").
+    // Ordnance Survey returns the bare name, so an exact comparison against the
+    // qualified form never matched, and every property on Ealing's two
+    // designated Queens Drives was told it was outside the scheme.
+    .replace(/\s*\([^)]*\)\s*$/, "")
     .replace(/&amp;/g, "and")
     .replace(/&/g, "and")
     .replace(/['’‘`]/g, "")
@@ -371,6 +380,12 @@ export function boundaryTest(
     (b) => b.match.type === scheme.type && (b.match.start === null || b.match.start === scheme.start),
   );
   if (!entry) return null;
+  // An entry with no usable geometry is not a boundary that excludes everyone,
+  // it is a boundary we do not have. Left unguarded, the distance stays at
+  // Infinity, `nearEdge` is false, and every property in the council gets a
+  // confident "not in area" citing a distance of Infinity metres. The fetch
+  // script guards against writing this, but the engine must not depend on that.
+  if (!entry.polygons?.some((rings) => rings?.[0]?.length >= 4)) return null;
 
   const scale = metresPerDegree(lat);
   const px = lon * scale.x;
@@ -487,37 +502,104 @@ export function parseNumberRanges(text: string | null | undefined): NumberRange[
   // honest answer to an instruction to check with the council.
   if (/@|https?:|\b\d{5,}\b|\b(contact|email|e-mail|phone|call|enquir|telephone)\b/.test(t)) return null;
 
-  const ranges: NumberRange[] = [];
+  // Ambiguous constructions the council itself has written badly enough that we
+  // cannot safely read them. A dangling "to" with no number in front of it
+  // ("2, to 16") or a chained one ("34 to 72 to 104") could mean several
+  // different spans, and picking one produces a confident answer from a guess.
+  const danglingTo = /\bto\b/g;
+  let toMatch: RegExpExecArray | null;
+  while ((toMatch = danglingTo.exec(t)) !== null) {
+    // A well-formed "to" has a house number immediately before it.
+    if (!/[0-9][a-z]?\s*$/.test(t.slice(0, toMatch.index))) return null;
+  }
+  if (/[0-9]\s*(?:to|-)\s*[0-9]+[a-z]?\s*(?:to|-)\s*[0-9]/.test(t)) return null;
 
-  // Split on commas AND "and", so each clause carries its own parity word.
-  // "7-23 odds, 20-48 evens" and Leicester's "1 -3 odd and 2 - 4 - even" both
-  // pair two spans with opposite parities. Reading one parity for the whole
-  // string would apply "odd" to the even range, and a landlord at number 2 of a
-  // designated street would be told they are outside the scheme.
-  for (const clause of t.split(/[,;]|\sand\s/)) {
-    const parity: NumberRange["parity"] = /\bodds?\b/.test(clause)
-      ? "odd"
-      : /\bevens?\b/.test(clause)
-        ? "even"
-        : "all";
-    // "12 to 80", "12-80", "433a to 519"
-    const spanRe = /([0-9]+)[a-z]?\s*(?:to|-|–)\s*([0-9]+)[a-z]?/g;
-    let m: RegExpExecArray | null;
-    let matchedSpan = false;
-    while ((m = spanRe.exec(clause)) !== null) {
-      matchedSpan = true;
-      const a = parseInt(m[1], 10);
-      const b = parseInt(m[2], 10);
-      // Councils sometimes write a range backwards ("173a to 147 (odd)").
-      ranges.push({ from: Math.min(a, b), to: Math.max(a, b), parity });
+  // Tokenise into spans and standalone numbers, keeping their positions, so a
+  // parity word can be attributed to the span it actually belongs to.
+  interface Token {
+    from: number;
+    to: number;
+    start: number;
+    end: number;
+    isSpan: boolean;
+  }
+  const tokens: Token[] = [];
+
+  const spanRe = /([0-9]+)[a-z]?\s*(?:to|-|–)\s*([0-9]+)[a-z]?/g;
+  let m: RegExpExecArray | null;
+  while ((m = spanRe.exec(t)) !== null) {
+    const a = parseInt(m[1], 10);
+    const b = parseInt(m[2], 10);
+    // Councils sometimes write a range backwards ("173a to 147 (odd)").
+    tokens.push({ from: Math.min(a, b), to: Math.max(a, b), start: m.index, end: m.index + m[0].length, isSpan: true });
+  }
+  // Standalone numbers are those not already inside a span. Councils commonly
+  // name a single designated address alongside a range ("1, 1a, 3 (odd) 44 to
+  // 156 (even)"), and dropping it leaves that property answered "not in area"
+  // when it is the one property the entry names.
+  const bareRe = /[0-9]+[a-z]?/g;
+  while ((m = bareRe.exec(t)) !== null) {
+    const start = m.index;
+    if (tokens.some((tok) => tok.isSpan && start >= tok.start && start < tok.end)) continue;
+    const n = parseInt(m[0], 10);
+    tokens.push({ from: n, to: n, start, end: start + m[0].length, isSpan: false });
+  }
+  if (tokens.length === 0) {
+    // A parity with no numbers at all ("odds", "even numbers only") restricts
+    // the whole street to one side. Councils write this where the designation
+    // runs the full length of a road but covers only one side of it.
+    const bare = /\ball\b/.test(t)
+      ? null
+      : /\bodds?\b/.test(t) && !/\bevens?\b/.test(t)
+        ? "odd"
+        : /\bevens?\b/.test(t) && !/\bodds?\b/.test(t)
+          ? "even"
+          : null;
+    return bare ? [{ from: 1, to: Number.MAX_SAFE_INTEGER, parity: bare }] : null;
+  }
+  tokens.sort((a, b) => a.start - b.start);
+
+  /**
+   * Parity for one span, read from the text around it rather than from the
+   * whole string.
+   *
+   * Councils separate opposite-parity ranges with nothing but a space:
+   * "1 - 103 Odd (Incl) 2 - 100 Even (Incl)". Reading one parity for the whole
+   * string stamped "odd" onto the even range, and every even-numbered property
+   * on those streets was told it was outside the scheme. The marker that
+   * qualifies a span almost always follows it, so look forward to the next
+   * token first, then back to the previous one.
+   */
+  function parityIn(segment: string): NumberRange["parity"] | null {
+    // "odds/evens", "odd and even", "all" mean both. Test this first: the word
+    // "odds" inside "odds/evens" would otherwise read as odd-only, turning an
+    // explicit instruction to include both into an exclusion of half the street.
+    if (/\ball\b/.test(segment)) return "all";
+    if (/\bodds?\b/.test(segment) && /\bevens?\b/.test(segment)) return "all";
+    if (/\bodds?\b/.test(segment)) return "odd";
+    if (/\bevens?\b/.test(segment)) return "even";
+    return null;
+  }
+
+  const ranges: NumberRange[] = [];
+  for (let i = 0; i < tokens.length; i++) {
+    const tok = tokens[i];
+    // A standalone number names one exact house, so parity cannot exclude it.
+    if (!tok.isSpan) {
+      ranges.push({ from: tok.from, to: tok.to, parity: "all" });
+      continue;
     }
-    if (matchedSpan) continue;
-    // Bare numbers: "just 2a, 2b and 2c evens" arrives here one clause at a time.
-    const bareRe = /\b([0-9]+)[a-z]?\b/g;
-    while ((m = bareRe.exec(clause)) !== null) {
-      const n = parseInt(m[1], 10);
-      ranges.push({ from: n, to: n, parity: "all" });
-    }
+    // Both windows stop at a clause separator. Salford writes the parity BEFORE
+    // its span ("odds 77 to 119, evens 34 to 182"), so an unbounded forward look
+    // reads the next clause's "evens" and stamps it on the odd range. Truncating
+    // at the comma leaves the forward window empty and lets the backward one,
+    // which holds this span's own "odds", answer instead.
+    const forwardRaw = t.slice(tok.end, tokens[i + 1]?.start ?? t.length);
+    const after = forwardRaw.split(/[,;]/)[0];
+    const backwardRaw = t.slice(tokens[i - 1]?.end ?? 0, tok.start);
+    const beforeParts = backwardRaw.split(/[,;]/);
+    const before = beforeParts[beforeParts.length - 1];
+    ranges.push({ from: tok.from, to: tok.to, parity: parityIn(after) ?? parityIn(before) ?? "all" });
   }
   return ranges.length > 0 ? ranges : null;
 }
@@ -616,6 +698,17 @@ export interface Determination {
   ward: string | null;
   mandatoryHmo: {
     required: boolean;
+    /**
+     * True where the occupancy test is met but a further test we do not collect
+     * decides the answer, so `required` is false without meaning "not required".
+     *
+     * Wales kept the three-storey requirement England dropped in 2018, and we do
+     * not ask how many storeys a property has. Rendering the bare boolean as a
+     * "Not required" pill told a Welsh landlord with six occupants in three
+     * households the opposite of the truth, with the correct nuance relegated to
+     * the paragraph underneath.
+     */
+    conditional: boolean;
     explanation: string;
   };
   selective: SchemeAssessment[];
@@ -788,6 +881,18 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
         };
       }
       if ((scheme.excludedWards ?? []).some((x) => normalizeWard(x) === w)) {
+        // A ward name can survive a boundary review while its boundaries are
+        // re-cut, which is exactly the Wealdstone hazard: the name still
+        // validates against ONS but no longer describes the same ground. That
+        // makes an exclusion list the riskiest thing to trust blind, because it
+        // is the only ward signal that produces a confident negative.
+        if (schemeWardsAreStale(scheme.excludedWards, gss)) {
+          return {
+            scheme,
+            verdict: "check-boundary",
+            explanation: `${council.name} lists ${wardName} outside this ${scheme.type} licensing designation, but that list carries ward names from before this council's most recent boundary review, so it cannot be relied on to rule this property out. Confirm the address with the council.`,
+          };
+        }
         return {
           scheme,
           verdict: "not-in-area",
@@ -910,6 +1015,21 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
         };
       }
       if (m && !m.inList) {
+        // The street schedule and the ward list disagree, so one of them is a
+        // fragment and we cannot tell which. Newcastle's 2021 designation names
+        // three wards but only five streets, because only one of its three
+        // sub-areas publishes a street schedule at all. Trusting the schedule
+        // there turned "your ward is designated" into "you are not in the area"
+        // for the other two sub-areas, so supplying MORE information about a
+        // property made its answer worse. Never resolve that disagreement
+        // against the landlord.
+        if (wardName && wardMatches(scheme.wards, wardName)) {
+          return {
+            scheme,
+            verdict: "likely-required",
+            explanation: `This property's ward (${wardName}) is in the designated ward list for this ${scheme.type} licensing scheme, though ${street} is not on the partial street schedule ${council.name} publishes for it. That schedule does not cover the whole designation, so it cannot rule this property out. Confirm the exact address with the council.`,
+          };
+        }
         // An indicative list is not the boundary, so absence from it is not
         // evidence of absence from the scheme.
         if (scheme.listIsIndicative) {
@@ -999,7 +1119,12 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
       }));
 
   const positiveVerdicts: SchemeVerdict[] = ["required", "likely-required", "check-boundary", "upcoming"];
-  const selectiveRisk = !isMandatoryHmo && !isSmallHmo && selective.some((a) => positiveVerdicts.includes(a.verdict));
+  // Selective licensing normally applies to lets that are not licensable as an
+  // HMO, so a MANDATORY HMO is genuinely outside it. A small HMO is not: where
+  // no additional scheme covers it, a selective designation can still bite, and
+  // excluding it here reported no licence risk for a property with a positive
+  // selective verdict.
+  const selectiveRisk = !isMandatoryHmo && selective.some((a) => positiveVerdicts.includes(a.verdict));
   const additionalRisk = isSmallHmo && additional.some((a) => positiveVerdicts.includes(a.verdict));
 
   return {
@@ -1013,6 +1138,9 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
       // Welsh property that meets the occupancy test gets a conditional answer
       // rather than a false assertion that a licence is definitely required.
       required: isMandatoryHmo && council.nation === "england",
+      // Wales meets the occupancy test but the storey test decides it, and we
+      // do not collect storeys. This is neither "required" nor "not required".
+      conditional: isMandatoryHmo && council.nation === "wales",
       explanation: isMandatoryHmo
         ? council.nation === "wales"
           ? `With ${occupants} occupants forming ${households} households sharing facilities, this property meets the occupancy part of the Welsh mandatory HMO test. In Wales, unlike England, a mandatory licence is only required if the property ALSO has three or more storeys (counting habitable basements and attics). If it does, a mandatory HMO licence is required; if it is one or two storeys, it is not.`

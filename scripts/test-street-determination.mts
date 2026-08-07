@@ -144,6 +144,19 @@ const AREA_CASES: AreaCase[] = [
     expect: "check-boundary",
   },
   {
+    what: "Newcastle, a PARTIAL street schedule must not override a matching ward list",
+    gss: "E08000021",
+    // The 2021 designation names 3 wards but only 5 streets, because only one of
+    // its three sub-areas publishes a schedule. Trusting the schedule turned
+    // "your ward is designated" into a confident no, so supplying MORE
+    // information about the property made its answer worse.
+    wardName: "Byker",
+    street: "Raby Street",
+    houseNumber: "10",
+    streetSource: "os",
+    expect: "likely-required",
+  },
+  {
     what: "Liverpool, coordinate inside the council's own published boundary",
     gss: "E08000012",
     // L18 1HQ, Greenbank Park ward. Verified inside, 208m from the nearest edge.
