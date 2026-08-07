@@ -16,11 +16,14 @@ export async function POST(req: NextRequest) {
     // From the address picker. Resolves street-level designations, which are
     // ~35 of the live schemes and cannot be answered from a postcode alone.
     const street = String(body.street ?? "").trim();
-    // Provenance of that street. Only "os" is authoritative enough to rule a
-    // designation out; anything else is whitelisted away so a spoofed value
-    // cannot turn a guess into a confident "no licence needed".
+    // Provenance of that street. Whitelisted here so a spoofed value cannot
+    // promote a guessed street into one trusted to rule a designation out.
     const rawSource = String(body.streetSource ?? "").trim();
-    const streetSource = rawSource === "os" || rawSource === "epc" ? rawSource : "";
+    const streetSource =
+      rawSource === "os" || rawSource === "epc-numbered" || rawSource === "epc-derived" ? rawSource : "";
+    // House number. Manchester designates entirely by number range, so without
+    // this the answer there can never be better than "check your house number".
+    const houseNumber = String(body.houseNumber ?? "").trim().slice(0, 12);
     const occupants = Number(body.occupants ?? 0);
     const households = Number(body.households ?? 0);
     const attribution = (body.attribution ?? {}) as Record<string, string>;
@@ -73,6 +76,7 @@ export async function POST(req: NextRequest) {
         // designation and never rule one out.
         street: street || "",
         street_source: streetSource,
+        house_number: houseNumber,
         occupants: String(occupants),
         households: String(households),
         utm_source: attribution.utm_source ?? "",

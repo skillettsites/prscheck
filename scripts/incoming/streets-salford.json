@@ -1,0 +1,1054 @@
+{
+  "gss": "E08000006",
+  "council": "Salford City Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "start": "2022-09-01",
+        "end": "2027-08-31"
+      },
+      "sourceUrl": "https://www.salford.gov.uk/housing/information-for-landlords/landlord-licensing/areas-covered-by-selective-licensing/selective-licensing-in-eccles-barton-and-winton/",
+      "confidence": "official-council-page",
+      "streets": [
+        {
+          "name": "Adelaide Street",
+          "numbers": null
+        },
+        {
+          "name": "Alba Close",
+          "numbers": null
+        },
+        {
+          "name": "Albert Street",
+          "numbers": null
+        },
+        {
+          "name": "Alma Street",
+          "numbers": null
+        },
+        {
+          "name": "Armitage Street",
+          "numbers": null
+        },
+        {
+          "name": "Barlow Street",
+          "numbers": null
+        },
+        {
+          "name": "Barton Lane",
+          "numbers": "odds 77 to 119, evens 34 to 182"
+        },
+        {
+          "name": "Bradburn Street",
+          "numbers": null
+        },
+        {
+          "name": "Bright Road",
+          "numbers": null
+        },
+        {
+          "name": "Brindley Close",
+          "numbers": null
+        },
+        {
+          "name": "Byron Street",
+          "numbers": null
+        },
+        {
+          "name": "Bradburn Close",
+          "numbers": null
+        },
+        {
+          "name": "Bradburn Grove",
+          "numbers": null
+        },
+        {
+          "name": "Bradburn Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Boardman Street",
+          "numbers": null
+        },
+        {
+          "name": "Cannon Street",
+          "numbers": null
+        },
+        {
+          "name": "Cawdor Street",
+          "numbers": null
+        },
+        {
+          "name": "Chadwick Road",
+          "numbers": null
+        },
+        {
+          "name": "Chapel Street",
+          "numbers": null
+        },
+        {
+          "name": "Charlton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Church Street",
+          "numbers": "odds 167 onwards, evens 190 onwards"
+        },
+        {
+          "name": "Cornwall Street",
+          "numbers": null
+        },
+        {
+          "name": "Corporation Road",
+          "numbers": null
+        },
+        {
+          "name": "Cromwell Road",
+          "numbers": null
+        },
+        {
+          "name": "Church Grove",
+          "numbers": null
+        },
+        {
+          "name": "Devonshire Road",
+          "numbers": null
+        },
+        {
+          "name": "Dorning Street",
+          "numbers": null
+        },
+        {
+          "name": "Eccles Fold",
+          "numbers": null
+        },
+        {
+          "name": "Eliza Ann Street",
+          "numbers": null
+        },
+        {
+          "name": "Ellesmere Street",
+          "numbers": null
+        },
+        {
+          "name": "Elm Street",
+          "numbers": null
+        },
+        {
+          "name": "Enfield Close",
+          "numbers": null
+        },
+        {
+          "name": "Fintry Grove",
+          "numbers": null
+        },
+        {
+          "name": "Fielding Street",
+          "numbers": null
+        },
+        {
+          "name": "Fir Street",
+          "numbers": null
+        },
+        {
+          "name": "Francis Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Franklin Street",
+          "numbers": null
+        },
+        {
+          "name": "George Street",
+          "numbers": null
+        },
+        {
+          "name": "Gladstone Road",
+          "numbers": null
+        },
+        {
+          "name": "Gleaves Road",
+          "numbers": null
+        },
+        {
+          "name": "Golden Street",
+          "numbers": null
+        },
+        {
+          "name": "Green Lane",
+          "numbers": "odds 27 to 29, evens 14 to 82"
+        },
+        {
+          "name": "Garden Street",
+          "numbers": null
+        },
+        {
+          "name": "Hall Bank",
+          "numbers": null
+        },
+        {
+          "name": "Hamilcar Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Hamilton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Hampden Grove",
+          "numbers": null
+        },
+        {
+          "name": "Hemming Drive",
+          "numbers": null
+        },
+        {
+          "name": "Henry Street",
+          "numbers": null
+        },
+        {
+          "name": "Hospital Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Irlam Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Ivy Street",
+          "numbers": null
+        },
+        {
+          "name": "Kean Place",
+          "numbers": null
+        },
+        {
+          "name": "King Edward Street",
+          "numbers": null
+        },
+        {
+          "name": "Legh Street",
+          "numbers": null
+        },
+        {
+          "name": "Lewis Street",
+          "numbers": null
+        },
+        {
+          "name": "Lime Street",
+          "numbers": null
+        },
+        {
+          "name": "Liverpool Road",
+          "numbers": "odds 5 to 311, evens 28 to 316"
+        },
+        {
+          "name": "Lower Monton Rd",
+          "numbers": "2 to 28"
+        },
+        {
+          "name": "Lynwood Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Mather Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Mather Road",
+          "numbers": null
+        },
+        {
+          "name": "Mellor Street",
+          "numbers": null
+        },
+        {
+          "name": "Milton Street",
+          "numbers": null
+        },
+        {
+          "name": "Monton Lane",
+          "numbers": null
+        },
+        {
+          "name": "Moorfield Close",
+          "numbers": null
+        },
+        {
+          "name": "Nelson Street",
+          "numbers": null
+        },
+        {
+          "name": "New Street",
+          "numbers": null
+        },
+        {
+          "name": "Oak Street",
+          "numbers": null
+        },
+        {
+          "name": "Oberon Close",
+          "numbers": null
+        },
+        {
+          "name": "Othello Drive",
+          "numbers": null
+        },
+        {
+          "name": "Oxford Street",
+          "numbers": null
+        },
+        {
+          "name": "Parr Street",
+          "numbers": null
+        },
+        {
+          "name": "Peel Street",
+          "numbers": null
+        },
+        {
+          "name": "Pembroke Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Philip Street",
+          "numbers": null
+        },
+        {
+          "name": "Plum Tree Close",
+          "numbers": null
+        },
+        {
+          "name": "Police Street",
+          "numbers": null
+        },
+        {
+          "name": "Princess Street",
+          "numbers": null
+        },
+        {
+          "name": "Pym Street",
+          "numbers": null
+        },
+        {
+          "name": "Queen Victoria Street",
+          "numbers": null
+        },
+        {
+          "name": "Renshaw Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Renshaw Street",
+          "numbers": null
+        },
+        {
+          "name": "Richardson Road",
+          "numbers": null
+        },
+        {
+          "name": "Roberts Street",
+          "numbers": null
+        },
+        {
+          "name": "Russell Street",
+          "numbers": null
+        },
+        {
+          "name": "Shakespeare Crescent",
+          "numbers": null
+        },
+        {
+          "name": "St Andrews Avenue",
+          "numbers": null
+        },
+        {
+          "name": "St John Street",
+          "numbers": null
+        },
+        {
+          "name": "Station Road",
+          "numbers": null
+        },
+        {
+          "name": "Sydney Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Spencer Street",
+          "numbers": null
+        },
+        {
+          "name": "St James Street",
+          "numbers": null
+        },
+        {
+          "name": "Spooner Road",
+          "numbers": null
+        },
+        {
+          "name": "Talbot Street",
+          "numbers": null
+        },
+        {
+          "name": "Thomas Johnson Close",
+          "numbers": null
+        },
+        {
+          "name": "Trafford Road",
+          "numbers": "odds 1-69, evens 2-44"
+        },
+        {
+          "name": "The Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Vane Street",
+          "numbers": null
+        },
+        {
+          "name": "Vernon Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Vine Street",
+          "numbers": null
+        },
+        {
+          "name": "Wade Close",
+          "numbers": null
+        },
+        {
+          "name": "Wade House",
+          "numbers": null
+        },
+        {
+          "name": "Waterslea",
+          "numbers": null
+        },
+        {
+          "name": "Watson Street",
+          "numbers": null
+        },
+        {
+          "name": "Wesley Street",
+          "numbers": null
+        },
+        {
+          "name": "Wilham Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Willan Road",
+          "numbers": null
+        },
+        {
+          "name": "Wycliffe Street",
+          "numbers": null
+        }
+      ],
+      "evidence": "Transcribed from the Salford City Council page 'Selective licensing in Eccles, Barton and Winton', section headed 'Eccles, Barton and Winton - street list' (page last updated 6 August 2026). The page states the scheme commenced 1 September 2022 and ends 31 August 2027, matching the linked s.83 scheme declaration PDF (/media/397938/), which confirms the designation was made 24 May 2022 and commences 1 September 2022 for five years. The declaration PDF itself lists only the boundary roads, so the webpage street list is the council's published schedule."
+    },
+    {
+      "match": {
+        "type": "selective",
+        "start": "2026-01-21",
+        "end": "2031-01-20"
+      },
+      "sourceUrl": "https://www.salford.gov.uk/housing/information-for-landlords/landlord-licensing/areas-covered-by-selective-licensing/selective-licensing-in-broughton-kersal-and-broughton-park/",
+      "confidence": "official-council-page",
+      "streets": [
+        {
+          "name": "Acer Grove",
+          "numbers": null
+        },
+        {
+          "name": "Agnes Street",
+          "numbers": null
+        },
+        {
+          "name": "Ashbourne Grove",
+          "numbers": null
+        },
+        {
+          "name": "Avebury Close",
+          "numbers": null
+        },
+        {
+          "name": "Axford Close",
+          "numbers": null
+        },
+        {
+          "name": "Basten Drive",
+          "numbers": null
+        },
+        {
+          "name": "Baydon Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Beckett Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Bengairn, Murray Street",
+          "numbers": null
+        },
+        {
+          "name": "Bennett Drive",
+          "numbers": null
+        },
+        {
+          "name": "Betula Grove",
+          "numbers": null
+        },
+        {
+          "name": "Bevendon Square",
+          "numbers": null
+        },
+        {
+          "name": "Bispham Grove",
+          "numbers": null
+        },
+        {
+          "name": "Bower Street",
+          "numbers": null
+        },
+        {
+          "name": "Bowker Street",
+          "numbers": null
+        },
+        {
+          "name": "Briardene (back of Hilton Street)",
+          "numbers": null
+        },
+        {
+          "name": "Bristol Street",
+          "numbers": null
+        },
+        {
+          "name": "Broughton Green Square",
+          "numbers": null
+        },
+        {
+          "name": "Buckfast Walk",
+          "numbers": null
+        },
+        {
+          "name": "Buddleia Grove",
+          "numbers": null
+        },
+        {
+          "name": "Buile Street",
+          "numbers": null
+        },
+        {
+          "name": "Bury New Road",
+          "numbers": "* please email landlord.licensing@salford.gov.uk to check if your property on Bury New Road is on the list"
+        },
+        {
+          "name": "Carnavon Street",
+          "numbers": null
+        },
+        {
+          "name": "Cheshill Court",
+          "numbers": null
+        },
+        {
+          "name": "Chisledon Avenue",
+          "numbers": null
+        },
+        {
+          "name": "City View (Highclere Avenue)",
+          "numbers": null
+        },
+        {
+          "name": "Cleveleys Grove",
+          "numbers": null
+        },
+        {
+          "name": "Cliff Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Cliff Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Cliff Grange",
+          "numbers": null
+        },
+        {
+          "name": "Clivia Grove",
+          "numbers": null
+        },
+        {
+          "name": "Croft Bank",
+          "numbers": null
+        },
+        {
+          "name": "Curzon Road",
+          "numbers": null
+        },
+        {
+          "name": "Dixon Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Devonshire Street",
+          "numbers": null
+        },
+        {
+          "name": "Donohue Close",
+          "numbers": null
+        },
+        {
+          "name": "Dorothy Street",
+          "numbers": null
+        },
+        {
+          "name": "Douglas Street",
+          "numbers": null
+        },
+        {
+          "name": "Dudley Street",
+          "numbers": null
+        },
+        {
+          "name": "Duncan Street",
+          "numbers": null
+        },
+        {
+          "name": "Evergreen Mews",
+          "numbers": null
+        },
+        {
+          "name": "Everleigh Drive",
+          "numbers": null
+        },
+        {
+          "name": "Fuchsia Grove",
+          "numbers": null
+        },
+        {
+          "name": "Gainsborough Street",
+          "numbers": null
+        },
+        {
+          "name": "Genista Grove",
+          "numbers": null
+        },
+        {
+          "name": "Grassfield Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Great Cheetham St East",
+          "numbers": null
+        },
+        {
+          "name": "Great Cheetham St West",
+          "numbers": null
+        },
+        {
+          "name": "Great Clowes Street",
+          "numbers": "234 onwards and 237 onwards"
+        },
+        {
+          "name": "Grecian Street North",
+          "numbers": null
+        },
+        {
+          "name": "Green View",
+          "numbers": null
+        },
+        {
+          "name": "Greencroft way",
+          "numbers": null
+        },
+        {
+          "name": "Griffin Street",
+          "numbers": null
+        },
+        {
+          "name": "Hadfield Street",
+          "numbers": null
+        },
+        {
+          "name": "Hamilton Street",
+          "numbers": null
+        },
+        {
+          "name": "Hartis Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Heaton Street",
+          "numbers": null
+        },
+        {
+          "name": "Highclere Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Hill Street",
+          "numbers": null
+        },
+        {
+          "name": "Hilton Street North",
+          "numbers": null
+        },
+        {
+          "name": "Hope Street",
+          "numbers": null
+        },
+        {
+          "name": "Howe Street",
+          "numbers": null
+        },
+        {
+          "name": "Hugh Oldham Drive",
+          "numbers": null
+        },
+        {
+          "name": "Ilex Grove",
+          "numbers": null
+        },
+        {
+          "name": "Inghamwood Close",
+          "numbers": null
+        },
+        {
+          "name": "Japan Street",
+          "numbers": null
+        },
+        {
+          "name": "Kalmia Grove",
+          "numbers": null
+        },
+        {
+          "name": "Kempton House",
+          "numbers": null
+        },
+        {
+          "name": "Kimberley Street",
+          "numbers": null
+        },
+        {
+          "name": "King Street",
+          "numbers": null
+        },
+        {
+          "name": "Kipling Street",
+          "numbers": null
+        },
+        {
+          "name": "Knoll Street",
+          "numbers": null
+        },
+        {
+          "name": "Leaf Cottage (Oak Road)",
+          "numbers": null
+        },
+        {
+          "name": "Leicester Road",
+          "numbers": "odds to 61, evens to 82"
+        },
+        {
+          "name": "Leicester Walk",
+          "numbers": null
+        },
+        {
+          "name": "Lower Broughton Road",
+          "numbers": "302 onwards, 349 onwards"
+        },
+        {
+          "name": "Lyneham Walk",
+          "numbers": null
+        },
+        {
+          "name": "Malimson Bourne (Hilton Street North)",
+          "numbers": null
+        },
+        {
+          "name": "Mandley Park Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Manley Street",
+          "numbers": null
+        },
+        {
+          "name": "Manton Close",
+          "numbers": null
+        },
+        {
+          "name": "Marie Street",
+          "numbers": null
+        },
+        {
+          "name": "Marlborough Road",
+          "numbers": null
+        },
+        {
+          "name": "Marsland Street North",
+          "numbers": null
+        },
+        {
+          "name": "Marsland Street South",
+          "numbers": null
+        },
+        {
+          "name": "Maudsley Street",
+          "numbers": null
+        },
+        {
+          "name": "Maysmith Mews",
+          "numbers": null
+        },
+        {
+          "name": "Milan Street",
+          "numbers": null
+        },
+        {
+          "name": "Mildred Street",
+          "numbers": null
+        },
+        {
+          "name": "Moston Street",
+          "numbers": null
+        },
+        {
+          "name": "Murray Street",
+          "numbers": null
+        },
+        {
+          "name": "New Devonshire Square",
+          "numbers": null
+        },
+        {
+          "name": "Nile Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Norman Road",
+          "numbers": null
+        },
+        {
+          "name": "Northumberland Street",
+          "numbers": null
+        },
+        {
+          "name": "Norton Street",
+          "numbers": null
+        },
+        {
+          "name": "Oak Road",
+          "numbers": null
+        },
+        {
+          "name": "Oakhill Court",
+          "numbers": null
+        },
+        {
+          "name": "Orient Street",
+          "numbers": null
+        },
+        {
+          "name": "Pennon Close",
+          "numbers": null
+        },
+        {
+          "name": "Pimlico Close",
+          "numbers": null
+        },
+        {
+          "name": "Priory Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Priory Grove",
+          "numbers": null
+        },
+        {
+          "name": "Priory Place",
+          "numbers": null
+        },
+        {
+          "name": "Pyramid Court",
+          "numbers": null
+        },
+        {
+          "name": "Rialto Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Rigby Walk",
+          "numbers": null
+        },
+        {
+          "name": "Rigby Street",
+          "numbers": null
+        },
+        {
+          "name": "Riversdale",
+          "numbers": null
+        },
+        {
+          "name": "Rock Bank",
+          "numbers": null
+        },
+        {
+          "name": "Rock Street",
+          "numbers": null
+        },
+        {
+          "name": "Roman Court",
+          "numbers": null
+        },
+        {
+          "name": "Rosa Grove",
+          "numbers": null
+        },
+        {
+          "name": "Rosemary Grove",
+          "numbers": null
+        },
+        {
+          "name": "Rowan Way",
+          "numbers": null
+        },
+        {
+          "name": "Rudyard Street",
+          "numbers": null
+        },
+        {
+          "name": "Samian Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Sandringham Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Sarina Court",
+          "numbers": null
+        },
+        {
+          "name": "Scarr Wheel",
+          "numbers": null
+        },
+        {
+          "name": "Scovell Street",
+          "numbers": null
+        },
+        {
+          "name": "Southam Street",
+          "numbers": null
+        },
+        {
+          "name": "St James Road",
+          "numbers": null
+        },
+        {
+          "name": "St Johns Court",
+          "numbers": null
+        },
+        {
+          "name": "St Johns Street",
+          "numbers": null
+        },
+        {
+          "name": "Stoney Knoll",
+          "numbers": null
+        },
+        {
+          "name": "Symons Street",
+          "numbers": null
+        },
+        {
+          "name": "Tansey Grove",
+          "numbers": null
+        },
+        {
+          "name": "Tetlow Lane",
+          "numbers": null
+        },
+        {
+          "name": "The Bails",
+          "numbers": null
+        },
+        {
+          "name": "The Polygon",
+          "numbers": null
+        },
+        {
+          "name": "The Priory",
+          "numbers": null
+        },
+        {
+          "name": "Thirsk Mews",
+          "numbers": null
+        },
+        {
+          "name": "Todd Street",
+          "numbers": null
+        },
+        {
+          "name": "Topfield Grove",
+          "numbers": null
+        },
+        {
+          "name": "Tully Street",
+          "numbers": null
+        },
+        {
+          "name": "Turner Street",
+          "numbers": null
+        },
+        {
+          "name": "Village Street",
+          "numbers": null
+        },
+        {
+          "name": "Vinca Grove",
+          "numbers": null
+        },
+        {
+          "name": "Vincent Street",
+          "numbers": null
+        },
+        {
+          "name": "Weatherall Street North",
+          "numbers": null
+        },
+        {
+          "name": "Welbeck Grove",
+          "numbers": null
+        },
+        {
+          "name": "Wellington Street East",
+          "numbers": null
+        },
+        {
+          "name": "Wellington Street West",
+          "numbers": null
+        },
+        {
+          "name": "Wiltshire Street",
+          "numbers": null
+        },
+        {
+          "name": "Winterford Road",
+          "numbers": null
+        },
+        {
+          "name": "Yew Street",
+          "numbers": null
+        }
+      ],
+      "evidence": "Transcribed from the Salford City Council page 'Selective Licensing in Broughton, Kersal and Broughton Park', section headed 'Street list' (page last updated 21 January 2026). The linked s.83 scheme declaration PDF (/media/cmld1zt2/) confirms the designation was made 20 October 2025, commences 21 January 2026 and lasts five years; that notice gives only boundary roads, so the webpage street list is the council's published schedule. Bury New Road is flagged by the council with an asterisk as only partially included."
+    }
+  ]
+}

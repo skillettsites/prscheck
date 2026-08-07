@@ -1,0 +1,430 @@
+{
+  "gss": "E06000032",
+  "council": "Luton Borough Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "start": "2026-06-01",
+        "end": "2029-02-04"
+      },
+      "correctedDates": {
+        "start": "2026-06-01",
+        "end": "2029-02-04"
+      },
+      "sourceUrl": "https://www.luton.gov.uk/sites/default/files/2026-05/roads-within-the-selective-licensing-area.pdf",
+      "confidence": "official-pdf",
+      "streets": [
+        {
+          "name": "Adelaide Street",
+          "numbers": null
+        },
+        {
+          "name": "Albert Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Albert Road",
+          "numbers": null
+        },
+        {
+          "name": "Alma Link",
+          "numbers": null
+        },
+        {
+          "name": "Alma Street",
+          "numbers": null
+        },
+        {
+          "name": "Alton Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Alton Retreat",
+          "numbers": null
+        },
+        {
+          "name": "Alton Road",
+          "numbers": null
+        },
+        {
+          "name": "Arthur Street",
+          "numbers": null
+        },
+        {
+          "name": "Ashton Road",
+          "numbers": null
+        },
+        {
+          "name": "Bailey Street",
+          "numbers": null
+        },
+        {
+          "name": "Baker Street",
+          "numbers": null
+        },
+        {
+          "name": "Barbers Lane",
+          "numbers": null
+        },
+        {
+          "name": "Bute Street",
+          "numbers": null
+        },
+        {
+          "name": "Buxton Road",
+          "numbers": null
+        },
+        {
+          "name": "Cambridge Street",
+          "numbers": null
+        },
+        {
+          "name": "Cardiff Grove",
+          "numbers": null
+        },
+        {
+          "name": "Cardiff Road",
+          "numbers": null
+        },
+        {
+          "name": "Cardigan Street",
+          "numbers": null
+        },
+        {
+          "name": "Castle Street",
+          "numbers": null
+        },
+        {
+          "name": "Chapel Street",
+          "numbers": null
+        },
+        {
+          "name": "Chase Street",
+          "numbers": null
+        },
+        {
+          "name": "Cheapside",
+          "numbers": null
+        },
+        {
+          "name": "Chequer Street",
+          "numbers": null
+        },
+        {
+          "name": "Cherry Gate Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Chobham Street",
+          "numbers": null
+        },
+        {
+          "name": "Chobham Walk",
+          "numbers": null
+        },
+        {
+          "name": "Collingdon Street",
+          "numbers": null
+        },
+        {
+          "name": "Cowper Street",
+          "numbers": null
+        },
+        {
+          "name": "Crawley Green Road",
+          "numbers": "Even numbers: 2 to 14"
+        },
+        {
+          "name": "Cumberland Street",
+          "numbers": null
+        },
+        {
+          "name": "Cutenhoe Road",
+          "numbers": null
+        },
+        {
+          "name": "Downs Road",
+          "numbers": null
+        },
+        {
+          "name": "Dumfries Street",
+          "numbers": "Flats at 2, Flats at 4 Spring Place, Flats at Counting House Mews, Flats at Dumfries Court; Even numbers: 60 to 74; Odd numbers: 3 to 27, 43 to 55"
+        },
+        {
+          "name": "Dunstable Place",
+          "numbers": null
+        },
+        {
+          "name": "Dunstable Road",
+          "numbers": "Flats at 18 to 20 Britannic House, Flats at 3 - Premiere House; Even numbers: 6 to 14"
+        },
+        {
+          "name": "Elizabeth Street",
+          "numbers": null
+        },
+        {
+          "name": "Essex Close",
+          "numbers": null
+        },
+        {
+          "name": "Flowers Way",
+          "numbers": null
+        },
+        {
+          "name": "George Street",
+          "numbers": null
+        },
+        {
+          "name": "George Street West",
+          "numbers": null
+        },
+        {
+          "name": "Gladstone Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Gordon Street",
+          "numbers": null
+        },
+        {
+          "name": "Grove Road",
+          "numbers": null
+        },
+        {
+          "name": "Guildford Street",
+          "numbers": null
+        },
+        {
+          "name": "Harcourt Street",
+          "numbers": null
+        },
+        {
+          "name": "Hastings Street",
+          "numbers": null
+        },
+        {
+          "name": "Hibbert Street",
+          "numbers": null
+        },
+        {
+          "name": "Holly Street",
+          "numbers": null
+        },
+        {
+          "name": "Inkerman Street",
+          "numbers": null
+        },
+        {
+          "name": "John Street",
+          "numbers": null
+        },
+        {
+          "name": "Kelvin Close",
+          "numbers": null
+        },
+        {
+          "name": "King Street",
+          "numbers": null
+        },
+        {
+          "name": "Kingsland Road",
+          "numbers": null
+        },
+        {
+          "name": "Langley Street",
+          "numbers": null
+        },
+        {
+          "name": "Latimer Road",
+          "numbers": null
+        },
+        {
+          "name": "Lea Road",
+          "numbers": null
+        },
+        {
+          "name": "Library Road",
+          "numbers": null
+        },
+        {
+          "name": "Liverpool Road",
+          "numbers": null
+        },
+        {
+          "name": "London Road",
+          "numbers": "Odd numbers: 3 to 151, Flats at Tavistock Court, Flats at Gardner Court, 1 to 5 Uplands Court"
+        },
+        {
+          "name": "Ludlow Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Manchester Street",
+          "numbers": null
+        },
+        {
+          "name": "Manor Road",
+          "numbers": null
+        },
+        {
+          "name": "May Street",
+          "numbers": null
+        },
+        {
+          "name": "Melson Street",
+          "numbers": null
+        },
+        {
+          "name": "Mill Street",
+          "numbers": null
+        },
+        {
+          "name": "Napier Road",
+          "numbers": null
+        },
+        {
+          "name": "New Bedford Road",
+          "numbers": "Even numbers: 38 to 46, 50 to 58; Odd numbers: 1A, 7A, 11A"
+        },
+        {
+          "name": "New Town Street",
+          "numbers": null
+        },
+        {
+          "name": "Old School Mews",
+          "numbers": null
+        },
+        {
+          "name": "Ormsby Close",
+          "numbers": null
+        },
+        {
+          "name": "Osborne Road",
+          "numbers": null
+        },
+        {
+          "name": "Oxford Road",
+          "numbers": null
+        },
+        {
+          "name": "Park Street",
+          "numbers": null
+        },
+        {
+          "name": "Park Street West",
+          "numbers": null
+        },
+        {
+          "name": "Peel Street",
+          "numbers": null
+        },
+        {
+          "name": "Princess Street",
+          "numbers": null
+        },
+        {
+          "name": "Queens Close",
+          "numbers": null
+        },
+        {
+          "name": "Rothesay Road",
+          "numbers": null
+        },
+        {
+          "name": "Seymour Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Seymour Road",
+          "numbers": null
+        },
+        {
+          "name": "Somersby Close",
+          "numbers": null
+        },
+        {
+          "name": "St Pauls Gardens",
+          "numbers": null
+        },
+        {
+          "name": "St Pauls Road",
+          "numbers": null
+        },
+        {
+          "name": "Strathmore Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Strathmore Walk",
+          "numbers": null
+        },
+        {
+          "name": "Stuart Place",
+          "numbers": null
+        },
+        {
+          "name": "Stuart Street",
+          "numbers": null
+        },
+        {
+          "name": "Surrey Street",
+          "numbers": null
+        },
+        {
+          "name": "Tavistock Crescent",
+          "numbers": null
+        },
+        {
+          "name": "Tavistock Street",
+          "numbers": null
+        },
+        {
+          "name": "Tennyson Road",
+          "numbers": null
+        },
+        {
+          "name": "Townsley Close",
+          "numbers": null
+        },
+        {
+          "name": "Union Street",
+          "numbers": null
+        },
+        {
+          "name": "Upper George Street",
+          "numbers": null
+        },
+        {
+          "name": "Wellington Street",
+          "numbers": "Even numbers: 6, 14 to 18, 22, 26 to 32, 36 to 50, 56 to 58, 66, 70 to 72, 76 to 78, 80 to 108, 114 to 128; Odd numbers: 7 to 15, 19A, 19B, 25C, 29, 39A, 39B, 41 to 43, 47 to 53, 63 to 75, 83A, 89, 93 to 153, Flats at Dukes Court, Flats at Gadsby Court, Flats at Wellington Court"
+        },
+        {
+          "name": "West Hill Road",
+          "numbers": null
+        },
+        {
+          "name": "Windmill Road",
+          "numbers": null
+        },
+        {
+          "name": "Windsor Street",
+          "numbers": "Even numbers: 2 to 22, 28 to 74, Flats at Windsor Court"
+        },
+        {
+          "name": "Windsor Walk",
+          "numbers": null
+        },
+        {
+          "name": "Winsdon Road",
+          "numbers": null
+        },
+        {
+          "name": "Wood Street",
+          "numbers": null
+        }
+      ],
+      "evidence": "Street schedule transcribed from Luton Borough Council's own PDF 'Roads within the selective licensing area' (titled 'Selective licensing South ward (old boundary)', Private Sector Housing team, July 2023), linked from luton.gov.uk/housing/private-tenants-homeowners-landlords/landlords/selective-licensing; 'old boundary' refers to the pre-2023 South ward boundary, which now corresponds to the Town Centre and Park Town areas. 102 roads, 95 'All numbers' and 7 with house-number/flat restrictions transcribed verbatim. Dates: the designation (https://www.luton.gov.uk/sites/default/files/migrated/Housing/Lists/LutonDocuments/PDF/licensing/selective-licensing/selective-licensing-designation-oct-23.pdf) was made 25 October 2023 with a nominal commencement of 5 February 2024 and ceases 4 February 2029; the council's page states the scheme was delayed by a long appeal and 'went live on 1 June 2026'. Both recorded dates are therefore CORRECT, but note the end date was not extended, so the scheme runs only ~2 years 8 months."
+    }
+  ]
+}

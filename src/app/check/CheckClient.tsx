@@ -62,7 +62,12 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   // display string: ~35 live schemes are designated street by street and a
   // postcode cannot resolve them.
   const [addressItems, setAddressItems] = useState<
-    { address: string; street: string | null; streetSource?: "os" | "epc" }[]
+    {
+      address: string;
+      street: string | null;
+      buildingNumber: string | null;
+      streetSource?: "os" | "epc-numbered" | "epc-derived";
+    }[]
   >([]);
   const [addressLoading, setAddressLoading] = useState(false);
   const [manualAddress, setManualAddress] = useState(false);
@@ -192,6 +197,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
           // Survey street is trusted to rule a designation OUT.
           street: selectedItem?.street ?? "",
           streetSource: selectedItem?.streetSource ?? "",
+          houseNumber: selectedItem?.buildingNumber ?? "",
           occupants: occ,
           households: hh,
           attribution: attribution(),

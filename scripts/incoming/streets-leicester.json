@@ -1,0 +1,786 @@
+{
+  "gss": "E06000016",
+  "council": "Leicester City Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "start": "2022-10-10",
+        "end": "2027-10-09"
+      },
+      "sourceUrl": "https://www.leicester.gov.uk/sites/default/files/2026-04/Notice%20of%20designation%20for%20selective%20licensing.pdf",
+      "confidence": "official-pdf",
+      "streets": [
+        {
+          "name": "Abingdon Road",
+          "numbers": null
+        },
+        {
+          "name": "Abingdon Walk",
+          "numbers": null
+        },
+        {
+          "name": "Alma Street",
+          "numbers": null
+        },
+        {
+          "name": "Arundel Street",
+          "numbers": null
+        },
+        {
+          "name": "Ashleigh Road",
+          "numbers": null
+        },
+        {
+          "name": "Balfour Street",
+          "numbers": null
+        },
+        {
+          "name": "Barclay Street",
+          "numbers": null
+        },
+        {
+          "name": "Bartholomew Street",
+          "numbers": null
+        },
+        {
+          "name": "Bassett Street",
+          "numbers": null
+        },
+        {
+          "name": "Battenberg Road",
+          "numbers": null
+        },
+        {
+          "name": "Beaconsfield Road",
+          "numbers": null
+        },
+        {
+          "name": "Beatrice Road",
+          "numbers": null
+        },
+        {
+          "name": "Beckingham Road",
+          "numbers": null
+        },
+        {
+          "name": "Biddulph Ave",
+          "numbers": "1 -9 not 1A"
+        },
+        {
+          "name": "Biddulph Street",
+          "numbers": null
+        },
+        {
+          "name": "Bisley Street",
+          "numbers": null
+        },
+        {
+          "name": "Blue Fox Close",
+          "numbers": null
+        },
+        {
+          "name": "Bolton Road",
+          "numbers": null
+        },
+        {
+          "name": "Bonchurch Street",
+          "numbers": null
+        },
+        {
+          "name": "Borlace Street",
+          "numbers": null
+        },
+        {
+          "name": "Bosworth Street",
+          "numbers": null
+        },
+        {
+          "name": "Bramley Road",
+          "numbers": null
+        },
+        {
+          "name": "Briton Street",
+          "numbers": "3 - 43 odd and 8 - 38 even"
+        },
+        {
+          "name": "Brooksby Street",
+          "numbers": null
+        },
+        {
+          "name": "Browning Street",
+          "numbers": null
+        },
+        {
+          "name": "Bruce Street",
+          "numbers": null
+        },
+        {
+          "name": "Cambridge Street",
+          "numbers": null
+        },
+        {
+          "name": "Canterbury Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Carlisle Street",
+          "numbers": null
+        },
+        {
+          "name": "Catesby Street",
+          "numbers": null
+        },
+        {
+          "name": "Cavendish Mews",
+          "numbers": null
+        },
+        {
+          "name": "Cavendish Road",
+          "numbers": null
+        },
+        {
+          "name": "Cedar Road",
+          "numbers": null
+        },
+        {
+          "name": "Celt Street",
+          "numbers": null
+        },
+        {
+          "name": "Central Road",
+          "numbers": null
+        },
+        {
+          "name": "Chandos Street",
+          "numbers": null
+        },
+        {
+          "name": "Chartley Road",
+          "numbers": null
+        },
+        {
+          "name": "Chaucer Street",
+          "numbers": null
+        },
+        {
+          "name": "Cherryleas Drive",
+          "numbers": null
+        },
+        {
+          "name": "Church Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Clifford Street",
+          "numbers": null
+        },
+        {
+          "name": "Clifton Road",
+          "numbers": null
+        },
+        {
+          "name": "Compton Road",
+          "numbers": null
+        },
+        {
+          "name": "Connaught Street",
+          "numbers": null
+        },
+        {
+          "name": "Cranmer Street",
+          "numbers": null
+        },
+        {
+          "name": "Cromer Street",
+          "numbers": null
+        },
+        {
+          "name": "Daneshill Road",
+          "numbers": null
+        },
+        {
+          "name": "Dannett Street",
+          "numbers": null
+        },
+        {
+          "name": "Dannett Walk",
+          "numbers": null
+        },
+        {
+          "name": "Danvers Road",
+          "numbers": null
+        },
+        {
+          "name": "Dashwood Road",
+          "numbers": null
+        },
+        {
+          "name": "Denton Street",
+          "numbers": "1 -3 odd and 2 - 4 - even"
+        },
+        {
+          "name": "Devana Road",
+          "numbers": "1- 63a odd and 2 -10a even"
+        },
+        {
+          "name": "Draper Street",
+          "numbers": null
+        },
+        {
+          "name": "Dulverton Road",
+          "numbers": null
+        },
+        {
+          "name": "Dunster Street",
+          "numbers": null
+        },
+        {
+          "name": "Dunton Street",
+          "numbers": null
+        },
+        {
+          "name": "Eastleigh Road",
+          "numbers": null
+        },
+        {
+          "name": "Empire Road",
+          "numbers": null
+        },
+        {
+          "name": "Equity Road",
+          "numbers": null
+        },
+        {
+          "name": "Evington Footway",
+          "numbers": null
+        },
+        {
+          "name": "Evington Place",
+          "numbers": null
+        },
+        {
+          "name": "Evington Road",
+          "numbers": "1 -159 odd and 2 - 118 even"
+        },
+        {
+          "name": "Flora Street",
+          "numbers": null
+        },
+        {
+          "name": "Fosse Road Central",
+          "numbers": null
+        },
+        {
+          "name": "Fosse Road North",
+          "numbers": null
+        },
+        {
+          "name": "Fosse Road South",
+          "numbers": "1 -281 odd and 2a - 256 even"
+        },
+        {
+          "name": "Franche Road",
+          "numbers": null
+        },
+        {
+          "name": "Gaul Street",
+          "numbers": null
+        },
+        {
+          "name": "Glenfield Road",
+          "numbers": "1 -89 odd and 2 - 50 even"
+        },
+        {
+          "name": "Glenfield Road East",
+          "numbers": null
+        },
+        {
+          "name": "Guilford Street",
+          "numbers": null
+        },
+        {
+          "name": "Haddenham Road",
+          "numbers": "3 -135 odd and 2 - 130 even"
+        },
+        {
+          "name": "Hamilton Street",
+          "numbers": null
+        },
+        {
+          "name": "Hardwick Court",
+          "numbers": null
+        },
+        {
+          "name": "Harrow Road",
+          "numbers": null
+        },
+        {
+          "name": "Hawthorne Street",
+          "numbers": null
+        },
+        {
+          "name": "Henton Road",
+          "numbers": null
+        },
+        {
+          "name": "Herschell Street",
+          "numbers": null
+        },
+        {
+          "name": "Hinckley Road",
+          "numbers": "7 -265 odd and 2 - 238 even"
+        },
+        {
+          "name": "Hoby Street",
+          "numbers": null
+        },
+        {
+          "name": "Hopefield Road",
+          "numbers": null
+        },
+        {
+          "name": "Hughenden Drive",
+          "numbers": null
+        },
+        {
+          "name": "Imperial Avenue",
+          "numbers": "3 -37 odd"
+        },
+        {
+          "name": "Ingle Street",
+          "numbers": null
+        },
+        {
+          "name": "Ivanhoe Street",
+          "numbers": null
+        },
+        {
+          "name": "Ivy Road",
+          "numbers": null
+        },
+        {
+          "name": "Kate Street",
+          "numbers": null
+        },
+        {
+          "name": "Kimberley Road",
+          "numbers": "3 -49 odd and 2 - 74 even"
+        },
+        {
+          "name": "King Richards Road",
+          "numbers": null
+        },
+        {
+          "name": "Kirby Road",
+          "numbers": null
+        },
+        {
+          "name": "Knighton Fields Road West",
+          "numbers": "7 -103 odd and 2 - 138 even"
+        },
+        {
+          "name": "Lambert Road",
+          "numbers": null
+        },
+        {
+          "name": "Latimer Street",
+          "numbers": null
+        },
+        {
+          "name": "Laurel Road",
+          "numbers": null
+        },
+        {
+          "name": "Lavender Road",
+          "numbers": null
+        },
+        {
+          "name": "Linkway Gardens",
+          "numbers": null
+        },
+        {
+          "name": "Livingstone Street",
+          "numbers": null
+        },
+        {
+          "name": "London Road",
+          "numbers": "148a - 220 even"
+        },
+        {
+          "name": "Lonsdale Street",
+          "numbers": null
+        },
+        {
+          "name": "Lothair Road",
+          "numbers": null
+        },
+        {
+          "name": "Luther Street",
+          "numbers": null
+        },
+        {
+          "name": "Lyme Road",
+          "numbers": null
+        },
+        {
+          "name": "Mantle Road",
+          "numbers": null
+        },
+        {
+          "name": "Marlow Road",
+          "numbers": "1 -37 odd and 2 - 36 even"
+        },
+        {
+          "name": "Marshall Street",
+          "numbers": null
+        },
+        {
+          "name": "Mayfield Road",
+          "numbers": null
+        },
+        {
+          "name": "Merton Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Minehead Street",
+          "numbers": null
+        },
+        {
+          "name": "Mostyn Street",
+          "numbers": null
+        },
+        {
+          "name": "Mountcastle Road",
+          "numbers": null
+        },
+        {
+          "name": "Narborough Road",
+          "numbers": "1 -259 odd and 2 - 330 even"
+        },
+        {
+          "name": "New Park Road",
+          "numbers": null
+        },
+        {
+          "name": "Newport Street",
+          "numbers": null
+        },
+        {
+          "name": "Noble Street",
+          "numbers": null
+        },
+        {
+          "name": "Mundella Street",
+          "numbers": null
+        },
+        {
+          "name": "Muriel Road",
+          "numbers": null
+        },
+        {
+          "name": "Myrtle Road",
+          "numbers": null
+        },
+        {
+          "name": "Noel Street",
+          "numbers": null
+        },
+        {
+          "name": "Nook Street",
+          "numbers": null
+        },
+        {
+          "name": "Norfolk Street",
+          "numbers": "11 -61 odd and 94 - 96 even"
+        },
+        {
+          "name": "Norman Street",
+          "numbers": null
+        },
+        {
+          "name": "Nugent Street",
+          "numbers": null
+        },
+        {
+          "name": "Nutfield Road",
+          "numbers": null
+        },
+        {
+          "name": "Oban Street",
+          "numbers": null
+        },
+        {
+          "name": "Oliver Street",
+          "numbers": null
+        },
+        {
+          "name": "Onslow Street",
+          "numbers": null
+        },
+        {
+          "name": "Oxford Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Paton Street",
+          "numbers": null
+        },
+        {
+          "name": "Pool Road",
+          "numbers": null
+        },
+        {
+          "name": "Porlock Street",
+          "numbers": null
+        },
+        {
+          "name": "Raymond Road",
+          "numbers": null
+        },
+        {
+          "name": "Repton Street",
+          "numbers": null
+        },
+        {
+          "name": "Ridley Street",
+          "numbers": null
+        },
+        {
+          "name": "Ripon Street",
+          "numbers": null
+        },
+        {
+          "name": "Rivers Street",
+          "numbers": null
+        },
+        {
+          "name": "Roman Street",
+          "numbers": null
+        },
+        {
+          "name": "Roslyn Street",
+          "numbers": null
+        },
+        {
+          "name": "Rowan Street",
+          "numbers": null
+        },
+        {
+          "name": "Ruby Street",
+          "numbers": null
+        },
+        {
+          "name": "Ruding Road",
+          "numbers": null
+        },
+        {
+          "name": "Ruding Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Rugby Street",
+          "numbers": null
+        },
+        {
+          "name": "Saffron Hill Road",
+          "numbers": null
+        },
+        {
+          "name": "Saffron Lane",
+          "numbers": "179 -233 odd and 182 - 216 even"
+        },
+        {
+          "name": "Saxon Street",
+          "numbers": null
+        },
+        {
+          "name": "Shaftesbury Road",
+          "numbers": null
+        },
+        {
+          "name": "Shakespeare Street",
+          "numbers": null
+        },
+        {
+          "name": "Sheffield Street",
+          "numbers": null
+        },
+        {
+          "name": "Sheridan Street",
+          "numbers": null
+        },
+        {
+          "name": "Skipworth Street",
+          "numbers": null
+        },
+        {
+          "name": "St Albans Road",
+          "numbers": null
+        },
+        {
+          "name": "St Dunstan Road",
+          "numbers": null
+        },
+        {
+          "name": "Tudor Close",
+          "numbers": null
+        },
+        {
+          "name": "St James Road",
+          "numbers": null
+        },
+        {
+          "name": "Tyndale Street",
+          "numbers": null
+        },
+        {
+          "name": "Tyrrell Street",
+          "numbers": null
+        },
+        {
+          "name": "Upperton Rise",
+          "numbers": null
+        },
+        {
+          "name": "Upperton Road",
+          "numbers": "1 -181 odd and 6 - 118 even"
+        },
+        {
+          "name": "Vaughan Street",
+          "numbers": null
+        },
+        {
+          "name": "Vernon Street",
+          "numbers": null
+        },
+        {
+          "name": "Victoria Terrace",
+          "numbers": null
+        },
+        {
+          "name": "Walton Street",
+          "numbers": null
+        },
+        {
+          "name": "Warren Street",
+          "numbers": null
+        },
+        {
+          "name": "St James Terrace",
+          "numbers": null
+        },
+        {
+          "name": "St Pauls Road",
+          "numbers": null
+        },
+        {
+          "name": "St Peters Road",
+          "numbers": "25 -87 odd and 36 – 88a even"
+        },
+        {
+          "name": "St Stephens Road",
+          "numbers": null
+        },
+        {
+          "name": "Stephenson Drive",
+          "numbers": "138 - 150 even"
+        },
+        {
+          "name": "Storey Street",
+          "numbers": null
+        },
+        {
+          "name": "Stretton Road",
+          "numbers": null
+        },
+        {
+          "name": "Stuart Street",
+          "numbers": null
+        },
+        {
+          "name": "Sutherland Street",
+          "numbers": null
+        },
+        {
+          "name": "Sweetbriar Road",
+          "numbers": null
+        },
+        {
+          "name": "Sykefield Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Sylvan Street",
+          "numbers": null
+        },
+        {
+          "name": "Taunton Road",
+          "numbers": null
+        },
+        {
+          "name": "Tennyson Street",
+          "numbers": null
+        },
+        {
+          "name": "Tetuan Road",
+          "numbers": null
+        },
+        {
+          "name": "Tewkesbury Street",
+          "numbers": null
+        },
+        {
+          "name": "Thackeray Street",
+          "numbers": null
+        },
+        {
+          "name": "Warwick Street",
+          "numbers": null
+        },
+        {
+          "name": "Wentworth Road",
+          "numbers": null
+        },
+        {
+          "name": "Westcotes Drive",
+          "numbers": "1 -105 odd and 2 - 186 even"
+        },
+        {
+          "name": "Western Road",
+          "numbers": "3 -251a odd and 122a - 278 even"
+        },
+        {
+          "name": "Westleigh Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Westleigh Road",
+          "numbers": null
+        },
+        {
+          "name": "Wilberforce Road",
+          "numbers": null
+        },
+        {
+          "name": "Wilmington Road",
+          "numbers": null
+        },
+        {
+          "name": "Winchester Avenue",
+          "numbers": null
+        },
+        {
+          "name": "Wolverton Road",
+          "numbers": null
+        },
+        {
+          "name": "Woodgate",
+          "numbers": "2 - 88 even"
+        }
+      ],
+      "evidence": "Transcribed from 'Annex A - MAP OF DESIGNATED AREAS AND LISTS OF ROADS WITHIN THE DESIGNATED AREAS' of Leicester City Council's statutory designation notice, linked as 'Read the designation notice' from https://www.leicester.gov.uk/your-community/housing/landlords/selective-licensing/. The notice records the designation as made 7 July 2022, in force 10 October 2022 and ceasing 9 October 2027, covering parts of Stoneygate (East Cluster); Westcotes, Fosse, Braunstone Park & Rowley Fields (West Cluster); and Saffron (South Cluster). Annex A's 'List of Road in the Designated Selective Licensing Areas' runs over three pages as ruled tables with 'Street Name' and 'Included Part Street' columns; pairings were read from the PDF's actual cell borders rather than from flowed text, because plain-text extraction misaligns the wrapped number ranges and mis-assigns them to neighbouring streets (for example it wrongly attaches '3 -37 odd' to Hopefield Road instead of Imperial Avenue). 197 table rows yielded 192 distinct streets; the council's own list repeats Narborough Road, New Park Road, Newport Street, Noble Street and St James Road, and those duplicates are collapsed. 23 distinct streets carry a part-street restriction (24 table rows, one being the repeated Narborough Road entry), reproduced verbatim including the council's irregular spacing and the stray hyphen in Denton Street's '1 -3 odd and 2 - 4 - even'. Streets with a blank 'Included Part Street' cell are designated in full and have numbers null. This is the Part 3 licensing designation, not Leicester's separate Article 4 HMO planning direction."
+    }
+  ]
+}

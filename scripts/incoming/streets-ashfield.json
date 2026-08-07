@@ -1,0 +1,38 @@
+{
+  "gss": "E07000170",
+  "council": "Ashfield District Council",
+  "schemes": [
+    {
+      "match": { "type": "selective", "start": "2022-07-25", "end": "2027-07-24" },
+      "sourceUrl": "https://www.ashfield.gov.uk/selective-licensing-scheme-guide",
+      "confidence": "official-council-page",
+      "streets": [
+        { "name": "Brand Lane", "numbers": null },
+        { "name": "Institute Street", "numbers": null },
+        { "name": "Cooperative Street", "numbers": null },
+        { "name": "Victoria Street", "numbers": null },
+        { "name": "Albert Street", "numbers": null },
+        { "name": "New Lane (Longden Terrace)", "numbers": null },
+        { "name": "High Street", "numbers": null },
+        { "name": "Cross Row", "numbers": null },
+        { "name": "Stoneyford Road", "numbers": "only 317-335" },
+        { "name": "Chatsworth Street", "numbers": null },
+        { "name": "St Michaels Street", "numbers": null },
+        { "name": "Outram Street", "numbers": null },
+        { "name": "North Street", "numbers": null },
+        { "name": "Downing Street", "numbers": null },
+        { "name": "Beighton Street", "numbers": null },
+        { "name": "Morley Street", "numbers": null },
+        { "name": "Lime Street", "numbers": null },
+        { "name": "East Street", "numbers": null },
+        { "name": "Stoney street", "numbers": null },
+        { "name": "Walton Street", "numbers": null },
+        { "name": "Preistsic Road", "numbers": "16-80 Evens side" },
+        { "name": "Bentinck Street", "numbers": null },
+        { "name": "Park Street", "numbers": null },
+        { "name": "Portland Street", "numbers": null }
+      ],
+      "evidence": "Transcribed verbatim from the 'The designated areas' section of Ashfield District Council's own Selective Licensing Scheme Guide, which states the scheme runs 25 July 2022 to 24 July 2027 and lists the streets under two headings: 'Stanton Hill' (first 9 entries above, each suffixed ', Stanton Hill' on the page) and 'Sutton Central (New Cross)' (remaining entries, each suffixed ', Sutton in Ashfield'). Only two entries carry number restrictions, given verbatim: 'Stoneyford Road, Stanton Hill only 317-335' and 'Preistsic Road, Sutton in Ashfield 16-80 Evens side'; all other entries are whole streets. NOTE 1: the council's page lists 'Morley Street, Sutton in Ashfield' TWICE (once between Beighton Street and Lime Street, again between Walton Street and Preistsic Road), so the Sutton Central block has 16 line items but only 15 distinct streets; it is recorded once here. NOTE 2: spelling and case are the council's own and contain apparent typos worth aliasing before matching against an address database: 'Preistsic Road' is almost certainly Priestsic Road, and 'Stoney street' is written with a lowercase 's' by the council. NOTE 3: this is the second Ashfield scheme; a predecessor ran from February 2017 with different boundaries, so pre-2022 street lists must not be reused. The council also publishes boundary maps for each area as DOCX files (uploaded 5 September 2025) but no PDF designation notice with a street schedule was found on the site."
+    }
+  ]
+}

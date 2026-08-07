@@ -1,0 +1,23 @@
+{
+  "gss": "E07000193",
+  "council": "East Staffordshire Borough Council",
+  "schemes": [
+    {
+      "match": { "type": "selective", "start": "2022-09-12", "end": "2027-09-11" },
+      "sourceUrl": "https://www.eaststaffsbc.gov.uk/sites/default/files/docs/housing/landlords/PublicNotice.pdf",
+      "confidence": "official-pdf",
+      "streets": [
+        { "name": "Blackpool Street", "numbers": null },
+        { "name": "Branston Road", "numbers": null },
+        { "name": "Broadway Street", "numbers": null },
+        { "name": "Goodman Street", "numbers": null },
+        { "name": "King Street", "numbers": null },
+        { "name": "Queen Street", "numbers": null },
+        { "name": "Shobnall Street", "numbers": null },
+        { "name": "Uxbridge Street", "numbers": null },
+        { "name": "Waterloo Street", "numbers": null }
+      ],
+      "evidence": "Transcribed verbatim from the council's own signed statutory Public Notice (Housing Act 2004 s.83), 'East Staffordshire Borough Council - Designation of an area for Selective Licensing', hosted on eaststaffsbc.gov.uk. The notice states the Council 'has designated the streets described below for selective licensing' and lists exactly these nine street names in a three-column layout with NO house-number ranges, no odd/even splits and no partial-street wording of any kind. It records that the designation was made on 30 May 2022, comes into force on 12 September 2022 and has effect until 11 September 2027, matching the scheme page at https://www.eaststaffsbc.gov.uk/housing-and-property/landlords/selective-licensing-scheme, which lists the identical nine streets. CAVEAT worth flagging: the council's designation map (https://www.eaststaffsbc.gov.uk/sites/default/files/docs/housing/landlords/designation-map.jpg) highlights only SEGMENTS of several of these roads in blue, and Branston Road, Shobnall Street and Waterloo Street in particular are long roads whose highlighted extent is visibly shorter than the full road. However, no house numbers are published anywhere on the council's site, and neither the legal notice nor the scheme page qualifies any street by number, so numbers are recorded as null rather than inferred from the map. Anyone at the far end of one of the longer roads should be advised to confirm with the council (selectivelicensing@eaststaffsbc.gov.uk / 01283 508523). The council's own site sitemap (915 URLs) was checked and contains only one selective licensing page; the only supporting documents published are this Public Notice, the map image, the licence conditions and the selective licensing policy, none of which contains a numbered street schedule. Note also that a PREVIOUS East Staffordshire scheme covered a partly different set of streets before 12 September 2022, so older street lists must not be reused."
+    }
+  ]
+}

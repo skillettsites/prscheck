@@ -47,7 +47,36 @@ export default function SchemeList({ schemes }: { schemes: Scheme[] }) {
                 <dd className="text-navy-200">{s.wards.join(", ")}</dd>
               </>
             )}
+            {s.streets && s.streets.length > 0 && (
+              <>
+                <dt className="text-navy-500">Designated streets</dt>
+                <dd className="text-navy-200">{s.streets.length}</dd>
+              </>
+            )}
           </dl>
+          {/* Publishing the schedule outright is most of the value on its own.
+              Councils bury these in PDF annexes, so a landlord who just wants to
+              know whether their road is on the list can answer that here without
+              a phone call, whether or not our address matching can place them. */}
+          {s.streets && s.streets.length > 0 && (
+            <details className="mt-3 rounded-lg border border-navy-700 bg-navy-900/40 p-3">
+              <summary className="cursor-pointer text-sm font-medium text-accent-400">
+                Show the {s.streets.length} designated streets
+              </summary>
+              <p className="mt-2 text-xs text-navy-400">
+                Transcribed from the council&apos;s published designation. Where only part of a street is covered, the
+                house numbers are shown exactly as the council writes them.
+              </p>
+              <ul className="mt-3 grid gap-x-6 gap-y-1 text-sm text-navy-200 sm:grid-cols-2">
+                {s.streets.map((st, j) => (
+                  <li key={j}>
+                    {st.name}
+                    {st.numbers && <span className="text-navy-400"> ({st.numbers})</span>}
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
           <p className="mt-3 text-xs text-navy-500">Official local authority licensing designation</p>
         </div>
       ))}

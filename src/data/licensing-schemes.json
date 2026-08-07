@@ -107,7 +107,83 @@
         "areaDescription": "Designated streets only: 9 streets in Stanton Hill and 16 streets in Sutton Central (New Cross), Sutton-in-Ashfield",
         "feeApprox": "£350 per property (£250 accredited)",
         "sourceUrl": "https://www.ashfield.gov.uk/selective-licensing-scheme-guide",
-        "verified": "2026-07-10"
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Brand Lane"
+          },
+          {
+            "name": "Institute Street"
+          },
+          {
+            "name": "Cooperative Street"
+          },
+          {
+            "name": "Victoria Street"
+          },
+          {
+            "name": "Albert Street"
+          },
+          {
+            "name": "New Lane (Longden Terrace)"
+          },
+          {
+            "name": "High Street"
+          },
+          {
+            "name": "Cross Row"
+          },
+          {
+            "name": "Stoneyford Road",
+            "numbers": "only 317-335"
+          },
+          {
+            "name": "Chatsworth Street"
+          },
+          {
+            "name": "St Michaels Street"
+          },
+          {
+            "name": "Outram Street"
+          },
+          {
+            "name": "North Street"
+          },
+          {
+            "name": "Downing Street"
+          },
+          {
+            "name": "Beighton Street"
+          },
+          {
+            "name": "Morley Street"
+          },
+          {
+            "name": "Lime Street"
+          },
+          {
+            "name": "East Street"
+          },
+          {
+            "name": "Stoney street"
+          },
+          {
+            "name": "Walton Street"
+          },
+          {
+            "name": "Preistsic Road",
+            "numbers": "16-80 Evens side"
+          },
+          {
+            "name": "Bentinck Street"
+          },
+          {
+            "name": "Park Street"
+          },
+          {
+            "name": "Portland Street"
+          }
+        ]
       }
     ],
     "notes": "No additional HMO scheme. Street-level; check council street list."
@@ -619,8 +695,156 @@
         "coverage": "streets",
         "areaDescription": "Burnley Wood with Healey Wood, and Leyland Road area (street-defined; council street list + online checker)",
         "feeApprox": "£715 standard (£640 returning)",
-        "sourceUrl": "https://burnley.gov.uk/housing/private-rented-sector/selective-licensing/selective-licensing-in-burnley/",
-        "verified": "2026-07-10"
+        "sourceUrl": "https://burnley.gov.uk/housing/private-rented-sector/selective-licensing/designated-areas-in-burnley/",
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Ash Street"
+          },
+          {
+            "name": "Plumbe Street",
+            "numbers": "24 - 96 Even (Incl) 79 - 97 Odd (Incl)"
+          },
+          {
+            "name": "Branch Road",
+            "numbers": "1 - 123 Odd (Incl) 4 - 50 Even (Incl)"
+          },
+          {
+            "name": "Pine Street"
+          },
+          {
+            "name": "Brunswick Street",
+            "numbers": "83 - 89 Odd (Incl) 82 - 86 Even (Incl)"
+          },
+          {
+            "name": "Reed Street",
+            "numbers": "1 - 103 Odd (Incl) 2 - 100 Even (Incl)"
+          },
+          {
+            "name": "Cedar Street"
+          },
+          {
+            "name": "Springfield Road",
+            "numbers": "57 - 65 Odd (Incl) 98 - 108 Even (Incl)"
+          },
+          {
+            "name": "Dall Street",
+            "numbers": "2 - 104 Even (Incl)"
+          },
+          {
+            "name": "Berry Street"
+          },
+          {
+            "name": "Hornby Street"
+          },
+          {
+            "name": "David Street"
+          },
+          {
+            "name": "Hull Street"
+          },
+          {
+            "name": "Evans Street",
+            "numbers": "2 & 4"
+          },
+          {
+            "name": "Kirkgate",
+            "numbers": "47 & 51"
+          },
+          {
+            "name": "Healey Wood Road"
+          },
+          {
+            "name": "Oxford Road",
+            "numbers": "1 - 61 Odd (Incl)"
+          },
+          {
+            "name": "Laithe Street"
+          },
+          {
+            "name": "Parkinson Street",
+            "numbers": "1 - 95 Odd (Incl) 2 - 100 Even (Incl)"
+          },
+          {
+            "name": "Reservoir Street",
+            "numbers": "1 - 7 Odd (Incl)"
+          },
+          {
+            "name": "Parliament Street",
+            "numbers": "71 - 139 Odd (Incl) 62 - 72 Even (Incl)"
+          },
+          {
+            "name": "Springhill Road.",
+            "numbers": "1 - 15 Odd (Incl)"
+          },
+          {
+            "name": "Adlington Street"
+          },
+          {
+            "name": "Hobart Street"
+          },
+          {
+            "name": "Albert Street"
+          },
+          {
+            "name": "Hunslet Street"
+          },
+          {
+            "name": "Belvedere Road",
+            "numbers": "2-154 even"
+          },
+          {
+            "name": "Leyland Road"
+          },
+          {
+            "name": "Brown Square"
+          },
+          {
+            "name": "Lindsay Street"
+          },
+          {
+            "name": "Church Street",
+            "numbers": "45 & 49"
+          },
+          {
+            "name": "Ormerod Road",
+            "numbers": "99-123 odds"
+          },
+          {
+            "name": "Doris Street",
+            "numbers": "1"
+          },
+          {
+            "name": "Ridge Road"
+          },
+          {
+            "name": "Felix Street"
+          },
+          {
+            "name": "Sandhurst Street"
+          },
+          {
+            "name": "Forest Street"
+          },
+          {
+            "name": "Straight Mile Court"
+          },
+          {
+            "name": "Godley Street"
+          },
+          {
+            "name": "Talbot Street"
+          },
+          {
+            "name": "Hart Street"
+          },
+          {
+            "name": "Thurston Street"
+          },
+          {
+            "name": "Hawk Street"
+          }
+        ]
       },
       {
         "type": "selective",
@@ -630,8 +854,973 @@
         "coverage": "streets",
         "areaDescription": "Five areas: Trinity, Queensgate, Gannow, Daneshouse and Stoneyholme, and Padiham (~3,700 PRS properties; street-defined)",
         "feeApprox": "£750 standard (£670 returning)",
-        "sourceUrl": "https://burnley.gov.uk/housing/private-rented-sector/selective-licensing/selective-licensing-in-burnley/",
-        "verified": "2026-07-10"
+        "sourceUrl": "https://burnley.gov.uk/wp-content/uploads/2023/03/All-areas-street-list-2025.pdf",
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "ABEL STREET",
+            "numbers": "2 to 10, 36, 40 to 60, 64 to 82, 130 to 178 (even)"
+          },
+          {
+            "name": "ABEL STREET",
+            "numbers": "43 to 85, 143 to 151 (odd)"
+          },
+          {
+            "name": "Abinger Street",
+            "numbers": "1-35 (odds)"
+          },
+          {
+            "name": "Accrington Road",
+            "numbers": "8-72 (evens), 260-294 (evens), 35-93 (odds)"
+          },
+          {
+            "name": "Acre Street"
+          },
+          {
+            "name": "Ada Street"
+          },
+          {
+            "name": "Adamson Street",
+            "numbers": "9-41 odds"
+          },
+          {
+            "name": "Ainslie Street"
+          },
+          {
+            "name": "Albion Street"
+          },
+          {
+            "name": "Albion Street",
+            "numbers": "43-123"
+          },
+          {
+            "name": "Alder Street",
+            "numbers": "1-27 (odds)"
+          },
+          {
+            "name": "ALLEN COURT"
+          },
+          {
+            "name": "ALLEN STREET",
+            "numbers": "3 to 21 (odd)"
+          },
+          {
+            "name": "Altham Street"
+          },
+          {
+            "name": "ALTHAM STREET",
+            "numbers": "1 to 23 (odd)"
+          },
+          {
+            "name": "Alwin Street"
+          },
+          {
+            "name": "ANGLE STREET"
+          },
+          {
+            "name": "ARDWICK STREET",
+            "numbers": "4 to 18, 50 to 76 (even), 51 to 87 (odd)"
+          },
+          {
+            "name": "ARLEY GARDENS"
+          },
+          {
+            "name": "Arran Street"
+          },
+          {
+            "name": "Athol Street North",
+            "numbers": "20-60 (evens), 21-57 (odds)"
+          },
+          {
+            "name": "Athol Street South"
+          },
+          {
+            "name": "Baker Street"
+          },
+          {
+            "name": "BANKHALL TERRACE",
+            "numbers": "1 to 11 (odd)"
+          },
+          {
+            "name": "Bar Street"
+          },
+          {
+            "name": "Barden Lane",
+            "numbers": "29-55 & 61-145 odds"
+          },
+          {
+            "name": "Barley Street"
+          },
+          {
+            "name": "Barry Street",
+            "numbers": "2-28 (evens)"
+          },
+          {
+            "name": "Basnett Street",
+            "numbers": "2-16 (evens), 1-31 (odds)"
+          },
+          {
+            "name": "Beech Street"
+          },
+          {
+            "name": "BELFORD STREET",
+            "numbers": "2 to 66 including 38a (even) 13 to 49 (odd)"
+          },
+          {
+            "name": "BELGRAVE STREET",
+            "numbers": "26 to 36 (even)"
+          },
+          {
+            "name": "Bivel Street",
+            "numbers": "11- 39 (odds) 22 and 40"
+          },
+          {
+            "name": "Blannel Street",
+            "numbers": "3 to 3A"
+          },
+          {
+            "name": "BOND STREET",
+            "numbers": "2 to 16 (even)"
+          },
+          {
+            "name": "BOOTH COURT"
+          },
+          {
+            "name": "Boundary Street"
+          },
+          {
+            "name": "Bracewell Street"
+          },
+          {
+            "name": "BRAMBLE PLACE"
+          },
+          {
+            "name": "Bread Street"
+          },
+          {
+            "name": "Brennand Street",
+            "numbers": "2-58 even & 1-89 odds"
+          },
+          {
+            "name": "BRIEF STREET",
+            "numbers": "1 to 15 (odd)"
+          },
+          {
+            "name": "Briercliffe Road",
+            "numbers": "8-116 evens (inc 114a)"
+          },
+          {
+            "name": "Briercliffe Road",
+            "numbers": "41 - 75 odds"
+          },
+          {
+            "name": "Briercliffe Road",
+            "numbers": "129-283 (odds)"
+          },
+          {
+            "name": "Bright Street"
+          },
+          {
+            "name": "Bromsgrove Road"
+          },
+          {
+            "name": "Brook Court"
+          },
+          {
+            "name": "BROUGHAM STREET",
+            "numbers": "1 to 119 (odd) 4, 22 to 38, 42 to 132 (even)"
+          },
+          {
+            "name": "Bruce Street"
+          },
+          {
+            "name": "Brush Street"
+          },
+          {
+            "name": "Buccleuch Street"
+          },
+          {
+            "name": "Bulcock Street"
+          },
+          {
+            "name": "BURLEIGH STREET",
+            "numbers": "4, 20 to 26 (even)"
+          },
+          {
+            "name": "Burnham Gate",
+            "numbers": "127-135 (odds)"
+          },
+          {
+            "name": "Burnley Road",
+            "numbers": "102-126 (evens), 155-173 (odds)"
+          },
+          {
+            "name": "Burns Street"
+          },
+          {
+            "name": "BURNS STREET",
+            "numbers": "49 to 131 (odd) 52 to 82, 88 to 114 (even)"
+          },
+          {
+            "name": "BUTLER STREET"
+          },
+          {
+            "name": "Cairo Street"
+          },
+          {
+            "name": "CAMERON STREET",
+            "numbers": "1 to 25 (odd) 2 to 56 (even)"
+          },
+          {
+            "name": "Canning Street"
+          },
+          {
+            "name": "CANNING STREET",
+            "numbers": "59 to 63 (odd)"
+          },
+          {
+            "name": "Cardinal Street"
+          },
+          {
+            "name": "Cardwell Street"
+          },
+          {
+            "name": "Carter Street",
+            "numbers": "2-28 evens & 1-27 odds30-56 (evens), 29-55 (odds)"
+          },
+          {
+            "name": "CASTLE STREET"
+          },
+          {
+            "name": "Cemetery Road",
+            "numbers": "2-20 (evens), 1-19 (odds)"
+          },
+          {
+            "name": "Chapel House, Florence Street"
+          },
+          {
+            "name": "Clare Street"
+          },
+          {
+            "name": "Claret Close"
+          },
+          {
+            "name": "Cleaver Street",
+            "numbers": "2-46 evens & 3-45 odds"
+          },
+          {
+            "name": "CLEGG STREET EAST",
+            "numbers": "37 to 51 (odd)"
+          },
+          {
+            "name": "CLEGG STREET",
+            "numbers": "1 to 23 (odd) 4 to 14 (even)"
+          },
+          {
+            "name": "Clifton Street",
+            "numbers": "26-36 (evens), 35-53 (odds)"
+          },
+          {
+            "name": "CLIVE STREET",
+            "numbers": "5 to 69 (odd) 8 to 70 (even)"
+          },
+          {
+            "name": "Coal Clough Lane",
+            "numbers": "40-94 (evens), 5-121 (odds)"
+          },
+          {
+            "name": "Cobden Street"
+          },
+          {
+            "name": "Cog Lane",
+            "numbers": "144-354 (evens), 69-229 (odds)"
+          },
+          {
+            "name": "Colin Street",
+            "numbers": "1-3 (odds)"
+          },
+          {
+            "name": "Collinge Street"
+          },
+          {
+            "name": "Colne Road",
+            "numbers": "168-392a evens & 223-257 odds"
+          },
+          {
+            "name": "COLNE ROAD",
+            "numbers": "2, to 16, 34 to 72 to 104, 112 to 124 (including 124 c), 128 to 160 (even)"
+          },
+          {
+            "name": "COLVILLE STREET",
+            "numbers": "9 to 21 (odd) 18 to 48 (even)"
+          },
+          {
+            "name": "Coniston Court"
+          },
+          {
+            "name": "Coniston Street"
+          },
+          {
+            "name": "Cotton Street"
+          },
+          {
+            "name": "Cotton Street",
+            "numbers": "1-19 odds"
+          },
+          {
+            "name": "Coultate Street"
+          },
+          {
+            "name": "CROMWELL STREET",
+            "numbers": "1 to 35, 43 to 69 (odd) 2 to 70 (even)"
+          },
+          {
+            "name": "CRONKSHAW STREET",
+            "numbers": "1 to 35 (odd)"
+          },
+          {
+            "name": "Cross Bank, Hambledon Street"
+          },
+          {
+            "name": "DANE STREET"
+          },
+          {
+            "name": "DANESHOUSE ROAD",
+            "numbers": "1 to 51 (odd) 6 to 30, 36 to 70 (even)"
+          },
+          {
+            "name": "Dean Street"
+          },
+          {
+            "name": "DEVONSHIRE ROAD"
+          },
+          {
+            "name": "DEVONSHIRE TERRACE",
+            "numbers": "1 to 7 (odd)"
+          },
+          {
+            "name": "Dickson Street"
+          },
+          {
+            "name": "Dryden Street",
+            "numbers": "66, 65 and 67 (odds)"
+          },
+          {
+            "name": "Edmund Street"
+          },
+          {
+            "name": "Eldwick Street"
+          },
+          {
+            "name": "Elizabeth Street"
+          },
+          {
+            "name": "Ellis Street"
+          },
+          {
+            "name": "ELM STREET",
+            "numbers": "3, 37 to 73 odd, 2 to 22, 62 to 98"
+          },
+          {
+            "name": "Elmwood Street",
+            "numbers": "22-62 (evens), 13-53 (odds)"
+          },
+          {
+            "name": "ESCOTT GARDENS"
+          },
+          {
+            "name": "EVELYN STREET",
+            "numbers": "2 to 22, 26 & 28 (even) 33 to 53 (odd)"
+          },
+          {
+            "name": "Every Street",
+            "numbers": "78-100 (evens), 1-19 (odds)"
+          },
+          {
+            "name": "EXTWISTLE STREET"
+          },
+          {
+            "name": "Field Street"
+          },
+          {
+            "name": "Florence Street"
+          },
+          {
+            "name": "FOLDS STREET",
+            "numbers": "1, 4"
+          },
+          {
+            "name": "Ford Street"
+          },
+          {
+            "name": "FRANCIS STREET",
+            "numbers": "1 to 49 (odd)"
+          },
+          {
+            "name": "Fraser Street"
+          },
+          {
+            "name": "Furness Street"
+          },
+          {
+            "name": "Gannow Lane",
+            "numbers": "74-136 evens & 67-107 odds"
+          },
+          {
+            "name": "Gill Street"
+          },
+          {
+            "name": "Godiva Street"
+          },
+          {
+            "name": "GORDON STREET",
+            "numbers": "2 to 30, 52 to 120 (even) 17 to 113 (odd)"
+          },
+          {
+            "name": "Graham Street"
+          },
+          {
+            "name": "Granby Street"
+          },
+          {
+            "name": "Grange Street"
+          },
+          {
+            "name": "Grant Street"
+          },
+          {
+            "name": "GRANVILLE STREET"
+          },
+          {
+            "name": "Green Lane",
+            "numbers": "5-43 (odds)"
+          },
+          {
+            "name": "Green Street"
+          },
+          {
+            "name": "GREY STREET",
+            "numbers": "2 to 60, 72 to 98, 148 to 176 (even) 7 to 21, 37 to 43, 47 to 71, 135 to 141 (odd)"
+          },
+          {
+            "name": "Hambledon Street"
+          },
+          {
+            "name": "Hapton Road",
+            "numbers": "2-66 (evens), 1, 41-107 (odds)"
+          },
+          {
+            "name": "Hapton Street",
+            "numbers": "12-20 (evens), 1-15 (odds)"
+          },
+          {
+            "name": "Harley Street"
+          },
+          {
+            "name": "Harold Street",
+            "numbers": "2-32 (evens), 1-55 (odds)"
+          },
+          {
+            "name": "Haulgh Street"
+          },
+          {
+            "name": "Haydock Street"
+          },
+          {
+            "name": "Heap Street"
+          },
+          {
+            "name": "Heath Street",
+            "numbers": "1-23 odds & 2-28 evens"
+          },
+          {
+            "name": "HEBREW ROAD",
+            "numbers": "1 to 9, 21, 23 to 25, 33 to 37 (odd) 2 to 22, 52 to 70, & 72-74 110 to 124 (even)"
+          },
+          {
+            "name": "HEBREW SQUARE",
+            "numbers": "1, 3"
+          },
+          {
+            "name": "Herbert Street",
+            "numbers": "2-36 (evens), 1-35 (odds)"
+          },
+          {
+            "name": "Herbert Street",
+            "numbers": "2-52 (evens), 1-53 (odds)"
+          },
+          {
+            "name": "Hill Street"
+          },
+          {
+            "name": "Holmby Street"
+          },
+          {
+            "name": "Howard Street",
+            "numbers": "2-12 (evens), 176-178 (evens), 1-23 (odds)"
+          },
+          {
+            "name": "HOWSIN STREET",
+            "numbers": "1 to 53 (odd) 2 to 22 (even)"
+          },
+          {
+            "name": "HUBIE STREET",
+            "numbers": "1 to 25 (odd) 10 to 14 (even)"
+          },
+          {
+            "name": "Hudson Street"
+          },
+          {
+            "name": "HURTLEY STREET",
+            "numbers": "10 to 56, 17-23 and 27 to 93 (odd)"
+          },
+          {
+            "name": "Imperial Court"
+          },
+          {
+            "name": "Institute Street",
+            "numbers": "1-11 (odds)"
+          },
+          {
+            "name": "Ivory Street"
+          },
+          {
+            "name": "Ivy Street"
+          },
+          {
+            "name": "Jackson Street"
+          },
+          {
+            "name": "Johnson Close"
+          },
+          {
+            "name": "Keith Street",
+            "numbers": "2-32 evens"
+          },
+          {
+            "name": "Kime Street"
+          },
+          {
+            "name": "Latham Street"
+          },
+          {
+            "name": "LEE STREET",
+            "numbers": "2 to 18 (even) 3 to 29 (odd)"
+          },
+          {
+            "name": "Levant Street"
+          },
+          {
+            "name": "Lincoln Court, Station Road"
+          },
+          {
+            "name": "Linear View, Pendle Street"
+          },
+          {
+            "name": "Lionel Street",
+            "numbers": "1-21 odds & 2-24 evens"
+          },
+          {
+            "name": "Lionel Street",
+            "numbers": "55-85 (odds)"
+          },
+          {
+            "name": "Livesey Street"
+          },
+          {
+            "name": "Lonsdale Street"
+          },
+          {
+            "name": "Lubbock Street"
+          },
+          {
+            "name": "Macauley Street",
+            "numbers": "2"
+          },
+          {
+            "name": "MARCH STREET",
+            "numbers": "1 to 71 (odd) 18 to 48 (even)"
+          },
+          {
+            "name": "Mark Street"
+          },
+          {
+            "name": "Martin Street"
+          },
+          {
+            "name": "Melbourne Street"
+          },
+          {
+            "name": "Melville Street",
+            "numbers": "2-82 (evens)3-33 (odds)"
+          },
+          {
+            "name": "MERTON STREET",
+            "numbers": "2 to 38 (even) 21 to 37 (odd)"
+          },
+          {
+            "name": "MILNER STREET",
+            "numbers": "1 to 45 (odd)"
+          },
+          {
+            "name": "Milton Street",
+            "numbers": "42-78 (evens), 35-77 (odds)"
+          },
+          {
+            "name": "Monmouth Street"
+          },
+          {
+            "name": "Murray Street"
+          },
+          {
+            "name": "Nairne Street",
+            "numbers": "34-70 (evens), 23-145 (odds), 76-128 (evens)"
+          },
+          {
+            "name": "New Church Mews, Briercliffe Road"
+          },
+          {
+            "name": "NEW HALL STREET",
+            "numbers": "1, 1a, 3 (odd) 44 to 156 (even)"
+          },
+          {
+            "name": "Newman Street"
+          },
+          {
+            "name": "NICHOLL STREET"
+          },
+          {
+            "name": "NORMAN STREET"
+          },
+          {
+            "name": "NORTH STREET",
+            "numbers": "12 to 22 (even) 7 to 9 (odd)"
+          },
+          {
+            "name": "Oak Street"
+          },
+          {
+            "name": "Oat Street"
+          },
+          {
+            "name": "OLD HALL STREET",
+            "numbers": "10 to 12, 18, 22 to 26 (even) 27a, 27, 29 (odd)"
+          },
+          {
+            "name": "OSWALD STREET",
+            "numbers": "2"
+          },
+          {
+            "name": "Padiham Road",
+            "numbers": "201-291 odds294-340 (evens), 305-349 (odds)"
+          },
+          {
+            "name": "Paisley Street",
+            "numbers": "22"
+          },
+          {
+            "name": "Palace Street"
+          },
+          {
+            "name": "Palmerston Street",
+            "numbers": "2-24 (inc2a) (evens), 1-31 (odds)"
+          },
+          {
+            "name": "Park Road",
+            "numbers": "2-14 (evens), 3-5 (odds)"
+          },
+          {
+            "name": "Park View"
+          },
+          {
+            "name": "Peel Street"
+          },
+          {
+            "name": "Pembroke Street"
+          },
+          {
+            "name": "Pendle Street"
+          },
+          {
+            "name": "Penistone Street"
+          },
+          {
+            "name": "Pheasantford Street"
+          },
+          {
+            "name": "Piccadilly Road",
+            "numbers": "32-52,58-114 (evens), 31-79,87 (odds)"
+          },
+          {
+            "name": "Piccadilly Square"
+          },
+          {
+            "name": "Pickles Street",
+            "numbers": "1"
+          },
+          {
+            "name": "Pink Street"
+          },
+          {
+            "name": "Pitt Street"
+          },
+          {
+            "name": "Pomfret Street",
+            "numbers": "1&7"
+          },
+          {
+            "name": "Pratt Street"
+          },
+          {
+            "name": "Primrose Street"
+          },
+          {
+            "name": "Prince Street"
+          },
+          {
+            "name": "Pritchard Street",
+            "numbers": "2-56 (evens), 1-43 (odds)"
+          },
+          {
+            "name": "Queen Victoria Road",
+            "numbers": "2-22 (evens) 1-41 (odds)"
+          },
+          {
+            "name": "Queensberry Road"
+          },
+          {
+            "name": "Raglan Road",
+            "numbers": "2-60 (evens), 73-93 (odds)"
+          },
+          {
+            "name": "Randall Street"
+          },
+          {
+            "name": "Rawson Street"
+          },
+          {
+            "name": "Redruth Street"
+          },
+          {
+            "name": "Redvers Street"
+          },
+          {
+            "name": "Renshaw Street"
+          },
+          {
+            "name": "Ribblesdale Street"
+          },
+          {
+            "name": "Richmond Street"
+          },
+          {
+            "name": "ROBINSON STREET",
+            "numbers": "28 to 60 (even) 35 to 69 (odd)"
+          },
+          {
+            "name": "Rushworth Street East"
+          },
+          {
+            "name": "Rushworth Street West"
+          },
+          {
+            "name": "Russell Terrace"
+          },
+          {
+            "name": "Rylands Street"
+          },
+          {
+            "name": "Salus Street",
+            "numbers": "2-28"
+          },
+          {
+            "name": "SAXON STREET"
+          },
+          {
+            "name": "Scarlett Street"
+          },
+          {
+            "name": "Sefton Avenue"
+          },
+          {
+            "name": "Sefton Terrace"
+          },
+          {
+            "name": "Shackleton Street"
+          },
+          {
+            "name": "Shakespeare Street",
+            "numbers": "30-52 (evens), 5-83 (odds)"
+          },
+          {
+            "name": "Shale Street"
+          },
+          {
+            "name": "Sharp Street"
+          },
+          {
+            "name": "Smith Street"
+          },
+          {
+            "name": "Spa Street",
+            "numbers": "2"
+          },
+          {
+            "name": "SPENCER STREET"
+          },
+          {
+            "name": "Spenser Street",
+            "numbers": "20-42 (evens), 27-47 (odds)"
+          },
+          {
+            "name": "St Andrews Street"
+          },
+          {
+            "name": "St Annes Street"
+          },
+          {
+            "name": "St Cuthbert Street",
+            "numbers": "2-74 evens & 1-29 odds"
+          },
+          {
+            "name": "St George's Square"
+          },
+          {
+            "name": "St Johns Road"
+          },
+          {
+            "name": "St Matthew Street",
+            "numbers": "1-67 (odds)"
+          },
+          {
+            "name": "STAFFORD STREET"
+          },
+          {
+            "name": "Station Road",
+            "numbers": "14-70 (evens), 13-31 (odds)"
+          },
+          {
+            "name": "Steer Street"
+          },
+          {
+            "name": "Stockbridge Road"
+          },
+          {
+            "name": "Swindon Street"
+          },
+          {
+            "name": "Tay Street",
+            "numbers": "2-22 (evens)"
+          },
+          {
+            "name": "TAYLOR STREET",
+            "numbers": "8"
+          },
+          {
+            "name": "Thompson Street"
+          },
+          {
+            "name": "THORN STREET",
+            "numbers": "8 to 42 (even) 21 to 55 (odd)"
+          },
+          {
+            "name": "Towneley Street"
+          },
+          {
+            "name": "TRAVIS STREET",
+            "numbers": "2 to 14 (even) 5 to 77 (odd)"
+          },
+          {
+            "name": "Tunnel Street",
+            "numbers": "23 to 33 (odd) 28 to 38 (even)"
+          },
+          {
+            "name": "Ulster Street"
+          },
+          {
+            "name": "Veevers Street"
+          },
+          {
+            "name": "Victoria Road",
+            "numbers": "2-58 (evens), 104 and 106 (evens),"
+          },
+          {
+            "name": "Villiers Street"
+          },
+          {
+            "name": "Villiers Street",
+            "numbers": "2-16 (evens), 1-77 (odds)"
+          },
+          {
+            "name": "VIOLET STREET"
+          },
+          {
+            "name": "Walpole Street"
+          },
+          {
+            "name": "Waterbarn Street"
+          },
+          {
+            "name": "Weldon Street"
+          },
+          {
+            "name": "Wesley Street"
+          },
+          {
+            "name": "Westgate",
+            "numbers": "Evens"
+          },
+          {
+            "name": "Westmorland Street"
+          },
+          {
+            "name": "WHALLEY STREET"
+          },
+          {
+            "name": "Wheat Street"
+          },
+          {
+            "name": "Whitebull Street"
+          },
+          {
+            "name": "Williams Road",
+            "numbers": "1-17 (odds) 2-26 (evens)"
+          },
+          {
+            "name": "Willis Street"
+          },
+          {
+            "name": "Willow Street"
+          },
+          {
+            "name": "Wilton Street"
+          },
+          {
+            "name": "Windsor Street"
+          },
+          {
+            "name": "Woodbine Road"
+          },
+          {
+            "name": "Wordsworth Street"
+          },
+          {
+            "name": "Wren Street"
+          },
+          {
+            "name": "Wynotham Street"
+          },
+          {
+            "name": "Wytham Street",
+            "numbers": "1-33 (odds)"
+          },
+          {
+            "name": "1 and 2 Poplar House"
+          },
+          {
+            "name": "Emmaus House (all)"
+          }
+        ]
       }
     ],
     "notes": "No additional HMO scheme."
@@ -1358,8 +2547,37 @@
         ],
         "areaDescription": "9 designated streets in Burton upon Trent: Blackpool St, Branston Rd, Broadway St, Goodman St, King St, Queen St, Shobnall St, Uxbridge St, Waterloo St",
         "feeApprox": "£544 new single property",
-        "sourceUrl": "https://www.eaststaffsbc.gov.uk/housing-and-property/landlords/selective-licensing-scheme",
-        "verified": "2026-07-10"
+        "sourceUrl": "https://www.eaststaffsbc.gov.uk/sites/default/files/docs/housing/landlords/PublicNotice.pdf",
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Blackpool Street"
+          },
+          {
+            "name": "Branston Road"
+          },
+          {
+            "name": "Broadway Street"
+          },
+          {
+            "name": "Goodman Street"
+          },
+          {
+            "name": "King Street"
+          },
+          {
+            "name": "Queen Street"
+          },
+          {
+            "name": "Shobnall Street"
+          },
+          {
+            "name": "Uxbridge Street"
+          },
+          {
+            "name": "Waterloo Street"
+          }
+        ]
       }
     ],
     "notes": "No additional HMO scheme."
@@ -2016,8 +3234,609 @@
         ],
         "areaDescription": "Street-level designation within these wards (East/West/South clusters). Full road list in Annex A of designation notice.",
         "feeApprox": "£1,290 (£1,032 application + £258 on issue)",
-        "sourceUrl": "https://www.leicester.gov.uk/your-community/housing/landlords/selective-licensing/",
-        "verified": "2026-07-10"
+        "sourceUrl": "https://www.leicester.gov.uk/sites/default/files/2026-04/Notice%20of%20designation%20for%20selective%20licensing.pdf",
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Abingdon Road"
+          },
+          {
+            "name": "Abingdon Walk"
+          },
+          {
+            "name": "Alma Street"
+          },
+          {
+            "name": "Arundel Street"
+          },
+          {
+            "name": "Ashleigh Road"
+          },
+          {
+            "name": "Balfour Street"
+          },
+          {
+            "name": "Barclay Street"
+          },
+          {
+            "name": "Bartholomew Street"
+          },
+          {
+            "name": "Bassett Street"
+          },
+          {
+            "name": "Battenberg Road"
+          },
+          {
+            "name": "Beaconsfield Road"
+          },
+          {
+            "name": "Beatrice Road"
+          },
+          {
+            "name": "Beckingham Road"
+          },
+          {
+            "name": "Biddulph Ave",
+            "numbers": "1 -9 not 1A"
+          },
+          {
+            "name": "Biddulph Street"
+          },
+          {
+            "name": "Bisley Street"
+          },
+          {
+            "name": "Blue Fox Close"
+          },
+          {
+            "name": "Bolton Road"
+          },
+          {
+            "name": "Bonchurch Street"
+          },
+          {
+            "name": "Borlace Street"
+          },
+          {
+            "name": "Bosworth Street"
+          },
+          {
+            "name": "Bramley Road"
+          },
+          {
+            "name": "Briton Street",
+            "numbers": "3 - 43 odd and 8 - 38 even"
+          },
+          {
+            "name": "Brooksby Street"
+          },
+          {
+            "name": "Browning Street"
+          },
+          {
+            "name": "Bruce Street"
+          },
+          {
+            "name": "Cambridge Street"
+          },
+          {
+            "name": "Canterbury Terrace"
+          },
+          {
+            "name": "Carlisle Street"
+          },
+          {
+            "name": "Catesby Street"
+          },
+          {
+            "name": "Cavendish Mews"
+          },
+          {
+            "name": "Cavendish Road"
+          },
+          {
+            "name": "Cedar Road"
+          },
+          {
+            "name": "Celt Street"
+          },
+          {
+            "name": "Central Road"
+          },
+          {
+            "name": "Chandos Street"
+          },
+          {
+            "name": "Chartley Road"
+          },
+          {
+            "name": "Chaucer Street"
+          },
+          {
+            "name": "Cherryleas Drive"
+          },
+          {
+            "name": "Church Avenue"
+          },
+          {
+            "name": "Clifford Street"
+          },
+          {
+            "name": "Clifton Road"
+          },
+          {
+            "name": "Compton Road"
+          },
+          {
+            "name": "Connaught Street"
+          },
+          {
+            "name": "Cranmer Street"
+          },
+          {
+            "name": "Cromer Street"
+          },
+          {
+            "name": "Daneshill Road"
+          },
+          {
+            "name": "Dannett Street"
+          },
+          {
+            "name": "Dannett Walk"
+          },
+          {
+            "name": "Danvers Road"
+          },
+          {
+            "name": "Dashwood Road"
+          },
+          {
+            "name": "Denton Street",
+            "numbers": "1 -3 odd and 2 - 4 - even"
+          },
+          {
+            "name": "Devana Road",
+            "numbers": "1- 63a odd and 2 -10a even"
+          },
+          {
+            "name": "Draper Street"
+          },
+          {
+            "name": "Dulverton Road"
+          },
+          {
+            "name": "Dunster Street"
+          },
+          {
+            "name": "Dunton Street"
+          },
+          {
+            "name": "Eastleigh Road"
+          },
+          {
+            "name": "Empire Road"
+          },
+          {
+            "name": "Equity Road"
+          },
+          {
+            "name": "Evington Footway"
+          },
+          {
+            "name": "Evington Place"
+          },
+          {
+            "name": "Evington Road",
+            "numbers": "1 -159 odd and 2 - 118 even"
+          },
+          {
+            "name": "Flora Street"
+          },
+          {
+            "name": "Fosse Road Central"
+          },
+          {
+            "name": "Fosse Road North"
+          },
+          {
+            "name": "Fosse Road South",
+            "numbers": "1 -281 odd and 2a - 256 even"
+          },
+          {
+            "name": "Franche Road"
+          },
+          {
+            "name": "Gaul Street"
+          },
+          {
+            "name": "Glenfield Road",
+            "numbers": "1 -89 odd and 2 - 50 even"
+          },
+          {
+            "name": "Glenfield Road East"
+          },
+          {
+            "name": "Guilford Street"
+          },
+          {
+            "name": "Haddenham Road",
+            "numbers": "3 -135 odd and 2 - 130 even"
+          },
+          {
+            "name": "Hamilton Street"
+          },
+          {
+            "name": "Hardwick Court"
+          },
+          {
+            "name": "Harrow Road"
+          },
+          {
+            "name": "Hawthorne Street"
+          },
+          {
+            "name": "Henton Road"
+          },
+          {
+            "name": "Herschell Street"
+          },
+          {
+            "name": "Hinckley Road",
+            "numbers": "7 -265 odd and 2 - 238 even"
+          },
+          {
+            "name": "Hoby Street"
+          },
+          {
+            "name": "Hopefield Road"
+          },
+          {
+            "name": "Hughenden Drive"
+          },
+          {
+            "name": "Imperial Avenue",
+            "numbers": "3 -37 odd"
+          },
+          {
+            "name": "Ingle Street"
+          },
+          {
+            "name": "Ivanhoe Street"
+          },
+          {
+            "name": "Ivy Road"
+          },
+          {
+            "name": "Kate Street"
+          },
+          {
+            "name": "Kimberley Road",
+            "numbers": "3 -49 odd and 2 - 74 even"
+          },
+          {
+            "name": "King Richards Road"
+          },
+          {
+            "name": "Kirby Road"
+          },
+          {
+            "name": "Knighton Fields Road West",
+            "numbers": "7 -103 odd and 2 - 138 even"
+          },
+          {
+            "name": "Lambert Road"
+          },
+          {
+            "name": "Latimer Street"
+          },
+          {
+            "name": "Laurel Road"
+          },
+          {
+            "name": "Lavender Road"
+          },
+          {
+            "name": "Linkway Gardens"
+          },
+          {
+            "name": "Livingstone Street"
+          },
+          {
+            "name": "London Road",
+            "numbers": "148a - 220 even"
+          },
+          {
+            "name": "Lonsdale Street"
+          },
+          {
+            "name": "Lothair Road"
+          },
+          {
+            "name": "Luther Street"
+          },
+          {
+            "name": "Lyme Road"
+          },
+          {
+            "name": "Mantle Road"
+          },
+          {
+            "name": "Marlow Road",
+            "numbers": "1 -37 odd and 2 - 36 even"
+          },
+          {
+            "name": "Marshall Street"
+          },
+          {
+            "name": "Mayfield Road"
+          },
+          {
+            "name": "Merton Avenue"
+          },
+          {
+            "name": "Minehead Street"
+          },
+          {
+            "name": "Mostyn Street"
+          },
+          {
+            "name": "Mountcastle Road"
+          },
+          {
+            "name": "Narborough Road",
+            "numbers": "1 -259 odd and 2 - 330 even"
+          },
+          {
+            "name": "New Park Road"
+          },
+          {
+            "name": "Newport Street"
+          },
+          {
+            "name": "Noble Street"
+          },
+          {
+            "name": "Mundella Street"
+          },
+          {
+            "name": "Muriel Road"
+          },
+          {
+            "name": "Myrtle Road"
+          },
+          {
+            "name": "Noel Street"
+          },
+          {
+            "name": "Nook Street"
+          },
+          {
+            "name": "Norfolk Street",
+            "numbers": "11 -61 odd and 94 - 96 even"
+          },
+          {
+            "name": "Norman Street"
+          },
+          {
+            "name": "Nugent Street"
+          },
+          {
+            "name": "Nutfield Road"
+          },
+          {
+            "name": "Oban Street"
+          },
+          {
+            "name": "Oliver Street"
+          },
+          {
+            "name": "Onslow Street"
+          },
+          {
+            "name": "Oxford Avenue"
+          },
+          {
+            "name": "Paton Street"
+          },
+          {
+            "name": "Pool Road"
+          },
+          {
+            "name": "Porlock Street"
+          },
+          {
+            "name": "Raymond Road"
+          },
+          {
+            "name": "Repton Street"
+          },
+          {
+            "name": "Ridley Street"
+          },
+          {
+            "name": "Ripon Street"
+          },
+          {
+            "name": "Rivers Street"
+          },
+          {
+            "name": "Roman Street"
+          },
+          {
+            "name": "Roslyn Street"
+          },
+          {
+            "name": "Rowan Street"
+          },
+          {
+            "name": "Ruby Street"
+          },
+          {
+            "name": "Ruding Road"
+          },
+          {
+            "name": "Ruding Terrace"
+          },
+          {
+            "name": "Rugby Street"
+          },
+          {
+            "name": "Saffron Hill Road"
+          },
+          {
+            "name": "Saffron Lane",
+            "numbers": "179 -233 odd and 182 - 216 even"
+          },
+          {
+            "name": "Saxon Street"
+          },
+          {
+            "name": "Shaftesbury Road"
+          },
+          {
+            "name": "Shakespeare Street"
+          },
+          {
+            "name": "Sheffield Street"
+          },
+          {
+            "name": "Sheridan Street"
+          },
+          {
+            "name": "Skipworth Street"
+          },
+          {
+            "name": "St Albans Road"
+          },
+          {
+            "name": "St Dunstan Road"
+          },
+          {
+            "name": "Tudor Close"
+          },
+          {
+            "name": "St James Road"
+          },
+          {
+            "name": "Tyndale Street"
+          },
+          {
+            "name": "Tyrrell Street"
+          },
+          {
+            "name": "Upperton Rise"
+          },
+          {
+            "name": "Upperton Road",
+            "numbers": "1 -181 odd and 6 - 118 even"
+          },
+          {
+            "name": "Vaughan Street"
+          },
+          {
+            "name": "Vernon Street"
+          },
+          {
+            "name": "Victoria Terrace"
+          },
+          {
+            "name": "Walton Street"
+          },
+          {
+            "name": "Warren Street"
+          },
+          {
+            "name": "St James Terrace"
+          },
+          {
+            "name": "St Pauls Road"
+          },
+          {
+            "name": "St Peters Road",
+            "numbers": "25 -87 odd and 36 – 88a even"
+          },
+          {
+            "name": "St Stephens Road"
+          },
+          {
+            "name": "Stephenson Drive",
+            "numbers": "138 - 150 even"
+          },
+          {
+            "name": "Storey Street"
+          },
+          {
+            "name": "Stretton Road"
+          },
+          {
+            "name": "Stuart Street"
+          },
+          {
+            "name": "Sutherland Street"
+          },
+          {
+            "name": "Sweetbriar Road"
+          },
+          {
+            "name": "Sykefield Avenue"
+          },
+          {
+            "name": "Sylvan Street"
+          },
+          {
+            "name": "Taunton Road"
+          },
+          {
+            "name": "Tennyson Street"
+          },
+          {
+            "name": "Tetuan Road"
+          },
+          {
+            "name": "Tewkesbury Street"
+          },
+          {
+            "name": "Thackeray Street"
+          },
+          {
+            "name": "Warwick Street"
+          },
+          {
+            "name": "Wentworth Road"
+          },
+          {
+            "name": "Westcotes Drive",
+            "numbers": "1 -105 odd and 2 - 186 even"
+          },
+          {
+            "name": "Western Road",
+            "numbers": "3 -251a odd and 122a - 278 even"
+          },
+          {
+            "name": "Westleigh Avenue"
+          },
+          {
+            "name": "Westleigh Road"
+          },
+          {
+            "name": "Wilberforce Road"
+          },
+          {
+            "name": "Wilmington Road"
+          },
+          {
+            "name": "Winchester Avenue"
+          },
+          {
+            "name": "Wolverton Road"
+          },
+          {
+            "name": "Woodgate",
+            "numbers": "2 - 88 even"
+          }
+        ]
       }
     ],
     "notes": "Street-level within named wards; scheme covers small HMOs too. No separate additional scheme. Match against road lists not ward boundaries."
@@ -2504,8 +4323,82 @@
         "coverage": "streets",
         "areaDescription": "24 designated streets only (incl. Askew Road, Bloemfontein Road, Dalling Road, Dawes Road, Fulham Road, Goldhawk Road, King Street, North End Road, Uxbridge Road, Wandsworth Bridge Road, Wood Lane and 13 others)",
         "feeApprox": "£742",
-        "sourceUrl": "https://www.londonpropertylicensing.co.uk/hammersmith-fulham/",
-        "verified": "2026-07-10"
+        "sourceUrl": "https://www.lbhf.gov.uk/sites/default/files/section_attachments/appendix_public_notice_selective_licensing.pdf",
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Askew Road"
+          },
+          {
+            "name": "Baron's Court Road"
+          },
+          {
+            "name": "Bloemfontein Road"
+          },
+          {
+            "name": "Blythe Road"
+          },
+          {
+            "name": "Coningham Road"
+          },
+          {
+            "name": "Crookham Road"
+          },
+          {
+            "name": "Dalling Road"
+          },
+          {
+            "name": "Dawes Road"
+          },
+          {
+            "name": "Fulham Road"
+          },
+          {
+            "name": "Goldhawk Road"
+          },
+          {
+            "name": "Greyhound Road"
+          },
+          {
+            "name": "King Street"
+          },
+          {
+            "name": "Lime Grove"
+          },
+          {
+            "name": "New King's Road"
+          },
+          {
+            "name": "North End Road"
+          },
+          {
+            "name": "Richmond Way"
+          },
+          {
+            "name": "Shepherd's Bush Road"
+          },
+          {
+            "name": "Sinclair Road"
+          },
+          {
+            "name": "Scrubs Lane"
+          },
+          {
+            "name": "Talgarth Road"
+          },
+          {
+            "name": "Uxbridge Road"
+          },
+          {
+            "name": "Wandsworth Bridge Road"
+          },
+          {
+            "name": "Woodstock Grove"
+          },
+          {
+            "name": "Wood Lane"
+          }
+        ]
       },
       {
         "type": "additional",
@@ -3274,8 +5167,323 @@
         "coverage": "streets",
         "areaDescription": "Town Centre and Park Town areas (designated roads in council PDF schedule)",
         "feeApprox": "early-bird £150 to 31 Aug 2026; standard fees TBC",
-        "sourceUrl": "https://www.luton.gov.uk/housing/private-tenants-homeowners-landlords/landlords/selective-licensing",
-        "verified": "2026-07-10"
+        "sourceUrl": "https://www.luton.gov.uk/sites/default/files/2026-05/roads-within-the-selective-licensing-area.pdf",
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Adelaide Street"
+          },
+          {
+            "name": "Albert Gardens"
+          },
+          {
+            "name": "Albert Road"
+          },
+          {
+            "name": "Alma Link"
+          },
+          {
+            "name": "Alma Street"
+          },
+          {
+            "name": "Alton Gardens"
+          },
+          {
+            "name": "Alton Retreat"
+          },
+          {
+            "name": "Alton Road"
+          },
+          {
+            "name": "Arthur Street"
+          },
+          {
+            "name": "Ashton Road"
+          },
+          {
+            "name": "Bailey Street"
+          },
+          {
+            "name": "Baker Street"
+          },
+          {
+            "name": "Barbers Lane"
+          },
+          {
+            "name": "Bute Street"
+          },
+          {
+            "name": "Buxton Road"
+          },
+          {
+            "name": "Cambridge Street"
+          },
+          {
+            "name": "Cardiff Grove"
+          },
+          {
+            "name": "Cardiff Road"
+          },
+          {
+            "name": "Cardigan Street"
+          },
+          {
+            "name": "Castle Street"
+          },
+          {
+            "name": "Chapel Street"
+          },
+          {
+            "name": "Chase Street"
+          },
+          {
+            "name": "Cheapside"
+          },
+          {
+            "name": "Chequer Street"
+          },
+          {
+            "name": "Cherry Gate Gardens"
+          },
+          {
+            "name": "Chobham Street"
+          },
+          {
+            "name": "Chobham Walk"
+          },
+          {
+            "name": "Collingdon Street"
+          },
+          {
+            "name": "Cowper Street"
+          },
+          {
+            "name": "Crawley Green Road",
+            "numbers": "Even numbers: 2 to 14"
+          },
+          {
+            "name": "Cumberland Street"
+          },
+          {
+            "name": "Cutenhoe Road"
+          },
+          {
+            "name": "Downs Road"
+          },
+          {
+            "name": "Dumfries Street",
+            "numbers": "Flats at 2, Flats at 4 Spring Place, Flats at Counting House Mews, Flats at Dumfries Court; Even numbers: 60 to 74; Odd numbers: 3 to 27, 43 to 55"
+          },
+          {
+            "name": "Dunstable Place"
+          },
+          {
+            "name": "Dunstable Road",
+            "numbers": "Flats at 18 to 20 Britannic House, Flats at 3 - Premiere House; Even numbers: 6 to 14"
+          },
+          {
+            "name": "Elizabeth Street"
+          },
+          {
+            "name": "Essex Close"
+          },
+          {
+            "name": "Flowers Way"
+          },
+          {
+            "name": "George Street"
+          },
+          {
+            "name": "George Street West"
+          },
+          {
+            "name": "Gladstone Avenue"
+          },
+          {
+            "name": "Gordon Street"
+          },
+          {
+            "name": "Grove Road"
+          },
+          {
+            "name": "Guildford Street"
+          },
+          {
+            "name": "Harcourt Street"
+          },
+          {
+            "name": "Hastings Street"
+          },
+          {
+            "name": "Hibbert Street"
+          },
+          {
+            "name": "Holly Street"
+          },
+          {
+            "name": "Inkerman Street"
+          },
+          {
+            "name": "John Street"
+          },
+          {
+            "name": "Kelvin Close"
+          },
+          {
+            "name": "King Street"
+          },
+          {
+            "name": "Kingsland Road"
+          },
+          {
+            "name": "Langley Street"
+          },
+          {
+            "name": "Latimer Road"
+          },
+          {
+            "name": "Lea Road"
+          },
+          {
+            "name": "Library Road"
+          },
+          {
+            "name": "Liverpool Road"
+          },
+          {
+            "name": "London Road",
+            "numbers": "Odd numbers: 3 to 151, Flats at Tavistock Court, Flats at Gardner Court, 1 to 5 Uplands Court"
+          },
+          {
+            "name": "Ludlow Avenue"
+          },
+          {
+            "name": "Manchester Street"
+          },
+          {
+            "name": "Manor Road"
+          },
+          {
+            "name": "May Street"
+          },
+          {
+            "name": "Melson Street"
+          },
+          {
+            "name": "Mill Street"
+          },
+          {
+            "name": "Napier Road"
+          },
+          {
+            "name": "New Bedford Road",
+            "numbers": "Even numbers: 38 to 46, 50 to 58; Odd numbers: 1A, 7A, 11A"
+          },
+          {
+            "name": "New Town Street"
+          },
+          {
+            "name": "Old School Mews"
+          },
+          {
+            "name": "Ormsby Close"
+          },
+          {
+            "name": "Osborne Road"
+          },
+          {
+            "name": "Oxford Road"
+          },
+          {
+            "name": "Park Street"
+          },
+          {
+            "name": "Park Street West"
+          },
+          {
+            "name": "Peel Street"
+          },
+          {
+            "name": "Princess Street"
+          },
+          {
+            "name": "Queens Close"
+          },
+          {
+            "name": "Rothesay Road"
+          },
+          {
+            "name": "Seymour Avenue"
+          },
+          {
+            "name": "Seymour Road"
+          },
+          {
+            "name": "Somersby Close"
+          },
+          {
+            "name": "St Pauls Gardens"
+          },
+          {
+            "name": "St Pauls Road"
+          },
+          {
+            "name": "Strathmore Avenue"
+          },
+          {
+            "name": "Strathmore Walk"
+          },
+          {
+            "name": "Stuart Place"
+          },
+          {
+            "name": "Stuart Street"
+          },
+          {
+            "name": "Surrey Street"
+          },
+          {
+            "name": "Tavistock Crescent"
+          },
+          {
+            "name": "Tavistock Street"
+          },
+          {
+            "name": "Tennyson Road"
+          },
+          {
+            "name": "Townsley Close"
+          },
+          {
+            "name": "Union Street"
+          },
+          {
+            "name": "Upper George Street"
+          },
+          {
+            "name": "Wellington Street",
+            "numbers": "Even numbers: 6, 14 to 18, 22, 26 to 32, 36 to 50, 56 to 58, 66, 70 to 72, 76 to 78, 80 to 108, 114 to 128; Odd numbers: 7 to 15, 19A, 19B, 25C, 29, 39A, 39B, 41 to 43, 47 to 53, 63 to 75, 83A, 89, 93 to 153, Flats at Dukes Court, Flats at Gadsby Court, Flats at Wellington Court"
+          },
+          {
+            "name": "West Hill Road"
+          },
+          {
+            "name": "Windmill Road"
+          },
+          {
+            "name": "Windsor Street",
+            "numbers": "Even numbers: 2 to 22, 28 to 74, Flats at Windsor Court"
+          },
+          {
+            "name": "Windsor Walk"
+          },
+          {
+            "name": "Winsdon Road"
+          },
+          {
+            "name": "Wood Street"
+          }
+        ]
       },
       {
         "type": "additional",
@@ -3328,7 +5536,341 @@
         "areaDescription": "Four street-level designations (2022 cohort): Ben Street (Clayton & Openshaw), Hyde Road & The Ladders (Gorton & Abbey Hey), Trinity (Harpurhey). Check exact streets on council directory.",
         "feeApprox": "£591-£798 (2022 designation rates)",
         "sourceUrl": "https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes",
-        "verified": "2026-07-10"
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Bank Street",
+            "numbers": "12 to 72 (even)"
+          },
+          {
+            "name": "Ben Street",
+            "numbers": "1 to 42 (odds/evens)"
+          },
+          {
+            "name": "Heather Street",
+            "numbers": "1 to 42 (odds/evens)"
+          },
+          {
+            "name": "Ilford Street",
+            "numbers": "51 to 72 (odds/evens)"
+          },
+          {
+            "name": "Midlothian Street",
+            "numbers": "1 to 46 (odds/evens)"
+          },
+          {
+            "name": "Pioneer Street",
+            "numbers": "1 to 27 (odd)"
+          },
+          {
+            "name": "Ranelagh Street",
+            "numbers": "61 to 82 (odds/evens)"
+          },
+          {
+            "name": "Ravensbury Street",
+            "numbers": "1/1A and 5"
+          },
+          {
+            "name": "Sheldon Street",
+            "numbers": "21 to 42 (odds/evens)"
+          },
+          {
+            "name": "Stockholm Street",
+            "numbers": "2 to 16 (even)"
+          },
+          {
+            "name": "Tartan Street",
+            "numbers": "2 to 8 (even)"
+          },
+          {
+            "name": "Friendship Avenue",
+            "numbers": "2A"
+          },
+          {
+            "name": "Hengist Street",
+            "numbers": "4"
+          },
+          {
+            "name": "Hyde Road",
+            "numbers": "522 to 838 (even) and 961-963 (odds)"
+          },
+          {
+            "name": "Kirkman Close",
+            "numbers": "2 to 6 (even)"
+          },
+          {
+            "name": "Taplin Drive",
+            "numbers": "1 to 47 (odd)"
+          },
+          {
+            "name": "Waterhouse Road",
+            "numbers": "2A"
+          },
+          {
+            "name": "Willow Grove",
+            "numbers": "1 to 11 (odd)"
+          },
+          {
+            "name": "Oakfield Grove",
+            "numbers": "Flat 1,a, b,c (this does not include 1 Oakfield Grove)"
+          },
+          {
+            "name": "Woodland Avenue",
+            "numbers": "2 to 4 (evens)"
+          },
+          {
+            "name": "Woodland Road",
+            "numbers": "49, 64 to 70(odd/even) flats included"
+          },
+          {
+            "name": "Abbey Hey Lane",
+            "numbers": "126 to 410 (even) flats included"
+          },
+          {
+            "name": "Annable Road",
+            "numbers": "1 to 39 (odds/even)"
+          },
+          {
+            "name": "Atherfield Close",
+            "numbers": "2 to 16 (even)"
+          },
+          {
+            "name": "Bread Street",
+            "numbers": "1 to 17 (odds/evens)"
+          },
+          {
+            "name": "Brightman Street",
+            "numbers": "1 to 41 (odds/evens)"
+          },
+          {
+            "name": "Burstead Street",
+            "numbers": "1 to 32 (odds/evens)"
+          },
+          {
+            "name": "Butman Street",
+            "numbers": "1 to 54 (odds/even)"
+          },
+          {
+            "name": "Claymore Street",
+            "numbers": "1 to 52 (odds/even)"
+          },
+          {
+            "name": "Compstall Grove",
+            "numbers": "1 to 7 (odds/evens)"
+          },
+          {
+            "name": "Constable Street",
+            "numbers": "1 to 111 (odd/evens) flats included"
+          },
+          {
+            "name": "Corrigan Street",
+            "numbers": "15 to 46 (odds/evens)"
+          },
+          {
+            "name": "Courier Street",
+            "numbers": "38 to 63 (odds/evens)"
+          },
+          {
+            "name": "Dalehead Close",
+            "numbers": "3 to 21 (odds)"
+          },
+          {
+            "name": "ErnocroftGrove",
+            "numbers": "1 to 6 (odds/evens)"
+          },
+          {
+            "name": "Field Street",
+            "numbers": "1 to 42 (odds/evens)"
+          },
+          {
+            "name": "Fleet Street",
+            "numbers": "1 to 29 (odds)"
+          },
+          {
+            "name": "Franklyn Road",
+            "numbers": "1 to 16 (odds/evens)"
+          },
+          {
+            "name": "Freshwater Street",
+            "numbers": "2 to 8 (even)"
+          },
+          {
+            "name": "Gathurst Street",
+            "numbers": "15 to 39 (odds/evens)"
+          },
+          {
+            "name": "Gidlow Street",
+            "numbers": "1 to 18 (odds/evens) flats included"
+          },
+          {
+            "name": "Godwin Street",
+            "numbers": "15 to 48 (odds/evens)"
+          },
+          {
+            "name": "Gordon Street",
+            "numbers": "1 to 60 (odds/evens) flats included"
+          },
+          {
+            "name": "Grapevine Avenue",
+            "numbers": "1 to 32 (odds/evens)"
+          },
+          {
+            "name": "Jetson Street",
+            "numbers": "1 to 86 (odd/evens)"
+          },
+          {
+            "name": "Kenyon Street",
+            "numbers": "1 to 124 (odds/evens) flats included"
+          },
+          {
+            "name": "Kings Close",
+            "numbers": "1 to 36 (odd/even)"
+          },
+          {
+            "name": "Lees Street",
+            "numbers": "133 to 222 (odd/even) flats included"
+          },
+          {
+            "name": "Long Street",
+            "numbers": "1 to 48 (odd/even)"
+          },
+          {
+            "name": "LongfordStreet",
+            "numbers": "1 to 93 (odd/even)"
+          },
+          {
+            "name": "Madison Street",
+            "numbers": "3 to 76 (odd/even)"
+          },
+          {
+            "name": "Maybury Street",
+            "numbers": "1 to 39 (odd/even)"
+          },
+          {
+            "name": "PeterboroughStreet",
+            "numbers": "1 to 24 (odd/even) flats included"
+          },
+          {
+            "name": "Rumbold Street",
+            "numbers": "1 to 12 (odd/even)"
+          },
+          {
+            "name": "Rutland Street",
+            "numbers": "1 to 10 (odd/even)"
+          },
+          {
+            "name": "Sandown Street",
+            "numbers": "2 to 72 (odd/even)"
+          },
+          {
+            "name": "Swanhill Close",
+            "numbers": "2 to 25 (odd/even)"
+          },
+          {
+            "name": "Vine Street",
+            "numbers": "83 to 171 (odds/evens)"
+          },
+          {
+            "name": "Walmer Street",
+            "numbers": "1 to 34 (odd/even)"
+          },
+          {
+            "name": "Walter Street",
+            "numbers": "1 to 62 (odd/even)"
+          },
+          {
+            "name": "Welbeck Street",
+            "numbers": "1 to 34 (odd/even) flats included"
+          },
+          {
+            "name": "Western Street",
+            "numbers": "1 to 35 (odd)"
+          },
+          {
+            "name": "Wycombe Avenue",
+            "numbers": "1 to 16 (odd/even)"
+          },
+          {
+            "name": "Beverley Street",
+            "numbers": "5 to 96(odd/evens)"
+          },
+          {
+            "name": "Capstan Street",
+            "numbers": "2 to 28 (evens)"
+          },
+          {
+            "name": "Cobden Street",
+            "numbers": "1 to 181 (odds/evens)"
+          },
+          {
+            "name": "Dalbeattie Street",
+            "numbers": "8 to 53 (odds/ even)"
+          },
+          {
+            "name": "Dollond Street",
+            "numbers": "1 to 35 (odds/ even)"
+          },
+          {
+            "name": "Glen Avenue",
+            "numbers": "2 to 14 (even)"
+          },
+          {
+            "name": "Goodman Street",
+            "numbers": "11-115 (odds) 32 -44 (even) flats included"
+          },
+          {
+            "name": "Hemsley Street",
+            "numbers": "2 to 18 (even)"
+          },
+          {
+            "name": "Hemsley Street South",
+            "numbers": "1 to 11 (odd)"
+          },
+          {
+            "name": "Holtby Street",
+            "numbers": "13 to 92 (odds/even)"
+          },
+          {
+            "name": "Joule Street",
+            "numbers": "1 to 38 (odds/evens)"
+          },
+          {
+            "name": "Leegrange Road",
+            "numbers": "1 to 78 (odds/even)"
+          },
+          {
+            "name": "Lewis Avenue",
+            "numbers": "2 to 30 (even)"
+          },
+          {
+            "name": "Marlfield Street",
+            "numbers": "22 to 55 (odds/evens)"
+          },
+          {
+            "name": "Melbourne Street",
+            "numbers": "1 to 43 (odds/evens)"
+          },
+          {
+            "name": "Monart Road",
+            "numbers": "1 to 20(odd/evens)"
+          },
+          {
+            "name": "Moston Lane",
+            "numbers": "151 to 161 (odds) flats included"
+          },
+          {
+            "name": "Nepaul Road",
+            "numbers": "1 to 71 (odds/evens)"
+          },
+          {
+            "name": "Routledge Walk",
+            "numbers": "1 to 56 (odds/even)"
+          },
+          {
+            "name": "York Street",
+            "numbers": "24 to 83 (odds/evens)"
+          }
+        ]
       },
       {
         "type": "selective",
@@ -3339,7 +5881,169 @@
         "areaDescription": "Four street-level designations (2023 cohort): Laindon/Dickenson Road & Birch Lane (Rusholme), Great Western Street/Claremont Road (Moss Side), Matthews Lane (Levenshulme), The Royals (Longsight).",
         "feeApprox": "£736-£936 (2023 designation rates)",
         "sourceUrl": "https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes",
-        "verified": "2026-07-10"
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Ashfield Road",
+            "numbers": "10-16 (Evens)"
+          },
+          {
+            "name": "Aylcliffe Grove",
+            "numbers": "2-10 (Evens)"
+          },
+          {
+            "name": "Dickenson Road",
+            "numbers": "189-209 (Odds)"
+          },
+          {
+            "name": "Laindon Road",
+            "numbers": "75-89 (Odds)"
+          },
+          {
+            "name": "Willesden Avenue",
+            "numbers": "2 -30 (All)"
+          },
+          {
+            "name": "Birch lane",
+            "numbers": "61 - 87 (odd numbers only)"
+          },
+          {
+            "name": "Dickenson road",
+            "numbers": "309 - 343 (odd numbers only)"
+          },
+          {
+            "name": "Holmfirth Street",
+            "numbers": "1 - 23 (odd numbers only)"
+          },
+          {
+            "name": "Honor Street",
+            "numbers": "1 - 20"
+          },
+          {
+            "name": "Lincoln Street",
+            "numbers": "1 - 25"
+          },
+          {
+            "name": "Whiley Street",
+            "numbers": "1 - 30"
+          },
+          {
+            "name": "Beresford Street",
+            "numbers": "1-160 (All)"
+          },
+          {
+            "name": "Bowes Street",
+            "numbers": "1-27 (Odds)"
+          },
+          {
+            "name": "Broadfield Road",
+            "numbers": "4-132 (Evens), 53-87 (Odds)"
+          },
+          {
+            "name": "Caythorpe Street",
+            "numbers": "1-121 (All)"
+          },
+          {
+            "name": "Claremont Road",
+            "numbers": "92-206 (All)"
+          },
+          {
+            "name": "Cowesby Street",
+            "numbers": "1-162 (All)"
+          },
+          {
+            "name": "Crondall Street",
+            "numbers": "1-106 (All)"
+          },
+          {
+            "name": "Gerry Wheale Square",
+            "numbers": "1-17 (All)"
+          },
+          {
+            "name": "Greame Street",
+            "numbers": "105-111 (Odds)"
+          },
+          {
+            "name": "Great Western Street",
+            "numbers": "94-204 (Evens)"
+          },
+          {
+            "name": "Hartington Street",
+            "numbers": "2-164 (All)"
+          },
+          {
+            "name": "Kensington Street",
+            "numbers": "1-40 (All)"
+          },
+          {
+            "name": "Princess Road",
+            "numbers": "97-245 (Odds)"
+          },
+          {
+            "name": "Rosebery Street",
+            "numbers": "1-166 (All)"
+          },
+          {
+            "name": "Tyldesley Street",
+            "numbers": "1-41 (Odds)"
+          },
+          {
+            "name": "Damien Street",
+            "numbers": "1-48 (All)"
+          },
+          {
+            "name": "Hemmons Road",
+            "numbers": "72-118 (Evens)"
+          },
+          {
+            "name": "Longden Road",
+            "numbers": "37-94 (All)"
+          },
+          {
+            "name": "Maida Street",
+            "numbers": "1-38 (All)"
+          },
+          {
+            "name": "Ollier Avenue",
+            "numbers": "1-57 (Odds)"
+          },
+          {
+            "name": "Seddon Street",
+            "numbers": "1-42 (All)"
+          },
+          {
+            "name": "Stovell Avenue",
+            "numbers": "81-135 (Odds)"
+          },
+          {
+            "name": "Balmoral Street",
+            "numbers": "1-18 (All)"
+          },
+          {
+            "name": "Glencastle Road",
+            "numbers": "1- 28 (All)"
+          },
+          {
+            "name": "Mount Road",
+            "numbers": "1-45 (Odds)"
+          },
+          {
+            "name": "Mountbatten Street",
+            "numbers": "2-18 (Evens)"
+          },
+          {
+            "name": "Odette Street",
+            "numbers": "1-16 (All)"
+          },
+          {
+            "name": "Sandringham Street",
+            "numbers": "1-33 (Odds)"
+          },
+          {
+            "name": "Windsor Street",
+            "numbers": "1-22 (All), 24-30 (Evens)"
+          }
+        ]
       },
       {
         "type": "selective",
@@ -3350,7 +6054,409 @@
         "areaDescription": "Six street-level designations (2025 cohort): Enver Road (Crumpsall), Droylsden Road/Scotland Street (Miles Platting & Newton Heath), Esmond/Avondale (Cheetham), Heathcote/Sanby/Northmoor (Longsight), Viscount Street/Heald Grove (Moss Side), Whiteway Street (Harpurhey).",
         "feeApprox": "£964 full (£764 early bird)",
         "sourceUrl": "https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes",
-        "verified": "2026-07-10"
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Ash Tree Road",
+            "numbers": "2 to 48 (even)"
+          },
+          {
+            "name": "Crescent Road",
+            "numbers": "169 to 221 (odd)"
+          },
+          {
+            "name": "Duchess Road",
+            "numbers": "1 to 80"
+          },
+          {
+            "name": "Enver Road",
+            "numbers": "1 to 49"
+          },
+          {
+            "name": "Hallworth Road",
+            "numbers": "1 to 40"
+          },
+          {
+            "name": "Wellington Road",
+            "numbers": "1 to 36"
+          },
+          {
+            "name": "Whiston Road",
+            "numbers": "1 to 45"
+          },
+          {
+            "name": "Ainthorpe Walk",
+            "numbers": "1 to 9"
+          },
+          {
+            "name": "Bardsley Street",
+            "numbers": "19 to 33"
+          },
+          {
+            "name": "Briscoe Lane",
+            "numbers": "2 to 82 (Even)"
+          },
+          {
+            "name": "Church Avenue",
+            "numbers": "4 to 14 (Even)"
+          },
+          {
+            "name": "Clovelly Street",
+            "numbers": "1 to 11 (odd)"
+          },
+          {
+            "name": "Coniston Street",
+            "numbers": "1 to 17"
+          },
+          {
+            "name": "Crawford Street",
+            "numbers": "70 to 96 (Even)"
+          },
+          {
+            "name": "Crosby Road",
+            "numbers": "8c to 49"
+          },
+          {
+            "name": "Culcheth Lane",
+            "numbers": "21 to 73 (odd)"
+          },
+          {
+            "name": "Daisy Bank",
+            "numbers": "14 to 54"
+          },
+          {
+            "name": "Droylsden Road",
+            "numbers": "125 to 225 (odd) and 96 to 214 (even)"
+          },
+          {
+            "name": "Heathfield Street",
+            "numbers": "31 to 63 (odd)"
+          },
+          {
+            "name": "Hethorn Street",
+            "numbers": "1 to 44"
+          },
+          {
+            "name": "Leng Road",
+            "numbers": "1 to 85"
+          },
+          {
+            "name": "Loring Street",
+            "numbers": "1 to 40"
+          },
+          {
+            "name": "Melrose Street",
+            "numbers": "1 to 56"
+          },
+          {
+            "name": "Mitchell Street",
+            "numbers": "117 to 145 (odd)"
+          },
+          {
+            "name": "Regent Street",
+            "numbers": "2a to 2f, 2 to 41"
+          },
+          {
+            "name": "Rossington Street",
+            "numbers": "1 to 83"
+          },
+          {
+            "name": "Scotland Street",
+            "numbers": "1 to 79"
+          },
+          {
+            "name": "Silverwell Street",
+            "numbers": "20 to 36 (even) including Daisy Bank Court"
+          },
+          {
+            "name": "Tetlow Street",
+            "numbers": "1 to 38"
+          },
+          {
+            "name": "Topsham Walk",
+            "numbers": "1 to 10"
+          },
+          {
+            "name": "Wallis Street",
+            "numbers": "1 to 19"
+          },
+          {
+            "name": "Worksleigh Street",
+            "numbers": "2 to 2"
+          },
+          {
+            "name": "Albyns Avenue",
+            "numbers": "1 to 16"
+          },
+          {
+            "name": "Ansdell Street",
+            "numbers": "1 to 25, 24 to 43"
+          },
+          {
+            "name": "Avondale Street",
+            "numbers": "1 to 31"
+          },
+          {
+            "name": "Beckenham Road",
+            "numbers": "1 to 30"
+          },
+          {
+            "name": "Birkdale Street",
+            "numbers": "2 to 46"
+          },
+          {
+            "name": "Broomfield Drive",
+            "numbers": "28 to 74"
+          },
+          {
+            "name": "Cheetham Hill Road",
+            "numbers": "300 to 452 (even),433ato 519 (odd)"
+          },
+          {
+            "name": "Chiselhurst Street",
+            "numbers": "20 to 56"
+          },
+          {
+            "name": "Daresbury Street",
+            "numbers": "19 to 55"
+          },
+          {
+            "name": "Egmont Street",
+            "numbers": "19 to 36"
+          },
+          {
+            "name": "Esmond Road",
+            "numbers": "1 to 102"
+          },
+          {
+            "name": "Greenhill Road",
+            "numbers": "1 to 80"
+          },
+          {
+            "name": "Halliwell Lane",
+            "numbers": "1 to 12"
+          },
+          {
+            "name": "Keane Court",
+            "numbers": "1 to 17"
+          },
+          {
+            "name": "Martingale Court",
+            "numbers": "22 to 76"
+          },
+          {
+            "name": "Progress Buildings",
+            "numbers": "1 to 12/12a"
+          },
+          {
+            "name": "Shirley Road",
+            "numbers": "1 to 109"
+          },
+          {
+            "name": "Waterloo Road",
+            "numbers": "336 to 356 (even)"
+          },
+          {
+            "name": "Woodlands Road",
+            "numbers": "12 to 46 (even), 48 to 80 (even)"
+          },
+          {
+            "name": "Woodlands Street",
+            "numbers": "12 to 80(even)"
+          },
+          {
+            "name": "Mount Road",
+            "numbers": "173a to 147 (odd)"
+          },
+          {
+            "name": "Northmoor Road",
+            "numbers": "99 to 221"
+          },
+          {
+            "name": "Stockport Road",
+            "numbers": "623 to 661 (Odd)"
+          },
+          {
+            "name": "Attwood Street",
+            "numbers": "1 to 25"
+          },
+          {
+            "name": "Barnby Street",
+            "numbers": "31 to 82"
+          },
+          {
+            "name": "Beard Road",
+            "numbers": "1 to 30"
+          },
+          {
+            "name": "Buckley Road",
+            "numbers": "102 to 162 (even)"
+          },
+          {
+            "name": "Craig Road",
+            "numbers": "101 to 162"
+          },
+          {
+            "name": "East Road",
+            "numbers": "1 to 127 (odd)"
+          },
+          {
+            "name": "Elgar Street",
+            "numbers": "1 to 43 (odd) and 2 to 70 (even)"
+          },
+          {
+            "name": "Grainger Avenue",
+            "numbers": "1 to 30"
+          },
+          {
+            "name": "Hatton Street",
+            "numbers": "1 to 40"
+          },
+          {
+            "name": "Heathcote Road",
+            "numbers": "101 to 162"
+          },
+          {
+            "name": "Hollins Grove",
+            "numbers": "2 to 34"
+          },
+          {
+            "name": "Hopkins Street",
+            "numbers": "1 to 42"
+          },
+          {
+            "name": "Macfarren Street",
+            "numbers": "1 to 42"
+          },
+          {
+            "name": "Mackenzie Street",
+            "numbers": "1 to 65"
+          },
+          {
+            "name": "Parkin Street",
+            "numbers": "1 to 69"
+          },
+          {
+            "name": "Patey Street",
+            "numbers": "5 to 41"
+          },
+          {
+            "name": "Pink Bank Lane",
+            "numbers": "160 to 234 (even)"
+          },
+          {
+            "name": "Prout Street",
+            "numbers": "35 to 86"
+          },
+          {
+            "name": "Purcell Street",
+            "numbers": "27 to 76"
+          },
+          {
+            "name": "Rushford Street",
+            "numbers": "17 to 100"
+          },
+          {
+            "name": "Sanby Road",
+            "numbers": "2 to 12 (even)"
+          },
+          {
+            "name": "Santley Street",
+            "numbers": "1 to 60"
+          },
+          {
+            "name": "Sherrington Street",
+            "numbers": "6 to 46"
+          },
+          {
+            "name": "Smart Street",
+            "numbers": "1 to 44"
+          },
+          {
+            "name": "Stainer Street",
+            "numbers": "41 to 88"
+          },
+          {
+            "name": "Sullivan Street",
+            "numbers": "1 to 30"
+          },
+          {
+            "name": "Tallis Street",
+            "numbers": "2 to 37"
+          },
+          {
+            "name": "Thomson Road",
+            "numbers": "99 to 161 (odd)"
+          },
+          {
+            "name": "Claremont road",
+            "numbers": "447 to 497"
+          },
+          {
+            "name": "Eva street",
+            "numbers": "1 to 18"
+          },
+          {
+            "name": "Fleeson street",
+            "numbers": "1 to 36"
+          },
+          {
+            "name": "Grandale street",
+            "numbers": "1 to 45"
+          },
+          {
+            "name": "Great Western street",
+            "numbers": "394 to 400 (even)"
+          },
+          {
+            "name": "Heald grove",
+            "numbers": "106 to 132 (even)"
+          },
+          {
+            "name": "Heald place",
+            "numbers": "65 to 99 (odd)"
+          },
+          {
+            "name": "Hibbert street",
+            "numbers": "1 to 30"
+          },
+          {
+            "name": "Ravensdale street",
+            "numbers": "2 to 14"
+          },
+          {
+            "name": "Viscount street",
+            "numbers": "37 to 71 (odd)"
+          },
+          {
+            "name": "Walmer street",
+            "numbers": "52"
+          },
+          {
+            "name": "Brentford street",
+            "numbers": "2 to 18"
+          },
+          {
+            "name": "Clevedon street",
+            "numbers": "1 to 47"
+          },
+          {
+            "name": "Vernon street",
+            "numbers": "30"
+          },
+          {
+            "name": "Whiteway street",
+            "numbers": "1 to 48"
+          },
+          {
+            "name": "Windsor road",
+            "numbers": "11 to 69"
+          },
+          {
+            "name": "Winterdyne street",
+            "numbers": "1 to 26"
+          }
+        ]
       }
     ],
     "notes": "14 street-level selective designations across three cohorts. NO additional HMO scheme. Must check exact street/address on council directory."
@@ -3892,8 +6998,157 @@
         ],
         "areaDescription": "Scarborough South: parts of Weaponness and Ramshill ward, 47 designated streets",
         "feeApprox": "£550 per single-household property",
-        "sourceUrl": "https://www.northyorks.gov.uk/housing-and-homelessness/selective-licensing/selective-licensing-scarborough-south",
-        "verified": "2026-07-10"
+        "sourceUrl": "https://www.northyorks.gov.uk/housing-and-homelessness/housing-information-landlords/selective-licensing/selective-licensing-scarborough-south",
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Albion Crescent"
+          },
+          {
+            "name": "Albion Road"
+          },
+          {
+            "name": "Alga Terrace"
+          },
+          {
+            "name": "Back Crown Terrace"
+          },
+          {
+            "name": "Back Oriel Crescent"
+          },
+          {
+            "name": "Back South Street"
+          },
+          {
+            "name": "Back Trinity Road"
+          },
+          {
+            "name": "Belmont Road"
+          },
+          {
+            "name": "Cambridge Terrace"
+          },
+          {
+            "name": "Carlton Terrace"
+          },
+          {
+            "name": "Craven Street"
+          },
+          {
+            "name": "Cromwell Gardens"
+          },
+          {
+            "name": "Cromwell Parade"
+          },
+          {
+            "name": "Cromwell Road"
+          },
+          {
+            "name": "Cromwell Terrace"
+          },
+          {
+            "name": "Crown Close Back Road"
+          },
+          {
+            "name": "Crown Crescent"
+          },
+          {
+            "name": "Crown Crescent Back Road"
+          },
+          {
+            "name": "Crown Terrace"
+          },
+          {
+            "name": "Esplanade",
+            "numbers": "1-30 inc."
+          },
+          {
+            "name": "Esplanade Gardens",
+            "numbers": "37 only"
+          },
+          {
+            "name": "Filey Road",
+            "numbers": "1-19 odds only"
+          },
+          {
+            "name": "Fulford Road",
+            "numbers": "1 - 5a and 17 odds and just 2a, 2b and 2c evens"
+          },
+          {
+            "name": "Greenfield Road"
+          },
+          {
+            "name": "Grosvenor Crescent"
+          },
+          {
+            "name": "Grosvenor Road"
+          },
+          {
+            "name": "Montpellier Terrace"
+          },
+          {
+            "name": "Oliver Street"
+          },
+          {
+            "name": "Oriel Crescent"
+          },
+          {
+            "name": "Prince of Wales Terrace"
+          },
+          {
+            "name": "Princess Royal Lane"
+          },
+          {
+            "name": "Princess Royal Terrace"
+          },
+          {
+            "name": "Ramshill Road"
+          },
+          {
+            "name": "Royal Avenue"
+          },
+          {
+            "name": "Royal Crescent"
+          },
+          {
+            "name": "Royal Crescent Lane"
+          },
+          {
+            "name": "South Street"
+          },
+          {
+            "name": "St Martins Avenue"
+          },
+          {
+            "name": "St Martins Place"
+          },
+          {
+            "name": "St Martins Road"
+          },
+          {
+            "name": "St Martins Square"
+          },
+          {
+            "name": "Trinity Road"
+          },
+          {
+            "name": "Valley Road",
+            "numbers": "evens only 32-58"
+          },
+          {
+            "name": "West Street",
+            "numbers": "1-15 odds and 2-8 evens"
+          },
+          {
+            "name": "West Terrace"
+          },
+          {
+            "name": "Westbourne Grove"
+          },
+          {
+            "name": "Westbourne Road"
+          }
+        ]
       },
       {
         "type": "selective",
@@ -3908,8 +7163,322 @@
         ],
         "areaDescription": "Scarborough Town: 100+ designated streets",
         "feeApprox": "£695 total per single unit",
-        "sourceUrl": "https://www.northyorks.gov.uk/housing-and-homelessness/selective-licensing/selective-licensing-scarborough-town-1-june-2024",
-        "verified": "2026-07-10"
+        "sourceUrl": "https://www.northyorks.gov.uk/housing-and-homelessness/housing-information-landlords/selective-licensing/selective-licensing-scarborough-town-1-june-2024",
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Aberdeen Place"
+          },
+          {
+            "name": "Aberdeen Street"
+          },
+          {
+            "name": "Aberdeen Terrace"
+          },
+          {
+            "name": "Aberdeen Walk"
+          },
+          {
+            "name": "Albemarle Back Road"
+          },
+          {
+            "name": "Albemarle Crescent"
+          },
+          {
+            "name": "Albert Street"
+          },
+          {
+            "name": "Alma Parade"
+          },
+          {
+            "name": "Alma Square"
+          },
+          {
+            "name": "Arundel Place"
+          },
+          {
+            "name": "Bar Street"
+          },
+          {
+            "name": "Barwick Street"
+          },
+          {
+            "name": "Bedford Street"
+          },
+          {
+            "name": "Belgrave Crescent"
+          },
+          {
+            "name": "Belle Vue Parade"
+          },
+          {
+            "name": "Belle Vue Street"
+          },
+          {
+            "name": "Beulah Terrace"
+          },
+          {
+            "name": "Blands Cliff"
+          },
+          {
+            "name": "Blenheim Street"
+          },
+          {
+            "name": "Blenheim Terrace",
+            "numbers": "1 to 29"
+          },
+          {
+            "name": "Cambridge Street"
+          },
+          {
+            "name": "Castle Road",
+            "numbers": "1 to 93a odds and 2 to 110 evens - including Wilson Mariners homes"
+          },
+          {
+            "name": "Clarence Place"
+          },
+          {
+            "name": "Clarence Road"
+          },
+          {
+            "name": "Clark Street"
+          },
+          {
+            "name": "Clifton Street"
+          },
+          {
+            "name": "Dean Road",
+            "numbers": "1 to 51 including Wheelhouse Square"
+          },
+          {
+            "name": "Durham Street"
+          },
+          {
+            "name": "Durham Place"
+          },
+          {
+            "name": "Eastborough"
+          },
+          {
+            "name": "Elders Street"
+          },
+          {
+            "name": "Falconers Road"
+          },
+          {
+            "name": "Falconers Square"
+          },
+          {
+            "name": "Falsgrave Road",
+            "numbers": "1 to 143 odds and 2 to 118 evens - including West Park Terrace"
+          },
+          {
+            "name": "Fire Station Yard"
+          },
+          {
+            "name": "Globe Street"
+          },
+          {
+            "name": "Hanover Road"
+          },
+          {
+            "name": "Harcourt Place"
+          },
+          {
+            "name": "Hope Street"
+          },
+          {
+            "name": "Hoxton Road"
+          },
+          {
+            "name": "Howard Street"
+          },
+          {
+            "name": "Huntriss Row"
+          },
+          {
+            "name": "James Street"
+          },
+          {
+            "name": "King Street"
+          },
+          {
+            "name": "Leading Post Street"
+          },
+          {
+            "name": "Market Street"
+          },
+          {
+            "name": "Market Way"
+          },
+          {
+            "name": "Marlborough Street"
+          },
+          {
+            "name": "Marlborough Terrace"
+          },
+          {
+            "name": "Merchants Row"
+          },
+          {
+            "name": "Mill Street"
+          },
+          {
+            "name": "Morgan Street"
+          },
+          {
+            "name": "Nelson Street"
+          },
+          {
+            "name": "Newborough"
+          },
+          {
+            "name": "New Queen Street"
+          },
+          {
+            "name": "North Marine Road"
+          },
+          {
+            "name": "North Street",
+            "numbers": "including Providence Place"
+          },
+          {
+            "name": "Northway"
+          },
+          {
+            "name": "Norwood Street"
+          },
+          {
+            "name": "Oxford Street"
+          },
+          {
+            "name": "Palace Hill"
+          },
+          {
+            "name": "Palace Hill Lane"
+          },
+          {
+            "name": "Pavilion Square"
+          },
+          {
+            "name": "Pavilion Terrace"
+          },
+          {
+            "name": "Peel Terrace"
+          },
+          {
+            "name": "Princess Square",
+            "numbers": "1 to 3"
+          },
+          {
+            "name": "Prospect Place"
+          },
+          {
+            "name": "Prospect Road",
+            "numbers": "1 to 39 odds only"
+          },
+          {
+            "name": "Queen Street",
+            "numbers": "1 to 29 only"
+          },
+          {
+            "name": "Queens Parade"
+          },
+          {
+            "name": "Queens Terrace"
+          },
+          {
+            "name": "Regent Street"
+          },
+          {
+            "name": "Roscoe Street"
+          },
+          {
+            "name": "Sandringham Street"
+          },
+          {
+            "name": "Sherwood Street"
+          },
+          {
+            "name": "Silver Street"
+          },
+          {
+            "name": "Stanley Street"
+          },
+          {
+            "name": "St Helens Square"
+          },
+          {
+            "name": "St Nicholas Street"
+          },
+          {
+            "name": "St Thomas Street"
+          },
+          {
+            "name": "Sussex Street"
+          },
+          {
+            "name": "Swan Hill Road"
+          },
+          {
+            "name": "Sydney Street"
+          },
+          {
+            "name": "Tindall Street"
+          },
+          {
+            "name": "Trafalgar Road"
+          },
+          {
+            "name": "Trafalgar Square"
+          },
+          {
+            "name": "Trafalgar Street West"
+          },
+          {
+            "name": "Trafalgar Terrace"
+          },
+          {
+            "name": "Union Street"
+          },
+          {
+            "name": "Vincent Street"
+          },
+          {
+            "name": "Valley Bridge Parade"
+          },
+          {
+            "name": "Vernon Road",
+            "numbers": "1 to 6"
+          },
+          {
+            "name": "Victoria Parade"
+          },
+          {
+            "name": "Victoria Road"
+          },
+          {
+            "name": "Victoria Street"
+          },
+          {
+            "name": "Vine Street"
+          },
+          {
+            "name": "West Square"
+          },
+          {
+            "name": "Westborough"
+          },
+          {
+            "name": "Westwood"
+          },
+          {
+            "name": "William Street"
+          },
+          {
+            "name": "Wrea Lane"
+          }
+        ]
       }
     ],
     "notes": "Both schemes in former Scarborough borough. No additional HMO licensing anywhere in North Yorkshire."
@@ -4216,20 +7785,20 @@
     "schemes": [
       {
         "type": "selective",
-        "status": "unverified",
+        "status": "expired",
         "start": "2019-03-25",
         "end": "2024-03-24",
         "coverage": "streets",
         "wards": [
           "South Bank"
         ],
-        "areaDescription": "Selective Licensing (South Bank) 2019 Scheme, covering older PRS housing in South Bank (TS6). Original designation had effect until 24 Mar 2024; council still runs a live application portal so a renewal may be in force, but this could NOT be confirmed on a fetched official page. A new East Cleveland scheme (Brotton/Eston/Normanby) has been discussed but is proposed only.",
+        "areaDescription": "South Bank (older private rented housing). The area was defined by an inspection-only plan held at the council offices, never a published street list.",
         "feeApprox": "£500 (£250 application + £250 issue)",
-        "sourceUrl": "https://www.legislate.tech/learn/do-i-need-an-hmo-licence-in-redcar-and-cleveland",
+        "sourceUrl": "https://www.redcar-cleveland.gov.uk/sites/default/files/2022-04/Signed%20Notice%20-%20Designation%20of%20an%20area%20for%20Selective%20Licensing.pdf",
         "verified": "2026-07-10"
       }
     ],
-    "notes": "redcar-cleveland.gov.uk 403'd. South Bank scheme's current status genuinely uncertain (original end Mar 2024 vs live portal); marked unverified, confirm on council site. No additional HMO scheme."
+    "notes": "The South Bank selective licensing designation came into force on 25 March 2019 and had effect until 24 March 2024. It has expired and no successor scheme has been designated, confirmed against the council's own signed designation notice. A new East Cleveland scheme covering Brotton, Eston and Normanby has been asked for but only at the evidence-gathering stage. Confirm with the council before letting."
   },
   {
     "council": "Redditch",
@@ -4490,7 +8059,342 @@
         "areaDescription": "Eccles, Barton and Winton: 100+ named streets",
         "feeApprox": "£609 first application",
         "sourceUrl": "https://www.salford.gov.uk/housing/information-for-landlords/landlord-licensing/areas-covered-by-selective-licensing/selective-licensing-in-eccles-barton-and-winton/",
-        "verified": "2026-07-10"
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Adelaide Street"
+          },
+          {
+            "name": "Alba Close"
+          },
+          {
+            "name": "Albert Street"
+          },
+          {
+            "name": "Alma Street"
+          },
+          {
+            "name": "Armitage Street"
+          },
+          {
+            "name": "Barlow Street"
+          },
+          {
+            "name": "Barton Lane",
+            "numbers": "odds 77 to 119, evens 34 to 182"
+          },
+          {
+            "name": "Bradburn Street"
+          },
+          {
+            "name": "Bright Road"
+          },
+          {
+            "name": "Brindley Close"
+          },
+          {
+            "name": "Byron Street"
+          },
+          {
+            "name": "Bradburn Close"
+          },
+          {
+            "name": "Bradburn Grove"
+          },
+          {
+            "name": "Bradburn Avenue"
+          },
+          {
+            "name": "Boardman Street"
+          },
+          {
+            "name": "Cannon Street"
+          },
+          {
+            "name": "Cawdor Street"
+          },
+          {
+            "name": "Chadwick Road"
+          },
+          {
+            "name": "Chapel Street"
+          },
+          {
+            "name": "Charlton Avenue"
+          },
+          {
+            "name": "Church Street",
+            "numbers": "odds 167 onwards, evens 190 onwards"
+          },
+          {
+            "name": "Cornwall Street"
+          },
+          {
+            "name": "Corporation Road"
+          },
+          {
+            "name": "Cromwell Road"
+          },
+          {
+            "name": "Church Grove"
+          },
+          {
+            "name": "Devonshire Road"
+          },
+          {
+            "name": "Dorning Street"
+          },
+          {
+            "name": "Eccles Fold"
+          },
+          {
+            "name": "Eliza Ann Street"
+          },
+          {
+            "name": "Ellesmere Street"
+          },
+          {
+            "name": "Elm Street"
+          },
+          {
+            "name": "Enfield Close"
+          },
+          {
+            "name": "Fintry Grove"
+          },
+          {
+            "name": "Fielding Street"
+          },
+          {
+            "name": "Fir Street"
+          },
+          {
+            "name": "Francis Avenue"
+          },
+          {
+            "name": "Franklin Street"
+          },
+          {
+            "name": "George Street"
+          },
+          {
+            "name": "Gladstone Road"
+          },
+          {
+            "name": "Gleaves Road"
+          },
+          {
+            "name": "Golden Street"
+          },
+          {
+            "name": "Green Lane",
+            "numbers": "odds 27 to 29, evens 14 to 82"
+          },
+          {
+            "name": "Garden Street"
+          },
+          {
+            "name": "Hall Bank"
+          },
+          {
+            "name": "Hamilcar Avenue"
+          },
+          {
+            "name": "Hamilton Avenue"
+          },
+          {
+            "name": "Hampden Grove"
+          },
+          {
+            "name": "Hemming Drive"
+          },
+          {
+            "name": "Henry Street"
+          },
+          {
+            "name": "Hospital Avenue"
+          },
+          {
+            "name": "Irlam Avenue"
+          },
+          {
+            "name": "Ivy Street"
+          },
+          {
+            "name": "Kean Place"
+          },
+          {
+            "name": "King Edward Street"
+          },
+          {
+            "name": "Legh Street"
+          },
+          {
+            "name": "Lewis Street"
+          },
+          {
+            "name": "Lime Street"
+          },
+          {
+            "name": "Liverpool Road",
+            "numbers": "odds 5 to 311, evens 28 to 316"
+          },
+          {
+            "name": "Lower Monton Rd",
+            "numbers": "2 to 28"
+          },
+          {
+            "name": "Lynwood Avenue"
+          },
+          {
+            "name": "Mather Avenue"
+          },
+          {
+            "name": "Mather Road"
+          },
+          {
+            "name": "Mellor Street"
+          },
+          {
+            "name": "Milton Street"
+          },
+          {
+            "name": "Monton Lane"
+          },
+          {
+            "name": "Moorfield Close"
+          },
+          {
+            "name": "Nelson Street"
+          },
+          {
+            "name": "New Street"
+          },
+          {
+            "name": "Oak Street"
+          },
+          {
+            "name": "Oberon Close"
+          },
+          {
+            "name": "Othello Drive"
+          },
+          {
+            "name": "Oxford Street"
+          },
+          {
+            "name": "Parr Street"
+          },
+          {
+            "name": "Peel Street"
+          },
+          {
+            "name": "Pembroke Avenue"
+          },
+          {
+            "name": "Philip Street"
+          },
+          {
+            "name": "Plum Tree Close"
+          },
+          {
+            "name": "Police Street"
+          },
+          {
+            "name": "Princess Street"
+          },
+          {
+            "name": "Pym Street"
+          },
+          {
+            "name": "Queen Victoria Street"
+          },
+          {
+            "name": "Renshaw Avenue"
+          },
+          {
+            "name": "Renshaw Street"
+          },
+          {
+            "name": "Richardson Road"
+          },
+          {
+            "name": "Roberts Street"
+          },
+          {
+            "name": "Russell Street"
+          },
+          {
+            "name": "Shakespeare Crescent"
+          },
+          {
+            "name": "St Andrews Avenue"
+          },
+          {
+            "name": "St John Street"
+          },
+          {
+            "name": "Station Road"
+          },
+          {
+            "name": "Sydney Avenue"
+          },
+          {
+            "name": "Spencer Street"
+          },
+          {
+            "name": "St James Street"
+          },
+          {
+            "name": "Spooner Road"
+          },
+          {
+            "name": "Talbot Street"
+          },
+          {
+            "name": "Thomas Johnson Close"
+          },
+          {
+            "name": "Trafford Road",
+            "numbers": "odds 1-69, evens 2-44"
+          },
+          {
+            "name": "The Avenue"
+          },
+          {
+            "name": "Vane Street"
+          },
+          {
+            "name": "Vernon Avenue"
+          },
+          {
+            "name": "Vine Street"
+          },
+          {
+            "name": "Wade Close"
+          },
+          {
+            "name": "Wade House"
+          },
+          {
+            "name": "Waterslea"
+          },
+          {
+            "name": "Watson Street"
+          },
+          {
+            "name": "Wesley Street"
+          },
+          {
+            "name": "Wilham Avenue"
+          },
+          {
+            "name": "Willan Road"
+          },
+          {
+            "name": "Wycliffe Street"
+          }
+        ]
       },
       {
         "type": "selective",
@@ -4501,7 +8405,454 @@
         "areaDescription": "Broughton, Kersal and Broughton Park: 150+ named streets, 1,300+ homes",
         "feeApprox": "£450 first application non-accredited (early period)",
         "sourceUrl": "https://www.salford.gov.uk/housing/information-for-landlords/landlord-licensing/areas-covered-by-selective-licensing/selective-licensing-in-broughton-kersal-and-broughton-park/",
-        "verified": "2026-07-10"
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Acer Grove"
+          },
+          {
+            "name": "Agnes Street"
+          },
+          {
+            "name": "Ashbourne Grove"
+          },
+          {
+            "name": "Avebury Close"
+          },
+          {
+            "name": "Axford Close"
+          },
+          {
+            "name": "Basten Drive"
+          },
+          {
+            "name": "Baydon Avenue"
+          },
+          {
+            "name": "Beckett Avenue"
+          },
+          {
+            "name": "Bengairn, Murray Street"
+          },
+          {
+            "name": "Bennett Drive"
+          },
+          {
+            "name": "Betula Grove"
+          },
+          {
+            "name": "Bevendon Square"
+          },
+          {
+            "name": "Bispham Grove"
+          },
+          {
+            "name": "Bower Street"
+          },
+          {
+            "name": "Bowker Street"
+          },
+          {
+            "name": "Briardene (back of Hilton Street)"
+          },
+          {
+            "name": "Bristol Street"
+          },
+          {
+            "name": "Broughton Green Square"
+          },
+          {
+            "name": "Buckfast Walk"
+          },
+          {
+            "name": "Buddleia Grove"
+          },
+          {
+            "name": "Buile Street"
+          },
+          {
+            "name": "Bury New Road",
+            "numbers": "* please email landlord.licensing@salford.gov.uk to check if your property on Bury New Road is on the list"
+          },
+          {
+            "name": "Carnavon Street"
+          },
+          {
+            "name": "Cheshill Court"
+          },
+          {
+            "name": "Chisledon Avenue"
+          },
+          {
+            "name": "City View (Highclere Avenue)"
+          },
+          {
+            "name": "Cleveleys Grove"
+          },
+          {
+            "name": "Cliff Avenue"
+          },
+          {
+            "name": "Cliff Crescent"
+          },
+          {
+            "name": "Cliff Grange"
+          },
+          {
+            "name": "Clivia Grove"
+          },
+          {
+            "name": "Croft Bank"
+          },
+          {
+            "name": "Curzon Road"
+          },
+          {
+            "name": "Dixon Avenue"
+          },
+          {
+            "name": "Devonshire Street"
+          },
+          {
+            "name": "Donohue Close"
+          },
+          {
+            "name": "Dorothy Street"
+          },
+          {
+            "name": "Douglas Street"
+          },
+          {
+            "name": "Dudley Street"
+          },
+          {
+            "name": "Duncan Street"
+          },
+          {
+            "name": "Evergreen Mews"
+          },
+          {
+            "name": "Everleigh Drive"
+          },
+          {
+            "name": "Fuchsia Grove"
+          },
+          {
+            "name": "Gainsborough Street"
+          },
+          {
+            "name": "Genista Grove"
+          },
+          {
+            "name": "Grassfield Avenue"
+          },
+          {
+            "name": "Great Cheetham St East"
+          },
+          {
+            "name": "Great Cheetham St West"
+          },
+          {
+            "name": "Great Clowes Street",
+            "numbers": "234 onwards and 237 onwards"
+          },
+          {
+            "name": "Grecian Street North"
+          },
+          {
+            "name": "Green View"
+          },
+          {
+            "name": "Greencroft way"
+          },
+          {
+            "name": "Griffin Street"
+          },
+          {
+            "name": "Hadfield Street"
+          },
+          {
+            "name": "Hamilton Street"
+          },
+          {
+            "name": "Hartis Avenue"
+          },
+          {
+            "name": "Heaton Street"
+          },
+          {
+            "name": "Highclere Avenue"
+          },
+          {
+            "name": "Hill Street"
+          },
+          {
+            "name": "Hilton Street North"
+          },
+          {
+            "name": "Hope Street"
+          },
+          {
+            "name": "Howe Street"
+          },
+          {
+            "name": "Hugh Oldham Drive"
+          },
+          {
+            "name": "Ilex Grove"
+          },
+          {
+            "name": "Inghamwood Close"
+          },
+          {
+            "name": "Japan Street"
+          },
+          {
+            "name": "Kalmia Grove"
+          },
+          {
+            "name": "Kempton House"
+          },
+          {
+            "name": "Kimberley Street"
+          },
+          {
+            "name": "King Street"
+          },
+          {
+            "name": "Kipling Street"
+          },
+          {
+            "name": "Knoll Street"
+          },
+          {
+            "name": "Leaf Cottage (Oak Road)"
+          },
+          {
+            "name": "Leicester Road",
+            "numbers": "odds to 61, evens to 82"
+          },
+          {
+            "name": "Leicester Walk"
+          },
+          {
+            "name": "Lower Broughton Road",
+            "numbers": "302 onwards, 349 onwards"
+          },
+          {
+            "name": "Lyneham Walk"
+          },
+          {
+            "name": "Malimson Bourne (Hilton Street North)"
+          },
+          {
+            "name": "Mandley Park Avenue"
+          },
+          {
+            "name": "Manley Street"
+          },
+          {
+            "name": "Manton Close"
+          },
+          {
+            "name": "Marie Street"
+          },
+          {
+            "name": "Marlborough Road"
+          },
+          {
+            "name": "Marsland Street North"
+          },
+          {
+            "name": "Marsland Street South"
+          },
+          {
+            "name": "Maudsley Street"
+          },
+          {
+            "name": "Maysmith Mews"
+          },
+          {
+            "name": "Milan Street"
+          },
+          {
+            "name": "Mildred Street"
+          },
+          {
+            "name": "Moston Street"
+          },
+          {
+            "name": "Murray Street"
+          },
+          {
+            "name": "New Devonshire Square"
+          },
+          {
+            "name": "Nile Terrace"
+          },
+          {
+            "name": "Norman Road"
+          },
+          {
+            "name": "Northumberland Street"
+          },
+          {
+            "name": "Norton Street"
+          },
+          {
+            "name": "Oak Road"
+          },
+          {
+            "name": "Oakhill Court"
+          },
+          {
+            "name": "Orient Street"
+          },
+          {
+            "name": "Pennon Close"
+          },
+          {
+            "name": "Pimlico Close"
+          },
+          {
+            "name": "Priory Avenue"
+          },
+          {
+            "name": "Priory Grove"
+          },
+          {
+            "name": "Priory Place"
+          },
+          {
+            "name": "Pyramid Court"
+          },
+          {
+            "name": "Rialto Gardens"
+          },
+          {
+            "name": "Rigby Walk"
+          },
+          {
+            "name": "Rigby Street"
+          },
+          {
+            "name": "Riversdale"
+          },
+          {
+            "name": "Rock Bank"
+          },
+          {
+            "name": "Rock Street"
+          },
+          {
+            "name": "Roman Court"
+          },
+          {
+            "name": "Rosa Grove"
+          },
+          {
+            "name": "Rosemary Grove"
+          },
+          {
+            "name": "Rowan Way"
+          },
+          {
+            "name": "Rudyard Street"
+          },
+          {
+            "name": "Samian Gardens"
+          },
+          {
+            "name": "Sandringham Gardens"
+          },
+          {
+            "name": "Sarina Court"
+          },
+          {
+            "name": "Scarr Wheel"
+          },
+          {
+            "name": "Scovell Street"
+          },
+          {
+            "name": "Southam Street"
+          },
+          {
+            "name": "St James Road"
+          },
+          {
+            "name": "St Johns Court"
+          },
+          {
+            "name": "St Johns Street"
+          },
+          {
+            "name": "Stoney Knoll"
+          },
+          {
+            "name": "Symons Street"
+          },
+          {
+            "name": "Tansey Grove"
+          },
+          {
+            "name": "Tetlow Lane"
+          },
+          {
+            "name": "The Bails"
+          },
+          {
+            "name": "The Polygon"
+          },
+          {
+            "name": "The Priory"
+          },
+          {
+            "name": "Thirsk Mews"
+          },
+          {
+            "name": "Todd Street"
+          },
+          {
+            "name": "Topfield Grove"
+          },
+          {
+            "name": "Tully Street"
+          },
+          {
+            "name": "Turner Street"
+          },
+          {
+            "name": "Village Street"
+          },
+          {
+            "name": "Vinca Grove"
+          },
+          {
+            "name": "Vincent Street"
+          },
+          {
+            "name": "Weatherall Street North"
+          },
+          {
+            "name": "Welbeck Grove"
+          },
+          {
+            "name": "Wellington Street East"
+          },
+          {
+            "name": "Wellington Street West"
+          },
+          {
+            "name": "Wiltshire Street"
+          },
+          {
+            "name": "Winterford Road"
+          },
+          {
+            "name": "Yew Street"
+          }
+        ]
       }
     ],
     "notes": "Additional scheme expires imminently (19 Jul 2026). Separate s257 additional scheme consulted Feb-Apr 2026, no designation yet."
@@ -4544,8 +8895,1231 @@
         "coverage": "streets",
         "areaDescription": "A large proportion of Bootle (street-level designation; council publishes street list and map)",
         "feeApprox": "£695 standard (£545/£495 accredited)",
-        "sourceUrl": "https://www.sefton.gov.uk/housing/private-sector-housing/landlord-licensing-and-accreditation/selective-licensing-2023-2028/",
-        "verified": "2026-07-10"
+        "sourceUrl": "https://www.sefton.gov.uk/media/8194/sl-streets-2023-2028_r3.pdf",
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Addison Street"
+          },
+          {
+            "name": "Aintree Road",
+            "numbers": "Numbers 1-29 Odds, 2-64 Evens"
+          },
+          {
+            "name": "Akenside Street"
+          },
+          {
+            "name": "Alpha Street"
+          },
+          {
+            "name": "Alt Road"
+          },
+          {
+            "name": "Altcar Road"
+          },
+          {
+            "name": "Antonio Street"
+          },
+          {
+            "name": "Anvil Close"
+          },
+          {
+            "name": "Arctic Road"
+          },
+          {
+            "name": "Ash Grove"
+          },
+          {
+            "name": "Ash Street"
+          },
+          {
+            "name": "Atlantic Road"
+          },
+          {
+            "name": "Atlas Road"
+          },
+          {
+            "name": "Aughton Road"
+          },
+          {
+            "name": "August Street"
+          },
+          {
+            "name": "Autumn Way"
+          },
+          {
+            "name": "Aylward Place"
+          },
+          {
+            "name": "Back Stanley Road"
+          },
+          {
+            "name": "Balfe Street"
+          },
+          {
+            "name": "Balfour Avenue"
+          },
+          {
+            "name": "Balfour Road"
+          },
+          {
+            "name": "Balliol Road"
+          },
+          {
+            "name": "Baltic Road"
+          },
+          {
+            "name": "Bank Road"
+          },
+          {
+            "name": "Barkeley Drive"
+          },
+          {
+            "name": "Barnton Close"
+          },
+          {
+            "name": "Beatrice Street"
+          },
+          {
+            "name": "Bedford Road"
+          },
+          {
+            "name": "Beech Grove"
+          },
+          {
+            "name": "Beech Street"
+          },
+          {
+            "name": "Beechwood Road"
+          },
+          {
+            "name": "Bellini Close"
+          },
+          {
+            "name": "Benbow Street"
+          },
+          {
+            "name": "Benedict Street"
+          },
+          {
+            "name": "Beresford Street"
+          },
+          {
+            "name": "Bergen Close"
+          },
+          {
+            "name": "Berry Street"
+          },
+          {
+            "name": "Bianca Street"
+          },
+          {
+            "name": "Bibbys Lane"
+          },
+          {
+            "name": "Blisworth Street"
+          },
+          {
+            "name": "Blossom Street"
+          },
+          {
+            "name": "Boswell Street"
+          },
+          {
+            "name": "Bowden Street"
+          },
+          {
+            "name": "Bowles Street"
+          },
+          {
+            "name": "Braby Road"
+          },
+          {
+            "name": "Brasenose Road"
+          },
+          {
+            "name": "Breeze Hill",
+            "numbers": "Numbers 1-39 Odds, 36-48 Evens"
+          },
+          {
+            "name": "Brewster Street",
+            "numbers": "Numbers 73-75 Odds, 46-100 Evens"
+          },
+          {
+            "name": "Bridge Road"
+          },
+          {
+            "name": "Bridge Street"
+          },
+          {
+            "name": "Bromyard Close"
+          },
+          {
+            "name": "Brook Road"
+          },
+          {
+            "name": "Brookhill Close"
+          },
+          {
+            "name": "Brookhill Road"
+          },
+          {
+            "name": "Browning Street"
+          },
+          {
+            "name": "Bryant Road"
+          },
+          {
+            "name": "Bulwer Street"
+          },
+          {
+            "name": "Burns Street"
+          },
+          {
+            "name": "Bushley Close"
+          },
+          {
+            "name": "Byng Street"
+          },
+          {
+            "name": "Byron Street"
+          },
+          {
+            "name": "Cambridge Road"
+          },
+          {
+            "name": "Campbell Street"
+          },
+          {
+            "name": "Canal Street"
+          },
+          {
+            "name": "Capricorn Way"
+          },
+          {
+            "name": "Caradoc Road"
+          },
+          {
+            "name": "Carisbrooke Road",
+            "numbers": "Numbers 137-175 Odds, 140-178 Evens"
+          },
+          {
+            "name": "Carolina Street"
+          },
+          {
+            "name": "Carriage Grove"
+          },
+          {
+            "name": "Caspian Place"
+          },
+          {
+            "name": "Cassio Street"
+          },
+          {
+            "name": "Catherine Street"
+          },
+          {
+            "name": "Cecil Road"
+          },
+          {
+            "name": "Cedar Street"
+          },
+          {
+            "name": "Chapel Terrace"
+          },
+          {
+            "name": "Chaucer Street"
+          },
+          {
+            "name": "Chelsea Road"
+          },
+          {
+            "name": "Chesnut Grove"
+          },
+          {
+            "name": "Church Gardens"
+          },
+          {
+            "name": "Church Grove"
+          },
+          {
+            "name": "Church Road"
+          },
+          {
+            "name": "Church Street"
+          },
+          {
+            "name": "Church View"
+          },
+          {
+            "name": "Church Walk"
+          },
+          {
+            "name": "Clairville Close"
+          },
+          {
+            "name": "Clare Road"
+          },
+          {
+            "name": "Clarendon Road"
+          },
+          {
+            "name": "Clayfield Close"
+          },
+          {
+            "name": "Cleary Street"
+          },
+          {
+            "name": "Cobb Avenue"
+          },
+          {
+            "name": "Coleridge Street"
+          },
+          {
+            "name": "College View"
+          },
+          {
+            "name": "Collins Close"
+          },
+          {
+            "name": "Compton Walk"
+          },
+          {
+            "name": "Cookson Road"
+          },
+          {
+            "name": "Coral Drive"
+          },
+          {
+            "name": "Cornwall Road"
+          },
+          {
+            "name": "Corporation Wharf"
+          },
+          {
+            "name": "Cowper Street"
+          },
+          {
+            "name": "Crescent Road"
+          },
+          {
+            "name": "Cricklade Close"
+          },
+          {
+            "name": "Crosby Road South",
+            "numbers": "Numbers 171-275 Odds"
+          },
+          {
+            "name": "Croxteth Avenue"
+          },
+          {
+            "name": "Croxteth Road"
+          },
+          {
+            "name": "Cunard Road"
+          },
+          {
+            "name": "Dacre Street"
+          },
+          {
+            "name": "Daisy Mews"
+          },
+          {
+            "name": "Daniel Close"
+          },
+          {
+            "name": "Davies Street"
+          },
+          {
+            "name": "Deepdale Avenue"
+          },
+          {
+            "name": "Delaware Road"
+          },
+          {
+            "name": "Delta Road"
+          },
+          {
+            "name": "Derby Road",
+            "numbers": "Numbers 119-327 Odds, 42-318 Evens"
+          },
+          {
+            "name": "Dorset Close"
+          },
+          {
+            "name": "Douglas Place"
+          },
+          {
+            "name": "Downing Road"
+          },
+          {
+            "name": "Drake Street"
+          },
+          {
+            "name": "Dryden Street"
+          },
+          {
+            "name": "Dundas Street"
+          },
+          {
+            "name": "Earl Road",
+            "numbers": "1-31 Odds only"
+          },
+          {
+            "name": "Eaton Avenue"
+          },
+          {
+            "name": "Effingham Street"
+          },
+          {
+            "name": "Eliot Street"
+          },
+          {
+            "name": "Elm Drive"
+          },
+          {
+            "name": "Elm Road"
+          },
+          {
+            "name": "Empire Road"
+          },
+          {
+            "name": "Essex Way"
+          },
+          {
+            "name": "Everton View"
+          },
+          {
+            "name": "Exeter Road"
+          },
+          {
+            "name": "Falconer Street"
+          },
+          {
+            "name": "Fern Grove"
+          },
+          {
+            "name": "Fernhill Close"
+          },
+          {
+            "name": "Fernhill Gardens"
+          },
+          {
+            "name": "Fernhill Mews East"
+          },
+          {
+            "name": "Fernhill Mews West"
+          },
+          {
+            "name": "Fernhill Road",
+            "numbers": "Edith Villas, Oxford House, Sefton Villas, Numbers 7-23 Odds, 20-48 Evens"
+          },
+          {
+            "name": "Fernhill Way"
+          },
+          {
+            "name": "Gemini Close"
+          },
+          {
+            "name": "Georgia Close"
+          },
+          {
+            "name": "Girton Avenue"
+          },
+          {
+            "name": "Gladstone Road",
+            "numbers": "Numbers 1-5 ODDS, 4-10 EVENS, 1-18 Elm Gardens"
+          },
+          {
+            "name": "Globe Road"
+          },
+          {
+            "name": "Gloucester Road"
+          },
+          {
+            "name": "Glover Place"
+          },
+          {
+            "name": "Goldsmith Street"
+          },
+          {
+            "name": "Gonville Road"
+          },
+          {
+            "name": "Gower Street"
+          },
+          {
+            "name": "Gray Street"
+          },
+          {
+            "name": "Green Lane",
+            "numbers": "Numbers 56-60 Evens"
+          },
+          {
+            "name": "Grimshaw Street"
+          },
+          {
+            "name": "Grove Street"
+          },
+          {
+            "name": "Guion Road"
+          },
+          {
+            "name": "Halidon Court"
+          },
+          {
+            "name": "Halsall Road"
+          },
+          {
+            "name": "Hands Street"
+          },
+          {
+            "name": "Hapsford Road"
+          },
+          {
+            "name": "Hartwell Street"
+          },
+          {
+            "name": "Havelock Road"
+          },
+          {
+            "name": "Hawarden Grove"
+          },
+          {
+            "name": "Hawthorne Road",
+            "numbers": "Numbers 1-513 Odds, 2-556 Evens"
+          },
+          {
+            "name": "Heathfield Close"
+          },
+          {
+            "name": "Heathfield Drive"
+          },
+          {
+            "name": "Hemans Street"
+          },
+          {
+            "name": "Hemer Terrace"
+          },
+          {
+            "name": "Hero Street"
+          },
+          {
+            "name": "Hertford Road"
+          },
+          {
+            "name": "Hicks Road"
+          },
+          {
+            "name": "Hillcrest"
+          },
+          {
+            "name": "Hillhead Road"
+          },
+          {
+            "name": "Hillside Close"
+          },
+          {
+            "name": "Hinton Street"
+          },
+          {
+            "name": "Hogarth Street"
+          },
+          {
+            "name": "Holly Grove"
+          },
+          {
+            "name": "Holly Street"
+          },
+          {
+            "name": "Holmes Lane"
+          },
+          {
+            "name": "Hood Street"
+          },
+          {
+            "name": "Hornby Avenue"
+          },
+          {
+            "name": "Hornby Boulevard"
+          },
+          {
+            "name": "Hornby Road"
+          },
+          {
+            "name": "Hornby Street"
+          },
+          {
+            "name": "Humphrey Street"
+          },
+          {
+            "name": "Ibstock Road"
+          },
+          {
+            "name": "Ince Avenue"
+          },
+          {
+            "name": "Inman Road"
+          },
+          {
+            "name": "Irlam Road"
+          },
+          {
+            "name": "Ismay Road"
+          },
+          {
+            "name": "Jacobs Close"
+          },
+          {
+            "name": "Jersey Close"
+          },
+          {
+            "name": "Jersey Street"
+          },
+          {
+            "name": "Joseph Gardner Way"
+          },
+          {
+            "name": "Jubilee Road"
+          },
+          {
+            "name": "July Street"
+          },
+          {
+            "name": "June Street"
+          },
+          {
+            "name": "Kara Close"
+          },
+          {
+            "name": "Keats Street"
+          },
+          {
+            "name": "Keble Road"
+          },
+          {
+            "name": "Ken Mews"
+          },
+          {
+            "name": "Kenilworth Street"
+          },
+          {
+            "name": "Kent Close"
+          },
+          {
+            "name": "Kepler Street"
+          },
+          {
+            "name": "Kilburn Street"
+          },
+          {
+            "name": "Kings Road"
+          },
+          {
+            "name": "Kipling Street"
+          },
+          {
+            "name": "Kirk Road"
+          },
+          {
+            "name": "Knowsley Road"
+          },
+          {
+            "name": "Laburnum Place"
+          },
+          {
+            "name": "Lander Road"
+          },
+          {
+            "name": "Langdale Street"
+          },
+          {
+            "name": "Lathom Road"
+          },
+          {
+            "name": "Lawler Street"
+          },
+          {
+            "name": "Leicester Road"
+          },
+          {
+            "name": "Librex Close"
+          },
+          {
+            "name": "Lily Road"
+          },
+          {
+            "name": "Lime Grove"
+          },
+          {
+            "name": "Linacre Lane",
+            "numbers": "Numbers 11-109 Odds, 2-58 Evens"
+          },
+          {
+            "name": "Linacre Road"
+          },
+          {
+            "name": "Lincoln Crescent"
+          },
+          {
+            "name": "Litherland Road"
+          },
+          {
+            "name": "Longfellow Street"
+          },
+          {
+            "name": "Longfield Road"
+          },
+          {
+            "name": "Lunt Road"
+          },
+          {
+            "name": "Lydiate Road"
+          },
+          {
+            "name": "Lyster Road"
+          },
+          {
+            "name": "Lytton Grove"
+          },
+          {
+            "name": "Malvern Road"
+          },
+          {
+            "name": "Manor Close"
+          },
+          {
+            "name": "Mansfield Road"
+          },
+          {
+            "name": "Maple Close"
+          },
+          {
+            "name": "Marble Close"
+          },
+          {
+            "name": "Margaret Avenue"
+          },
+          {
+            "name": "Markfield Road"
+          },
+          {
+            "name": "Marsh Lane"
+          },
+          {
+            "name": "Maryland Grove"
+          },
+          {
+            "name": "May Close"
+          },
+          {
+            "name": "May Street"
+          },
+          {
+            "name": "Meadow Hey"
+          },
+          {
+            "name": "Melling Road"
+          },
+          {
+            "name": "Merton Grove"
+          },
+          {
+            "name": "Merton Road"
+          },
+          {
+            "name": "Middlesex Road"
+          },
+          {
+            "name": "Mildmay Road"
+          },
+          {
+            "name": "Mill Lane"
+          },
+          {
+            "name": "Millers Bridge"
+          },
+          {
+            "name": "Milton Street"
+          },
+          {
+            "name": "Miranda Road",
+            "numbers": "Numbers 7-47 Odds, 2-56 Evens"
+          },
+          {
+            "name": "Moore Street"
+          },
+          {
+            "name": "Muspratt Road"
+          },
+          {
+            "name": "Napier Street"
+          },
+          {
+            "name": "Nelson Road"
+          },
+          {
+            "name": "Nelson Street"
+          },
+          {
+            "name": "New Fort Way"
+          },
+          {
+            "name": "New Strand Mariners Way"
+          },
+          {
+            "name": "New Strand Medway"
+          },
+          {
+            "name": "New Strand Mons Square"
+          },
+          {
+            "name": "New Strand Parkside"
+          },
+          {
+            "name": "New Strand Ravenway"
+          },
+          {
+            "name": "New Strand Serviceway"
+          },
+          {
+            "name": "New Strand The Esplanade"
+          },
+          {
+            "name": "New Strand The Hexagon"
+          },
+          {
+            "name": "New Strand The Palatine"
+          },
+          {
+            "name": "Newton Walk"
+          },
+          {
+            "name": "Norfolk Close"
+          },
+          {
+            "name": "Norfolk Place"
+          },
+          {
+            "name": "Norton Street"
+          },
+          {
+            "name": "Nuffield Road"
+          },
+          {
+            "name": "Oak Street"
+          },
+          {
+            "name": "Oakland Close"
+          },
+          {
+            "name": "Ocean Road"
+          },
+          {
+            "name": "Olivia Street"
+          },
+          {
+            "name": "Oneill Street"
+          },
+          {
+            "name": "Oregon Close"
+          },
+          {
+            "name": "Oriel Road"
+          },
+          {
+            "name": "Orlando Street"
+          },
+          {
+            "name": "Oxford Avenue"
+          },
+          {
+            "name": "Oxford Road"
+          },
+          {
+            "name": "Pacific Road"
+          },
+          {
+            "name": "Palmerston Avenue"
+          },
+          {
+            "name": "Palmerston Drive"
+          },
+          {
+            "name": "Park Place"
+          },
+          {
+            "name": "Park Street"
+          },
+          {
+            "name": "Peel Road"
+          },
+          {
+            "name": "Pembroke Road"
+          },
+          {
+            "name": "Pennington Road"
+          },
+          {
+            "name": "Penpoll Close"
+          },
+          {
+            "name": "Penrhyn Avenue"
+          },
+          {
+            "name": "Percy Street"
+          },
+          {
+            "name": "Peter Mahon Way"
+          },
+          {
+            "name": "Peterhouse Mews"
+          },
+          {
+            "name": "Pine Grove"
+          },
+          {
+            "name": "Pleasant Street"
+          },
+          {
+            "name": "Pleasant View"
+          },
+          {
+            "name": "Plum Grove"
+          },
+          {
+            "name": "Pope Street"
+          },
+          {
+            "name": "Poplar Grove"
+          },
+          {
+            "name": "Princes Street"
+          },
+          {
+            "name": "Princess Way"
+          },
+          {
+            "name": "Prior Street"
+          },
+          {
+            "name": "Quarry Road"
+          },
+          {
+            "name": "Queens Road"
+          },
+          {
+            "name": "Raleigh Street"
+          },
+          {
+            "name": "Rawson Road",
+            "numbers": "Numbers 1-41 Odds, 2-60 Evens"
+          },
+          {
+            "name": "Redwood Grove"
+          },
+          {
+            "name": "Regent Road"
+          },
+          {
+            "name": "Richmond Court"
+          },
+          {
+            "name": "Riddock Road"
+          },
+          {
+            "name": "Rimmer Close"
+          },
+          {
+            "name": "Rimrose Road"
+          },
+          {
+            "name": "Riverside Close"
+          },
+          {
+            "name": "Roby Street"
+          },
+          {
+            "name": "Ronan Close"
+          },
+          {
+            "name": "Ropeworks Close"
+          },
+          {
+            "name": "Rose Avenue"
+          },
+          {
+            "name": "Rossini Street"
+          },
+          {
+            "name": "Roxburgh Street",
+            "numbers": "Numbers 161-175 Odds, 144-176 Evens"
+          },
+          {
+            "name": "Royal Seaforth Dock"
+          },
+          {
+            "name": "Rufford Road"
+          },
+          {
+            "name": "Ruskin Close"
+          },
+          {
+            "name": "Rutland Street"
+          },
+          {
+            "name": "Salisbury Road"
+          },
+          {
+            "name": "Sandfield Place"
+          },
+          {
+            "name": "Sandfield Road"
+          },
+          {
+            "name": "Sandy Road",
+            "numbers": "Numbers 1-15 Odds only"
+          },
+          {
+            "name": "Scarisbrick Avenue"
+          },
+          {
+            "name": "School Lane"
+          },
+          {
+            "name": "Scott Street"
+          },
+          {
+            "name": "Seafield Road"
+          },
+          {
+            "name": "Seaforth Road"
+          },
+          {
+            "name": "Seaforth Vale North"
+          },
+          {
+            "name": "Seaforth Vale West"
+          },
+          {
+            "name": "Seaview Road"
+          },
+          {
+            "name": "Sefton Avenue"
+          },
+          {
+            "name": "Sefton Street",
+            "numbers": "Numbers 1 and 1A"
+          },
+          {
+            "name": "Servia Road"
+          },
+          {
+            "name": "Seymour Road"
+          },
+          {
+            "name": "Seymour Street"
+          },
+          {
+            "name": "Shakespeare Street"
+          },
+          {
+            "name": "Shelley Street"
+          },
+          {
+            "name": "Shore Road"
+          },
+          {
+            "name": "Sidney Road"
+          },
+          {
+            "name": "Smollett Street"
+          },
+          {
+            "name": "Snave Close"
+          },
+          {
+            "name": "Snowdrop Mews"
+          },
+          {
+            "name": "Somerset Road"
+          },
+          {
+            "name": "South Park Way"
+          },
+          {
+            "name": "Southey Street"
+          },
+          {
+            "name": "Southport Road",
+            "numbers": "Numbers 2-44 Evens only"
+          },
+          {
+            "name": "Spenser Street"
+          },
+          {
+            "name": "Springs Close"
+          },
+          {
+            "name": "St Albans Road"
+          },
+          {
+            "name": "St Albans Square"
+          },
+          {
+            "name": "St Andrews Road"
+          },
+          {
+            "name": "St Catherines Road"
+          },
+          {
+            "name": "St Edmonds Road"
+          },
+          {
+            "name": "St James Drive"
+          },
+          {
+            "name": "St Joans Close"
+          },
+          {
+            "name": "St Johns Road"
+          },
+          {
+            "name": "St Johns Terrace"
+          },
+          {
+            "name": "St Marys Close"
+          },
+          {
+            "name": "St Pauls Place"
+          },
+          {
+            "name": "Stanley Road"
+          },
+          {
+            "name": "Strand Road"
+          },
+          {
+            "name": "Strand View"
+          },
+          {
+            "name": "Suffolk Street"
+          },
+          {
+            "name": "Summer Road"
+          },
+          {
+            "name": "Summerseat"
+          },
+          {
+            "name": "Surrey Street"
+          },
+          {
+            "name": "Sussex Close"
+          },
+          {
+            "name": "Sussex Street"
+          },
+          {
+            "name": "Talisman Way"
+          },
+          {
+            "name": "Tennyson Street"
+          },
+          {
+            "name": "The Grange"
+          },
+          {
+            "name": "Thornton Road"
+          },
+          {
+            "name": "Thornton Street"
+          },
+          {
+            "name": "Towcester Street"
+          },
+          {
+            "name": "Trinity Place"
+          },
+          {
+            "name": "Trinity Road"
+          },
+          {
+            "name": "University Road"
+          },
+          {
+            "name": "Ursula Street"
+          },
+          {
+            "name": "Verdi Avenue"
+          },
+          {
+            "name": "Verdi Street"
+          },
+          {
+            "name": "Verdi Terrace"
+          },
+          {
+            "name": "Vermont Way"
+          },
+          {
+            "name": "Viola Street"
+          },
+          {
+            "name": "Violet Road"
+          },
+          {
+            "name": "Wadham Road"
+          },
+          {
+            "name": "Waller Street"
+          },
+          {
+            "name": "Warton Street"
+          },
+          {
+            "name": "Warton Terrace"
+          },
+          {
+            "name": "Warwick Road"
+          },
+          {
+            "name": "Washington Parade"
+          },
+          {
+            "name": "Waterworks Street"
+          },
+          {
+            "name": "Waverley Street"
+          },
+          {
+            "name": "Webster Street"
+          },
+          {
+            "name": "Well Lane"
+          },
+          {
+            "name": "Well Lane Gardens"
+          },
+          {
+            "name": "Wellington Road"
+          },
+          {
+            "name": "William Henry Street"
+          },
+          {
+            "name": "Wood Street"
+          },
+          {
+            "name": "Woolfall Terrace"
+          },
+          {
+            "name": "Worcester Road"
+          },
+          {
+            "name": "Wordsworth Street"
+          }
+        ]
       },
       {
         "type": "additional",
@@ -4555,8 +10129,746 @@
         "coverage": "streets",
         "areaDescription": "Parts of Seaforth, Waterloo, Brighton-le-Sands and central Southport (street-level designation)",
         "feeApprox": "£950 standard (£800/£750 accredited)",
-        "sourceUrl": "https://www.sefton.gov.uk/housing/private-sector-housing/landlord-licensing-and-accreditation/additional-hmo-licensing-2023-2028/",
-        "verified": "2026-07-10"
+        "sourceUrl": "https://www.sefton.gov.uk/media/8193/alstreetsseafwat_r3.pdf",
+        "verified": "2026-07-10",
+        "streets": [
+          {
+            "name": "Adelaide Road"
+          },
+          {
+            "name": "Adelaide Terrace"
+          },
+          {
+            "name": "Albany Road"
+          },
+          {
+            "name": "Albert Place"
+          },
+          {
+            "name": "Albert Road"
+          },
+          {
+            "name": "Alexandra Road"
+          },
+          {
+            "name": "Anchor Street"
+          },
+          {
+            "name": "Argo Road"
+          },
+          {
+            "name": "Arnside Road"
+          },
+          {
+            "name": "Arnside Terrace"
+          },
+          {
+            "name": "Avondale Road"
+          },
+          {
+            "name": "Avondale Road North"
+          },
+          {
+            "name": "Back Bath Street"
+          },
+          {
+            "name": "Back Bridge Road"
+          },
+          {
+            "name": "Back Mersey View"
+          },
+          {
+            "name": "Back Mount Street"
+          },
+          {
+            "name": "Back South Road"
+          },
+          {
+            "name": "Balls Place"
+          },
+          {
+            "name": "Bank Passage"
+          },
+          {
+            "name": "Bank Square"
+          },
+          {
+            "name": "Bath Street"
+          },
+          {
+            "name": "Bath Street North"
+          },
+          {
+            "name": "Beach Bank"
+          },
+          {
+            "name": "Beach Lawn"
+          },
+          {
+            "name": "Beach Priory Gardens",
+            "numbers": "Odds The Shelbourne 1A"
+          },
+          {
+            "name": "Beaconsfield Road"
+          },
+          {
+            "name": "Bedford Place"
+          },
+          {
+            "name": "Belgrave Road"
+          },
+          {
+            "name": "Bentham Street"
+          },
+          {
+            "name": "Blucher Street"
+          },
+          {
+            "name": "Bold Street"
+          },
+          {
+            "name": "Booth Street"
+          },
+          {
+            "name": "Bower Grove"
+          },
+          {
+            "name": "Bradley Place"
+          },
+          {
+            "name": "Bradley Street"
+          },
+          {
+            "name": "Bridge Road"
+          },
+          {
+            "name": "Bridge Street"
+          },
+          {
+            "name": "Brighton Road"
+          },
+          {
+            "name": "Brooke Road West"
+          },
+          {
+            "name": "Browning Road"
+          },
+          {
+            "name": "Brunswick Mews"
+          },
+          {
+            "name": "Brunswick Parade"
+          },
+          {
+            "name": "Burdett Road"
+          },
+          {
+            "name": "Cable Street"
+          },
+          {
+            "name": "Cambridge Arcade"
+          },
+          {
+            "name": "Cambridge Road"
+          },
+          {
+            "name": "Cambridge Walks"
+          },
+          {
+            "name": "Canning Street"
+          },
+          {
+            "name": "Castle Walk"
+          },
+          {
+            "name": "Cemetery Road"
+          },
+          {
+            "name": "Chapel Street"
+          },
+          {
+            "name": "Chatham Close"
+          },
+          {
+            "name": "Chesnut Road"
+          },
+          {
+            "name": "Church Road"
+          },
+          {
+            "name": "Church Street"
+          },
+          {
+            "name": "Claremont Close"
+          },
+          {
+            "name": "Claremont Road"
+          },
+          {
+            "name": "Coach House Mews"
+          },
+          {
+            "name": "Coopers Row"
+          },
+          {
+            "name": "Corinthian Street"
+          },
+          {
+            "name": "Corona Road"
+          },
+          {
+            "name": "Coronation Walk"
+          },
+          {
+            "name": "Corporation Street"
+          },
+          {
+            "name": "Court Road"
+          },
+          {
+            "name": "Courtenay Avenue"
+          },
+          {
+            "name": "Courtenay Road"
+          },
+          {
+            "name": "Crosby Road North"
+          },
+          {
+            "name": "Crosby Road South"
+          },
+          {
+            "name": "Cross Street"
+          },
+          {
+            "name": "Curzon Road"
+          },
+          {
+            "name": "Deacon Close"
+          },
+          {
+            "name": "Deacon Court"
+          },
+          {
+            "name": "Dean Street"
+          },
+          {
+            "name": "Denmark Street"
+          },
+          {
+            "name": "Derby Road"
+          },
+          {
+            "name": "Dewlands Road"
+          },
+          {
+            "name": "Doric Street"
+          },
+          {
+            "name": "Duke Street"
+          },
+          {
+            "name": "Durham Road"
+          },
+          {
+            "name": "East Street"
+          },
+          {
+            "name": "Eastbank Street"
+          },
+          {
+            "name": "Eastbank Street Square"
+          },
+          {
+            "name": "Ericson Drive"
+          },
+          {
+            "name": "Esplanade"
+          },
+          {
+            "name": "Ewart Road"
+          },
+          {
+            "name": "Fairbairn Road"
+          },
+          {
+            "name": "Gladstone Avenue"
+          },
+          {
+            "name": "Gladstone Road",
+            "numbers": "Russell Row 1-4, Bentley Court 1-15, Numbers 13-49 Odds, 24-26, 36-68 Evens"
+          },
+          {
+            "name": "Glebe Place"
+          },
+          {
+            "name": "Glenbank"
+          },
+          {
+            "name": "Glendower Road"
+          },
+          {
+            "name": "Gordon Avenue"
+          },
+          {
+            "name": "Gordon Road"
+          },
+          {
+            "name": "Gordon Street"
+          },
+          {
+            "name": "Gordon Way"
+          },
+          {
+            "name": "Great Georges Road"
+          },
+          {
+            "name": "Grecian Street"
+          },
+          {
+            "name": "Hampton Road"
+          },
+          {
+            "name": "Handfield Road"
+          },
+          {
+            "name": "Harbord Road"
+          },
+          {
+            "name": "Harbord Terrace"
+          },
+          {
+            "name": "Harrowby Road"
+          },
+          {
+            "name": "Hawesside Street"
+          },
+          {
+            "name": "Heathfield Road"
+          },
+          {
+            "name": "Hereford Road"
+          },
+          {
+            "name": "Hill Street"
+          },
+          {
+            "name": "Hodge Street"
+          },
+          {
+            "name": "Hoghton Grove"
+          },
+          {
+            "name": "Hoghton Place"
+          },
+          {
+            "name": "Hoghton Street"
+          },
+          {
+            "name": "Holden Grove"
+          },
+          {
+            "name": "Holden Road"
+          },
+          {
+            "name": "Holden Road East"
+          },
+          {
+            "name": "Holden Terrace"
+          },
+          {
+            "name": "Hougoumont Avenue"
+          },
+          {
+            "name": "Hougoumont Grove"
+          },
+          {
+            "name": "Hulme Street"
+          },
+          {
+            "name": "Hyde Road"
+          },
+          {
+            "name": "Ionic Street"
+          },
+          {
+            "name": "Irving Street"
+          },
+          {
+            "name": "Johnson Street"
+          },
+          {
+            "name": "King Street"
+          },
+          {
+            "name": "Kings Park"
+          },
+          {
+            "name": "Kingsway"
+          },
+          {
+            "name": "Kinross Road"
+          },
+          {
+            "name": "Knowsley Road"
+          },
+          {
+            "name": "Lathom Avenue"
+          },
+          {
+            "name": "Lathom Close"
+          },
+          {
+            "name": "Lathom Road"
+          },
+          {
+            "name": "Leicester Street"
+          },
+          {
+            "name": "Leopold Road"
+          },
+          {
+            "name": "Leyland Road"
+          },
+          {
+            "name": "Linaker Street"
+          },
+          {
+            "name": "London Square"
+          },
+          {
+            "name": "London Street"
+          },
+          {
+            "name": "Lord Street"
+          },
+          {
+            "name": "Lorne Road"
+          },
+          {
+            "name": "Lower Promenade"
+          },
+          {
+            "name": "Lulworth Avenue"
+          },
+          {
+            "name": "Lyra Road"
+          },
+          {
+            "name": "Manley Road"
+          },
+          {
+            "name": "Marble Place"
+          },
+          {
+            "name": "Marine Crescent"
+          },
+          {
+            "name": "Marine Terrace"
+          },
+          {
+            "name": "Market Street"
+          },
+          {
+            "name": "Marlborough Road"
+          },
+          {
+            "name": "Mason Street"
+          },
+          {
+            "name": "Melrose Road"
+          },
+          {
+            "name": "Mersey View"
+          },
+          {
+            "name": "Midland Terrace"
+          },
+          {
+            "name": "Mornington Road"
+          },
+          {
+            "name": "Mount Pleasant"
+          },
+          {
+            "name": "Mount Street"
+          },
+          {
+            "name": "Murat Grove"
+          },
+          {
+            "name": "Murat Street"
+          },
+          {
+            "name": "Nelson Street"
+          },
+          {
+            "name": "Nevill Street"
+          },
+          {
+            "name": "Neville Road"
+          },
+          {
+            "name": "Norma Road"
+          },
+          {
+            "name": "North Street"
+          },
+          {
+            "name": "Olive Road"
+          },
+          {
+            "name": "Oxford Drive"
+          },
+          {
+            "name": "Oxford Road"
+          },
+          {
+            "name": "Park Road West"
+          },
+          {
+            "name": "Parker Avenue"
+          },
+          {
+            "name": "Part Street"
+          },
+          {
+            "name": "Penty Place"
+          },
+          {
+            "name": "Picton Road"
+          },
+          {
+            "name": "Portland Avenue"
+          },
+          {
+            "name": "Portland Street"
+          },
+          {
+            "name": "Post Office Avenue"
+          },
+          {
+            "name": "Prince Street"
+          },
+          {
+            "name": "Princes Street"
+          },
+          {
+            "name": "Pritchard Avenue"
+          },
+          {
+            "name": "Promenade"
+          },
+          {
+            "name": "Purley Road"
+          },
+          {
+            "name": "Queen Anne Street"
+          },
+          {
+            "name": "Queen Street"
+          },
+          {
+            "name": "Queens Road"
+          },
+          {
+            "name": "Railway Street"
+          },
+          {
+            "name": "Railway Terrace"
+          },
+          {
+            "name": "Rawson Close"
+          },
+          {
+            "name": "Rawson Road",
+            "numbers": "Numbers 43-187 Odds, 62-160 Evens"
+          },
+          {
+            "name": "Riding Street"
+          },
+          {
+            "name": "Rimmers Avenue"
+          },
+          {
+            "name": "River View"
+          },
+          {
+            "name": "Riversdale Road"
+          },
+          {
+            "name": "Royal Terrace"
+          },
+          {
+            "name": "Sandheys Avenue"
+          },
+          {
+            "name": "Sandheys Grove"
+          },
+          {
+            "name": "Sandheys Terrace"
+          },
+          {
+            "name": "Sandhurst Close"
+          },
+          {
+            "name": "Sandon Street"
+          },
+          {
+            "name": "Sandown Road"
+          },
+          {
+            "name": "Sandpipers Court"
+          },
+          {
+            "name": "Sandringham Avenue"
+          },
+          {
+            "name": "Sandringham Road"
+          },
+          {
+            "name": "Sandy Road",
+            "numbers": "Numbers 33-73 Odds, 38-156 Evens"
+          },
+          {
+            "name": "Saunders Street"
+          },
+          {
+            "name": "Scarisbrick Avenue"
+          },
+          {
+            "name": "Scarisbrick Street"
+          },
+          {
+            "name": "Seabank Road"
+          },
+          {
+            "name": "Seaside Close"
+          },
+          {
+            "name": "Seaview Terrace"
+          },
+          {
+            "name": "Sefton Street"
+          },
+          {
+            "name": "Selsdon Road"
+          },
+          {
+            "name": "Shakespeare Street"
+          },
+          {
+            "name": "Sharrock Street"
+          },
+          {
+            "name": "South Road"
+          },
+          {
+            "name": "South View"
+          },
+          {
+            "name": "St Andrews Place"
+          },
+          {
+            "name": "St Georges Place"
+          },
+          {
+            "name": "St Johns Place"
+          },
+          {
+            "name": "St Johns Road"
+          },
+          {
+            "name": "Stanley Road"
+          },
+          {
+            "name": "Stanley Street"
+          },
+          {
+            "name": "Sweden Grove"
+          },
+          {
+            "name": "Talbot Drive"
+          },
+          {
+            "name": "Talbot Street"
+          },
+          {
+            "name": "The Esplanade"
+          },
+          {
+            "name": "Thomson Road"
+          },
+          {
+            "name": "Trinity Gardens"
+          },
+          {
+            "name": "Trinity Mews"
+          },
+          {
+            "name": "Tulketh Street"
+          },
+          {
+            "name": "Victoria Road"
+          },
+          {
+            "name": "Victoria Street"
+          },
+          {
+            "name": "Victoria Way"
+          },
+          {
+            "name": "Vulcan Street"
+          },
+          {
+            "name": "Walmer Road"
+          },
+          {
+            "name": "Walton Street"
+          },
+          {
+            "name": "Water Street"
+          },
+          {
+            "name": "Waterloo Close"
+          },
+          {
+            "name": "Waterloo Road"
+          },
+          {
+            "name": "Waverley Street"
+          },
+          {
+            "name": "Wayfarers Arcade"
+          },
+          {
+            "name": "Wellington Street"
+          },
+          {
+            "name": "Wesley Street"
+          },
+          {
+            "name": "West Street"
+          },
+          {
+            "name": "Westward View"
+          },
+          {
+            "name": "Willoughby Road"
+          },
+          {
+            "name": "Woodland Road"
+          },
+          {
+            "name": "Wright Street"
+          },
+          {
+            "name": "Yellow House Lane"
+          },
+          {
+            "name": "York Street"
+          }
+        ]
       }
     ],
     "notes": "Both extended for five years to 2028 after a 2022 consultation."

@@ -1,0 +1,934 @@
+{
+  "gss": "E08000003",
+  "council": "Manchester City Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "start": "2022-05-01",
+        "end": "2027-04-30"
+      },
+      "sourceUrl": "https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes",
+      "confidence": "official-council-page",
+      "streets": [
+        {
+          "name": "Bank Street",
+          "numbers": "12 to 72 (even)"
+        },
+        {
+          "name": "Ben Street",
+          "numbers": "1 to 42 (odds/evens)"
+        },
+        {
+          "name": "Heather Street",
+          "numbers": "1 to 42 (odds/evens)"
+        },
+        {
+          "name": "Ilford Street",
+          "numbers": "51 to 72 (odds/evens)"
+        },
+        {
+          "name": "Midlothian Street",
+          "numbers": "1 to 46 (odds/evens)"
+        },
+        {
+          "name": "Pioneer Street",
+          "numbers": "1 to 27 (odd)"
+        },
+        {
+          "name": "Ranelagh Street",
+          "numbers": "61 to 82 (odds/evens)"
+        },
+        {
+          "name": "Ravensbury Street",
+          "numbers": "1/1A and 5"
+        },
+        {
+          "name": "Sheldon Street",
+          "numbers": "21 to 42 (odds/evens)"
+        },
+        {
+          "name": "Stockholm Street",
+          "numbers": "2 to 16 (even)"
+        },
+        {
+          "name": "Tartan Street",
+          "numbers": "2 to 8 (even)"
+        },
+        {
+          "name": "Friendship Avenue",
+          "numbers": "2A"
+        },
+        {
+          "name": "Hengist Street",
+          "numbers": "4"
+        },
+        {
+          "name": "Hyde Road",
+          "numbers": "522 to 838 (even) and 961-963 (odds)"
+        },
+        {
+          "name": "Kirkman Close",
+          "numbers": "2 to 6 (even)"
+        },
+        {
+          "name": "Taplin Drive",
+          "numbers": "1 to 47 (odd)"
+        },
+        {
+          "name": "Waterhouse Road",
+          "numbers": "2A"
+        },
+        {
+          "name": "Willow Grove",
+          "numbers": "1 to 11 (odd)"
+        },
+        {
+          "name": "Oakfield Grove",
+          "numbers": "Flat 1,a, b,c (this does not include 1 Oakfield Grove)"
+        },
+        {
+          "name": "Woodland Avenue",
+          "numbers": "2 to 4 (evens)"
+        },
+        {
+          "name": "Woodland Road",
+          "numbers": "49, 64 to 70(odd/even) flats included"
+        },
+        {
+          "name": "Abbey Hey Lane",
+          "numbers": "126 to 410 (even) flats included"
+        },
+        {
+          "name": "Annable Road",
+          "numbers": "1 to 39 (odds/even)"
+        },
+        {
+          "name": "Atherfield Close",
+          "numbers": "2 to 16 (even)"
+        },
+        {
+          "name": "Bread Street",
+          "numbers": "1 to 17 (odds/evens)"
+        },
+        {
+          "name": "Brightman Street",
+          "numbers": "1 to 41 (odds/evens)"
+        },
+        {
+          "name": "Burstead Street",
+          "numbers": "1 to 32 (odds/evens)"
+        },
+        {
+          "name": "Butman Street",
+          "numbers": "1 to 54 (odds/even)"
+        },
+        {
+          "name": "Claymore Street",
+          "numbers": "1 to 52 (odds/even)"
+        },
+        {
+          "name": "Compstall Grove",
+          "numbers": "1 to 7 (odds/evens)"
+        },
+        {
+          "name": "Constable Street",
+          "numbers": "1 to 111 (odd/evens) flats included"
+        },
+        {
+          "name": "Corrigan Street",
+          "numbers": "15 to 46 (odds/evens)"
+        },
+        {
+          "name": "Courier Street",
+          "numbers": "38 to 63 (odds/evens)"
+        },
+        {
+          "name": "Dalehead Close",
+          "numbers": "3 to 21 (odds)"
+        },
+        {
+          "name": "ErnocroftGrove",
+          "numbers": "1 to 6 (odds/evens)"
+        },
+        {
+          "name": "Field Street",
+          "numbers": "1 to 42 (odds/evens)"
+        },
+        {
+          "name": "Fleet Street",
+          "numbers": "1 to 29 (odds)"
+        },
+        {
+          "name": "Franklyn Road",
+          "numbers": "1 to 16 (odds/evens)"
+        },
+        {
+          "name": "Freshwater Street",
+          "numbers": "2 to 8 (even)"
+        },
+        {
+          "name": "Gathurst Street",
+          "numbers": "15 to 39 (odds/evens)"
+        },
+        {
+          "name": "Gidlow Street",
+          "numbers": "1 to 18 (odds/evens) flats included"
+        },
+        {
+          "name": "Godwin Street",
+          "numbers": "15 to 48 (odds/evens)"
+        },
+        {
+          "name": "Gordon Street",
+          "numbers": "1 to 60 (odds/evens) flats included"
+        },
+        {
+          "name": "Grapevine Avenue",
+          "numbers": "1 to 32 (odds/evens)"
+        },
+        {
+          "name": "Jetson Street",
+          "numbers": "1 to 86 (odd/evens)"
+        },
+        {
+          "name": "Kenyon Street",
+          "numbers": "1 to 124 (odds/evens) flats included"
+        },
+        {
+          "name": "Kings Close",
+          "numbers": "1 to 36 (odd/even)"
+        },
+        {
+          "name": "Lees Street",
+          "numbers": "133 to 222 (odd/even) flats included"
+        },
+        {
+          "name": "Long Street",
+          "numbers": "1 to 48 (odd/even)"
+        },
+        {
+          "name": "LongfordStreet",
+          "numbers": "1 to 93 (odd/even)"
+        },
+        {
+          "name": "Madison Street",
+          "numbers": "3 to 76 (odd/even)"
+        },
+        {
+          "name": "Maybury Street",
+          "numbers": "1 to 39 (odd/even)"
+        },
+        {
+          "name": "PeterboroughStreet",
+          "numbers": "1 to 24 (odd/even) flats included"
+        },
+        {
+          "name": "Rumbold Street",
+          "numbers": "1 to 12 (odd/even)"
+        },
+        {
+          "name": "Rutland Street",
+          "numbers": "1 to 10 (odd/even)"
+        },
+        {
+          "name": "Sandown Street",
+          "numbers": "2 to 72 (odd/even)"
+        },
+        {
+          "name": "Swanhill Close",
+          "numbers": "2 to 25 (odd/even)"
+        },
+        {
+          "name": "Vine Street",
+          "numbers": "83 to 171 (odds/evens)"
+        },
+        {
+          "name": "Walmer Street",
+          "numbers": "1 to 34 (odd/even)"
+        },
+        {
+          "name": "Walter Street",
+          "numbers": "1 to 62 (odd/even)"
+        },
+        {
+          "name": "Welbeck Street",
+          "numbers": "1 to 34 (odd/even) flats included"
+        },
+        {
+          "name": "Western Street",
+          "numbers": "1 to 35 (odd)"
+        },
+        {
+          "name": "Wycombe Avenue",
+          "numbers": "1 to 16 (odd/even)"
+        },
+        {
+          "name": "Beverley Street",
+          "numbers": "5 to 96(odd/evens)"
+        },
+        {
+          "name": "Capstan Street",
+          "numbers": "2 to 28 (evens)"
+        },
+        {
+          "name": "Cobden Street",
+          "numbers": "1 to 181 (odds/evens)"
+        },
+        {
+          "name": "Dalbeattie Street",
+          "numbers": "8 to 53 (odds/ even)"
+        },
+        {
+          "name": "Dollond Street",
+          "numbers": "1 to 35 (odds/ even)"
+        },
+        {
+          "name": "Glen Avenue",
+          "numbers": "2 to 14 (even)"
+        },
+        {
+          "name": "Goodman Street",
+          "numbers": "11-115 (odds) 32 -44 (even) flats included"
+        },
+        {
+          "name": "Hemsley Street",
+          "numbers": "2 to 18 (even)"
+        },
+        {
+          "name": "Hemsley Street South",
+          "numbers": "1 to 11 (odd)"
+        },
+        {
+          "name": "Holtby Street",
+          "numbers": "13 to 92 (odds/even)"
+        },
+        {
+          "name": "Joule Street",
+          "numbers": "1 to 38 (odds/evens)"
+        },
+        {
+          "name": "Leegrange Road",
+          "numbers": "1 to 78 (odds/even)"
+        },
+        {
+          "name": "Lewis Avenue",
+          "numbers": "2 to 30 (even)"
+        },
+        {
+          "name": "Marlfield Street",
+          "numbers": "22 to 55 (odds/evens)"
+        },
+        {
+          "name": "Melbourne Street",
+          "numbers": "1 to 43 (odds/evens)"
+        },
+        {
+          "name": "Monart Road",
+          "numbers": "1 to 20(odd/evens)"
+        },
+        {
+          "name": "Moston Lane",
+          "numbers": "151 to 161 (odds) flats included"
+        },
+        {
+          "name": "Nepaul Road",
+          "numbers": "1 to 71 (odds/evens)"
+        },
+        {
+          "name": "Routledge Walk",
+          "numbers": "1 to 56 (odds/even)"
+        },
+        {
+          "name": "York Street",
+          "numbers": "24 to 83 (odds/evens)"
+        }
+      ],
+      "evidence": "Transcribed from the four Manchester City Council designation directory pages under 'Current selective licensing schemes': /ben-street-clayton-and-openshaw, /hyde-road-gorton-and-abbey-hey, /the-ladders-gorton-and-abbey-hey and /trinity-harpurhey-ward. Each page carries the 'Street addresses' table and states 'The designation is in force from 01 May 2022 and will end on 30 April 2027'. The Ladders and Trinity tables note the ranges include flats, properties with names and numbers with a letter."
+    },
+    {
+      "match": {
+        "type": "selective",
+        "start": "2023-08-09",
+        "end": "2028-08-08"
+      },
+      "sourceUrl": "https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes",
+      "confidence": "official-council-page",
+      "streets": [
+        {
+          "name": "Ashfield Road",
+          "numbers": "10-16 (Evens)"
+        },
+        {
+          "name": "Aylcliffe Grove",
+          "numbers": "2-10 (Evens)"
+        },
+        {
+          "name": "Dickenson Road",
+          "numbers": "189-209 (Odds)"
+        },
+        {
+          "name": "Laindon Road",
+          "numbers": "75-89 (Odds)"
+        },
+        {
+          "name": "Willesden Avenue",
+          "numbers": "2 -30 (All)"
+        },
+        {
+          "name": "Birch lane",
+          "numbers": "61 - 87 (odd numbers only)"
+        },
+        {
+          "name": "Dickenson road",
+          "numbers": "309 - 343 (odd numbers only)"
+        },
+        {
+          "name": "Holmfirth Street",
+          "numbers": "1 - 23 (odd numbers only)"
+        },
+        {
+          "name": "Honor Street",
+          "numbers": "1 - 20"
+        },
+        {
+          "name": "Lincoln Street",
+          "numbers": "1 - 25"
+        },
+        {
+          "name": "Whiley Street",
+          "numbers": "1 - 30"
+        },
+        {
+          "name": "Beresford Street",
+          "numbers": "1-160 (All)"
+        },
+        {
+          "name": "Bowes Street",
+          "numbers": "1-27 (Odds)"
+        },
+        {
+          "name": "Broadfield Road",
+          "numbers": "4-132 (Evens), 53-87 (Odds)"
+        },
+        {
+          "name": "Caythorpe Street",
+          "numbers": "1-121 (All)"
+        },
+        {
+          "name": "Claremont Road",
+          "numbers": "92-206 (All)"
+        },
+        {
+          "name": "Cowesby Street",
+          "numbers": "1-162 (All)"
+        },
+        {
+          "name": "Crondall Street",
+          "numbers": "1-106 (All)"
+        },
+        {
+          "name": "Gerry Wheale Square",
+          "numbers": "1-17 (All)"
+        },
+        {
+          "name": "Greame Street",
+          "numbers": "105-111 (Odds)"
+        },
+        {
+          "name": "Great Western Street",
+          "numbers": "94-204 (Evens)"
+        },
+        {
+          "name": "Hartington Street",
+          "numbers": "2-164 (All)"
+        },
+        {
+          "name": "Kensington Street",
+          "numbers": "1-40 (All)"
+        },
+        {
+          "name": "Princess Road",
+          "numbers": "97-245 (Odds)"
+        },
+        {
+          "name": "Rosebery Street",
+          "numbers": "1-166 (All)"
+        },
+        {
+          "name": "Tyldesley Street",
+          "numbers": "1-41 (Odds)"
+        },
+        {
+          "name": "Damien Street",
+          "numbers": "1-48 (All)"
+        },
+        {
+          "name": "Hemmons Road",
+          "numbers": "72-118 (Evens)"
+        },
+        {
+          "name": "Longden Road",
+          "numbers": "37-94 (All)"
+        },
+        {
+          "name": "Maida Street",
+          "numbers": "1-38 (All)"
+        },
+        {
+          "name": "Ollier Avenue",
+          "numbers": "1-57 (Odds)"
+        },
+        {
+          "name": "Seddon Street",
+          "numbers": "1-42 (All)"
+        },
+        {
+          "name": "Stovell Avenue",
+          "numbers": "81-135 (Odds)"
+        },
+        {
+          "name": "Balmoral Street",
+          "numbers": "1-18 (All)"
+        },
+        {
+          "name": "Glencastle Road",
+          "numbers": "1- 28 (All)"
+        },
+        {
+          "name": "Mount Road",
+          "numbers": "1-45 (Odds)"
+        },
+        {
+          "name": "Mountbatten Street",
+          "numbers": "2-18 (Evens)"
+        },
+        {
+          "name": "Odette Street",
+          "numbers": "1-16 (All)"
+        },
+        {
+          "name": "Sandringham Street",
+          "numbers": "1-33 (Odds)"
+        },
+        {
+          "name": "Windsor Street",
+          "numbers": "1-22 (All), 24-30 (Evens)"
+        }
+      ],
+      "evidence": "Transcribed from the four Manchester City Council designation directory pages: /laindon-dickenson-road-and-birch-lane-rusholme (two sub-areas, Laindon/Dickenson Rd and Birch Lane), /great-western-street-claremont-road-moss-side, /matthews-lane-levenshulme and /the-royals-longsight. All four state 'The designation is in force from 09 August 2023 and will end on 8 August 2028' and each schedule ends with the note 'Including flats, suffixed and sub-addresses'. Street names and ranges are published in a single combined column on these pages; the range text is reproduced verbatim in 'numbers'."
+    },
+    {
+      "match": {
+        "type": "selective",
+        "start": "2025-05-24",
+        "end": "2030-05-23"
+      },
+      "sourceUrl": "https://www.manchester.gov.uk/online-directories/homes-and-property-directories/private-landlords-information-directories/selective-licensing-directories/areas-where-a-selective-licence-is-required/current-selective-licensing-schemes",
+      "confidence": "official-council-page",
+      "streets": [
+        {
+          "name": "Ash Tree Road",
+          "numbers": "2 to 48 (even)"
+        },
+        {
+          "name": "Crescent Road",
+          "numbers": "169 to 221 (odd)"
+        },
+        {
+          "name": "Duchess Road",
+          "numbers": "1 to 80"
+        },
+        {
+          "name": "Enver Road",
+          "numbers": "1 to 49"
+        },
+        {
+          "name": "Hallworth Road",
+          "numbers": "1 to 40"
+        },
+        {
+          "name": "Wellington Road",
+          "numbers": "1 to 36"
+        },
+        {
+          "name": "Whiston Road",
+          "numbers": "1 to 45"
+        },
+        {
+          "name": "Ainthorpe Walk",
+          "numbers": "1 to 9"
+        },
+        {
+          "name": "Bardsley Street",
+          "numbers": "19 to 33"
+        },
+        {
+          "name": "Briscoe Lane",
+          "numbers": "2 to 82 (Even)"
+        },
+        {
+          "name": "Church Avenue",
+          "numbers": "4 to 14 (Even)"
+        },
+        {
+          "name": "Clovelly Street",
+          "numbers": "1 to 11 (odd)"
+        },
+        {
+          "name": "Coniston Street",
+          "numbers": "1 to 17"
+        },
+        {
+          "name": "Crawford Street",
+          "numbers": "70 to 96 (Even)"
+        },
+        {
+          "name": "Crosby Road",
+          "numbers": "8c to 49"
+        },
+        {
+          "name": "Culcheth Lane",
+          "numbers": "21 to 73 (odd)"
+        },
+        {
+          "name": "Daisy Bank",
+          "numbers": "14 to 54"
+        },
+        {
+          "name": "Droylsden Road",
+          "numbers": "125 to 225 (odd) and 96 to 214 (even)"
+        },
+        {
+          "name": "Heathfield Street",
+          "numbers": "31 to 63 (odd)"
+        },
+        {
+          "name": "Hethorn Street",
+          "numbers": "1 to 44"
+        },
+        {
+          "name": "Leng Road",
+          "numbers": "1 to 85"
+        },
+        {
+          "name": "Loring Street",
+          "numbers": "1 to 40"
+        },
+        {
+          "name": "Melrose Street",
+          "numbers": "1 to 56"
+        },
+        {
+          "name": "Mitchell Street",
+          "numbers": "117 to 145 (odd)"
+        },
+        {
+          "name": "Regent Street",
+          "numbers": "2a to 2f, 2 to 41"
+        },
+        {
+          "name": "Rossington Street",
+          "numbers": "1 to 83"
+        },
+        {
+          "name": "Scotland Street",
+          "numbers": "1 to 79"
+        },
+        {
+          "name": "Silverwell Street",
+          "numbers": "20 to 36 (even) including Daisy Bank Court"
+        },
+        {
+          "name": "Tetlow Street",
+          "numbers": "1 to 38"
+        },
+        {
+          "name": "Topsham Walk",
+          "numbers": "1 to 10"
+        },
+        {
+          "name": "Wallis Street",
+          "numbers": "1 to 19"
+        },
+        {
+          "name": "Worksleigh Street",
+          "numbers": "2 to 2"
+        },
+        {
+          "name": "Albyns Avenue",
+          "numbers": "1 to 16"
+        },
+        {
+          "name": "Ansdell Street",
+          "numbers": "1 to 25, 24 to 43"
+        },
+        {
+          "name": "Avondale Street",
+          "numbers": "1 to 31"
+        },
+        {
+          "name": "Beckenham Road",
+          "numbers": "1 to 30"
+        },
+        {
+          "name": "Birkdale Street",
+          "numbers": "2 to 46"
+        },
+        {
+          "name": "Broomfield Drive",
+          "numbers": "28 to 74"
+        },
+        {
+          "name": "Cheetham Hill Road",
+          "numbers": "300 to 452 (even),433ato 519 (odd)"
+        },
+        {
+          "name": "Chiselhurst Street",
+          "numbers": "20 to 56"
+        },
+        {
+          "name": "Daresbury Street",
+          "numbers": "19 to 55"
+        },
+        {
+          "name": "Egmont Street",
+          "numbers": "19 to 36"
+        },
+        {
+          "name": "Esmond Road",
+          "numbers": "1 to 102"
+        },
+        {
+          "name": "Greenhill Road",
+          "numbers": "1 to 80"
+        },
+        {
+          "name": "Halliwell Lane",
+          "numbers": "1 to 12"
+        },
+        {
+          "name": "Keane Court",
+          "numbers": "1 to 17"
+        },
+        {
+          "name": "Martingale Court",
+          "numbers": "22 to 76"
+        },
+        {
+          "name": "Progress Buildings",
+          "numbers": "1 to 12/12a"
+        },
+        {
+          "name": "Shirley Road",
+          "numbers": "1 to 109"
+        },
+        {
+          "name": "Waterloo Road",
+          "numbers": "336 to 356 (even)"
+        },
+        {
+          "name": "Woodlands Road",
+          "numbers": "12 to 46 (even), 48 to 80 (even)"
+        },
+        {
+          "name": "Woodlands Street",
+          "numbers": "12 to 80(even)"
+        },
+        {
+          "name": "Mount Road",
+          "numbers": "173a to 147 (odd)"
+        },
+        {
+          "name": "Northmoor Road",
+          "numbers": "99 to 221"
+        },
+        {
+          "name": "Stockport Road",
+          "numbers": "623 to 661 (Odd)"
+        },
+        {
+          "name": "Attwood Street",
+          "numbers": "1 to 25"
+        },
+        {
+          "name": "Barnby Street",
+          "numbers": "31 to 82"
+        },
+        {
+          "name": "Beard Road",
+          "numbers": "1 to 30"
+        },
+        {
+          "name": "Buckley Road",
+          "numbers": "102 to 162 (even)"
+        },
+        {
+          "name": "Craig Road",
+          "numbers": "101 to 162"
+        },
+        {
+          "name": "East Road",
+          "numbers": "1 to 127 (odd)"
+        },
+        {
+          "name": "Elgar Street",
+          "numbers": "1 to 43 (odd) and 2 to 70 (even)"
+        },
+        {
+          "name": "Grainger Avenue",
+          "numbers": "1 to 30"
+        },
+        {
+          "name": "Hatton Street",
+          "numbers": "1 to 40"
+        },
+        {
+          "name": "Heathcote Road",
+          "numbers": "101 to 162"
+        },
+        {
+          "name": "Hollins Grove",
+          "numbers": "2 to 34"
+        },
+        {
+          "name": "Hopkins Street",
+          "numbers": "1 to 42"
+        },
+        {
+          "name": "Macfarren Street",
+          "numbers": "1 to 42"
+        },
+        {
+          "name": "Mackenzie Street",
+          "numbers": "1 to 65"
+        },
+        {
+          "name": "Parkin Street",
+          "numbers": "1 to 69"
+        },
+        {
+          "name": "Patey Street",
+          "numbers": "5 to 41"
+        },
+        {
+          "name": "Pink Bank Lane",
+          "numbers": "160 to 234 (even)"
+        },
+        {
+          "name": "Prout Street",
+          "numbers": "35 to 86"
+        },
+        {
+          "name": "Purcell Street",
+          "numbers": "27 to 76"
+        },
+        {
+          "name": "Rushford Street",
+          "numbers": "17 to 100"
+        },
+        {
+          "name": "Sanby Road",
+          "numbers": "2 to 12 (even)"
+        },
+        {
+          "name": "Santley Street",
+          "numbers": "1 to 60"
+        },
+        {
+          "name": "Sherrington Street",
+          "numbers": "6 to 46"
+        },
+        {
+          "name": "Smart Street",
+          "numbers": "1 to 44"
+        },
+        {
+          "name": "Stainer Street",
+          "numbers": "41 to 88"
+        },
+        {
+          "name": "Sullivan Street",
+          "numbers": "1 to 30"
+        },
+        {
+          "name": "Tallis Street",
+          "numbers": "2 to 37"
+        },
+        {
+          "name": "Thomson Road",
+          "numbers": "99 to 161 (odd)"
+        },
+        {
+          "name": "Claremont road",
+          "numbers": "447 to 497"
+        },
+        {
+          "name": "Eva street",
+          "numbers": "1 to 18"
+        },
+        {
+          "name": "Fleeson street",
+          "numbers": "1 to 36"
+        },
+        {
+          "name": "Grandale street",
+          "numbers": "1 to 45"
+        },
+        {
+          "name": "Great Western street",
+          "numbers": "394 to 400 (even)"
+        },
+        {
+          "name": "Heald grove",
+          "numbers": "106 to 132 (even)"
+        },
+        {
+          "name": "Heald place",
+          "numbers": "65 to 99 (odd)"
+        },
+        {
+          "name": "Hibbert street",
+          "numbers": "1 to 30"
+        },
+        {
+          "name": "Ravensdale street",
+          "numbers": "2 to 14"
+        },
+        {
+          "name": "Viscount street",
+          "numbers": "37 to 71 (odd)"
+        },
+        {
+          "name": "Walmer street",
+          "numbers": "52"
+        },
+        {
+          "name": "Brentford street",
+          "numbers": "2 to 18"
+        },
+        {
+          "name": "Clevedon street",
+          "numbers": "1 to 47"
+        },
+        {
+          "name": "Vernon street",
+          "numbers": "30"
+        },
+        {
+          "name": "Whiteway street",
+          "numbers": "1 to 48"
+        },
+        {
+          "name": "Windsor road",
+          "numbers": "11 to 69"
+        },
+        {
+          "name": "Winterdyne street",
+          "numbers": "1 to 26"
+        }
+      ],
+      "evidence": "Transcribed from the six Manchester City Council designation directory pages: /crumpsall-enver-road-area, /droylsden-road-area-and-scotland-street-area-miles-platting-and-newton-heath, /flats-above-shops-and-esmond-avondale-area-cheetham, /heathcote-sanby-road-area-and-northmoor-road-area-longsight, /viscount-street-area-and-heald-grove-area-moss-side and /whiteway-street-area-harpurhey. Each carries a 'Street addresses' table with Road / Door number / Postcode columns and states the designation is in force from 24 May 2025 and ends 23 May 2030."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "gss": "E09000013",
+  "council": "London Borough of Hammersmith and Fulham",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "start": "2022-06-05",
+        "end": "2027-06-04"
+      },
+      "sourceUrl": "https://www.lbhf.gov.uk/sites/default/files/section_attachments/appendix_public_notice_selective_licensing.pdf",
+      "confidence": "official-pdf",
+      "streets": [
+        { "name": "Askew Road", "numbers": null },
+        { "name": "Baron's Court Road", "numbers": null },
+        { "name": "Bloemfontein Road", "numbers": null },
+        { "name": "Blythe Road", "numbers": null },
+        { "name": "Coningham Road", "numbers": null },
+        { "name": "Crookham Road", "numbers": null },
+        { "name": "Dalling Road", "numbers": null },
+        { "name": "Dawes Road", "numbers": null },
+        { "name": "Fulham Road", "numbers": null },
+        { "name": "Goldhawk Road", "numbers": null },
+        { "name": "Greyhound Road", "numbers": null },
+        { "name": "King Street", "numbers": null },
+        { "name": "Lime Grove", "numbers": null },
+        { "name": "New King's Road", "numbers": null },
+        { "name": "North End Road", "numbers": null },
+        { "name": "Richmond Way", "numbers": null },
+        { "name": "Shepherd's Bush Road", "numbers": null },
+        { "name": "Sinclair Road", "numbers": null },
+        { "name": "Scrubs Lane", "numbers": null },
+        { "name": "Talgarth Road", "numbers": null },
+        { "name": "Uxbridge Road", "numbers": null },
+        { "name": "Wandsworth Bridge Road", "numbers": null },
+        { "name": "Woodstock Grove", "numbers": null },
+        { "name": "Wood Lane", "numbers": null }
+      ],
+      "evidence": "Transcribed verbatim from Annex A of the council's own PUBLIC NOTICE 'London Borough of Hammersmith & Fulham Designation of an Area for Selective Licensing 2022' (Section 80, Housing Act 2004), hosted on lbhf.gov.uk and linked from the council's 'New discretionary licensing schemes approved' page. The notice states the designation was made on 6 December 2021, comes into force on 5 June 2022 and ceases to have effect on 4 June 2027, matching the recorded scheme dates exactly. Annex A lists exactly 24 streets as bare street names with NO house-number ranges or odd/even restrictions of any kind, so every 'numbers' value is null; 8 streets are annotated '(new to scheme)', which is a provenance note rather than a number restriction and has been omitted. The list was cross-checked against the council's live page https://www.lbhf.gov.uk/housing/private-housing/landlords-and-licensing/property-licensing ('You'll need a Selective Licence if you rent out a house or flat in one of 24 specified streets'), which gives the identical 24 names, also without number ranges. This replaces the previous commercial source (londonpropertylicensing.co.uk). Note the older 2016 designation notice at .../public_notice_selective_licensing.pdf covers the superseded 2017-2022 scheme of 128 streets and was NOT used."
+    }
+  ]
+}

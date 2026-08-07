@@ -104,7 +104,13 @@ export async function POST(req: NextRequest) {
       // what turns "check the boundary" into a definite yes or no. The source
       // gates that: only an Ordnance Survey street may produce a definite "no".
       street: meta.street || null,
-      streetSource: meta.street_source === "os" ? "os" : meta.street_source === "epc" ? "epc" : null,
+      streetSource:
+        meta.street_source === "os" || meta.street_source === "epc-numbered" || meta.street_source === "epc-derived"
+          ? meta.street_source
+          : null,
+      // Manchester designates by house-number range throughout, so the number
+      // is what turns a hedge into a definite answer there.
+      houseNumber: meta.house_number || null,
     });
     if (!determination) throw new Error("determination_failed");
 

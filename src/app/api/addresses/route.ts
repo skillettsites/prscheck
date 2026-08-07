@@ -14,9 +14,21 @@ export interface AddressItem {
   street: string | null;
   buildingNumber: string | null;
   uprn: string | null;
-  /** How the street was obtained. "os" is authoritative; "epc" is derived from
-   *  the address line and should be treated as slightly less certain. */
-  streetSource?: "os" | "epc";
+  /**
+   * How the street was obtained, which decides how far the licensing engine
+   * trusts it.
+   *
+   * - `os`: Ordnance Survey's structured THOROUGHFARE_NAME. Authoritative.
+   * - `epc-numbered`: derived from an EPC address line that begins with a house
+   *   number and ends in a thoroughfare suffix, e.g. "12 Askew Road". Stripping
+   *   a leading number off that leaves exactly the street, so this is reliable
+   *   enough to rule a designation out.
+   * - `epc-derived`: derived some other way, with no house number to anchor it.
+   *   This is the "Rose Cottage, Mill Lane" case, where the name we extract may
+   *   be the property, not the street. May confirm a designation, never rules
+   *   one out.
+   */
+  streetSource?: "os" | "epc-numbered" | "epc-derived";
 }
 
 function cleanEnv(v: string | undefined): string {
@@ -100,33 +112,81 @@ function looksLikeStreet(name: string): boolean {
  * reference. This is a heuristic, which is why the response marks how the
  * street was obtained: a street-list match is only ever as good as this.
  */
-/** Strip a leading flat/unit reference and building number off one address line. */
-function stripToThoroughfare(line: string): string {
+/**
+ * Split one address line into its house number and the thoroughfare after it.
+ *
+ * `number` is null when the line carries no house number, which is exactly the
+ * case we must not trust: with no number to anchor on, whatever text remains
+ * may be the property's name rather than its street.
+ */
+function splitAddressLine(line: string): { number: string | null; rest: string } {
   let t = line.trim();
-  // "Flat 2, 12 Askew Road" / "Apt 4 Askew Road" -> drops the dwelling reference
+  // "Flat 2, 12 Askew Road" / "Apt 4 Askew Road" -> drop the dwelling reference,
+  // which is not the house number the council's schedules are written against.
   t = t.replace(/^(flat|apartment|apt|unit|room)\s*[0-9]*[a-z]?[,\s]+/i, "");
-  // "12 Askew Road" / "12A Askew Road" / "12-14 Askew Road" -> "Askew Road"
-  t = t.replace(/^[0-9]+[a-z]?(\s*[-/]\s*[0-9]+[a-z]?)?[,\s]+/i, "");
-  return t.replace(/^,+\s*/, "").trim();
+  // "12 Askew Road" / "12A Askew Road" / "12-14 Askew Road"
+  const m = t.match(/^([0-9]+[a-z]?)(?:\s*[-/]\s*([0-9]+[a-z]?))?[,\s]+(.*)$/i);
+  if (m) return { number: m[1], rest: m[3].replace(/^,+\s*/, "").trim() };
+  return { number: null, rest: t.replace(/^,+\s*/, "").trim() };
 }
 
-function epcStreet(rec: Record<string, string>): string | null {
+/**
+ * Best-effort street and house number from an EPC record, with an honest
+ * confidence.
+ *
+ * `confident` is true only when the street was recovered from a line that began
+ * with a house number, e.g. "12 Askew Road". Stripping "12" off that leaves
+ * exactly the street, so it is as good as a structured field. It is false for
+ * "Rose Cottage, Mill Lane", where the extracted name may be the house rather
+ * than the road, and the licensing engine must not rule a designation out on it.
+ */
+function epcStreet(rec: Record<string, string>): {
+  street: string | null;
+  buildingNumber: string | null;
+  confident: boolean;
+} {
   const direct = rec.street || rec["street"];
-  if (direct && String(direct).trim()) return toTitleCase(String(direct).trim());
+  const directNum = rec.buildingNumber || rec["building-number"];
+  if (direct && String(direct).trim()) {
+    // The legacy API carries a structured street field, which needs no guessing.
+    return {
+      street: toTitleCase(String(direct).trim()),
+      buildingNumber: directNum ? String(directNum).trim() : null,
+      confident: true,
+    };
+  }
 
   // EPC splits an address across lines inconsistently. Usually line 1 holds
   // "12 Askew Road", but for a subdivided property it holds only "Flat 2" and
   // the thoroughfare drops to line 2. Try line 1 first and fall through to
   // line 2 when line 1 reduces to nothing usable, rather than assuming either.
+  let fallback: { street: string; buildingNumber: string | null } | null = null;
   for (const raw of [rec.addressLine1, rec.addressLine2]) {
     if (!raw || !String(raw).trim()) continue;
-    const t = stripToThoroughfare(String(raw));
-    if (t.length <= 2) continue;
-    const name = toTitleCase(t);
+    const { number, rest } = splitAddressLine(String(raw));
+    if (rest.length <= 2) continue;
+    const name = toTitleCase(rest);
     // Only trust a derived street that actually looks like a thoroughfare.
-    if (looksLikeStreet(name)) return name;
+    if (!looksLikeStreet(name)) continue;
+    if (number) return { street: name, buildingNumber: number, confident: true };
+    // Looks like a street but has no house number anchoring it. Keep it as a
+    // last resort: it can still confirm a designation, just not rule one out.
+    fallback = fallback ?? { street: name, buildingNumber: null };
   }
-  return null;
+  if (fallback) return { ...fallback, confident: false };
+  return { street: null, buildingNumber: null, confident: false };
+}
+
+/** Shape an EPC record into an AddressItem, carrying the street's provenance. */
+function epcItem(rec: Record<string, string>, address: string): AddressItem {
+  const { street, buildingNumber, confident } = epcStreet(rec);
+  return {
+    address,
+    street,
+    buildingNumber,
+    uprn: rec.uprn ? String(rec.uprn) : null,
+    streetSource: confident ? "epc-numbered" : "epc-derived",
+  };
 }
 
 async function fetchAddresses(postcode: string): Promise<AddressItem[]> {
@@ -151,7 +211,7 @@ async function fetchAddresses(postcode: string): Promise<AddressItem[]> {
             const k = addr.toLowerCase().replace(/[,.\-\s]+/g, " ").trim();
             if (!seen.has(k)) {
               seen.add(k);
-              addresses.push({ address: addr, street: epcStreet(rec), buildingNumber: null, uprn: null, streetSource: "epc" });
+              addresses.push(epcItem(rec, addr));
             }
           }
           return addresses.sort((a, b) => a.address.localeCompare(b.address, "en-GB"));
@@ -188,7 +248,7 @@ async function fetchAddresses(postcode: string): Promise<AddressItem[]> {
             const k = addr.toLowerCase().replace(/[,.\-\s]+/g, " ").trim();
             if (!seen.has(k)) {
               seen.add(k);
-              addresses.push({ address: addr, street: epcStreet(row), buildingNumber: null, uprn: null, streetSource: "epc" });
+              addresses.push(epcItem(row, addr));
             }
           }
           return addresses.sort((a, b) => a.address.localeCompare(b.address, "en-GB"));
