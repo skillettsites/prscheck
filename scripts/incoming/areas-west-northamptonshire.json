@@ -1,0 +1,22 @@
+{
+  "gss": "E06000062",
+  "council": "West Northamptonshire Council",
+  "schemes": [
+    {
+      "match": { "type": "additional", "coverage": "part" },
+      "sourceUrl": "https://www.westnorthants.gov.uk/private-housing-tenants-and-landlords/houses-multiple-occupation-hmos/types-hmo-licences",
+      "confidence": "official-council-page",
+      "inForce": {
+        "stillLive": true,
+        "start": "2025-02-24",
+        "end": "2030-02-23",
+        "howVerified": "Verified three ways: Cabinet report para 6.7 states the designation 'would commence on 24th February 2025 and last for a period of 5 years, expiring on 23rd February 2030'; the printed Cabinet decisions PDF of 19 November 2024 resolves 'Agreed to designate, with effect from 24 February 2025, for a period of five years'; and the live council page body, last updated 30 June 2026, states 'A new Additional Licensing Scheme started on 24 February 2025 and will run for 5 years.'"
+      },
+      "streets": [],
+      "postcodes": [],
+      "checkerUrl": null,
+      "boundaryDescription": "The new area, shown on the map, includes the area covered by the 2020 to 2025 Additional Licensing Scheme and additional areas in Northampton and Daventry. (Cabinet report para 5.9 adds that the new area will 'include the area covered by the existing designation, together with additional areas which are mainly to the west of Northampton', and para 6.11 that it will 'be extended towards the west'.) This is the entirety of the published worded description; the operative area is defined by the map at https://cms.westnorthants.gov.uk/media/25608/download.",
+      "evidence": "OUR RECORD'S 'map + street list' NOTE IS WRONG AND SHOULD BE CORRECTED: no street list has ever been published for this designation, and none was inferred from the map. The claim was traced to its origin: the Cabinet report and the formal decision minute both say the area is 'identified in the map and list of streets contained in Appendix D', but every document attached to that agenda item was enumerated directly from ModernGov and Appendix D is exactly two files, both raster maps with no street text (s20317, district sheet; s20318, Northampton close-up), whose only extractable text is 'Key / Proposed HMO Additional Licensing Consultation area / West Northamptonshire Council boundary / Date: 10-07-2024 / OS licence no. 100063706'. The council news release pointed to 'a street list and map' in the consultation documents, so the archived CitizenSpace consultation's complete upload list was enumerated via the Wayback CDX index: four PDFs only, none a street list, and the map file is byte-identical in size to Appendix D1 (3,479,012 bytes). The 'list of streets' wording is a drafting error repeated from report into minute. There is only ONE designation, not separate Northampton and Daventry schemes; its predecessor (Northampton Borough Council 2019, in force 1 February 2020, ceased 31 January 2025) was ward-based, so no street list has ever existed here either. No address checker exists: the council's public web map has no HMO licensing layer, and hmolicensing.northampton.gov.uk is a licence register search, not an area checker. The council's own site search is a useless JS shell (the control query 'houses in multiple occupation' returned a byte-identical 93KB response to the target query), so a 7,056-URL sitemap sweep was used instead and found only seven HMO pages. Northampton's Article 4 Direction for HMOs is a planning instrument that the Cabinet report says the licensing area was drawn to align with; it is NOT the licensing designation and its ward list must not be used as the licensing area. Address-level resolution is not possible from published text; the correct behaviour remains check-boundary. NOTE for future work: the designated area in Appendix D1 is a vector polygon in the PDF content stream (1,952 points), not a raster, and is georeferenceable against the OS National Grid squares printed on the sheet, which would convert this council to an exact point-in-polygon answer."
+    }
+  ]
+}

@@ -1,0 +1,1840 @@
+{
+  "gss": "E08000004",
+  "council": "Oldham Metropolitan Borough Council",
+  "schemes": [
+    {
+      "match": {
+        "type": "selective",
+        "coverage": "areas",
+        "describedAs": "Designated areas (not whole wards) within named wards, roughly 1,800 private rented properties"
+      },
+      "sourceUrl": "https://www.oldham.gov.uk/downloads/download/2066/street_list_of_affected_areas_guidance",
+      "confidence": "official-pdf",
+      "inForce": {
+        "stillLive": true,
+        "start": "2022-07-04",
+        "end": "2027-07-03",
+        "howVerified": "The council's Notice of Designation states the designation 'was designated on 1 April 2022' and that the areas 'will be subject to selective licensing under section 80 of the Housing Act 2004 with effect from 4 July 2022'; the council's Overview and Scrutiny briefing of 12 March 2024 confirms the scheme commenced 4 July 2022 and is a five-year scheme, giving a statutory expiry of 3 July 2027 under section 84 of the Housing Act 2004. A site search that first returned results for the control term 'houses in multiple occupation' returns no later selective licensing designation."
+      },
+      "supersededBy": null,
+      "streets": [
+        {
+          "name": "Afghan Street",
+          "numbers": "1"
+        },
+        {
+          "name": "Argyle Street",
+          "numbers": "1 -7"
+        },
+        {
+          "name": "Arundel Street",
+          "numbers": "1-25"
+        },
+        {
+          "name": "Alva Road",
+          "numbers": "2-67"
+        },
+        {
+          "name": "Albany Street",
+          "numbers": "1-27"
+        },
+        {
+          "name": "Balfour Street",
+          "numbers": "1-181"
+        },
+        {
+          "name": "Barcombe Close",
+          "numbers": "1-12"
+        },
+        {
+          "name": "Bridson Street",
+          "numbers": "1-18"
+        },
+        {
+          "name": "Broadbent Road",
+          "numbers": "2-119"
+        },
+        {
+          "name": "Bower Street",
+          "numbers": "118-140"
+        },
+        {
+          "name": "Carlton Avenue",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Cedar Street",
+          "numbers": "2-24"
+        },
+        {
+          "name": "Cranbrook Street",
+          "numbers": "1-54"
+        },
+        {
+          "name": "Clyde Street",
+          "numbers": "4-26"
+        },
+        {
+          "name": "Cook Street",
+          "numbers": "4"
+        },
+        {
+          "name": "Cornhill Street",
+          "numbers": "2-26"
+        },
+        {
+          "name": "Counthill Road",
+          "numbers": "6-76"
+        },
+        {
+          "name": "Cow Lane",
+          "numbers": "2 & 2A"
+        },
+        {
+          "name": "Dane Street",
+          "numbers": "7-23"
+        },
+        {
+          "name": "Derker Street",
+          "numbers": "39-49"
+        },
+        {
+          "name": "Dunkerley Street",
+          "numbers": null
+        },
+        {
+          "name": "Edgemoor Close",
+          "numbers": "1-40"
+        },
+        {
+          "name": "Ena Street",
+          "numbers": "1-26"
+        },
+        {
+          "name": "Eric Street",
+          "numbers": "1-130"
+        },
+        {
+          "name": "Fairbourne Walk",
+          "numbers": "1- 19"
+        },
+        {
+          "name": "Fairbourne Court",
+          "numbers": "1-20"
+        },
+        {
+          "name": "Falkirk Street",
+          "numbers": "1-29"
+        },
+        {
+          "name": "Ferguson Way",
+          "numbers": "1-26"
+        },
+        {
+          "name": "Filbert Street",
+          "numbers": "8-26"
+        },
+        {
+          "name": "Fleet Street",
+          "numbers": "1-28"
+        },
+        {
+          "name": "Flint Street",
+          "numbers": "2-14"
+        },
+        {
+          "name": "Foster Street",
+          "numbers": "1-40"
+        },
+        {
+          "name": "French Avenue",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Givvons Fold",
+          "numbers": "1-12"
+        },
+        {
+          "name": "Grasmere Road",
+          "numbers": "1-37"
+        },
+        {
+          "name": "Greenacres Road",
+          "numbers": "182 -196"
+        },
+        {
+          "name": "Green Park View",
+          "numbers": "1-23"
+        },
+        {
+          "name": "Hanson Street",
+          "numbers": "6-64"
+        },
+        {
+          "name": "Herbert Street",
+          "numbers": "1-105"
+        },
+        {
+          "name": "Hill Street",
+          "numbers": null
+        },
+        {
+          "name": "Hillside Avenue",
+          "numbers": "1-85"
+        },
+        {
+          "name": "Hill View Close",
+          "numbers": "1-18"
+        },
+        {
+          "name": "Huddersfield Road",
+          "numbers": "8-193"
+        },
+        {
+          "name": "Hutchins Lane",
+          "numbers": "1-39"
+        },
+        {
+          "name": "Ivanhoe Street",
+          "numbers": "1-16"
+        },
+        {
+          "name": "Jackson Mews",
+          "numbers": "1-28"
+        },
+        {
+          "name": "James Street",
+          "numbers": "1-11"
+        },
+        {
+          "name": "Jowett Street",
+          "numbers": "1-54"
+        },
+        {
+          "name": "Kelverlow Street",
+          "numbers": "1-152"
+        },
+        {
+          "name": "Keston Road",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Kilburn Street",
+          "numbers": "3-25"
+        },
+        {
+          "name": "Lees Road",
+          "numbers": "73-341"
+        },
+        {
+          "name": "Lindsay Close",
+          "numbers": "1-10"
+        },
+        {
+          "name": "Littlebank Street",
+          "numbers": "21-68"
+        },
+        {
+          "name": "Milk Street",
+          "numbers": "2-12"
+        },
+        {
+          "name": "Miles Street",
+          "numbers": "22-56"
+        },
+        {
+          "name": "Mortar Street",
+          "numbers": "1-41"
+        },
+        {
+          "name": "Northcote Ave",
+          "numbers": "2"
+        },
+        {
+          "name": "Osmond Street",
+          "numbers": "4-39"
+        },
+        {
+          "name": "Plane Street",
+          "numbers": null
+        },
+        {
+          "name": "Pierce Street",
+          "numbers": "1-40"
+        },
+        {
+          "name": "Prince Charlie Street",
+          "numbers": "75-210"
+        },
+        {
+          "name": "Prince Edward Avenue",
+          "numbers": "1-74"
+        },
+        {
+          "name": "Prince George Street",
+          "numbers": "1-39"
+        },
+        {
+          "name": "Radcliffe Road",
+          "numbers": "1-56"
+        },
+        {
+          "name": "Rand Street",
+          "numbers": "1-23"
+        },
+        {
+          "name": "Ripponden Road",
+          "numbers": "7- 463"
+        },
+        {
+          "name": "Ripponden Street",
+          "numbers": "1-26"
+        },
+        {
+          "name": "Ronald Street",
+          "numbers": "1-124"
+        },
+        {
+          "name": "Rothesay Street",
+          "numbers": "1-31"
+        },
+        {
+          "name": "Ryeburne Street",
+          "numbers": "3-44"
+        },
+        {
+          "name": "Rixson Street",
+          "numbers": "34-53"
+        },
+        {
+          "name": "Saint Ambrose Court",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Saint Ambrose Road",
+          "numbers": "9-25"
+        },
+        {
+          "name": "Saffron Drive",
+          "numbers": "1-89"
+        },
+        {
+          "name": "Saxon Street",
+          "numbers": "1-30"
+        },
+        {
+          "name": "Somerset Street",
+          "numbers": "12-23"
+        },
+        {
+          "name": "Springfield",
+          "numbers": null
+        },
+        {
+          "name": "Staley Street",
+          "numbers": "1-10"
+        },
+        {
+          "name": "Taurus Street",
+          "numbers": "1-58"
+        },
+        {
+          "name": "Tennyson Street",
+          "numbers": "1-55"
+        },
+        {
+          "name": "Terrace Street",
+          "numbers": "29-37"
+        },
+        {
+          "name": "Tilton Street",
+          "numbers": "1-29"
+        },
+        {
+          "name": "Tyne Street",
+          "numbers": "3-9"
+        },
+        {
+          "name": "Tynwald Street",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Vulcan Street The Old Gatehouse &",
+          "numbers": "6-24"
+        },
+        {
+          "name": "Wales Street",
+          "numbers": "1-34"
+        },
+        {
+          "name": "Walter Scott Street",
+          "numbers": "43-45"
+        },
+        {
+          "name": "Watersheddings Street",
+          "numbers": "1-52"
+        },
+        {
+          "name": "Watersheddings Way",
+          "numbers": "2-38"
+        },
+        {
+          "name": "Waverley Court",
+          "numbers": null
+        },
+        {
+          "name": "Waverley Street",
+          "numbers": "1-111"
+        },
+        {
+          "name": "Warcock Road",
+          "numbers": "1-14"
+        },
+        {
+          "name": "Whetstone Hill Road",
+          "numbers": "1-7"
+        },
+        {
+          "name": "Whitecroft Street",
+          "numbers": "2-20"
+        },
+        {
+          "name": "Willowfield Road",
+          "numbers": "1-7"
+        },
+        {
+          "name": "Winslade Close",
+          "numbers": "1-22"
+        },
+        {
+          "name": "Aden St",
+          "numbers": "1-29"
+        },
+        {
+          "name": "Allama Iqbal Road",
+          "numbers": "1-31"
+        },
+        {
+          "name": "Aspull Street",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Beaufont Drive",
+          "numbers": "1-27"
+        },
+        {
+          "name": "Breezehill Road",
+          "numbers": "28-87"
+        },
+        {
+          "name": "Brewerton Road",
+          "numbers": "1-124"
+        },
+        {
+          "name": "Ceylon Street",
+          "numbers": "1-23"
+        },
+        {
+          "name": "Chatsworth Street",
+          "numbers": "1-24"
+        },
+        {
+          "name": "Chesham Road",
+          "numbers": "1-7"
+        },
+        {
+          "name": "Cleeve Road",
+          "numbers": "1-28"
+        },
+        {
+          "name": "Clifton Avenue",
+          "numbers": "1-12"
+        },
+        {
+          "name": "Clifton Close",
+          "numbers": "1-20"
+        },
+        {
+          "name": "Cranbrook Street",
+          "numbers": "51-94"
+        },
+        {
+          "name": "Cyprus Close",
+          "numbers": "1-6"
+        },
+        {
+          "name": "Darwin Street",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Dove Street",
+          "numbers": "35-45"
+        },
+        {
+          "name": "Elgin Road",
+          "numbers": "1-30"
+        },
+        {
+          "name": "Erith Road",
+          "numbers": "2-18"
+        },
+        {
+          "name": "Fulham Street",
+          "numbers": "2-41"
+        },
+        {
+          "name": "Game Street",
+          "numbers": "1-29"
+        },
+        {
+          "name": "Gibraltar Street",
+          "numbers": "1-58"
+        },
+        {
+          "name": "Gordon Avenue",
+          "numbers": "13-74"
+        },
+        {
+          "name": "Hill Close",
+          "numbers": "1-20"
+        },
+        {
+          "name": "Huxley Street",
+          "numbers": "1-98"
+        },
+        {
+          "name": "Jinnah Close",
+          "numbers": "1-11"
+        },
+        {
+          "name": "Kestrel Avenue",
+          "numbers": "1-20"
+        },
+        {
+          "name": "Kinder Avenue",
+          "numbers": "1-14"
+        },
+        {
+          "name": "Kingsley Road",
+          "numbers": "1 - 40"
+        },
+        {
+          "name": "Lees Grove",
+          "numbers": "1-17"
+        },
+        {
+          "name": "Lees Road",
+          "numbers": "344-440"
+        },
+        {
+          "name": "Lowside Drive",
+          "numbers": "8-99"
+        },
+        {
+          "name": "Lydgate Drive",
+          "numbers": "1-42"
+        },
+        {
+          "name": "Malta Street",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Martin Ave",
+          "numbers": "1-18"
+        },
+        {
+          "name": "Melling Road",
+          "numbers": "1-57"
+        },
+        {
+          "name": "New Earth Street",
+          "numbers": "1-119"
+        },
+        {
+          "name": "Pitt Street East",
+          "numbers": "7-43"
+        },
+        {
+          "name": "Pendle Close",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Quail Street",
+          "numbers": "14-68"
+        },
+        {
+          "name": "Roe Lane",
+          "numbers": "1-20"
+        },
+        {
+          "name": "Rook Street",
+          "numbers": "2-4"
+        },
+        {
+          "name": "Roundthorn Road",
+          "numbers": "86-376"
+        },
+        {
+          "name": "Roxbury Avenue",
+          "numbers": "1-21"
+        },
+        {
+          "name": "Salem Grove",
+          "numbers": "1-36"
+        },
+        {
+          "name": "Salford Street",
+          "numbers": "2-26"
+        },
+        {
+          "name": "Salisbury Road",
+          "numbers": "33"
+        },
+        {
+          "name": "School House Road",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Smyrna Street",
+          "numbers": "1-24"
+        },
+        {
+          "name": "Swinton Street",
+          "numbers": "1-20"
+        },
+        {
+          "name": "The Lows",
+          "numbers": "1-43"
+        },
+        {
+          "name": "Thurland Road",
+          "numbers": "1-46"
+        },
+        {
+          "name": "Tunstall Rad",
+          "numbers": "1-28"
+        },
+        {
+          "name": "Tyndall Street",
+          "numbers": "1-6"
+        },
+        {
+          "name": "Vigo Street",
+          "numbers": "1-30"
+        },
+        {
+          "name": "Whitehouse Avenue",
+          "numbers": "1-18"
+        },
+        {
+          "name": "Wren Street",
+          "numbers": "1-39"
+        },
+        {
+          "name": "Ammon Wrigley Close",
+          "numbers": "1-18"
+        },
+        {
+          "name": "Arran Avenue",
+          "numbers": "1-24"
+        },
+        {
+          "name": "Ascroft Street",
+          "numbers": "1-3"
+        },
+        {
+          "name": "Ayr Avenue",
+          "numbers": "1-12"
+        },
+        {
+          "name": "Ashton Road",
+          "numbers": "34 - 485"
+        },
+        {
+          "name": "Avon Street",
+          "numbers": "1-48"
+        },
+        {
+          "name": "Back King Street",
+          "numbers": "27-29"
+        },
+        {
+          "name": "Bailey Street",
+          "numbers": "1"
+        },
+        {
+          "name": "Bar Gap Road",
+          "numbers": "4-57"
+        },
+        {
+          "name": "Bateson Way",
+          "numbers": "244 - 255"
+        },
+        {
+          "name": "Beever Street",
+          "numbers": "10"
+        },
+        {
+          "name": "Belgrave Avenue",
+          "numbers": "1-24"
+        },
+        {
+          "name": "Belgrave Road",
+          "numbers": "1-208"
+        },
+        {
+          "name": "Blunn Street",
+          "numbers": "1"
+        },
+        {
+          "name": "Boston Street",
+          "numbers": "1-44"
+        },
+        {
+          "name": "Bow Street",
+          "numbers": "13-40"
+        },
+        {
+          "name": "Briscoe Street",
+          "numbers": "1-30"
+        },
+        {
+          "name": "Broadway Street",
+          "numbers": "3-91"
+        },
+        {
+          "name": "Brookfield Street",
+          "numbers": "1-38"
+        },
+        {
+          "name": "Bute Avenue",
+          "numbers": "1-24"
+        },
+        {
+          "name": "Cardwell Street",
+          "numbers": "11-32"
+        },
+        {
+          "name": "Carthage Street",
+          "numbers": "53-81 (inc Mubarak House)"
+        },
+        {
+          "name": "Chamber Road",
+          "numbers": "5-19"
+        },
+        {
+          "name": "Charlston Street",
+          "numbers": "1-34"
+        },
+        {
+          "name": "Charter Street",
+          "numbers": "3-29"
+        },
+        {
+          "name": "Church Terrace",
+          "numbers": "1-5"
+        },
+        {
+          "name": "Clegg Street",
+          "numbers": "22-42"
+        },
+        {
+          "name": "Columbia Street",
+          "numbers": "1-9"
+        },
+        {
+          "name": "Copsterhill Road",
+          "numbers": "2-30"
+        },
+        {
+          "name": "Crete Street",
+          "numbers": "17 - 106"
+        },
+        {
+          "name": "Dartmouth Close",
+          "numbers": "1-11"
+        },
+        {
+          "name": "Dowry Street",
+          "numbers": "1-79"
+        },
+        {
+          "name": "Edith Street",
+          "numbers": "3-48"
+        },
+        {
+          "name": "Egerton Street",
+          "numbers": "1-123"
+        },
+        {
+          "name": "Eldon Precinct",
+          "numbers": "10-16"
+        },
+        {
+          "name": "Eldon Street",
+          "numbers": "Purdy House 29-48, Wimpenny House 49-68, Barlow House 69-111, Stott House 1-28, Potter House 112-135, Heywood House 136-185, Hague House 186-197, Bradley House 206-225, Wild House 226-243, Parr House 198-205"
+        },
+        {
+          "name": "Estate Street",
+          "numbers": "1-124"
+        },
+        {
+          "name": "Evans Street",
+          "numbers": "2-4"
+        },
+        {
+          "name": "Falcon Street",
+          "numbers": "(St.Clements Court 1-36)"
+        },
+        {
+          "name": "Falmouth Street",
+          "numbers": "1-59"
+        },
+        {
+          "name": "Fisher Street",
+          "numbers": "31-82"
+        },
+        {
+          "name": "Fitton Hill Road",
+          "numbers": "1-11"
+        },
+        {
+          "name": "Flint Hill Way",
+          "numbers": "3"
+        },
+        {
+          "name": "Foxglove Avenue",
+          "numbers": "1-48"
+        },
+        {
+          "name": "George Street",
+          "numbers": "66-72"
+        },
+        {
+          "name": "Glendale Court",
+          "numbers": "1-9"
+        },
+        {
+          "name": "Goddard Street",
+          "numbers": "10-110"
+        },
+        {
+          "name": "Great Cable Close",
+          "numbers": "1-55"
+        },
+        {
+          "name": "Greaves Street",
+          "numbers": "3"
+        },
+        {
+          "name": "Groby Street",
+          "numbers": "2-8"
+        },
+        {
+          "name": "Hardcastle Street",
+          "numbers": "3"
+        },
+        {
+          "name": "Henshaw Street",
+          "numbers": "104-122"
+        },
+        {
+          "name": "High Street",
+          "numbers": "10-32"
+        },
+        {
+          "name": "Holden Street",
+          "numbers": "1"
+        },
+        {
+          "name": "Honeywell Lane",
+          "numbers": "2 - 230"
+        },
+        {
+          "name": "Horsedge Street",
+          "numbers": "12-239"
+        },
+        {
+          "name": "Jackson Pit",
+          "numbers": "19"
+        },
+        {
+          "name": "Kenyon Avenue",
+          "numbers": "2-41"
+        },
+        {
+          "name": "Keswick Avenue",
+          "numbers": "1-41"
+        },
+        {
+          "name": "King Street",
+          "numbers": "1-31"
+        },
+        {
+          "name": "Laceby Avenue",
+          "numbers": "9-30"
+        },
+        {
+          "name": "Lee Street",
+          "numbers": "279-316"
+        },
+        {
+          "name": "Lord Street",
+          "numbers": "44-114"
+        },
+        {
+          "name": "Mackintosh Way",
+          "numbers": "1-23"
+        },
+        {
+          "name": "Malby Street",
+          "numbers": "1-17"
+        },
+        {
+          "name": "Malpas Street",
+          "numbers": "2-19"
+        },
+        {
+          "name": "Manchester Street",
+          "numbers": "39"
+        },
+        {
+          "name": "Marion Street",
+          "numbers": "1-32"
+        },
+        {
+          "name": "Meldrum Street",
+          "numbers": "1-284"
+        },
+        {
+          "name": "Montreal Street",
+          "numbers": "1-30"
+        },
+        {
+          "name": "Neild Street",
+          "numbers": "18-56"
+        },
+        {
+          "name": "Palmer Close",
+          "numbers": "1-35"
+        },
+        {
+          "name": "Park Road",
+          "numbers": "56-124"
+        },
+        {
+          "name": "Peter Street",
+          "numbers": "(Ascroft Court 4-8)"
+        },
+        {
+          "name": "Pickworth Street",
+          "numbers": "2-6"
+        },
+        {
+          "name": "Plymouth Street",
+          "numbers": "1-56"
+        },
+        {
+          "name": "Poppy Road",
+          "numbers": "1-39"
+        },
+        {
+          "name": "Pool Street",
+          "numbers": "4-26"
+        },
+        {
+          "name": "Port Street",
+          "numbers": "4-22"
+        },
+        {
+          "name": "Queen Street",
+          "numbers": "11"
+        },
+        {
+          "name": "Retiro Street",
+          "numbers": "11-26"
+        },
+        {
+          "name": "Robson Street",
+          "numbers": "(Oddfellows House 1-23)"
+        },
+        {
+          "name": "Rock Street",
+          "numbers": "16-61"
+        },
+        {
+          "name": "Rose Way",
+          "numbers": "1-9"
+        },
+        {
+          "name": "Royle Close",
+          "numbers": "1-29"
+        },
+        {
+          "name": "Ruth Street",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Saint Albans Close",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Saint Marys Street",
+          "numbers": "1-33"
+        },
+        {
+          "name": "Saint Marys Way",
+          "numbers": "1-113"
+        },
+        {
+          "name": "Scholes Street",
+          "numbers": "(Astoria 1-49, Cradinal Court 101-918)"
+        },
+        {
+          "name": "Scotlock Way",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Shaw Street",
+          "numbers": "32-36"
+        },
+        {
+          "name": "Siddall Street",
+          "numbers": "32-71"
+        },
+        {
+          "name": "Snowdon Street",
+          "numbers": "2-22"
+        },
+        {
+          "name": "Thames Street",
+          "numbers": "1-29"
+        },
+        {
+          "name": "Thatcher Street",
+          "numbers": "1-29"
+        },
+        {
+          "name": "Thornby Avenue",
+          "numbers": "27"
+        },
+        {
+          "name": "Union Street",
+          "numbers": "14-182 (Inc Victory Apartments 1-32)"
+        },
+        {
+          "name": "Urmson Street",
+          "numbers": "2-93"
+        },
+        {
+          "name": "Villa Road",
+          "numbers": "1-122"
+        },
+        {
+          "name": "Wall Street",
+          "numbers": "2-8"
+        },
+        {
+          "name": "Wallace Street",
+          "numbers": "25-52"
+        },
+        {
+          "name": "Wallshaw Street",
+          "numbers": "1-11"
+        },
+        {
+          "name": "Walter Street",
+          "numbers": "4"
+        },
+        {
+          "name": "Wasdale Walk",
+          "numbers": "1-49"
+        },
+        {
+          "name": "Waterloo Street",
+          "numbers": "6-18"
+        },
+        {
+          "name": "Wellbank Close",
+          "numbers": "1-10"
+        },
+        {
+          "name": "Whitehall Street",
+          "numbers": "11-52"
+        },
+        {
+          "name": "Wildbrook Crescent",
+          "numbers": "1-57"
+        },
+        {
+          "name": "Wilson Way",
+          "numbers": "1-47"
+        },
+        {
+          "name": "Wimpole Street",
+          "numbers": "2"
+        },
+        {
+          "name": "Yorkshire Street",
+          "numbers": "10-165"
+        },
+        {
+          "name": "Alder Lane",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Alton Street",
+          "numbers": "1-47"
+        },
+        {
+          "name": "Alvingham Avenue",
+          "numbers": "14-46"
+        },
+        {
+          "name": "Argus Street",
+          "numbers": "1-61"
+        },
+        {
+          "name": "Ashton Road",
+          "numbers": "244 - 779"
+        },
+        {
+          "name": "Bellfield Avenue",
+          "numbers": "8-26"
+        },
+        {
+          "name": "Berwyn Close",
+          "numbers": "1-9"
+        },
+        {
+          "name": "Bewley Street",
+          "numbers": "1-3"
+        },
+        {
+          "name": "Birch Avenue",
+          "numbers": "1-75"
+        },
+        {
+          "name": "Blackdown Grove",
+          "numbers": "2-16"
+        },
+        {
+          "name": "Brae Side",
+          "numbers": "2-16"
+        },
+        {
+          "name": "Bredon Way",
+          "numbers": "1-12"
+        },
+        {
+          "name": "Brierley Street",
+          "numbers": "1-44"
+        },
+        {
+          "name": "Burder Street",
+          "numbers": "1-24"
+        },
+        {
+          "name": "Carnarvon Street",
+          "numbers": "1-48"
+        },
+        {
+          "name": "Cattlin Way",
+          "numbers": "1-94"
+        },
+        {
+          "name": "Chapel Road",
+          "numbers": "89-208"
+        },
+        {
+          "name": "Cherwell Close",
+          "numbers": "1-20"
+        },
+        {
+          "name": "Clovelly Avenue",
+          "numbers": "1-26"
+        },
+        {
+          "name": "Copster Avenue",
+          "numbers": "1-17"
+        },
+        {
+          "name": "Copster Hill Road",
+          "numbers": "243-300"
+        },
+        {
+          "name": "Copster Place",
+          "numbers": "1-17"
+        },
+        {
+          "name": "Corona Avenue",
+          "numbers": "1-47"
+        },
+        {
+          "name": "County Street",
+          "numbers": "2-65"
+        },
+        {
+          "name": "Croft Brow",
+          "numbers": "1-23"
+        },
+        {
+          "name": "Crofton Street",
+          "numbers": "1-63"
+        },
+        {
+          "name": "Cummings Street",
+          "numbers": "1-34"
+        },
+        {
+          "name": "Denbigh Street",
+          "numbers": "2-8"
+        },
+        {
+          "name": "Elm Road",
+          "numbers": "1-63"
+        },
+        {
+          "name": "Enfield Avenue",
+          "numbers": "1-32"
+        },
+        {
+          "name": "Ethel Street",
+          "numbers": "1-45"
+        },
+        {
+          "name": "Fairfields",
+          "numbers": "1-21"
+        },
+        {
+          "name": "Fieldsway",
+          "numbers": "1-36"
+        },
+        {
+          "name": "Flint Hill Way",
+          "numbers": "5-15"
+        },
+        {
+          "name": "Forest Street",
+          "numbers": "1-45"
+        },
+        {
+          "name": "Foxfield Drive",
+          "numbers": "1-51"
+        },
+        {
+          "name": "Fox Park Road",
+          "numbers": "1-26"
+        },
+        {
+          "name": "Green Lane",
+          "numbers": "2-168"
+        },
+        {
+          "name": "Hadfield Street",
+          "numbers": "22-120"
+        },
+        {
+          "name": "Halliwell Avenue",
+          "numbers": "1-28"
+        },
+        {
+          "name": "Hathershaw Lane",
+          "numbers": "1-68"
+        },
+        {
+          "name": "Hazel Lane",
+          "numbers": "1-8"
+        },
+        {
+          "name": "Hemlock Avenue",
+          "numbers": "1-24"
+        },
+        {
+          "name": "Heron Street",
+          "numbers": null
+        },
+        {
+          "name": "Hillingdon Close",
+          "numbers": "1-38"
+        },
+        {
+          "name": "Hollins Road",
+          "numbers": "2-826"
+        },
+        {
+          "name": "Holly Lane",
+          "numbers": "1-16"
+        },
+        {
+          "name": "Houghton Avenue",
+          "numbers": "1-8"
+        },
+        {
+          "name": "Howardian Close",
+          "numbers": "1-20"
+        },
+        {
+          "name": "Howgill Crescent",
+          "numbers": "1-58"
+        },
+        {
+          "name": "Iris Street",
+          "numbers": "1-23"
+        },
+        {
+          "name": "Jenny Street",
+          "numbers": "1-54"
+        },
+        {
+          "name": "Knowl Street",
+          "numbers": "1-53"
+        },
+        {
+          "name": "Kent Street",
+          "numbers": "1-9"
+        },
+        {
+          "name": "Leith Place",
+          "numbers": "1-9"
+        },
+        {
+          "name": "Letham Street",
+          "numbers": "6-36"
+        },
+        {
+          "name": "Lilac Lane",
+          "numbers": "1-23"
+        },
+        {
+          "name": "Limeside Road",
+          "numbers": "9-25"
+        },
+        {
+          "name": "Link Lane",
+          "numbers": "1-28"
+        },
+        {
+          "name": "Lyndhurst Road",
+          "numbers": "2-64"
+        },
+        {
+          "name": "Lynmouth Avenue",
+          "numbers": "1-32"
+        },
+        {
+          "name": "Lynton Avenue",
+          "numbers": "1-27"
+        },
+        {
+          "name": "Mallard Close",
+          "numbers": "1-7"
+        },
+        {
+          "name": "Marple Close",
+          "numbers": "1-25 (inc Highgate House)"
+        },
+        {
+          "name": "Meadow Lane",
+          "numbers": "1-35"
+        },
+        {
+          "name": "Middle Gate",
+          "numbers": "5-53"
+        },
+        {
+          "name": "Milford Avenue",
+          "numbers": "1-27"
+        },
+        {
+          "name": "Mill Gate",
+          "numbers": "2-8"
+        },
+        {
+          "name": "Monsall Street",
+          "numbers": "1-7"
+        },
+        {
+          "name": "Montgomery Street",
+          "numbers": "1-100"
+        },
+        {
+          "name": "Moorcroft Street",
+          "numbers": "1-60"
+        },
+        {
+          "name": "Mossgrove Street",
+          "numbers": "1-3"
+        },
+        {
+          "name": "Nadin Street",
+          "numbers": "1-9"
+        },
+        {
+          "name": "North Gate",
+          "numbers": "2-89"
+        },
+        {
+          "name": "Oak Road",
+          "numbers": "1-81"
+        },
+        {
+          "name": "Polden Close",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Poplar Avenue",
+          "numbers": "1-59"
+        },
+        {
+          "name": "Quantock Drive",
+          "numbers": "1-51"
+        },
+        {
+          "name": "Randolph Street",
+          "numbers": "1-32"
+        },
+        {
+          "name": "Repton Avenue",
+          "numbers": "1-118"
+        },
+        {
+          "name": "Rising Lane",
+          "numbers": "1-23"
+        },
+        {
+          "name": "Rising Lane Close",
+          "numbers": "1-12"
+        },
+        {
+          "name": "Roman Road",
+          "numbers": "379-465 (inc School House 1-2 & Cemetery House)"
+        },
+        {
+          "name": "Schofield Street",
+          "numbers": "21-108"
+        },
+        {
+          "name": "Severn Road",
+          "numbers": "1-42"
+        },
+        {
+          "name": "Side Street",
+          "numbers": "13-19"
+        },
+        {
+          "name": "Sidlaw Close",
+          "numbers": "1-54"
+        },
+        {
+          "name": "Somersby Street",
+          "numbers": "1-8"
+        },
+        {
+          "name": "South Way",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Stratford Avenue",
+          "numbers": "1-27"
+        },
+        {
+          "name": "Swallow Street",
+          "numbers": "1-48"
+        },
+        {
+          "name": "The Croft",
+          "numbers": "1-8"
+        },
+        {
+          "name": "The Knowls",
+          "numbers": "1-9"
+        },
+        {
+          "name": "Thornlea Avenue",
+          "numbers": "1-21"
+        },
+        {
+          "name": "Tiber Avenue",
+          "numbers": "2-18"
+        },
+        {
+          "name": "Trough Gate",
+          "numbers": "1-35"
+        },
+        {
+          "name": "Tydden Street",
+          "numbers": "5"
+        },
+        {
+          "name": "Walkers Road",
+          "numbers": "10-64"
+        },
+        {
+          "name": "Watts Street",
+          "numbers": "1-17"
+        },
+        {
+          "name": "Whitebank Road",
+          "numbers": null
+        },
+        {
+          "name": "Wicklow Grove",
+          "numbers": "2-12"
+        },
+        {
+          "name": "Wyndale Road",
+          "numbers": "1-53"
+        },
+        {
+          "name": "Agnes Close",
+          "numbers": "1-16"
+        },
+        {
+          "name": "Albert Street",
+          "numbers": "10-76"
+        },
+        {
+          "name": "Alfred Street",
+          "numbers": "5-105"
+        },
+        {
+          "name": "Alfred Court",
+          "numbers": "1-10"
+        },
+        {
+          "name": "Acorn Close",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Bath Street",
+          "numbers": "1-34"
+        },
+        {
+          "name": "Berkshire Place",
+          "numbers": "1-12"
+        },
+        {
+          "name": "Birchenlea Street",
+          "numbers": "1-37"
+        },
+        {
+          "name": "Bright Street",
+          "numbers": "1"
+        },
+        {
+          "name": "Burnaby Street",
+          "numbers": "1-20"
+        },
+        {
+          "name": "Butler Green",
+          "numbers": "3-15"
+        },
+        {
+          "name": "Block Lane",
+          "numbers": "86"
+        },
+        {
+          "name": "Cambridge Street",
+          "numbers": "15-78"
+        },
+        {
+          "name": "Carlisle Street",
+          "numbers": "118-156"
+        },
+        {
+          "name": "Castleton Street",
+          "numbers": "2-10"
+        },
+        {
+          "name": "Charles Street",
+          "numbers": "5"
+        },
+        {
+          "name": "Chester Street",
+          "numbers": "1-56"
+        },
+        {
+          "name": "Christchurch Court",
+          "numbers": "1-25"
+        },
+        {
+          "name": "Clara Street",
+          "numbers": "3-7"
+        },
+        {
+          "name": "Coalshaw Green Road",
+          "numbers": "1-235"
+        },
+        {
+          "name": "Coppice Street",
+          "numbers": "39-115"
+        },
+        {
+          "name": "Derby Court",
+          "numbers": "1-19"
+        },
+        {
+          "name": "Derby Street",
+          "numbers": "8-71"
+        },
+        {
+          "name": "Devon Street",
+          "numbers": "1-17"
+        },
+        {
+          "name": "Drury Lane",
+          "numbers": "141-152"
+        },
+        {
+          "name": "Dorset Street",
+          "numbers": "6-25"
+        },
+        {
+          "name": "Durham Street",
+          "numbers": "46-64"
+        },
+        {
+          "name": "Edward Mews",
+          "numbers": "1-9"
+        },
+        {
+          "name": "Edward Street",
+          "numbers": "1-51"
+        },
+        {
+          "name": "Elm Way",
+          "numbers": "2-24"
+        },
+        {
+          "name": "Evergreen Close",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Frederick Street",
+          "numbers": "1-107"
+        },
+        {
+          "name": "Granby Street",
+          "numbers": "1-28"
+        },
+        {
+          "name": "Green Vale Close",
+          "numbers": "1-4"
+        },
+        {
+          "name": "Glamorgan Place",
+          "numbers": "1-31"
+        },
+        {
+          "name": "Glebe Street",
+          "numbers": "1-77"
+        },
+        {
+          "name": "Gloucester Street North",
+          "numbers": "21-50"
+        },
+        {
+          "name": "Gloucester Street South",
+          "numbers": "6-17"
+        },
+        {
+          "name": "Granby Street",
+          "numbers": "1-2"
+        },
+        {
+          "name": "Hathersage Street",
+          "numbers": "17-24"
+        },
+        {
+          "name": "Hereford Street",
+          "numbers": "54-69"
+        },
+        {
+          "name": "Henley Street",
+          "numbers": "1-109"
+        },
+        {
+          "name": "Lancaster Street",
+          "numbers": "1"
+        },
+        {
+          "name": "Leslie Avenue",
+          "numbers": "1-58"
+        },
+        {
+          "name": "Lynn Street",
+          "numbers": "15-45"
+        },
+        {
+          "name": "Little Cot Close",
+          "numbers": "1-3"
+        },
+        {
+          "name": "Longford Close",
+          "numbers": "2-10"
+        },
+        {
+          "name": "Malvern Street",
+          "numbers": "1-14"
+        },
+        {
+          "name": "Manchester Road",
+          "numbers": "38-248"
+        },
+        {
+          "name": "Lyndon Croft",
+          "numbers": "1-32"
+        },
+        {
+          "name": "Manchester Street",
+          "numbers": "272-332"
+        },
+        {
+          "name": "Rountree House",
+          "numbers": "1-164"
+        },
+        {
+          "name": "Milne Street",
+          "numbers": "1-21 (Lancashire Court 1-6)"
+        },
+        {
+          "name": "Napier Street East",
+          "numbers": "85-126"
+        },
+        {
+          "name": "Napier Street West",
+          "numbers": "3-92"
+        },
+        {
+          "name": "Nazeby Walk",
+          "numbers": "1-14"
+        },
+        {
+          "name": "Newport Street",
+          "numbers": "1-105"
+        },
+        {
+          "name": "Norfolk Street",
+          "numbers": "1-81"
+        },
+        {
+          "name": "Olivers Court",
+          "numbers": "1-64"
+        },
+        {
+          "name": "Oxford Street",
+          "numbers": "2-56"
+        },
+        {
+          "name": "Pass Street",
+          "numbers": "11"
+        },
+        {
+          "name": "Penn Street",
+          "numbers": "3-42"
+        },
+        {
+          "name": "Porter Street",
+          "numbers": "1-9"
+        },
+        {
+          "name": "Railway Street",
+          "numbers": "13"
+        },
+        {
+          "name": "Raymond Avenue",
+          "numbers": "4-233"
+        },
+        {
+          "name": "Regatta Close",
+          "numbers": "4"
+        },
+        {
+          "name": "Ridings Way",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Rose Street",
+          "numbers": "1-175"
+        },
+        {
+          "name": "Rutland Street",
+          "numbers": "5-57"
+        },
+        {
+          "name": "Saint Johns Street",
+          "numbers": "3-11"
+        },
+        {
+          "name": "Saint Thomas Street North",
+          "numbers": "1-39"
+        },
+        {
+          "name": "Seldon Street",
+          "numbers": "1-24"
+        },
+        {
+          "name": "Spencer Street",
+          "numbers": "3-41"
+        },
+        {
+          "name": "Stafford Street",
+          "numbers": "28-58"
+        },
+        {
+          "name": "Stanley Road",
+          "numbers": "14-182"
+        },
+        {
+          "name": "Suffolk Street",
+          "numbers": "1-80"
+        },
+        {
+          "name": "Suthers Street",
+          "numbers": "24 (Oxford House 1-114)"
+        },
+        {
+          "name": "Tamworth Street",
+          "numbers": "2-80 (Tamworth Court 1-5)"
+        },
+        {
+          "name": "Turf Lane",
+          "numbers": "1-39"
+        },
+        {
+          "name": "Vernet Gardens",
+          "numbers": "2-24"
+        },
+        {
+          "name": "Warwick Street",
+          "numbers": "3-71"
+        },
+        {
+          "name": "Werneth Park Lodge",
+          "numbers": "2-4"
+        },
+        {
+          "name": "Werneth Hall Road",
+          "numbers": "130-148"
+        },
+        {
+          "name": "Windsor Road",
+          "numbers": "28-83"
+        },
+        {
+          "name": "Woodfield Close",
+          "numbers": "1-15"
+        },
+        {
+          "name": "Wye Street",
+          "numbers": "1-16"
+        }
+      ],
+      "postcodes": [],
+      "checkerUrl": "https://map.oldham.gov.uk/map?name=Selective%20Licensing",
+      "boundaryDescription": "Five designated areas, known as Area 1 to Area 5, depicted on the maps in the Notice of Designation. The notice states the designation 'affects specific areas within the following Oldham Council wards: Alexandra, St Mary's, St James, Waterhead, Coldhurst, Werneth, Chadderton South, Hollinwood and Medlock Vale'. Only parts of those wards are designated, not the whole ward.",
+      "evidence": "Street list transcribed from the five 'Area 1' to 'Area 5' documents published by the council at oldham.gov.uk/downloads/download/2066/street_list_of_affected_areas_guidance, which are Word documents laid out as a three-column table. Each was extracted twice (document-order paragraph walk and an explicit table/row/cell walk) and the two modes produced identical output for all five areas, so no column misalignment is present. House-number ranges are reproduced verbatim, including bracketed named blocks such as 'Milne Street 1-21 (Lancashire Court 1-6)'. The council labels this list 'for guidance purposes only. It is not a final list, which means that your street, although not appearing on the list may still be included', so absence from the list is not proof a property is outside the designation; the council's own map checker at map.oldham.gov.uk should be treated as authoritative for a specific address. Note one street is printed in the source as 'Tunstall Rad' and has been transcribed verbatim rather than corrected. No postcode list is published."
+    }
+  ]
+}

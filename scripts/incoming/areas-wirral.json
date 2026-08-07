@@ -28,11 +28,11 @@
         },
         {
           "name": "Boundary Road",
-          "numbers": "42-76 EVENS SEXTONS"
+          "numbers": "42-76 EVENS"
         },
         {
           "name": "Boundary Road",
-          "numbers": "COTTAGE"
+          "numbers": "SEXTONS COTTAGE"
         },
         {
           "name": "Challis Street",
@@ -216,15 +216,15 @@
         },
         {
           "name": "Bentinck Street",
-          "numbers": "2-134 EVENS 15-19 MCGILL"
+          "numbers": "2-134 EVENS"
         },
         {
           "name": "Cathcart Street",
-          "numbers": "ODDS COURT 14-18 MCGILL"
+          "numbers": "15-19 MCGILL ODDS COURT"
         },
         {
           "name": "Cathcart Street",
-          "numbers": "EVENS COURT"
+          "numbers": "14-18 MCGILL EVENS COURT"
         },
         {
           "name": "Claughton Road",
@@ -252,23 +252,23 @@
         },
         {
           "name": "Conway Street",
-          "numbers": "183-199 ODDS 1-45 CONWAY"
+          "numbers": "183-199 ODDS"
         },
         {
           "name": "Conway Street",
-          "numbers": "POINT ALL"
+          "numbers": "1-45 CONWAY POINT ALL"
         },
         {
           "name": "Conway Street",
-          "numbers": "260-300 EVENS 1-11 MCGILL"
+          "numbers": "260-300 EVENS"
         },
         {
           "name": "Conway Street",
-          "numbers": "ODDS COURT 2-12 MCGILL"
+          "numbers": "1-11 MCGILL ODDS COURT"
         },
         {
           "name": "Conway Street",
-          "numbers": "EVENS COURT"
+          "numbers": "2-12 MCGILL EVENS COURT"
         },
         {
           "name": "Cole Street",
@@ -348,15 +348,15 @@
         },
         {
           "name": "Park Close",
-          "numbers": null
+          "numbers": "2-14 EVENS (COMMENCED 1ST JULY 2024)"
         },
         {
           "name": "Paterson Street",
-          "numbers": null
+          "numbers": "1-157 ODDS (COMMENCED 1ST JULY 2024)"
         },
         {
           "name": "Paterson Street",
-          "numbers": null
+          "numbers": "2-150 EVENS (COMMENCED 1ST JULY 2024)"
         },
         {
           "name": "Brook Close",
@@ -420,11 +420,11 @@
         },
         {
           "name": "Manor Road",
-          "numbers": "151-161A ODDS 1-12 MANOR"
+          "numbers": "151-161A ODDS"
         },
         {
           "name": "Manor Road",
-          "numbers": "MANSIONS ALL"
+          "numbers": "1-12 MANOR MANSIONS ALL"
         },
         {
           "name": "Manor Road",
@@ -456,11 +456,11 @@
         },
         {
           "name": "Penkett Road",
-          "numbers": "8 EVENS 7 (APARTMENTS 1-"
+          "numbers": "8 EVENS"
         },
         {
           "name": "Pooley Close",
-          "numbers": "9) ALL"
+          "numbers": "7 (APARTMENTS 1- 9) ALL"
         },
         {
           "name": "Seabank Road",
@@ -707,10 +707,6 @@
           "numbers": "1-15 ODDS"
         },
         {
-          "name": "Vivian Avenue",
-          "numbers": "2-8 EVENS"
-        },
-        {
           "name": "Wheatland Lane",
           "numbers": "55-81 ODDS"
         },
@@ -742,11 +738,15 @@
         "CH41 4AG",
         "CH41 4AH",
         "CH41 4AQ",
+        "CH41 4BB",
         "CH41 4BD",
         "CH41 4BG",
         "CH41 4BH",
+        "CH41 4BJ",
         "CH41 4BL",
+        "CH41 4BQ",
         "CH41 4BR",
+        "CH41 4BS",
         "CH41 4BW",
         "CH41 4BZ",
         "CH41 4DD",
@@ -884,7 +884,7 @@
       ],
       "checkerUrl": null,
       "boundaryDescription": "Four Lower Super Output Areas: Bidston & St James West (LSOA E01007123 / Wirral 011D), Birkenhead West (LSOA E01007127 / Wirral 016B), Egremont North (LSOA E01007218 / Wirral 002A) and Seacombe St Paul's (LSOA E01007273 / Wirral 008B). Scheme 4a additionally covers all properties in Paterson Street and the even numbers of Park Close, both in Birkenhead, from 1 July 2024. The council states that any private rented property located within the LSOA boundary at the time of designation or over the lifetime of the scheme is liable for a licence, so the address list is guidance rather than an exhaustive definition.",
-      "evidence": "Street and house-number ranges transcribed from the council's published PDF 'Appendix 2 Maps and Address List of Selective Licensing Areas Schemes 4 and 4a 2024 to 2029', linked from the council's selective licensing page. The address tables were extracted twice (pdfplumber ruled-cell mode and text-flow mode) and the street-to-number pairing was identical in both; a third extraction (pdftotext -layout) drifted on wrapped cells and was discarded. Dates confirmed against the council's own 'Appendix 2 Selective Licensing Area Definitions'. Four LSOAs, 179 address-range rows across 101 distinct streets."
+      "evidence": "Street names and house-number ranges transcribed from the council's published PDF 'Appendix 2 Maps and Address List of Selective Licensing Areas Schemes 4 and 4a 2024 to 2029', linked from the council's selective licensing page. The address tables were extracted three ways (pdftotext -layout, pdfplumber text-flow, and a coordinate extraction keyed to the table's own ruled column and row lines); -layout drifted on wrapped cells and was discarded, and the final figures come from the ruled-line extraction, which reproduces multi-line cells such as 'SEXTONS COTTAGE, BOUNDARY ROAD' and 'PATERSON STREET (COMMENCED 1ST JULY 2024)' intact. Dates confirmed against the council's own 'Appendix 2 Selective Licensing Area Definitions'. Four LSOAs, 178 address-range rows across 101 distinct streets."
     },
     {
       "match": {
@@ -1080,7 +1080,7 @@
         },
         {
           "name": "The Woodlands",
-          "numbers": "1-87 INCLUDES 1-16 12 MITCHELL COURT"
+          "numbers": "1-87 INCLUDES 1-16 GRANGEWOOD COURT, 1-20 FEARNLEY HALL, 1- 12 MITCHELL COURT"
         },
         {
           "name": "Vincent Street",
@@ -1316,7 +1316,7 @@
         },
         {
           "name": "Whetstone Lane",
-          "numbers": "70-162 EVENS ONLY, INCLUDES COURT, 1-9 WELLINGTON HOUSE"
+          "numbers": "70-162 EVENS ONLY, INCLUDES 1-12 WHETSTONE COURT, 1-9 WELLINGTON HOUSE"
         },
         {
           "name": "Willmer Road",
@@ -1328,11 +1328,11 @@
         },
         {
           "name": "Argyle Street",
-          "numbers": "19-97 ODDS ONLY. INCLUDES"
+          "numbers": "19-97 ODDS ONLY. INCLUDES FLATS 1-10 AT 43A, OLD POST OFFICE HOTEL"
         },
         {
           "name": "Argyle Street",
-          "numbers": "28-112B EVENS ONLY. INCLUDES"
+          "numbers": "28-112B EVENS ONLY. INCLUDES 1-12 ARGYLE HOUSE"
         },
         {
           "name": "Castle Street",
@@ -1348,7 +1348,7 @@
         },
         {
           "name": "Church Street",
-          "numbers": "38-131 INCLUDES 1-131 PRIORY"
+          "numbers": "38-131 INCLUDES 1-131 PRIORY WHARF"
         },
         {
           "name": "Cross Street",
@@ -1360,15 +1360,7 @@
         },
         {
           "name": "Douglas Street",
-          "numbers": "1-15 INCLUDES 1A-3C AT 1"
-        },
-        {
-          "name": "Douglas Street",
-          "numbers": null
-        },
-        {
-          "name": "Douglas Street",
-          "numbers": "15"
+          "numbers": "1-15 INCLUDES 1A-3C AT 1 DOUGLAS STREET, 1-4 AT 15 DOUGLAS STREET"
         },
         {
           "name": "Duncan Street",
@@ -1436,7 +1428,7 @@
         },
         {
           "name": "Clifton Road",
-          "numbers": "1A-53 ODDS ONLY, INCLUDES VENTURE COURT"
+          "numbers": "1A-53 ODDS ONLY, INCLUDES 1-8 CLIFTON COURT, 1-16 VENTURE COURT"
         },
         {
           "name": "Fairview",
@@ -1580,7 +1572,7 @@
         },
         {
           "name": "Churchmeadow Close",
-          "numbers": "2-11 CLOSE"
+          "numbers": "2-11"
         },
         {
           "name": "Clarendon Road",
@@ -1612,7 +1604,7 @@
         },
         {
           "name": "Liscard Road",
-          "numbers": "62A-107 INCLUDES 1-10 ROKLIS"
+          "numbers": "62A-107 INCLUDES 1-10 ROKLIS BUILDING"
         },
         {
           "name": "Liscard Road",
@@ -1782,9 +1774,6 @@
         "CH41 6SA",
         "CH41 9AA",
         "CH41 9AB",
-        "CH41 9AD",
-        "CH41 9AE",
-        "CH41 9AF",
         "CH41 9AG",
         "CH41 9AN",
         "CH41 9AP",
@@ -1926,7 +1915,7 @@
       ],
       "checkerUrl": null,
       "boundaryDescription": "Six Lower Super Output Areas, being parts of Birkenhead and Wallasey: Area 1 Birkenhead Central (LSOA E01007128), Area 2 Lower Tranmere (LSOA E01007293), Area 3 Tranmere North (LSOA E01007130), Area 4 Hamilton Square B (LSOA E01034839), Area 5 Tranmere Lairds (LSOA E01007291), Area 6 Egremont South (LSOA E01007275). The notice states the designation 'shall have effect to any property situated, at any time during the designation, within the Lower Super Output Areas listed below', so the street list is indicative of each LSOA rather than a closed list.",
-      "evidence": "Street names transcribed from the statutory public notice published on the council's website (dated 24 June 2025, signed Jill Travers, Director of Law & Governance), which lists the streets in each of the six areas. House-number ranges and postcodes were transcribed from the council's address-list PDF for the same scheme, published as 'Appendix 1.2 Maps and address lists' to the Economy, Regeneration and Housing Committee decision of 17 June 2025 and re-published at wirral.gov.uk/files/sl-2025-2030-address-and-map.pdf. The two independent official sources were compared street by street and agree exactly across all six areas. Note the wirral.gov.uk copy of the PDF contains no extractable text (glyphs are drawn as vector outlines), so the identical committee-published copy supplied the number ranges."
+      "evidence": "Street names transcribed from the statutory public notice published on the council's website (dated 24 June 2025, signed Jill Travers, Director of Law and Governance), which lists the streets in each of the six areas. House-number ranges and postcodes were transcribed from the council's address-list PDF for the same scheme, published as 'Appendix 1.2 Maps and address lists' to the Economy, Regeneration and Housing Committee decision of 17 June 2025 and re-published at wirral.gov.uk/files/sl-2025-2030-address-and-map.pdf. The two independent official sources were compared and the street sets are identical across all six areas. The wirral.gov.uk copy of the PDF carries no extractable text (its glyphs are drawn as vector outlines), so the identical committee-published copy supplied the number ranges. The PDF abbreviates one street as 'PEARSON RD'; the public notice spelling 'Pearson Road' is used here."
     },
     {
       "match": {
