@@ -197,11 +197,18 @@ const both = sArr.find(
   // (Welsh reports quoting £40,000 and a 24-month RRO). Asserting penaltiesFor
   // alone let that exact regression pass: hardcoding penaltiesFor("england") in
   // determine still printed ALL CHECKS PASSED.
-  if (eng) {
-    check("determine() wires England penalties", run(eng.gss, 3, 3).penaltySummary.civilPenaltyLabel, engP.civilPenaltyLabel);
+  // Any council of that nation will do: penaltySummary depends on nation alone,
+  // not on a live scheme. Gating these on the additional-scheme fixtures meant
+  // the Wales wiring check would vanish with a WARN when Cardiff's designation
+  // lapses in 2028, which is the same mistake this block was un-gated to avoid.
+  const anyOf = (nation) => cArr.find((c) => c.nation === nation);
+  const engC = anyOf("england");
+  const walC = anyOf("wales");
+  if (engC) {
+    check("determine() wires England penalties", run(engC.gss, 3, 3).penaltySummary.civilPenaltyLabel, engP.civilPenaltyLabel);
   }
-  if (wal) {
-    const wired = run(wal.gss, 3, 3).penaltySummary;
+  if (walC) {
+    const wired = run(walC.gss, 3, 3).penaltySummary;
     check("determine() wires Wales penalties", wired.civilPenaltyLabel, walP.civilPenaltyLabel);
     check("determine() wires Wales RRO", String(wired.rroMonths), String(walP.rroMonths));
   }
@@ -281,6 +288,11 @@ if (wal) {
   // Counted separately: the ward loop is what makes `likely-required` reachable
   // at all, and without it the sweep is blind to the 38 double-licensing cases.
   let wardPairs = 0;
+  // The one that actually matters. Counting loop ITERATIONS does not detect the
+  // failure it is meant to catch: break ward matching and wardPairs stays at
+  // 1,614 while every verdict silently degrades to check-boundary, which is
+  // precisely the state in which the double-licensing rule tests nothing.
+  let likelyRequiredSeen = 0;
 
   for (const rec of sArr) {
     const council = byGss.get(rec.gss);
@@ -293,7 +305,9 @@ if (wal) {
       null,
       ...new Set(
         (rec.schemes || [])
-          .filter((s) => s.status === "active" || s.status === "upcoming")
+          // Same lapsed filter determine() applies, so wards from designations
+          // it has already dropped do not count toward the coverage floor.
+          .filter((s) => (s.status === "active" || s.status === "upcoming") && notLapsed(s))
           .flatMap((s) => s.wards || []),
       ),
     ];
@@ -304,6 +318,7 @@ if (wal) {
       if (!d) continue;
       swept++;
       if (ward) wardPairs++;
+      if ([...d.selective, ...d.additional].some((a) => a.verdict === "likely-required")) likelyRequiredSeen++;
       const isMandatory = occ >= 5 && hh >= 2;
       const isSmall = !isMandatory && occ >= 3 && hh >= 2;
       const mandatorySupersedes = isMandatory && council.nation === "england";
@@ -399,10 +414,20 @@ if (wal) {
   // removing the only coverage that makes `likely-required` reachable, which is
   // the coverage the 38 double-licensing cases showed up in.
   const MIN_WARD_PAIRS = 1000;
-  console.log(`  swept ${swept} council/occupancy pairs, ${wardPairs} of them ward-specific`);
-  if (wardPairs < MIN_WARD_PAIRS) {
+  console.log(
+    `  swept ${swept} council/occupancy pairs, ${wardPairs} ward-specific, ${likelyRequiredSeen} yielding a likely-required verdict`,
+  );
+  if (likelyRequiredSeen === 0) {
+    // HARD. Thousands of ward-specific sweeps across councils that publish ward
+    // lists, and not one ward matched, means ward matching itself is broken.
+    // That is a product fault, not dataset drift.
     failures++;
-    console.log(`  FAIL  only ${wardPairs} ward-specific pairs swept, expected at least ${MIN_WARD_PAIRS}: without wards, likely-required is unreachable and the double-licensing rule is untested`);
+    console.log("  FAIL  no likely-required verdict anywhere: ward matching is not working, so the double-licensing rule is untested");
+  } else if (wardPairs < MIN_WARD_PAIRS) {
+    // Soft. Ward counts are concentrated (nine councils hold 624 of them), so a
+    // legitimate data refresh could drop below this, and blocking every deploy
+    // including hotfixes over dataset shape is the policy this file rejects.
+    warn(`only ${wardPairs} ward-specific pairs swept, expected at least ${MIN_WARD_PAIRS}: ward coverage has shrunk`);
   }
   if (swept < CATASTROPHIC) {
     failures++;
