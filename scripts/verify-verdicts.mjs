@@ -157,9 +157,9 @@ const both = sArr.find(
 // way; the bug only shows on a council whose additional designation is
 // street/area-level, where the verdict is "check-boundary".
 {
-  // The council must have NO definite additional verdict, otherwise standing
-  // selective down is correct and the check passes without testing anything.
-  // Bristol and Westminster both pair a hedged scheme with a definite one.
+  // Named fixtures below are illustrative. The real guard is the sweep, which
+  // asserts the rule over every council and cannot be silently disarmed by a
+  // scheme's start date arriving or a designation being re-typed.
   const hedged = sArr.find((r) => {
     if (!liveAdditional(r) || !liveSelective(r)) return false;
     if ((byGss.get(r.gss) || {}).nation !== "england") return false;
@@ -168,34 +168,82 @@ const both = sArr.find(
     const definite = d.additional.some((a) => a.verdict === "required" || a.verdict === "likely-required");
     return !definite && d.additional.some((a) => a.verdict === "check-boundary");
   });
-  console.log(`\nHedged additional verdict (${hedged ? hedged.council : "none in data"}):`);
-  if (!hedged) {
-    console.log("  SKIP  no council currently returns a check-boundary additional verdict");
-  } else {
+  console.log(`\nHedged additional verdict (${hedged ? hedged.council : "none in data today"}):`);
+  if (hedged) {
     const d = run(hedged.gss, 3, 3);
     const selDowngraded = d.selective.some((a) => a.verdict === "not-applicable");
     check("check-boundary additional does NOT stand selective down", String(selDowngraded), "false");
+  } else {
+    console.log("  none today; the sweep below covers this rule regardless");
   }
 }
 
-// An UPCOMING additional designation must not void a selective scheme that is
-// enforceable today.
+/**
+ * Dataset-wide invariant sweep.
+ *
+ * Single fixtures kept going vacuous: one picked a council that also had a
+ * definite scheme, another depended on a designation that commences on a known
+ * date, and a third asserted a negative that an empty array satisfied. These
+ * run the rule against every council at three occupancies, so a fixture cannot
+ * quietly stop qualifying, and they name the council when they fail.
+ */
 {
-  const upcoming = sArr.find((r) => {
-    if (!liveSelective(r)) return false;
-    if ((byGss.get(r.gss) || {}).nation !== "england") return false;
-    const d = run(r.gss, 3, 3);
-    if (!d) return false;
-    const definite = d.additional.some((a) => a.verdict === "required" || a.verdict === "likely-required");
-    return !definite && d.additional.some((a) => a.verdict === "upcoming");
-  });
-  console.log(`\nUpcoming additional designation (${upcoming ? upcoming.council : "none in data"}):`);
-  if (!upcoming) {
-    console.log("  SKIP  no council currently pairs an upcoming additional scheme with a live selective one");
-  } else {
-    const d = run(upcoming.gss, 3, 3);
-    const selDowngraded = d.selective.some((a) => a.verdict === "not-applicable");
-    check("upcoming additional does NOT stand selective down", String(selDowngraded), "false");
+  console.log("\nInvariant sweep (all councils x 1/1, 3/3, 5/3):");
+  const combos = [
+    [1, 1],
+    [3, 3],
+    [5, 3],
+  ];
+  const breaches = { selective: [], additional: [], risk: [] };
+  let downgradesSeen = { selective: 0, additional: 0 };
+
+  for (const rec of sArr) {
+    const council = byGss.get(rec.gss);
+    if (!council) continue;
+    for (const [occ, hh] of combos) {
+      const d = run(rec.gss, occ, hh);
+      if (!d) continue;
+      const isMandatory = occ >= 5 && hh >= 2;
+      const isSmall = !isMandatory && occ >= 3 && hh >= 2;
+      const mandatorySupersedes = isMandatory && council.nation === "england";
+      const definiteAdditional = d.additional.some((a) => a.verdict === "required" || a.verdict === "likely-required");
+
+      for (const a of d.selective) {
+        if (a.verdict !== "not-applicable") continue;
+        downgradesSeen.selective++;
+        // Only two lawful reasons to void a selective scheme.
+        const lawful = mandatorySupersedes || (isSmall && definiteAdditional);
+        if (!lawful) breaches.selective.push(`${council.name} @ ${occ}/${hh}`);
+      }
+      for (const a of d.additional) {
+        if (a.verdict !== "not-applicable") continue;
+        downgradesSeen.additional++;
+        // Additional licensing is only out of scope for a let that is not a
+        // small HMO, and never for the Welsh mandatory-occupancy case where the
+        // storey test decides.
+        const lawful = !isSmall && (mandatorySupersedes || !isMandatory);
+        if (!lawful) breaches.additional.push(`${council.name} @ ${occ}/${hh}`);
+      }
+      // A property that needs, or may need, a mandatory licence must never be
+      // reported as carrying no licence risk.
+      if ((d.mandatoryHmo.required || d.mandatoryHmo.conditional) && !d.hasAnyLicenceRisk) {
+        breaches.risk.push(`${council.name} @ ${occ}/${hh}`);
+      }
+    }
+  }
+
+  console.log(`  observed ${downgradesSeen.selective} selective and ${downgradesSeen.additional} additional stand-downs`);
+  if (downgradesSeen.selective === 0 || downgradesSeen.additional === 0) {
+    failures++;
+    console.log("  FAIL  no stand-downs observed at all, so the rules below assert nothing");
+  }
+  for (const [name, list] of Object.entries(breaches)) {
+    if (list.length === 0) {
+      console.log(`  PASS  no unlawful ${name} outcome across ${sArr.length} councils`);
+    } else {
+      failures++;
+      console.log(`  FAIL  ${list.length} unlawful ${name} outcome(s): ${list.slice(0, 5).join(", ")}${list.length > 5 ? " ..." : ""}`);
+    }
   }
 }
 
