@@ -68,11 +68,16 @@ function mandatoryPanel(nation: string, councilName: string): { heading: string;
 function penaltyBullets(nation: string): string[] {
   switch (nation) {
     case "wales":
+      // NOT £30,000. That was England's own pre-May-2026 figure and never a
+      // Welsh one; the Housing (Wales) Act 2014 regime is fixed penalty notices
+      // of £150-£250 plus an unlimited fine on conviction. Section 21 was also
+      // abolished in Wales by the Renting Homes (Wales) Act 2016, so citing it
+      // here described a notice that no longer exists.
       return [
-        "Civil penalty of up to £30,000 per offence.",
+        "Fixed penalty notice of £150-£250 per offence from Rent Smart Wales.",
+        "Unlimited fine on conviction in the magistrates' court.",
         "Rent Repayment Order of up to 12 months' rent, claimable by the tenant. The 24-month uplift applies in England only.",
-        "Unlimited fine on criminal prosecution.",
-        "Renting out an unregistered or unlicensed property can also block a section 21 notice under Rent Smart Wales.",
+        "A rent stopping order can be made, and you cannot serve a valid possession notice while unregistered or unlicensed.",
       ];
     case "scotland":
       return [
@@ -104,6 +109,11 @@ function penaltyBullets(nation: string): string[] {
  */
 function penaltyRule(nation: string): string {
   switch (nation) {
+    case "wales":
+      // This had no Wales case at all, so all 22 Welsh council pages published
+      // England's £40,000 / 24-month / banning-order text as visible FAQ copy
+      // AND as FAQPage JSON-LD, contradicting the bullets directly above it.
+      return "Letting an unregistered or unlicensed property in Wales can lead to a fixed penalty notice of £150-£250, an unlimited fine on conviction, a Rent Repayment Order of up to 12 months' rent, and a rent stopping order. You also cannot serve a valid possession notice while unregistered or unlicensed.";
     case "scotland":
       return "Letting an unregistered property, or operating an unlicensed HMO, can lead to a fine of up to £50,000, and the council can refuse or revoke registration.";
     case "northern-ireland":

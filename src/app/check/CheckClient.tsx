@@ -334,8 +334,14 @@ export default function CheckClient({
             <div className="mt-4 rounded-lg border border-warning/50 bg-warning/10 p-4">
               <p className="text-sm font-semibold text-amber-200">⚠️ Your ward is inside an active licensing scheme</p>
               <p className="mt-1 text-sm text-navy-200">
-                That means a rental at this postcode very likely needs a licence. Operating without one risks a penalty
-                of up to £40,000. Confirm your property&apos;s exact position below before you let, rent or buy.
+                That means a rental at this postcode very likely needs a licence. Operating without one risks{" "}
+                {/* This banner renders above the nation gate and hotMatch includes
+                    Wales, so a Cathays postcode read "up to £40,000" directly
+                    above the Welsh stakes box saying £150-£250. */}
+                {result.nation === "wales"
+                  ? "a fixed penalty and an unlimited fine on conviction"
+                  : "a penalty of up to £40,000"}
+                . Confirm your property&apos;s exact position below before you let, rent or buy.
               </p>
             </div>
           )}

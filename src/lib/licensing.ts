@@ -745,14 +745,7 @@ export interface Determination {
   selective: SchemeAssessment[];
   additional: SchemeAssessment[];
   hasAnyLicenceRisk: boolean;
-  penaltySummary: {
-    civilPenaltyMax: number;
-    /** Rendered figure. Wales has no civil penalty regime of England's kind, so
-     *  the number alone cannot carry the answer. */
-    civilPenaltyLabel: string;
-    rroMonths: number;
-    criminalFine: string;
-  };
+  penaltySummary: PenaltySummary;
 }
 
 export interface PropertyAnswers {
@@ -1270,49 +1263,95 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
   };
 }
 
-/**
- * Penalties by nation, taken from national-rules.json rather than hardcoded.
- *
- * These were fixed at England's numbers for every nation, so the PAID Welsh
- * report and its email quoted a £40,000 civil penalty and a 24-month rent
- * repayment order. Wales has neither: the Housing (Wales) Act 2014 regime is
- * fixed penalty notices of £150-£250 plus an unlimited fine on conviction, and
- * the 24-month RRO uplift is expressly England-only. The free check on the same
- * site was already showing a different figure again, so a Welsh landlord could
- * see three numbers for one question.
- */
-export function penaltiesFor(nation: Council["nation"]): {
+export interface PenaltySummary {
+  /** Kept for reports sold before nation-aware penalties existed, whose stored
+   *  JSON has no label. 0 where the nation has no civil penalty of this kind. */
   civilPenaltyMax: number;
+  /** The figure to render. A number alone cannot carry Wales, whose regime is a
+   *  fixed penalty range rather than a maximum. */
   civilPenaltyLabel: string;
   rroMonths: number;
   criminalFine: string;
-} {
-  if (nation === "england") {
-    return {
-      civilPenaltyMax: 40000,
-      civilPenaltyLabel: "£40,000",
-      rroMonths: 24,
-      criminalFine: "unlimited",
-    };
+  /** One sentence on the non-financial consequences, which also differ. */
+  otherConsequences: string;
+}
+
+/**
+ * Penalties by nation, READ FROM national-rules.json rather than hardcoded.
+ *
+ * These were fixed at England's numbers for every nation, so the paid Welsh
+ * report, its email, all 22 Welsh council pages and the free check quoted a
+ * £40,000 civil penalty and a 24-month rent repayment order. Wales has neither:
+ * the Housing (Wales) Act 2014 regime is fixed penalty notices of £150-£250
+ * plus an unlimited fine on conviction, and national-rules records the 24-month
+ * RRO uplift as expressly England-only. Two other places showed £30,000, which
+ * is England's own pre-May-2026 figure and never a Welsh one, so a Welsh
+ * landlord could see three different answers to one question on one site.
+ *
+ * Everything now derives from the JSON, so correcting the research corrects the
+ * whole site rather than one of the six places the number appeared.
+ */
+type PenaltyBlock = {
+  civilPenaltyMax?: number;
+  unlicensedCriminalFine?: string;
+  criminalFine?: string;
+  fixedPenaltyGBP?: number | number[];
+  courtFineMaxGBP?: number;
+  penaltyMax?: number;
+  rro?: { maxMonthsRent?: number };
+  banningOrders?: string;
+  possessionRestriction?: string;
+  rentStoppingOrders?: boolean;
+};
+// England and Wales put penalties at the top level; NI nests them under
+// `registration` and Scotland records a flat `penaltyMax` there instead. Reading
+// only the top level returned "varies" for both, which is not what the research
+// says.
+type NationRules = {
+  penalties?: PenaltyBlock;
+  registration?: PenaltyBlock & { penalties?: PenaltyBlock };
+};
+
+const NATION_KEY: Record<Council["nation"], string> = {
+  england: "england",
+  wales: "wales",
+  scotland: "scotland",
+  "northern-ireland": "ni",
+};
+
+const gbp = (n: number) => `£${n.toLocaleString("en-GB")}`;
+
+export function penaltiesFor(nation: Council["nation"]): PenaltySummary {
+  const rules = (NATIONAL_RULES[NATION_KEY[nation]] ?? {}) as NationRules;
+  const p: PenaltyBlock = { ...(rules.registration ?? {}), ...(rules.registration?.penalties ?? {}), ...(rules.penalties ?? {}) };
+  const criminalFine =
+    p.unlicensedCriminalFine ?? p.criminalFine ?? (typeof p.courtFineMaxGBP === "number" ? `up to ${gbp(p.courtFineMaxGBP)}` : "unlimited");
+  const rroMonths = p.rro?.maxMonthsRent ?? 0;
+
+  let civilPenaltyMax = 0;
+  let civilPenaltyLabel = "varies";
+  if (typeof p.civilPenaltyMax === "number") {
+    civilPenaltyMax = p.civilPenaltyMax;
+    civilPenaltyLabel = gbp(p.civilPenaltyMax);
+  } else if (Array.isArray(p.fixedPenaltyGBP)) {
+    civilPenaltyLabel = `${gbp(p.fixedPenaltyGBP[0])}-${gbp(p.fixedPenaltyGBP[1])}`;
+  } else if (typeof p.fixedPenaltyGBP === "number") {
+    civilPenaltyLabel = gbp(p.fixedPenaltyGBP);
+  } else if (typeof p.penaltyMax === "number") {
+    // Scotland records a single maximum for registration and HMO offences.
+    civilPenaltyMax = p.penaltyMax;
+    civilPenaltyLabel = gbp(p.penaltyMax);
   }
-  if (nation === "wales") {
-    return {
-      // Wales has no civil penalty of this kind. Zero is the honest value and
-      // the label is what gets rendered.
-      civilPenaltyMax: 0,
-      civilPenaltyLabel: "£150-£250",
-      rroMonths: 12,
-      criminalFine: "unlimited",
-    };
-  }
-  // Scotland and NI never reach the paid report (checkout is England and Wales
-  // only), but the free check and council pages read this too.
-  return {
-    civilPenaltyMax: 0,
-    civilPenaltyLabel: nation === "northern-ireland" ? "£500 fixed penalty" : "varies",
-    rroMonths: 0,
-    criminalFine: nation === "northern-ireland" ? "up to £2,500" : "unlimited",
-  };
+
+  const consequences: string[] = [];
+  if (p.banningOrders) consequences.push("a banning order");
+  if (p.rentStoppingOrders) consequences.push("a rent stopping order");
+  if (p.possessionRestriction) consequences.push("being unable to serve a valid possession notice");
+  const otherConsequences = consequences.length
+    ? `Operating without a required licence also risks ${consequences.join(", ")}. Being unlicensed does not remove your repairing and safety obligations.`
+    : "Being unlicensed does not remove your repairing and safety obligations.";
+
+  return { civilPenaltyMax, civilPenaltyLabel, rroMonths, criminalFine, otherConsequences };
 }
 
 /** Today, as YYYY-MM-DD, so scheme dates compare as plain strings. */

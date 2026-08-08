@@ -270,7 +270,13 @@ const both = sArr.find(
       // already not-applicable proves stand-downs are lawful but never that a
       // required one happened, so deleting the whole stand-down branch passed
       // the sweep clean.
-      const shouldStandDown = mandatorySupersedes || (isSmall && definiteAdditional);
+      // `isHmo`, not `isSmall`. The engine gates additionalCovers on "is an HMO
+      // at all" so that the Wales 5+/2+ band is covered; leaving this at isSmall
+      // meant that adding a live selective scheme to any Welsh council with an
+      // additional one would report "stood down without cause" and, since this
+      // is the prebuild script, block every deploy of the site.
+      const isHmo = isSmall || isMandatory;
+      const shouldStandDown = mandatorySupersedes || (isHmo && definiteAdditional);
       for (const a of d.selective) {
         if (a.verdict === "not-in-area") continue; // geography, exempt either way
         const stoodDown = a.verdict === "not-applicable";

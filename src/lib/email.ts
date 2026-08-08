@@ -52,6 +52,14 @@ export async function sendLicenceReportEmail(
     verdictLines.push("No licence requirement identified on the details provided");
   }
 
+  // Nation-aware, because this hardcoded England's £40,000 and 24 months and was
+  // sent to Welsh buyers alongside a report that (now) says £150-£250 and 12.
+  const pen = d.penaltySummary;
+  const penaltyPhrase =
+    d.council.nation === "wales"
+      ? `fixed penalties of ${pen.civilPenaltyLabel ?? "£150-£250"}, an unlimited fine on conviction and rent repayment orders up to ${pen.rroMonths || 12} months' rent`
+      : `civil penalties up to ${pen.civilPenaltyLabel ?? "£40,000"} and rent repayment orders up to ${pen.rroMonths || 24} months' rent`;
+
   const html = `
   <div style="font-family:Arial,Helvetica,sans-serif;max-width:600px;margin:0 auto;color:#1e293b">
     <div style="background:#0f172a;padding:24px;border-radius:8px 8px 0 0">
@@ -64,7 +72,7 @@ export async function sendLicenceReportEmail(
       <div style="background:#f1f5f9;border-radius:8px;padding:16px;margin:16px 0">
         ${verdictLines.map((v) => `<p style="margin:4px 0;font-weight:600">${escapeHtml(v)}</p>`).join("")}
       </div>
-      <p style="font-size:14px;color:#475569">Your full report includes the scheme details, dates, fees, penalty exposure (civil penalties up to £40,000 and rent repayment orders up to 24 months' rent), and a step-by-step action plan.</p>
+      <p style="font-size:14px;color:#475569">Your full report includes the scheme details, dates, fees, penalty exposure (${penaltyPhrase}), and a step-by-step action plan.</p>
       <p style="text-align:center;margin:24px 0">
         <a href="${url}" style="background:#2563eb;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:15px">View your full report</a>
       </p>

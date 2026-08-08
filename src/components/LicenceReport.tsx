@@ -149,7 +149,14 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
         <h2 className="text-lg font-bold text-navy-100">What&apos;s at stake if you don&apos;t comply</h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           <div className="rounded-lg bg-navy-900/60 p-4 text-center">
-            <div className="text-2xl font-bold text-danger">{d.penaltySummary.civilPenaltyLabel}</div>
+            {/* Reports are snapshotted into Supabase at purchase and /r/[token]
+                re-renders that stored JSON, so every report sold before
+                nation-aware penalties existed has no label. Falling back to the
+                stored number keeps those reports rendering a figure instead of
+                a blank. */}
+            <div className="text-2xl font-bold text-danger">
+              {d.penaltySummary.civilPenaltyLabel ?? `£${(d.penaltySummary.civilPenaltyMax ?? 0).toLocaleString("en-GB")}`}
+            </div>
             <div className="mt-1 text-xs text-navy-400">
               {d.council.nation === "wales"
                 ? "Fixed penalty notice per offence"
@@ -161,14 +168,13 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
             <div className="mt-1 text-xs text-navy-400">Rent Repayment Order the tenant can claim</div>
           </div>
           <div className="rounded-lg bg-navy-900/60 p-4 text-center">
-            <div className="text-2xl font-bold text-danger capitalize">{d.penaltySummary.criminalFine}</div>
+            <div className="text-2xl font-bold text-danger capitalize">{d.penaltySummary.criminalFine ?? "Unlimited"}</div>
             <div className="mt-1 text-xs text-navy-400">Fine on criminal prosecution</div>
           </div>
         </div>
         <p className="mt-4 text-xs text-navy-500">
-          {d.council.nation === "wales"
-            ? "Operating without a required licence also stops you serving a valid possession notice, and Rent Smart Wales can seek a rent stopping order. Being unlicensed does not remove your repairing and safety obligations."
-            : "Operating without a required licence is also grounds for a banning order and can block possession once the national PRS Database is live. Being unlicensed does not remove your repairing and safety obligations."}
+          {d.penaltySummary.otherConsequences ??
+            "Operating without a required licence is also grounds for a banning order and can block possession once the national PRS Database is live. Being unlicensed does not remove your repairing and safety obligations."}
         </p>
       </section>
 
