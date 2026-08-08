@@ -288,6 +288,11 @@ if (wal) {
   // Counted separately: the ward loop is what makes `likely-required` reachable
   // at all, and without it the sweep is blind to the 38 double-licensing cases.
   let wardPairs = 0;
+  // Ward-LESS pairs only, which is the councils x occupancies figure the join
+  // floors below were always reasoned about. `swept` now includes the ward loop,
+  // so a join break losing half the councils still clears 900 on ward pairs
+  // alone and the sweep prints four PASSes over half the dataset.
+  let basePairs = 0;
   // The one that actually matters. Counting loop ITERATIONS does not detect the
   // failure it is meant to catch: break ward matching and wardPairs stays at
   // 1,614 while every verdict silently degrades to check-boundary, which is
@@ -318,6 +323,7 @@ if (wal) {
       if (!d) continue;
       swept++;
       if (ward) wardPairs++;
+      else basePairs++;
       if ([...d.selective, ...d.additional].some((a) => a.verdict === "likely-required")) likelyRequiredSeen++;
       const isMandatory = occ >= 5 && hh >= 2;
       const isSmall = !isMandatory && occ >= 3 && hh >= 2;
@@ -418,14 +424,18 @@ if (wal) {
   // though a total wipeout is what fails the build.
   const MIN_LIKELY_REQUIRED = 400;
   console.log(
-    `  swept ${swept} council/occupancy pairs, ${wardPairs} ward-specific, ${likelyRequiredSeen} yielding a likely-required verdict`,
+    `  swept ${swept} pairs: ${basePairs} council/occupancy, ${wardPairs} ward-specific, ${likelyRequiredSeen} yielding a likely-required verdict`,
   );
   // Gated on there being a sweep to speak of, like the sibling zero-observation
   // check below. Ungated it fired ahead of the real join failure and reported
   // two faults where there was one, and it would have hard-blocked deploys on
   // the ward records alone drifting, which is the dataset condition this file's
   // policy deliberately treats as a warning.
-  if (swept >= CATASTROPHIC && likelyRequiredSeen === 0) {
+  // Keyed off wardPairs, NOT swept. Gating on swept meant that stripping every
+  // wards array (swept still 954 from the base pairs) hard-failed the build with
+  // "ward matching is not working", a false diagnosis of a dataset change that
+  // would have blocked every deploy.
+  if (wardPairs >= CATASTROPHIC && likelyRequiredSeen === 0) {
     // HARD. Thousands of ward-specific sweeps across councils that publish ward
     // lists, and not one ward matched, means ward matching itself is broken.
     // That is a product fault, not dataset drift.
@@ -438,19 +448,27 @@ if (wal) {
   // double-licensing coverage) printed ALL CHECKS PASSED. Ward counts are
   // concentrated in nine councils, so a legitimate refresh can cross this and it
   // stays a warning, but it is now always said out loud.
-  if (wardPairs < MIN_WARD_PAIRS || likelyRequiredSeen < MIN_LIKELY_REQUIRED) {
+  // Two messages, because they point at two different faults. OR'd into one
+  // line, a broken matcher with intact ward lists printed "1,614 ward pairs"
+  // under "ward coverage has shrunk", sending the reader to the wrong place.
+  if (wardPairs < MIN_WARD_PAIRS) {
+    warn(`ward LISTS have shrunk: ${wardPairs} ward-specific pairs, floor ${MIN_WARD_PAIRS}. Fewer designations now publish wards.`);
+  }
+  if (likelyRequiredSeen < MIN_LIKELY_REQUIRED) {
     warn(
-      `ward coverage has shrunk: ${wardPairs} ward-specific pairs (floor ${MIN_WARD_PAIRS}) and ${likelyRequiredSeen} likely-required verdicts (floor ${MIN_LIKELY_REQUIRED}). The double-licensing rule is only partly exercised.`,
+      `ward MATCHES have shrunk: ${likelyRequiredSeen} likely-required verdicts from ${wardPairs} ward pairs, floor ${MIN_LIKELY_REQUIRED}. The double-licensing rule is only partly exercised.`,
     );
   }
-  if (swept < CATASTROPHIC) {
+  // Measured on basePairs, not swept: these floors are the councils x
+  // occupancies count and swept now carries the ward loop on top of it.
+  if (basePairs < CATASTROPHIC) {
     failures++;
-    console.log(`  FAIL  only ${swept} pairs swept: the councils.json / licensing-schemes.json join is broken, so nothing below was actually tested`);
-  } else if (swept < MIN_SWEEP) {
-    warn(`only ${swept} pairs swept, expected at least ${MIN_SWEEP}: check the councils.json / licensing-schemes.json join`);
+    console.log(`  FAIL  only ${basePairs} council/occupancy pairs swept: the councils.json / licensing-schemes.json join is broken, so nothing below was actually tested`);
+  } else if (basePairs < MIN_SWEEP) {
+    warn(`only ${basePairs} council/occupancy pairs swept, expected at least ${MIN_SWEEP}: check the councils.json / licensing-schemes.json join`);
   }
   console.log(`  observed ${downgradesSeen.selective} selective and ${downgradesSeen.additional} additional stand-downs`);
-  if (swept >= CATASTROPHIC && downgradesSeen.selective === 0 && downgradesSeen.additional === 0) {
+  if (basePairs >= CATASTROPHIC && downgradesSeen.selective === 0 && downgradesSeen.additional === 0) {
     // Thousands of pairs and not one stand-down means the rules are not running.
     failures++;
     console.log("  FAIL  no stand-downs observed across the whole sweep, so the stand-down rules are not being exercised");
