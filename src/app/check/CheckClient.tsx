@@ -508,8 +508,17 @@ export default function CheckClient({
                     </li>
                   </ul>
                   <p className="mt-3">
-                    The £7.99 report includes a manual check of {result.council.name}&apos;s current designations, rules
-                    a mandatory HMO licence in or out, and gives you the council source in writing.
+                    {/* "Rules a mandatory HMO licence in or out" is a promise we
+                        cannot keep in Wales. The Welsh test also requires three
+                        or more storeys and we never ask for storeys, so the
+                        report returns "depends on storeys" there. Selling a
+                        definitive answer and delivering a conditional one is a
+                        refund waiting to happen. */}
+                    The £7.99 report includes a manual check of {result.council.name}&apos;s current designations,{" "}
+                    {result.nation === "wales"
+                      ? "applies the Welsh mandatory HMO test to your occupancy (the storey count is the one thing you supply)"
+                      : "rules a mandatory HMO licence in or out"}
+                    , and gives you the council source in writing.
                   </p>
                 </div>
               ) : (
@@ -542,8 +551,11 @@ export default function CheckClient({
                     </li>
                   </ul>
                   <p className="mt-3">
-                    The £7.99 report confirms your position, rules a mandatory HMO licence in or out, and gives you
-                    documented proof.
+                    The £7.99 report confirms your position,{" "}
+                    {result.nation === "wales"
+                      ? "applies the Welsh mandatory HMO test to your occupancy (the storey count is the one thing you supply)"
+                      : "rules a mandatory HMO licence in or out"}
+                    , and gives you documented proof.
                   </p>
                 </div>
               )}

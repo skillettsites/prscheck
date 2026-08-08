@@ -33,7 +33,11 @@ const penaltyTable = [
   { offence: "Breach of licence conditions", act: "Housing Act 2004, s.72(3) / s.95(2)", max: "£40,000" },
   { offence: "Failure to comply with overcrowding notice", act: "Housing Act 2004, s.139(7)", max: "£40,000" },
   { offence: "Letting a property with EPC below minimum E", act: "Energy Efficiency Regulations 2015, reg.36", max: "£5,000" },
-  { offence: "Failure to provide a valid EICR", act: "Electrical Safety Regulations 2020, reg.3", max: "£40,000" },
+  // NOT swept up by the s.249A uplift. The Electrical Safety Standards in the
+  // Private Rented Sector (England) Regulations 2020 set their own £30,000 cap,
+  // as the MEES row below sets its own £5,000. Only Housing Act 2004 offences
+  // moved to £40,000.
+  { offence: "Failure to provide a valid EICR", act: "Electrical Safety Regulations 2020, reg.3", max: "£30,000" },
   { offence: "Failure to register on PRS Database", act: "Renters' Rights Act 2025, s.75", max: "£7,000" },
   { offence: "PRS Database: serious or repeat breach", act: "Renters' Rights Act 2025, s.76", max: "£40,000" },
 ];
