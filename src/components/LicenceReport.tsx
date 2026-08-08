@@ -149,21 +149,26 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
         <h2 className="text-lg font-bold text-navy-100">What&apos;s at stake if you don&apos;t comply</h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           <div className="rounded-lg bg-navy-900/60 p-4 text-center">
-            <div className="text-2xl font-bold text-danger">£{d.penaltySummary.civilPenaltyMax.toLocaleString()}</div>
-            <div className="mt-1 text-xs text-navy-400">Max civil penalty per offence (from 1 May 2026)</div>
+            <div className="text-2xl font-bold text-danger">{d.penaltySummary.civilPenaltyLabel}</div>
+            <div className="mt-1 text-xs text-navy-400">
+              {d.council.nation === "wales"
+                ? "Fixed penalty notice per offence"
+                : "Max civil penalty per offence (from 1 May 2026)"}
+            </div>
           </div>
           <div className="rounded-lg bg-navy-900/60 p-4 text-center">
             <div className="text-2xl font-bold text-danger">{d.penaltySummary.rroMonths} months</div>
             <div className="mt-1 text-xs text-navy-400">Rent Repayment Order the tenant can claim</div>
           </div>
           <div className="rounded-lg bg-navy-900/60 p-4 text-center">
-            <div className="text-2xl font-bold text-danger">Unlimited</div>
+            <div className="text-2xl font-bold text-danger capitalize">{d.penaltySummary.criminalFine}</div>
             <div className="mt-1 text-xs text-navy-400">Fine on criminal prosecution</div>
           </div>
         </div>
         <p className="mt-4 text-xs text-navy-500">
-          Operating without a required licence is also grounds for a banning order and can block possession once the
-          national PRS Database is live. Being unlicensed does not remove your repairing and safety obligations.
+          {d.council.nation === "wales"
+            ? "Operating without a required licence also stops you serving a valid possession notice, and Rent Smart Wales can seek a rent stopping order. Being unlicensed does not remove your repairing and safety obligations."
+            : "Operating without a required licence is also grounds for a banning order and can block possession once the national PRS Database is live. Being unlicensed does not remove your repairing and safety obligations."}
         </p>
       </section>
 

@@ -166,6 +166,19 @@ const both = sArr.find(
 }
 
 {
+  // Penalties are nation-specific and were hardcoded to England's for everyone,
+  // so the paid Welsh report quoted a £40,000 civil penalty and a 24-month rent
+  // repayment order, neither of which exists in Wales.
+  console.log("\nPenalties by nation:");
+  const engP = run(eng.gss, 3, 3).penaltySummary;
+  const walP = run(wal.gss, 3, 3).penaltySummary;
+  check("England civil penalty label", engP.civilPenaltyLabel, "£40,000");
+  check("England RRO months", String(engP.rroMonths), "24");
+  check("Wales does NOT quote England's civil penalty", String(walP.civilPenaltyLabel === "£40,000"), "false");
+  check("Wales RRO months", String(walP.rroMonths), "12");
+}
+
+{
   console.log(`\nWales (${wal.council}):`);
   const mand = run(wal.gss, 5, 3);
   needScheme("Wales fixture returns an additional scheme", mand.additional);

@@ -76,8 +76,14 @@ export async function POST(request: NextRequest) {
       stored = true;
     } catch (err) {
       // Log loudly rather than silently: a swallowed failure here is the exact
-      // bug this rewrite exists to fix.
-      console.error("[PRSCheck] council interest NOT stored", err, lead);
+      // bug this rewrite exists to fix. Identifiers only, never the email or the
+      // free-text message, which do not belong in a runtime log stream. The
+      // Telegram alert below carries the full lead to a private chat instead.
+      console.error("[PRSCheck] council interest NOT stored", err, {
+        source: lead.source,
+        council: lead.council_name,
+        hasMessage: !!lead.message,
+      });
     }
 
     const notified = await notifyInterest(lead, stored);
@@ -85,6 +91,9 @@ export async function POST(request: NextRequest) {
     if (!stored && !notified) {
       // Nothing durable happened. Telling the caller it worked is what lost
       // every previous lead, so fail and let the form show its error state.
+      // Deliberate exception to the identifiers-only rule above: both Supabase
+      // and Telegram have failed, so this line is the only surviving copy of the
+      // enquiry. A log entry is the lesser harm against losing the lead outright.
       console.error("[PRSCheck] council interest LOST (no store, no notify)", lead);
       return NextResponse.json(
         { error: "We could not record your enquiry. Please email hello@prscheck.co.uk." },

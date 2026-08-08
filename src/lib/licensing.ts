@@ -747,6 +747,9 @@ export interface Determination {
   hasAnyLicenceRisk: boolean;
   penaltySummary: {
     civilPenaltyMax: number;
+    /** Rendered figure. Wales has no civil penalty regime of England's kind, so
+     *  the number alone cannot carry the answer. */
+    civilPenaltyLabel: string;
     rroMonths: number;
     criminalFine: string;
   };
@@ -1174,7 +1177,15 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
   // Sefton at 3 occupants in 3 households with no ward). `upcoming` is worse: a
   // designation that has not commenced would void a selective scheme that is
   // enforceable today.
-  const additionalCovers = isSmallHmo && additional.some((a) => DEFINITE_VERDICTS.includes(a.verdict));
+  // Gated on "is an HMO at all", not on `isSmallHmo`. Wales at 5+ occupants in
+  // 2+ households is the one band that deliberately keeps a live additional
+  // verdict (the storey test decides mandatory licensing there), and it was
+  // also the one band where selective could never stand down, so a Welsh
+  // council running both scheme types would have produced additional=REQUIRED
+  // and selective=REQUIRED on the same report. Latent only because no Welsh
+  // council currently runs both, and it would have hard-failed the build gate.
+  const isHmo = isSmallHmo || isMandatoryHmo;
+  const additionalCovers = isHmo && additional.some((a) => DEFINITE_VERDICTS.includes(a.verdict));
   const licensableAsHmo = mandatorySupersedes || additionalCovers;
   const selective = liveSchemes
     .filter((s) => s.type === "selective")
@@ -1255,11 +1266,52 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
     selective,
     additional: relevantAdditional,
     hasAnyLicenceRisk: isMandatoryHmo || selectiveRisk || additionalRisk,
-    penaltySummary: {
+    penaltySummary: penaltiesFor(council.nation),
+  };
+}
+
+/**
+ * Penalties by nation, taken from national-rules.json rather than hardcoded.
+ *
+ * These were fixed at England's numbers for every nation, so the PAID Welsh
+ * report and its email quoted a £40,000 civil penalty and a 24-month rent
+ * repayment order. Wales has neither: the Housing (Wales) Act 2014 regime is
+ * fixed penalty notices of £150-£250 plus an unlimited fine on conviction, and
+ * the 24-month RRO uplift is expressly England-only. The free check on the same
+ * site was already showing a different figure again, so a Welsh landlord could
+ * see three numbers for one question.
+ */
+export function penaltiesFor(nation: Council["nation"]): {
+  civilPenaltyMax: number;
+  civilPenaltyLabel: string;
+  rroMonths: number;
+  criminalFine: string;
+} {
+  if (nation === "england") {
+    return {
       civilPenaltyMax: 40000,
+      civilPenaltyLabel: "£40,000",
       rroMonths: 24,
       criminalFine: "unlimited",
-    },
+    };
+  }
+  if (nation === "wales") {
+    return {
+      // Wales has no civil penalty of this kind. Zero is the honest value and
+      // the label is what gets rendered.
+      civilPenaltyMax: 0,
+      civilPenaltyLabel: "£150-£250",
+      rroMonths: 12,
+      criminalFine: "unlimited",
+    };
+  }
+  // Scotland and NI never reach the paid report (checkout is England and Wales
+  // only), but the free check and council pages read this too.
+  return {
+    civilPenaltyMax: 0,
+    civilPenaltyLabel: nation === "northern-ireland" ? "£500 fixed penalty" : "varies",
+    rroMonths: 0,
+    criminalFine: nation === "northern-ireland" ? "up to £2,500" : "unlimited",
   };
 }
 

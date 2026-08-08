@@ -681,19 +681,33 @@ export default function CheckClient({
                     Order are Housing Act 2004 s.249A powers, and the 24-month
                     uplift is England-only. Quoting them to a Welsh landlord
                     states a penalty regime that does not apply to them. */}
-                <p className="text-sm text-navy-200">
-                  <span className="font-semibold text-red-300">Getting this wrong is expensive.</span> Letting without a
-                  required licence risks a civil penalty of up to{" "}
-                  <span className="font-semibold text-red-300">{result.nation === "wales" ? "£30,000" : "£40,000"}</span>, a
-                  rent-repayment order of up to{" "}
-                  <span className="font-semibold text-red-300">
-                    {result.nation === "wales" ? "12 months' rent" : "24 months' rent"}
-                  </span>
-                  , and a possible banning order.
-                </p>
+                {/* Wales has no civil penalty of England's kind. The £30,000
+                    previously shown here was England's own pre-May-2026 figure,
+                    not a Welsh one, so a Welsh landlord saw one number on the
+                    free check and a different one in the paid report. Housing
+                    (Wales) Act 2014: fixed penalty notices of £150-£250 plus an
+                    unlimited fine on conviction, and no banning-order regime. */}
+                {result.nation === "wales" ? (
+                  <p className="text-sm text-navy-200">
+                    <span className="font-semibold text-red-300">Getting this wrong is expensive.</span> Letting without
+                    a required licence in Wales risks a{" "}
+                    <span className="font-semibold text-red-300">fixed penalty of £150-£250</span>, an{" "}
+                    <span className="font-semibold text-red-300">unlimited fine</span> on conviction, a rent-repayment
+                    order of up to <span className="font-semibold text-red-300">12 months&apos; rent</span>, a rent
+                    stopping order, and being unable to serve a valid possession notice.
+                  </p>
+                ) : (
+                  <p className="text-sm text-navy-200">
+                    <span className="font-semibold text-red-300">Getting this wrong is expensive.</span> Letting without
+                    a required licence risks a civil penalty of up to{" "}
+                    <span className="font-semibold text-red-300">£40,000</span>, a rent-repayment order of up to{" "}
+                    <span className="font-semibold text-red-300">24 months&apos; rent</span>, and a possible banning
+                    order.
+                  </p>
+                )}
                 <p className="mt-2 text-sm text-navy-300">
-                  <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer, set against a
-                  five-figure fine for getting it wrong.
+                  <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer, set against{" "}
+                  {result.nation === "wales" ? "an unlimited fine" : "a five-figure fine"} for getting it wrong.
                 </p>
               </div>
 
