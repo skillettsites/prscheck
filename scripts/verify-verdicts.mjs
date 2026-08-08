@@ -188,10 +188,23 @@ const both = sArr.find(
   // so the paid Welsh report quoted a £40,000 civil penalty and a 24-month rent
   // repayment order, neither of which exists in Wales.
   console.log("\nPenalties by nation:");
-  // Straight from penaltiesFor rather than through determine(), so these hold
-  // whether or not a council fixture happens to be available.
+  // Straight from penaltiesFor, so these hold whether or not a council fixture
+  // happens to be available.
   const engP = penaltiesFor("england");
   const walP = penaltiesFor("wales");
+  // ...but ALSO check determine() wires the right nation through, which is the
+  // only place penaltySummary is set and was the site of the original bug
+  // (Welsh reports quoting £40,000 and a 24-month RRO). Asserting penaltiesFor
+  // alone let that exact regression pass: hardcoding penaltiesFor("england") in
+  // determine still printed ALL CHECKS PASSED.
+  if (eng) {
+    check("determine() wires England penalties", run(eng.gss, 3, 3).penaltySummary.civilPenaltyLabel, engP.civilPenaltyLabel);
+  }
+  if (wal) {
+    const wired = run(wal.gss, 3, 3).penaltySummary;
+    check("determine() wires Wales penalties", wired.civilPenaltyLabel, walP.civilPenaltyLabel);
+    check("determine() wires Wales RRO", String(wired.rroMonths), String(walP.rroMonths));
+  }
   // Pinned to exact values on BOTH nations. Asserting only that Wales differs
   // from England let the label fall through to the "varies" sentinel if
   // fixedPenaltyGBP were removed from the JSON: the report would print "varies"
@@ -265,6 +278,9 @@ if (wal) {
   const breachedCouncils = { selective: new Set(), additional: new Set(), risk: new Set(), double: new Set() };
   let downgradesSeen = { selective: 0, additional: 0 };
   let swept = 0;
+  // Counted separately: the ward loop is what makes `likely-required` reachable
+  // at all, and without it the sweep is blind to the 38 double-licensing cases.
+  let wardPairs = 0;
 
   for (const rec of sArr) {
     const council = byGss.get(rec.gss);
@@ -287,6 +303,7 @@ if (wal) {
       const d = runWard(rec.gss, occ, hh, ward);
       if (!d) continue;
       swept++;
+      if (ward) wardPairs++;
       const isMandatory = occ >= 5 && hh >= 2;
       const isSmall = !isMandatory && occ >= 3 && hh >= 2;
       const mandatorySupersedes = isMandatory && council.nation === "england";
@@ -375,7 +392,18 @@ if (wal) {
   // exit 0 having asserted nothing at all. A modest shortfall stays a warning,
   // because that is dataset drift rather than a fault.
   const CATASTROPHIC = 100;
-  console.log(`  swept ${swept} council/occupancy pairs (Scotland and NI correctly excluded)`);
+  // A floor on the WARD-augmented pairs specifically. The totals below are
+  // reasoned about as 318 councils x 3 occupancies = 954, but the ward loop
+  // takes the real sweep to ~2,568. Strip every `wards` array from the dataset
+  // and the sweep lands on exactly 954, clearing both thresholds silently while
+  // removing the only coverage that makes `likely-required` reachable, which is
+  // the coverage the 38 double-licensing cases showed up in.
+  const MIN_WARD_PAIRS = 1000;
+  console.log(`  swept ${swept} council/occupancy pairs, ${wardPairs} of them ward-specific`);
+  if (wardPairs < MIN_WARD_PAIRS) {
+    failures++;
+    console.log(`  FAIL  only ${wardPairs} ward-specific pairs swept, expected at least ${MIN_WARD_PAIRS}: without wards, likely-required is unreachable and the double-licensing rule is untested`);
+  }
   if (swept < CATASTROPHIC) {
     failures++;
     console.log(`  FAIL  only ${swept} pairs swept: the councils.json / licensing-schemes.json join is broken, so nothing below was actually tested`);

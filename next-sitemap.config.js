@@ -1,3 +1,17 @@
+/**
+ * LASTMOD IS DELIBERATELY OMITTED.
+ *
+ * Every entry used to carry `new Date().toISOString()`, so each build told
+ * Google and Bing that all 447 URLs had changed, including the ~320 council
+ * pages that had not. A sitemap that claims everything changed every time is a
+ * sitemap crawlers learn to ignore, and lastmod is the one signal that gets a
+ * genuinely updated page recrawled quickly. Omitting it is better than lying:
+ * the crawler falls back to its own heuristics rather than distrusting ours.
+ *
+ * If per-page dates are wanted later, take them from the underlying data (a
+ * scheme's `verified` date for a council page, for instance), never from the
+ * build clock.
+ */
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://prscheck.co.uk',
@@ -23,16 +37,15 @@ module.exports = {
     else if (['/about', '/api-docs', '/resources'].includes(path)) { priority = 0.6; }
     else if (['/privacy', '/terms'].includes(path)) { priority = 0.3; changefreq = 'monthly'; }
 
-    return { loc: path, lastmod: new Date().toISOString(), changefreq, priority };
+    return { loc: path, changefreq, priority };
   },
 
   additionalPaths: async (config) => {
-    const now = new Date().toISOString();
     const paths = [];
 
     // /check reads searchParams so it renders dynamically and next-sitemap
     // does not auto-discover it. It is the primary conversion page, so add it.
-    paths.push({ loc: '/check', lastmod: now, changefreq: 'weekly', priority: 0.95 });
+    paths.push({ loc: '/check', changefreq: 'weekly', priority: 0.95 });
 
     // Platform pages
     const platformPages = [
@@ -41,9 +54,9 @@ module.exports = {
       'civil-penalties', 'selective-licensing',
     ];
     for (const slug of platformPages) {
-      paths.push({ loc: `/platform/${slug}`, lastmod: now, changefreq: 'weekly', priority: 0.8 });
+      paths.push({ loc: `/platform/${slug}`, changefreq: 'weekly', priority: 0.8 });
     }
-    paths.push({ loc: '/platform', lastmod: now, changefreq: 'weekly', priority: 0.9 });
+    paths.push({ loc: '/platform', changefreq: 'weekly', priority: 0.9 });
 
     // Resource articles (batch 1)
     const batch1 = [
@@ -80,7 +93,7 @@ module.exports = {
     ];
 
     for (const slug of [...batch1, ...batch2]) {
-      paths.push({ loc: `/resources/${slug}`, lastmod: now, changefreq: 'monthly', priority: 0.7 });
+      paths.push({ loc: `/resources/${slug}`, changefreq: 'monthly', priority: 0.7 });
     }
 
     return paths;
