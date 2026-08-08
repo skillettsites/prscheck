@@ -105,6 +105,13 @@ async function notifyInterest(
   // Plain text, no parse_mode. User-supplied values reach this message, and an
   // ordinary address like jane_doe@camden.gov.uk is invalid Markdown, so
   // Telegram would 400 and drop the alert, including the "not saved" one.
+  // Telegram rejects anything over 4096 characters, and a 4000-char message plus
+  // the other fields clears that, so the most detailed enquiries were exactly the
+  // ones whose alert got dropped. Trim the message itself rather than the
+  // assembled text, and keep it LAST: slicing the whole string cut off the
+  // Source, Page and "not saved" lines that come after it, so the one alert that
+  // has to survive a failed insert was the one losing its warning.
+  const msg = lead.message && lead.message.length > 3000 ? `${lead.message.slice(0, 3000)} [truncated]` : lead.message;
   const text = [
     "PRSCheck: council interest",
     "",
@@ -112,17 +119,14 @@ async function notifyInterest(
     `Email: ${lead.email}`,
     lead.council_name ? `Council: ${lead.council_name}` : null,
     lead.role ? `Role: ${lead.role}` : null,
-    lead.message ? `Message: ${lead.message}` : null,
     `Source: ${lead.source}`,
     lead.referrer ? `Page: ${lead.referrer}` : null,
     stored ? null : "WARNING: not saved to Supabase, this message is the only record",
+    msg ? `\nMessage: ${msg}` : null,
   ]
     .filter((l) => l !== null)
     .join("\n");
-  // Telegram rejects anything over 4096 characters, and a 4000-char message plus
-  // the other fields clears that, so the most detailed enquiries were exactly
-  // the ones whose alert got dropped. The full text is in Supabase either way.
-  const safeText = text.length > 4000 ? `${text.slice(0, 3960)}\n[truncated, see Supabase]` : text;
+  const safeText = text.length > 4090 ? text.slice(0, 4090) : text;
   try {
     const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: "POST",

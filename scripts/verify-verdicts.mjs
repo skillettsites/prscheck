@@ -19,7 +19,12 @@ const byGss = new Map(cArr.map((c) => [c.gss, c]));
 // a lapsed scheme as the fixture returned an empty `additional[]`, and the Wales
 // guard below is a `!== "not-applicable"` check, so it would have passed on
 // nothing at all and silently stopped guarding.
-const notLapsed = (s) => !s.end || new Date(s.end) >= new Date();
+// `hasLapsed` is a UTC date-STRING compare (`scheme.end < today()`), so a scheme
+// ending today is still live. Comparing Date objects instead made it lapsed, and
+// on the day the last live scheme for a nation ends this would drop the fixture
+// and exit 1 for no reason. Same comparison, same result.
+const todayIso = new Date().toISOString().slice(0, 10);
+const notLapsed = (s) => !s.end || !(s.end < todayIso);
 const liveAdditional = (rec) =>
   (rec.schemes || []).some(
     (s) => s.type === "additional" && (s.status === "active" || s.status === "upcoming") && notLapsed(s),
@@ -105,6 +110,31 @@ const needScheme = (label, list) => {
   if (needScheme("selective fixture returns a scheme for an ordinary let", ordinary.selective)) {
     const kept = ordinary.selective[0]?.verdict !== "not-applicable";
     check("2 occupants / 1 household -> selective verdict kept", String(kept), "true");
+  }
+}
+
+// A council running BOTH scheme types: a small HMO the additional scheme covers
+// is licensable under Part 2, so the selective verdict must stand down. Without
+// this the report showed both badges and told the buyer to apply for both.
+const both = sArr.find(
+  (r) => liveAdditional(r) && liveSelective(r) && (byGss.get(r.gss) || {}).nation === "england",
+);
+{
+  console.log(`\nEngland both schemes (${both ? both.council : "NONE FOUND"}):`);
+  if (!both) {
+    failures++;
+    console.log("  FAIL  no England council with both scheme types live, check would pass on nothing");
+  } else {
+    const small = run(both.gss, 3, 3);
+    if (needScheme("both-scheme fixture returns an additional scheme", small.additional)) {
+      const addPositive = ["required", "likely-required", "check-boundary", "upcoming"].includes(
+        small.additional[0]?.verdict,
+      );
+      check("3 occupants / 3 households -> additional still positive", String(addPositive), "true");
+    }
+    if (needScheme("both-scheme fixture returns a selective scheme", small.selective)) {
+      check("3 occupants / 3 households -> selective stands down", small.selective[0]?.verdict, "not-applicable");
+    }
   }
 }
 
