@@ -176,7 +176,10 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
                   <div className="mt-1 text-xs text-navy-400">Rent Repayment Order the tenant can claim</div>
                 </div>
                 <div className="rounded-lg bg-navy-900/60 p-4 text-center">
-                  <div className="text-2xl font-bold text-danger capitalize">{pen.criminalFine}</div>
+                  {/* `capitalize` was written for the hardcoded "Unlimited" and
+                      title-cases every word, so a derived value renders as
+                      "Up To £50,000". First letter only. */}
+                  <div className="text-2xl font-bold text-danger first-letter:uppercase">{pen.criminalFine}</div>
                   <div className="mt-1 text-xs text-navy-400">Fine on criminal prosecution</div>
                 </div>
               </div>

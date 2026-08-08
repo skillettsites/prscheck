@@ -62,10 +62,16 @@ export async function sendLicenceReportEmail(
   // 24-month claim, which is the England figure this exists to stop repeating.
   const pen = penaltiesFor(d.council.nation);
   const rroClause = pen.rroMonths > 0 ? ` and rent repayment orders up to ${pen.rroMonths} months' rent` : "";
-  const penaltyPhrase =
-    d.council.nation === "wales"
-      ? `fixed penalties of ${pen.civilPenaltyLabel}, an unlimited fine on conviction${rroClause}`
-      : `civil penalties up to ${pen.civilPenaltyLabel}${rroClause}`;
+  // The label is a sentinel ("n/a", "varies") where the nation has no civil
+  // penalty regime, so it has to be gated like rroMonths rather than dropped
+  // into "civil penalties up to n/a".
+  const hasCivil = pen.civilPenaltyLabel !== "n/a" && pen.civilPenaltyLabel !== "varies";
+  const civilClause = hasCivil
+    ? d.council.nation === "wales"
+      ? `fixed penalties of ${pen.civilPenaltyLabel}, an unlimited fine on conviction`
+      : `civil penalties up to ${pen.civilPenaltyLabel}`
+    : `a fine of ${pen.criminalFine} on conviction`;
+  const penaltyPhrase = `${civilClause}${rroClause}`;
 
   const html = `
   <div style="font-family:Arial,Helvetica,sans-serif;max-width:600px;margin:0 auto;color:#1e293b">

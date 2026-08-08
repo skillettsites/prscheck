@@ -1345,7 +1345,12 @@ export function penaltiesFor(nation: Council["nation"]): PenaltySummary {
     // reach gbp(undefined): that throws, which 500s the paid report page and
     // throws inside sendLicenceReportEmail in the Stripe webhook.
     const [lo, hi] = p.fixedPenaltyGBP;
-    civilPenaltyLabel = typeof hi === "number" && hi !== lo ? `${gbp(lo)}-${gbp(hi)}` : gbp(lo);
+    // Both ends type-checked, not just the second. [null, 250] passes
+    // Array.isArray and length > 0, and gbp(null) throws exactly as
+    // gbp(undefined) would.
+    if (typeof lo === "number") {
+      civilPenaltyLabel = typeof hi === "number" && hi !== lo ? `${gbp(lo)}-${gbp(hi)}` : gbp(lo);
+    }
   } else if (typeof p.fixedPenaltyGBP === "number") {
     civilPenaltyLabel = gbp(p.fixedPenaltyGBP);
   } else if (typeof p.penaltyMax === "number") {

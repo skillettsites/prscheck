@@ -172,10 +172,16 @@ const both = sArr.find(
   console.log("\nPenalties by nation:");
   const engP = run(eng.gss, 3, 3).penaltySummary;
   const walP = run(wal.gss, 3, 3).penaltySummary;
+  // Pinned to exact values on BOTH nations. Asserting only that Wales differs
+  // from England let the label fall through to the "varies" sentinel if
+  // fixedPenaltyGBP were removed from the JSON: the report would print "varies"
+  // under "Fixed penalty notice per offence", the email would read "fixed
+  // penalties of varies", and the gate would still say ALL CHECKS PASSED.
   check("England civil penalty label", engP.civilPenaltyLabel, "£40,000");
   check("England RRO months", String(engP.rroMonths), "24");
-  check("Wales does NOT quote England's civil penalty", String(walP.civilPenaltyLabel === "£40,000"), "false");
+  check("Wales civil penalty label", walP.civilPenaltyLabel, "£150-£250");
   check("Wales RRO months", String(walP.rroMonths), "12");
+  check("Wales criminal fine", walP.criminalFine, "unlimited");
 }
 
 {

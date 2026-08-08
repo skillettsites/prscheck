@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getCouncilBySlug, councilSummary, COUNCILS, hasCouncilLicensingPowers } from "@/lib/licensing";
+import { getCouncilBySlug, councilSummary, COUNCILS, hasCouncilLicensingPowers, penaltiesFor } from "@/lib/licensing";
 import SchemeList from "@/components/SchemeList";
 import PostcodeCTA from "@/components/PostcodeCTA";
 
@@ -60,10 +60,19 @@ function mandatoryPanel(nation: string, councilName: string): { heading: string;
 }
 
 /**
- * Penalty bullets. The £40,000 civil penalty and 24-month Rent Repayment Order
- * are Housing Act 2004 s.249A powers, so they exist in England and Wales only,
- * and the 24-month uplift is England-only. Showing them in Scotland or Northern
- * Ireland quoted a penalty regime that does not exist there.
+ * Penalty bullets.
+ *
+ * The headline figures come from `penaltiesFor`, which reads
+ * national-rules.json, so correcting the research corrects these ~320 pages and
+ * their FAQ JSON-LD along with the report and the email. They used to be
+ * hardcoded here, which meant the next change to a maximum would move the paid
+ * report and leave every council page on the old number.
+ *
+ * The s.249A civil penalty and Rent Repayment Order are Housing Act 2004
+ * powers, which extend to England and Wales only; the 24-month RRO uplift is
+ * England-only, and Wales has no s.249A civil penalty at all. The prose around
+ * each figure stays nation-specific because the regimes differ in kind, not
+ * just in amount.
  */
 function penaltyBullets(nation: string): string[] {
   switch (nation) {
@@ -74,9 +83,9 @@ function penaltyBullets(nation: string): string[] {
       // abolished in Wales by the Renting Homes (Wales) Act 2016, so citing it
       // here described a notice that no longer exists.
       return [
-        "Fixed penalty notice of £150-£250 per offence from Rent Smart Wales.",
+        `Fixed penalty notice of ${penaltiesFor("wales").civilPenaltyLabel} per offence from Rent Smart Wales.`,
         "Unlimited fine on conviction in the magistrates' court.",
-        "Rent Repayment Order of up to 12 months' rent, claimable by the tenant. The 24-month uplift applies in England only.",
+        `Rent Repayment Order of up to ${penaltiesFor("wales").rroMonths} months' rent, claimable by the tenant. The 24-month uplift applies in England only.`,
         "A rent stopping order can be made, and you cannot serve a valid possession notice while unregistered or unlicensed.",
       ];
     case "scotland":
@@ -91,13 +100,15 @@ function penaltyBullets(nation: string): string[] {
         "Up to £10,000 for breaching licence conditions.",
         "Failing to register as a landlord carries a £500 fixed penalty, or a court fine of up to £2,500.",
       ];
-    default:
+    default: {
+      const pen = penaltiesFor("england");
       return [
-        "Civil penalty of up to £40,000 per offence (raised from £30,000 on 1 May 2026).",
-        "Rent Repayment Order of up to 24 months' rent, claimable by the tenant.",
+        `Civil penalty of up to ${pen.civilPenaltyLabel} per offence (raised from £30,000 on 1 May 2026).`,
+        `Rent Repayment Order of up to ${pen.rroMonths} months' rent, claimable by the tenant.`,
         "Unlimited fine on criminal prosecution, plus possible banning order.",
         "Once the national PRS Database is live, unregistered landlords can be blocked from regaining possession.",
       ];
+    }
   }
 }
 
@@ -113,13 +124,13 @@ function penaltyRule(nation: string): string {
       // This had no Wales case at all, so all 22 Welsh council pages published
       // England's £40,000 / 24-month / banning-order text as visible FAQ copy
       // AND as FAQPage JSON-LD, contradicting the bullets directly above it.
-      return "Letting an unregistered or unlicensed property in Wales can lead to a fixed penalty notice of £150-£250, an unlimited fine on conviction, a Rent Repayment Order of up to 12 months' rent, and a rent stopping order. You also cannot serve a valid possession notice while unregistered or unlicensed.";
+      return `Letting an unregistered or unlicensed property in Wales can lead to a fixed penalty notice of ${penaltiesFor("wales").civilPenaltyLabel}, an unlimited fine on conviction, a Rent Repayment Order of up to ${penaltiesFor("wales").rroMonths} months' rent, and a rent stopping order. You also cannot serve a valid possession notice while unregistered or unlicensed.`;
     case "scotland":
       return "Letting an unregistered property, or operating an unlicensed HMO, can lead to a fine of up to £50,000, and the council can refuse or revoke registration.";
     case "northern-ireland":
       return "Operating an unlicensed HMO can lead to a £5,000 fixed penalty or a fine of up to £20,000 on summary conviction, with up to £10,000 for breaching licence conditions. Failing to register as a landlord carries a £500 fixed penalty or a court fine up to £2,500.";
     default:
-      return "Operating a licensable property without a licence can lead to a civil penalty of up to £40,000 per offence, a Rent Repayment Order of up to 24 months' rent, an unlimited fine on prosecution, and a banning order for serious or repeat offenders.";
+      return `Operating a licensable property without a licence can lead to a civil penalty of up to ${penaltiesFor("england").civilPenaltyLabel} per offence, a Rent Repayment Order of up to ${penaltiesFor("england").rroMonths} months' rent, an unlimited fine on prosecution, and a banning order for serious or repeat offenders.`;
   }
 }
 

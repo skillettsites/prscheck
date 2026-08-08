@@ -113,7 +113,7 @@ export const GUIDES: Guide[] = [
       },
       {
         q: "What happens if I let an unlicensed property in a selective area?",
-        a: "You risk a civil penalty of up to £40,000, a rent repayment order of up to 24 months' rent, and prosecution with an unlimited fine. You may also be unable to regain possession while unlicensed.",
+        a: "In England you risk a civil penalty of up to £40,000, a rent repayment order of up to 24 months' rent, and prosecution with an unlimited fine. In Wales the Housing (Wales) Act 2014 applies instead: a fixed penalty notice of £150-£250, an unlimited fine on conviction, and a rent repayment order of up to 12 months' rent. Either way you may be unable to regain possession while unlicensed.",
       },
     ],
   },
@@ -164,7 +164,7 @@ export const GUIDES: Guide[] = [
     title: "The Renters' Rights Act 2025",
     metaTitle: "Renters' Rights Act 2025: What Landlords Need to Know",
     metaDescription:
-      "The Renters' Rights Act 2025 explained for landlords: the end of Section 21, £40,000 civil penalties, 24-month rent repayment orders, the PRS Database and the timeline.",
+      "The Renters' Rights Act 2025 explained for landlords in England: the end of Section 21, £40,000 civil penalties, 24-month rent repayment orders, the PRS Database and the timeline.",
     intro:
       "The Renters' Rights Act 2025 is the biggest change to private renting in a generation. It abolished Section 21, raised penalties, and is introducing a national database every landlord must join. Here is what matters and when.",
     sections: [
@@ -172,7 +172,7 @@ export const GUIDES: Guide[] = [
         heading: "What changed on 1 May 2026",
         body: [
           "Section 21 'no fault' evictions were abolished for private landlords, and all assured tenancies became periodic.",
-          "The maximum civil penalty for offences such as operating an unlicensed property rose from £30,000 to £40,000 per offence. Rent repayment orders were extended from 12 to 24 months' rent and can now reach superior landlords in rent-to-rent arrangements.",
+          "In England the maximum civil penalty for offences such as operating an unlicensed property rose from £30,000 to £40,000 per offence. Rent repayment orders were extended from 12 to 24 months' rent and can now reach superior landlords in rent-to-rent arrangements. The Act does not extend to Wales, which keeps its own Rent Smart Wales regime and a 12-month rent repayment maximum.",
           "Rental bidding and demands for large amounts of rent in advance were banned, and new discrimination protections for tenants on benefits or with children came in.",
         ],
       },
@@ -207,21 +207,21 @@ export const GUIDES: Guide[] = [
     title: "Penalties for unlicensed letting",
     metaTitle: "Penalties for Renting Without a Licence (2026)",
     metaDescription:
-      "The penalties for operating an unlicensed rental property: civil penalties up to £40,000, rent repayment orders up to 24 months, banning orders and prosecution. How to avoid them.",
+      "The penalties for operating an unlicensed rental property in England and Wales: civil penalties up to £40,000, rent repayment orders up to 24 months, banning orders and prosecution. How to avoid them.",
     intro:
       "Letting a property that needs a licence without one is a serious matter, and the penalties increased in 2026. Here is exactly what you are exposed to, and how to avoid it.",
     sections: [
       {
         heading: "Civil penalties and fines",
         body: [
-          "A council can impose a civil penalty of up to £40,000 per offence as an alternative to prosecution (raised from £30,000 on 1 May 2026). Alternatively it can prosecute, and the court can impose an unlimited fine.",
+          "In England a council can impose a civil penalty of up to £40,000 per offence as an alternative to prosecution (raised from £30,000 on 1 May 2026). Alternatively it can prosecute, and the court can impose an unlimited fine. Wales has no civil penalty of this kind: Rent Smart Wales issues fixed penalty notices of £150-£250, and the court can impose an unlimited fine on conviction.",
           "Related breaches carry their own penalties: failing to register on the PRS Database can bring up to £7,000, rising to £40,000 for serious or repeat breaches.",
         ],
       },
       {
         heading: "Rent repayment orders",
         body: [
-          "A tenant (or the council) can apply to the tribunal for a rent repayment order. For offences committed on or after 1 May 2026 this can be up to 24 months' rent, doubled from the previous 12-month cap.",
+          "A tenant (or the council) can apply to the tribunal for a rent repayment order. In England, for offences committed on or after 1 May 2026, this can be up to 24 months' rent, doubled from the previous 12-month cap. The uplift is England-only, so the Welsh maximum remains 12 months.",
           "This means an unlicensed landlord could be ordered to repay up to two years of rent, on top of any civil penalty, and superior landlords in rent-to-rent chains can now be caught too.",
         ],
       },
