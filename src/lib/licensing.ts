@@ -721,6 +721,15 @@ export const POSITIVE_VERDICTS: SchemeVerdict[] = ["required", "likely-required"
  * two licences the Act makes mutually exclusive. Measured with wards populated:
  * 38 cases without it, 0 with it. The genuinely hedged path emits
  * `check-boundary`, which this constant already excludes.
+ *
+ * DATA-INGEST WATCH ITEM. Today 123 stand-downs are driven by a ward-matched
+ * `likely-required` additional verdict alone, and in none of them is the
+ * suppressed selective verdict itself definite, because no council currently
+ * pairs a boundary-polygon or exact-postcode selective scheme with a ward-only
+ * additional one. Add such a pairing and a hedged additional would silence a
+ * definite selective. Re-run `npm run verify:verdicts` after adding any
+ * selective boundary or postcode list to a council that also runs additional
+ * licensing.
  */
 export const DEFINITE_VERDICTS: SchemeVerdict[] = ["required", "likely-required"];
 

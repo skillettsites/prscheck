@@ -53,11 +53,6 @@ console.log(`  England council with a live additional scheme: ${eng ? eng.counci
 console.log(`  Wales   council with a live additional scheme: ${wal ? wal.council : "NONE FOUND"}`);
 console.log(`  England council with a live selective scheme : ${engSel ? engSel.council : "NONE FOUND"}`);
 
-if (!eng || !wal || !engSel) {
-  console.log("\nFAIL: a fixture could not be found, so these checks would pass on nothing.");
-  process.exit(1);
-}
-
 // Import the rules rather than restating them. Hardcoding the verdict lists let
 // the guard and the engine encode DIFFERENT rules: the sweep still listed
 // likely-required as definite after the engine stopped treating it that way, and
@@ -90,6 +85,20 @@ const warn = (message) => {
   console.log(`  WARN  ${message}`);
 };
 
+// WARN, not exit(1). This is the `prebuild` script and every named fixture
+// depends on a designation still being live: all 11 Welsh additional schemes
+// carry end dates, the earliest 2026-12-31. Hard-failing means the day that
+// lapses, every production build breaks, including unrelated hotfixes, for a
+// dataset condition rather than a code fault. Same policy as every other
+// fixture check here; the sweep at the end is the hard guard and needs no
+// fixture. Placed after `warn` because const is not hoisted.
+const missingFixtures = [!eng && "England additional", !wal && "Wales additional", !engSel && "England selective"].filter(
+  Boolean,
+);
+if (missingFixtures.length) {
+  warn(`no live scheme for: ${missingFixtures.join(", ")}. Those named fixtures assert nothing today.`);
+}
+
 const runWard = (gss, occupants, households, wardName = null) =>
   determine(gss, {
     occupants,
@@ -114,7 +123,9 @@ const needScheme = (label, list) => {
   return true;
 };
 
-{
+// Each named-fixture block is guarded, because its fixture can legitimately be
+// absent (see missingFixtures above) and dereferencing it would crash the build.
+if (eng) {
   console.log(`\nEngland (${eng.council}):`);
   const single = run(eng.gss, 1, 1);
   needScheme("England fixture returns an additional scheme", single.additional);
@@ -130,7 +141,7 @@ const needScheme = (label, list) => {
   check("5 occupants / 3 households -> mandatory required", String(mand.mandatoryHmo.required), "true");
 }
 
-{
+if (engSel) {
   console.log(`\nEngland selective (${engSel.council}):`);
   const mand = run(engSel.gss, 5, 3);
   if (needScheme("selective fixture returns a scheme", mand.selective)) {
@@ -165,7 +176,7 @@ const both = sArr.find(
   }
 }
 
-{
+if (eng && wal) {
   // Penalties are nation-specific and were hardcoded to England's for everyone,
   // so the paid Welsh report quoted a £40,000 civil penalty and a 24-month rent
   // repayment order, neither of which exists in Wales.
@@ -184,7 +195,7 @@ const both = sArr.find(
   check("Wales criminal fine", walP.criminalFine, "unlimited");
 }
 
-{
+if (wal) {
   console.log(`\nWales (${wal.council}):`);
   const mand = run(wal.gss, 5, 3);
   needScheme("Wales fixture returns an additional scheme", mand.additional);

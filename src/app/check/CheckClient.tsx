@@ -95,10 +95,20 @@ export default function CheckClient({
   const autoRan = useRef(false);
 
   // Clear the result to bring the search box back for another postcode.
+  // Every field error goes too: they belong to the purchase form for the
+  // previous postcode, and leaving them set rendered the next result's form
+  // already showing red errors and the "please complete the fields marked
+  // above" alert for a submission that had not happened.
   const reset = () => {
     setResult(null);
     setError(null);
     setPostcode("");
+    setAddressError(false);
+    setOccupantsError(null);
+    setHouseholdsError(null);
+    setBuyError(null);
+    setOccupants("");
+    setHouseholds("");
   };
 
   // When we have an England result, load the address list for that postcode so
