@@ -51,7 +51,15 @@ export async function POST(request: NextRequest) {
       referrer: str(request.headers.get("referer"), 500),
       geo_city: (() => {
         const c = request.headers.get("x-vercel-ip-city");
-        return c ? decodeURIComponent(c) : null;
+        if (!c) return null;
+        // decodeURIComponent throws on a malformed percent sequence, and the
+        // outer catch would turn that into a 400 that drops the enquiry before
+        // it is stored or notified. A city name is not worth losing a lead over.
+        try {
+          return decodeURIComponent(c);
+        } catch {
+          return c;
+        }
       })(),
       geo_country: request.headers.get("x-vercel-ip-country") || null,
     };
@@ -138,6 +146,11 @@ async function notifyInterest(
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ chat_id: chatId, text: safeText }),
+      // This is awaited on the request path. Without a bound, a slow Telegram
+      // runs the function past its timeout and all three forms show an error
+      // for a lead that is already safely in conversion_events. Matches the 5s
+      // the checkout route uses for the same reason.
+      signal: AbortSignal.timeout(5000),
     });
     if (!res.ok) {
       console.error("[PRSCheck] council interest Telegram notify rejected", res.status, await res.text());

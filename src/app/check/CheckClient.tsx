@@ -610,9 +610,13 @@ export default function CheckClient({
                         setOccupantsError(null);
                         setHouseholdsError(null);
                         setBuyError(null);
-                        // One person is one household by definition, so filling it
-                        // in removes a field the buyer cannot get wrong.
-                        if (e.target.value === "1") setHouseholds("1");
+                        // NO AUTOFILL HERE. Setting households to 1 when this
+                        // reads "1" looks harmless but fires on every keystroke,
+                        // so typing "12" passes through "1", pins households at
+                        // 1 and never resets. The report then computes
+                        // isMandatoryHmo as false and tells a twelve-person
+                        // shared house it is below the HMO threshold, which is
+                        // the single most expensive answer we can get wrong.
                       }}
                       placeholder="e.g. 4"
                       className={`w-full rounded-lg border bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:outline-none ${
