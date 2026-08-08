@@ -35,6 +35,10 @@ export default function ContactPage() {
           email: formData.email,
           councilName: formData.council,
           role: formData.role,
+          // The form asks for a message and then dropped it from the request,
+          // so every contact enquiry arrived without the thing it was about.
+          message: formData.message,
+          source: "contact-page",
         }),
       });
 

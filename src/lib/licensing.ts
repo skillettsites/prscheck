@@ -1112,15 +1112,6 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
   const liveSchemes = (cs?.schemes ?? []).filter(
     (s) => (s.status === "active" || s.status === "upcoming") && !hasLapsed(s),
   );
-  // Selective licensing only bites on non-HMO lets; additional licensing on small HMOs.
-  const selective = liveSchemes
-    .filter((s) => s.type === "selective")
-    .map(assess)
-    .map((a) =>
-      isMandatoryHmo || isSmallHmo
-        ? { ...a, explanation: a.explanation + " Note: selective licensing normally applies to properties not already licensable as HMOs." }
-        : a,
-    );
   const additional = liveSchemes.filter((s) => s.type === "additional").map(assess);
 
   // Additional licensing bites only on small HMOs. When the let is genuinely
@@ -1138,6 +1129,37 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
   // leaving a licensable HMO reported as needing nothing at all.
   const mandatorySupersedes = isMandatoryHmo && council.nation === "england";
   const additionalOutOfScope = !isSmallHmo && (mandatorySupersedes || !isMandatoryHmo);
+
+  // Selective licensing (s.80 Housing Act 2004) covers private lets that are not
+  // licensable under Part 2, so a property that definitely needs a mandatory HMO
+  // licence is outside it. Same contradiction as additional licensing had: the
+  // verdict has to move with the reasoning, or the report shows a red "Licence
+  // required" badge (and emails "Selective licence: REQUIRED") for a scheme it
+  // has already decided does not apply. Keyed off `mandatorySupersedes`, not
+  // `isMandatoryHmo`, so Wales keeps the warning: there the storey test decides,
+  // and a two-storey Welsh property is not licensable under the mandatory regime.
+  const selective = liveSchemes
+    .filter((s) => s.type === "selective")
+    .map(assess)
+    .map((a) => {
+      if (mandatorySupersedes && a.verdict !== "not-in-area") {
+        return {
+          ...a,
+          verdict: "not-applicable" as SchemeVerdict,
+          explanation:
+            a.explanation +
+            " This property needs a mandatory HMO licence, and selective licensing applies to lets that are not licensable as HMOs, so this scheme does not apply to it.",
+        };
+      }
+      if (isMandatoryHmo || isSmallHmo) {
+        return {
+          ...a,
+          explanation:
+            a.explanation + " Note: selective licensing normally applies to properties not already licensable as HMOs.",
+        };
+      }
+      return a;
+    });
   const relevantAdditional = isSmallHmo
     ? additional
     : additional.map((a) => ({
@@ -1153,12 +1175,13 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
       }));
 
   const positiveVerdicts: SchemeVerdict[] = ["required", "likely-required", "check-boundary", "upcoming"];
-  // Selective licensing normally applies to lets that are not licensable as an
-  // HMO, so a MANDATORY HMO is genuinely outside it. A small HMO is not: where
-  // no additional scheme covers it, a selective designation can still bite, and
-  // excluding it here reported no licence risk for a property with a positive
-  // selective verdict.
-  const selectiveRisk = !isMandatoryHmo && selective.some((a) => positiveVerdicts.includes(a.verdict));
+  // A small HMO is NOT outside selective licensing: where no additional scheme
+  // covers it, a selective designation can still bite, and excluding it here
+  // reported no licence risk for a property with a positive selective verdict.
+  // The mandatory-HMO exclusion now comes from the verdict itself (downgraded to
+  // not-applicable above) rather than being applied twice, which also keeps the
+  // Welsh case warning instead of silently dropping out.
+  const selectiveRisk = selective.some((a) => positiveVerdicts.includes(a.verdict));
   const additionalRisk = isSmallHmo && additional.some((a) => positiveVerdicts.includes(a.verdict));
 
   return {

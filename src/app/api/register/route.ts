@@ -11,28 +11,34 @@ import { createAdminClient } from "@/lib/supabase-admin";
  * dropped. Persist first, notify second, and never report success unless the
  * lead survived somewhere.
  *
- * Only name and email are mandatory. The two callers disagree on the rest:
- * RegisterInterestCTA marks council and role `required`, DemoPopup leaves them
- * optional, so requiring them here 400'd every demo enquiry that skipped them
- * while the popup still showed a thank-you.
+ * Only name and email are mandatory. The three callers (RegisterInterestCTA,
+ * DemoPopup, /contact) disagree on the rest: RegisterInterestCTA marks council
+ * and role `required`, the other two leave them optional, so requiring them here
+ * 400'd every demo enquiry that skipped them while the popup still showed a
+ * thank-you.
  */
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     const { name, email, councilName, role, message, source } = body ?? {};
 
-    if (!name || !email) {
+    // Trim BEFORE validating. A whitespace-only name passed the truthy guard and
+    // then trimmed away, storing a null-named lead behind a `name: string` type.
+    const str = (v: unknown, max = 200) => (v == null ? null : String(v).trim().slice(0, max) || null);
+    const cleanName = str(name);
+    const cleanEmail = str(email);
+
+    if (!cleanName || !cleanEmail) {
       return NextResponse.json({ error: "Name and email are required." }, { status: 400 });
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(String(email))) {
+    if (!emailRegex.test(cleanEmail)) {
       return NextResponse.json({ error: "Please provide a valid email address." }, { status: 400 });
     }
 
-    const str = (v: unknown, max = 200) => (v == null ? null : String(v).slice(0, max).trim() || null);
     const lead = {
-      name: str(name)!,
-      email: str(email)!,
+      name: cleanName,
+      email: cleanEmail,
       council_name: str(councilName),
       role: str(role),
       // Both callers send a free-text message and it was being thrown away,
@@ -113,11 +119,15 @@ async function notifyInterest(
   ]
     .filter((l) => l !== null)
     .join("\n");
+  // Telegram rejects anything over 4096 characters, and a 4000-char message plus
+  // the other fields clears that, so the most detailed enquiries were exactly
+  // the ones whose alert got dropped. The full text is in Supabase either way.
+  const safeText = text.length > 4000 ? `${text.slice(0, 3960)}\n[truncated, see Supabase]` : text;
   try {
     const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ chat_id: chatId, text }),
+      body: JSON.stringify({ chat_id: chatId, text: safeText }),
     });
     if (!res.ok) {
       console.error("[PRSCheck] council interest Telegram notify rejected", res.status, await res.text());
