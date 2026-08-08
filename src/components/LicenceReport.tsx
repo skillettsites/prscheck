@@ -7,6 +7,7 @@ const VERDICT_STYLE: Record<SchemeVerdict | "mandatory", { label: string; color:
   "check-boundary": { label: "Check exact boundary", color: "text-amber-200", bg: "bg-warning/10", border: "border-warning/30" },
   upcoming: { label: "Scheme starting soon", color: "text-accent-300", bg: "bg-accent-600/10", border: "border-accent-500/30" },
   "not-in-area": { label: "Not in a designated area", color: "text-navy-300", bg: "bg-navy-800/60", border: "border-navy-700" },
+  "not-applicable": { label: "Does not apply to this let", color: "text-navy-300", bg: "bg-navy-800/60", border: "border-navy-700" },
   mandatory: { label: "Mandatory HMO licence required", color: "text-red-300", bg: "bg-danger/10", border: "border-danger/40" },
 };
 

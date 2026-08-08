@@ -12,14 +12,17 @@ export const metadata: Metadata = {
 export default async function CheckPage({
   searchParams,
 }: {
-  searchParams: Promise<{ postcode?: string }>;
+  searchParams: Promise<{ postcode?: string; s?: string }>;
 }) {
-  const { postcode } = await searchParams;
+  const { postcode, s } = await searchParams;
   return (
     <div className="grid-pattern">
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <Suspense fallback={<div className="h-24" />}>
-          <CheckClient initialPostcode={postcode} />
+          {/* `s=1` is stamped only by our own postcode boxes, so an auto-run
+              that came from a real submission is logged while a bookmarked or
+              bot-replayed ?postcode= URL still is not. */}
+          <CheckClient initialPostcode={postcode} fromSearchBox={s === "1"} />
         </Suspense>
       </section>
     </div>

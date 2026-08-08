@@ -1,8 +1,14 @@
-import Link from "next/link";
+import HeroSearch from "./HeroSearch";
 
+/**
+ * Council and guide pages carry the bulk of search impressions, and the visitor
+ * arrives already asking "does my property need a licence". Sending them to
+ * /check via a link costs a whole click before they have entered anything, so
+ * the box lives here rather than a button pointing at the box.
+ */
 export default function PostcodeCTA({
   heading = "Does your property need a licence?",
-  sub = "Get a property-specific licence report in seconds.",
+  sub = "Enter your postcode for an instant free check of every scheme that could apply.",
 }: {
   heading?: string;
   sub?: string;
@@ -11,12 +17,7 @@ export default function PostcodeCTA({
     <div className="rounded-2xl border border-accent-500/30 bg-gradient-to-br from-accent-600/15 to-navy-800/40 p-6 text-center sm:p-8">
       <h2 className="text-xl font-bold text-navy-100 sm:text-2xl">{heading}</h2>
       <p className="mx-auto mt-2 max-w-xl text-sm text-navy-300">{sub}</p>
-      <Link
-        href="/check"
-        className="mt-5 inline-block rounded-lg bg-accent-600 px-7 py-3.5 font-semibold text-white transition-all hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25"
-      >
-        Check your postcode, free
-      </Link>
+      <HeroSearch className="mx-auto mt-5 flex max-w-xl flex-col gap-3 sm:flex-row" buttonLabel="Check free" />
       <p className="mt-3 text-xs text-navy-500">Free scheme check · £7.99 for the full property report</p>
     </div>
   );

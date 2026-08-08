@@ -685,7 +685,16 @@ export type SchemeVerdict =
   | "likely-required" // active ward-based scheme, ward matches
   | "check-boundary" // active street/area-level scheme, or partial-ward designation
   | "upcoming" // scheme approved/starting soon
-  | "not-in-area"; // scheme exists in council but ward does not match
+  | "not-in-area" // scheme exists in council but ward does not match
+  /**
+   * The designation covers this address, but the way the property is let puts
+   * it outside the scheme's scope: an additional (HMO) scheme against a let
+   * that is not a small HMO. Distinct from `not-in-area`, which is about
+   * geography. Without it the report badged a single-occupant let "Licence
+   * required" while the paragraph underneath said additional licensing does not
+   * apply, which is a paid report contradicting itself.
+   */
+  | "not-applicable";
 
 export interface SchemeAssessment {
   scheme: Scheme;
@@ -1114,10 +1123,15 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
     );
   const additional = liveSchemes.filter((s) => s.type === "additional").map(assess);
 
+  // Additional licensing bites only on small HMOs. When the let is outside that
+  // scope the verdict must move too, not just the explanation: leaving it at
+  // "required" badged the scheme "Licence required" directly above a sentence
+  // saying it does not apply.
   const relevantAdditional = isSmallHmo
     ? additional
     : additional.map((a) => ({
         ...a,
+        verdict: (a.verdict === "not-in-area" ? "not-in-area" : "not-applicable") as SchemeVerdict,
         explanation:
           a.explanation +
           (isMandatoryHmo

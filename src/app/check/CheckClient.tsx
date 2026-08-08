@@ -55,7 +55,13 @@ function attribution() {
   };
 }
 
-export default function CheckClient({ initialPostcode }: { initialPostcode?: string }) {
+export default function CheckClient({
+  initialPostcode,
+  fromSearchBox = false,
+}: {
+  initialPostcode?: string;
+  fromSearchBox?: boolean;
+}) {
   const [postcode, setPostcode] = useState(initialPostcode ?? "");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -133,7 +139,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   useEffect(() => {
     if (initialPostcode && !autoRan.current) {
       autoRan.current = true;
-      runCheck(undefined, { auto: true });
+      runCheck(undefined, { auto: !fromSearchBox });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [initialPostcode]);
