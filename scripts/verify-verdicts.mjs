@@ -152,5 +152,52 @@ const both = sArr.find(
   check("1 occupant / 1 household -> additional not applicable", single.additional[0]?.verdict, "not-applicable");
 }
 
+// A HEDGED additional verdict must not stand selective down. Birmingham's
+// additional scheme is borough-wide, so it returns "required" and passes either
+// way; the bug only shows on a council whose additional designation is
+// street/area-level, where the verdict is "check-boundary".
+{
+  // The council must have NO definite additional verdict, otherwise standing
+  // selective down is correct and the check passes without testing anything.
+  // Bristol and Westminster both pair a hedged scheme with a definite one.
+  const hedged = sArr.find((r) => {
+    if (!liveAdditional(r) || !liveSelective(r)) return false;
+    if ((byGss.get(r.gss) || {}).nation !== "england") return false;
+    const d = run(r.gss, 3, 3);
+    if (!d) return false;
+    const definite = d.additional.some((a) => a.verdict === "required" || a.verdict === "likely-required");
+    return !definite && d.additional.some((a) => a.verdict === "check-boundary");
+  });
+  console.log(`\nHedged additional verdict (${hedged ? hedged.council : "none in data"}):`);
+  if (!hedged) {
+    console.log("  SKIP  no council currently returns a check-boundary additional verdict");
+  } else {
+    const d = run(hedged.gss, 3, 3);
+    const selDowngraded = d.selective.some((a) => a.verdict === "not-applicable");
+    check("check-boundary additional does NOT stand selective down", String(selDowngraded), "false");
+  }
+}
+
+// An UPCOMING additional designation must not void a selective scheme that is
+// enforceable today.
+{
+  const upcoming = sArr.find((r) => {
+    if (!liveSelective(r)) return false;
+    if ((byGss.get(r.gss) || {}).nation !== "england") return false;
+    const d = run(r.gss, 3, 3);
+    if (!d) return false;
+    const definite = d.additional.some((a) => a.verdict === "required" || a.verdict === "likely-required");
+    return !definite && d.additional.some((a) => a.verdict === "upcoming");
+  });
+  console.log(`\nUpcoming additional designation (${upcoming ? upcoming.council : "none in data"}):`);
+  if (!upcoming) {
+    console.log("  SKIP  no council currently pairs an upcoming additional scheme with a live selective one");
+  } else {
+    const d = run(upcoming.gss, 3, 3);
+    const selDowngraded = d.selective.some((a) => a.verdict === "not-applicable");
+    check("upcoming additional does NOT stand selective down", String(selDowngraded), "false");
+  }
+}
+
 console.log(failures === 0 ? "\nALL CHECKS PASSED" : `\n${failures} CHECK(S) FAILED`);
 process.exit(failures === 0 ? 0 : 1);

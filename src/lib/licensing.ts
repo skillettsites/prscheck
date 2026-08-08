@@ -705,6 +705,14 @@ export interface SchemeAssessment {
 /** Verdicts that mean "this scheme could bite for this property". */
 export const POSITIVE_VERDICTS: SchemeVerdict[] = ["required", "likely-required", "check-boundary", "upcoming"];
 
+/**
+ * Verdicts that affirmatively state a licence is needed TODAY, as opposed to
+ * flagging a possibility. Only these may stand another scheme down: a
+ * `check-boundary` hedge cannot support the claim that a property is definitely
+ * licensable elsewhere, and `upcoming` is by definition not yet in force.
+ */
+export const DEFINITE_VERDICTS: SchemeVerdict[] = ["required", "likely-required"];
+
 export interface Determination {
   council: Council;
   ward: string | null;
@@ -1147,8 +1155,15 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
   // councils run both scheme types, so Birmingham at 3 occupants in 3 households
   // showed "additional: required" and "selective: check boundary" together and
   // told the buyer to apply for both.
-  const additionalCovers =
-    isSmallHmo && additional.some((a) => POSITIVE_VERDICTS.includes(a.verdict));
+  //
+  // DEFINITE, not merely positive. A `check-boundary` additional verdict is a
+  // hedge ("check this against the council's map"), and using it to stand
+  // selective down asserted the property IS licensable under the additional
+  // scheme one line after saying we could not tell (Gateshead, Merton, Newham,
+  // Sefton at 3 occupants in 3 households with no ward). `upcoming` is worse: a
+  // designation that has not commenced would void a selective scheme that is
+  // enforceable today.
+  const additionalCovers = isSmallHmo && additional.some((a) => DEFINITE_VERDICTS.includes(a.verdict));
   const licensableAsHmo = mandatorySupersedes || additionalCovers;
   const selective = liveSchemes
     .filter((s) => s.type === "selective")

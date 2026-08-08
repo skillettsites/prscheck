@@ -45,7 +45,10 @@ export async function POST(request: NextRequest) {
       // which is the part of an enquiry that actually says what they want.
       message: str(message, 4000),
       source: str(source) ?? "register-interest",
-      referrer: request.headers.get("referer") || null,
+      // Capped like every other field. This is a raw request header on a public
+      // POST, so an oversized Referer could push the truncation point into the
+      // "Page:" line and cut off the "not saved to Supabase" warning after it.
+      referrer: str(request.headers.get("referer"), 500),
       geo_city: (() => {
         const c = request.headers.get("x-vercel-ip-city");
         return c ? decodeURIComponent(c) : null;
@@ -126,7 +129,10 @@ async function notifyInterest(
   ]
     .filter((l) => l !== null)
     .join("\n");
-  const safeText = text.length > 4090 ? text.slice(0, 4090) : text;
+  // Belt and braces: every field is capped above, so this should never fire, but
+  // if it does the reader must be told the text is incomplete rather than left
+  // to assume the enquiry simply ended there.
+  const safeText = text.length > 4090 ? `${text.slice(0, 4070)}\n[truncated]` : text;
   try {
     const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: "POST",
