@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "verify:verdicts": "tsx scripts/verify-verdicts.mjs",
+    "prebuild": "npm run verify:verdicts",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
@@ -28,6 +30,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.2",
     "tailwindcss": "^4",
+    "tsx": "^4.20.3",
     "typescript": "^5"
   }
 }

@@ -1,5 +1,12 @@
-// Verdict regression check for the additional-licensing scope rules.
-// Run: npx tsx scripts/verify-verdicts.mjs   (or via the npm script)
+// Verdict regression check for the licensing scope rules.
+//
+// Runs as `prebuild`, so a breach fails `npm run build` and the Vercel deploy
+// with it. That matters more than usual here: the rules it guards depend on
+// `hasLapsed`/`hasCommenced`, which compare against today's date, so this decays
+// on the calendar rather than on a code change and cannot rely on someone
+// remembering to run it.
+//
+// Run directly: npm run verify:verdicts
 //
 // Guards the three cases that have each been wrong at least once:
 //  1. non-HMO let under a live additional scheme must not be badged "required"
@@ -194,15 +201,21 @@ const both = sArr.find(
     [3, 3],
     [5, 3],
   ];
-  const breaches = { selective: [], additional: [], risk: [] };
+  const POSITIVE = ["required", "likely-required", "check-boundary", "upcoming"];
+  // Keyed by council, not by scheme: counting per scheme inflated the number and
+  // let one multi-scheme council (Conwy) fill most of the truncated sample.
+  const breachedCouncils = { selective: new Set(), additional: new Set(), risk: new Set() };
   let downgradesSeen = { selective: 0, additional: 0 };
+  let swept = 0;
 
   for (const rec of sArr) {
     const council = byGss.get(rec.gss);
     if (!council) continue;
     for (const [occ, hh] of combos) {
+      // Scotland and NI return null: they have no Housing Act 2004 powers.
       const d = run(rec.gss, occ, hh);
       if (!d) continue;
+      swept++;
       const isMandatory = occ >= 5 && hh >= 2;
       const isSmall = !isMandatory && occ >= 3 && hh >= 2;
       const mandatorySupersedes = isMandatory && council.nation === "england";
@@ -213,7 +226,7 @@ const both = sArr.find(
         downgradesSeen.selective++;
         // Only two lawful reasons to void a selective scheme.
         const lawful = mandatorySupersedes || (isSmall && definiteAdditional);
-        if (!lawful) breaches.selective.push(`${council.name} @ ${occ}/${hh}`);
+        if (!lawful) breachedCouncils.selective.add(`${council.name} @ ${occ}/${hh}`);
       }
       for (const a of d.additional) {
         if (a.verdict !== "not-applicable") continue;
@@ -222,24 +235,44 @@ const both = sArr.find(
         // small HMO, and never for the Welsh mandatory-occupancy case where the
         // storey test decides.
         const lawful = !isSmall && (mandatorySupersedes || !isMandatory);
-        if (!lawful) breaches.additional.push(`${council.name} @ ${occ}/${hh}`);
+        if (!lawful) breachedCouncils.additional.add(`${council.name} @ ${occ}/${hh}`);
       }
-      // A property that needs, or may need, a mandatory licence must never be
-      // reported as carrying no licence risk.
-      if ((d.mandatoryHmo.required || d.mandatoryHmo.conditional) && !d.hasAnyLicenceRisk) {
-        breaches.risk.push(`${council.name} @ ${occ}/${hh}`);
+      // hasAnyLicenceRisk must agree with what the report actually shows. Keying
+      // this off the mandatory flags alone only ever fired at 5/3, so it asserted
+      // nothing for small HMOs and passed clean while `selectiveRisk` wrongly
+      // excluded them, which is the bug the flag was previously fixed for.
+      // Comparing against the surviving verdicts covers every occupancy.
+      const anyPositive =
+        d.selective.some((a) => POSITIVE.includes(a.verdict)) ||
+        d.additional.some((a) => POSITIVE.includes(a.verdict));
+      const expectedRisk = d.mandatoryHmo.required || d.mandatoryHmo.conditional || anyPositive;
+      if (d.hasAnyLicenceRisk !== expectedRisk) {
+        breachedCouncils.risk.add(
+          `${council.name} @ ${occ}/${hh} (flag ${d.hasAnyLicenceRisk}, verdicts say ${expectedRisk})`,
+        );
       }
     }
   }
 
+  // A floor on the swept count, because a gss drift between councils.json and
+  // licensing-schemes.json would shrink the sweep silently while still printing
+  // PASS. England + Wales is 318 of the 361 records; Scotland and NI are not
+  // licensable under the Housing Act 2004 and return null.
+  const MIN_SWEEP = 900;
+  console.log(`  swept ${swept} council/occupancy pairs (Scotland and NI correctly excluded)`);
+  if (swept < MIN_SWEEP) {
+    failures++;
+    console.log(`  FAIL  only ${swept} pairs swept, expected at least ${MIN_SWEEP}: the dataset join has drifted`);
+  }
   console.log(`  observed ${downgradesSeen.selective} selective and ${downgradesSeen.additional} additional stand-downs`);
   if (downgradesSeen.selective === 0 || downgradesSeen.additional === 0) {
     failures++;
     console.log("  FAIL  no stand-downs observed at all, so the rules below assert nothing");
   }
-  for (const [name, list] of Object.entries(breaches)) {
+  for (const [name, set] of Object.entries(breachedCouncils)) {
+    const list = [...set];
     if (list.length === 0) {
-      console.log(`  PASS  no unlawful ${name} outcome across ${sArr.length} councils`);
+      console.log(`  PASS  no unlawful ${name} outcome`);
     } else {
       failures++;
       console.log(`  FAIL  ${list.length} unlawful ${name} outcome(s): ${list.slice(0, 5).join(", ")}${list.length > 5 ? " ..." : ""}`);
