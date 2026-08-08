@@ -167,7 +167,12 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
                   </div>
                 </div>
                 <div className="rounded-lg bg-navy-900/60 p-4 text-center">
-                  <div className="text-2xl font-bold text-danger">{pen.rroMonths} months</div>
+                  {/* Guarded like the email path. A nation with no rent repayment
+                      regime returns 0, and "0 months" under "the tenant can
+                      claim" reads as a figure rather than an absence. */}
+                  <div className="text-2xl font-bold text-danger">
+                    {pen.rroMonths > 0 ? `${pen.rroMonths} months` : "n/a"}
+                  </div>
                   <div className="mt-1 text-xs text-navy-400">Rent Repayment Order the tenant can claim</div>
                 </div>
                 <div className="rounded-lg bg-navy-900/60 p-4 text-center">

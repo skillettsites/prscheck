@@ -763,7 +763,7 @@ export default function CheckClient({
                   The schemes above are the general picture. Your report answers the one question that matters: does{" "}
                   <span className="font-semibold text-navy-200">this specific property</span> need a licence?{" "}
                   {result.nation === "wales"
-                    ? "In Wales the mandatory HMO test also turns on storeys, which only you can count, so the report tells you exactly what to check."
+                    ? "In Wales the mandatory HMO test also turns on storeys, which only you can count, so the report tells you exactly what to check. "
                     : ""}
                   You get:
                 </p>

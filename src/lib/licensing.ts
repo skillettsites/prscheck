@@ -1339,8 +1339,13 @@ export function penaltiesFor(nation: Council["nation"]): PenaltySummary {
   if (typeof p.civilPenaltyMax === "number") {
     civilPenaltyMax = p.civilPenaltyMax;
     civilPenaltyLabel = gbp(p.civilPenaltyMax);
-  } else if (Array.isArray(p.fixedPenaltyGBP)) {
-    civilPenaltyLabel = `${gbp(p.fixedPenaltyGBP[0])}-${gbp(p.fixedPenaltyGBP[1])}`;
+  } else if (Array.isArray(p.fixedPenaltyGBP) && p.fixedPenaltyGBP.length > 0) {
+    // Length-checked. The whole point of this function is that editing the
+    // research JSON changes the site, so a one-element or empty array must not
+    // reach gbp(undefined): that throws, which 500s the paid report page and
+    // throws inside sendLicenceReportEmail in the Stripe webhook.
+    const [lo, hi] = p.fixedPenaltyGBP;
+    civilPenaltyLabel = typeof hi === "number" && hi !== lo ? `${gbp(lo)}-${gbp(hi)}` : gbp(lo);
   } else if (typeof p.fixedPenaltyGBP === "number") {
     civilPenaltyLabel = gbp(p.fixedPenaltyGBP);
   } else if (typeof p.penaltyMax === "number") {
