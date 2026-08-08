@@ -414,20 +414,34 @@ if (wal) {
   // removing the only coverage that makes `likely-required` reachable, which is
   // the coverage the 38 double-licensing cases showed up in.
   const MIN_WARD_PAIRS = 1000;
+  // Today 680. A partial strip that halves coverage should be heard about even
+  // though a total wipeout is what fails the build.
+  const MIN_LIKELY_REQUIRED = 400;
   console.log(
     `  swept ${swept} council/occupancy pairs, ${wardPairs} ward-specific, ${likelyRequiredSeen} yielding a likely-required verdict`,
   );
-  if (likelyRequiredSeen === 0) {
+  // Gated on there being a sweep to speak of, like the sibling zero-observation
+  // check below. Ungated it fired ahead of the real join failure and reported
+  // two faults where there was one, and it would have hard-blocked deploys on
+  // the ward records alone drifting, which is the dataset condition this file's
+  // policy deliberately treats as a warning.
+  if (swept >= CATASTROPHIC && likelyRequiredSeen === 0) {
     // HARD. Thousands of ward-specific sweeps across councils that publish ward
     // lists, and not one ward matched, means ward matching itself is broken.
     // That is a product fault, not dataset drift.
     failures++;
     console.log("  FAIL  no likely-required verdict anywhere: ward matching is not working, so the double-licensing rule is untested");
-  } else if (wardPairs < MIN_WARD_PAIRS) {
-    // Soft. Ward counts are concentrated (nine councils hold 624 of them), so a
-    // legitimate data refresh could drop below this, and blocking every deploy
-    // including hotfixes over dataset shape is the policy this file rejects.
-    warn(`only ${wardPairs} ward-specific pairs swept, expected at least ${MIN_WARD_PAIRS}: ward coverage has shrunk`);
+  }
+  // Reported INDEPENDENTLY, not as an else-branch. Chained behind the zero check
+  // it stayed silent whenever a single match survived, so stripping every ward
+  // list longer than ten entries (1,614 pairs to 669, most of the
+  // double-licensing coverage) printed ALL CHECKS PASSED. Ward counts are
+  // concentrated in nine councils, so a legitimate refresh can cross this and it
+  // stays a warning, but it is now always said out loud.
+  if (wardPairs < MIN_WARD_PAIRS || likelyRequiredSeen < MIN_LIKELY_REQUIRED) {
+    warn(
+      `ward coverage has shrunk: ${wardPairs} ward-specific pairs (floor ${MIN_WARD_PAIRS}) and ${likelyRequiredSeen} likely-required verdicts (floor ${MIN_LIKELY_REQUIRED}). The double-licensing rule is only partly exercised.`,
+    );
   }
   if (swept < CATASTROPHIC) {
     failures++;
