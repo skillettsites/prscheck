@@ -399,7 +399,8 @@ export default function CheckClient({
                           : ""}
                       </span>{" "}
                       covering rentals in this area. Whether your specific property needs a licence depends on its exact
-                      address and how it is let. Get a bespoke report for a definitive answer.
+                      address and how it is let. Get a bespoke report for{" "}
+                      {result.nation === "wales" ? "your property's exact position" : "a definitive answer"}.
                     </p>
                   </div>
                   <p className="text-xs font-medium uppercase tracking-wide text-navy-500">The schemes here</p>
@@ -516,7 +517,7 @@ export default function CheckClient({
                         refund waiting to happen. */}
                     The £7.99 report includes a manual check of {result.council.name}&apos;s current designations,{" "}
                     {result.nation === "wales"
-                      ? "applies the Welsh mandatory HMO test to your occupancy (the storey count is the one thing you supply)"
+                      ? "applies the Welsh mandatory HMO test to your occupancy and tells you whether the storey count is what decides it"
                       : "rules a mandatory HMO licence in or out"}
                     , and gives you the council source in writing.
                   </p>
@@ -553,7 +554,7 @@ export default function CheckClient({
                   <p className="mt-3">
                     The £7.99 report confirms your position,{" "}
                     {result.nation === "wales"
-                      ? "applies the Welsh mandatory HMO test to your occupancy (the storey count is the one thing you supply)"
+                      ? "applies the Welsh mandatory HMO test to your occupancy and tells you whether the storey count is what decides it"
                       : "rules a mandatory HMO licence in or out"}
                     , and gives you documented proof.
                   </p>
@@ -749,7 +750,8 @@ export default function CheckClient({
                   </p>
                 )}
                 <p className="mt-2 text-sm text-navy-300">
-                  <span className="font-semibold text-navy-100">£7.99 once</span> for a definitive answer, set against{" "}
+                  <span className="font-semibold text-navy-100">£7.99 once</span> for{" "}
+                  {result.nation === "wales" ? "your property's exact position" : "a definitive answer"}, set against{" "}
                   {result.nation === "wales" ? "an unlimited fine" : "a five-figure fine"} for getting it wrong.
                 </p>
               </div>
@@ -764,7 +766,9 @@ export default function CheckClient({
 
                 <ul className="mt-4 space-y-2">
                   {[
-                    "A definitive licence verdict for your exact address",
+                    result.nation === "wales"
+                      ? "Your licensing position for this exact address, scheme by scheme"
+                      : "A definitive licence verdict for your exact address",
                     "Whether it needs a mandatory HMO licence, based on how it's let",
                     "Whether your address falls inside each scheme's designated boundary",
                     "Your exact penalty exposure and the deadlines that apply",
