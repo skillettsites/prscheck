@@ -17,6 +17,14 @@ export function DemoPopup() {
     return () => window.removeEventListener("open-demo-popup", handler);
   }, []);
 
+  // Clear a previous failure whenever the popup opens. There are four close
+  // paths (Escape, backdrop, the X, and the thank-you button) and only one of
+  // them reset state, so a failed enquiry left its error sitting over an empty
+  // form the next time the popup was opened.
+  useEffect(() => {
+    if (open) setError(null);
+  }, [open]);
+
   // Close on escape
   useEffect(() => {
     if (!open) return;
@@ -101,7 +109,7 @@ export function DemoPopup() {
                     We will be in touch within 24 hours to arrange your demo. We will also notify you when the PRS Database integration goes live.
                   </p>
                   <button
-                    onClick={() => { setOpen(false); setSubmitted(false); setForm({ name: "", email: "", councilName: "", role: "", message: "" }); }}
+                    onClick={() => { setOpen(false); setSubmitted(false); setError(null); setForm({ name: "", email: "", councilName: "", role: "", message: "" }); }}
                     className="mt-6 rounded-lg border border-navy-700 px-6 py-2 text-sm font-medium text-navy-300 transition-colors hover:border-navy-600 hover:text-navy-100 cursor-pointer"
                   >
                     Close

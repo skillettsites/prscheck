@@ -237,21 +237,34 @@ const both = sArr.find(
       const mandatorySupersedes = isMandatory && council.nation === "england";
       const definiteAdditional = d.additional.some((a) => a.verdict === "required" || a.verdict === "likely-required");
 
+      // Asserted in BOTH directions. Checking only the assessments that are
+      // already not-applicable proves stand-downs are lawful but never that a
+      // required one happened, so deleting the whole stand-down branch passed
+      // the sweep clean.
+      const shouldStandDown = mandatorySupersedes || (isSmall && definiteAdditional);
       for (const a of d.selective) {
-        if (a.verdict !== "not-applicable") continue;
-        downgradesSeen.selective++;
-        // Only two lawful reasons to void a selective scheme.
-        const lawful = mandatorySupersedes || (isSmall && definiteAdditional);
-        if (!lawful) breachedCouncils.selective.add(`${council.name} @ ${occ}/${hh}`);
+        if (a.verdict === "not-in-area") continue; // geography, exempt either way
+        const stoodDown = a.verdict === "not-applicable";
+        if (stoodDown) downgradesSeen.selective++;
+        if (stoodDown !== shouldStandDown) {
+          breachedCouncils.selective.add(
+            `${council.name} @ ${occ}/${hh} (${stoodDown ? "stood down without cause" : "should have stood down"})`,
+          );
+        }
       }
+      // Additional licensing is out of scope for a let that is not a small HMO,
+      // and never for the Welsh mandatory-occupancy case where the storey test
+      // decides. Both directions again.
+      const additionalShould = !isSmall && (mandatorySupersedes || !isMandatory);
       for (const a of d.additional) {
-        if (a.verdict !== "not-applicable") continue;
-        downgradesSeen.additional++;
-        // Additional licensing is only out of scope for a let that is not a
-        // small HMO, and never for the Welsh mandatory-occupancy case where the
-        // storey test decides.
-        const lawful = !isSmall && (mandatorySupersedes || !isMandatory);
-        if (!lawful) breachedCouncils.additional.add(`${council.name} @ ${occ}/${hh}`);
+        if (a.verdict === "not-in-area") continue;
+        const stoodDown = a.verdict === "not-applicable";
+        if (stoodDown) downgradesSeen.additional++;
+        if (stoodDown !== additionalShould) {
+          breachedCouncils.additional.add(
+            `${council.name} @ ${occ}/${hh} (${stoodDown ? "stood down without cause" : "should have stood down"})`,
+          );
+        }
       }
       // hasAnyLicenceRisk must agree with what the report actually shows. Keying
       // this off the mandatory flags alone only ever fired at 5/3, so it asserted

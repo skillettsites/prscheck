@@ -707,11 +707,19 @@ export const POSITIVE_VERDICTS: SchemeVerdict[] = ["required", "likely-required"
 
 /**
  * Verdicts that affirmatively state a licence is needed TODAY, as opposed to
- * flagging a possibility. Only these may stand another scheme down: a
- * `check-boundary` hedge cannot support the claim that a property is definitely
- * licensable elsewhere, and `upcoming` is by definition not yet in force.
+ * flagging a possibility. Only these may stand another scheme down.
+ *
+ * `required` ONLY. `check-boundary` is an explicit hedge, `upcoming` is by
+ * definition not yet in force, and `likely-required` reads as definite but is
+ * emitted by `assess` branches that are themselves hedging: Gateshead at 3
+ * occupants in 3 households returns "Some designations cover only parts of a
+ * ward, so confirm the exact boundary" as likely-required, and letting that
+ * stand the selective scheme down asserted flatly that the scheme did not apply
+ * on the strength of a maybe. Standing nothing down is over-warning, which is
+ * the safe direction for a compliance product; standing a live scheme down on a
+ * hedge is not.
  */
-export const DEFINITE_VERDICTS: SchemeVerdict[] = ["required", "likely-required"];
+export const DEFINITE_VERDICTS: SchemeVerdict[] = ["required"];
 
 export interface Determination {
   council: Council;
@@ -1191,17 +1199,25 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
     });
   const relevantAdditional = isSmallHmo
     ? additional
-    : additional.map((a) => ({
-        ...a,
-        verdict: (additionalOutOfScope && a.verdict !== "not-in-area" ? "not-applicable" : a.verdict) as SchemeVerdict,
-        explanation:
-          a.explanation +
-          (mandatorySupersedes
-            ? " This property meets the MANDATORY HMO threshold, so mandatory licensing applies instead of additional licensing."
-            : isMandatoryHmo
-              ? " This property meets the occupancy part of the Welsh mandatory HMO test. If it has three or more storeys a mandatory licence applies instead; if it has one or two, it is not mandatorily licensable and this additional scheme is the one that covers it."
-              : " This property is not an HMO on the details given (fewer than 3 occupants or a single household), so additional licensing does not currently apply, but would if occupancy changes."),
-      }));
+    : additional.map((a) => {
+        // The not-in-area exemption has to cover the EXPLANATION as well as the
+        // verdict. Applying it to only one produced a Cardiff report at 5
+        // occupants / 3 households badged "Not in a designated area" directly
+        // above "this additional scheme is the one that covers it": the same
+        // self-contradiction this whole change set out to remove.
+        if (a.verdict === "not-in-area") return a;
+        return {
+          ...a,
+          verdict: (additionalOutOfScope ? "not-applicable" : a.verdict) as SchemeVerdict,
+          explanation:
+            a.explanation +
+            (mandatorySupersedes
+              ? " This property meets the MANDATORY HMO threshold, so mandatory licensing applies instead of additional licensing."
+              : isMandatoryHmo
+                ? " This property meets the occupancy part of the Welsh mandatory HMO test. If it has three or more storeys a mandatory licence applies instead; if it has one or two, it is not mandatorily licensable and this additional scheme is the one that covers it."
+                : " This property is not an HMO on the details given (fewer than 3 occupants or a single household), so additional licensing does not currently apply, but would if occupancy changes."),
+        };
+      });
 
   const positiveVerdicts = POSITIVE_VERDICTS;
   // A small HMO is NOT outside selective licensing: where no additional scheme
