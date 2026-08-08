@@ -79,6 +79,12 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
   const [addressError, setAddressError] = useState(false);
   const [occupants, setOccupants] = useState("");
   const [households, setHouseholds] = useState("");
+  // Per-field messages for the purchase form. The page-level `error` banner only
+  // renders on the search screen, so a validation failure set there while a
+  // result was showing produced a button that silently did nothing.
+  const [occupantsError, setOccupantsError] = useState<string | null>(null);
+  const [householdsError, setHouseholdsError] = useState<string | null>(null);
+  const [buyError, setBuyError] = useState<string | null>(null);
   const [buying, setBuying] = useState(false);
   const autoRan = useRef(false);
 
@@ -167,26 +173,27 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
 
   async function buy() {
     if (!result) return;
-    if (!address.trim()) {
-      setAddressError(true);
-      return;
-    }
     const occ = parseInt(occupants, 10);
     const hh = parseInt(households, 10);
-    if (!occ || occ < 1) {
-      setError("Please enter how many people live in the property.");
+
+    // Validate every field before returning, so all three problems are shown at
+    // once rather than one per click.
+    const missingAddress = !address.trim();
+    const occMsg = !occ || occ < 1 ? "Required" : occ > 50 ? "Must be 50 or fewer" : null;
+    const hhMsg = !hh || hh < 1 ? "Required" : occMsg === null && hh > occ ? "Cannot exceed occupants" : null;
+    setAddressError(missingAddress);
+    setOccupantsError(occMsg);
+    setHouseholdsError(hhMsg);
+    if (missingAddress || occMsg || hhMsg) {
+      setBuyError("Please complete the fields marked above before continuing.");
       return;
     }
-    if (!hh || hh < 1 || hh > occ) {
-      setError("Households must be at least 1 and no more than the number of occupants.");
-      return;
-    }
+    setBuyError(null);
     // Matches only when the buyer picked from the lookup, not when they typed
     // their own address, which is what keeps a hand-typed street out of the
     // street matcher.
     const selectedItem = addressItems.find((i) => i.address === address.trim());
     setBuying(true);
-    setError(null);
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
@@ -214,7 +221,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
       });
       const data = await res.json();
       if (!res.ok || !data.url) {
-        setError(
+        setBuyError(
           data.error === "unsupported_nation"
             ? "The paid report covers England and Wales, where councils can run licensing schemes. See the guidance below for your nation."
             : "Could not start checkout. Please try again.",
@@ -224,7 +231,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
       }
       window.location.href = data.url;
     } catch {
-      setError("Could not start checkout. Please try again.");
+      setBuyError("Could not start checkout. Please try again.");
       setBuying(false);
     }
   }
@@ -499,9 +506,14 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                 <p className="text-center text-base font-bold text-navy-100">
                   Confirm if your specific address needs a licence.
                 </p>
+                <p className="mt-1 text-center text-xs text-navy-400">
+                  All three fields below are required. They decide the answer, so we cannot run the report without them.
+                </p>
                 <div className="mt-4">
                   <div className="mb-1 flex items-center justify-between gap-2">
-                    <label className="block text-xs font-medium text-navy-400">Property address</label>
+                    <label className="block text-xs font-medium text-navy-400">
+                      Property address <span className="text-red-400" aria-hidden>*</span>
+                    </label>
                     {addressError && (
                       <span className="text-xs font-medium text-red-400">
                         Please select or enter the property address
@@ -517,7 +529,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                     <>
                       <select
                         value={address}
-                        onChange={(e) => { setAddress(e.target.value); setAddressError(false); }}
+                        onChange={(e) => { setAddress(e.target.value); setAddressError(false); setBuyError(null); }}
                         className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 focus:border-accent-500 focus:outline-none"
                       >
                         <option value="">Select your property...</option>
@@ -543,7 +555,7 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                       <input
                         type="text"
                         value={address}
-                        onChange={(e) => { setAddress(e.target.value); setAddressError(false); }}
+                        onChange={(e) => { setAddress(e.target.value); setAddressError(false); setBuyError(null); }}
                         placeholder="e.g. 14 Example Street"
                         className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
                       />
@@ -562,36 +574,75 @@ export default function CheckClient({ initialPostcode }: { initialPostcode?: str
                     </>
                   )}
                 </div>
-                <div className="mt-3 grid grid-cols-2 items-end gap-3">
+                <div className="mt-3 grid grid-cols-2 items-start gap-3">
                   <div>
-                    <label className="mb-1 block text-xs font-medium text-navy-400">People living there</label>
+                    <div className="mb-1 flex items-baseline justify-between gap-2">
+                      <label className="block text-xs font-medium text-navy-400">
+                        People living there <span className="text-red-400" aria-hidden>*</span>
+                      </label>
+                      {occupantsError && <span className="text-xs font-medium text-red-400">{occupantsError}</span>}
+                    </div>
                     <input
                       type="number"
                       min={1}
                       max={50}
+                      required
+                      aria-invalid={!!occupantsError}
                       value={occupants}
-                      onChange={(e) => setOccupants(e.target.value)}
+                      onChange={(e) => {
+                        setOccupants(e.target.value);
+                        setOccupantsError(null);
+                        setHouseholdsError(null);
+                        setBuyError(null);
+                        // One person is one household by definition, so filling it
+                        // in removes a field the buyer cannot get wrong.
+                        if (e.target.value === "1") setHouseholds("1");
+                      }}
                       placeholder="e.g. 4"
-                      className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
+                      className={`w-full rounded-lg border bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:outline-none ${
+                        occupantsError ? "border-red-500/70 focus:border-red-500" : "border-navy-700 focus:border-accent-500"
+                      }`}
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs font-medium text-navy-400">Households</label>
+                    <div className="mb-1 flex items-baseline justify-between gap-2">
+                      <label className="block text-xs font-medium text-navy-400">
+                        Households <span className="text-red-400" aria-hidden>*</span>
+                      </label>
+                      {householdsError && <span className="text-xs font-medium text-red-400">{householdsError}</span>}
+                    </div>
                     <input
                       type="number"
                       min={1}
                       max={50}
+                      required
+                      aria-invalid={!!householdsError}
                       value={households}
-                      onChange={(e) => setHouseholds(e.target.value)}
+                      onChange={(e) => {
+                        setHouseholds(e.target.value);
+                        setHouseholdsError(null);
+                        setBuyError(null);
+                      }}
                       placeholder="e.g. 3"
-                      className="w-full rounded-lg border border-navy-700 bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
+                      className={`w-full rounded-lg border bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:outline-none ${
+                        householdsError ? "border-red-500/70 focus:border-red-500" : "border-navy-700 focus:border-accent-500"
+                      }`}
                     />
                   </div>
                 </div>
                 <p className="mt-2 text-xs text-navy-500">
                   A &quot;household&quot; is one person or a family/couple. Five unrelated tenants sharing = 5 households.
-                  A couple plus a lodger = 2 households.
+                  A couple plus a lodger = 2 households. We ask because 5+ people in 2+ households needs a mandatory HMO
+                  licence anywhere in England, whatever your council does.
                 </p>
+                {buyError && (
+                  <p
+                    role="alert"
+                    className="mt-3 rounded-lg border border-danger/40 bg-danger/10 px-3 py-2.5 text-sm text-red-300"
+                  >
+                    {buyError}
+                  </p>
+                )}
                 <button
                   onClick={buy}
                   disabled={buying}
