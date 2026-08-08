@@ -205,7 +205,7 @@ export default function HMODetectionPage() {
               </p>
               <div className="mt-8 grid gap-6 sm:grid-cols-3">
                 <div className="rounded-xl border border-navy-800 bg-navy-950 p-6 text-center">
-                  <p className="text-3xl font-bold text-accent-400">£30,000</p>
+                  <p className="text-3xl font-bold text-accent-400">£40,000</p>
                   <p className="mt-2 text-sm text-navy-400">
                     Maximum civil penalty per offence
                   </p>

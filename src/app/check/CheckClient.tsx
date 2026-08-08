@@ -483,9 +483,24 @@ export default function CheckClient({
                   </p>
                   <ul className="mt-3 space-y-1.5">
                     <li>
+                      {/* The mandatory HMO test differs by nation and this block
+                          renders for Wales too. Wales kept the three-storey
+                          requirement England dropped in 2018, and has no £40,000
+                          civil penalty, so the England wording asserted both a
+                          test and a penalty that do not apply there. */}
                       • A <span className="font-semibold text-navy-100">mandatory HMO licence</span> is required{" "}
-                      <span className="font-semibold">anywhere in England</span> once a property is let to 5+ people in
-                      2+ households, whatever your council does. Penalties reach £40,000.
+                      {result.nation === "wales" ? (
+                        <>
+                          <span className="font-semibold">anywhere in Wales</span> once a property is let to 5+ people in
+                          2+ households AND has three or more storeys, whatever your council does. An unlimited fine can
+                          follow on conviction.
+                        </>
+                      ) : (
+                        <>
+                          <span className="font-semibold">anywhere in England</span> once a property is let to 5+ people
+                          in 2+ households, whatever your council does. Penalties reach £40,000.
+                        </>
+                      )}
                     </li>
                     <li>
                       • Selective and additional schemes are often street or part-ward designations, so they can apply
@@ -508,9 +523,19 @@ export default function CheckClient({
                   <ul className="mt-3 space-y-1.5">
                     <li>
                       • A <span className="font-semibold text-navy-100">mandatory HMO licence</span> is required{" "}
-                      <span className="font-semibold">anywhere in England</span> once a property is let to 5+ people in
-                      2+ households, with no council scheme needed. This is where landlords most often get caught, with
-                      penalties up to £40,000.
+                      {result.nation === "wales" ? (
+                        <>
+                          <span className="font-semibold">anywhere in Wales</span> once a property is let to 5+ people in
+                          2+ households AND has three or more storeys, with no council scheme needed. This is where
+                          landlords most often get caught.
+                        </>
+                      ) : (
+                        <>
+                          <span className="font-semibold">anywhere in England</span> once a property is let to 5+ people
+                          in 2+ households, with no council scheme needed. This is where landlords most often get caught,
+                          with penalties up to £40,000.
+                        </>
+                      )}
                     </li>
                     <li>
                       • Schemes change, and street or part-ward designations nearby can still apply to your exact address.
@@ -659,7 +684,7 @@ export default function CheckClient({
                 <p className="mt-2 text-xs text-navy-500">
                   A &quot;household&quot; is one person or a family/couple. Five unrelated tenants sharing = 5 households.
                   A couple plus a lodger = 2 households. We ask because 5+ people in 2+ households needs a mandatory HMO
-                  licence anywhere in England, whatever your council does.
+                  licence anywhere in {result.nation === "wales" ? "Wales, if the property also has three or more storeys" : "England, whatever your council does"}.
                 </p>
                 {buyError && (
                   <p

@@ -1,5 +1,5 @@
 import type { LicenceReportData } from "@/lib/report";
-import type { SchemeAssessment, SchemeVerdict } from "@/lib/licensing";
+import { penaltiesFor, type SchemeAssessment, type SchemeVerdict } from "@/lib/licensing";
 
 const VERDICT_STYLE: Record<SchemeVerdict | "mandatory", { label: string; color: string; bg: string; border: string }> = {
   required: { label: "Licence required", color: "text-red-300", bg: "bg-danger/10", border: "border-danger/40" },
@@ -147,35 +147,38 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
       {/* Penalties */}
       <section className="mt-6 rounded-2xl border border-navy-700 bg-navy-800/60 p-6">
         <h2 className="text-lg font-bold text-navy-100">What&apos;s at stake if you don&apos;t comply</h2>
-        <div className="mt-4 grid gap-3 sm:grid-cols-3">
-          <div className="rounded-lg bg-navy-900/60 p-4 text-center">
-            {/* Reports are snapshotted into Supabase at purchase and /r/[token]
-                re-renders that stored JSON, so every report sold before
-                nation-aware penalties existed has no label. Falling back to the
-                stored number keeps those reports rendering a figure instead of
-                a blank. */}
-            <div className="text-2xl font-bold text-danger">
-              {d.penaltySummary.civilPenaltyLabel ?? `£${(d.penaltySummary.civilPenaltyMax ?? 0).toLocaleString("en-GB")}`}
-            </div>
-            <div className="mt-1 text-xs text-navy-400">
-              {d.council.nation === "wales"
-                ? "Fixed penalty notice per offence"
-                : "Max civil penalty per offence (from 1 May 2026)"}
-            </div>
-          </div>
-          <div className="rounded-lg bg-navy-900/60 p-4 text-center">
-            <div className="text-2xl font-bold text-danger">{d.penaltySummary.rroMonths} months</div>
-            <div className="mt-1 text-xs text-navy-400">Rent Repayment Order the tenant can claim</div>
-          </div>
-          <div className="rounded-lg bg-navy-900/60 p-4 text-center">
-            <div className="text-2xl font-bold text-danger capitalize">{d.penaltySummary.criminalFine ?? "Unlimited"}</div>
-            <div className="mt-1 text-xs text-navy-400">Fine on criminal prosecution</div>
-          </div>
-        </div>
-        <p className="mt-4 text-xs text-navy-500">
-          {d.penaltySummary.otherConsequences ??
-            "Operating without a required licence is also grounds for a banning order and can block possession once the national PRS Database is live. Being unlicensed does not remove your repairing and safety obligations."}
-        </p>
+        {/* Reports are snapshotted into Supabase at purchase and /r/[token]
+            re-renders that stored JSON, so reports sold before nation-aware
+            penalties existed carry England's figures for every nation and none
+            of the new fields. Recomputing from the stored nation, rather than
+            falling back to the stored numbers, corrects those reports too:
+            falling back printed £40,000 under a "Fixed penalty notice" caption
+            for Wales, which is the exact contradiction this replaced. */}
+        {(() => {
+          const pen = penaltiesFor(d.council.nation);
+          const isWales = d.council.nation === "wales";
+          return (
+            <>
+              <div className="mt-4 grid gap-3 sm:grid-cols-3">
+                <div className="rounded-lg bg-navy-900/60 p-4 text-center">
+                  <div className="text-2xl font-bold text-danger">{pen.civilPenaltyLabel}</div>
+                  <div className="mt-1 text-xs text-navy-400">
+                    {isWales ? "Fixed penalty notice per offence" : "Max civil penalty per offence (from 1 May 2026)"}
+                  </div>
+                </div>
+                <div className="rounded-lg bg-navy-900/60 p-4 text-center">
+                  <div className="text-2xl font-bold text-danger">{pen.rroMonths} months</div>
+                  <div className="mt-1 text-xs text-navy-400">Rent Repayment Order the tenant can claim</div>
+                </div>
+                <div className="rounded-lg bg-navy-900/60 p-4 text-center">
+                  <div className="text-2xl font-bold text-danger capitalize">{pen.criminalFine}</div>
+                  <div className="mt-1 text-xs text-navy-400">Fine on criminal prosecution</div>
+                </div>
+              </div>
+              <p className="mt-4 text-xs text-navy-500">{pen.otherConsequences}</p>
+            </>
+          );
+        })()}
       </section>
 
       {/* Action plan */}

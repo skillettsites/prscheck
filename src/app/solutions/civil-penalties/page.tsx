@@ -18,17 +18,24 @@ export const metadata: Metadata = {
   },
 };
 
+// £40,000, not £30,000. The Housing Act 2004 s.249A maximum was raised from
+// £30,000 to £40,000 on 1 May 2026 by the Renters' Rights Act 2025, so this
+// table has been publishing a superseded figure to the enforcement officers it
+// is written for. The PRS Database rows are a two-tier regime, not a single
+// £30,000 cap: £7,000 for a failure to register and £40,000 for serious or
+// repeat breaches. The Act is 2025, not 2024.
+// Figures: src/data/national-rules.json -> england.penalties, england.prsDatabase.
 const penaltyTable = [
-  { offence: "Failure to comply with Improvement Notice", act: "Housing Act 2004, s.30", max: "£30,000" },
-  { offence: "Operating an unlicensed HMO", act: "Housing Act 2004, s.72(1)", max: "£30,000" },
-  { offence: "Operating an unlicensed property (selective/additional)", act: "Housing Act 2004, s.95(1)", max: "£30,000" },
-  { offence: "Breach of HMO management regulations", act: "Housing Act 2004, s.234", max: "£30,000" },
-  { offence: "Breach of licence conditions", act: "Housing Act 2004, s.72(3) / s.95(2)", max: "£30,000" },
-  { offence: "Failure to comply with overcrowding notice", act: "Housing Act 2004, s.139(7)", max: "£30,000" },
+  { offence: "Failure to comply with Improvement Notice", act: "Housing Act 2004, s.30", max: "£40,000" },
+  { offence: "Operating an unlicensed HMO", act: "Housing Act 2004, s.72(1)", max: "£40,000" },
+  { offence: "Operating an unlicensed property (selective/additional)", act: "Housing Act 2004, s.95(1)", max: "£40,000" },
+  { offence: "Breach of HMO management regulations", act: "Housing Act 2004, s.234", max: "£40,000" },
+  { offence: "Breach of licence conditions", act: "Housing Act 2004, s.72(3) / s.95(2)", max: "£40,000" },
+  { offence: "Failure to comply with overcrowding notice", act: "Housing Act 2004, s.139(7)", max: "£40,000" },
   { offence: "Letting a property with EPC below minimum E", act: "Energy Efficiency Regulations 2015, reg.36", max: "£5,000" },
-  { offence: "Failure to provide a valid EICR", act: "Electrical Safety Regulations 2020, reg.3", max: "£30,000" },
-  { offence: "Failure to register on PRS Database", act: "Renters' Rights Act 2024, s.75", max: "£30,000" },
-  { offence: "Failure to comply with PRS Database requirements", act: "Renters' Rights Act 2024, s.76", max: "£30,000" },
+  { offence: "Failure to provide a valid EICR", act: "Electrical Safety Regulations 2020, reg.3", max: "£40,000" },
+  { offence: "Failure to register on PRS Database", act: "Renters' Rights Act 2025, s.75", max: "£7,000" },
+  { offence: "PRS Database: serious or repeat breach", act: "Renters' Rights Act 2025, s.76", max: "£40,000" },
 ];
 
 const calculationFactors = [
@@ -101,7 +108,7 @@ export default function CivilPenaltiesPage() {
             <div className="mx-auto max-w-4xl">
               <h2 className="text-3xl font-bold text-white">Penalty starting amounts</h2>
               <p className="mt-4 text-navy-300">
-                The Housing Act 2004 (as amended by the Housing and Planning Act 2016) allows councils to impose civil penalties of up to £30,000 per offence as an alternative to prosecution. The following table lists the key offences.
+                The Housing Act 2004 s.249A allows councils to impose civil penalties as an alternative to prosecution. The maximum rose from £30,000 to £40,000 on 1 May 2026 under the Renters&apos; Rights Act 2025. The following table lists the key offences.
               </p>
               <div className="mt-8 overflow-x-auto">
                 <table className="w-full text-sm">

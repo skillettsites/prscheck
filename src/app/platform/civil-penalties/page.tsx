@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 const penaltyAmounts = [
-  { offence: "Failure to licence an HMO", starting: "£10,000", maximum: "£30,000" },
-  { offence: "Breach of HMO management regulations", starting: "£5,000", maximum: "£30,000" },
-  { offence: "Failure to comply with improvement notice", starting: "£10,000", maximum: "£30,000" },
-  { offence: "Failure to comply with overcrowding notice", starting: "£5,000", maximum: "£30,000" },
-  { offence: "Breach of banning order", starting: "£15,000", maximum: "£30,000" },
+  { offence: "Failure to licence an HMO", starting: "£10,000", maximum: "£40,000" },
+  { offence: "Breach of HMO management regulations", starting: "£5,000", maximum: "£40,000" },
+  { offence: "Failure to comply with improvement notice", starting: "£10,000", maximum: "£40,000" },
+  { offence: "Failure to comply with overcrowding notice", starting: "£5,000", maximum: "£40,000" },
+  { offence: "Breach of banning order", starting: "£15,000", maximum: "£40,000" },
   { offence: "Failure to display energy certificate", starting: "£2,000", maximum: "£5,000" },
-  { offence: "Unlawful eviction or harassment", starting: "£10,000", maximum: "£30,000" },
-  { offence: "Breach of selective licensing", starting: "£5,000", maximum: "£30,000" },
+  { offence: "Unlawful eviction or harassment", starting: "£10,000", maximum: "£40,000" },
+  { offence: "Breach of selective licensing", starting: "£5,000", maximum: "£40,000" },
 ];
 
 const factors = [
@@ -76,7 +76,7 @@ export default function CivilPenaltiesPage() {
             </h1>
             <p className="mt-6 text-base text-navy-400 sm:text-xl">
               Auto-calculate penalty amounts per MHCLG guidance. Standardise your
-              team's approach, reduce tribunal challenges, and maximise penalty income.
+              team&apos;s approach, reduce tribunal challenges, and maximise penalty income.
             </p>
           </div>
         </div>

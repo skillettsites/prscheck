@@ -1346,9 +1346,23 @@ export function penaltiesFor(nation: Council["nation"]): PenaltySummary {
   const consequences: string[] = [];
   if (p.banningOrders) consequences.push("a banning order");
   if (p.rentStoppingOrders) consequences.push("a rent stopping order");
-  if (p.possessionRestriction) consequences.push("being unable to serve a valid possession notice");
+  if (p.possessionRestriction) {
+    // England's restriction is CONDITIONAL on the PRS Database going live, which
+    // national-rules records as "not yet live as of 2026-07". Stating it flatly
+    // told an English landlord they cannot regain possession today, which is not
+    // true yet. Wales's restriction is already in force.
+    consequences.push(
+      nation === "england"
+        ? "being unable to regain possession once the national PRS Database is live"
+        : "being unable to serve a valid possession notice",
+    );
+  }
+  const list =
+    consequences.length > 1
+      ? `${consequences.slice(0, -1).join(", ")} and ${consequences[consequences.length - 1]}`
+      : consequences[0];
   const otherConsequences = consequences.length
-    ? `Operating without a required licence also risks ${consequences.join(", ")}. Being unlicensed does not remove your repairing and safety obligations.`
+    ? `Operating without a required licence also risks ${list}. Being unlicensed does not remove your repairing and safety obligations.`
     : "Being unlicensed does not remove your repairing and safety obligations.";
 
   return { civilPenaltyMax, civilPenaltyLabel, rroMonths, criminalFine, otherConsequences };

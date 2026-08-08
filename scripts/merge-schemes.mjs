@@ -180,8 +180,7 @@ const lean = incoming.map((rec) => {
   void research;
   return rest;
 });
-fs.writeFileSync(ARCHIVE, JSON.stringify(archive, null, 2) + "
-", "utf8");
+fs.writeFileSync(ARCHIVE, JSON.stringify(archive, null, 2) + "\n", "utf8");
 
 const merged = [...existing, ...lean].sort((a, b) => a.council.localeCompare(b.council, "en-GB"));
 fs.writeFileSync(TARGET, JSON.stringify(merged, null, 2) + "\n", "utf8");

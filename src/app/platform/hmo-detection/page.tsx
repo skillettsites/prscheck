@@ -33,8 +33,11 @@ const signals = [
 ];
 
 const penaltyStats = [
-  { value: "Up to £30,000", label: "Civil penalty per offence for unlicensed HMOs" },
-  { value: "12 months", label: "Rent repayment order period tenants can claim" },
+  // £40,000 since 1 May 2026 (Renters' Rights Act 2025), and the rent repayment
+  // order was extended from 12 to 24 months at the same time. Both figures live
+  // in src/data/national-rules.json.
+  { value: "Up to £40,000", label: "Civil penalty per offence for unlicensed HMOs" },
+  { value: "24 months", label: "Rent repayment order period tenants can claim" },
   { value: "85%", label: "Detection rate in first month of deployment" },
   { value: "340+", label: "Unlicensed HMOs found in a single London borough" },
 ];
