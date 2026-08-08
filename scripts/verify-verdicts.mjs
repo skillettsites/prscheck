@@ -58,7 +58,7 @@ console.log(`  England council with a live selective scheme : ${engSel ? engSel.
 // likely-required as definite after the engine stopped treating it that way, and
 // passed only because it swept with every ward null, which makes likely-required
 // unreachable. Same literal, two sources of truth, no failure.
-const { determine, DEFINITE_VERDICTS, POSITIVE_VERDICTS } = await import("../src/lib/licensing.ts");
+const { determine, penaltiesFor, DEFINITE_VERDICTS, POSITIVE_VERDICTS } = await import("../src/lib/licensing.ts");
 
 /**
  * Two severities, because this runs as `prebuild` and therefore gates deploys.
@@ -86,12 +86,14 @@ const warn = (message) => {
 };
 
 // WARN, not exit(1). This is the `prebuild` script and every named fixture
-// depends on a designation still being live: all 11 Welsh additional schemes
-// carry end dates, the earliest 2026-12-31. Hard-failing means the day that
-// lapses, every production build breaks, including unrelated hotfixes, for a
-// dataset condition rather than a code fault. Same policy as every other
-// fixture check here; the sweep at the end is the hard guard and needs no
-// fixture. Placed after `warn` because const is not hoisted.
+// depends on a designation still being live. The Welsh one is Cardiff, whose
+// additional scheme ends 2028-02-01; the last Welsh additional designations run
+// to 2031-03-31, so this is not imminent, but hard-failing here would mean that
+// the day the last one lapses every production build breaks, hotfixes included,
+// for a dataset condition rather than a code fault. Same policy as every other
+// fixture check here. The sweep at the end is the hard guard and needs no
+// fixture, and the catastrophic-join check below still exits non-zero.
+// Placed after `warn` because const is not hoisted.
 const missingFixtures = [!eng && "England additional", !wal && "Wales additional", !engSel && "England selective"].filter(
   Boolean,
 );
@@ -176,13 +178,20 @@ const both = sArr.find(
   }
 }
 
-if (eng && wal) {
+// NOT gated on a fixture: penaltiesFor takes only the nation and reads
+// national-rules.json, so it needs no live scheme. Gating it on `eng && wal`
+// meant the England assertions would disappear along with the Wales fixture,
+// and the "varies" sentinel fallthrough this block exists to catch would ship
+// green.
+{
   // Penalties are nation-specific and were hardcoded to England's for everyone,
   // so the paid Welsh report quoted a £40,000 civil penalty and a 24-month rent
   // repayment order, neither of which exists in Wales.
   console.log("\nPenalties by nation:");
-  const engP = run(eng.gss, 3, 3).penaltySummary;
-  const walP = run(wal.gss, 3, 3).penaltySummary;
+  // Straight from penaltiesFor rather than through determine(), so these hold
+  // whether or not a council fixture happens to be available.
+  const engP = penaltiesFor("england");
+  const walP = penaltiesFor("wales");
   // Pinned to exact values on BOTH nations. Asserting only that Wales differs
   // from England let the label fall through to the "varies" sentinel if
   // fixedPenaltyGBP were removed from the JSON: the report would print "varies"
@@ -360,13 +369,26 @@ if (wal) {
   // PASS. England + Wales is 318 of the 361 records; Scotland and NI are not
   // licensable under the Housing Act 2004 and return null.
   const MIN_SWEEP = 900;
+  // A CATASTROPHIC join break is a hard failure, not a warning. Every breach set
+  // is empty when nothing is swept, so with an unreadable or mismatched dataset
+  // the script would otherwise print PASS four times, "ALL CHECKS PASSED", and
+  // exit 0 having asserted nothing at all. A modest shortfall stays a warning,
+  // because that is dataset drift rather than a fault.
+  const CATASTROPHIC = 100;
   console.log(`  swept ${swept} council/occupancy pairs (Scotland and NI correctly excluded)`);
-  if (swept < MIN_SWEEP) {
+  if (swept < CATASTROPHIC) {
+    failures++;
+    console.log(`  FAIL  only ${swept} pairs swept: the councils.json / licensing-schemes.json join is broken, so nothing below was actually tested`);
+  } else if (swept < MIN_SWEEP) {
     warn(`only ${swept} pairs swept, expected at least ${MIN_SWEEP}: check the councils.json / licensing-schemes.json join`);
   }
   console.log(`  observed ${downgradesSeen.selective} selective and ${downgradesSeen.additional} additional stand-downs`);
-  if (downgradesSeen.selective === 0 || downgradesSeen.additional === 0) {
-    warn("no stand-downs observed at all, so the rules below assert nothing");
+  if (swept >= CATASTROPHIC && downgradesSeen.selective === 0 && downgradesSeen.additional === 0) {
+    // Thousands of pairs and not one stand-down means the rules are not running.
+    failures++;
+    console.log("  FAIL  no stand-downs observed across the whole sweep, so the stand-down rules are not being exercised");
+  } else if (downgradesSeen.selective === 0 || downgradesSeen.additional === 0) {
+    warn("one stand-down type was never observed, so that rule asserts nothing today");
   }
   for (const [name, set] of Object.entries(breachedCouncils)) {
     const list = [...set];
