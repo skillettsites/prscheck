@@ -21,6 +21,12 @@ export async function sendLicenceReportEmail(
   const verdictLines: string[] = [];
   if (d.mandatoryHmo.required) {
     verdictLines.push("Mandatory HMO licence: REQUIRED");
+  } else if (d.mandatoryHmo.conditional) {
+    // Wales keeps the three-storey test England dropped in 2018 and we do not
+    // collect storeys, so this is neither required nor not required. Without
+    // this branch a Welsh property that meets the occupancy test fell through
+    // to "No licence requirement identified", which is the opposite of true.
+    verdictLines.push("Mandatory HMO licence: DEPENDS ON STOREYS (required in Wales at three or more)");
   }
   for (const a of d.selective) {
     if (a.verdict === "required" || a.verdict === "likely-required") {
@@ -34,6 +40,10 @@ export async function sendLicenceReportEmail(
   for (const a of d.additional) {
     if (a.verdict === "required" || a.verdict === "likely-required") {
       verdictLines.push(`Additional (HMO) licence: ${a.verdict === "required" ? "REQUIRED" : "LIKELY REQUIRED"}`);
+    } else if (a.verdict === "check-boundary") {
+      // Mirrors the selective branch above. Omitting it dropped a positive
+      // additional-licensing verdict out of the email entirely.
+      verdictLines.push("Additional (HMO) licence: CHECK BOUNDARY (street-level designation)");
     } else if (a.verdict === "upcoming") {
       verdictLines.push(`Additional licensing scheme starting ${a.scheme.start ?? "soon"}`);
     }

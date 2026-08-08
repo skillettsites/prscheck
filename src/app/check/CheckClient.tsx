@@ -139,6 +139,16 @@ export default function CheckClient({
   useEffect(() => {
     if (initialPostcode && !autoRan.current) {
       autoRan.current = true;
+      // Strip `s=1` as soon as it has been consumed. Left in the address bar it
+      // is part of the URL the visitor bookmarks, reloads and navigates back
+      // to, and every one of those would log another search: the phantom-search
+      // problem the `log` flag exists to prevent, reintroduced through the
+      // parameter added to fix it.
+      if (fromSearchBox && typeof window !== "undefined") {
+        const url = new URL(window.location.href);
+        url.searchParams.delete("s");
+        window.history.replaceState(null, "", url.pathname + url.search);
+      }
       runCheck(undefined, { auto: !fromSearchBox });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

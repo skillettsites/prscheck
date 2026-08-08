@@ -1123,20 +1123,33 @@ export function determine(gss: string, answers: PropertyAnswers): Determination 
     );
   const additional = liveSchemes.filter((s) => s.type === "additional").map(assess);
 
-  // Additional licensing bites only on small HMOs. When the let is outside that
-  // scope the verdict must move too, not just the explanation: leaving it at
-  // "required" badged the scheme "Licence required" directly above a sentence
-  // saying it does not apply.
+  // Additional licensing bites only on small HMOs. When the let is genuinely
+  // outside that scope the verdict must move too, not just the explanation:
+  // leaving it at "required" badged the scheme "Licence required" directly
+  // above a sentence saying it does not apply.
+  //
+  // WALES IS THE EXCEPTION AND MUST NOT BE DOWNGRADED. England's mandatory
+  // regime supersedes additional licensing outright, but Wales also requires
+  // three or more storeys (WSI 2006/1712 (W.174)), which we do not collect. A
+  // two-storey Welsh property at 5 occupants / 2 households is an HMO that
+  // mandatory licensing does NOT cover, so the council's additional scheme is
+  // exactly what applies to it. Blanket-downgrading here badged that property
+  // "Does not apply to this let" while `mandatoryHmo.required` was also false,
+  // leaving a licensable HMO reported as needing nothing at all.
+  const mandatorySupersedes = isMandatoryHmo && council.nation === "england";
+  const additionalOutOfScope = !isSmallHmo && (mandatorySupersedes || !isMandatoryHmo);
   const relevantAdditional = isSmallHmo
     ? additional
     : additional.map((a) => ({
         ...a,
-        verdict: (a.verdict === "not-in-area" ? "not-in-area" : "not-applicable") as SchemeVerdict,
+        verdict: (additionalOutOfScope && a.verdict !== "not-in-area" ? "not-applicable" : a.verdict) as SchemeVerdict,
         explanation:
           a.explanation +
-          (isMandatoryHmo
+          (mandatorySupersedes
             ? " This property meets the MANDATORY HMO threshold, so mandatory licensing applies instead of additional licensing."
-            : " This property is not an HMO on the details given (fewer than 3 occupants or a single household), so additional licensing does not currently apply, but would if occupancy changes."),
+            : isMandatoryHmo
+              ? " This property meets the occupancy part of the Welsh mandatory HMO test. If it has three or more storeys a mandatory licence applies instead; if it has one or two, it is not mandatorily licensable and this additional scheme is the one that covers it."
+              : " This property is not an HMO on the details given (fewer than 3 occupants or a single household), so additional licensing does not currently apply, but would if occupancy changes."),
       }));
 
   const positiveVerdicts: SchemeVerdict[] = ["required", "likely-required", "check-boundary", "upcoming"];

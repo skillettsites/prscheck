@@ -7,6 +7,7 @@ export function DemoPopup() {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({ name: "", email: "", councilName: "", role: "", message: "" });
 
   // Listen for custom event from any "Book a Demo" button
@@ -28,16 +29,23 @@ export function DemoPopup() {
     e.preventDefault();
     if (!form.email || !form.name) return;
     setLoading(true);
+    setError(null);
     try {
-      await fetch("/api/register", {
+      const res = await fetch("/api/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, source: "demo-popup" }),
       });
+      // Showing the thank-you regardless is how enquiries went missing: the
+      // visitor believed they had booked a demo that nobody ever received.
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        setError(data.error || "We could not send that. Please email hello@prscheck.co.uk.");
+        return;
+      }
       setSubmitted(true);
     } catch {
-      // still show success
-      setSubmitted(true);
+      setError("Network error. Please try again, or email hello@prscheck.co.uk.");
     } finally {
       setLoading(false);
     }
@@ -206,6 +214,11 @@ export function DemoPopup() {
                         placeholder="e.g. HMO detection, PRS Database readiness..."
                       />
                     </div>
+                    {error && (
+                      <p role="alert" className="rounded-lg border border-danger/40 bg-danger/10 px-3 py-2.5 text-xs text-red-300">
+                        {error}
+                      </p>
+                    )}
                     <button
                       type="submit"
                       disabled={loading}
