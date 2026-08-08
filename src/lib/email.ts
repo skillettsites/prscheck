@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import type { LicenceReportData } from "@/lib/report";
+import { penaltiesFor } from "@/lib/licensing";
 
 function getResend(): Resend {
   const key = (process.env.RESEND_API_KEY ?? "").replace(/\\n$/, "").trim();
@@ -54,11 +55,17 @@ export async function sendLicenceReportEmail(
 
   // Nation-aware, because this hardcoded England's £40,000 and 24 months and was
   // sent to Welsh buyers alongside a report that (now) says £150-£250 and 12.
-  const pen = d.penaltySummary;
+  // Recomputed from the stored nation rather than read from the snapshot, so
+  // reports sold before nation-aware penalties existed are corrected too.
+  // Deliberately NOT `pen.rroMonths || 24`: a nation with no rent repayment
+  // order regime has rroMonths 0, and `||` turned that straight back into a
+  // 24-month claim, which is the England figure this exists to stop repeating.
+  const pen = penaltiesFor(d.council.nation);
+  const rroClause = pen.rroMonths > 0 ? ` and rent repayment orders up to ${pen.rroMonths} months' rent` : "";
   const penaltyPhrase =
     d.council.nation === "wales"
-      ? `fixed penalties of ${pen.civilPenaltyLabel ?? "£150-£250"}, an unlimited fine on conviction and rent repayment orders up to ${pen.rroMonths || 12} months' rent`
-      : `civil penalties up to ${pen.civilPenaltyLabel ?? "£40,000"} and rent repayment orders up to ${pen.rroMonths || 24} months' rent`;
+      ? `fixed penalties of ${pen.civilPenaltyLabel}, an unlimited fine on conviction${rroClause}`
+      : `civil penalties up to ${pen.civilPenaltyLabel}${rroClause}`;
 
   const html = `
   <div style="font-family:Arial,Helvetica,sans-serif;max-width:600px;margin:0 auto;color:#1e293b">

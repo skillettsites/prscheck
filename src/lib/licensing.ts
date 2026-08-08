@@ -1325,7 +1325,13 @@ export function penaltiesFor(nation: Council["nation"]): PenaltySummary {
   const rules = (NATIONAL_RULES[NATION_KEY[nation]] ?? {}) as NationRules;
   const p: PenaltyBlock = { ...(rules.registration ?? {}), ...(rules.registration?.penalties ?? {}), ...(rules.penalties ?? {}) };
   const criminalFine =
-    p.unlicensedCriminalFine ?? p.criminalFine ?? (typeof p.courtFineMaxGBP === "number" ? `up to ${gbp(p.courtFineMaxGBP)}` : "unlimited");
+    p.unlicensedCriminalFine ??
+    p.criminalFine ??
+    (typeof p.courtFineMaxGBP === "number"
+      ? `up to ${gbp(p.courtFineMaxGBP)}`
+      : typeof p.penaltyMax === "number"
+        ? `up to ${gbp(p.penaltyMax)}`
+        : "unlimited");
   const rroMonths = p.rro?.maxMonthsRent ?? 0;
 
   let civilPenaltyMax = 0;
@@ -1338,9 +1344,12 @@ export function penaltiesFor(nation: Council["nation"]): PenaltySummary {
   } else if (typeof p.fixedPenaltyGBP === "number") {
     civilPenaltyLabel = gbp(p.fixedPenaltyGBP);
   } else if (typeof p.penaltyMax === "number") {
-    // Scotland records a single maximum for registration and HMO offences.
-    civilPenaltyMax = p.penaltyMax;
-    civilPenaltyLabel = gbp(p.penaltyMax);
+    // Scotland's figure is a COURT FINE maximum, not a civil penalty: Scotland
+    // has no s.249A-style civil penalty regime. Labelling it as one, and then
+    // separately claiming an "unlimited" criminal fine, stated two different
+    // things about the same money.
+    civilPenaltyMax = 0;
+    civilPenaltyLabel = "n/a";
   }
 
   const consequences: string[] = [];

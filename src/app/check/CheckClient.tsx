@@ -761,7 +761,11 @@ export default function CheckClient({
                 <h3 className="text-lg font-bold text-navy-100">Get the verdict for YOUR property</h3>
                 <p className="mt-1 text-sm text-navy-400">
                   The schemes above are the general picture. Your report answers the one question that matters: does{" "}
-                  <span className="font-semibold text-navy-200">this specific property</span> need a licence? You get:
+                  <span className="font-semibold text-navy-200">this specific property</span> need a licence?{" "}
+                  {result.nation === "wales"
+                    ? "In Wales the mandatory HMO test also turns on storeys, which only you can count, so the report tells you exactly what to check."
+                    : ""}
+                  You get:
                 </p>
 
                 <ul className="mt-4 space-y-2">
@@ -769,7 +773,9 @@ export default function CheckClient({
                     result.nation === "wales"
                       ? "Your licensing position for this exact address, scheme by scheme"
                       : "A definitive licence verdict for your exact address",
-                    "Whether it needs a mandatory HMO licence, based on how it's let",
+                    result.nation === "wales"
+                      ? "How the Welsh mandatory HMO test applies to your let, and whether the storey count is what decides it"
+                      : "Whether it needs a mandatory HMO licence, based on how it's let",
                     "Whether your address falls inside each scheme's designated boundary",
                     "Your exact penalty exposure and the deadlines that apply",
                     "A step-by-step action plan to get compliant",

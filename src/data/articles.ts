@@ -406,7 +406,7 @@ export const articles: Article[] = [
         id: "what-are-rros",
         heading: "What Are Rent Repayment Orders?",
         content:
-          "Rent Repayment Orders (RROs) were introduced by the Housing Act 2004 and expanded by the Housing and Planning Act 2016. An RRO requires a landlord to repay up to 12 months' rent to the tenant or to the local authority (where housing benefit or Universal Credit housing element was paid). The Renters' Rights Act 2025 further expands the offences covered by RROs and makes it easier for councils to apply on behalf of tenants. RROs serve a dual purpose: they compensate tenants who have been paying rent for a property where the landlord was committing an offence, and they act as a powerful financial deterrent against non-compliance. For councils, RROs are a valuable enforcement tool that supplements civil penalties.",
+          "Rent Repayment Orders (RROs) were introduced by the Housing Act 2004 and expanded by the Housing and Planning Act 2016. An RRO requires a landlord to repay up to 24 months' rent for offences committed on or after 1 May 2026 (12 months for earlier offences) to the tenant or to the local authority (where housing benefit or Universal Credit housing element was paid). The Renters' Rights Act 2025 further expands the offences covered by RROs and makes it easier for councils to apply on behalf of tenants. RROs serve a dual purpose: they compensate tenants who have been paying rent for a property where the landlord was committing an offence, and they act as a powerful financial deterrent against non-compliance. For councils, RROs are a valuable enforcement tool that supplements civil penalties.",
       },
       {
         id: "eligible-offences",
@@ -418,13 +418,13 @@ export const articles: Article[] = [
         id: "application-process",
         heading: "The Application Process for Councils",
         content:
-          "Councils can apply for an RRO to the First-tier Tribunal (Property Chamber). The application must be made within 12 months of the date the offence was committed (or the date the council became aware of it, in the case of ongoing offences). The process begins with the council determining that an offence has been committed. This does not require a criminal conviction; the council must be satisfied beyond reasonable doubt (the criminal standard of proof) that the offence occurred. The council then serves a notice of intended proceedings on the landlord, giving at least 28 days to make representations. After considering any representations, the council decides whether to proceed with the application. If proceeding, the council submits an application to the Tribunal with supporting evidence. The Tribunal will schedule a hearing at which both parties can present their case.",
+          "Councils can apply for an RRO to the First-tier Tribunal (Property Chamber). The application must be made within 24 months of the date the offence was committed (or the date the council became aware of it, in the case of ongoing offences). The process begins with the council determining that an offence has been committed. This does not require a criminal conviction; the council must be satisfied beyond reasonable doubt (the criminal standard of proof) that the offence occurred. The council then serves a notice of intended proceedings on the landlord, giving at least 28 days to make representations. After considering any representations, the council decides whether to proceed with the application. If proceeding, the council submits an application to the Tribunal with supporting evidence. The Tribunal will schedule a hearing at which both parties can present their case.",
       },
       {
         id: "evidence-and-calculation",
         heading: "Evidence Requirements and Amount Calculation",
         content:
-          "The application must include evidence proving the offence was committed, details of the rent paid during the relevant period, evidence of housing benefit or Universal Credit payments if applicable, and details of any previous enforcement action against the landlord. The Tribunal determines the amount of the RRO based on: the severity of the offence; the landlord's conduct and compliance history; the landlord's financial circumstances; and whether the landlord has previously been the subject of an RRO. The maximum RRO is 12 months' rent. There is a presumption that the full amount should be awarded unless there are mitigating factors. Where the council is the applicant (rather than the tenant), the order requires the landlord to repay the housing benefit or Universal Credit element to the local authority.",
+          "The application must include evidence proving the offence was committed, details of the rent paid during the relevant period, evidence of housing benefit or Universal Credit payments if applicable, and details of any previous enforcement action against the landlord. The Tribunal determines the amount of the RRO based on: the severity of the offence; the landlord's conduct and compliance history; the landlord's financial circumstances; and whether the landlord has previously been the subject of an RRO. The maximum RRO is 24 months' rent for offences on or after 1 May 2026, and 12 months for earlier ones. There is a presumption that the full amount should be awarded unless there are mitigating factors. Where the council is the applicant (rather than the tenant), the order requires the landlord to repay the housing benefit or Universal Credit element to the local authority.",
       },
       {
         id: "practical-considerations",
@@ -448,7 +448,7 @@ export const articles: Article[] = [
       {
         question: "What is the maximum amount of a Rent Repayment Order?",
         answer:
-          "Up to 12 months' rent. There is a presumption that the full amount should be awarded unless the Tribunal finds mitigating circumstances.",
+          "Up to 24 months' rent for offences committed on or after 1 May 2026, and up to 12 months for earlier offences. There is a presumption that the full amount should be awarded unless the Tribunal finds mitigating circumstances.",
       },
       {
         question: "Who receives the money from an RRO?",
