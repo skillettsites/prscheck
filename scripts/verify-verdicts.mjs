@@ -58,7 +58,12 @@ if (!eng || !wal || !engSel) {
   process.exit(1);
 }
 
-const { determine } = await import("../src/lib/licensing.ts");
+// Import the rules rather than restating them. Hardcoding the verdict lists let
+// the guard and the engine encode DIFFERENT rules: the sweep still listed
+// likely-required as definite after the engine stopped treating it that way, and
+// passed only because it swept with every ward null, which makes likely-required
+// unreachable. Same literal, two sources of truth, no failure.
+const { determine, DEFINITE_VERDICTS, POSITIVE_VERDICTS } = await import("../src/lib/licensing.ts");
 
 /**
  * Two severities, because this runs as `prebuild` and therefore gates deploys.
@@ -85,11 +90,11 @@ const warn = (message) => {
   console.log(`  WARN  ${message}`);
 };
 
-const run = (gss, occupants, households) =>
+const runWard = (gss, occupants, households, wardName = null) =>
   determine(gss, {
     occupants,
     households,
-    wardName: null,
+    wardName,
     street: null,
     streetSource: "",
     houseNumber: null,
@@ -97,6 +102,7 @@ const run = (gss, occupants, households) =>
     latitude: null,
     longitude: null,
   });
+const run = (gss, occupants, households) => runWard(gss, occupants, households, null);
 
 // Guard against a fixture that yields no scheme at all: every "not downgraded"
 // assertion below is a negative check and would pass on an empty array.
@@ -116,7 +122,7 @@ const needScheme = (label, list) => {
   check("1 occupant / 1 household -> mandatory required", String(single.mandatoryHmo.required), "false");
 
   const small = run(eng.gss, 3, 3);
-  const smallOk = ["required", "likely-required", "check-boundary", "upcoming"].includes(small.additional[0]?.verdict);
+  const smallOk = POSITIVE_VERDICTS.includes(small.additional[0]?.verdict);
   check("3 occupants / 3 households (small HMO) -> positive verdict kept", String(smallOk), "true");
 
   const mand = run(eng.gss, 5, 3);
@@ -150,9 +156,7 @@ const both = sArr.find(
   } else {
     const small = run(both.gss, 3, 3);
     if (needScheme("both-scheme fixture returns an additional scheme", small.additional)) {
-      const addPositive = ["required", "likely-required", "check-boundary", "upcoming"].includes(
-        small.additional[0]?.verdict,
-      );
+      const addPositive = POSITIVE_VERDICTS.includes(small.additional[0]?.verdict);
       check("3 occupants / 3 households -> additional still positive", String(addPositive), "true");
     }
     if (needScheme("both-scheme fixture returns a selective scheme", small.selective)) {
@@ -188,7 +192,7 @@ const both = sArr.find(
     if ((byGss.get(r.gss) || {}).nation !== "england") return false;
     const d = run(r.gss, 3, 3);
     if (!d) return false;
-    const definite = d.additional.some((a) => a.verdict === "required" || a.verdict === "likely-required");
+    const definite = d.additional.some((a) => DEFINITE_VERDICTS.includes(a.verdict));
     return !definite && d.additional.some((a) => a.verdict === "check-boundary");
   });
   console.log(`\nHedged additional verdict (${hedged ? hedged.council : "none in data today"}):`);
@@ -217,25 +221,37 @@ const both = sArr.find(
     [3, 3],
     [5, 3],
   ];
-  const POSITIVE = ["required", "likely-required", "check-boundary", "upcoming"];
   // Keyed by council, not by scheme: counting per scheme inflated the number and
   // let one multi-scheme council (Conwy) fill most of the truncated sample.
-  const breachedCouncils = { selective: new Set(), additional: new Set(), risk: new Set() };
+  const breachedCouncils = { selective: new Set(), additional: new Set(), risk: new Set(), double: new Set() };
   let downgradesSeen = { selective: 0, additional: 0 };
   let swept = 0;
 
   for (const rec of sArr) {
     const council = byGss.get(rec.gss);
     if (!council) continue;
+    // Sweep WITH the designated wards, not just with wardName null. A null ward
+    // makes `likely-required` unreachable, so a sweep without wards cannot see
+    // the 38 double-licensing cases that the DEFINITE_VERDICTS rule exists to
+    // prevent, and passed clean while they were live.
+    const wards = [
+      null,
+      ...new Set(
+        (rec.schemes || [])
+          .filter((s) => s.status === "active" || s.status === "upcoming")
+          .flatMap((s) => s.wards || []),
+      ),
+    ];
     for (const [occ, hh] of combos) {
+      for (const ward of wards) {
       // Scotland and NI return null: they have no Housing Act 2004 powers.
-      const d = run(rec.gss, occ, hh);
+      const d = runWard(rec.gss, occ, hh, ward);
       if (!d) continue;
       swept++;
       const isMandatory = occ >= 5 && hh >= 2;
       const isSmall = !isMandatory && occ >= 3 && hh >= 2;
       const mandatorySupersedes = isMandatory && council.nation === "england";
-      const definiteAdditional = d.additional.some((a) => a.verdict === "required" || a.verdict === "likely-required");
+      const definiteAdditional = d.additional.some((a) => DEFINITE_VERDICTS.includes(a.verdict));
 
       // Asserted in BOTH directions. Checking only the assessments that are
       // already not-applicable proves stand-downs are lawful but never that a
@@ -248,7 +264,7 @@ const both = sArr.find(
         if (stoodDown) downgradesSeen.selective++;
         if (stoodDown !== shouldStandDown) {
           breachedCouncils.selective.add(
-            `${council.name} @ ${occ}/${hh} (${stoodDown ? "stood down without cause" : "should have stood down"})`,
+            `${council.name}${ward ? ` [${ward}]` : ""} @ ${occ}/${hh} (${stoodDown ? "stood down without cause" : "should have stood down"})`,
           );
         }
       }
@@ -262,23 +278,43 @@ const both = sArr.find(
         if (stoodDown) downgradesSeen.additional++;
         if (stoodDown !== additionalShould) {
           breachedCouncils.additional.add(
-            `${council.name} @ ${occ}/${hh} (${stoodDown ? "stood down without cause" : "should have stood down"})`,
+            `${council.name}${ward ? ` [${ward}]` : ""} @ ${occ}/${hh} (${stoodDown ? "stood down without cause" : "should have stood down"})`,
           );
         }
       }
+      // DOUBLE-LICENSING, checked independently of DEFINITE_VERDICTS.
+      //
+      // Every other rule here derives its expectation from the same constants
+      // the engine uses, which catches drift but makes those rules tautological:
+      // narrowing DEFINITE_VERDICTS to ["required"] moves the engine and the
+      // expectation together and the sweep stays green, which is exactly what
+      // happened. This one states the outcome a landlord must never see, in its
+      // own terms: additional licensing covers small HMOs, selective covers lets
+      // that are NOT licensable as HMOs, so no property can be told it needs
+      // both. The two verdict names below are deliberately literal, because they
+      // define "the report asserts a licence is needed" rather than restating an
+      // engine rule.
+      const asserts = (a) => a.verdict === "required" || a.verdict === "likely-required";
+      if (d.additional.some(asserts) && d.selective.some(asserts)) {
+        breachedCouncils.double.add(
+          `${council.name}${ward ? ` [${ward}]` : ""} @ ${occ}/${hh} (additional=[${d.additional.map((a) => a.verdict)}] selective=[${d.selective.map((a) => a.verdict)}])`,
+        );
+      }
+
       // hasAnyLicenceRisk must agree with what the report actually shows. Keying
       // this off the mandatory flags alone only ever fired at 5/3, so it asserted
       // nothing for small HMOs and passed clean while `selectiveRisk` wrongly
       // excluded them, which is the bug the flag was previously fixed for.
       // Comparing against the surviving verdicts covers every occupancy.
       const anyPositive =
-        d.selective.some((a) => POSITIVE.includes(a.verdict)) ||
-        d.additional.some((a) => POSITIVE.includes(a.verdict));
+        d.selective.some((a) => POSITIVE_VERDICTS.includes(a.verdict)) ||
+        d.additional.some((a) => POSITIVE_VERDICTS.includes(a.verdict));
       const expectedRisk = d.mandatoryHmo.required || d.mandatoryHmo.conditional || anyPositive;
       if (d.hasAnyLicenceRisk !== expectedRisk) {
         breachedCouncils.risk.add(
-          `${council.name} @ ${occ}/${hh} (flag ${d.hasAnyLicenceRisk}, verdicts say ${expectedRisk})`,
+          `${council.name}${ward ? ` [${ward}]` : ""} @ ${occ}/${hh} (flag ${d.hasAnyLicenceRisk}, verdicts say ${expectedRisk})`,
         );
+      }
       }
     }
   }

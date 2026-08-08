@@ -707,19 +707,22 @@ export const POSITIVE_VERDICTS: SchemeVerdict[] = ["required", "likely-required"
 
 /**
  * Verdicts that affirmatively state a licence is needed TODAY, as opposed to
- * flagging a possibility. Only these may stand another scheme down.
+ * flagging a possibility. Only these may stand another scheme down: a
+ * `check-boundary` hedge cannot support the claim that a property is definitely
+ * licensable elsewhere, and `upcoming` is by definition not yet in force.
  *
- * `required` ONLY. `check-boundary` is an explicit hedge, `upcoming` is by
- * definition not yet in force, and `likely-required` reads as definite but is
- * emitted by `assess` branches that are themselves hedging: Gateshead at 3
- * occupants in 3 households returns "Some designations cover only parts of a
- * ward, so confirm the exact boundary" as likely-required, and letting that
- * stand the selective scheme down asserted flatly that the scheme did not apply
- * on the strength of a maybe. Standing nothing down is over-warning, which is
- * the safe direction for a compliance product; standing a live scheme down on a
- * hedge is not.
+ * `likely-required` BELONGS HERE and narrowing this to `["required"]` was wrong.
+ * It reads like a hedge because its explanation ends "confirm the exact
+ * boundary", but it is emitted when the property's ward IS in the designation's
+ * published list, and the competing selective scheme is assessed from the same
+ * ward list with the same confidence. Dropping it produced 38 Gateshead-style
+ * cases where a 3-occupant, 3-household let came back additional=likely-required
+ * AND selective=likely-required, and the report told the landlord to apply for
+ * two licences the Act makes mutually exclusive. Measured with wards populated:
+ * 38 cases without it, 0 with it. The genuinely hedged path emits
+ * `check-boundary`, which this constant already excludes.
  */
-export const DEFINITE_VERDICTS: SchemeVerdict[] = ["required"];
+export const DEFINITE_VERDICTS: SchemeVerdict[] = ["required", "likely-required"];
 
 export interface Determination {
   council: Council;

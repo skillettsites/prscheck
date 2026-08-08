@@ -17,12 +17,16 @@ export function DemoPopup() {
     return () => window.removeEventListener("open-demo-popup", handler);
   }, []);
 
-  // Clear a previous failure whenever the popup opens. There are four close
-  // paths (Escape, backdrop, the X, and the thank-you button) and only one of
-  // them reset state, so a failed enquiry left its error sitting over an empty
-  // form the next time the popup was opened.
+  // Reset EVERYTHING whenever the popup opens. There are four close paths
+  // (Escape, backdrop, the X, and the thank-you button) and only one of them
+  // reset state, so a failed enquiry left its error sitting over an empty form,
+  // and a successful one left the popup stuck on the thank-you panel with no
+  // form at all and the previous submission still in state.
   useEffect(() => {
-    if (open) setError(null);
+    if (!open) return;
+    setError(null);
+    setSubmitted(false);
+    setForm({ name: "", email: "", councilName: "", role: "", message: "" });
   }, [open]);
 
   // Close on escape
