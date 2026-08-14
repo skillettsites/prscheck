@@ -19,16 +19,27 @@ export function deriveReportToken(sessionId: string): string {
 /**
  * Accept a report token only if it is the exact shape we issue.
  *
- * Tokens are looked up with `ilike("stripe_session_id", "%" + token)`, and in a
- * LIKE pattern `%` and `_` are wildcards. An unvalidated token of "%" therefore
- * matched EVERY report row rather than none, and the query's
- * order-by-newest-limit-1 handed back the most recent customer's report. The
- * token's ~70 bits of entropy were irrelevant, because the wildcard never had to
- * guess.
- *
- * Stripe session ids are alphanumeric, so a strict 12-character alphanumeric
- * test removes every LIKE metacharacter and closes that off at the door.
+ * The issued token is the last 12 characters of the Stripe session id, not the
+ * id itself, so lookups cannot `.eq("stripe_session_id", token)`. They use
+ * exact suffix equality on that column (`regexMatch` with `token$`), not
+ * LIKE/ilike. An unvalidated "%" used to be a LIKE wildcard that matched every
+ * report row; the alphanumeric gate still rejects anything that is not the
+ * issued shape before a query runs.
  */
 export function isValidReportToken(token: string | null | undefined): boolean {
   return typeof token === "string" && /^[A-Za-z0-9]{12}$/.test(token);
+}
+
+/**
+ * Exact suffix match for a validated report token.
+ *
+ * `regexMatch` is POSIX regex (`~`), so `token$` means the session id ends with
+ * this literal suffix. Callers must already have passed `isValidReportToken`,
+ * which guarantees the token has no regex metacharacters. Not LIKE/ilike: no
+ * `%` or `_` wildcards.
+ */
+export function applyReportTokenFilter<
+  Q extends { regexMatch: (column: string, pattern: string) => Q },
+>(query: Q, token: string): Q {
+  return query.regexMatch("stripe_session_id", `${token}$`);
 }
