@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { createAdminClient } from "@/lib/supabase-admin";
-import { isValidReportToken, type LicenceReportData } from "@/lib/report";
+import { applyReportTokenFilter, isValidReportToken, type LicenceReportData } from "@/lib/report";
 import LicenceReport from "@/components/LicenceReport";
 
 export const runtime = "nodejs";
@@ -14,17 +14,15 @@ export const metadata: Metadata = {
 };
 
 async function getReport(token: string): Promise<LicenceReportData | null> {
-  // The lookup is a LIKE pattern, so `%` and `_` in the token are wildcards
-  // rather than literals: an unvalidated "%" matched every report and the
-  // order-by-newest would have handed back a stranger's. Reject anything that is
-  // not the exact 12-character alphanumeric shape we issue.
+  // Reject anything that is not the exact 12-character alphanumeric shape we
+  // issue. The lookup is exact suffix equality on stripe_session_id, not LIKE.
   if (!isValidReportToken(token)) return null;
   try {
     const admin = createAdminClient();
-    const { data, error } = await admin
-      .from("reports")
-      .select("data, status, stripe_session_id")
-      .ilike("stripe_session_id", `%${token}`)
+    const { data, error } = await applyReportTokenFilter(
+      admin.from("reports").select("data, status, stripe_session_id"),
+      token,
+    )
       .order("created_at", { ascending: false })
       .limit(1)
       .maybeSingle();
