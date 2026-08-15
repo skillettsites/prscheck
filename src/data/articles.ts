@@ -478,7 +478,7 @@ export const articles: Article[] = [
   // ─────────────────────────────────────────────────────────────
   {
     slug: "hmo-detection-methods",
-    title: "HMO Detection: 6 Methods for Identifying Unlicensed Properties",
+    title: "Identifying Unlicensed HMOs: 6 Detection Methods",
     metaDescription:
       "Six proven methods for detecting unlicensed HMOs. Covers council tax cross-referencing, EPC analysis, waste data, tenancy deposits, and technology-assisted approaches.",
     category: "Enforcement",
