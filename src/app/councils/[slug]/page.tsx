@@ -150,10 +150,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!council) return {};
   const summary = councilSummary(council.gss)!;
   const hasLive = summary.activeSelective.length + summary.activeAdditional.length > 0;
-  const title = `${council.name} Landlord Licensing 2026: Selective, Additional & HMO`;
+  const title = `${council.name} Landlord Licence Check: Postcode + £7.99 Report`;
   const description = hasLive
-    ? `${council.name} operates ${summary.activeSelective.length > 0 ? "selective" : ""}${summary.activeSelective.length > 0 && summary.activeAdditional.length > 0 ? " and " : ""}${summary.activeAdditional.length > 0 ? "additional (HMO)" : ""} licensing. Check dates, fees, covered areas and whether your property needs a licence.`
-    : `Does your rental property in ${council.name} need a licence? Current selective, additional and mandatory HMO licensing rules, penalties, and a free postcode check.`;
+    ? `Check a ${council.name} postcode for selective, additional and HMO licensing. Free scheme check, then a £7.99 property report with dates, fees and what to do.`
+    : `Does your ${council.name} rental need a licence? Free postcode check of selective, additional and mandatory HMO rules, then a £7.99 property report.`;
   return {
     title,
     description,
