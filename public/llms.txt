@@ -14,6 +14,7 @@ PRSCheck maps every selective and additional (HMO) licensing scheme in England t
 
 ## Core pages
 - [Check my property](https://prscheck.co.uk/check): free postcode licence check + £7.99 report
+- [Property licence check](https://prscheck.co.uk/property-licence-check): property licence checker + £7.99 report
 - [Licensing by council](https://prscheck.co.uk/councils): every English council's schemes, dates and fees
 - [Guides](https://prscheck.co.uk/guides): landlord licensing, selective licensing, HMO licensing, Renters' Rights Act, penalties
 - [Homepage](https://prscheck.co.uk/)

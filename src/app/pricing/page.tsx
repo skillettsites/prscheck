@@ -3,9 +3,9 @@ import Link from "next/link";
 import { BookDemoButton } from "@/components/DemoPopup";
 
 export const metadata: Metadata = {
-  title: "Pricing",
+  title: "Pricing: £7.99 Landlord Licence Check or Council Platform",
   description:
-    "Transparent pricing for PRSCheck PRS enforcement platform. Starter from \u00a3500/mo, Professional \u00a31,500/mo, Enterprise custom. All include PRS Database integration.",
+    "Landlord Licence Check £7.99 for a property-specific report. Councils: Starter £500/mo, Professional £1,500/mo, Enterprise custom.",
   alternates: { canonical: "https://prscheck.co.uk/pricing" },
 };
 
@@ -163,9 +163,27 @@ export default function PricingPage() {
             Pricing
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-navy-400">
-            Transparent, scalable pricing designed for local authority budgets.
-            All plans include PRS Database integration at no additional cost.
+            Landlords: a £7.99 property licence report. Councils: platform plans from £500/mo, including PRS Database integration.
           </p>
+        </div>
+      </section>
+
+      <section className="border-b border-navy-800 bg-navy-900 py-16">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-accent-400">For landlords</p>
+          <h2 className="mt-2 text-3xl font-bold text-navy-100">Landlord Licence Check</h2>
+          <p className="mx-auto mt-3 max-w-xl text-navy-300">
+            Free postcode check of selective, additional and mandatory HMO schemes.
+            A £7.99 report gives the property-specific verdict, scheme dates and fees, penalty exposure, and an action plan.
+          </p>
+          <p className="mt-6 text-4xl font-bold text-navy-100">£7.99</p>
+          <p className="mt-1 text-sm text-navy-500">one-off · England and Wales</p>
+          <Link
+            href="/check"
+            className="mt-8 inline-flex rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-accent-500"
+          >
+            Check a postcode
+          </Link>
         </div>
       </section>
 

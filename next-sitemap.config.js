@@ -46,6 +46,7 @@ module.exports = {
     // /check reads searchParams so it renders dynamically and next-sitemap
     // does not auto-discover it. It is the primary conversion page, so add it.
     paths.push({ loc: '/check', changefreq: 'weekly', priority: 0.95 });
+    paths.push({ loc: '/property-licence-check', changefreq: 'weekly', priority: 0.9 });
 
     // Platform pages
     const platformPages = [
