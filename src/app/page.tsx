@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import HeroSearch from "@/components/HeroSearch";
-import { councilsWithLiveSchemes, englishCouncils } from "@/lib/licensing";
+import { councilsWithLiveSchemes, englishCouncils, penaltiesFor } from "@/lib/licensing";
+import { RRO_FACTS } from "@/lib/rro";
 
 export const metadata: Metadata = {
-  title: "PRSCheck | Do I Need a Landlord Licence? Check Your Postcode",
+  title: "PRSCheck | Does This Property Need a Landlord Licence?",
   description:
-    "Find out instantly whether your rental property needs a selective, additional or HMO licence. Check any postcode free, then get a property-specific report for £7.99. Avoid penalties up to £40,000.",
+    "Check any UK postcode free for selective, additional and HMO licensing. Landlords: a £7.99 property-specific report and action plan. Tenants: a £29 evidence report for a Rent Repayment Order of up to 24 months' rent.",
   alternates: { canonical: "https://prscheck.co.uk" },
   openGraph: {
-    title: "PRSCheck | Do I Need a Landlord Licence?",
+    title: "PRSCheck | Does This Property Need a Landlord Licence?",
     description:
-      "Check whether your rental property needs a licence. Free postcode check, £7.99 property report. Avoid penalties up to £40,000.",
+      "One postcode check, two answers. Landlords avoid a £40,000 penalty; tenants claim up to 24 months' rent back.",
     url: "https://prscheck.co.uk",
   },
 };
@@ -37,6 +38,7 @@ const steps = [
 export default function HomePage() {
   const live = councilsWithLiveSchemes();
   const total = englishCouncils().length;
+  const pen = penaltiesFor("england");
 
   const jsonLd = [
     {
@@ -53,7 +55,19 @@ export default function HomePage() {
         "Property-specific check of selective, additional and mandatory HMO licensing requirements for UK rental properties.",
       provider: { "@type": "Organization", name: "PRSCheck", url: "https://prscheck.co.uk" },
       areaServed: "GB",
+      audience: { "@type": "Audience", audienceType: "Landlords and letting agents" },
       offers: { "@type": "Offer", price: "7.99", priceCurrency: "GBP" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Rent Repayment Order Evidence Report",
+      description:
+        "Evidence pack for a tenant's Rent Repayment Order claim: whether the property required a licence, the council designation with dates and source, and the claim calculated on the Acheampong v Roman method.",
+      provider: { "@type": "Organization", name: "PRSCheck", url: "https://prscheck.co.uk" },
+      areaServed: "GB",
+      audience: { "@type": "Audience", audienceType: "Private renters" },
+      offers: { "@type": "Offer", price: "29.00", priceCurrency: "GBP" },
     },
   ];
 
@@ -66,21 +80,83 @@ export default function HomePage() {
         <div className="absolute inset-0 grid-pattern" />
         <div className="relative mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-24 lg:py-32">
           <span className="mb-5 inline-block rounded-full border border-accent-500/30 bg-accent-600/10 px-3 py-1 text-xs font-medium text-accent-400">
-            Free postcode check · £7.99 full report
+            Free postcode check · for landlords and tenants
           </span>
           <h1 className="animate-fade-in text-3xl font-bold tracking-tight text-navy-100 sm:text-4xl lg:text-6xl">
-            Does your rental property need a{" "}
-            <span className="text-accent-400">licence?</span>
+            Does this property need a <span className="text-accent-400">licence?</span>
           </h1>
           <p className="animate-slide-up mx-auto mt-6 max-w-2xl text-base text-navy-400 sm:text-xl">
-            Selective and HMO licensing now covers hundreds of areas across the UK. Renting out an unlicensed property
-            risks a civil penalty of up to £40,000 and a rent repayment order of up to 24 months. Check yours in seconds.
+            Selective and HMO licensing now covers hundreds of areas across the UK. Letting an unlicensed property risks
+            a civil penalty of up to {pen.civilPenaltyLabel}, and lets the tenant reclaim up to {pen.rroMonths}{" "}
+            months&apos; rent. One postcode answers it for both of you.
           </p>
           <HeroSearch />
           <p className="mt-5 text-sm text-navy-500">
-            {live.length} of {total} English councils currently run a licensing scheme, with more launching under the
+            {live.length} of {total}{" "}
+            English councils currently run a licensing scheme, with more launching under the
             Renters&apos; Rights Act 2025.
           </p>
+        </div>
+      </section>
+
+      {/* Audience split. The two sides ask different questions of the same
+          dataset and buy different things, so the site says so immediately
+          rather than making a tenant work out that it is for them too. */}
+      <section className="border-b border-navy-800 bg-navy-900 py-12 sm:py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="text-center text-2xl font-bold text-navy-100 sm:text-3xl">
+            Same check. Two very different questions.
+          </h2>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            <div className="flex flex-col rounded-2xl border border-navy-700 bg-navy-800/40 p-6 sm:p-7">
+              <p className="text-xs font-semibold uppercase tracking-wider text-accent-500">For landlords and agents</p>
+              <h3 className="mt-2 text-xl font-bold text-navy-100">
+                Do I need a licence, and what happens if I do not have one?
+              </h3>
+              <p className="mt-3 flex-1 text-sm text-navy-400">
+                There is no national register to check, designations are drawn street by street, and they change
+                constantly. Get the property-specific verdict, the scheme dates and fees, your exposure, and the order
+                to do things in.
+              </p>
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                <Link
+                  href="/check"
+                  className="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-500"
+                >
+                  Check my property
+                </Link>
+                <Link href="/landlords" className="text-sm font-medium text-accent-400 hover:text-accent-300">
+                  Landlord guides →
+                </Link>
+              </div>
+              <p className="mt-3 text-xs text-navy-500">Free scheme check · £7.99 full report</p>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border border-accent-500/40 bg-accent-600/10 p-6 sm:p-7">
+              <p className="text-xs font-semibold uppercase tracking-wider text-accent-400">For tenants</p>
+              <h3 className="mt-2 text-xl font-bold text-navy-100">
+                Should my home have been licensed, and can I claim rent back?
+              </h3>
+              <p className="mt-3 flex-1 text-sm text-navy-400">
+                If your landlord let a property that needed a licence without one, that is a criminal offence and you
+                can apply for a Rent Repayment Order of up to {RRO_FACTS.maxMonths}{" "}
+                months&apos; rent. The tribunal must
+                be satisfied {RRO_FACTS.standardOfProof}, so the evidence is what matters.
+              </p>
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                <Link
+                  href="/check?for=tenant"
+                  className="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-500"
+                >
+                  Check my home
+                </Link>
+                <Link href="/tenants" className="text-sm font-medium text-accent-400 hover:text-accent-300">
+                  Tenant guides →
+                </Link>
+              </div>
+              <p className="mt-3 text-xs text-navy-500">Free scheme check · £29 evidence report</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -238,15 +314,19 @@ export default function HomePage() {
           </div>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              ["Landlords", "Confirm your existing lets are licensed, and check before you buy a new rental or change the tenancy."],
-              ["Letting & managing agents", "Check licensing across a portfolio and avoid managing an unlicensed property on a client's behalf."],
-              ["Property buyers", "Find out during due diligence whether a buy-to-let you are purchasing sits in a licensing area."],
-              ["Tenants", "Check whether the home you rent should be licensed, which underpins a rent repayment claim if it isn't."],
-            ].map(([t, b]) => (
-              <div key={t} className="rounded-2xl border border-navy-800 bg-navy-800/30 p-6">
-                <h3 className="font-bold text-navy-100">{t}</h3>
+              ["Landlords", "Confirm your existing lets are licensed, and check before you buy a new rental or change the tenancy.", "/landlords"],
+              ["Letting & managing agents", "Check licensing across a portfolio and avoid managing an unlicensed property on a client's behalf.", "/landlords"],
+              ["Property buyers", "Find out during due diligence whether a buy-to-let you are purchasing sits in a licensing area.", "/check"],
+              ["Tenants", "Check whether the home you rent should be licensed, and claim rent back with a Rent Repayment Order if it was not.", "/tenants"],
+            ].map(([t, b, href]) => (
+              <Link
+                key={t}
+                href={href}
+                className="group rounded-2xl border border-navy-800 bg-navy-800/30 p-6 transition-all hover:border-accent-500/40 hover:bg-navy-800/60"
+              >
+                <h3 className="font-bold text-navy-100 group-hover:text-accent-300">{t}</h3>
                 <p className="mt-2 text-sm text-navy-400">{b}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

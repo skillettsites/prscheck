@@ -27,6 +27,12 @@ module.exports = {
     if (path === '/') { priority = 1.0; changefreq = 'daily'; }
     else if (path === '/check') { priority = 0.95; changefreq = 'weekly'; }
     else if (path === '/councils' || path === '/guides') { priority = 0.9; changefreq = 'weekly'; }
+    // The two audience hubs are the top of their silos and the pages the rest
+    // of each silo links up to, so they sit level with /councils and /guides.
+    else if (path === '/tenants' || path === '/landlords') { priority = 0.9; changefreq = 'weekly'; }
+    // The tenant money pages. /rent-repayment-order and its calculator are the
+    // highest-intent pages on the site, above a council page.
+    else if (path.startsWith('/tenants/') || path.startsWith('/landlords/')) { priority = 0.85; changefreq = 'monthly'; }
     else if (path.startsWith('/councils/')) { priority = 0.75; changefreq = 'weekly'; }
     else if (path.startsWith('/guides/')) { priority = 0.8; changefreq = 'monthly'; }
     else if (['/pricing', '/demo', '/solutions', '/contact'].includes(path)) { priority = 0.9; }
@@ -47,6 +53,21 @@ module.exports = {
     // does not auto-discover it. It is the primary conversion page, so add it.
     paths.push({ loc: '/check', changefreq: 'weekly', priority: 0.95 });
     paths.push({ loc: '/property-licence-check', changefreq: 'weekly', priority: 0.9 });
+
+    // Audience silos. next-sitemap discovers these from the build output, but
+    // listing them here is what guarantees the priorities above are applied
+    // rather than falling through to the 0.7 default if discovery misses one.
+    paths.push({ loc: '/landlords', changefreq: 'weekly', priority: 0.9 });
+    paths.push({ loc: '/landlords/rent-repayment-orders', changefreq: 'monthly', priority: 0.85 });
+    paths.push({ loc: '/tenants', changefreq: 'weekly', priority: 0.9 });
+    for (const slug of [
+      'rent-repayment-order',
+      'rent-repayment-order-calculator',
+      'is-my-landlord-licensed',
+      'unlicensed-hmo',
+    ]) {
+      paths.push({ loc: `/tenants/${slug}`, changefreq: 'monthly', priority: 0.85 });
+    }
 
     // Platform pages
     const platformPages = [

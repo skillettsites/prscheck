@@ -5,7 +5,7 @@ import Footer from "@/components/ui/Footer";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 export const metadata: Metadata = {
-  title: "Selective Licensing Management | PRSCheck",
+  title: "Selective Licensing Management",
   description:
     "Manage your selective licensing scheme effortlessly. PRSCheck handles application processing, compliance monitoring, renewals, and penalty recovery for unlicensed properties.",
   alternates: { canonical: "https://prscheck.co.uk/solutions/selective-licensing" },

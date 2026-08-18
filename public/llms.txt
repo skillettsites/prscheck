@@ -1,8 +1,8 @@
 # PRSCheck
 
-> Check whether a UK rental property needs a landlord licence. PRSCheck tells landlords, tenants and buyers if a property requires selective, additional or mandatory HMO licensing, based on government-backed data: official local authority licensing designations, ONS council boundaries and UK housing legislation (Housing Act 2004).
+> Check whether a UK rental property needs a landlord licence. PRSCheck serves two audiences from one dataset: LANDLORDS asking whether their property needs a selective, additional or mandatory HMO licence, and TENANTS asking whether the home they rent should have been licensed and what a Rent Repayment Order is worth. Built on official local authority licensing designations, ONS council boundaries and UK housing legislation (Housing Act 2004).
 
-PRSCheck maps every selective and additional (HMO) licensing scheme in England to the councils and areas they cover, layered on the England-wide mandatory HMO rules and the national registration regimes in Wales and Scotland. Enter a postcode for a free scheme check; a £7.99 report gives the property-specific verdict, scheme dates and fees, penalty exposure, and an action plan. PRSCheck also offers a separate enforcement platform for local authority housing teams.
+PRSCheck maps every selective and additional (HMO) licensing scheme in England and Wales to the councils and areas they cover, layered on the England-wide mandatory HMO rules and the national registration regimes in Wales, Scotland and Northern Ireland. Enter a postcode for a free scheme check. Landlords can then buy a £7.99 property-specific report with the verdict, scheme dates and fees, penalty exposure and an action plan. Tenants can buy a £29 Rent Repayment Order evidence report: whether the property required a licence, the designation with dates and council source, the claim worked on the Acheampong v Roman method, the two statutory defences, and the Form RRO1 route. PRSCheck also offers a separate enforcement platform for local authority housing teams.
 
 ## Key facts (current July 2026)
 - Mandatory HMO licence (England): required for any property let to 5+ people forming 2+ households sharing facilities. No storey test since October 2018.
@@ -12,13 +12,36 @@ PRSCheck maps every selective and additional (HMO) licensing scheme in England t
 - Penalties for operating unlicensed: civil penalty up to £40,000 per offence (raised from £30,000 on 1 May 2026), rent repayment order up to 24 months' rent, unlimited fine on prosecution, banning orders.
 - Wales: Rent Smart Wales national registration + licensing. Scotland: council landlord registration (renew every 3 years) + HMO licensing for 3+ unrelated occupants.
 
+## Rent Repayment Orders (the tenant side)
+- A tenant can apply to the First-tier Tribunal (Property Chamber) for a Rent Repayment Order where the landlord committed one of the offences in Housing and Planning Act 2016 s.40(3). The two licensing offences are Housing Act 2004 s.72(1) (unlicensed HMO) and s.95(1) (unlicensed house under selective licensing).
+- Maximum: 24 months' rent for offences committed on or after 1 May 2026 (12 months for offences that ended before then), and never more than the rent actually paid. The 24-month uplift is England-only; Wales remains at 12.
+- Deadline: the occupier must apply within 2 years of the offence (HPA 2016 s.41). For a continuing offence, the last date it was committed must fall inside that window.
+- No conviction or civil penalty is needed first, but the tribunal must be satisfied BEYOND REASONABLE DOUBT that the offence was committed (HPA 2016 s.43).
+- IMPORTANT, AND COMMONLY GOT WRONG: tribunals do not award the maximum. Acheampong v Roman [2022] UKUT 239 (LC) sets the method: take the whole rent for the relevant period, deduct any part paying for utilities the tenant alone consumed, apply a percentage reflecting seriousness, then adjust for the HPA 2016 s.44(4) factors (conduct of landlord and tenant, landlord's financial circumstances, previous convictions). Awards for straightforward licensing breaches commonly fall between 40% and 75% of rent after utilities.
+- Two defences end the claim: a duly made licence application or temporary exemption notice in force for the whole period (HA 2004 s.72(4), s.95(3)), and reasonable excuse (s.72(5), s.95(4)).
+- Application is on Form RRO1 to the First-tier Tribunal (Property Chamber), Residential Property. An application fee is payable and is stated on the form.
+- Scotland and Northern Ireland have NO rent repayment order regime of this kind, because the Housing Act 2004 and the relevant Housing and Planning Act 2016 provisions extend to England and Wales only.
+
 ## Core pages
-- [Check my property](https://prscheck.co.uk/check): free postcode licence check + £7.99 report
-- [Property licence check](https://prscheck.co.uk/property-licence-check): property licence checker + £7.99 report
-- [Licensing by council](https://prscheck.co.uk/councils): every English council's schemes, dates and fees
-- [Guides](https://prscheck.co.uk/guides): landlord licensing, selective licensing, HMO licensing, Renters' Rights Act, penalties
 - [Homepage](https://prscheck.co.uk/)
-- [For councils / platform](https://prscheck.co.uk/platform): PRS enforcement tools for local authorities
+- [Check a postcode](https://prscheck.co.uk/check): free scheme check for both audiences. Add ?for=tenant for the tenant version.
+- [Licensing by council](https://prscheck.co.uk/councils): every English and Welsh council's schemes, dates and fees
+
+### For landlords and letting agents
+- [Landlord hub](https://prscheck.co.uk/landlords): does this property need a licence, and what happens if it does not have one
+- [Rent Repayment Orders, landlord view](https://prscheck.co.uk/landlords/rent-repayment-orders): the 24-month exposure, how tribunals set the amount, the two defences
+- [Property licence check](https://prscheck.co.uk/property-licence-check): property licence checker + £7.99 report
+- [Guides](https://prscheck.co.uk/guides): landlord licensing, selective licensing, HMO licensing, Renters' Rights Act, penalties
+
+### For tenants
+- [Tenant hub](https://prscheck.co.uk/tenants): should my home have been licensed, and can I claim rent back
+- [Rent Repayment Orders explained](https://prscheck.co.uk/tenants/rent-repayment-order): qualifying offences, what tribunals award, the two-year deadline, Form RRO1 step by step
+- [Rent Repayment Order calculator](https://prscheck.co.uk/tenants/rent-repayment-order-calculator): realistic award range using the Acheampong v Roman method, with the working shown
+- [Is my landlord licensed?](https://prscheck.co.uk/tenants/is-my-landlord-licensed): three free ways to check, including the council public register
+- [Unlicensed HMO](https://prscheck.co.uk/tenants/unlicensed-hmo): what counts as an HMO and what a sharer can do
+
+### For local authorities
+- [For councils / platform](https://prscheck.co.uk/platform): PRS enforcement tools for local authority housing teams
 
 ## Full reference
 - [Complete licensing dataset](https://prscheck.co.uk/llms-full.txt): every English council with a selective or additional scheme, dates, fees, covered wards, and the national rules.
@@ -27,4 +50,4 @@ PRSCheck maps every selective and additional (HMO) licensing scheme in England t
 https://prscheck.co.uk
 
 ## Audience
-UK landlords, letting agents, tenants and property buyers checking licensing requirements; plus local authority housing enforcement teams.
+Two consumer audiences served equally: (1) UK landlords, letting agents and property buyers checking whether a property needs a licence, and (2) private tenants checking whether the home they rent should have been licensed and whether they can claim rent back through a Rent Repayment Order. Plus local authority housing enforcement teams for the B2B platform.

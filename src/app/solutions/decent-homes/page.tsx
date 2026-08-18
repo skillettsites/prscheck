@@ -5,7 +5,7 @@ import Footer from "@/components/ui/Footer";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 export const metadata: Metadata = {
-  title: "Decent Homes Standard Preparation | PRSCheck",
+  title: "Decent Homes Standard Preparation",
   description:
     "Prepare for the Decent Homes Standard extending to private rentals. PRSCheck screens PRS properties against all five DHS criteria, with over 20% of homes currently failing.",
   alternates: { canonical: "https://prscheck.co.uk/solutions/decent-homes" },

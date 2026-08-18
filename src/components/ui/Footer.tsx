@@ -9,33 +9,39 @@ const columns = [
     title: "For landlords",
     links: [
       { label: "Check a property", href: "/check" },
-      { label: "Councils A to Z", href: "/councils" },
+      { label: "Landlord hub", href: "/landlords" },
+      { label: "Rent Repayment Orders", href: "/landlords/rent-repayment-orders" },
       { label: "Licensing guides", href: "/guides" },
-      { label: "Articles", href: "/resources" },
+      { label: "Councils A to Z", href: "/councils" },
+    ],
+  },
+  // The tenant silo needs a site-wide link surface for exactly the reason the
+  // landlord one did: without it, five pages sit in the sitemap, return 200,
+  // and are linked from nowhere but each other.
+  {
+    title: "For tenants",
+    links: [
+      { label: "Tenant hub", href: "/tenants" },
+      { label: "Claim rent back (RRO)", href: "/tenants/rent-repayment-order" },
+      { label: "RRO calculator", href: "/tenants/rent-repayment-order-calculator" },
+      { label: "Is my landlord licensed?", href: "/tenants/is-my-landlord-licensed" },
+      { label: "Unlicensed HMO", href: "/tenants/unlicensed-hmo" },
     ],
   },
   {
-    title: "Platform",
+    title: "For councils",
     links: [
-      { label: "Overview", href: "/platform" },
+      { label: "Platform overview", href: "/platform" },
       { label: "Compliance Screening", href: "/platform/compliance-screening" },
       { label: "HMO Detection", href: "/platform/hmo-detection" },
       { label: "Enforcement Pipeline", href: "/platform/enforcement-pipeline" },
-    ],
-  },
-  {
-    title: "Solutions",
-    links: [
-      { label: "Tenant Complaints", href: "/platform/tenant-complaints" },
-      { label: "Civil Penalties", href: "/platform/civil-penalties" },
-      { label: "Reporting", href: "/platform/reporting" },
-      { label: "Selective Licensing", href: "/platform/selective-licensing" },
+      { label: "PRS Database", href: "/platform/prs-database" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { label: "PRS Database", href: "/platform/prs-database" },
+      { label: "Articles", href: "/resources" },
       { label: "Pricing", href: "/pricing" },
       { label: "Demo", href: "/demo" },
       { label: "API", href: "/api-docs" },
@@ -63,7 +69,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-navy-800 bg-navy-950">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
           {columns.map((col) => (
             <div key={col.title}>
               <h3 className="text-sm font-semibold uppercase tracking-wider text-navy-400">

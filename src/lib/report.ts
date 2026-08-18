@@ -1,4 +1,6 @@
 import type { Determination } from "@/lib/licensing";
+import type { Audience } from "@/lib/audience";
+import type { RroEstimate } from "@/lib/rro";
 
 export interface LicenceReportData {
   postcode: string;
@@ -9,6 +11,21 @@ export interface LicenceReportData {
   determination: Determination;
   councilNotes?: string;
   generatedAt: string;
+  /**
+   * Who bought it.
+   *
+   * OPTIONAL, AND MUST STAY OPTIONAL. Reports are snapshotted into Supabase at
+   * purchase and /r/[token] re-renders that stored JSON, so every report sold
+   * before the tenant product existed has no audience field. Absent means
+   * landlord, which is what those reports are.
+   */
+  audience?: Audience;
+  /** Tenant reports only: the claim, worked through the Acheampong method. */
+  rro?: RroEstimate & {
+    monthlyRent: number;
+    utilitiesPerMonth: number;
+    monthsUnlicensed: number;
+  };
 }
 
 /** Buyer-facing permanent token; mirrors the PCC pattern (session id suffix). */

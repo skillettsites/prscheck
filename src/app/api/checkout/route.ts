@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getStripe, LICENCE_CHECK_PRICE_PENCE, LICENCE_CHECK_NAME, LICENCE_CHECK_DESCRIPTION } from "@/lib/stripe";
+import { getStripe, productFor } from "@/lib/stripe";
 import { getCouncilByGss, hasCouncilLicensingPowers } from "@/lib/licensing";
+import { parseAudience } from "@/lib/audience";
+import { rroAvailable } from "@/lib/rro";
 
 export const runtime = "nodejs";
 
@@ -27,6 +29,22 @@ async function resolveFromPostcode(postcode: string): Promise<{ gss: string; war
   } catch {
     return null;
   }
+}
+
+/** Money, in pounds, bounded to something a UK tenancy could plausibly be.
+ *  Returns 0 for anything absent, negative or absurd. */
+function clampMoney(v: unknown): number {
+  const n = Number(v);
+  if (!Number.isFinite(n) || n <= 0) return 0;
+  return Math.min(Math.round(n * 100) / 100, 50000);
+}
+
+/** Months unlicensed, bounded at the 24-month statutory ceiling plus headroom
+ *  so the report can show the tenant what the cap removed. */
+function clampMonths(v: unknown): number {
+  const n = Number(v);
+  if (!Number.isFinite(n) || n <= 0) return 0;
+  return Math.min(Math.floor(n), 120);
 }
 
 export async function POST(req: NextRequest) {
@@ -64,6 +82,17 @@ export async function POST(req: NextRequest) {
     const occupants = Number(body.occupants ?? 0);
     const households = Number(body.households ?? 0);
     const attribution = (body.attribution ?? {}) as Record<string, string>;
+    // Landlord or tenant. Whitelisted rather than trusted: the tenant product
+    // costs more, so an unrecognised value must fall back to the landlord one
+    // and never the other way round.
+    const audience = parseAudience(body.audience);
+    // Tenant-only. The rent decides the size of the claim, so it is clamped
+    // rather than trusted: a spoofed rent would produce a report quoting a
+    // tribunal award that no tribunal could make.
+    const monthlyRent = clampMoney(body.monthlyRent);
+    const utilitiesPerMonth = clampMoney(body.utilitiesPerMonth);
+    const monthsUnlicensed = clampMonths(body.monthsUnlicensed);
+    const offenceEndedBeforeUplift = body.offenceEndedBeforeUplift === true;
 
     if (!postcode) return NextResponse.json({ error: "postcode_required" }, { status: 400 });
     if (!occupants || occupants < 1 || occupants > 50) {
@@ -91,7 +120,23 @@ export async function POST(req: NextRequest) {
     if (!hasCouncilLicensingPowers(council.nation)) {
       return NextResponse.json({ error: "unsupported_nation" }, { status: 400 });
     }
+    // Belt and braces on the tenant product. The rent repayment order lives in
+    // the Housing Act 2004 licensing offences, which extend to England and
+    // Wales only, so a Scottish or Northern Irish tenant has no claim to
+    // evidence. `hasCouncilLicensingPowers` already covers the same two nations
+    // today, but the two rules are separate rules and would diverge silently if
+    // either ever changed.
+    if (audience === "tenant" && !rroAvailable(council.nation)) {
+      return NextResponse.json({ error: "unsupported_nation" }, { status: 400 });
+    }
+    // A claim needs a rent to be worth anything. Without it the report can
+    // state the offence but not the amount, which is most of what the tenant is
+    // paying for, so refuse rather than sell a hollowed-out version.
+    if (audience === "tenant" && (monthlyRent <= 0 || monthsUnlicensed <= 0)) {
+      return NextResponse.json({ error: "tenancy_details_required" }, { status: 400 });
+    }
 
+    const product = productFor(audience);
     const stripe = getStripe();
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
@@ -100,9 +145,9 @@ export async function POST(req: NextRequest) {
         {
           price_data: {
             currency: "gbp",
-            unit_amount: LICENCE_CHECK_PRICE_PENCE,
+            unit_amount: product.pricePence,
             product_data: {
-              name: LICENCE_CHECK_NAME,
+              name: product.name,
               description: `${address ? address + ", " : ""}${postcode} (${council.name})`,
             },
           },
@@ -110,7 +155,16 @@ export async function POST(req: NextRequest) {
         },
       ],
       metadata: {
+        // Unchanged for both audiences on purpose. This is the key PostcodeCheck's
+        // own webhook filters on to ignore our sales, and the key ours filters on
+        // to claim them, on a Stripe account the two sites share. Splitting it per
+        // audience would have made every tenant sale invisible to both.
         product: "licence_check",
+        audience,
+        rent_monthly: audience === "tenant" ? String(monthlyRent) : "",
+        rent_utilities: audience === "tenant" ? String(utilitiesPerMonth) : "",
+        months_unlicensed: audience === "tenant" ? String(monthsUnlicensed) : "",
+        pre_uplift: audience === "tenant" && offenceEndedBeforeUplift ? "1" : "",
         postcode,
         address,
         gss,
@@ -133,7 +187,12 @@ export async function POST(req: NextRequest) {
         landing_page: attribution.landing_page ?? "",
       },
       success_url: `${origin}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${origin}/check?postcode=${encodeURIComponent(postcode)}&checkout=cancelled`,
+      // Carries the audience back. Without it a tenant who abandoned checkout
+      // returned to the landlord version of the page, was re-asked the landlord
+      // question and lost every tenancy detail they had entered.
+      cancel_url: `${origin}/check?postcode=${encodeURIComponent(postcode)}&checkout=cancelled${
+        audience === "tenant" ? "&for=tenant" : ""
+      }`,
     });
 
     return NextResponse.json({ url: session.url });

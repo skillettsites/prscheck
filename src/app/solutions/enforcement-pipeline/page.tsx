@@ -5,7 +5,7 @@ import Footer from "@/components/ui/Footer";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 export const metadata: Metadata = {
-  title: "Enforcement Case Management | PRSCheck",
+  title: "Enforcement Case Management",
   description:
     "From complaint to resolution in one dashboard. PRSCheck provides Kanban-style enforcement pipelines, case tracking, document management, and MHCLG reporting for local authority housing teams.",
   alternates: { canonical: "https://prscheck.co.uk/solutions/enforcement-pipeline" },

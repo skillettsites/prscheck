@@ -1,5 +1,6 @@
 import type { LicenceReportData } from "@/lib/report";
 import { penaltiesFor, type SchemeAssessment, type SchemeVerdict } from "@/lib/licensing";
+import RroEvidence from "@/components/RroEvidence";
 
 const VERDICT_STYLE: Record<SchemeVerdict | "mandatory", { label: string; color: string; bg: string; border: string }> = {
   required: { label: "Licence required", color: "text-red-300", bg: "bg-danger/10", border: "border-danger/40" },
@@ -61,6 +62,9 @@ function SchemeCard({ a }: { a: SchemeAssessment }) {
 
 export default function LicenceReport({ report }: { report: LicenceReportData }) {
   const d = report.determination;
+  // Absent means landlord. Every report sold before the tenant product existed
+  // has no audience field, and those reports are landlord reports.
+  const isTenant = report.audience === "tenant";
   const anyPositive = (a: SchemeAssessment) =>
     a.verdict === "required" || a.verdict === "likely-required" || a.verdict === "check-boundary" || a.verdict === "upcoming";
 
@@ -81,7 +85,9 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
   return (
     <article className="mx-auto max-w-3xl">
       <header className="rounded-2xl border border-navy-700 bg-navy-800/60 p-6">
-        <p className="text-sm text-navy-400">Landlord Licence Report</p>
+        <p className="text-sm text-navy-400">
+          {isTenant ? "Rent Repayment Order Evidence Report" : "Landlord Licence Report"}
+        </p>
         <h1 className="mt-1 text-2xl font-bold text-navy-100">{report.address || report.postcode}</h1>
         <p className="mt-1 text-navy-400">
           {report.postcode} · {d.council.name}
@@ -95,7 +101,9 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
 
       {/* Headline verdict */}
       <section className="mt-6">
-        <h2 className="mb-3 text-lg font-bold text-navy-100">Your licensing position</h2>
+        <h2 className="mb-3 text-lg font-bold text-navy-100">
+          {isTenant ? "Whether this property should have been licensed" : "Your licensing position"}
+        </h2>
         <div className="space-y-3">
           {/* Three states, not two. A Welsh property that meets the occupancy
               test but whose storey count we did not ask for is neither
@@ -144,7 +152,13 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
         </div>
       </section>
 
+      {/* The tenant half. Same determination, a completely different question
+          asked of it: not "what do I owe the council" but "was an offence
+          committed, and what is it worth". */}
+      {isTenant && <RroEvidence report={report} />}
+
       {/* Penalties */}
+      {!isTenant && (
       <section className="mt-6 rounded-2xl border border-navy-700 bg-navy-800/60 p-6">
         <h2 className="text-lg font-bold text-navy-100">What&apos;s at stake if you don&apos;t comply</h2>
         {/* Reports are snapshotted into Supabase at purchase and /r/[token]
@@ -188,8 +202,10 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
           );
         })()}
       </section>
+      )}
 
       {/* Action plan */}
+      {!isTenant && (
       <section className="mt-6 rounded-2xl border border-navy-700 bg-navy-800/60 p-6">
         <h2 className="text-lg font-bold text-navy-100">Your action plan</h2>
         <ol className="mt-4 space-y-3">
@@ -203,6 +219,7 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
           ))}
         </ol>
       </section>
+      )}
 
       {report.councilNotes && (
         <section className="mt-6 rounded-2xl border border-navy-700 bg-navy-800/60 p-6">
@@ -216,6 +233,8 @@ export default function LicenceReport({ report }: { report: LicenceReportData })
         council designations and national legislation, not legal advice. Many selective and additional schemes are
         designated at street or part-ward level; always confirm the exact boundary for your address using the council
         source links above before applying or relying on this report.
+        {isTenant &&
+          " This report is evidence of what the designations say, not a legal opinion on your claim and not a prediction of what a tribunal will award. Confirm the licence position with the council in writing, and take advice before you file."}
       </p>
     </article>
   );

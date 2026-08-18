@@ -5,6 +5,8 @@ import { createAdminClient } from "@/lib/supabase-admin";
 import { determine, councilSummary } from "@/lib/licensing";
 import { sendLicenceReportEmail } from "@/lib/email";
 import { deriveReportToken, type LicenceReportData } from "@/lib/report";
+import { parseAudience, copyFor } from "@/lib/audience";
+import { estimateRro } from "@/lib/rro";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -100,6 +102,12 @@ export async function POST(req: NextRequest) {
   const { data: insertRow, error: reportInsertErr } = await admin
     .from("reports")
     .insert({
+      // Same tier for both products, deliberately. `tier` is how PRSCheck rows
+      // are told apart from the other sites sharing this `reports` table, so a
+      // new value for the tenant product would drop every tenant sale out of
+      // the revenue queries that already exist. The two are separable by
+      // `amount_paid` (799 vs 2900), by the stored report's `audience`, and by
+      // the distinct `conversion_events.event_type` written below.
       tier: "licence_check",
       status: "processing",
       stripe_session_id: session.id,
@@ -160,6 +168,30 @@ export async function POST(req: NextRequest) {
     });
     if (!determination) throw new Error("determination_failed");
 
+    const audience = parseAudience(meta.audience);
+    // The claim is recomputed here from the metadata rather than accepted from
+    // the browser, and the cap is taken from the determination's own nation
+    // rather than assumed to be 24: Wales has the same licensing offences but
+    // national-rules records the 24-month uplift as England-only, at 12 there.
+    const rroMonthsForNation = determination.penaltySummary.rroMonths;
+    const monthsUnlicensed = Number(meta.months_unlicensed ?? 0);
+    const rro =
+      audience === "tenant"
+        ? (() => {
+            const monthlyRent = Number(meta.rent_monthly ?? 0);
+            const utilitiesPerMonth = Number(meta.rent_utilities ?? 0);
+            const estimate = estimateRro({
+              monthlyRent,
+              utilitiesPerMonth,
+              monthsUnlicensed,
+              // Either the buyer told us the unlicensed period ended before the
+              // uplift, or the nation caps below 24 anyway. Both land on 12.
+              offenceEndedBeforeUplift: meta.pre_uplift === "1" || rroMonthsForNation === 12,
+            });
+            return { ...estimate, monthlyRent, utilitiesPerMonth, monthsUnlicensed };
+          })()
+        : undefined;
+
     const report: LicenceReportData = {
       postcode,
       address: meta.address ?? "",
@@ -169,6 +201,8 @@ export async function POST(req: NextRequest) {
       determination,
       councilNotes: councilSummary(gss)?.notes,
       generatedAt: new Date().toISOString(),
+      audience,
+      rro,
     };
 
     // Mark ready BEFORE anything that talks to a third party. From this point
@@ -205,8 +239,18 @@ export async function POST(req: NextRequest) {
       await admin.from("reports").update({ email_sent: emailDelivered }).eq("id", reportRowId);
       await admin.from("conversion_events").insert({
         site_id: "prscheck",
-        event_type: "licence_check_completed",
-        metadata: { postcode, gss, session_id: session.id, email_delivered: emailDelivered },
+        // Distinct per audience so the two products can be told apart in the
+        // dashboard without parsing metadata. The landlord value is unchanged,
+        // so four months of existing rows keep meaning what they meant.
+        event_type: audience === "tenant" ? "rro_evidence_completed" : "licence_check_completed",
+        metadata: {
+          postcode,
+          gss,
+          session_id: session.id,
+          email_delivered: emailDelivered,
+          audience,
+          ...(rro ? { rro_low: rro.low, rro_high: rro.high, months_claimable: rro.claimableMonths } : {}),
+        },
       });
     } catch (logErr) {
       console.error("post-fulfilment logging failed (report still saved)", logErr);
@@ -214,6 +258,7 @@ export async function POST(req: NextRequest) {
 
     await notifySaleTelegram({
       amountPence: session.amount_total ?? 0,
+      productName: copyFor(audience).productName,
       address: report.address || postcode,
       council: determination.council.name,
       customerEmail: customerEmail ?? "not captured",
@@ -277,6 +322,7 @@ async function notifyFulfilmentFailure(p: {
 
 async function notifySaleTelegram(p: {
   amountPence: number;
+  productName: string;
   address: string;
   council: string;
   customerEmail: string;
@@ -287,7 +333,7 @@ async function notifySaleTelegram(p: {
   const chatId = process.env.TELEGRAM_CHAT_ID;
   if (!botToken || !chatId) return;
   const lines = [
-    `💰 *PRSCheck sale, £${(p.amountPence / 100).toFixed(2)} Licence Check*`,
+    `💰 *PRSCheck sale, £${(p.amountPence / 100).toFixed(2)} ${p.productName}*`,
     "",
     `Property: ${p.address}`,
     `Council: ${p.council}`,

@@ -5,7 +5,7 @@ import Footer from "@/components/ui/Footer";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 export const metadata: Metadata = {
-  title: "Tenant Complaint Triage | PRSCheck",
+  title: "Tenant Complaint Triage",
   description:
     "Replace freeform emails with structured tenant complaints. PRSCheck receives reports through RenterCheck with property data, compliance status, and evidence for automatic triage.",
   alternates: { canonical: "https://prscheck.co.uk/solutions/tenant-complaints" },

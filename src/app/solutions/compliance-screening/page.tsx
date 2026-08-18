@@ -5,7 +5,7 @@ import Footer from "@/components/ui/Footer";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 export const metadata: Metadata = {
-  title: "Automated Compliance Screening | PRSCheck",
+  title: "Automated Compliance Screening",
   description:
     "Check every property in your borough against 15 data sources. PRSCheck generates compliance scores, risk flags, and enforcement priority lists for local authority housing teams.",
   alternates: { canonical: "https://prscheck.co.uk/solutions/compliance-screening" },

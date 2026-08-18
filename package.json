@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "verify:verdicts": "tsx scripts/verify-verdicts.mjs",
-    "prebuild": "npm run verify:verdicts",
+    "prebuild": "npm run verify:verdicts && npm run verify:rro",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "verify:rro": "tsx scripts/rro-smoke.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.110.2",

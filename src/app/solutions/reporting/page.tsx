@@ -5,7 +5,7 @@ import Footer from "@/components/ui/Footer";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 export const metadata: Metadata = {
-  title: "Enforcement Reporting and Analytics | PRSCheck",
+  title: "Enforcement Reporting and Analytics",
   description:
     "Real-time enforcement metrics, automated MHCLG returns, KPI dashboards, and trend analysis for local authority housing teams. Compliance rates by ward, pipeline status, and response times.",
   alternates: { canonical: "https://prscheck.co.uk/solutions/reporting" },

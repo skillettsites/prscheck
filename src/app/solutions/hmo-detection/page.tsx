@@ -5,7 +5,7 @@ import Footer from "@/components/ui/Footer";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 export const metadata: Metadata = {
-  title: "Automated HMO Detection | PRSCheck",
+  title: "Automated HMO Detection",
   description:
     "Find every unlicensed HMO in your borough. PRSCheck cross-references council tax, EPC records, and occupancy data to detect unlicensed Houses in Multiple Occupation.",
   alternates: { canonical: "https://prscheck.co.uk/solutions/hmo-detection" },

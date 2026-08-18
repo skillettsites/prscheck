@@ -5,7 +5,7 @@ import Footer from "@/components/ui/Footer";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 export const metadata: Metadata = {
-  title: "Civil Penalty Management | PRSCheck",
+  title: "Civil Penalty Management",
   description:
     "Calculate, issue, and track civil penalties for housing offences. PRSCheck includes tariff tables, calculation factors, and revenue tracking. Councils retain 100% of penalty income.",
   alternates: { canonical: "https://prscheck.co.uk/solutions/civil-penalties" },

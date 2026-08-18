@@ -5,7 +5,7 @@ import Footer from "@/components/ui/Footer";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 export const metadata: Metadata = {
-  title: "API Documentation | PRSCheck",
+  title: "API Documentation",
   description:
     "PRSCheck REST API documentation. Check property compliance, run bulk screenings, and look up addresses programmatically. API access included in Professional and Enterprise plans.",
   alternates: { canonical: "https://prscheck.co.uk/api-docs" },

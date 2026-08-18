@@ -9,7 +9,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Your Landlord Licence Report",
+  title: "Your PRSCheck Report",
   robots: { index: false, follow: false },
 };
 
@@ -42,15 +42,32 @@ export default async function ReportPage({ params }: { params: Promise<{ token: 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
       <LicenceReport report={report} />
-      <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-accent-500/30 bg-accent-600/10 p-6 text-center">
-        <p className="text-sm text-navy-300">Own another rental property?</p>
-        <Link
-          href="/check"
-          className="mt-3 inline-block rounded-lg bg-accent-600 px-6 py-3 font-semibold text-white transition-all hover:bg-accent-500"
-        >
-          Check another property
-        </Link>
-      </div>
+      {/* The next step differs entirely by audience. A landlord has other
+          properties to check; a tenant has one property and a claim to file,
+          and pointing them at "check another property" wasted the moment. */}
+      {report.audience === "tenant" ? (
+        <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-accent-500/30 bg-accent-600/10 p-6 text-center">
+          <p className="text-sm text-navy-300">
+            Next: read the step-by-step guide to applying, including what the tribunal expects to see.
+          </p>
+          <Link
+            href="/tenants/rent-repayment-order"
+            className="mt-3 inline-block rounded-lg bg-accent-600 px-6 py-3 font-semibold text-white transition-all hover:bg-accent-500"
+          >
+            How to claim your rent back
+          </Link>
+        </div>
+      ) : (
+        <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-accent-500/30 bg-accent-600/10 p-6 text-center">
+          <p className="text-sm text-navy-300">Own another rental property?</p>
+          <Link
+            href="/check"
+            className="mt-3 inline-block rounded-lg bg-accent-600 px-6 py-3 font-semibold text-white transition-all hover:bg-accent-500"
+          >
+            Check another property
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,8 +1,21 @@
 # PRSCheck
 
-Two products on one site:
-1. **Landlord Licence Check (flagship, consumer, from 2026-07-10):** postcode -> council -> does this rental need a selective / additional / mandatory HMO licence. Free scheme check + £7.99 property-specific report. This is the revenue product.
-2. **PRS enforcement platform (secondary, B2B):** the original council-facing SaaS pitch (/platform, /pricing, /solutions, /demo). Kept, de-emphasised on the homepage.
+Three products on one site, two of them consumer, all driven by ONE determination engine:
+1. **Landlord Licence Check (consumer, from 2026-07-10):** postcode -> council -> does this rental need a selective / additional / mandatory HMO licence. Free scheme check + £7.99 property-specific report and action plan.
+2. **Tenant Rent Repayment Order Evidence Report (consumer, from 2026-08-18):** the same determination, read from the other side. Did the property require a licence, and is that evidence for a Rent Repayment Order claim. Free scheme check + £29 evidence report. Priced higher because the tenant is buying tribunal evidence for a claim worth thousands, not an answer they could get free from the council.
+3. **PRS enforcement platform (secondary, B2B):** the original council-facing SaaS pitch (/platform, /pricing, /solutions, /demo). Kept, de-emphasised on the homepage.
+
+## The two-audience architecture (2026-08-18)
+- `src/lib/audience.ts` is the single source of truth for who the visitor is, what it costs and what it is called. `parseAudience` whitelists: anything not exactly `"tenant"` falls back to landlord, so a bad value can never upsell.
+- `src/lib/rro.ts` holds every Rent Repayment Order fact and the award arithmetic. **It deliberately never publishes the statutory maximum as an expected recovery.** Awards follow Acheampong v Roman [2022] UKUT 239 (LC): whole rent for the period -> deduct utilities the tenant alone consumed -> apply a percentage for seriousness -> adjust for HPA 2016 s.44(4). We publish a 40-75% band with the working shown. `npm run verify:rro` gates the build on this arithmetic.
+- `?for=tenant` on `/check` switches the question, the form (adds rent, months unlicensed, utilities), the price and the report. The canonical stays parameter-free so the two versions never compete in the index.
+- Tenant silo: `/tenants` + `/tenants/rent-repayment-order` + `/tenants/rent-repayment-order-calculator` + `/tenants/is-my-landlord-licensed` + `/tenants/unlicensed-hmo`. Landlord silo: `/landlords` + `/landlords/rent-repayment-orders`. Both hubs link to each other, on purpose.
+- All ~320 council pages carry a tenant FAQ (in FAQPage JSON-LD) and a tenant CTA, gated on `rroAvailable(nation)`: Scotland and NI have no such claim and must not be shown one.
+- `reports.tier` stays `"licence_check"` for BOTH products. It is how PRSCheck rows are identified in the shared table; a new value would hide tenant sales from existing revenue queries. Separate them by `amount_paid` (799 vs 2900), the stored report's `audience`, or `conversion_events.event_type` (`licence_check_completed` vs `rro_evidence_completed`).
+- `LicenceReportData.audience` and `.rro` are OPTIONAL and must stay optional: every report sold before 2026-08-18 has neither, and absent means landlord.
+
+## Gotcha: JSX eats the space after an interpolation
+`{total} English councils run ...` renders as "296English" whenever the text chunk that follows spans more than one line, because JSX trims the leading whitespace of a multi-line chunk. A single-line chunk keeps its space, which is why this appears at random. This was live on the homepage for months. Write `{total}{" "}` on the interpolation's own line. To find them, render the page and look for React's `<!-- -->` markers pressed straight against a word.
 
 **URL:** prscheck.co.uk
 **Stack:** Next.js 16, Tailwind CSS v4, TypeScript strict mode
@@ -29,10 +42,12 @@ Two products on one site:
 ## Commands
 
 ```bash
-npm run dev      # Local dev server
-npm run build    # Production build
-npm run lint     # ESLint
-npx next-sitemap # Generate sitemap + robots.txt (run after build)
+npm run dev             # Local dev server
+npm run build           # Production build (prebuild gates on verify:verdicts + verify:rro)
+npm run verify:verdicts # Licensing determination invariants
+npm run verify:rro      # Rent repayment order arithmetic
+npm run lint            # ESLint
+npx next-sitemap        # Generate sitemap + robots.txt (run after build)
 ```
 
 ## Architecture

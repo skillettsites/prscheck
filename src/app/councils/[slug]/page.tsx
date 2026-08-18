@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getCouncilBySlug, councilSummary, COUNCILS, hasCouncilLicensingPowers, penaltiesFor } from "@/lib/licensing";
 import SchemeList from "@/components/SchemeList";
 import PostcodeCTA from "@/components/PostcodeCTA";
+import { rroAvailable } from "@/lib/rro";
 
 /**
  * The licensing rule that applies regardless of any council designation.
@@ -191,6 +192,17 @@ export default async function CouncilPage({ params }: { params: Promise<{ slug: 
       q: `What is the penalty for an unlicensed property in ${council.name}?`,
       a: penaltyRule(council.nation),
     },
+    // The tenant question, on all ~320 council pages. These pages carry the
+    // bulk of the site's impressions and previously answered only the
+    // landlord's half of a question two people ask about the same property.
+    ...(rroAvailable(council.nation)
+      ? [
+          {
+            q: `Can a tenant in ${council.name} claim rent back from an unlicensed landlord?`,
+            a: `Yes. Letting a property that required a licence, without one, is an offence under section 72(1) or section 95(1) of the Housing Act 2004, and a tenant can apply to the First-tier Tribunal for a Rent Repayment Order of up to ${penaltiesFor(council.nation).rroMonths} months' rent${council.nation === "england" ? " for offences committed on or after 1 May 2026" : ""}. No conviction is needed first, but the tribunal must be satisfied beyond reasonable doubt that the offence was committed, and the application must be made within two years of it. Tribunals award a percentage of the rent rather than the maximum, following the method in Acheampong v Roman [2022] UKUT 239 (LC).`,
+          },
+        ]
+      : []),
   ];
 
   const jsonLd = {
@@ -317,6 +329,40 @@ export default async function CouncilPage({ params }: { params: Promise<{ slug: 
       <div className="mt-10">
         <PostcodeCTA />
       </div>
+
+      {/* The tenant side of the same page. Deliberately below the landlord CTA
+          rather than competing with it: the landlord funnel is what these pages
+          already rank for, and this adds a second exit rather than splitting
+          the first. Hidden where the rent repayment order does not exist, since
+          Scotland and NI tenants have no such claim to make. */}
+      {rroAvailable(council.nation) && (
+        <section className="mt-6 rounded-2xl border border-accent-500/30 bg-navy-900 p-6">
+          <p className="text-xs font-semibold uppercase tracking-wider text-accent-400">Renting in {council.name}?</p>
+          <h2 className="mt-2 text-xl font-bold text-navy-100">
+            If your home needed a licence and did not have one, you may be able to claim rent back
+          </h2>
+          <p className="mt-3 text-sm text-navy-300">
+            A Rent Repayment Order can be up to {penaltiesFor(council.nation).rroMonths}{" "}
+            months&apos; rent, you apply to
+            the tribunal yourself, and your landlord does not need to have been prosecuted. The deadline is two years
+            from the offence.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link
+              href="/check?for=tenant"
+              className="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-500"
+            >
+              Check my home free
+            </Link>
+            <Link
+              href="/tenants/rent-repayment-order"
+              className="rounded-lg border border-navy-700 px-5 py-2.5 text-sm font-semibold text-navy-200 transition-all hover:border-navy-600 hover:bg-navy-800"
+            >
+              How Rent Repayment Orders work
+            </Link>
+          </div>
+        </section>
+      )}
 
       <p className="mt-8 text-xs text-navy-600">
         🏛️ Government-backed data: built from official local authority licensing designations, ONS council boundaries

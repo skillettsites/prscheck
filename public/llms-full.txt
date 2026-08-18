@@ -1,6 +1,6 @@
 # PRSCheck: Full UK Landlord Licensing Reference
 
-> The complete, machine-readable reference to UK property licensing: which councils run selective and additional (HMO) licensing schemes, the England-wide mandatory HMO rules, and the national registration regimes in Wales and Scotland. Compiled from council designations and legislation, current July 2026. Check any postcode free at https://prscheck.co.uk/check.
+> The complete, machine-readable reference to UK property licensing: which councils run selective and additional (HMO) licensing schemes, the England-wide mandatory HMO rules, the national registration regimes in Wales and Scotland, and the Rent Repayment Order route a tenant uses when a landlord let an unlicensed property. Compiled from council designations, legislation and Upper Tribunal authority. Check any postcode free at https://prscheck.co.uk/check.
 
 ## The three licence types (England)
 - MANDATORY HMO LICENSING: required everywhere in England for any property let to 5+ people forming 2+ households who share a kitchen, bathroom or toilet, with at least one paying rent. No storey test since 1 October 2018. Licence up to 5 years. Statute: Housing Act 2004 Part 2, SI 2018/221.
@@ -12,6 +12,19 @@
 - Rent Repayment Order up to 24 months rent (doubled from 12), claimable by the tenant or council, and now reaching superior (rent-to-rent) landlords.
 - Unlimited fine on criminal prosecution; banning orders for serious or repeat offenders.
 - Section 21 abolished 1 May 2026. Once the national PRS Database is live (rollout from late 2026), courts can refuse possession to unregistered landlords.
+
+## Rent Repayment Orders: what a tenant can actually recover
+- Route: the occupier applies to the First-tier Tribunal (Property Chamber), Residential Property, on Form RRO1. An application fee is payable, stated on the form. No conviction or council civil penalty is needed first.
+- Qualifying offences (Housing and Planning Act 2016 s.40(3)): unlicensed HMO (HA 2004 s.72(1)); unlicensed house under selective licensing (HA 2004 s.95(1)); eviction or harassment (Protection from Eviction Act 1977 s.1); violence to secure entry (Criminal Law Act 1977 s.6); failure to comply with an improvement notice (HA 2004 s.30) or prohibition order (HA 2004 s.32); breach of a banning order (HPA 2016 s.21); misuse of a possession ground and the related tenancy-reform breaches (Housing Act 1988 s.16J(1)-(3)).
+- Standard of proof: BEYOND REASONABLE DOUBT (HPA 2016 s.43). The criminal standard, applied in a civil tribunal.
+- Cap: 24 months' rent for offences committed on or after 1 May 2026, 12 months for offences ending before that, and never more than the rent the applicant actually paid. England-only uplift; Wales stays at 12 months.
+- Deadline: 2 years from the offence (HPA 2016 s.41). For a continuing offence the last date it was committed must fall inside the window. No discretion to extend.
+- HOW THE AMOUNT IS SET, which is where most published figures are wrong. Acheampong v Roman [2022] UKUT 239 (LC): (1) ascertain the whole rent for the relevant period; (2) subtract any element representing utilities that only benefited the tenant, such as gas, electricity and internet, because that is not really rent; (3) consider the seriousness of the offence and the appropriate percentage of the rent to reflect it, generating a starting point; (4) adjust under HPA 2016 s.44(4) for the conduct of the landlord and tenant, the landlord's financial circumstances, and any previous convictions. In Acheampong the result was 75% of rent after utilities. Awards for straightforward licensing breaches commonly fall between 40% and 75%. Quoting the 24-month cap as an expected recovery overstates the typical outcome by a large margin.
+- Defences that end the claim entirely: a licence application duly made and still effective, or a temporary exemption notice in force, for the whole period complained of (HA 2004 s.72(4), s.95(3)); and reasonable excuse (s.72(5), s.95(4)). Not knowing a designation existed has repeatedly failed as a reasonable excuse.
+- Benefit split: where housing benefit or the housing element of universal credit covered part of the rent, that part belongs to a local authority claim and the amount is apportioned.
+- Multiple applicants: each occupier claims the rent they personally paid over the same unlicensed period, so a five-person HMO is five claims on one set of facts. Joint tenants on one agreement pay one application fee.
+- Not available in Scotland or Northern Ireland: the Housing Act 2004 licensing offences extend to England and Wales only (s.270(11)).
+- Sources: https://www.gov.uk/guidance/rent-repayment-orders-guidance-for-tenants ; https://www.gov.uk/government/publications/apply-for-a-rent-repayment-order-form-rro1 ; https://www.legislation.gov.uk/ukpga/2016/22/part/2/chapter/4 ; https://www.bailii.org/uk/cases/UKUT/LC/2022/239.html
 
 ## Wales and Scotland
 - WALES: Rent Smart Wales. All landlords must register; self-managing landlords and all agents need a licence with training. 5-year terms. Fixed penalties, unlimited fines, rent stopping orders, 12-month rent repayment orders. Mandatory HMO licensing in Wales still uses the 3-storey + 5-person + 2-household test.

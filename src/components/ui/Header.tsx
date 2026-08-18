@@ -3,11 +3,16 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
+// The two audiences lead, because the site now sells to both and a tenant who
+// cannot see themselves in the navigation assumes it is a landlord tool. The
+// council platform keeps its place at the end: it is the highest-value customer
+// but the smallest slice of traffic.
 const navItems = [
-  { label: "Check my property", href: "/check" },
-  { label: "Councils", href: "/councils" },
+  { label: "Landlords", href: "/landlords" },
+  { label: "Tenants", href: "/tenants" },
+  { label: "Councils A-Z", href: "/councils" },
   { label: "Guides", href: "/guides" },
-  { label: "For councils", href: "/platform" },
+  { label: "For local authorities", href: "/platform" },
 ];
 
 export default function Header() {
@@ -49,7 +54,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-6 md:flex lg:gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -63,7 +68,7 @@ export default function Header() {
               href="/check"
               className="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-500 hover:shadow-lg hover:shadow-accent-600/25"
             >
-              Check my property
+              Check a postcode
             </Link>
           </nav>
 
@@ -105,7 +110,7 @@ export default function Header() {
               onClick={() => setMobileOpen(false)}
               className="mt-2 block w-full rounded-lg bg-accent-600 px-3 py-2.5 text-center text-sm font-semibold text-white transition-all hover:bg-accent-500"
             >
-              Check my property
+              Check a postcode
             </Link>
           </div>
         </div>

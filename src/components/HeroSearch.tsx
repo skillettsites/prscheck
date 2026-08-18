@@ -6,9 +6,15 @@ import { useRouter } from "next/navigation";
 export default function HeroSearch({
   className = "mx-auto mt-10 flex max-w-xl flex-col gap-3 sm:flex-row",
   buttonLabel = "Check my property",
+  audience = "landlord",
+  placeholder = "Enter your postcode, e.g. B12 9QR",
 }: {
   className?: string;
   buttonLabel?: string;
+  /** Carries the visitor's side of the transaction into /check, so a tenant who
+   *  searched from a tenant page is not then asked the landlord question. */
+  audience?: "landlord" | "tenant";
+  placeholder?: string;
 } = {}) {
   const [postcode, setPostcode] = useState("");
   const router = useRouter();
@@ -20,7 +26,8 @@ export default function HeroSearch({
     // logged. Without it the council-page funnel would be invisible in the
     // `searches` table, which is the only clean record we have (GA4 is polluted
     // by a bot replaying one ?postcode= URL).
-    router.push(`/check?postcode=${encodeURIComponent(postcode.trim())}&s=1`);
+    const forParam = audience === "tenant" ? "&for=tenant" : "";
+    router.push(`/check?postcode=${encodeURIComponent(postcode.trim())}&s=1${forParam}`);
   }
 
   return (
@@ -29,7 +36,7 @@ export default function HeroSearch({
         type="text"
         value={postcode}
         onChange={(e) => setPostcode(e.target.value)}
-        placeholder="Enter your postcode, e.g. B12 9QR"
+        placeholder={placeholder}
         aria-label="Postcode"
         className="flex-1 rounded-lg border border-navy-700 bg-navy-800/80 px-4 py-3.5 text-navy-100 placeholder-navy-500 backdrop-blur focus:border-accent-500 focus:outline-none"
       />

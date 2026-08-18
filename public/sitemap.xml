@@ -373,6 +373,8 @@
 <url><loc>https://prscheck.co.uk/guides/penalties</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://prscheck.co.uk/guides/renters-rights-act</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://prscheck.co.uk/guides/selective-licensing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://prscheck.co.uk/landlords</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://prscheck.co.uk/landlords/rent-repayment-orders</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
 <url><loc>https://prscheck.co.uk/platform</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
 <url><loc>https://prscheck.co.uk/platform/civil-penalties</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://prscheck.co.uk/platform/compliance-screening</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -384,6 +386,7 @@
 <url><loc>https://prscheck.co.uk/platform/tenant-complaints</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://prscheck.co.uk/pricing</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
 <url><loc>https://prscheck.co.uk/privacy</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+<url><loc>https://prscheck.co.uk/property-licence-check</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
 <url><loc>https://prscheck.co.uk/resources</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://prscheck.co.uk/resources/api-integration-council-systems</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://prscheck.co.uk/resources/automated-compliance-checking</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -445,6 +448,11 @@
 <url><loc>https://prscheck.co.uk/solutions/reporting</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://prscheck.co.uk/solutions/selective-licensing</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://prscheck.co.uk/solutions/tenant-complaints</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://prscheck.co.uk/tenants</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://prscheck.co.uk/tenants/is-my-landlord-licensed</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+<url><loc>https://prscheck.co.uk/tenants/rent-repayment-order</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+<url><loc>https://prscheck.co.uk/tenants/rent-repayment-order-calculator</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+<url><loc>https://prscheck.co.uk/tenants/unlicensed-hmo</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
 <url><loc>https://prscheck.co.uk/terms</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
 <url><loc>https://prscheck.co.uk/check</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
 </urlset>

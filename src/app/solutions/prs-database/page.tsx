@@ -5,7 +5,7 @@ import Footer from "@/components/ui/Footer";
 import RegisterInterestCTA from "@/components/RegisterInterestCTA";
 
 export const metadata: Metadata = {
-  title: "PRS Database Integration Platform | PRSCheck",
+  title: "PRS Database Integration Platform",
   description:
     "Be PRS Database ready from day one. PRSCheck integrates with the national PRS Database launching late 2026, helping councils auto-sync landlords, cross-reference compliance, and flag unregistered properties.",
   alternates: { canonical: "https://prscheck.co.uk/solutions/prs-database" },

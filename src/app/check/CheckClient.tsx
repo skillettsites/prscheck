@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { copyFor, type Audience } from "@/lib/audience";
+import { estimateRro, gbp, AWARD_BAND, RRO_FACTS } from "@/lib/rro";
 
 interface SchemeDetail {
   type: "selective" | "additional";
@@ -55,13 +57,67 @@ function attribution() {
   };
 }
 
+/**
+ * The audience switch.
+ *
+ * Deliberately visible on both states of the page rather than hidden behind a
+ * URL parameter. One postcode answers both questions, and a tenant who landed
+ * on the landlord version had no way to tell that the site was for them too.
+ *
+ * MODULE LEVEL, NOT INSIDE THE RENDER. Declared inside CheckClient it got a new
+ * function identity on every render, which makes React unmount and remount the
+ * whole subtree rather than update it: the tab you just clicked loses focus,
+ * and every keystroke in the form below rebuilds these buttons.
+ */
+function AudienceSwitch({
+  audience,
+  onChange,
+  className = "",
+}: {
+  audience: Audience;
+  onChange: (a: Audience) => void;
+  className?: string;
+}) {
+  return (
+    <div className={`flex justify-center ${className}`}>
+      <div
+        role="tablist"
+        aria-label="Who are you?"
+        className="inline-flex rounded-lg border border-navy-700 bg-navy-800/60 p-1"
+      >
+        {(["landlord", "tenant"] as Audience[]).map((a) => (
+          <button
+            key={a}
+            type="button"
+            role="tab"
+            aria-selected={audience === a}
+            onClick={() => onChange(a)}
+            className={`rounded-md px-4 py-1.5 text-sm font-medium transition-all ${
+              audience === a ? "bg-accent-600 text-white" : "text-navy-400 hover:text-navy-200"
+            }`}
+          >
+            {a === "landlord" ? "I'm a landlord" : "I'm a tenant"}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function CheckClient({
   initialPostcode,
   fromSearchBox = false,
+  initialAudience = "landlord",
 }: {
   initialPostcode?: string;
   fromSearchBox?: boolean;
+  /** From `?for=tenant`. Decides the question asked, the product sold and the
+   *  price. Defaults to landlord, which is the pre-existing behaviour. */
+  initialAudience?: Audience;
 }) {
+  const [audience, setAudience] = useState<Audience>(initialAudience);
+  const copy = copyFor(audience);
+  const isTenant = audience === "tenant";
   const [postcode, setPostcode] = useState(initialPostcode ?? "");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -94,6 +150,25 @@ export default function CheckClient({
   const [buying, setBuying] = useState(false);
   const autoRan = useRef(false);
 
+  // Tenant-only tenancy details. The rent and the unlicensed period are what
+  // turn "an offence may have been committed" into a number, and they are the
+  // reason the tenant report is worth more than the landlord one.
+  const [monthlyRent, setMonthlyRent] = useState("");
+  const [utilities, setUtilities] = useState("");
+  const [monthsUnlicensed, setMonthsUnlicensed] = useState("");
+  const [preUplift, setPreUplift] = useState(false);
+  const [rentError, setRentError] = useState<string | null>(null);
+  const [monthsError, setMonthsError] = useState<string | null>(null);
+
+  // Live estimate under the tenant form, so the buyer sees the size of the
+  // thing they are evidencing before they pay for the evidence.
+  const liveEstimate = estimateRro({
+    monthlyRent: parseFloat(monthlyRent) || 0,
+    utilitiesPerMonth: parseFloat(utilities) || 0,
+    monthsUnlicensed: parseInt(monthsUnlicensed, 10) || 0,
+    offenceEndedBeforeUplift: preUplift || result?.nation === "wales",
+  });
+
   // Clear the result to bring the search box back for another postcode.
   // Every field error goes too: they belong to the purchase form for the
   // previous postcode, and leaving them set rendered the next result's form
@@ -109,6 +184,12 @@ export default function CheckClient({
     setBuyError(null);
     setOccupants("");
     setHouseholds("");
+    setMonthlyRent("");
+    setUtilities("");
+    setMonthsUnlicensed("");
+    setPreUplift(false);
+    setRentError(null);
+    setMonthsError(null);
   };
 
   // When we have an England result, load the address list for that postcode so
@@ -207,10 +288,25 @@ export default function CheckClient({
     const missingAddress = !address.trim();
     const occMsg = !occ || occ < 1 ? "Required" : occ > 50 ? "Must be 50 or fewer" : null;
     const hhMsg = !hh || hh < 1 ? "Required" : occMsg === null && hh > occ ? "Cannot exceed occupants" : null;
+    // Tenant-only, and required rather than optional: without a rent and a
+    // period there is no claim to evidence, only a licensing answer they could
+    // have had for £7.99 on the other side of the site.
+    const rent = parseFloat(monthlyRent);
+    const months = parseInt(monthsUnlicensed, 10);
+    const rentMsg = !isTenant ? null : !rent || rent <= 0 ? "Required" : rent > 50000 ? "Check this figure" : null;
+    const monthsMsg = !isTenant
+      ? null
+      : !months || months < 1
+        ? "Required"
+        : months > 120
+          ? "Check this figure"
+          : null;
     setAddressError(missingAddress);
     setOccupantsError(occMsg);
     setHouseholdsError(hhMsg);
-    if (missingAddress || occMsg || hhMsg) {
+    setRentError(rentMsg);
+    setMonthsError(monthsMsg);
+    if (missingAddress || occMsg || hhMsg || rentMsg || monthsMsg) {
       setBuyError("Please complete the fields marked above before continuing.");
       return;
     }
@@ -242,6 +338,14 @@ export default function CheckClient({
           longitude: result.longitude ?? null,
           occupants: occ,
           households: hh,
+          audience,
+          // Only meaningful for the tenant product; the server ignores them
+          // otherwise and stores empty strings, so a landlord sale carries no
+          // stray tenancy metadata.
+          monthlyRent: rent || 0,
+          utilitiesPerMonth: parseFloat(utilities) || 0,
+          monthsUnlicensed: months || 0,
+          offenceEndedBeforeUplift: preUplift,
           attribution: attribution(),
         }),
       });
@@ -249,8 +353,12 @@ export default function CheckClient({
       if (!res.ok || !data.url) {
         setBuyError(
           data.error === "unsupported_nation"
-            ? "The paid report covers England and Wales, where councils can run licensing schemes. See the guidance below for your nation."
-            : "Could not start checkout. Please try again.",
+            ? isTenant
+              ? "Rent Repayment Orders exist in England and Wales only. The offences sit in the Housing Act 2004, which does not extend to Scotland or Northern Ireland."
+              : "The paid report covers England and Wales, where councils can run licensing schemes. See the guidance below for your nation."
+            : data.error === "tenancy_details_required"
+              ? "We need your monthly rent and how long the property was unlicensed to work out the claim."
+              : "Could not start checkout. Please try again.",
         );
         setBuying(false);
         return;
@@ -270,21 +378,51 @@ export default function CheckClient({
   // Hot lead: the searcher's ward appears in an active/upcoming scheme's designated list.
   const hotMatch = hasCouncilSchemes && !!result?.schemes.details.some((d) => d.wardInList === true);
 
+  /**
+   * Switching audience clears the fields that belong to the other product, so a
+   * rent entered as a tenant is never carried into a landlord checkout.
+   */
+  const switchAudience = (a: Audience) => {
+    if (a === audience) return;
+    setAudience(a);
+    setBuyError(null);
+    setRentError(null);
+    setMonthsError(null);
+    if (a === "landlord") {
+      setMonthlyRent("");
+      setUtilities("");
+      setMonthsUnlicensed("");
+      setPreUplift(false);
+    }
+  };
+
   return (
     <div className="mx-auto max-w-2xl">
       {/* Hero + search: hidden once a result is showing, so the result sits at the top */}
       {!result && (
         <>
+          <AudienceSwitch audience={audience} onChange={switchAudience} className="mb-6" />
           <div className="mb-8 text-center">
             <span className="mb-4 inline-block rounded-full border border-accent-500/30 bg-accent-600/10 px-3 py-1 text-xs font-medium text-accent-400">
               Free instant check
             </span>
             <h1 className="text-3xl font-bold text-navy-100 sm:text-4xl">
-              Does your rental property need a licence?
+              {isTenant ? "Should the home you rent have been licensed?" : "Does your rental property need a licence?"}
             </h1>
             <p className="mx-auto mt-3 max-w-2xl text-navy-400">
-              Operating an unlicensed property risks a civil penalty of up to £40,000, a Rent Repayment Order of up to
-              24 months&apos; rent, and being unable to serve notice. Check your postcode in seconds.
+              {isTenant ? (
+                <>
+                  Hundreds of areas require a landlord licence. If yours needed one and did not have it, that is a
+                  criminal offence and you may be able to claim up to {RRO_FACTS.maxMonths}{" "}
+                  months&apos; rent back.
+                  Start with the postcode.
+                </>
+              ) : (
+                <>
+                  Operating an unlicensed property risks a civil penalty of up to £40,000, a Rent Repayment Order of up
+                  to 24 months&apos; rent, and being unable to serve notice. Check your postcode in seconds.
+                </>
+              )}
             </p>
           </div>
           <form onSubmit={runCheck} className="flex flex-col gap-3 sm:flex-row">
@@ -314,13 +452,16 @@ export default function CheckClient({
       {/* Free teaser result */}
       {result && (
         <>
-          <button
-            type="button"
-            onClick={reset}
-            className="mb-4 inline-flex items-center gap-1 text-sm text-navy-400 transition-colors hover:text-accent-400"
-          >
-            ← Check another postcode
-          </button>
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+            <button
+              type="button"
+              onClick={reset}
+              className="inline-flex items-center gap-1 text-sm text-navy-400 transition-colors hover:text-accent-400"
+            >
+              ← Check another postcode
+            </button>
+            <AudienceSwitch audience={audience} onChange={switchAudience} />
+          </div>
         <div className="animate-slide-up rounded-2xl border border-navy-700 bg-navy-800/60 p-6">
           <p className="text-sm text-navy-400">Licensing authority for {result.postcode}</p>
           <h2 className="mt-1 text-2xl font-bold text-navy-100">{result.council.name}</h2>
@@ -388,6 +529,19 @@ export default function CheckClient({
                     {nationLabel(result.nation)} licensing guide
                   </Link>{" "}
                   for what you need to do.
+                </p>
+              )}
+              {/* Said plainly rather than left to be inferred. A tenant who
+                  arrived from the RRO pages and searched a Scottish postcode
+                  needs to be told the claim does not exist there, not shown a
+                  landlord-registration explainer and left hopeful. */}
+              {isTenant && result.nation !== "wales" && (
+                <p className="mt-3 border-t border-accent-500/20 pt-3">
+                  <span className="font-semibold text-navy-100">As a tenant:</span> Rent Repayment Orders exist in
+                  England and Wales only. They come from the Housing Act 2004 licensing offences and the Housing and
+                  Planning Act 2016, neither of which extends to {nationLabel(result.nation)}, so there is no
+                  equivalent claim here. Report an unregistered landlord or an unlicensed HMO to the council, which
+                  does have enforcement powers.
                 </p>
               )}
             </div>
@@ -574,10 +728,14 @@ export default function CheckClient({
               {/* Purchase CTA: address + occupancy, button goes straight to Stripe checkout */}
               <div className="mt-6 rounded-xl border border-accent-500/40 bg-accent-600/10 p-5">
                 <p className="text-center text-base font-bold text-navy-100">
-                  Confirm if your specific address needs a licence.
+                  {isTenant
+                    ? "Get the evidence for your specific address."
+                    : "Confirm if your specific address needs a licence."}
                 </p>
                 <p className="mt-1 text-center text-xs text-navy-400">
-                  All three fields below are required. They decide the answer, so we cannot run the report without them.
+                  {isTenant
+                    ? "Every field below is required. They decide both whether an offence was committed and what the claim is worth."
+                    : "All three fields below are required. They decide the answer, so we cannot run the report without them."}
                 </p>
                 <div className="mt-4">
                   <div className="mb-1 flex items-center justify-between gap-2">
@@ -709,6 +867,128 @@ export default function CheckClient({
                   A couple plus a lodger = 2 households. We ask because 5+ people in 2+ households needs a mandatory HMO
                   licence anywhere in {result.nation === "wales" ? "Wales, if the property also has three or more storeys" : "England, whatever your council does"}.
                 </p>
+
+                {/* Tenancy details. Tenant only: these size the claim. */}
+                {isTenant && (
+                  <div className="mt-5 border-t border-accent-500/20 pt-4">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-accent-400">Your tenancy</p>
+                    <div className="mt-3 grid grid-cols-2 items-start gap-3">
+                      <div>
+                        <div className="mb-1 flex items-baseline justify-between gap-2">
+                          <label className="block text-xs font-medium text-navy-400">
+                            Your rent, per month <span className="text-red-400" aria-hidden>*</span>
+                          </label>
+                          {rentError && <span className="text-xs font-medium text-red-400">{rentError}</span>}
+                        </div>
+                        <div className="relative">
+                          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-navy-500">
+                            £
+                          </span>
+                          <input
+                            type="number"
+                            min={1}
+                            inputMode="decimal"
+                            aria-invalid={!!rentError}
+                            value={monthlyRent}
+                            onChange={(e) => {
+                              setMonthlyRent(e.target.value);
+                              setRentError(null);
+                              setBuyError(null);
+                            }}
+                            placeholder="1200"
+                            className={`w-full rounded-lg border bg-navy-800 py-2.5 pl-7 pr-3 text-sm text-navy-100 placeholder-navy-500 focus:outline-none ${
+                              rentError ? "border-red-500/70 focus:border-red-500" : "border-navy-700 focus:border-accent-500"
+                            }`}
+                          />
+                        </div>
+                        <p className="mt-1 text-xs text-navy-600">What you paid, your share if you shared.</p>
+                      </div>
+                      <div>
+                        <div className="mb-1 flex items-baseline justify-between gap-2">
+                          <label className="block text-xs font-medium text-navy-400">
+                            Months unlicensed <span className="text-red-400" aria-hidden>*</span>
+                          </label>
+                          {monthsError && <span className="text-xs font-medium text-red-400">{monthsError}</span>}
+                        </div>
+                        <input
+                          type="number"
+                          min={1}
+                          max={120}
+                          inputMode="numeric"
+                          aria-invalid={!!monthsError}
+                          value={monthsUnlicensed}
+                          onChange={(e) => {
+                            setMonthsUnlicensed(e.target.value);
+                            setMonthsError(null);
+                            setBuyError(null);
+                          }}
+                          placeholder="14"
+                          className={`w-full rounded-lg border bg-navy-800 px-3 py-2.5 text-sm text-navy-100 placeholder-navy-500 focus:outline-none ${
+                            monthsError ? "border-red-500/70 focus:border-red-500" : "border-navy-700 focus:border-accent-500"
+                          }`}
+                        />
+                        <p className="mt-1 text-xs text-navy-600">Months you lived there while it needed a licence.</p>
+                      </div>
+                      <div>
+                        <label className="mb-1 block text-xs font-medium text-navy-400">
+                          Utilities included in that rent
+                        </label>
+                        <div className="relative">
+                          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-navy-500">
+                            £
+                          </span>
+                          <input
+                            type="number"
+                            min={0}
+                            inputMode="decimal"
+                            value={utilities}
+                            onChange={(e) => {
+                              setUtilities(e.target.value);
+                              setBuyError(null);
+                            }}
+                            placeholder="0"
+                            className="w-full rounded-lg border border-navy-700 bg-navy-800 py-2.5 pl-7 pr-3 text-sm text-navy-100 placeholder-navy-500 focus:border-accent-500 focus:outline-none"
+                          />
+                        </div>
+                        <p className="mt-1 text-xs text-navy-600">Per month. Deducted from the claim.</p>
+                      </div>
+                      <label className="flex items-start gap-2 pt-6">
+                        <input
+                          type="checkbox"
+                          checked={preUplift}
+                          onChange={(e) => setPreUplift(e.target.checked)}
+                          className="mt-0.5 h-4 w-4 flex-none rounded border-navy-600 bg-navy-800 accent-accent-600"
+                        />
+                        <span className="text-xs text-navy-400">
+                          The unlicensed period ended before 1 May 2026
+                          <span className="mt-0.5 block text-navy-600">Applies the older 12-month cap.</span>
+                        </span>
+                      </label>
+                    </div>
+
+                    {!liveEstimate.incomplete && (
+                      <div className="mt-4 rounded-lg border border-navy-700 bg-navy-900/60 p-4">
+                        <p className="text-xs font-semibold uppercase tracking-wider text-navy-500">
+                          Realistic award range
+                        </p>
+                        <p className="mt-1 text-2xl font-bold text-navy-100">
+                          {gbp(liveEstimate.low)} to {gbp(liveEstimate.high)}
+                        </p>
+                        <p className="mt-1 text-xs text-navy-500">
+                          {Math.round(AWARD_BAND.low * 100)}% to {Math.round(AWARD_BAND.high * 100)}% of{" "}
+                          {gbp(liveEstimate.rentAfterUtilities)} rent after utilities, over{" "}
+                          {liveEstimate.claimableMonths} claimable{" "}
+                          {liveEstimate.claimableMonths === 1 ? "month" : "months"}
+                          {liveEstimate.monthsCapped > 0
+                            ? `. The ${liveEstimate.capMonths}-month cap removes ${liveEstimate.monthsCapped}.`
+                            : "."}{" "}
+                          Tribunals rarely award the full amount, and this assumes the offence can be proved.
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )}
+
                 {buyError && (
                   <p
                     role="alert"
@@ -722,14 +1002,62 @@ export default function CheckClient({
                   disabled={buying}
                   className="mt-4 w-full rounded-lg bg-accent-600 px-6 py-3.5 font-semibold text-white shadow-lg shadow-accent-600/25 transition-all hover:bg-accent-500 disabled:opacity-60"
                 >
-                  {buying ? "Starting checkout..." : "Get my bespoke report for £7.99 →"}
+                  {buying
+                    ? "Starting checkout..."
+                    : isTenant
+                      ? `${copy.cta} for ${copy.priceLabel} →`
+                      : `Get my bespoke report for ${copy.priceLabel} →`}
                 </button>
                 <p className="mt-3 text-center text-xs text-navy-500">
                   Instant online report, permanent link and email. Secure payment via Stripe.
                 </p>
               </div>
 
+              {/* Stakes, tenant version. The same facts, read from the other
+                  side: not "what this costs you" but "what this is worth to
+                  you, and what would stop it". The caveats are in here rather
+                  than only in the paid report, because someone deciding whether
+                  to spend £29 needs them before they spend it. */}
+              {isTenant && (
+                <>
+                  <div className="mt-6 rounded-lg border border-accent-500/30 bg-accent-600/5 p-4">
+                    <p className="text-sm text-navy-200">
+                      <span className="font-semibold text-accent-300">Why this is worth evidencing.</span> Letting a
+                      property that needed a licence, without one, is an offence under section 72(1) or section 95(1) of
+                      the Housing Act 2004. You apply to the First-tier Tribunal yourself, your landlord does not need
+                      to have been prosecuted, and the order can be up to{" "}
+                      <span className="font-semibold text-accent-300">
+                        {result.nation === "wales" ? 12 : RRO_FACTS.maxMonths}{" "}
+                        months&apos; rent
+                      </span>
+                      .
+                    </p>
+                    <p className="mt-2 text-sm text-navy-300">
+                      The tribunal has to be satisfied {RRO_FACTS.standardOfProof}, which is why a dated, sourced record
+                      of the designation matters more than knowing the answer.
+                    </p>
+                  </div>
+                  <div className="mt-3 rounded-lg border border-warning/30 bg-warning/5 p-4">
+                    <p className="text-sm text-navy-200">
+                      <span className="font-semibold text-amber-200">Before you spend anything, check three things.</span>{" "}
+                      A licence application your landlord had already made, or a temporary exemption notice, means no
+                      offence was committed at all. And the deadline is {RRO_FACTS.applicationWindowMonths} months from
+                      the offence, with no discretion to extend it.
+                    </p>
+                    <p className="mt-2 text-sm text-navy-300">
+                      Ask the council in writing whether this address held a licence, or had one pending, for each month
+                      of your tenancy. It is free, and it is the single most useful thing you can do.{" "}
+                      <Link href="/tenants/is-my-landlord-licensed" className="text-accent-400 underline">
+                        How to ask
+                      </Link>
+                      .
+                    </p>
+                  </div>
+                </>
+              )}
+
               {/* Stakes */}
+              {!isTenant && (
               <div className="mt-6 rounded-lg border border-danger/30 bg-danger/5 p-3.5">
                 {/* The £40,000 civil penalty and the 24-month Rent Repayment
                     Order are Housing Act 2004 s.249A powers, and the 24-month
@@ -765,21 +1093,43 @@ export default function CheckClient({
                   {result.nation === "wales" ? "an unlimited fine" : "a five-figure fine"} for getting it wrong.
                 </p>
               </div>
+              )}
 
               {/* What your report gives you */}
               <div className="mt-6 border-t border-navy-700 pt-6">
-                <h3 className="text-lg font-bold text-navy-100">Get the verdict for YOUR property</h3>
+                <h3 className="text-lg font-bold text-navy-100">
+                  {isTenant ? "What the evidence report contains" : "Get the verdict for YOUR property"}
+                </h3>
                 <p className="mt-1 text-sm text-navy-400">
-                  The schemes above are the general picture. Your report answers the one question that matters: does{" "}
-                  <span className="font-semibold text-navy-200">this specific property</span> need a licence?{" "}
-                  {result.nation === "wales"
-                    ? "In Wales the mandatory HMO test also turns on storeys, which only you can count, so the report tells you exactly what to check. "
-                    : ""}
-                  You get:
+                  {isTenant ? (
+                    <>
+                      The schemes above are the general picture for the postcode. The report answers it for{" "}
+                      <span className="font-semibold text-navy-200">your exact address</span>, in a form you can print
+                      and put in a tribunal bundle. You get:
+                    </>
+                  ) : (
+                    <>
+                      The schemes above are the general picture. Your report answers the one question that matters: does{" "}
+                      <span className="font-semibold text-navy-200">this specific property</span> need a licence?{" "}
+                      {result.nation === "wales"
+                        ? "In Wales the mandatory HMO test also turns on storeys, which only you can count, so the report tells you exactly what to check. "
+                        : ""}
+                      You get:
+                    </>
+                  )}
                 </p>
 
                 <ul className="mt-4 space-y-2">
-                  {[
+                  {(isTenant
+                    ? [
+                        "Whether this exact address required a licence, scheme by scheme",
+                        "The designation itself: its dates, its coverage, and the council's own source link",
+                        "Your claim worked through the Acheampong v Roman method, with every step shown",
+                        "The two statutory defences, so you can rule them out before you file",
+                        "The Form RRO1 route, the two-year deadline, and what to ask the council for",
+                        "A permanent, shareable report plus an emailed copy",
+                      ]
+                    : [
                     result.nation === "wales"
                       ? "Your licensing position for this exact address, scheme by scheme"
                       : "A definitive licence verdict for your exact address",
@@ -790,7 +1140,7 @@ export default function CheckClient({
                     "Your exact penalty exposure and the deadlines that apply",
                     "A step-by-step action plan to get compliant",
                     "A permanent, shareable report plus an emailed copy",
-                  ].map((item) => (
+                  ]).map((item) => (
                     <li key={item} className="flex gap-2.5 text-sm text-navy-200">
                       <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />

@@ -3,9 +3,9 @@ import Link from "next/link";
 import { BookDemoButton } from "@/components/DemoPopup";
 
 export const metadata: Metadata = {
-  title: "Pricing: £7.99 Landlord Licence Check or Council Platform",
+  title: "Pricing: £7.99 Landlord Check, £29 Tenant Evidence, Council Platform",
   description:
-    "Landlord Licence Check £7.99 for a property-specific report. Councils: Starter £500/mo, Professional £1,500/mo, Enterprise custom.",
+    "Landlord Licence Check £7.99. Tenant Rent Repayment Order evidence report £29. Councils: Starter £500/mo, Professional £1,500/mo, Enterprise custom.",
   alternates: { canonical: "https://prscheck.co.uk/pricing" },
 };
 
@@ -163,27 +163,56 @@ export default function PricingPage() {
             Pricing
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-navy-400">
-            Landlords: a £7.99 property licence report. Councils: platform plans from £500/mo, including PRS Database integration.
+            Landlords: a £7.99 property licence report. Tenants: a £29 Rent Repayment Order evidence report. Councils:
+            platform plans from £500/mo, including PRS Database integration.
           </p>
         </div>
       </section>
 
+      {/* The two consumer products, side by side. The postcode check that feeds
+          both is free either way; what differs is what the report is for. */}
       <section className="border-b border-navy-800 bg-navy-900 py-16">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-wider text-accent-400">For landlords</p>
-          <h2 className="mt-2 text-3xl font-bold text-navy-100">Landlord Licence Check</h2>
-          <p className="mx-auto mt-3 max-w-xl text-navy-300">
-            Free postcode check of selective, additional and mandatory HMO schemes.
-            A £7.99 report gives the property-specific verdict, scheme dates and fees, penalty exposure, and an action plan.
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="flex flex-col rounded-2xl border border-navy-700 bg-navy-800/40 p-7 text-center">
+              <p className="text-xs font-semibold uppercase tracking-wider text-accent-400">For landlords and agents</p>
+              <h2 className="mt-2 text-2xl font-bold text-navy-100">Landlord Licence Check</h2>
+              <p className="mt-3 flex-1 text-sm text-navy-300">
+                Free postcode check of selective, additional and mandatory HMO schemes. The report gives the
+                property-specific verdict, scheme dates and fees, your penalty exposure, and an action plan.
+              </p>
+              <p className="mt-6 text-4xl font-bold text-navy-100">£7.99</p>
+              <p className="mt-1 text-sm text-navy-500">one-off · England and Wales</p>
+              <Link
+                href="/check"
+                className="mt-6 inline-flex justify-center rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-accent-500"
+              >
+                Check my property
+              </Link>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border border-accent-500/40 bg-accent-600/10 p-7 text-center">
+              <p className="text-xs font-semibold uppercase tracking-wider text-accent-400">For tenants</p>
+              <h2 className="mt-2 text-2xl font-bold text-navy-100">Rent Repayment Order Evidence</h2>
+              <p className="mt-3 flex-1 text-sm text-navy-300">
+                Whether the property required a licence, the designation with its dates and the council&apos;s own
+                source, your claim worked on the Acheampong v Roman method, the two statutory defences, and the Form
+                RRO1 route.
+              </p>
+              <p className="mt-6 text-4xl font-bold text-navy-100">£29</p>
+              <p className="mt-1 text-sm text-navy-500">one-off · England and Wales</p>
+              <Link
+                href="/check?for=tenant"
+                className="mt-6 inline-flex justify-center rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-accent-500"
+              >
+                Check my home
+              </Link>
+            </div>
+          </div>
+          <p className="mx-auto mt-6 max-w-2xl text-center text-sm text-navy-500">
+            Both prices are one-off, with no subscription and no recurring charge. The postcode scheme check is free for
+            everyone, with no sign-up.
           </p>
-          <p className="mt-6 text-4xl font-bold text-navy-100">£7.99</p>
-          <p className="mt-1 text-sm text-navy-500">one-off · England and Wales</p>
-          <Link
-            href="/check"
-            className="mt-8 inline-flex rounded-lg bg-accent-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-accent-500"
-          >
-            Check a postcode
-          </Link>
         </div>
       </section>
 
