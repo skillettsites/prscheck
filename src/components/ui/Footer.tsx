@@ -45,6 +45,10 @@ const columns = [
       { label: "Pricing", href: "/pricing" },
       { label: "Demo", href: "/demo" },
       { label: "API", href: "/api-docs" },
+      // Sister site. A tenant checking a licence usually also wants to know who
+      // the agent or landlord company actually is.
+      { label: "Check a letting agent", href: "https://www.checkafirm.co.uk/letting-agent-check" },
+      { label: "Company director search", href: "https://www.checkafirm.co.uk/company-director-search" },
     ],
   },
   {
